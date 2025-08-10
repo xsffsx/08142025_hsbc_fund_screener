@@ -150,7 +150,7 @@ VALUES
 INSERT INTO datasource
 (id, name, type, host, port, database_name, username, password, connection_url, status, test_status, description, creator_id, create_time, update_time) VALUES
 (201, 'NL2SQL-PostgreSQL(System)', 'postgresql', 'localhost', 5432, 'nl2sql', 'nl2sql_user', 'nl2sql_pass', 'jdbc:postgresql://localhost:5432/nl2sql', 'active', 'success', 'PostgreSQL for NL2SQL System Tables (Finance Product DDL)', 2100246635, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-(202, 'NL2SQL-Oracle(Business)', 'oracle', 'localhost', 1521, 'XE', 'nl2sql_user', 'nl2sql_pass', 'jdbc:oracle:thin:@localhost:1521:XE', 'active', 'success', 'Oracle for NL2SQL Business Tables (Finance Product Data)', 2100246635, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+(202, 'NL2SQL-Oracle(Business)', 'oracle', 'localhost', 1521, 'xepdb1', 'nl2sql_user', 'nl2sql_pass', 'jdbc:oracle:thin:@localhost:1521/xepdb1', 'active', 'success', 'Oracle for NL2SQL Business Tables (Finance Product Data)', 2100246635, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
 
 -- 5) 初始化 agent_datasource：将 agent_id=2(金融产品分析智能体) 绑定到数据源
 INSERT INTO agent_datasource (id, agent_id, datasource_id, is_active, create_time, update_time) VALUES

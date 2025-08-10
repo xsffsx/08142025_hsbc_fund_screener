@@ -4,6 +4,8 @@ type: "always_apply"
 
 #1 rewrite中文回答
 
+ - **参考标准**: 使用 `.augment/20250802140100_01_Level1_Architecture_Diagram.md` 作为mermaid的样式模板
+
 #1.1 **代码修改确认规则**:
     - 默认alibaba的源代码是正确的
     - 如果需要修改原来码，必须停止并等待用户确认
@@ -93,7 +95,7 @@ type: "always_apply"
 
 #9 **Mermaid图表样式规范**:
     ## 9.1 标准样式模板
-    - **参考标准**: 使用 `/Users/paulo/IdeaProjects/20250707_MCP/.augment/20250802140100_01_Level1_Architecture_Diagram.md` 作为样式模板
+    - **参考标准**: 使用 `.augment/20250802140100_01_Level1_Architecture_Diagram.md` 作为样式模板
     - **颜色编码**: 业务逻辑颜色编码系统
       * 绿色 (#10b981): 快速操作 (<1s)
       * 黄色 (#eab308): AI处理 (10-20s)

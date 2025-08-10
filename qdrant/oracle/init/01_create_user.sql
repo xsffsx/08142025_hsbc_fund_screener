@@ -1,12 +1,12 @@
 -- Oracle 19c 初始化脚本
 -- 创建NL2SQL用户和表空间
 
--- 连接到PDB
-ALTER SESSION SET CONTAINER = ORCLPDB1;
+-- 连接到PDB (修复：使用正确的PDB名称)
+ALTER SESSION SET CONTAINER = XEPDB1;
 
 -- 创建表空间
 CREATE TABLESPACE NL2SQL_DATA
-DATAFILE '/opt/oracle/oradata/ORCLCDB/ORCLPDB1/nl2sql_data01.dbf'
+DATAFILE '/opt/oracle/oradata/FREE/XEPDB1/nl2sql_data01.dbf'
 SIZE 100M
 AUTOEXTEND ON
 NEXT 10M
@@ -24,7 +24,7 @@ GRANT CREATE SESSION TO nl2sql_user;
 GRANT SELECT_CATALOG_ROLE TO nl2sql_user;
 
 -- 创建基础表结构（示例）
-CONNECT nl2sql_user/nl2sql_pass@ORCLPDB1;
+CONNECT nl2sql_user/nl2sql_pass@XEPDB1;
 
 -- 创建测试表
 CREATE TABLE employees (
