@@ -1,0 +1,172 @@
+version: '3.8'
+
+services:
+
+  # MySQL数据库服务
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-nl2sql-mvp1
+    restart: unless-stopped
+
+    ports:
+      - "3306:3306"
+
+    environment:
+      - MYSQL_ROOT_PASSWORD=root123
+      - MYSQL_DATABASE=nl2sql
+      - MYSQL_USER=nl2sql_user
+      - MYSQL_PASSWORD=nl2sql_pass
+      - MYSQL_ROOT_HOST=%
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql/init:/docker-entrypoint-initdb.d
+      - ../spring-ai-alibaba-nl2sql-management/src/main/resources/sql:/docker-entrypoint-initdb.d/management
+
+    command: --default-authentication-plugin=mysql_native_password
+
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot123"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+    networks:
+      - nl2sql-network
+
+  # Qdrant向量数据库服务
+  qdrant:
+    image: qdrant/qdrant:v1.7.4
+    container_name: qdrant-nl2sql-mvp1
+    restart: unless-stopped
+
+    ports:
+      - "6333:6333"    # HTTP API port
+      - "6334:6334"    # gRPC port (optional)
+
+    volumes:
+      - qdrant_data:/qdrant/storage
+      - ./qdrant/config:/qdrant/config
+
+    environment:
+      - QDRANT__SERVICE__HTTP_PORT=6333
+      - QDRANT__SERVICE__GRPC_PORT=6334
+      - QDRANT__LOG_LEVEL=INFO
+
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6333/readyz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+
+
+    networks:
+      - nl2sql-network
+
+  # Oracle数据库服务 (Oracle 19c 兼容版本)
+  oracle:
+    image: gvenzl/oracle-free:23-slim
+    container_name: oracle-nl2sql-mvp1
+    restart: unless-stopped
+
+    ports:
+      - "1521:1521"    # Oracle listener port
+      - "5500:5500"    # Oracle Enterprise Manager Express port
+
+    environment:
+      - ORACLE_PASSWORD=Oracle123456
+      - ORACLE_DATABASE=XEPDB1
+      - ORACLE_CHARACTERSET=AL32UTF8
+      - APP_USER=nl2sql_user
+      - APP_USER_PASSWORD=nl2sql_pass
+
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+      - ./oracle/init:/opt/oracle/scripts/setup
+      - ./oracle/startup:/opt/oracle/scripts/startup
+
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+          cpus: '1.0'
+        reservations:
+          memory: 2G
+
+    healthcheck:
+      test: ["CMD", "healthcheck.sh"]
+      interval: 60s
+      timeout: 30s
+      retries: 5
+      start_period: 300s
+
+    networks:
+      - nl2sql-network
+
+  # PostgreSQL数据库服务 (系统表 + 向量存储)
+  postgresql:
+    image: pgvector/pgvector:pg13
+    container_name: postgresql-nl2sql-mvp1
+    restart: unless-stopped
+
+    ports:
+      - "5432:5432"    # PostgreSQL port
+
+    environment:
+      - POSTGRES_DB=nl2sql
+      - POSTGRES_USER=nl2sql_user
+      - POSTGRES_PASSWORD=nl2sql_pass
+      - POSTGRES_ROOT_PASSWORD=postgres123
+      - PGDATA=/var/lib/postgresql/data/pgdata
+
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+      - ./postgresql/init:/docker-entrypoint-initdb.d
+
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+          cpus: '1.0'
+        reservations:
+          memory: 2G
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nl2sql_user -d nl2sql"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+    networks:
+      - nl2sql-network
+
+volumes:
+  mysql_data:
+    driver: local
+  qdrant_data:
+    driver: local
+  oracle_data:
+    driver: local
+  postgresql_data:
+    driver: local
+
+networks:
+  nl2sql-network:
+    driver: bridge
+    name: nl2sql-mvp1-network

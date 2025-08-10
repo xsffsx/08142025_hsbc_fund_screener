@@ -1,0 +1,1 @@
+mysql/product/01_create_cognos_tables_mysql.sql

@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "description": "NL2SQL语义映射配置文件 - 支持表名、字段名、值的映射规则",
+  "lastUpdated": "2025-08-08T15:30:00Z",
+  "mappings": {
+    "tables": {
+      "funds": "B_UT_PROD",
+      "fund_products": "B_UT_PROD",
+      "products": "B_UT_PROD",
+      "fund_info": "B_UT_PROD"
+    },
+    "fields": {
+      "fund_name": "PROD_NAME",
+      "fund_id": "PROD_ID",
+      "currency": "CCY_PROD_TRADE_CDE",
+      "risk_level": "RISK_LVL_CDE",
+      "return_rate": "RETURN_RATE",
+      "product_id": "PROD_ID",
+      "product_name": "PROD_NAME"
+    },
+    "values": {
+      "HIGH": "H",
+      "MEDIUM": "M",
+      "LOW": "L",
+      "高风险": "H",
+      "中风险": "M",
+      "低风险": "L"
+    }
+  },
+  "settings": {
+    "caseSensitive": false,
+    "enableLogging": true,
+    "fallbackToOriginal": true
+  }
+}

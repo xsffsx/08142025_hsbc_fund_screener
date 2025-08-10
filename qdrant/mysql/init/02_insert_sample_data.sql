@@ -1,0 +1,1 @@
+mysql/product/02_insert_sample_data.sql
