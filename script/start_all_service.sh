@@ -239,7 +239,7 @@ needs_rebuild() {
 compile_module() {
     local module_path="$1"
     local module_name="$(basename "$module_path")"
-    local install_flag="$2"  # 是否需要install到本地仓库
+    local install_flag="${2:-install}"  # 默认使用install，确保依赖完整
 
     log_info "=== 编译模块: $module_name ==="
 
@@ -255,13 +255,13 @@ compile_module() {
     log_info "尝试应用代码格式化..."
     mvn spring-javaformat:apply -q 2>/dev/null || log_warning "代码格式化失败，但不影响编译"
 
-    # 编译命令 - 跳过测试和格式检查，添加spotless跳过
-    local mvn_command="mvn clean compile -DskipTests -Dmaven.test.skip=true -Dspring-javaformat.skip=true -Dspotless.skip=true"
-    if [ "$install_flag" = "install" ]; then
-        mvn_command="mvn clean install -DskipTests -Dmaven.test.skip=true -Dspring-javaformat.skip=true -Dspotless.skip=true"
-        log_info "编译并安装到本地仓库: $module_name (跳过格式检查)"
-    else
+    # 默认使用clean install确保所有模块都安装到本地仓库
+    local mvn_command="mvn clean install -DskipTests -Dmaven.test.skip=true -Dspring-javaformat.skip=true -Dspotless.skip=true"
+    if [ "$install_flag" = "compile" ]; then
+        mvn_command="mvn clean compile -DskipTests -Dmaven.test.skip=true -Dspring-javaformat.skip=true -Dspotless.skip=true"
         log_info "编译模块: $module_name (跳过格式检查)"
+    else
+        log_info "编译并安装到本地仓库: $module_name (跳过格式检查)"
     fi
 
     $mvn_command
@@ -340,21 +340,27 @@ maven_build() {
     fi
 
     # 1. 先编译并安装common模块（基础依赖）
-    if ! compile_module "$COMMON_MODULE" "install"; then
+    if ! compile_module "$COMMON_MODULE"; then
         log_error "Common模块编译失败，停止构建"
         return 1
     fi
 
     # 2. 再编译并安装chat模块（management模块依赖它）
-    if ! compile_module "$CHAT_MODULE" "install"; then
+    if ! compile_module "$CHAT_MODULE"; then
         log_error "Chat模块编译失败，停止构建"
         return 1
     fi
 
-    # 3. 最后编译management模块（主应用）
+    # 3. 编译并安装management模块（主应用）
     if ! compile_module "$MANAGEMENT_MODULE"; then
         log_error "Management模块编译失败，停止构建"
         return 1
+    fi
+
+    # 4. Web UI模块是前端项目，不需要Maven编译
+    local WEB_UI_MODULE="$PROJECT_ROOT/spring-ai-alibaba-nl2sql-web-ui"
+    if [ -d "$WEB_UI_MODULE" ]; then
+        log_info "检测到Web UI模块 (前端项目，跳过Maven编译)"
     fi
 
     log_success "所有模块构建完成"
@@ -579,12 +585,63 @@ force_rebuild() {
 
     cd "$PROJECT_ROOT"
 
-    # 清理所有target目录
+    # 清理所有target目录和Maven缓存
     log_info "清理编译缓存..."
     find . -name "target" -type d -exec rm -rf {} + 2>/dev/null || true
 
-    # 重新编译
-    maven_build
+    # 清理本地Maven仓库中的项目artifacts
+    log_info "清理本地Maven仓库中的项目artifacts..."
+    rm -rf "$HOME/.m2/repository/com/alibaba/cloud/ai/spring-ai-alibaba-nl2sql"* 2>/dev/null || true
+
+    # 强制重新编译所有模块
+    force_rebuild_all_modules
+}
+
+# 强制重新编译所有模块（不检查是否需要重建）
+force_rebuild_all_modules() {
+    log_info "=== 强制重新编译所有NL2SQL模块 ==="
+
+    cd "$PROJECT_ROOT"
+
+    # 定义所有Maven模块路径 (排除前端项目)
+    local modules=(
+        "$COMMON_MODULE"
+        "$CHAT_MODULE"
+        "$MANAGEMENT_MODULE"
+    )
+
+    # 逐个强制编译所有模块
+    for module_path in "${modules[@]}"; do
+        if [ -d "$module_path" ]; then
+            local module_name="$(basename "$module_path")"
+            log_info "=== 强制编译模块: $module_name ==="
+
+            cd "$module_path"
+            log_info "当前目录: $(pwd)"
+
+            # 应用代码格式化
+            log_info "尝试应用代码格式化..."
+            mvn spring-javaformat:apply -q 2>/dev/null || log_warning "代码格式化失败，但不影响编译"
+
+            # 强制clean install
+            log_info "强制编译并安装到本地仓库: $module_name (跳过格式检查)"
+            mvn clean install -DskipTests -Dmaven.test.skip=true -Dspring-javaformat.skip=true -Dspotless.skip=true
+
+            local build_result=$?
+            if [ $build_result -eq 0 ]; then
+                log_success "$module_name 编译成功"
+            else
+                log_error "$module_name 编译失败 (退出码: $build_result)"
+                log_error "请检查编译错误并修复后重试"
+                return 1
+            fi
+        else
+            log_warning "模块不存在，跳过: $module_path"
+        fi
+    done
+
+    log_success "所有模块强制重建完成"
+    return 0
 }
 
 # 主函数
