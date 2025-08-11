@@ -1,150 +1,655 @@
--- PostgreSQL数据库初始化脚本，兼容Spring Boot SQL初始化
--- 启用pgvector扩展
-CREATE EXTENSION IF NOT EXISTS vector;
+--
+-- PostgreSQL database dump
+--
 
--- 业务知识表
-CREATE TABLE IF NOT EXISTS business_knowledge (
-  id BIGSERIAL PRIMARY KEY,
-  business_term VARCHAR(255) NOT NULL, -- 业务名词
-  description TEXT, -- 描述
-  synonyms TEXT, -- 同义词
-  is_recall BOOLEAN DEFAULT true, -- 是否召回
-  data_set_id VARCHAR(255), -- 数据集id
-  agent_id BIGINT, -- 关联的智能体ID
-  created_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- 创建时间
-  updated_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- 更新时间
+-- Dumped from database version 13.21 (Debian 13.21-1.pgdg120+1)
+-- Dumped by pg_dump version 13.21 (Debian 13.21-1.pgdg120+1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: hstore; Type: EXTENSION; Schema: -; Owner: -
+--
+
+CREATE EXTENSION IF NOT EXISTS hstore WITH SCHEMA public;
+
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: agent; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE agent (
+    id bigint NOT NULL,
+    name character varying(255) NOT NULL,
+    description text,
+    avatar character varying(500),
+    status character varying(50) DEFAULT 'draft'::character varying,
+    prompt text,
+    category character varying(100),
+    admin_id bigint,
+    tags text,
+    create_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    update_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP
 );
 
--- 创建索引
-CREATE INDEX IF NOT EXISTS idx_business_knowledge_term ON business_knowledge(business_term);
-CREATE INDEX IF NOT EXISTS idx_business_knowledge_data_set_id ON business_knowledge(data_set_id);
-CREATE INDEX IF NOT EXISTS idx_business_knowledge_agent_id ON business_knowledge(agent_id);
-CREATE INDEX IF NOT EXISTS idx_business_knowledge_is_recall ON business_knowledge(is_recall);
 
--- 语义模型表
-CREATE TABLE IF NOT EXISTS semantic_model (
-  id BIGSERIAL PRIMARY KEY,
-  agent_id BIGINT, -- 关联的智能体ID
-  field_name VARCHAR(255) NOT NULL DEFAULT '', -- 智能体字段名称
-  synonyms TEXT, -- 字段名称同义词
-  origin_name VARCHAR(255) DEFAULT '', -- 原始字段名
-  description TEXT, -- 字段描述
-  origin_description VARCHAR(255), -- 原始字段描述
-  type VARCHAR(255) DEFAULT '', -- 字段类型 (integer, varchar....)
-  created_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- 创建时间
-  updated_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- 更新时间
-  is_recall BOOLEAN DEFAULT true, -- 是否启用召回
-  status BOOLEAN DEFAULT true -- 是否启用
+--
+-- Name: agent_datasource; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE agent_datasource (
+    id bigint NOT NULL,
+    agent_id bigint NOT NULL,
+    datasource_id bigint NOT NULL,
+    is_active integer DEFAULT 1,
+    create_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    update_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP
 );
 
--- 创建索引
-CREATE INDEX IF NOT EXISTS idx_semantic_model_agent_id ON semantic_model(agent_id);
-CREATE INDEX IF NOT EXISTS idx_semantic_model_field_name ON semantic_model(field_name);
-CREATE INDEX IF NOT EXISTS idx_semantic_model_status ON semantic_model(status);
-CREATE INDEX IF NOT EXISTS idx_semantic_model_is_recall ON semantic_model(is_recall);
 
--- 智能体表
-CREATE TABLE IF NOT EXISTS agent (
-  id BIGSERIAL PRIMARY KEY,
-  name VARCHAR(255) NOT NULL, -- 智能体名称
-  description TEXT, -- 智能体描述
-  avatar VARCHAR(500), -- 头像URL
-  status VARCHAR(50) DEFAULT 'draft', -- 状态：draft-待发布，published-已发布，offline-已下线
-  prompt TEXT, -- 自定义Prompt配置
-  category VARCHAR(100), -- 分类
-  admin_id BIGINT, -- 管理员ID
-  tags TEXT, -- 标签，逗号分隔
-  create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- 创建时间
-  update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- 更新时间
+--
+-- Name: agent_datasource_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE agent_datasource_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: agent_datasource_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE agent_datasource_id_seq OWNED BY agent_datasource.id;
+
+
+--
+-- Name: agent_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE agent_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: agent_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE agent_id_seq OWNED BY agent.id;
+
+
+--
+-- Name: agent_knowledge; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE agent_knowledge (
+    id bigint NOT NULL,
+    agent_id bigint NOT NULL,
+    title character varying(255) NOT NULL,
+    content text,
+    type character varying(50) DEFAULT 'document'::character varying,
+    category character varying(100),
+    tags text,
+    status character varying(50) DEFAULT 'active'::character varying,
+    source_url character varying(500),
+    file_path character varying(500),
+    file_size bigint,
+    file_type character varying(100),
+    embedding_status character varying(50) DEFAULT 'pending'::character varying,
+    creator_id bigint,
+    create_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    update_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP
 );
 
--- 创建索引
-CREATE INDEX IF NOT EXISTS idx_agent_name ON agent(name);
-CREATE INDEX IF NOT EXISTS idx_agent_status ON agent(status);
-CREATE INDEX IF NOT EXISTS idx_agent_category ON agent(category);
-CREATE INDEX IF NOT EXISTS idx_agent_admin_id ON agent(admin_id);
 
--- 智能体知识表
-CREATE TABLE IF NOT EXISTS agent_knowledge (
-  id BIGSERIAL PRIMARY KEY,
-  agent_id BIGINT NOT NULL, -- 智能体ID
-  title VARCHAR(255) NOT NULL, -- 知识标题
-  content TEXT, -- 知识内容
-  type VARCHAR(50) DEFAULT 'document', -- 知识类型：document-文档，qa-问答，faq-常见问题
-  category VARCHAR(100), -- 知识分类
-  tags TEXT, -- 标签，逗号分隔
-  status VARCHAR(50) DEFAULT 'active', -- 状态：active-启用，inactive-禁用
-  source_url VARCHAR(500), -- 来源URL
-  file_path VARCHAR(500), -- 文件路径
-  file_size BIGINT, -- 文件大小（字节）
-  file_type VARCHAR(100), -- 文件类型
-  embedding_status VARCHAR(50) DEFAULT 'pending', -- 向量化状态：pending-待处理，processing-处理中，completed-已完成，failed-失败
-  creator_id BIGINT, -- 创建者ID
-  create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- 创建时间
-  update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- 更新时间
+--
+-- Name: agent_knowledge_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE agent_knowledge_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: agent_knowledge_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE agent_knowledge_id_seq OWNED BY agent_knowledge.id;
+
+
+--
+-- Name: agent_preset_question; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE agent_preset_question (
+    id bigint NOT NULL,
+    agent_id bigint NOT NULL,
+    question text NOT NULL,
+    sort_order integer DEFAULT 0,
+    is_active integer DEFAULT 1,
+    create_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    update_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP
 );
 
--- 创建索引
-CREATE INDEX IF NOT EXISTS idx_agent_knowledge_agent_id ON agent_knowledge(agent_id);
-CREATE INDEX IF NOT EXISTS idx_agent_knowledge_title ON agent_knowledge(title);
-CREATE INDEX IF NOT EXISTS idx_agent_knowledge_type ON agent_knowledge(type);
-CREATE INDEX IF NOT EXISTS idx_agent_knowledge_status ON agent_knowledge(status);
-CREATE INDEX IF NOT EXISTS idx_agent_knowledge_category ON agent_knowledge(category);
-CREATE INDEX IF NOT EXISTS idx_agent_knowledge_embedding_status ON agent_knowledge(embedding_status);
 
--- 数据源表
-CREATE TABLE IF NOT EXISTS datasource (
-  id BIGSERIAL PRIMARY KEY,
-  name VARCHAR(255) NOT NULL, -- 数据源名称
-  type VARCHAR(50) NOT NULL, -- 数据源类型：mysql, postgresql, oracle
-  host VARCHAR(255) NOT NULL, -- 主机地址
-  port INTEGER NOT NULL, -- 端口号
-  database_name VARCHAR(255) NOT NULL, -- 数据库名称
-  username VARCHAR(255) NOT NULL, -- 用户名
-  password VARCHAR(255) NOT NULL, -- 密码（加密存储）
-  connection_url VARCHAR(1000), -- 完整连接URL
-  status VARCHAR(50) DEFAULT 'active', -- 状态：active-启用，inactive-禁用
-  test_status VARCHAR(50) DEFAULT 'unknown', -- 连接测试状态：success-成功，failed-失败，unknown-未知
-  description TEXT, -- 描述
-  creator_id BIGINT, -- 创建者ID
-  create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- 创建时间
-  update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- 更新时间
+--
+-- Name: agent_preset_question_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE agent_preset_question_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: agent_preset_question_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE agent_preset_question_id_seq OWNED BY agent_preset_question.id;
+
+
+--
+-- Name: business_knowledge; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE business_knowledge (
+    id bigint NOT NULL,
+    business_term character varying(255) NOT NULL,
+    description text,
+    synonyms text,
+    is_recall integer DEFAULT 1,
+    data_set_id character varying(255),
+    agent_id character varying(255),
+    created_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    updated_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP
 );
 
--- 创建索引
-CREATE INDEX IF NOT EXISTS idx_datasource_name ON datasource(name);
-CREATE INDEX IF NOT EXISTS idx_datasource_type ON datasource(type);
-CREATE INDEX IF NOT EXISTS idx_datasource_status ON datasource(status);
-CREATE INDEX IF NOT EXISTS idx_datasource_creator_id ON datasource(creator_id);
 
--- 智能体数据源关联表
-CREATE TABLE IF NOT EXISTS agent_datasource (
-  id BIGSERIAL PRIMARY KEY,
-  agent_id BIGINT NOT NULL, -- 智能体ID
-  datasource_id BIGINT NOT NULL, -- 数据源ID
-  is_active INTEGER DEFAULT 1, -- 是否启用 (0=禁用, 1=启用)
-  create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- 创建时间
-  update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- 更新时间
+--
+-- Name: business_knowledge_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE business_knowledge_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: business_knowledge_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE business_knowledge_id_seq OWNED BY business_knowledge.id;
+
+
+--
+-- Name: datasource; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE datasource (
+    id bigint NOT NULL,
+    name character varying(255) NOT NULL,
+    type character varying(50) NOT NULL,
+    host character varying(255) NOT NULL,
+    port integer NOT NULL,
+    database_name character varying(255) NOT NULL,
+    username character varying(255) NOT NULL,
+    password character varying(255) NOT NULL,
+    connection_url character varying(1000),
+    status character varying(50) DEFAULT 'active'::character varying,
+    test_status character varying(50) DEFAULT 'unknown'::character varying,
+    description text,
+    creator_id bigint,
+    create_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    update_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP
 );
 
--- 创建索引和约束
-CREATE UNIQUE INDEX IF NOT EXISTS uk_agent_datasource ON agent_datasource(agent_id, datasource_id);
-CREATE INDEX IF NOT EXISTS idx_agent_datasource_agent_id ON agent_datasource(agent_id);
-CREATE INDEX IF NOT EXISTS idx_agent_datasource_datasource_id ON agent_datasource(datasource_id);
-CREATE INDEX IF NOT EXISTS idx_agent_datasource_is_active ON agent_datasource(is_active);
 
--- 智能体预设问题表
-CREATE TABLE IF NOT EXISTS agent_preset_question (
-  id BIGSERIAL PRIMARY KEY,
-  agent_id BIGINT NOT NULL, -- 智能体ID
-  question TEXT NOT NULL, -- 预设问题内容
-  sort_order INTEGER DEFAULT 0, -- 排序顺序
-  is_active BOOLEAN DEFAULT true, -- 是否启用
-  create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- 创建时间
-  update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- 更新时间
+--
+-- Name: datasource_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE datasource_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: datasource_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE datasource_id_seq OWNED BY datasource.id;
+
+--
+-- Name: semantic_model; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE semantic_model (
+    id bigint NOT NULL,
+    agent_id character varying(255),
+    field_name character varying(255) DEFAULT ''::character varying NOT NULL,
+    synonyms text,
+    origin_name character varying(255) DEFAULT ''::character varying,
+    description text,
+    origin_description character varying(255),
+    type character varying(255) DEFAULT ''::character varying,
+    created_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    updated_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    is_recall integer DEFAULT 1,
+    status integer DEFAULT 1
 );
 
--- 创建索引
-CREATE INDEX IF NOT EXISTS idx_agent_preset_question_agent_id ON agent_preset_question(agent_id);
-CREATE INDEX IF NOT EXISTS idx_agent_preset_question_sort_order ON agent_preset_question(sort_order);
-CREATE INDEX IF NOT EXISTS idx_agent_preset_question_is_active ON agent_preset_question(is_active);
+
+--
+-- Name: semantic_model_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE semantic_model_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: semantic_model_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE semantic_model_id_seq OWNED BY semantic_model.id;
+
+--
+-- Name: agent id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY agent ALTER COLUMN id SET DEFAULT nextval('agent_id_seq'::regclass);
+
+
+--
+-- Name: agent_datasource id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY agent_datasource ALTER COLUMN id SET DEFAULT nextval('agent_datasource_id_seq'::regclass);
+
+
+--
+-- Name: agent_knowledge id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY agent_knowledge ALTER COLUMN id SET DEFAULT nextval('agent_knowledge_id_seq'::regclass);
+
+
+--
+-- Name: agent_preset_question id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY agent_preset_question ALTER COLUMN id SET DEFAULT nextval('agent_preset_question_id_seq'::regclass);
+
+
+--
+-- Name: business_knowledge id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY business_knowledge ALTER COLUMN id SET DEFAULT nextval('business_knowledge_id_seq'::regclass);
+
+
+--
+-- Name: datasource id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY datasource ALTER COLUMN id SET DEFAULT nextval('datasource_id_seq'::regclass);
+
+
+--
+-- Name: document_embeddings id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY document_embeddings ALTER COLUMN id SET DEFAULT nextval('document_embeddings_id_seq'::regclass);
+
+
+--
+-- Name: employees id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY employees ALTER COLUMN id SET DEFAULT nextval('employees_id_seq'::regclass);
+
+
+--
+-- Name: query_stats id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY query_stats ALTER COLUMN id SET DEFAULT nextval('query_stats_id_seq'::regclass);
+
+
+--
+-- Name: semantic_model id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY semantic_model ALTER COLUMN id SET DEFAULT nextval('semantic_model_id_seq'::regclass);
+
+
+--
+-- Name: agent_datasource agent_datasource_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY agent_datasource
+    ADD CONSTRAINT agent_datasource_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: agent_knowledge agent_knowledge_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY agent_knowledge
+    ADD CONSTRAINT agent_knowledge_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: agent agent_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY agent
+    ADD CONSTRAINT agent_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: agent_preset_question agent_preset_question_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY agent_preset_question
+    ADD CONSTRAINT agent_preset_question_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: business_knowledge business_knowledge_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY business_knowledge
+    ADD CONSTRAINT business_knowledge_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: datasource datasource_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY datasource
+    ADD CONSTRAINT datasource_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: document_embeddings document_embeddings_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY document_embeddings
+    ADD CONSTRAINT document_embeddings_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: employees employees_email_key; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY employees
+    ADD CONSTRAINT employees_email_key UNIQUE (email);
+
+
+--
+-- Name: employees employees_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY employees
+    ADD CONSTRAINT employees_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: query_stats query_stats_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY query_stats
+    ADD CONSTRAINT query_stats_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: semantic_model semantic_model_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY semantic_model
+    ADD CONSTRAINT semantic_model_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: idx_agent_admin_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_admin_id ON agent USING btree (admin_id);
+
+
+--
+-- Name: idx_agent_category; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_category ON agent USING btree (category);
+
+
+--
+-- Name: idx_agent_datasource_agent_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_datasource_agent_id ON agent_datasource USING btree (agent_id);
+
+
+--
+-- Name: idx_agent_datasource_datasource_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_datasource_datasource_id ON agent_datasource USING btree (datasource_id);
+
+
+--
+-- Name: idx_agent_datasource_is_active; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_datasource_is_active ON agent_datasource USING btree (is_active);
+
+
+--
+-- Name: idx_agent_knowledge_agent_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_knowledge_agent_id ON agent_knowledge USING btree (agent_id);
+
+
+--
+-- Name: idx_agent_knowledge_category; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_knowledge_category ON agent_knowledge USING btree (category);
+
+
+--
+-- Name: idx_agent_knowledge_embedding_status; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_knowledge_embedding_status ON agent_knowledge USING btree (embedding_status);
+
+
+--
+-- Name: idx_agent_knowledge_status; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_knowledge_status ON agent_knowledge USING btree (status);
+
+
+--
+-- Name: idx_agent_knowledge_title; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_knowledge_title ON agent_knowledge USING btree (title);
+
+
+--
+-- Name: idx_agent_knowledge_type; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_knowledge_type ON agent_knowledge USING btree (type);
+
+
+--
+-- Name: idx_agent_name; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_name ON agent USING btree (name);
+
+
+--
+-- Name: idx_agent_preset_question_agent_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_preset_question_agent_id ON agent_preset_question USING btree (agent_id);
+
+
+--
+-- Name: idx_agent_preset_question_is_active; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_preset_question_is_active ON agent_preset_question USING btree (is_active);
+
+
+--
+-- Name: idx_agent_preset_question_sort_order; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_preset_question_sort_order ON agent_preset_question USING btree (sort_order);
+
+
+--
+-- Name: idx_agent_status; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_agent_status ON agent USING btree (status);
+
+
+--
+-- Name: idx_business_knowledge_agent_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_business_knowledge_agent_id ON business_knowledge USING btree (agent_id);
+
+
+--
+-- Name: idx_business_knowledge_data_set_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_business_knowledge_data_set_id ON business_knowledge USING btree (data_set_id);
+
+
+--
+-- Name: idx_business_knowledge_is_recall; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_business_knowledge_is_recall ON business_knowledge USING btree (is_recall);
+
+
+--
+-- Name: idx_business_knowledge_term; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_business_knowledge_term ON business_knowledge USING btree (business_term);
+
+
+--
+-- Name: idx_datasource_creator_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_datasource_creator_id ON datasource USING btree (creator_id);
+
+
+--
+-- Name: idx_datasource_name; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_datasource_name ON datasource USING btree (name);
+
+
+--
+-- Name: idx_datasource_status; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_datasource_status ON datasource USING btree (status);
+
+
+--
+-- Name: idx_datasource_type; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_datasource_type ON datasource USING btree (type);
+
+
+--
+-- Name: idx_semantic_model_agent_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_semantic_model_agent_id ON semantic_model USING btree (agent_id);
+
+
+--
+-- Name: idx_semantic_model_field_name; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_semantic_model_field_name ON semantic_model USING btree (field_name);
+
+
+--
+-- Name: idx_semantic_model_is_recall; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_semantic_model_is_recall ON semantic_model USING btree (is_recall);
+
+
+--
+-- Name: idx_semantic_model_status; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX idx_semantic_model_status ON semantic_model USING btree (status);
+
+--
+-- Name: uk_agent_datasource; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX uk_agent_datasource ON agent_datasource USING btree (agent_id, datasource_id);
+
+
+--
+-- PostgreSQL database dump complete
+--

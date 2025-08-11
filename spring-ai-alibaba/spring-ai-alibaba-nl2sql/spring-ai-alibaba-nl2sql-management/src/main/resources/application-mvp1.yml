@@ -103,6 +103,9 @@ spring:
       nl2sql:
         container:
           enabled: false
+        code-executor:
+          code-pool-executor: ai_simulation  # 使用AI模拟替代Docker
+          enabled: true
 
     # 禁用DashScope
     dashscope:
