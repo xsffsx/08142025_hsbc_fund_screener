@@ -1,0 +1,207 @@
+# MVP1优化配置 - 高性能本地部署
+server:
+  port: 8065
+  tomcat:
+    threads:
+      max: 50  # 优化线程池
+      min-spare: 10
+    connection-timeout: 20000
+    max-connections: 200
+
+spring:
+  # PostgreSQL数据库配置 - Docker Compose部署
+  datasource:
+    url: jdbc:postgresql://localhost:5432/nl2sql?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: org.postgresql.Driver
+    username: nl2sql_user
+    password: nl2sql_pass
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      connection-timeout: 60000
+      validation-timeout: 5000
+      pool-name: Hikari-NL2SQL
+      connection-test-query: SELECT 1
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false  # 生产环境关闭SQL日志
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 20
+        order_inserts: true
+        order_updates: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:sql/schema.sql
+      data-locations: classpath:sql/data.sql
+      continue-on-error: true
+      separator: ;
+      encoding: utf-8
+
+  # proxy_openai AI服务配置 (通过 proxy_openai 访问 LM Studio qwen 模型)
+  ai:
+    mcp:
+      server:
+        name: xiyan-server-mvp1    # MCP服务器名称
+        version: 0.0.1           # 服务器版本号
+    openai:
+      base-url: http://localhost:8089  # 使用 proxy_openai 服务（不包含 /v1）
+      api-key: dummy-key               # proxy_openai 不需要真实 API key
+      model: gpt-4                     # 使用 Azure OpenAI 兼容的模型名
+      chat:
+        options:
+          temperature: 0.1  # 降低随机性，提高一致性
+          top-p: 0.9
+          max-tokens: 1024  # 减少最大token数，避免过长输出
+          timeout: 120000   # 增加超时到120秒，适应30B模型响应时间
+          frequency-penalty: 0.5  # 频率惩罚，减少重复
+          presence-penalty: 0.3   # 存在惩罚，鼓励多样性
+          stop: ["。因此，表中", "但`BONDREGION", "，`BONDREGION"]  # 停止序列，防止重复
+      embedding:
+        enabled: true
+        base-url: http://localhost:8089  # Embedding 也通过 proxy_openai（不包含 /v1）
+        api-key: dummy-key               # proxy_openai 不需要真实 API key
+        model: text-embedding-nomic-embed-text-v1.5
+
+    # 启用向量存储
+    vectorstore:
+      analytic:
+        enabled: false
+      simple:
+        enabled: true
+        skip-initialization: false
+
+    alibaba:
+      nl2sql:
+        container:
+          enabled: false
+
+    # 禁用DashScope
+    dashscope:
+      enabled: false
+
+  # Caffeine缓存配置
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=1000,expireAfterWrite=30m,recordStats
+    cache-names:
+      - queryResults
+      - schemaCache
+      - vectorCache
+
+# Qdrant向量库配置
+qdrant:
+  host: localhost
+  port: 6333
+  collection: nl2sql_mvp1
+  vector-size: 768  # text-embedding-nomic-embed-text-v1.5向量维度
+  distance: cosine
+  timeout: 30000
+
+# 业务数据库配置 (使用Oracle XEPDB1)
+chatbi:
+  dbconfig:
+    url: jdbc:oracle:thin:@localhost:1521/xepdb1
+    driver-class-name: oracle.jdbc.OracleDriver
+    connection-type: oracle
+    dialect-type: oracle
+    username: nl2sql_user
+    password: nl2sql_pass
+    schema: NL2SQL_USER
+
+    # 指定实际的表名 - Oracle XEPDB1中的业务表 (共20个表)
+    tables: ACTV_DATA,BATCH_JOB,BATCH_JOB_INSTANCE,B_UT_ALLOC,B_UT_ASET_ALLOC,B_UT_PROD,B_UT_PROD_CAT_RISK_MEAS,B_UT_PROD_CHANL_ATTR,B_UT_PROD_OFER_CHANL,B_UT_PROD_SW,B_UT_PROD_SW_GROUP,B_UT_REFDAT_DESC,CACHE_MAP,CUSTOMER,OUTPUT_LOG,O_UT_PROD_CAT,O_UT_PROD_CAT_PERFM_RTRN,O_UT_PROD_CAT_TTL_RTRN_INDEX,PROD_CLOSE_MKT_PRICE,STG_FUNDS_CSV
+
+# 性能监控配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+      percentiles:
+        http.server.requests: 0.5,0.9,0.95,0.99
+
+# 日志配置
+logging:
+  level:
+    root: TRACE
+    com.alibaba.cloud.ai: TRACE
+    org.springframework.ai: TRACE
+    org.hibernate.SQL: TRACE
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.springframework.web: TRACE
+    org.springframework.boot: TRACE
+    org.springframework.jdbc: TRACE
+    org.springframework.transaction: TRACE
+    org.apache.http: TRACE
+    org.springframework.web.client: TRACE
+
+    # 🔴 关闭最占用空间的两个无用日志
+    org.apache.hc.client5.http.wire: OFF                    # Apache HTTP Client Wire 日志 - 包含完整 embedding 向量数据
+    org.apache.tomcat.util.net.NioEndpoint: INFO            # Tomcat NIO 轮询日志 - 每秒产生大量超时检查日志
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+  file:
+    name: /Users/paulo/PycharmProjects/20250809/logs/nl2sql-mvp1.log
+    max-size: 100MB
+    max-history: 7
+  logback:
+    rollingpolicy:
+      file-name-pattern: /Users/paulo/PycharmProjects/20250809/logs/nl2sql-mvp1.log.%d{yyyy-MM-dd}.%i.log
+      max-file-size: 100MB
+      max-history: 7
+      total-size-cap: 1GB
+
+# NL2SQL语义增强配置
+nl2sql:
+  agent:
+    id: 2
+  semantic-enhancement:
+    enabled: true
+    cache-ttl: 3600  # 缓存1小时
+    max-synonyms: 10  # 最大同义词数量
+    debug-mode: true  # 开启调试模式
+
+# 应用特定配置
+app:
+  mvp1:
+    # 性能优化配置
+    performance:
+      enable-query-cache: true
+      enable-schema-cache: true
+      enable-vector-cache: true
+      max-concurrent-queries: 10
+      query-timeout: 30000
+
+    # 功能开关
+    features:
+      enable-complex-queries: true
+      enable-chart-generation: false  # MVP1暂时禁用图表生成
+      enable-export: false  # MVP1暂时禁用导出功能
+      enable-batch-processing: false  # MVP1暂时禁用批处理
+
+    # 模型配置
+    models:
+      chat-model: gpt-4  # 通过 proxy_openai 使用 qwen/qwen3-30b-a3b-2507
+      embedding-model: text-embedding-nomic-embed-text-v1.5
+      fallback-enabled: false  # MVP1不使用备用模型
