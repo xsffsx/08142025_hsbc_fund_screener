@@ -37,6 +37,10 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 public class Application {
 
 	public static void main(String[] args) {
+		// 设置 Netty 系统属性，避免 JDK 17+ 模块系统反射限制导致的启动失败
+		// 这解决了 UnsupportedOperationException: Reflective setAccessible(true) disabled 错误
+		System.setProperty("io.netty.tryReflectionSetAccessible", "false");
+
 		SpringApplication.run(Application.class, args);
 	}
 
