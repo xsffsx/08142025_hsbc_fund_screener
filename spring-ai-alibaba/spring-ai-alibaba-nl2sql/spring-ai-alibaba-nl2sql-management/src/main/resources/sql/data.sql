@@ -5,16 +5,6 @@
 -- Dumped from database version 13.21 (Debian 13.21-1.pgdg120+1)
 -- Dumped by pg_dump version 13.21 (Debian 13.21-1.pgdg120+1)
 
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
 
 --
 -- Data for Name: agent; Type: TABLE DATA; Schema: public; Owner: -
@@ -76,24 +66,7 @@ INSERT INTO datasource VALUES (202, 'NL2SQL-Oracle(Business)', 'oracle', 'localh
 
 
 --
--- Data for Name: document_embeddings; Type: TABLE DATA; Schema: public; Owner: -
 --
-
-INSERT INTO document_embeddings VALUES (1, 'SQL基础教程', '这是一个关于SQL基础语法的教程文档', NULL, '{"category": "tutorial", "language": "zh", "difficulty": "beginner"}', '2025-08-09 02:57:15.50182');
-INSERT INTO document_embeddings VALUES (2, '数据库设计指南', '介绍数据库设计的最佳实践和规范', NULL, '{"category": "guide", "language": "zh", "difficulty": "intermediate"}', '2025-08-09 02:57:15.50182');
-
-
---
--- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: -
---
-
-INSERT INTO employees VALUES (1, 'John Doe', 'john.doe@company.com', 'Engineering', 75000.00, '2025-08-09', NULL, '2025-08-09 02:57:24.049372');
-INSERT INTO employees VALUES (2, 'Jane Smith', 'jane.smith@company.com', 'Data Science', 80000.00, '2025-08-09', NULL, '2025-08-09 02:57:24.049372');
-INSERT INTO employees VALUES (3, 'Bob Johnson', 'bob.johnson@company.com', 'Product', 70000.00, '2025-08-09', NULL, '2025-08-09 02:57:24.049372');
-
-
---
--- Data for Name: query_stats; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 
@@ -168,27 +141,6 @@ SELECT pg_catalog.setval('business_knowledge_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('datasource_id_seq', 1, false);
-
-
---
--- Name: document_embeddings_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('document_embeddings_id_seq', 2, true);
-
-
---
--- Name: employees_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('employees_id_seq', 3, true);
-
-
---
--- Name: query_stats_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('query_stats_id_seq', 1, false);
 
 
 --

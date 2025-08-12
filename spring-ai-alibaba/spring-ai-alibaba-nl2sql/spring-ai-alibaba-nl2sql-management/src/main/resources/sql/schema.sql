@@ -5,27 +5,9 @@
 -- Dumped from database version 13.21 (Debian 13.21-1.pgdg120+1)
 -- Dumped by pg_dump version 13.21 (Debian 13.21-1.pgdg120+1)
 
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
 --
 -- Name: hstore; Type: EXTENSION; Schema: -; Owner: -
 --
-
-CREATE EXTENSION IF NOT EXISTS hstore WITH SCHEMA public;
-
-
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
 
 --
 -- Name: agent; Type: TABLE; Schema: public; Owner: -
@@ -115,7 +97,7 @@ CREATE TABLE agent_knowledge (
     file_path character varying(500),
     file_size bigint,
     file_type character varying(100),
-    embedding_status character varying(50) DEFAULT 'pending'::character varying,
+
     creator_id bigint,
     create_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
     update_time timestamp without time zone DEFAULT CURRENT_TIMESTAMP
@@ -333,26 +315,7 @@ ALTER TABLE ONLY datasource ALTER COLUMN id SET DEFAULT nextval('datasource_id_s
 
 
 --
--- Name: document_embeddings id; Type: DEFAULT; Schema: public; Owner: -
 --
-
-ALTER TABLE ONLY document_embeddings ALTER COLUMN id SET DEFAULT nextval('document_embeddings_id_seq'::regclass);
-
-
---
--- Name: employees id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY employees ALTER COLUMN id SET DEFAULT nextval('employees_id_seq'::regclass);
-
-
---
--- Name: query_stats id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY query_stats ALTER COLUMN id SET DEFAULT nextval('query_stats_id_seq'::regclass);
-
-
 --
 -- Name: semantic_model id; Type: DEFAULT; Schema: public; Owner: -
 --
@@ -409,37 +372,7 @@ ALTER TABLE ONLY datasource
 
 
 --
--- Name: document_embeddings document_embeddings_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
-
-ALTER TABLE ONLY document_embeddings
-    ADD CONSTRAINT document_embeddings_pkey PRIMARY KEY (id);
-
-
---
--- Name: employees employees_email_key; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY employees
-    ADD CONSTRAINT employees_email_key UNIQUE (email);
-
-
---
--- Name: employees employees_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY employees
-    ADD CONSTRAINT employees_pkey PRIMARY KEY (id);
-
-
---
--- Name: query_stats query_stats_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY query_stats
-    ADD CONSTRAINT query_stats_pkey PRIMARY KEY (id);
-
-
 --
 -- Name: semantic_model semantic_model_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
@@ -495,13 +428,6 @@ CREATE INDEX idx_agent_knowledge_agent_id ON agent_knowledge USING btree (agent_
 --
 
 CREATE INDEX idx_agent_knowledge_category ON agent_knowledge USING btree (category);
-
-
---
--- Name: idx_agent_knowledge_embedding_status; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX idx_agent_knowledge_embedding_status ON agent_knowledge USING btree (embedding_status);
 
 
 --
