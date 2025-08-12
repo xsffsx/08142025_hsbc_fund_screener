@@ -137,6 +137,8 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 				m.put("sampleTextLen", text.length());
 			}
 
+			m.put("connectionMode", connectionModeFromBaseUrl(openAiBaseUrl));
+
 			details.put("llmService", m);
 			return up;
 		}
@@ -186,6 +188,8 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 			List<Float> preview = vectorPreview(vec, 5);
 			m.put("responseVectorPreview", preview);
 
+			m.put("connectionMode", connectionModeFromBaseUrl(openAiBaseUrl));
+
 			details.put("embeddingService", m);
 			return up;
 		}
@@ -234,6 +238,10 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 			out.add(vec[i]);
 		}
 		return out;
+	}
+
+	private String connectionModeFromBaseUrl(String baseUrl) {
+		return "AZURE_AAD_BEARER";
 	}
 
 }

@@ -1,23 +1,13 @@
 /*
  * Copyright 2024-2025 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
  */
 package com.alibaba.cloud.ai.util;
 
 import com.alibaba.cloud.ai.dashscope.api.DashScopeApi;
 import com.alibaba.cloud.ai.dashscope.embedding.DashScopeEmbeddingModel;
 import com.alibaba.cloud.ai.dashscope.embedding.DashScopeEmbeddingOptions;
+import com.alibaba.cloud.ai.util.azure.AzureAdBearerTokenApiKey;
+import com.alibaba.cloud.ai.util.azure.AzureAdTokenClient;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.document.MetadataMode;
@@ -33,37 +23,13 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
+
 import org.springframework.util.StringUtils;
 
-/**
- * AI 模型配置类
- *
- * <p>
- * 本配置类提供了 ChatModel 和 EmbeddingModel 的配置。
- *
- * <p>
- * EmbeddingModel 选择策略：
- * <ul>
- * <li>优先使用 DashScope EmbeddingModel（当配置了 spring.ai.dashscope.api-key）</li>
- * <li>备选使用 OpenAI EmbeddingModel（当未配置 DashScope API Key 时）</li>
- * </ul>
- *
- * <p>
- * 为了避免与 Spring Boot 自动配置冲突，建议在 application.yml 中设置： <pre>
- * spring:
- *   ai:
- *     openai:
- *       embedding:
- *         enabled: false  # 禁用 OpenAI EmbeddingModel 自动配置
- * </pre>
- *
- * @author Spring AI Alibaba Team
- */
 @Configuration
 public class AiConfiguration {
 
-	@Value("${spring.ai.openai.api-key}")
+	@Value("${spring.ai.openai.api-key:}")
 	private String openAiApiKey;
 
 	@Value("${spring.ai.openai.base-url:}")
@@ -87,9 +53,44 @@ public class AiConfiguration {
 	@Value("${spring.ai.openai.completions-path:}")
 	private String openAiCompletionsPath;
 
+	// Azure AAD optional (disabled by default for proxy_openai mode)
+	@Value("${spring.ai.azure.enabled:false}")
+	private boolean azureEnabled;
+
+	@Value("${spring.ai.azure.tenant-id:}")
+	private String azureTenantId;
+
+	@Value("${spring.ai.azure.client-id:}")
+	private String azureClientId;
+
+	@Value("${spring.ai.azure.client-secret:}")
+	private String azureClientSecret;
+
+	@Value("${spring.ai.azure.scope:https://cognitiveservices.azure.com/.default}")
+	private String azureScope;
+
+	@Value("${spring.ai.azure.authority-host:https://login.microsoftonline.com}")
+	private String azureAuthorityHost;
+
+	@Value("${spring.ai.azure.token-proxy.http:${HTTP_PROXY:}}")
+	private String azureTokenHttpProxy;
+
+	@Value("${spring.ai.azure.token-proxy.https:${HTTPS_PROXY:}}")
+	private String azureTokenHttpsProxy;
+
 	@Bean
 	public ChatModel chatModel() {
-		OpenAiApi openAiApi = OpenAiApi.builder().apiKey(openAiApiKey).baseUrl(baseUrl).build();
+		OpenAiApi openAiApi;
+		if (azureEnabled && StringUtils.hasText(azureTenantId) && StringUtils.hasText(azureClientId)
+				&& StringUtils.hasText(azureClientSecret)) {
+			AzureAdTokenClient tokenClient = new AzureAdTokenClient(azureAuthorityHost, azureTenantId, azureClientId,
+					azureClientSecret, azureScope, azureTokenHttpProxy, azureTokenHttpsProxy);
+			AzureAdBearerTokenApiKey apiKey = new AzureAdBearerTokenApiKey(tokenClient);
+			openAiApi = OpenAiApi.builder().apiKey(apiKey).baseUrl(baseUrl).build();
+		}
+		else {
+			openAiApi = OpenAiApi.builder().apiKey(openAiApiKey).baseUrl(baseUrl).build();
+		}
 		OpenAiChatOptions openAiChatOptions = OpenAiChatOptions.builder().model(model).temperature(0.7).build();
 		return OpenAiChatModel.builder().openAiApi(openAiApi).defaultOptions(openAiChatOptions).build();
 	}
@@ -99,15 +100,8 @@ public class AiConfiguration {
 		return ChatClient.create(chatModel);
 	}
 
-	/**
-	 * DashScope EmbeddingModel 配置
-	 * <p>
-	 * 当配置了 spring.ai.dashscope.api-key 时启用，优先级最高
-	 */
-	@Bean("embeddingModel")
-	@Primary
+	@Bean("dashScopeEmbeddingModel")
 	@ConditionalOnProperty(name = "spring.ai.dashscope.api-key")
-	@ConditionalOnMissingBean(EmbeddingModel.class)
 	public EmbeddingModel dashScopeEmbeddingModel() {
 		DashScopeApi dashScopeApi = DashScopeApi.builder().apiKey(dashScopeApiKey).build();
 		DashScopeEmbeddingOptions options = DashScopeEmbeddingOptions.builder()
@@ -116,23 +110,25 @@ public class AiConfiguration {
 		return new DashScopeEmbeddingModel(dashScopeApi, MetadataMode.EMBED, options);
 	}
 
-	/**
-	 * 自定义 OpenAI EmbeddingModel 配置
-	 * <p>
-	 * 当没有配置 DashScope API Key 时使用
-	 * <p>
-	 * 使用 @ConditionalOnMissingBean 避免与自动配置冲突
-	 */
 	@Bean("embeddingModel")
-	@Primary
-	@ConditionalOnProperty(name = "spring.ai.dashscope.api-key", havingValue = "", matchIfMissing = true)
+	@ConditionalOnProperty(name = "spring.ai.openai.embedding.enabled", havingValue = "true", matchIfMissing = true)
 	@ConditionalOnMissingBean(EmbeddingModel.class)
 	public EmbeddingModel customOpenAiEmbeddingModel() {
-		if (!StringUtils.hasText(openAiApiKey)) {
-			throw new IllegalStateException(
-					"Either spring.ai.dashscope.api-key or spring.ai.openai.api-key must be configured");
+		OpenAiApi.Builder builder;
+		if (azureEnabled && StringUtils.hasText(azureTenantId) && StringUtils.hasText(azureClientId)
+				&& StringUtils.hasText(azureClientSecret)) {
+			AzureAdTokenClient tokenClient = new AzureAdTokenClient(azureAuthorityHost, azureTenantId, azureClientId,
+					azureClientSecret, azureScope, azureTokenHttpProxy, azureTokenHttpsProxy);
+			AzureAdBearerTokenApiKey apiKey = new AzureAdBearerTokenApiKey(tokenClient);
+			builder = OpenAiApi.builder().apiKey(apiKey).baseUrl(baseUrl);
 		}
-		OpenAiApi.Builder builder = OpenAiApi.builder().apiKey(openAiApiKey).baseUrl(baseUrl);
+		else {
+			if (!StringUtils.hasText(openAiApiKey)) {
+				throw new IllegalStateException(
+						"Either spring.ai.azure.* or spring.ai.openai.api-key must be configured");
+			}
+			builder = OpenAiApi.builder().apiKey(openAiApiKey).baseUrl(baseUrl);
+		}
 		if (StringUtils.hasText(openAiEmbeddingsPath)) {
 			builder.embeddingsPath(openAiEmbeddingsPath);
 		}

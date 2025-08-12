@@ -73,9 +73,9 @@ spring:
         name: xiyan-server-mvp1    # MCP服务器名称
         version: 0.0.1           # 服务器版本号
     openai:
-      base-url: http://localhost:8089  # 使用 proxy_openai 服务（不包含 /v1）
-      api-key: dummy-key               # proxy_openai 不需要真实 API key
-      model: gpt-4                     # 使用 Azure OpenAI 兼容的模型名
+      base-url: http://localhost:8089 
+      # api-key: ""                      # 使用动态 Azure AAD token，不使用静态 key
+      model: gpt-4                     # Azure OpenAI 模型名
       chat:
         options:
           temperature: 0.1  # 降低随机性，提高一致性
@@ -86,10 +86,24 @@ spring:
           presence-penalty: 0.3   # 存在惩罚，鼓励多样性
           stop: ["。因此，表中", "但`BONDREGION", "，`BONDREGION"]  # 停止序列，防止重复
       embedding:
-        enabled: true
-        base-url: http://localhost:8089  # Embedding 也通过 proxy_openai（不包含 /v1）
-        api-key: dummy-key               # proxy_openai 不需要真实 API key
-        model: text-embedding-nomic-embed-text-v1.5
+        enabled: true                    # 启用 Azure OpenAI embedding
+        base-url: https://your-azure-openai.openai.azure.com  # Azure OpenAI embedding 端点
+        api-key: ""                      # 使用动态 Azure AAD token
+        model: text-embedding-ada-002    # Azure OpenAI embedding 模型
+    azure:
+      tenant-id: ${AZURE_TENANT_ID:}
+      client-id: ${AZURE_CLIENT_ID:}
+      client-secret: ${AZURE_CLIENT_SECRET:}
+      scope: https://cognitiveservices.azure.com/.default
+      authority-host: https://login.microsoftonline.com
+      token-proxy:
+        http: ${HTTP_PROXY:}
+        https: ${HTTPS_PROXY:}
+      enabled: true   # 启用 Azure AAD 动态 token 模式
+    dashscope:
+      # api-key:                         # 未配置则不启用 DashScope embedding
+      embedding:
+        model: text-embedding-v2         # DashScope embedding 模型（如果启用）
 
     # 启用向量存储
     vectorstore:
@@ -107,9 +121,7 @@ spring:
           code-pool-executor: ai_simulation  # 使用AI模拟替代Docker
           enabled: true
 
-    # 禁用DashScope
-    dashscope:
-      enabled: false
+
 
   # Caffeine缓存配置
   cache:
