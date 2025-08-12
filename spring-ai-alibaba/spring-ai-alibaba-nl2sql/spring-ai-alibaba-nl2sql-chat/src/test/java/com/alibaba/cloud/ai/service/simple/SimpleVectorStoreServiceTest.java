@@ -63,7 +63,19 @@ class SimpleVectorStoreServiceTest {
 	private Accessor dbAccessor;
 
 	@Mock
+	private Accessor postgreAccessor;
+
+	@Mock
+	private Accessor mysqlAccessor;
+
+	@Mock
+	private Accessor oracleAccessor;
+
+	@Mock
 	private DbConfig dbConfig;
+
+	@Mock
+	private AgentVectorStoreManager agentVectorStoreManager;
 
 	private Gson gson;
 
@@ -73,7 +85,8 @@ class SimpleVectorStoreServiceTest {
 	void setUp() {
 		gson = new Gson();
 		// 创建被测试的服务实例
-		vectorStoreService = new SimpleVectorStoreService(embeddingModel, gson, dbAccessor, dbConfig, null);
+		vectorStoreService = new SimpleVectorStoreService(embeddingModel, gson, dbAccessor, postgreAccessor,
+				mysqlAccessor, oracleAccessor, dbConfig, agentVectorStoreManager);
 	}
 
 	@Test

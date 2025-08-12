@@ -23,6 +23,7 @@ import com.alibaba.cloud.ai.dto.schema.ColumnDTO;
 import com.alibaba.cloud.ai.dto.schema.SchemaDTO;
 import com.alibaba.cloud.ai.dto.schema.TableDTO;
 import com.alibaba.cloud.ai.service.LlmService;
+import com.alibaba.cloud.ai.util.HybridSqlConverter;
 import com.google.gson.Gson;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -83,6 +84,9 @@ class BaseNl2SqlServiceTest {
 	@Mock
 	private ChatResponse chatResponse;
 
+	@Mock
+	private HybridSqlConverter hybridSqlConverter;
+
 	private BaseNl2SqlService baseNl2SqlService;
 
 	private Gson gson;
@@ -91,7 +95,7 @@ class BaseNl2SqlServiceTest {
 	void setUp() {
 		log.info("Setting up BaseNl2SqlServiceTest");
 		gson = new Gson();
-		baseNl2SqlService = new BaseNl2SqlService(vectorStoreService, schemaService, aiService, dbAccessor, dbConfig);
+		baseNl2SqlService = new BaseNl2SqlService(vectorStoreService, schemaService, aiService, dbAccessor, dbConfig, hybridSqlConverter);
 	}
 
 	@Test
