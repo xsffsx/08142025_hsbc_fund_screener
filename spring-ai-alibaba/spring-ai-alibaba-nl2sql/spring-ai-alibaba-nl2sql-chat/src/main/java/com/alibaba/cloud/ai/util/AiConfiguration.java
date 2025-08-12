@@ -10,6 +10,9 @@ import com.alibaba.cloud.ai.util.azure.AzureAdBearerTokenApiKey;
 import com.alibaba.cloud.ai.util.azure.AzureAdTokenClient;
 import com.azure.ai.openai.OpenAIClientBuilder;
 import com.azure.identity.ClientSecretCredentialBuilder;
+
+import com.azure.core.http.ProxyOptions;
+import com.azure.core.http.netty.NettyAsyncHttpClientBuilder;
 import org.springframework.ai.azure.openai.AzureOpenAiChatModel;
 import org.springframework.ai.azure.openai.AzureOpenAiChatOptions;
 import org.springframework.ai.chat.client.ChatClient;
@@ -29,6 +32,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import org.springframework.util.StringUtils;
+import java.net.InetSocketAddress;
+import java.net.URI;
 
 @Configuration
 public class AiConfiguration {
@@ -157,12 +162,28 @@ public class AiConfiguration {
 		 * Exposed for health checks to validate actual connectivity.
 		 */
 		public ChatModel buildAzureOpenAiChatModel() {
-			var credential = new ClientSecretCredentialBuilder()
+			// 仅对 AAD 令牌获取(login.microsoftonline.com)配置代理；对 Azure OpenAI 请求不走代理
+			ClientSecretCredentialBuilder credentialBuilder = new ClientSecretCredentialBuilder()
 					.tenantId(azureTenantId)
 					.clientId(azureClientId)
 					.clientSecret(azureClientSecret)
-					.authorityHost(azureAuthorityHost)
-					.build();
+					.authorityHost(azureAuthorityHost);
+			// 若设置了 token 代理，仅用于 AAD 授权
+			if (StringUtils.hasText(azureTokenHttpProxy) || StringUtils.hasText(azureTokenHttpsProxy)) {
+				try {
+					String proxy = StringUtils.hasText(azureTokenHttpsProxy) ? azureTokenHttpsProxy : azureTokenHttpProxy;
+					// 使用 Netty HttpClient 并设置代理
+					com.azure.core.http.HttpClient aadHttpClient = new NettyAsyncHttpClientBuilder()
+							.proxy(new ProxyOptions(ProxyOptions.Type.HTTP,
+									new InetSocketAddress(URI.create(proxy).getHost(), URI.create(proxy).getPort() > 0 ? URI.create(proxy).getPort() : (proxy.startsWith("https") ? 443 : 80))))
+							.build();
+					credentialBuilder.httpClient(aadHttpClient);
+				}
+				catch (Exception ignore) {
+				}
+			}
+			var credential = credentialBuilder.build();
+			// OpenAIClientBuilder 不设置代理
 			var clientBuilder = new OpenAIClientBuilder()
 					.credential(credential)
 					.endpoint(azureEndpoint);
