@@ -376,6 +376,7 @@
             </plugins>
         </pluginManagement>
         <plugins>
+            <!-- 注释掉格式化插件，避免在构建时自动修改文件格式
             <plugin>
                 <groupId>io.spring.javaformat</groupId>
                 <artifactId>spring-javaformat-maven-plugin</artifactId>
@@ -390,6 +391,8 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
+            <!-- 注释掉 Spotless 插件，避免在构建时自动修改文件格式
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
@@ -409,6 +412,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
