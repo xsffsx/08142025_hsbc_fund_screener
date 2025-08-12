@@ -43,9 +43,11 @@ public class AgentVectorStoreManager {
 	private final EmbeddingModel embeddingModel;
 
 	public AgentVectorStoreManager(EmbeddingModel embeddingModel) {
+		long startTime = System.currentTimeMillis();
 		this.embeddingModel = embeddingModel;
-		log.info("AgentVectorStoreManager initialized with EmbeddingModel: {}",
-				embeddingModel.getClass().getSimpleName());
+		log.info("🚀 AgentVectorStoreManager initialized with EmbeddingModel: {} ({}ms)",
+				embeddingModel.getClass().getSimpleName(), System.currentTimeMillis() - startTime);
+		log.debug("📋 Agent stores map initialized: {}", agentStores.getClass().getSimpleName());
 	}
 
 	/**
@@ -54,14 +56,25 @@ public class AgentVectorStoreManager {
 	 * @return 智能体专用的SimpleVectorStore实例
 	 */
 	public SimpleVectorStore getOrCreateVectorStore(String agentId) {
+		long startTime = System.currentTimeMillis();
 		if (agentId == null || agentId.trim().isEmpty()) {
 			throw new IllegalArgumentException("Agent ID cannot be null or empty");
 		}
 
-		return agentStores.computeIfAbsent(agentId, id -> {
-			log.info("Creating new vector store for agent: {}", id);
-			return SimpleVectorStore.builder(embeddingModel).build();
+		log.debug("🔍 Getting or creating vector store for agent: {}", agentId);
+		SimpleVectorStore store = agentStores.computeIfAbsent(agentId, id -> {
+			log.info("🆕 Creating new vector store for agent: {}", id);
+			SimpleVectorStore newStore = SimpleVectorStore.builder(embeddingModel).build();
+			log.debug("✅ Vector store created for agent: {} ({}ms)", id, System.currentTimeMillis() - startTime);
+			return newStore;
 		});
+
+		if (agentStores.containsKey(agentId)) {
+			log.debug("♻️ Using existing vector store for agent: {} ({}ms)", agentId,
+					System.currentTimeMillis() - startTime);
+		}
+
+		return store;
 	}
 
 	/**
@@ -70,14 +83,18 @@ public class AgentVectorStoreManager {
 	 * @param documents 要添加的文档列表
 	 */
 	public void addDocuments(String agentId, List<Document> documents) {
+		long startTime = System.currentTimeMillis();
 		if (documents == null || documents.isEmpty()) {
-			log.warn("No documents to add for agent: {}", agentId);
+			log.warn("⚠️ No documents to add for agent: {}", agentId);
 			return;
 		}
 
+		log.debug("📄 Adding {} documents to vector store for agent: {}", documents.size(), agentId);
 		SimpleVectorStore store = getOrCreateVectorStore(agentId);
 		store.add(documents);
-		log.info("Added {} documents to vector store for agent: {}", documents.size(), agentId);
+		long duration = System.currentTimeMillis() - startTime;
+		log.info("✅ Added {} documents to vector store for agent: {} ({}ms)", documents.size(), agentId, duration);
+		log.debug("📊 Agent {} now has approximately {} documents", agentId, getDocumentCount(agentId));
 	}
 
 	/**
@@ -88,15 +105,21 @@ public class AgentVectorStoreManager {
 	 * @return 相似文档列表
 	 */
 	public List<Document> similaritySearch(String agentId, String query, int topK) {
+		long startTime = System.currentTimeMillis();
+		log.debug("🔍 Searching for agent: {}, query: '{}', topK: {}", agentId, query, topK);
+
 		SimpleVectorStore store = agentStores.get(agentId);
 		if (store == null) {
-			log.warn("No vector store found for agent: {}", agentId);
+			log.warn("⚠️ No vector store found for agent: {}", agentId);
+			log.debug("📋 Available agents: {}", agentStores.keySet());
 			return Collections.emptyList();
 		}
 
 		List<Document> results = store.similaritySearch(
 				org.springframework.ai.vectorstore.SearchRequest.builder().query(query).topK(topK).build());
-		log.debug("Found {} similar documents for agent: {} with query: {}", results.size(), agentId, query);
+		long duration = System.currentTimeMillis() - startTime;
+		log.info("🎯 Found {} similar documents for agent: {} ({}ms)", results.size(), agentId, duration);
+		log.debug("📝 Query: '{}', Results: {}", query, results.size());
 		return results;
 	}
 
@@ -109,9 +132,14 @@ public class AgentVectorStoreManager {
 	 * @return 相似文档列表
 	 */
 	public List<Document> similaritySearchWithFilter(String agentId, String query, int topK, String vectorType) {
+		long startTime = System.currentTimeMillis();
+		log.debug("🔍 Filtered search for agent: {}, query: '{}', topK: {}, vectorType: {}", agentId, query, topK,
+				vectorType);
+
 		SimpleVectorStore store = agentStores.get(agentId);
 		if (store == null) {
-			log.warn("No vector store found for agent: {}", agentId);
+			log.warn("⚠️ No vector store found for agent: {}", agentId);
+			log.debug("📋 Available agents: {}", agentStores.keySet());
 			return Collections.emptyList();
 		}
 
@@ -124,8 +152,10 @@ public class AgentVectorStoreManager {
 			.filterExpression(expression)
 			.build());
 
-		log.debug("Found {} filtered documents for agent: {} with query: {} and vectorType: {}", results.size(),
-				agentId, query, vectorType);
+		long duration = System.currentTimeMillis() - startTime;
+		log.info("🎯 Found {} filtered documents for agent: {} with vectorType: {} ({}ms)", results.size(), agentId,
+				vectorType, duration);
+		log.debug("📝 Query: '{}', VectorType: {}, Results: {}", query, vectorType, results.size());
 		return results;
 	}
 

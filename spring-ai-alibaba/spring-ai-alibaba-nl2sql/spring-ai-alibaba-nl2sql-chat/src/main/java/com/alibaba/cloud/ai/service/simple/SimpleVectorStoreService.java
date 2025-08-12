@@ -76,8 +76,12 @@ public class SimpleVectorStoreService extends BaseVectorStoreService {
 			@Qualifier("dbAccessor") Accessor dbAccessor, @Qualifier("postgreAccessor") Accessor postgreAccessor,
 			@Qualifier("mysqlAccessor") Accessor mysqlAccessor, @Qualifier("oracleAccessor") Accessor oracleAccessor,
 			DbConfig dbConfig, AgentVectorStoreManager agentVectorStoreManager) {
-		log.info("Initializing SimpleVectorStoreService with EmbeddingModel: {}",
+		long startTime = System.currentTimeMillis();
+		log.info("🚀 Initializing SimpleVectorStoreService with EmbeddingModel: {}",
 				embeddingModel.getClass().getSimpleName());
+		log.debug("📋 DbConfig: url={}, schema={}, dialectType={}", maskPassword(dbConfig.getUrl()),
+				dbConfig.getSchema(), dbConfig.getDialectType());
+
 		this.gson = gson;
 		this.dbAccessor = dbAccessor;
 		this.postgreAccessor = postgreAccessor;
@@ -87,12 +91,25 @@ public class SimpleVectorStoreService extends BaseVectorStoreService {
 		this.embeddingModel = embeddingModel;
 		this.agentVectorStoreManager = agentVectorStoreManager;
 		this.vectorStore = SimpleVectorStore.builder(embeddingModel).build(); // 保留原有实现
-		log.info("SimpleVectorStoreService initialized successfully with AgentVectorStoreManager");
+
+		long duration = System.currentTimeMillis() - startTime;
+		log.info("✅ SimpleVectorStoreService initialized successfully in {}ms", duration);
 	}
 
 	@Override
 	protected EmbeddingModel getEmbeddingModel() {
 		return embeddingModel;
+	}
+
+	/**
+	 * 简单的密码脱敏方法
+	 */
+	private String maskPassword(String input) {
+		if (input == null || input.isEmpty()) {
+			return input;
+		}
+		// 脱敏JDBC URL中的密码
+		return input.replaceAll("(password|pwd)=([^;&]+)", "$1=****");
 	}
 
 	/**
@@ -129,8 +146,9 @@ public class SimpleVectorStoreService extends BaseVectorStoreService {
 	 * @throws Exception 如果发生错误
 	 */
 	public Boolean schema(SchemaInitRequest schemaInitRequest) throws Exception {
-		log.info("Starting schema initialization for database: {}, schema: {}, tables: {}",
-				schemaInitRequest.getDbConfig().getUrl(), schemaInitRequest.getDbConfig().getSchema(),
+		long startTime = System.currentTimeMillis();
+		log.info("🚀 Starting schema initialization for database: {}, schema: {}, tables: {}",
+				maskPassword(schemaInitRequest.getDbConfig().getUrl()), schemaInitRequest.getDbConfig().getSchema(),
 				schemaInitRequest.getTables());
 
 		DbConfig dbConfig = schemaInitRequest.getDbConfig();
@@ -138,33 +156,51 @@ public class SimpleVectorStoreService extends BaseVectorStoreService {
 			.setSchema(dbConfig.getSchema())
 			.setTables(schemaInitRequest.getTables());
 
-		// 清理旧的schema数据
+		// 步骤1: 清理旧的schema数据
+		log.info("📋 Step 1/5: Cleaning old schema data...");
+		long stepStart = System.currentTimeMillis();
 		DeleteRequest deleteRequest = new DeleteRequest();
 		deleteRequest.setVectorType("column");
 		deleteDocuments(deleteRequest);
 		deleteRequest.setVectorType("table");
 		deleteDocuments(deleteRequest);
+		log.debug("✅ Step 1 completed in {}ms", System.currentTimeMillis() - stepStart);
 
-		// 根据数据库配置动态选择正确的访问器
+		// 步骤2: 选择数据库访问器
+		log.info("📋 Step 2/5: Selecting database accessor...");
+		stepStart = System.currentTimeMillis();
 		Accessor selectedAccessor = selectAccessorByDbConfig(dbConfig);
-		log.info("Selected accessor: {} for database type: {}", selectedAccessor.getClass().getSimpleName(),
-				dbConfig.getDialectType());
+		log.info("✅ Selected accessor: {} for database type: {} ({}ms)", selectedAccessor.getClass().getSimpleName(),
+				dbConfig.getDialectType(), System.currentTimeMillis() - stepStart);
 
-		log.debug("Fetching foreign keys from database");
+		// 步骤3: 获取外键信息
+		log.info("📋 Step 3/5: Fetching foreign keys from database...");
+		stepStart = System.currentTimeMillis();
 		List<ForeignKeyInfoBO> foreignKeyInfoBOS = selectedAccessor.showForeignKeys(dbConfig, dqp);
-		log.debug("Found {} foreign keys", foreignKeyInfoBOS.size());
+		log.info("✅ Found {} foreign keys ({}ms)", foreignKeyInfoBOS.size(), System.currentTimeMillis() - stepStart);
 		Map<String, List<String>> foreignKeyMap = buildForeignKeyMap(foreignKeyInfoBOS);
 
-		log.debug("Fetching tables from database");
+		// 步骤4: 获取和处理表信息
+		log.info("📋 Step 4/5: Fetching and processing tables...");
+		stepStart = System.currentTimeMillis();
 		List<TableInfoBO> tableInfoBOS = selectedAccessor.fetchTables(dbConfig, dqp);
-		log.info("Found {} tables to process", tableInfoBOS.size());
+		log.info("✅ Found {} tables to process ({}ms)", tableInfoBOS.size(), System.currentTimeMillis() - stepStart);
 
+		// 处理每个表，显示进度
+		int processedTables = 0;
 		for (TableInfoBO tableInfoBO : tableInfoBOS) {
-			log.debug("Processing table: {}", tableInfoBO.getName());
+			processedTables++;
+			double progress = (double) processedTables / tableInfoBOS.size() * 100;
+			log.info("🗃️ Processing table {}/{} ({:.1f}%): {}", processedTables, tableInfoBOS.size(), progress,
+					tableInfoBO.getName());
 			processTable(tableInfoBO, dqp, dbConfig, foreignKeyMap, selectedAccessor);
 		}
 
-		log.debug("Converting columns to documents");
+		// 步骤5: 转换为文档并添加到向量存储
+		log.info("📋 Step 5/5: Converting to documents and adding to vector store...");
+		stepStart = System.currentTimeMillis();
+
+		log.debug("🔄 Converting columns to documents...");
 		List<Document> columnDocuments = tableInfoBOS.stream().flatMap(table -> {
 			try {
 				dqp.setTable(table.getName());
@@ -173,34 +209,39 @@ public class SimpleVectorStoreService extends BaseVectorStoreService {
 					.map(column -> convertToDocument(table, column));
 			}
 			catch (Exception e) {
-				log.error("Error processing columns for table: {}", table.getName(), e);
+				log.error("❌ Error processing columns for table: {}", table.getName(), e);
 				throw new RuntimeException(e);
 			}
 		}).collect(Collectors.toList());
 
-		log.info("Adding {} column documents to vector store", columnDocuments.size());
+		log.info("📄 Adding {} column documents to vector store...", columnDocuments.size());
 		if (!columnDocuments.isEmpty()) {
 			vectorStore.add(columnDocuments);
+			log.debug("✅ Column documents added successfully");
 		}
 		else {
-			log.warn("No column documents to add to vector store");
+			log.warn("⚠️ No column documents to add to vector store");
 		}
 
-		log.debug("Converting tables to documents");
+		log.debug("🔄 Converting tables to documents...");
 		List<Document> tableDocuments = tableInfoBOS.stream()
 			.map(this::convertTableToDocument)
 			.collect(Collectors.toList());
 
-		log.info("Adding {} table documents to vector store", tableDocuments.size());
+		log.info("📄 Adding {} table documents to vector store...", tableDocuments.size());
 		if (!tableDocuments.isEmpty()) {
 			vectorStore.add(tableDocuments);
+			log.debug("✅ Table documents added successfully");
 		}
 		else {
-			log.warn("No table documents to add to vector store");
+			log.warn("⚠️ No table documents to add to vector store");
 		}
 
-		log.info("Schema initialization completed successfully. Total documents added: {}",
-				columnDocuments.size() + tableDocuments.size());
+		long totalDuration = System.currentTimeMillis() - startTime;
+		int totalDocuments = columnDocuments.size() + tableDocuments.size();
+		log.info("🎉 Schema initialization completed successfully in {}ms", totalDuration);
+		log.info("📊 Summary: {} total documents added ({} columns + {} tables)", totalDocuments,
+				columnDocuments.size(), tableDocuments.size());
 		return true;
 	}
 

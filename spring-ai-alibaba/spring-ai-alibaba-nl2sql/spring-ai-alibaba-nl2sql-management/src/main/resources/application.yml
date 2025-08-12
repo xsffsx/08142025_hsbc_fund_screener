@@ -76,6 +76,12 @@ spring:
       simple:
         enabled: true
         skip-initialization: false
+        # 调试配置
+        debug:
+          enabled: true
+          log-performance: true
+          log-progress: true
+          mask-sensitive-data: true
 
     alibaba:
       nl2sql:
@@ -99,14 +105,8 @@ spring:
       - schemaCache
       - vectorCache
 
-# Qdrant向量库配置
-qdrant:
-  host: localhost
-  port: 6333
-  collection: nl2sql_mvp1
-  vector-size: 768  # text-embedding-nomic-embed-text-v1.5向量维度
-  distance: cosine
-  timeout: 30000
+# Qdrant配置已移除 - 项目使用Spring AI原生SimpleVectorStore
+# 如需使用Qdrant，请添加相应依赖并配置spring.ai.vectorstore.qdrant
 
 # 业务数据库配置 (使用Oracle XEPDB1)
 chatbi:
@@ -146,17 +146,18 @@ management:
 # 日志配置
 logging:
   level:
-    root: TRACE
-    com.alibaba.cloud.ai: TRACE
-    org.springframework.ai: TRACE
-    org.hibernate.SQL: TRACE
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    org.springframework.web: TRACE
-    org.springframework.boot: TRACE
-    org.springframework.jdbc: TRACE
-    org.springframework.transaction: TRACE
-    org.apache.http: TRACE
-    org.springframework.web.client: TRACE
+    root: INFO
+    com.alibaba.cloud.ai: DEBUG
+    com.alibaba.cloud.ai.service.simple: DEBUG              # 向量存储服务调试日志
+    org.springframework.ai: INFO
+    org.hibernate.SQL: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: WARN
+    org.springframework.web: INFO
+    org.springframework.boot: INFO
+    org.springframework.jdbc: INFO
+    org.springframework.transaction: INFO
+    org.apache.http: WARN
+    org.springframework.web.client: INFO
 
     # 🔴 关闭最占用空间的两个无用日志
     org.apache.hc.client5.http.wire: OFF                    # Apache HTTP Client Wire 日志 - 包含完整 embedding 向量数据

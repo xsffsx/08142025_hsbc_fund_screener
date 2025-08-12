@@ -121,14 +121,8 @@ spring:
       - schemaCache
       - vectorCache
 
-# Qdrant向量库配置
-qdrant:
-  host: localhost
-  port: 6333
-  collection: nl2sql_mvp1
-  vector-size: 768  # text-embedding-nomic-embed-text-v1.5向量维度
-  distance: cosine
-  timeout: 30000
+# Qdrant配置已移除 - 项目使用Spring AI原生SimpleVectorStore
+# 如需使用Qdrant，请添加相应依赖并配置spring.ai.vectorstore.qdrant
 
 # 业务数据库配置 (使用Oracle XEPDB1)
 chatbi:
