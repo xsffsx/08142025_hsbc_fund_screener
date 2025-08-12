@@ -32,6 +32,40 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 	@Value("${spring.ai.openai.base-url:http://localhost:8089}")
 	private String openAiBaseUrl;
 
+	@Value("${spring.ai.azure.enabled:false}")
+	private boolean azureEnabled;
+
+	@Value("${spring.ai.azure.openai.endpoint:}")
+	private String azureEndpoint;
+
+		@Value("${spring.ai.azure.tenant-id:}")
+		private String azureTenantId;
+
+		@Value("${spring.ai.azure.client-id:}")
+		private String azureClientId;
+
+		@Value("${spring.ai.azure.client-secret:}")
+		private String azureClientSecret;
+
+		@Value("${spring.ai.azure.scope:https://cognitiveservices.azure.com/.default}")
+		private String azureScope;
+
+		@Value("${spring.ai.azure.authority-host:https://login.microsoftonline.com}")
+		private String azureAuthorityHost;
+
+		@Value("${spring.ai.azure.api-version:}")
+		private String azureApiVersion;
+
+		@Value("${spring.ai.azure.deployment-name:}")
+		private String azureDeploymentName;
+
+		@Value("${spring.ai.azure.token-proxy.http:${HTTP_PROXY:}}")
+		private String azureTokenHttpProxy;
+
+		@Value("${spring.ai.azure.token-proxy.https:${HTTPS_PROXY:}}")
+		private String azureTokenHttpsProxy;
+
+
 	// 固定输出所有扩展诊断字段（不依赖配置）
 
 	@Value("${spring.ai.openai.model:}")
@@ -87,12 +121,14 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 
 			Map<String, Object> m = new HashMap<>();
 			m.put("status", up ? "UP" : "DOWN");
-			m.put("endpoint", normalizeBaseUrl(openAiBaseUrl));
+			String endpoint = azureEnabled && StringUtils.hasText(azureEndpoint) ? azureEndpoint : openAiBaseUrl;
+			m.put("endpoint", normalizeBaseUrl(endpoint));
 			m.put("responseTime", cost + "ms");
 			m.put("testResponse", up ? "SUCCESS" : "EMPTY");
 			if (text != null)
 				m.put("sampleText", safeTrim(text, 200));
 			m.put("modelType", chatModel.getClass().getSimpleName());
+			m.put("provider", azureEnabled && StringUtils.hasText(azureEndpoint) ? "AzureOpenAI" : "OpenAI");
 
 			// 固定输出所有扩展字段（不依赖配置）
 			// 模型名（优先从模型默认参数）
@@ -137,7 +173,23 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 				m.put("sampleTextLen", text.length());
 			}
 
-			m.put("connectionMode", connectionModeFromBaseUrl(openAiBaseUrl));
+			String endpointForMode = azureEnabled && StringUtils.hasText(azureEndpoint) ? azureEndpoint : openAiBaseUrl;
+			m.put("connectionMode", connectionModeFromBaseUrl(endpointForMode));
+
+			// Azure 诊断信息（仅在启用Azure时输出非敏感字段）
+			if (azureEnabled) {
+				Map<String, Object> az = new HashMap<>();
+				az.put("endpoint", normalizeBaseUrl(azureEndpoint));
+				az.put("deploymentName", azureDeploymentName);
+				az.put("apiVersion", azureApiVersion);
+				az.put("authorityHost", azureAuthorityHost);
+				az.put("scope", azureScope);
+				az.put("tokenProxyHttpSet", StringUtils.hasText(azureTokenHttpProxy));
+				az.put("tokenProxyHttpsSet", StringUtils.hasText(azureTokenHttpsProxy));
+				az.put("aadConfigured", StringUtils.hasText(azureTenantId) && StringUtils.hasText(azureClientId)
+						&& StringUtils.hasText(azureClientSecret));
+				m.put("azureDiagnostics", az);
+			}
 
 			details.put("llmService", m);
 			return up;
@@ -152,6 +204,23 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 			m.put("modelType", chatModel != null ? chatModel.getClass().getSimpleName() : "N/A");
 			// 固定扩展字段（值为null）
 			m.put("modelName", null);
+			// Azure 诊断补充（异常时）
+			if (azureEnabled) {
+				Map<String, Object> az = new HashMap<>();
+				az.put("endpoint", normalizeBaseUrl(azureEndpoint));
+				az.put("deploymentName", azureDeploymentName);
+				az.put("apiVersion", azureApiVersion);
+				az.put("authorityHost", azureAuthorityHost);
+				az.put("scope", azureScope);
+				az.put("tokenProxyHttpSet", StringUtils.hasText(azureTokenHttpProxy));
+				az.put("tokenProxyHttpsSet", StringUtils.hasText(azureTokenHttpsProxy));
+				az.put("aadConfigured", StringUtils.hasText(azureTenantId) && StringUtils.hasText(azureClientId)
+						&& StringUtils.hasText(azureClientSecret));
+				// 根据异常信息做粗分类（仅提示方向）
+				String hint = classifyAzureError(e.getMessage());
+				az.put("hint", hint);
+				m.put("azureDiagnostics", az);
+			}
 			Map<String, Object> usage = new HashMap<>();
 			usage.put("promptTokens", null);
 			usage.put("completionTokens", null);
@@ -174,13 +243,14 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 
 			Map<String, Object> m = new HashMap<>();
 			m.put("status", up ? "UP" : "DOWN");
-			m.put("endpoint", normalizeBaseUrl(openAiBaseUrl));
+			String endpoint = azureEnabled && StringUtils.hasText(azureEndpoint) ? azureEndpoint : openAiBaseUrl;
+			m.put("endpoint", normalizeBaseUrl(endpoint));
 			m.put("responseTime", cost + "ms");
 			m.put("vectorDimension", up ? vec.length : 0);
 			m.put("modelType", embeddingModel.getClass().getSimpleName());
 
 			// 固定输出所有扩展字段
-			m.put("provider", embeddingModel.getClass().getSimpleName());
+			m.put("provider", azureEnabled && StringUtils.hasText(azureEndpoint) ? "AzureOpenAI" : "OpenAI");
 			String embeddingModelName = StringUtils.hasText(configuredEmbeddingModelName) ? configuredEmbeddingModelName
 					: null;
 			m.put("modelName", embeddingModelName);
@@ -188,7 +258,8 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 			List<Float> preview = vectorPreview(vec, 5);
 			m.put("responseVectorPreview", preview);
 
-			m.put("connectionMode", connectionModeFromBaseUrl(openAiBaseUrl));
+			String endpointForMode = azureEnabled && StringUtils.hasText(azureEndpoint) ? azureEndpoint : openAiBaseUrl;
+			m.put("connectionMode", connectionModeFromBaseUrl(endpointForMode));
 
 			details.put("embeddingService", m);
 			return up;
@@ -197,7 +268,8 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 			long cost = System.currentTimeMillis() - start;
 			Map<String, Object> m = new HashMap<>();
 			m.put("status", "DOWN");
-			m.put("endpoint", normalizeBaseUrl(openAiBaseUrl));
+			String endpoint = azureEnabled && StringUtils.hasText(azureEndpoint) ? azureEndpoint : openAiBaseUrl;
+			m.put("endpoint", normalizeBaseUrl(endpoint));
 			m.put("responseTime", cost + "ms");
 			m.put("error", e.getMessage());
 			m.put("modelType", embeddingModel != null ? embeddingModel.getClass().getSimpleName() : "N/A");
@@ -243,5 +315,28 @@ public class AiServicesHealthIndicator implements HealthIndicator {
 	private String connectionModeFromBaseUrl(String baseUrl) {
 		return "AZURE_AAD_BEARER";
 	}
+
+
+		private String classifyAzureError(String msg) {
+			if (msg == null)
+				return "unknown";
+			String m = msg.toLowerCase();
+			if (m.contains("unauthorized") || m.contains("401") || m.contains("invalid credentials") || m.contains("aad")
+					|| m.contains("authority") || m.contains("token")) {
+				return "AAD_Auth_Error: 检查 tenantId/clientId/clientSecret/scope/authority-host 是否正确";
+			}
+			if (m.contains("unknown host") || m.contains("connection refused") || m.contains("timeout") || m.contains("ssl")
+					|| m.contains("handshake") || m.contains("proxy")) {
+				return "Network_Proxy_Error: 检查 azure.endpoint、网络/代理(HTTP_PROXY/HTTPS_PROXY) 与SSL";
+			}
+			if (m.contains("404") || m.contains("resource not found") || m.contains("deployment")
+					|| m.contains("completions") || m.contains("model not found")) {
+				return "Deployment_Not_Found: 检查 deployment-name 是否为 Azure 部署名（非模型名）";
+			}
+			if (m.contains("429") || m.contains("quota") || m.contains("rate limit") || m.contains("throttle")) {
+				return "Rate_Limit_Quota: 配额或限流问题";
+			}
+			return "unknown";
+		}
 
 }

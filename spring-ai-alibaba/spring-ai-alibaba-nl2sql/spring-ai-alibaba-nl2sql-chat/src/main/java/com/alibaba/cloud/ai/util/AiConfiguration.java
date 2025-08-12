@@ -8,6 +8,10 @@ import com.alibaba.cloud.ai.dashscope.embedding.DashScopeEmbeddingModel;
 import com.alibaba.cloud.ai.dashscope.embedding.DashScopeEmbeddingOptions;
 import com.alibaba.cloud.ai.util.azure.AzureAdBearerTokenApiKey;
 import com.alibaba.cloud.ai.util.azure.AzureAdTokenClient;
+import com.azure.ai.openai.OpenAIClientBuilder;
+import com.azure.identity.ClientSecretCredentialBuilder;
+import org.springframework.ai.azure.openai.AzureOpenAiChatModel;
+import org.springframework.ai.azure.openai.AzureOpenAiChatOptions;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.document.MetadataMode;
@@ -72,6 +76,16 @@ public class AiConfiguration {
 	@Value("${spring.ai.azure.authority-host:https://login.microsoftonline.com}")
 	private String azureAuthorityHost;
 
+	@Value("${spring.ai.azure.api-version:}")
+	private String azureApiVersion;
+
+	@Value("${spring.ai.azure.endpoint:}")
+	private String azureEndpoint;
+
+	@Value("${spring.ai.azure.deployment-name:}")
+	private String azureDeploymentName;
+
+
 	@Value("${spring.ai.azure.token-proxy.http:${HTTP_PROXY:}}")
 	private String azureTokenHttpProxy;
 
@@ -80,17 +94,30 @@ public class AiConfiguration {
 
 	@Bean
 	public ChatModel chatModel() {
-		OpenAiApi openAiApi;
+		// 优先走 AzureOpenAiChatModel：当显式配置了 Azure AAD 与 Azure 部署必要参数
 		if (azureEnabled && StringUtils.hasText(azureTenantId) && StringUtils.hasText(azureClientId)
-				&& StringUtils.hasText(azureClientSecret)) {
-			AzureAdTokenClient tokenClient = new AzureAdTokenClient(azureAuthorityHost, azureTenantId, azureClientId,
-					azureClientSecret, azureScope, azureTokenHttpProxy, azureTokenHttpsProxy);
-			AzureAdBearerTokenApiKey apiKey = new AzureAdBearerTokenApiKey(tokenClient);
-			openAiApi = OpenAiApi.builder().apiKey(apiKey).baseUrl(baseUrl).build();
+				&& StringUtils.hasText(azureClientSecret) && StringUtils.hasText(azureEndpoint)
+				&& StringUtils.hasText(azureDeploymentName)) {
+			var credential = new ClientSecretCredentialBuilder()
+					.tenantId(azureTenantId)
+					.clientId(azureClientId)
+					.clientSecret(azureClientSecret)
+					.authorityHost(azureAuthorityHost)
+					.build();
+			var clientBuilder = new OpenAIClientBuilder()
+					.credential(credential)
+					.endpoint(azureEndpoint);
+			var options = AzureOpenAiChatOptions.builder()
+					.deploymentName(azureDeploymentName)
+					.temperature(0.7)
+					.build();
+			return AzureOpenAiChatModel.builder()
+					.openAIClientBuilder(clientBuilder)
+					.defaultOptions(options)
+					.build();
 		}
-		else {
-			openAiApi = OpenAiApi.builder().apiKey(openAiApiKey).baseUrl(baseUrl).build();
-		}
+		// 否则使用标准 OpenAI 客户端（兼容 proxy_openai 等 /v1 风格端点）
+		OpenAiApi openAiApi = OpenAiApi.builder().apiKey(openAiApiKey).baseUrl(baseUrl).build();
 		OpenAiChatOptions openAiChatOptions = OpenAiChatOptions.builder().model(model).temperature(0.7).build();
 		return OpenAiChatModel.builder().openAiApi(openAiApi).defaultOptions(openAiChatOptions).build();
 	}

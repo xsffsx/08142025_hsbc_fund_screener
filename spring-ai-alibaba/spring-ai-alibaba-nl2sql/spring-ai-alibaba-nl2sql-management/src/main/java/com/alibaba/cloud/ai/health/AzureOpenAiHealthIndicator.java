@@ -39,6 +39,15 @@ public class AzureOpenAiHealthIndicator implements HealthIndicator {
 	@Value("${spring.ai.azure.authority-host:https://login.microsoftonline.com}")
 	private String azureAuthorityHost;
 
+	@Value("${spring.ai.azure.endpoint:}")
+	private String azureEndpoint;
+
+	@Value("${spring.ai.azure.api-version:}")
+	private String azureApiVersion;
+
+	@Value("${spring.ai.azure.deployment-name:}")
+	private String azureDeploymentName;
+
 	@Value("${spring.ai.azure.token-proxy.http:${HTTP_PROXY:}}")
 	private String azureTokenHttpProxy;
 
@@ -59,10 +68,13 @@ public class AzureOpenAiHealthIndicator implements HealthIndicator {
 		details.put("modeLabel", modeLabel);
 		details.put("provider", provider);
 		details.put("openaiBaseUrl", openAiBaseUrl);
+		details.put("azureEndpoint", azureEndpoint);
 		details.put("apiKeyConfigured", StringUtils.hasText(openAiApiKey));
-		details.put("aadConfigured", true);
+		details.put("aadConfigured", aadConfigured);
 		details.put("azureAuthorityHost", azureAuthorityHost);
 		details.put("azureScope", azureScope);
+		details.put("azureApiVersion", azureApiVersion);
+		details.put("azureDeploymentName", azureDeploymentName);
 		details.put("usingTokenProxy", tokenProxySet);
 		details.put("tokenProxyHttpSet", StringUtils.hasText(azureTokenHttpProxy));
 		details.put("tokenProxyHttpsSet", StringUtils.hasText(azureTokenHttpsProxy));
