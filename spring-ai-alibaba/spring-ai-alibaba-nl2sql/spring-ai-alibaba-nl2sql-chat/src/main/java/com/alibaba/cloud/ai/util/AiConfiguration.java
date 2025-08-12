@@ -98,23 +98,7 @@ public class AiConfiguration {
 		if (azureEnabled && StringUtils.hasText(azureTenantId) && StringUtils.hasText(azureClientId)
 				&& StringUtils.hasText(azureClientSecret) && StringUtils.hasText(azureEndpoint)
 				&& StringUtils.hasText(azureDeploymentName)) {
-			var credential = new ClientSecretCredentialBuilder()
-					.tenantId(azureTenantId)
-					.clientId(azureClientId)
-					.clientSecret(azureClientSecret)
-					.authorityHost(azureAuthorityHost)
-					.build();
-			var clientBuilder = new OpenAIClientBuilder()
-					.credential(credential)
-					.endpoint(azureEndpoint);
-			var options = AzureOpenAiChatOptions.builder()
-					.deploymentName(azureDeploymentName)
-					.temperature(0.7)
-					.build();
-			return AzureOpenAiChatModel.builder()
-					.openAIClientBuilder(clientBuilder)
-					.defaultOptions(options)
-					.build();
+			return buildAzureOpenAiChatModel();
 		}
 		// 否则使用标准 OpenAI 客户端（兼容 proxy_openai 等 /v1 风格端点）
 		OpenAiApi openAiApi = OpenAiApi.builder().apiKey(openAiApiKey).baseUrl(baseUrl).build();
@@ -166,5 +150,31 @@ public class AiConfiguration {
 		OpenAiEmbeddingOptions options = OpenAiEmbeddingOptions.builder().model(openAiEmbeddingModel).build();
 		return new OpenAiEmbeddingModel(openAiApi, MetadataMode.EMBED, options);
 	}
+
+
+		/**
+		 * Build an AzureOpenAiChatModel using current Azure AAD configuration.
+		 * Exposed for health checks to validate actual connectivity.
+		 */
+		public ChatModel buildAzureOpenAiChatModel() {
+			var credential = new ClientSecretCredentialBuilder()
+					.tenantId(azureTenantId)
+					.clientId(azureClientId)
+					.clientSecret(azureClientSecret)
+					.authorityHost(azureAuthorityHost)
+					.build();
+			var clientBuilder = new OpenAIClientBuilder()
+					.credential(credential)
+					.endpoint(azureEndpoint);
+			var options = AzureOpenAiChatOptions.builder()
+					.deploymentName(azureDeploymentName)
+					.temperature(0.7)
+					.build();
+			return AzureOpenAiChatModel.builder()
+					.openAIClientBuilder(clientBuilder)
+					.defaultOptions(options)
+					.build();
+		}
+
 
 }
