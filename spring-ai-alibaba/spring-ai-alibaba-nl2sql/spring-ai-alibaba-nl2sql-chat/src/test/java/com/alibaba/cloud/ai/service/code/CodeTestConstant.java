@@ -28,15 +28,8 @@ public final class CodeTestConstant {
 
 	}
 
-	static final String NORMAL_CODE = """
-			def func(x: int):
-			    if x <= 0:
-			        return 1;
-			    else:
-			        return x * func(x-1)
-			if __name__ == "__main__":
-			    print(func(10))
-			""";
+	static final String NORMAL_CODE = "def func(x: int):\n" + "    if x <= 0:\n" + "        return 1;\n" + "    else:\n"
+			+ "        return x * func(x-1)\n" + "if __name__ == \"__main__\":\n" + "    print(func(10))";
 
 	static final String CODE_WITH_DEPENDENCY = """
 			import numpy as np

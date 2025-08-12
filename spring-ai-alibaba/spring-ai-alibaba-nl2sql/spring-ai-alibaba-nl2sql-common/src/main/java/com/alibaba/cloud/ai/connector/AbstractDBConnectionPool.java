@@ -165,10 +165,15 @@ public abstract class AbstractDBConnectionPool implements DBConnectionPool {
 		cfg.setValidationTimeout(5000);
 		// dialect-based validation query
 		switch (getDialect()) {
-			case ORACLE -> cfg.setConnectionTestQuery("SELECT 1 FROM DUAL");
-			case POSTGRESQL, MYSQL -> cfg.setConnectionTestQuery("SELECT 1");
-			default -> {
-			}
+			case ORACLE:
+				cfg.setConnectionTestQuery("SELECT 1 FROM DUAL");
+				break;
+			case POSTGRESQL:
+			case MYSQL:
+				cfg.setConnectionTestQuery("SELECT 1");
+				break;
+			default:
+				break;
 		}
 		return new HikariDataSource(cfg);
 	}

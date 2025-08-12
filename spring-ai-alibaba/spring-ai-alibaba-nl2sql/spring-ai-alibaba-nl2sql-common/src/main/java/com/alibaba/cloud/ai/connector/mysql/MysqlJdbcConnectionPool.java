@@ -48,12 +48,16 @@ public class MysqlJdbcConnectionPool extends AbstractDBConnectionPool {
 			return ret;
 		}
 
-		return switch (sqlState) {
-			case "08S01" -> DATASOURCE_CONNECTION_FAILURE_08S01;
-			case "28000" -> PASSWORD_ERROR_28000;
-			case "42000" -> DATABASE_NOT_EXIST_42000;
-			default -> OTHERS;
-		};
+		switch (sqlState) {
+			case "08S01":
+				return DATASOURCE_CONNECTION_FAILURE_08S01;
+			case "28000":
+				return PASSWORD_ERROR_28000;
+			case "42000":
+				return DATABASE_NOT_EXIST_42000;
+			default:
+				return OTHERS;
+		}
 	}
 
 }

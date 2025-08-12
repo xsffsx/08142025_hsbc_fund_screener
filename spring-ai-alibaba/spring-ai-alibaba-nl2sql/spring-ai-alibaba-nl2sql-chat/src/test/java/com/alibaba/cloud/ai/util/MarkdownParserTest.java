@@ -345,29 +345,11 @@ public class MarkdownParserTest {
 		@Test
 		@DisplayName("复杂Markdown结构处理")
 		void handleComplexMarkdownStructures() {
-			String complexMarkdown = """
-					# Database Query Example
-
-					Here's how to query users:
-
-					```sql
-					SELECT
-					    u.id,
-					    u.name,
-					    u.email
-					FROM users u
-					WHERE u.active = 1
-					ORDER BY u.created_at DESC
-					LIMIT 10;
-					```
-
-					This query will return the latest 10 active users.
-
-					```python
-					# Python code will not be extracted
-					print("Another block")
-					```
-					""";
+			String complexMarkdown = "# Database Query Example\n\n" + "Here's how to query users:\n\n" + "```sql\n"
+					+ "SELECT\n" + "    u.id,\n" + "    u.name,\n" + "    u.email\n" + "FROM users u\n"
+					+ "WHERE u.active = 1\n" + "ORDER BY u.created_at DESC\n" + "LIMIT 10;\n" + "```\n\n"
+					+ "This query will return the latest 10 active users.\n\n" + "```python\n"
+					+ "# Python code will not be extracted\n" + "print(\"Another block\")\n" + "```";
 
 			String result = MarkdownParser.extractText(complexMarkdown);
 
@@ -386,19 +368,9 @@ public class MarkdownParserTest {
 		@Test
 		@DisplayName("嵌套代码块结构处理")
 		void handleNestedCodeBlockStructures() {
-			String nestedMarkdown = """
-					# How to use code blocks
-
-					Here's an example of a code block:
-
-					```markdown
-					```python
-					print("Hello World")
-					```
-					```
-
-					The above shows how to write a code block.
-					""";
+			String nestedMarkdown = "# How to use code blocks\n\n" + "Here's an example of a code block:\n\n"
+					+ "```markdown\n" + "```python\n" + "print(\"Hello World\")\n" + "```\n" + "```\n\n"
+					+ "The above shows how to write a code block.";
 
 			String result = MarkdownParser.extractText(nestedMarkdown);
 			String rawResult = MarkdownParser.extractRawText(nestedMarkdown);

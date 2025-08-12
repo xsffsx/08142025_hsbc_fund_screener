@@ -58,26 +58,36 @@ public class OracleJdbcConnectionPool extends AbstractDBConnectionPool {
 			return ret;
 		}
 
-		return switch (sqlState) {
+		switch (sqlState) {
 			// Oracle连接失败相关错误码
-			case "08S01", "08003", "08006" -> DATASOURCE_CONNECTION_FAILURE_08S01;
-			case "08001" -> DATASOURCE_CONNECTION_FAILURE_08001;
+			case "08S01":
+			case "08003":
+			case "08006":
+				return DATASOURCE_CONNECTION_FAILURE_08S01;
+			case "08001":
+				return DATASOURCE_CONNECTION_FAILURE_08001;
 
 			// Oracle认证失败错误码
-			case "28000", "01017" -> PASSWORD_ERROR_28000;
+			case "28000":
+			case "01017":
+				return PASSWORD_ERROR_28000;
 
 			// Oracle数据库/表不存在错误码
-			case "42000", "00942" -> DATABASE_NOT_EXIST_42000;
-			case "72000" -> DATABASE_NOT_EXIST_42000; // ORA-00942: table or view does not
-														// exist
+			case "42000":
+			case "00942":
+				return DATABASE_NOT_EXIST_42000;
+			case "72000": // ORA-00942: table or view does not exist
+				return DATABASE_NOT_EXIST_42000;
 
 			// Oracle特有错误码映射
-			case "72001" -> DATABASE_NOT_EXIST_42000; // ORA-00904: invalid identifier
-			case "72002" -> DATABASE_NOT_EXIST_42000; // ORA-00955: name is already used
-														// by an existing object
+			case "72001": // ORA-00904: invalid identifier
+				return DATABASE_NOT_EXIST_42000;
+			case "72002": // ORA-00955: name is already used by an existing object
+				return DATABASE_NOT_EXIST_42000;
 
-			default -> OTHERS;
-		};
+			default:
+				return OTHERS;
+		}
 	}
 
 	@Override
