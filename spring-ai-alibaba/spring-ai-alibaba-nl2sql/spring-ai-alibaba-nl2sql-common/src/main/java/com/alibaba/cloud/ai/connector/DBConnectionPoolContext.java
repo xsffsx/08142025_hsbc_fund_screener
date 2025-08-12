@@ -49,13 +49,21 @@ public class DBConnectionPoolContext {
 		if (type == null || type.trim().isEmpty()) {
 			return null;
 		}
-		return switch (type.toLowerCase()) {
-			case "mysql", "mysqljdbcconnectionpool" -> poolMap.get("mysqlJdbcConnectionPool");
-			case "postgresql", "postgres", "postgresqljdbcconnectionpool" ->
-				poolMap.get("postgreSqlJdbcConnectionPool");
-			case "oracle", "oraclejdbcconnectionpool" -> poolMap.get("oracleJdbcConnectionPool");
-			default -> null;
-		};
+		String lowerType = type.toLowerCase();
+		switch (lowerType) {
+			case "mysql":
+			case "mysqljdbcconnectionpool":
+				return poolMap.get("mysqlJdbcConnectionPool");
+			case "postgresql":
+			case "postgres":
+			case "postgresqljdbcconnectionpool":
+				return poolMap.get("postgreSqlJdbcConnectionPool");
+			case "oracle":
+			case "oraclejdbcconnectionpool":
+				return poolMap.get("oracleJdbcConnectionPool");
+			default:
+				return null;
+		}
 	}
 
 }

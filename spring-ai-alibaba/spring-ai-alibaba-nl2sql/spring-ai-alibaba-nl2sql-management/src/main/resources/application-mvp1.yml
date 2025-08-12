@@ -146,6 +146,9 @@ management:
   endpoint:
     health:
       show-details: always
+      show-components: always
+      details:
+        extended: true
     metrics:
       enabled: true
   metrics:
