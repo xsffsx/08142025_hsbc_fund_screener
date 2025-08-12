@@ -86,13 +86,13 @@ spring:
           presence-penalty: 0.3   # 存在惩罚，鼓励多样性
           stop: ["。因此，表中", "但`BONDREGION", "，`BONDREGION"]  # 停止序列，防止重复
       embedding:
-        enabled: true                    # 启用 embedding
-        base-url: http://localhost:8089  # 使用 proxy_openai 端点
-        api-key: "dummy-key"             # proxy_openai 需要任意非空 key
+        enabled: true
       openai:
-        endpoint: ${AZURE_OPENAI_ENDPOINT:https://your-resource.openai.azure.com}
-
-        model: text-embedding-nomic-embed-text-v1.5  # 使用本地 embedding 模型
+        # 通过 AiConfiguration 动态选择：当 Azure AAD + Endpoint + Deployment 完整时，走 Azure；否则走 base-url/api-key
+        # base-url: http://localhost:8089
+        # api-key: dummy-key
+        # embedding:
+        #   model: text-embedding-ada-002
     azure:
       tenant-id: ${AZURE_TENANT_ID:}
       client-id: ${AZURE_CLIENT_ID:}
@@ -104,6 +104,7 @@ spring:
       endpoint: ${AZURE_OPENAI_ENDPOINT:https://your-resource.openai.azure.com}
       api-version: ${AZURE_OPENAI_API_VERSION:2024-02-15-preview}
       deployment-name: ${AZURE_OPENAI_DEPLOYMENT_NAME:your-deployment}
+      embedding-deployment-name: ${AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME:}
       token-proxy:
         http: ${HTTP_PROXY:}
         https: ${HTTPS_PROXY:}
