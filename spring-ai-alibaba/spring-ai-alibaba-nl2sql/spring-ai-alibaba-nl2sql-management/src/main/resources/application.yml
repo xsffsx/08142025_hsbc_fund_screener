@@ -70,13 +70,13 @@ spring:
         model: text-embedding-nomic-embed-text-v1.5
 
 
-	    # Embedding 重试与日志（可根据限流情况调整）
-	    embedding:
-	      retry:
-	        enabled: true
-	        max-retries: 5
-	        base-delay-ms: 500
-	        jitter-ms: 800
+    # Embedding 重试与日志（可根据限流情况调整）
+    embedding:
+      retry:
+        enabled: true
+        max-retries: 5
+        base-delay-ms: 500
+        jitter-ms: 800
 
     # 启用向量存储
     vectorstore:
