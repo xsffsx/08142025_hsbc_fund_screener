@@ -7,24 +7,22 @@ import com.alibaba.cloud.ai.dashscope.api.DashScopeApi;
 import com.alibaba.cloud.ai.dashscope.embedding.DashScopeEmbeddingModel;
 import com.alibaba.cloud.ai.dashscope.embedding.DashScopeEmbeddingOptions;
 
-import com.azure.ai.openai.OpenAIClient;
+
 import com.azure.ai.openai.OpenAIClientBuilder;
-import com.azure.ai.openai.models.Embeddings;
-import com.azure.ai.openai.models.EmbeddingsOptions;
+
 import com.azure.identity.ClientSecretCredentialBuilder;
 
 import com.azure.core.http.ProxyOptions;
 import com.azure.core.http.netty.NettyAsyncHttpClientBuilder;
 import org.springframework.ai.azure.openai.AzureOpenAiChatModel;
 import org.springframework.ai.azure.openai.AzureOpenAiChatOptions;
+import org.springframework.ai.azure.openai.AzureOpenAiEmbeddingModel;
+import org.springframework.ai.azure.openai.AzureOpenAiEmbeddingOptions;
+
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatModel;
-import org.springframework.ai.document.Document;
 import org.springframework.ai.document.MetadataMode;
-import org.springframework.ai.embedding.Embedding;
 import org.springframework.ai.embedding.EmbeddingModel;
-import org.springframework.ai.embedding.EmbeddingRequest;
-import org.springframework.ai.embedding.EmbeddingResponse;
 
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.openai.OpenAiChatOptions;
@@ -41,8 +39,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 import java.net.InetSocketAddress;
 import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
+
 
 
 @Configuration
@@ -229,50 +226,12 @@ public class AiConfiguration {
 				}
 			}
 			var credential = credentialBuilder.build();
-			var openaiClient = new OpenAIClientBuilder().credential(credential).endpoint(azureEndpoint).buildClient();
-			return new AzureSdkEmbeddingModel(openaiClient, deploymentName);
+			// 使用 Spring AI 原生 AzureOpenAiEmbeddingModel
+			var client = new OpenAIClientBuilder().credential(credential).endpoint(azureEndpoint).buildClient();
+			var options = AzureOpenAiEmbeddingOptions.builder().deploymentName(deploymentName).build();
+			return new AzureOpenAiEmbeddingModel(client, MetadataMode.EMBED, options);
 		}
 
-		private static class AzureSdkEmbeddingModel implements EmbeddingModel {
-			private final OpenAIClient client;
-			private final String deploymentName;
-
-			AzureSdkEmbeddingModel(OpenAIClient client, String deploymentName) {
-				this.client = client;
-				this.deploymentName = deploymentName;
-			}
-
-			@Override
-			public EmbeddingResponse call(EmbeddingRequest request) {
-				List<String> inputs = request.getInstructions();
-				if (inputs == null || inputs.isEmpty()) {
-					return new EmbeddingResponse(List.of());
-				}
-				Embeddings embeddings = client.getEmbeddings(deploymentName, new EmbeddingsOptions(inputs));
-				List<Embedding> list = new ArrayList<>();
-				for (int i = 0; i < embeddings.getData().size(); i++) {
-					var vec = embeddings.getData().get(i).getEmbedding(); // List<Double/Float>
-					float[] arr = new float[vec.size()];
-					for (int j = 0; j < vec.size(); j++) {
-						arr[j] = vec.get(j).floatValue();
-					}
-					list.add(new Embedding(arr, i));
-				}
-				return new EmbeddingResponse(list);
-			}
-
-			@Override
-			public float[] embed(Document document) {
-				String text = document.getFormattedContent(MetadataMode.EMBED);
-				Embeddings embeddings = client.getEmbeddings(deploymentName, new EmbeddingsOptions(List.of(text)));
-				var vec = embeddings.getData().get(0).getEmbedding();
-				float[] arr = new float[vec.size()];
-				for (int j = 0; j < vec.size(); j++) {
-					arr[j] = vec.get(j).floatValue();
-				}
-				return arr;
-			}
-		}
 
 
 
