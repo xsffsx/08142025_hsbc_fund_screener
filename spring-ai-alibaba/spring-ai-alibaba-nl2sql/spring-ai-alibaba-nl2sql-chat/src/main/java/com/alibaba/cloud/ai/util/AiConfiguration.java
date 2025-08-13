@@ -107,6 +107,17 @@ public class AiConfiguration {
 	@Value("${spring.ai.azure.token-proxy.https:${HTTPS_PROXY:}}")
 	private String azureTokenHttpsProxy;
 
+
+		// Embedding 重试配置（YAML 可配置）
+		@Value("${spring.ai.embedding.retry.enabled:true}")
+		private boolean embeddingRetryEnabled;
+		@Value("${spring.ai.embedding.retry.max-retries:5}")
+		private int embeddingRetryMaxRetries;
+		@Value("${spring.ai.embedding.retry.base-delay-ms:500}")
+		private long embeddingRetryBaseDelayMs;
+		@Value("${spring.ai.embedding.retry.jitter-ms:800}")
+		private long embeddingRetryJitterMs;
+
 	@Bean
 	public ChatModel chatModel() {
 		// 优先走 AzureOpenAiChatModel：当显式配置了 Azure AAD 与 Azure 部署必要参数
@@ -226,10 +237,15 @@ public class AiConfiguration {
 				}
 			}
 			var credential = credentialBuilder.build();
-			// 使用 Spring AI 原生 AzureOpenAiEmbeddingModel
+			// 使用 Spring AI 原生 AzureOpenAiEmbeddingModel，并包一层日志+重试
 			var client = new OpenAIClientBuilder().credential(credential).endpoint(azureEndpoint).buildClient();
 			var options = AzureOpenAiEmbeddingOptions.builder().deploymentName(deploymentName).build();
-			return new AzureOpenAiEmbeddingModel(client, MetadataMode.EMBED, options);
+			var base = new AzureOpenAiEmbeddingModel(client, MetadataMode.EMBED, options);
+			if (embeddingRetryEnabled) {
+				return new com.alibaba.cloud.ai.embedding.LoggingRetryingEmbeddingModel(base,
+					embeddingRetryMaxRetries, embeddingRetryBaseDelayMs, embeddingRetryJitterMs);
+			}
+			return base;
 		}
 
 

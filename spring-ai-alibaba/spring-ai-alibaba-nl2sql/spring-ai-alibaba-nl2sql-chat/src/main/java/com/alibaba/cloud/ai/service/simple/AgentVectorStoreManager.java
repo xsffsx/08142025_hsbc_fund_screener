@@ -90,6 +90,10 @@ public class AgentVectorStoreManager {
 		}
 
 		log.debug("📄 Adding {} documents to vector store for agent: {}", documents.size(), agentId);
+		int n = documents.size();
+		int totalChars = documents.stream().mapToInt(d -> d.getText() != null ? d.getText().length() : 0).sum();
+		int estTokens = Math.max(1, totalChars / 4); // 粗略估算，避免0，便于排序
+		log.info("[Embedding] batch stats: count={}, totalChars={}, estTokens≈{}", n, totalChars, estTokens);
 		SimpleVectorStore store = getOrCreateVectorStore(agentId);
 		store.add(documents);
 		long duration = System.currentTimeMillis() - startTime;
