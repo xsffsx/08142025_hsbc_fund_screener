@@ -129,7 +129,7 @@ public class SimpleMcpServerVectorStore implements McpServerVectorStore {
 		try {
 			// 获取所有文档
 			SearchRequest searchRequest = SearchRequest.builder()
-				.query("") // 空查询获取所有
+				.query("*") // 占位查询，避免空输入
 				.topK(Integer.MAX_VALUE)
 				.build();
 
@@ -173,7 +173,7 @@ public class SimpleMcpServerVectorStore implements McpServerVectorStore {
 		}
 
 		try {
-			SearchRequest searchRequest = SearchRequest.builder().query("").topK(Integer.MAX_VALUE).build();
+			SearchRequest searchRequest = SearchRequest.builder().query("*").topK(Integer.MAX_VALUE).build();
 
 			List<Document> documents = vectorStore.similaritySearch(searchRequest);
 			return documents.size();
@@ -191,7 +191,7 @@ public class SimpleMcpServerVectorStore implements McpServerVectorStore {
 
 		try {
 			// 获取所有文档并删除
-			SearchRequest searchRequest = SearchRequest.builder().query("").topK(Integer.MAX_VALUE).build();
+			SearchRequest searchRequest = SearchRequest.builder().query("*").topK(Integer.MAX_VALUE).build();
 
 			List<Document> documents = vectorStore.similaritySearch(searchRequest);
 			List<String> ids = documents.stream().map(Document::getId).collect(Collectors.toList());

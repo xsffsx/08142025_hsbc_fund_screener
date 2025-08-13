@@ -208,7 +208,6 @@ public class AgentVectorStoreManager {
 			Filter.Expression expression = builder.eq("vectorType", vectorType).build();
 
 			List<Document> documents = store.similaritySearch(org.springframework.ai.vectorstore.SearchRequest.builder()
-				.query("")
 				.topK(Integer.MAX_VALUE)
 				.filterExpression(expression)
 				.build());
