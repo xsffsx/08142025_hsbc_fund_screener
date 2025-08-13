@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62446",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:05:51.865933",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62446%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "90f123d1-4ff7-40d3-b34f-2fb75015f04d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "TBk0_0sb6rwUYEaxDqucRm54Fn8hOSjx0Uv9hHiWDMTWpaVYgk7cqQ==",
+        "x-hsbc-request-correlation-id": "4e4e64fb-9665-4cc5-9c00-b84abe7f4cf8",
+        "date": "Wed, 13 Aug 2025 14:05:50 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "21",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 1a19162415d8f6b5c885ca5d1da2d780.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "586",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China (People's Republic Of) 2.19%\",\"weighting\":13.28481,\"currency\":\"CNY\",\"marketValue\":66955455},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Agr Bk China 2.8% A Shch\",\"weighting\":4.21323,\"currency\":\"CNY\",\"marketValue\":21234700},{\"market\":\"CN\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Development Bank 2.26%\",\"weighting\":4.15171,\"currency\":\"CNY\",\"marketValue\":20924620},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Zhongsheng Group Holdings Ltd. 3.5%\",\"weighting\":3.95817,\"currency\":\"CNY\",\"marketValue\":19949180},{\"market\":\"HK\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"The Hong Kong Mortgage Corporation Limited 2.6%\",\"weighting\":3.94456,\"currency\":\"CNY\",\"marketValue\":19880600},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Elect Global Investments Ltd 4.1% S/A Perp\",\"weighting\":3.05261,\"currency\":\"CNY\",\"marketValue\":15385153},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Huafa 2024 I Co Ltd 6% S/A Perp\",\"weighting\":2.98649,\"currency\":\"CNY\",\"marketValue\":15051900},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Standard Chartered Bank 3.7%\",\"weighting\":2.9795,\"currency\":\"CNY\",\"marketValue\":15016694},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Agricultural Bank of China Limited, Hong Kong Branch 2.97%\",\"weighting\":2.97604,\"currency\":\"CNY\",\"marketValue\":14999250},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sael Ltd 7.8% S/A Regs\",\"weighting\":2.93349,\"currency\":\"CNY\",\"marketValue\":14784783}],\"lastUpdatedDate\":\"2024-12-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

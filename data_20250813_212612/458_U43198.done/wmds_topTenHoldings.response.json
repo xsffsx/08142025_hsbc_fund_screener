@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43198",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:26:38.762247",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43198%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f91cf4ce-3d61-413f-b854-261a252dcd39:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "BJUZncIlPB6D2sVnMF_3QU6IziBC2ws0NrSUvcOoOyZ1p1MLyKSRsA==",
+        "x-hsbc-request-correlation-id": "b11e99e6-8348-41fc-94ef-1ee807fdab02",
+        "date": "Wed, 13 Aug 2025 13:26:38 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 bea3c2b46ebd664c1dc4815d2ec8f8d0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "492",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HUB International Ltd.\",\"weighting\":1.14484,\"currency\":\"USD\",\"marketValue\":29294289},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Minerva Merger Subordinated Inc.\",\"weighting\":1.0386,\"currency\":\"USD\",\"marketValue\":26575781},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mauser Packaging Solutions Holding Co.\",\"weighting\":0.97713,\"currency\":\"USD\",\"marketValue\":25002918},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"1261229 Bc Ltd.\",\"weighting\":0.95751,\"currency\":\"USD\",\"marketValue\":24500766},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UKG Inc.\",\"weighting\":0.87625,\"currency\":\"USD\",\"marketValue\":22421412},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HUB International Ltd.\",\"weighting\":0.86765,\"currency\":\"USD\",\"marketValue\":22201478},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cloud Software Group Inc.\",\"weighting\":0.82832,\"currency\":\"USD\",\"marketValue\":21195175},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"EMRLD Borrower LP / Emerald Co-Issuer Inc.\",\"weighting\":0.79557,\"currency\":\"USD\",\"marketValue\":20357082},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Allied Universal Holdco LLC / Allied Universal Finance Corporation\",\"weighting\":0.78154,\"currency\":\"USD\",\"marketValue\":19998110},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cloud Software Group Inc.\",\"weighting\":0.69343,\"currency\":\"USD\",\"marketValue\":17743452}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

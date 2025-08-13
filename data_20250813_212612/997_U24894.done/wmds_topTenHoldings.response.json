@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U24894",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:40:10.148315",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U24894%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b9119c05-43aa-4a11-ac1e-8812c1a58be6:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "uoRvgHZypjXHwYSvWzRmj-hvhJe9uSLEKPPqpZAKEtzktHZofGv8-g==",
+        "x-hsbc-request-correlation-id": "42c59b5c-7a75-4715-8132-95e41d9e7ba7",
+        "date": "Wed, 13 Aug 2025 13:40:09 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 fc2107bc4873ea9a245c05665d003180.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "498",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":9.56644,\"currency\":\"USD\",\"marketValue\":38551751},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sony Group Corp\",\"weighting\":4.67623,\"currency\":\"USD\",\"marketValue\":18844706},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":4.64527,\"currency\":\"USD\",\"marketValue\":18719976},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Samsung Electronics Co Ltd\",\"weighting\":4.36818,\"currency\":\"USD\",\"marketValue\":17603314},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd Ordinary Shares\",\"weighting\":3.14987,\"currency\":\"USD\",\"marketValue\":12693665},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hong Kong Exchanges and Clearing Ltd\",\"weighting\":2.83931,\"currency\":\"USD\",\"marketValue\":11442139},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hitachi Ltd\",\"weighting\":2.55582,\"currency\":\"USD\",\"marketValue\":10299705},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HDFC Bank Ltd\",\"weighting\":2.51645,\"currency\":\"USD\",\"marketValue\":10141015},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hoya Corp\",\"weighting\":2.48002,\"currency\":\"USD\",\"marketValue\":9994232},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NetEase Inc Ordinary Shares\",\"weighting\":2.39791,\"currency\":\"USD\",\"marketValue\":9663332}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

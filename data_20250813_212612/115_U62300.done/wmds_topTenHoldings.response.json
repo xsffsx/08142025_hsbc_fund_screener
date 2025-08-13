@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62300",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:30:33.737484",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62300%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "70709ec3-2ac7-41b7-81dc-5a9729ca9ae7:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "dvn35AeE1uCnW7lrIfYrMFsRsIYWU239l6uFtjN_gAMHBaRzJVfeMw==",
+        "x-hsbc-request-correlation-id": "9e36c79e-a948-4fc1-a085-22b8f9e62edd",
+        "date": "Wed, 13 Aug 2025 13:30:33 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 b3f5252dafb9ec91f738df64dc00f880.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "514",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":9.64718,\"currency\":\"USD\",\"marketValue\":31228685},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":6.74288,\"currency\":\"USD\",\"marketValue\":21827236},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd ADR\",\"weighting\":4.49004,\"currency\":\"USD\",\"marketValue\":14534608},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Samsung Electronics Co Ltd\",\"weighting\":3.80294,\"currency\":\"USD\",\"marketValue\":12310421},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HDFC Bank Ltd ADR\",\"weighting\":3.76152,\"currency\":\"USD\",\"marketValue\":12176341},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Reliance Industries Ltd\",\"weighting\":3.45309,\"currency\":\"USD\",\"marketValue\":11177918},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Singapore Telecommunications Ltd\",\"weighting\":2.8629,\"currency\":\"USD\",\"marketValue\":9267441},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Xiaomi Corp Class B\",\"weighting\":2.84823,\"currency\":\"USD\",\"marketValue\":9219940},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Construction Bank Corp Class H\",\"weighting\":2.70671,\"currency\":\"USD\",\"marketValue\":8761852},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CTBC Financial Holding Co Ltd\",\"weighting\":2.40344,\"currency\":\"USD\",\"marketValue\":7780135}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

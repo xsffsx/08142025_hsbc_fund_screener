@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61574",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:18.059268",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61574%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "67336944-ba54-40b0-b0aa-d315409546e8:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "W_2U2NZQjmNDbsrX4fj1RUb101tNqeLtNRLF9hUJHXFImZlwfinxpg==",
+        "x-hsbc-request-correlation-id": "3fc1a147-47a2-4283-a1b4-c47f202394c6",
+        "date": "Wed, 13 Aug 2025 13:38:17 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e1dbda8a961bc74d9252f1b270d729c6.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "566",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":9.74255,\"currency\":\"USD\",\"marketValue\":76037488},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Prosus NV Ordinary Shares - Class N\",\"weighting\":5.04649,\"currency\":\"USD\",\"marketValue\":39386216},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SK Hynix Inc\",\"weighting\":4.56503,\"currency\":\"USD\",\"marketValue\":35628603},{\"market\":null,\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Credit Agricole Corporate & Investment Bank Sa/United States\",\"weighting\":4.16467,\"currency\":\"USD\",\"marketValue\":32503891},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ICICI Bank Ltd\",\"weighting\":4.03859,\"currency\":\"USD\",\"marketValue\":31519891},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Samsung Electronics Co Ltd\",\"weighting\":3.53452,\"currency\":\"USD\",\"marketValue\":27585779},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd Ordinary Shares\",\"weighting\":3.13211,\"currency\":\"USD\",\"marketValue\":24445115},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":2.8549,\"currency\":\"USD\",\"marketValue\":22281592},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MediaTek Inc\",\"weighting\":2.72316,\"currency\":\"USD\",\"marketValue\":21253405},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grupo Financiero Banorte SAB de CV Class O\",\"weighting\":2.53978,\"currency\":\"USD\",\"marketValue\":19822154}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

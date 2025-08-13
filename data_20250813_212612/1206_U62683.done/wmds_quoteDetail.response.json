@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62683",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:31:48.970401",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62683%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "0406108b-437b-452c-96ed-75bba0f9faae:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "3kBwz122qhxJlMv6WN4Ebcji45W9NMrVrLnphaIWHXphZiVtkkfQyg==",
+        "x-hsbc-request-correlation-id": "8f63c094-b65c-4c2f-a509-9cc541b0e349",
+        "date": "Wed, 13 Aug 2025 13:31:48 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 edbde6f5035529435e07e62f80ccc742.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1248",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62683\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MO\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":18.62,\"currency\":\"EUR\",\"companyName\":\"FIDELITY FUNDS - EUROPEAN MULTI ASSET INCOME FUND (CLASS A-EUR-ACC)\",\"securityDescription\":null,\"changeAmount\":-0.01,\"changePercent\":-0.05368,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00006DA2\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":7.31707},{\"year\":2023,\"annualCalendarYearReturn\":7.34355},{\"year\":2022,\"annualCalendarYearReturn\":-12.85476},{\"year\":2021,\"annualCalendarYearReturn\":9.3731},{\"year\":2020,\"annualCalendarYearReturn\":-2.02743}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":3.38137,\"dailyPerformanceNAV\":3.21508},{\"period\":\"1M\",\"trailingTotalReturn\":0.59331,\"dailyPerformanceNAV\":0.21529},{\"period\":\"3M\",\"trailingTotalReturn\":3.03867,\"dailyPerformanceNAV\":2.08333},{\"period\":\"6M\",\"trailingTotalReturn\":0.91991,\"dailyPerformanceNAV\":0.16138},{\"period\":\"1Y\",\"trailingTotalReturn\":6.44977,\"dailyPerformanceNAV\":7.63006},{\"period\":\"3Y\",\"trailingTotalReturn\":4.63448,\"dailyPerformanceNAV\":4.4076},{\"period\":\"5Y\",\"trailingTotalReturn\":3.6095,\"dailyPerformanceNAV\":3.23473},{\"period\":\"10Y\",\"trailingTotalReturn\":1.53803,\"dailyPerformanceNAV\":1.70744}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2015-11-09\"},\"entityUpdatedTime\":\"2025-08-13T21:31:48.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62683\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2683\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62683\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0261950553\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006DA2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050002664\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50002664\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

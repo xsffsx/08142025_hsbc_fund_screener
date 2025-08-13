@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_advanceChart",
+  "product_code": "U63570",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:02:42.807804",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/advanceChart?body=%7B%22productKeys%22%3A%5B%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63570%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D%5D%2C%22timeZone%22%3A%22Asia%2FHong_Kong%22%2C%22startDate%22%3A%222022-08-13%22%2C%22endDate%22%3A%222025-08-13%22%2C%22currency%22%3A%22GBP%22%2C%22dataType%22%3A%5B%22navPrice%22%5D%2C%22frequency%22%3A%22daily%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "107c1d0f-cea5-4a84-9b5d-2da9294c6556:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "4ANIhS0LtuEYmx81PSM6RI24tPUCww8XVYeblF4fG-EMpaJKuG2Zgg==",
+        "x-hsbc-request-correlation-id": "5a113e81-1f53-47db-9def-929b0d1894e4",
+        "date": "Wed, 13 Aug 2025 14:02:37 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 053b1a4cfd9215b4abb8a58ea35b06aa.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "507",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"result\":[{\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63570\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3570\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63570\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU3083231533\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001VRFX\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000159121\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000159121\"}],\"data\":[{\"date\":\"2025-06-25\",\"cumulativeReturn\":null,\"navPrice\":1},{\"date\":\"2025-06-26\",\"cumulativeReturn\":null,\"navPrice\":1.002},{\"date\":\"2025-06-27\",\"cumulativeReturn\":null,\"navPrice\":1.008},{\"date\":\"2025-06-30\",\"cumulativeReturn\":null,\"navPrice\":1.006},{\"date\":\"2025-07-01\",\"cumulativeReturn\":null,\"navPrice\":1.008},{\"date\":\"2025-07-02\",\"cumulativeReturn\":null,\"navPrice\":1.011},{\"date\":\"2025-07-03\",\"cumulativeReturn\":null,\"navPrice\":1.019},{\"date\":\"2025-07-04\",\"cumulativeReturn\":null,\"navPrice\":1.014},{\"date\":\"2025-07-07\",\"cumulativeReturn\":null,\"navPrice\":1.011},{\"date\":\"2025-07-08\",\"cumulativeReturn\":null,\"navPrice\":1.015},{\"date\":\"2025-07-09\",\"cumulativeReturn\":null,\"navPrice\":1.016},{\"date\":\"2025-07-10\",\"cumulativeReturn\":null,\"navPrice\":1.021},{\"date\":\"2025-07-11\",\"cumulativeReturn\":null,\"navPrice\":1.016},{\"date\":\"2025-07-14\",\"cumulativeReturn\":null,\"navPrice\":1.015},{\"date\":\"2025-07-15\",\"cumulativeReturn\":null,\"navPrice\":1.012},{\"date\":\"2025-07-16\",\"cumulativeReturn\":null,\"navPrice\":1.012},{\"date\":\"2025-07-17\",\"cumulativeReturn\":null,\"navPrice\":1.018},{\"date\":\"2025-07-18\",\"cumulativeReturn\":null,\"navPrice\":1.017},{\"date\":\"2025-07-21\",\"cumulativeReturn\":null,\"navPrice\":1.018},{\"date\":\"2025-07-22\",\"cumulativeReturn\":null,\"navPrice\":1.016},{\"date\":\"2025-07-23\",\"cumulativeReturn\":null,\"navPrice\":1.021},{\"date\":\"2025-07-24\",\"cumulativeReturn\":null,\"navPrice\":1.022},{\"date\":\"2025-07-25\",\"cumulativeReturn\":null,\"navPrice\":1.025},{\"date\":\"2025-07-28\",\"cumulativeReturn\":null,\"navPrice\":1.024},{\"date\":\"2025-07-29\",\"cumulativeReturn\":null,\"navPrice\":1.027},{\"date\":\"2025-07-30\",\"cumulativeReturn\":null,\"navPrice\":1.025},{\"date\":\"2025-07-31\",\"cumulativeReturn\":null,\"navPrice\":1.02},{\"date\":\"2025-08-01\",\"cumulativeReturn\":null,\"navPrice\":0.999},{\"date\":\"2025-08-04\",\"cumulativeReturn\":null,\"navPrice\":1.007},{\"date\":\"2025-08-05\",\"cumulativeReturn\":null,\"navPrice\":1.007},{\"date\":\"2025-08-06\",\"cumulativeReturn\":null,\"navPrice\":1.006},{\"date\":\"2025-08-07\",\"cumulativeReturn\":null,\"navPrice\":1.014},{\"date\":\"2025-08-08\",\"cumulativeReturn\":null,\"navPrice\":1.014},{\"date\":\"2025-08-11\",\"cumulativeReturn\":null,\"navPrice\":1.014},{\"date\":\"2025-08-12\",\"cumulativeReturn\":null,\"navPrice\":1.014}],\"productName\":\"FIDELITY FUNDS - GLOBAL DIVIDEND PLUS FUND (CLASS A-GBPH-MCDIST(G)-C)\",\"indexName\":null,\"currency\":\"GBP\",\"frequency\":\"daily\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

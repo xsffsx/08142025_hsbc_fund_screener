@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U40317",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:16.638545",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U40317%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c88b698a-a440-4bd5-89bf-1e352373c66a:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ByoqM8THAgllECnjmsloUPcNwGBvjiGvPqSOmmxdVnIA3TL1uhWQ6g==",
+        "x-hsbc-request-correlation-id": "07b67064-ed8b-4f82-94cb-aba81325f0d6",
+        "date": "Wed, 13 Aug 2025 13:38:16 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 6af6427bb724ed97dc18880bebe29cdc.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "537",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global Corp Bd ZQ1\",\"weighting\":19.09195,\"currency\":\"HKD\",\"marketValue\":21432742},{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Pooled Hong Kong Equity W\",\"weighting\":4.88721,\"currency\":\"HKD\",\"marketValue\":5486410},{\"market\":\"GB\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC European Index Institutional Acc\",\"weighting\":3.64458,\"currency\":\"HKD\",\"marketValue\":4091430},{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Pooled Asian Bond W\",\"weighting\":3.41965,\"currency\":\"HKD\",\"marketValue\":3838917},{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Pooled Asia Pac ex Jpn Eq Idx Tra W\",\"weighting\":2.87906,\"currency\":\"HKD\",\"marketValue\":3232048},{\"market\":\"LU\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amundi IS JP Morgan GBI Glbl Gvs ETF DR\",\"weighting\":2.65288,\"currency\":\"HKD\",\"marketValue\":2978139},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 3.875%\",\"weighting\":2.31776,\"currency\":\"HKD\",\"marketValue\":2601934},{\"market\":\"LU\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amundi US Curve Stpng 2-10 ETF Acc\",\"weighting\":2.28681,\"currency\":\"HKD\",\"marketValue\":2567183},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 4.625%\",\"weighting\":2.14132,\"currency\":\"HKD\",\"marketValue\":2403857},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bonds 4.5%\",\"weighting\":2.10279,\"currency\":\"HKD\",\"marketValue\":2360607}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U90338",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:59:06.712209",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U90338%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "11f0a73e-7550-4db6-a553-8ae2a9bb745c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "yuIr8bwmsSdDZrWxGhSpzBaugT__M-RtwBHX8dk0uXkQhBgjjmwS3A==",
+        "x-hsbc-request-correlation-id": "7146ce79-864b-469d-a23c-fbf19dd4bef7",
+        "date": "Wed, 13 Aug 2025 13:59:05 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 db987b94354bedc3a16788229c0e652c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "492",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":9.58844,\"currency\":\"USD\",\"marketValue\":120386803},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd Ordinary Shares\",\"weighting\":7.82372,\"currency\":\"USD\",\"marketValue\":98230017},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Xiaomi Corp Class B\",\"weighting\":7.17575,\"currency\":\"USD\",\"marketValue\":90094540},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Construction Bank Corp Class H\",\"weighting\":6.62938,\"currency\":\"USD\",\"marketValue\":83234660},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Meituan Class B\",\"weighting\":3.33876,\"currency\":\"USD\",\"marketValue\":41919474},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ping An Insurance (Group) Co. of China Ltd Class H\",\"weighting\":3.29341,\"currency\":\"USD\",\"marketValue\":41350099},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PDD Holdings Inc ADR\",\"weighting\":3.28981,\"currency\":\"USD\",\"marketValue\":41304906},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Merchants Bank Co Ltd Class H\",\"weighting\":3.25143,\"currency\":\"USD\",\"marketValue\":40823073},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NetEase Inc Ordinary Shares\",\"weighting\":3.13096,\"currency\":\"USD\",\"marketValue\":39310510},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JD.com Inc Ordinary Shares - Class A\",\"weighting\":3.07831,\"currency\":\"USD\",\"marketValue\":38649425}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

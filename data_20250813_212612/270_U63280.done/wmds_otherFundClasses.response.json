@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63280",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:42:09.886769",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63280%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "50b99614-0111-4094-9c2e-2a1e4c9a49e5:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "07pFt0WFRFh-LMeii0JvbBeAPlrcWBBmMCM0qXy43y3iAm5jyEDeNg==",
+        "x-hsbc-request-correlation-id": "ed966f37-5346-4a69-97b1-05fa5c810cf9",
+        "date": "Wed, 13 Aug 2025 13:42:09 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "36",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 1115f9e25c9d03c18355ab052e8e9a5c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "426",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF - GLOBAL INFRASTRUCTURE EQUITY (CLASS AM2-USD-MD-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-USD-MD-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63276\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GIEMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63276\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2545637147\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001PUPS\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050637678\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50637678\"}]},{\"productName\":\"HSBC GIF - GLOBAL INFRASTRUCTURE EQUITY (CLASS AM3O-RMBH-MD-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-RMBH-MD-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63281\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GIEMR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63281\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2545637493\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001Q9V0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050637677\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50637677\"}]},{\"productName\":\"HSBC GIF - GLOBAL INFRASTRUCTURE EQUITY (CLASS AM3O-EURH-MD-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-EURH-MD-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63279\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GIEMO\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63279\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2545637659\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001Q9E5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050638029\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50638029\"}]},{\"productName\":\"HSBC GIF - GLOBAL INFRASTRUCTURE EQUITY (CLASS AM2-HKD-MD-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-HKD-MD-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63277\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GIEMH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63277\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2545637220\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001Q9E0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050637676\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50637676\"}]},{\"productName\":\"HSBC GIF - GLOBAL INFRASTRUCTURE EQUITY (CLASS AM3O-AUDH-MD-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-AUDH-MD-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63278\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GIEMA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63278\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2545637576\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001Q9E4\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050637674\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50637674\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

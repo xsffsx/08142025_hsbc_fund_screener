@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U42552",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:32:59.767495",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U42552%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "0006104b-6e11-49c9-9f51-e0dbd48d3602:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "BP8kXuG2VoaLKQdSAP-RjEr_ZPVE45LvZPg-dVYO6Jvx39NkjvfJjg==",
+        "x-hsbc-request-correlation-id": "9dae0112-d905-43a7-8e45-fd0fa5ab8c1f",
+        "date": "Wed, 13 Aug 2025 13:32:59 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 d68bd25f59a68492f9cefc2f64ca2888.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "540",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":9.78945,\"currency\":\"USD\",\"marketValue\":52659870},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":5.25979,\"currency\":\"USD\",\"marketValue\":28293678},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SK Hynix Inc\",\"weighting\":4.93875,\"currency\":\"USD\",\"marketValue\":26566728},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Itau Unibanco Holding SA Participating Preferred\",\"weighting\":3.21164,\"currency\":\"USD\",\"marketValue\":17276204},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PICC Property and Casualty Co Ltd Class H\",\"weighting\":2.85954,\"currency\":\"USD\",\"marketValue\":15382173},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Pop Mart International Group Ltd Ordinary Shares\",\"weighting\":2.82092,\"currency\":\"USD\",\"marketValue\":15174413},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MediaTek Inc\",\"weighting\":2.77998,\"currency\":\"USD\",\"marketValue\":14954183},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Qifu Technology Inc ADR\",\"weighting\":2.75653,\"currency\":\"USD\",\"marketValue\":14828036},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HDFC Bank Ltd\",\"weighting\":2.47758,\"currency\":\"USD\",\"marketValue\":13327494},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd Ordinary Shares\",\"weighting\":2.16132,\"currency\":\"USD\",\"marketValue\":11626281}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

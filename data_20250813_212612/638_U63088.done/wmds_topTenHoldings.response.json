@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63088",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:49:21.353333",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63088%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "3f4281f6-e1bb-4a3c-832f-0de1d97b515a:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "15",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "tcjMdTk5fKXLi8FSNkOjNN_XjDyGfH_tcJCH55BdfQIoXkrcieAzzA==",
+        "x-hsbc-request-correlation-id": "df968401-db82-4188-8174-2bcb17a25791",
+        "date": "Wed, 13 Aug 2025 13:49:20 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "15",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e3f515cf2b40cd90e36f3532dbd8a5ae.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "589",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Adani Electricity Mumbai Ltd. 3.949%\",\"weighting\":2.01522,\"currency\":\"USD\",\"marketValue\":9448186},{\"market\":\"ID\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Star Energy Geothermal Darajat II Ltd / Star Energy Geothermal Salak Ltd. 4\",\"weighting\":1.99284,\"currency\":\"USD\",\"marketValue\":9343247},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AIA Group Ltd, Hong Kong 5.375%\",\"weighting\":1.99002,\"currency\":\"USD\",\"marketValue\":9330020},{\"market\":\"KZ\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JSC National Company KazMunayGas 5.375%\",\"weighting\":1.9813,\"currency\":\"USD\",\"marketValue\":9289127},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MTR Corp Ltd. 5.25%\",\"weighting\":1.96114,\"currency\":\"USD\",\"marketValue\":9194597},{\"market\":\"HK\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bank of East Asia Ltd. (The) 6.75%\",\"weighting\":1.95245,\"currency\":\"USD\",\"marketValue\":9153855},{\"market\":\"MY\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"GENM Capital Labuan Ltd. 3.882%\",\"weighting\":1.93334,\"currency\":\"USD\",\"marketValue\":9064258},{\"market\":\"CO\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grupo Energia Bogota SA 4.875%\",\"weighting\":1.76388,\"currency\":\"USD\",\"marketValue\":8269780},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Standard Chartered PLC 7.018%\",\"weighting\":1.57873,\"currency\":\"USD\",\"marketValue\":7401722},{\"market\":\"CL\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Chile Electricity Luxembourg Mpc II S.a.r.l. 5.58%\",\"weighting\":1.56756,\"currency\":\"USD\",\"marketValue\":7349362}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

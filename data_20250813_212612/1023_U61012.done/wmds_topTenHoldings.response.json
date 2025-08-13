@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61012",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:49:49.808161",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61012%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "872e07a1-86be-4c13-85ab-1b563e30dce5:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "phkaFZO5laIPG7_DQYYa-gw8YbXj1nonp1YdDCvKvu9vI0UislYyCw==",
+        "x-hsbc-request-correlation-id": "838ad1c2-6744-4280-98b2-a3edcd2e6bb4",
+        "date": "Wed, 13 Aug 2025 13:49:49 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 c44c600db483eb2098670fa47c16d840.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "426",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Siemens AG\",\"weighting\":4.7225,\"currency\":\"EUR\",\"marketValue\":8885126},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Airbus SE\",\"weighting\":4.59184,\"currency\":\"EUR\",\"marketValue\":8639298},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Deutsche Telekom AG\",\"weighting\":3.6478,\"currency\":\"EUR\",\"marketValue\":6863138},{\"market\":\"IT\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Enel SpA\",\"weighting\":3.4754,\"currency\":\"EUR\",\"marketValue\":6538781},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AXA SA\",\"weighting\":3.39533,\"currency\":\"EUR\",\"marketValue\":6388136},{\"market\":\"IT\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euronext NV\",\"weighting\":3.19468,\"currency\":\"EUR\",\"marketValue\":6010622},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BAE Systems PLC\",\"weighting\":3.10322,\"currency\":\"EUR\",\"marketValue\":5838551},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ASML Holding NV\",\"weighting\":3.09223,\"currency\":\"EUR\",\"marketValue\":5817874},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TotalEnergies SE\",\"weighting\":2.80501,\"currency\":\"EUR\",\"marketValue\":5277470},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SAP SE\",\"weighting\":2.68379,\"currency\":\"EUR\",\"marketValue\":5049414}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

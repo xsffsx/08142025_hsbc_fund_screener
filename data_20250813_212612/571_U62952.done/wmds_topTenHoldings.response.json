@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62952",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:40.092240",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62952%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "bd479f9f-c8fd-4a3e-a5d6-529b1bef0a6e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "hmvKZsURUjQ7rg1nGmxhe44iMLreNWCboylQgrNTg7VnKvt0762L0g==",
+        "x-hsbc-request-correlation-id": "1099e291-f1b1-4ff2-b64e-aef6234d320a",
+        "date": "Wed, 13 Aug 2025 13:38:39 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e2876f64809db799c11f72a8f088fc24.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "497",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"2 Year Treasury Note Future Sept 25\",\"weighting\":26.34766,\"currency\":\"USD\",\"marketValue\":1415568234},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bobl Future Sept 25\",\"weighting\":7.6636,\"currency\":\"USD\",\"marketValue\":-411738688},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":6.3192,\"currency\":\"USD\",\"marketValue\":-339508777},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Schatz Future Sept 25\",\"weighting\":5.03555,\"currency\":\"USD\",\"marketValue\":270542809},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 2.2%\",\"weighting\":2.75304,\"currency\":\"USD\",\"marketValue\":147911197},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 0.5%\",\"weighting\":2.69938,\"currency\":\"USD\",\"marketValue\":145028440},{\"market\":\"IT\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Short-Term Euro BTP Future Sept 25\",\"weighting\":2.1932,\"currency\":\"USD\",\"marketValue\":117833209},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 3.75%\",\"weighting\":1.95656,\"currency\":\"USD\",\"marketValue\":105118945},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 3.875%\",\"weighting\":1.58981,\"currency\":\"USD\",\"marketValue\":85415039},{\"market\":\"CN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China (People's Republic Of) 2.68%\",\"weighting\":1.38432,\"currency\":\"USD\",\"marketValue\":74374532}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

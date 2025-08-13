@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63230",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:01:11.846317",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63230%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "a1dfe30c-e102-4a98-9fe4-4741babd9575:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "izo1yDpc5osrVmH7nhHI_8c5b4BSPdMwgxiTmmwlvzB8eW6gU-oAXA==",
+        "x-hsbc-request-correlation-id": "eb9e668d-dc4c-4bd8-9f85-0c66f70a98a8",
+        "date": "Wed, 13 Aug 2025 14:01:11 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9fbddde4165412a5f9426c247ca005c0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1262",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63230\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MG\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":8.04,\"currency\":\"NZD\",\"companyName\":\"BLACKROCK GLOBAL FUNDS-DYNAMIC HIGH INCOME FUND (A8-NZDH-MD-C)\",\"securityDescription\":null,\"changeAmount\":0.01,\"changePercent\":0.12453,\"bidPrice\":8.04,\"bidPriceDate\":\"2025-08-12\",\"bidSize\":null,\"askPrice\":8.04,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":6.88279,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001DCMR\",\"tradableCurrency\":\"NZD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":8.84059},{\"year\":2023,\"annualCalendarYearReturn\":12.49567},{\"year\":2022,\"annualCalendarYearReturn\":-19.50802},{\"year\":2021,\"annualCalendarYearReturn\":9.74598},{\"year\":2020,\"annualCalendarYearReturn\":1.57207}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":5.3326,\"dailyPerformanceNAV\":5.59528},{\"period\":\"1M\",\"trailingTotalReturn\":1.06516,\"dailyPerformanceNAV\":1.0639},{\"period\":\"3M\",\"trailingTotalReturn\":7.7555,\"dailyPerformanceNAV\":4.97347},{\"period\":\"6M\",\"trailingTotalReturn\":2.65301,\"dailyPerformanceNAV\":3.29204},{\"period\":\"1Y\",\"trailingTotalReturn\":7.56383,\"dailyPerformanceNAV\":9.75519},{\"period\":\"3Y\",\"trailingTotalReturn\":6.79454,\"dailyPerformanceNAV\":6.13944},{\"period\":\"5Y\",\"trailingTotalReturn\":4.42503,\"dailyPerformanceNAV\":4.17177},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2022-05-25\"},\"entityUpdatedTime\":\"2025-08-13T22:01:11.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63230\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M3230\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63230\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1811365961\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DCMR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050567799\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50567799\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

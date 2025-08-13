@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63140",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:58.136915",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63140%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "9056fedf-0f93-4667-a12c-ed39033a027b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "whUTp5KC8YHzR-Uy2NT9F727whx1D7gRakb5YJkxnEaJ_Fa0MRERlA==",
+        "x-hsbc-request-correlation-id": "40cf5f41-2a5b-4297-a0a6-9d1a913f7cad",
+        "date": "Wed, 13 Aug 2025 13:50:57 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e6e7ea42488c65b080113b45f9cdebb4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "530",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UBS (Lux) BS Asian HY $ Q-mdist\",\"weighting\":21.8084,\"currency\":\"USD\",\"marketValue\":2980421},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UBS (Lux) BS Asian IG Bds USD U-X- Acc\",\"weighting\":20.7268,\"currency\":\"USD\",\"marketValue\":2832605},{\"market\":null,\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ubs Fund Management Luxembourg Sa - Ubs Lux Key Selection Sicav - Asian Equ\",\"weighting\":14.68867,\"currency\":\"USD\",\"marketValue\":2007411},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":5.07652,\"currency\":\"USD\",\"marketValue\":693777},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":5.06027,\"currency\":\"USD\",\"marketValue\":691556},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares Asia Pacific Div ETF USD Dist\",\"weighting\":4.68534,\"currency\":\"USD\",\"marketValue\":640317},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills\",\"weighting\":4.50357,\"currency\":\"USD\",\"marketValue\":615475},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":4.38311,\"currency\":\"USD\",\"marketValue\":599013},{\"market\":null,\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dws Investment Sa-Xtrackers Csi300 Swap Ucits Etf\",\"weighting\":4.30511,\"currency\":\"USD\",\"marketValue\":588353},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":4.18358,\"currency\":\"USD\",\"marketValue\":571744}],\"lastUpdatedDate\":\"2024-12-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

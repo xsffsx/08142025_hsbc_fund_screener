@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63005",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:54:25.589044",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63005%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "532867b6-906a-4c9a-81e6-6871d3ac7f84:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "5t_hEgKE-nMgZXZbXMDVHi60egwfSmuZmn0cnroFJRPgGSX9mgoi0A==",
+        "x-hsbc-request-correlation-id": "8ad2af96-75b3-4f59-ab1d-82e5a79af453",
+        "date": "Wed, 13 Aug 2025 13:54:25 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 db987b94354bedc3a16788229c0e652c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "548",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares $ High Yld Corp Bd ETF USD Dist\",\"weighting\":3.63502,\"currency\":\"USD\",\"marketValue\":1521894},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC US Dollar Liquidity Y\",\"weighting\":3.52026,\"currency\":\"USD\",\"marketValue\":1473849},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CCO Holdings, LLC/ CCO Holdings Capital Corp. 4.75%\",\"weighting\":1.29901,\"currency\":\"USD\",\"marketValue\":543866},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Venture Global LNG Inc. 9.875%\",\"weighting\":1.17441,\"currency\":\"USD\",\"marketValue\":491696},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Permian Resources Operating, LLC 7%\",\"weighting\":1.1208,\"currency\":\"USD\",\"marketValue\":469251},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Calpine Corporation 5%\",\"weighting\":1.04012,\"currency\":\"USD\",\"marketValue\":435475},{\"market\":\"NL\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Trivium Packaging Finance BV 12.25%\",\"weighting\":1.0269,\"currency\":\"USD\",\"marketValue\":429936},{\"market\":\"NL\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Trivium Packaging Finance BV 8.25%\",\"weighting\":1.01106,\"currency\":\"USD\",\"marketValue\":423308},{\"market\":\"IT\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Intesa Sanpaolo S.p.A. 7.7%\",\"weighting\":0.95865,\"currency\":\"USD\",\"marketValue\":401362},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alcoa Nederland Holding B.V. 7.125%\",\"weighting\":0.89482,\"currency\":\"USD\",\"marketValue\":374641}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

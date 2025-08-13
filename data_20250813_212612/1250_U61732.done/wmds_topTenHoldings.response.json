@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61732",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:07:30.913645",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61732%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "9267ef75-bb71-48fb-84fb-7dedc1184a5a:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "kfXFyPYEoas6zbSJUJV3lo9Ma02lej5JPFwBZ6W2buexlFrWcRie9g==",
+        "x-hsbc-request-correlation-id": "31ed0544-fd40-4538-94bb-5d10019b05a9",
+        "date": "Wed, 13 Aug 2025 14:07:30 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 782fcf79958c13c01bfababc6fc4b8ce.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "538",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Petroleo Brasileiro SA Petrobras ADR\",\"weighting\":9.71087,\"currency\":\"USD\",\"marketValue\":42593745},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Nu Holdings Ltd Ordinary Shares Class A\",\"weighting\":8.06769,\"currency\":\"USD\",\"marketValue\":35386406},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Itau Unibanco Holding SA ADR\",\"weighting\":7.21355,\"currency\":\"USD\",\"marketValue\":31640025},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grupo Mexico SAB de CV Class B\",\"weighting\":4.88805,\"currency\":\"USD\",\"marketValue\":21439905},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grupo Financiero Banorte SAB de CV Class O\",\"weighting\":4.55875,\"currency\":\"USD\",\"marketValue\":19995536},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Fomento Economico Mexicano SAB de CV ADR\",\"weighting\":3.73945,\"currency\":\"USD\",\"marketValue\":16401959},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wal - Mart de Mexico SAB de CV\",\"weighting\":3.62673,\"currency\":\"USD\",\"marketValue\":15907512},{\"market\":\"BR\",\"productType\":\"EU\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Banco BTG Pactual S.A. Units Cons of 1 Sh ' 2 Pfd Shs -A-\",\"weighting\":3.32778,\"currency\":\"USD\",\"marketValue\":14596266},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vale SA ADR\",\"weighting\":3.31647,\"currency\":\"USD\",\"marketValue\":14546691},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Equatorial SA\",\"weighting\":3.15572,\"currency\":\"USD\",\"marketValue\":13841574}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63389",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:42:56.367050",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63389%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b3d15437-8313-4362-822a-0cb5dbbaf025:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "4UFoALbOYVu0ghb13-0DEtNqNMD_Y-ihSBPq9SPE_3gZ0b0Ce2IDhw==",
+        "x-hsbc-request-correlation-id": "41175d45-fd1e-48ad-a48a-c5c1b6aff0df",
+        "date": "Wed, 13 Aug 2025 13:42:56 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "33",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 ee53d9169caf0d066385a6a58de01bcc.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "404",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"SCHRODER ISF DYNAMIC INCOME (A-EURH-QD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-EURH-QD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63388\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3388\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63388\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2723853946\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S2YF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050729810\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50729810\"}]},{\"productName\":\"SCHRODER ISF DYNAMIC INCOME (A-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63387\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3387\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63387\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2723854670\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S21U\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050729809\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50729809\"}]},{\"productName\":\"SCHRODER ISF DYNAMIC INCOME (A-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63386\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3386\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63386\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2723852971\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S2YA\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050729808\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50729808\"}]},{\"productName\":\"SCHRODER ISF DYNAMIC INCOME (A-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63385\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3385\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63385\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2723855214\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S3L1\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050729807\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50729807\"}]},{\"productName\":\"SCHRODER ISF DYNAMIC INCOME (A-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63390\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3390\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63390\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2723854167\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S21R\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050729812\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50729812\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

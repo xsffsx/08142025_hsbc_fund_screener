@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63098",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:03:49.429467",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63098%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "37d6a682-4ed6-4fa0-bdc1-8ac3c37f3831:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "oQWq1Mu5pX4-TNZhZj3lkoEb80z9V7GYwCDSeTpuZGzPs-rCPkpZgA==",
+        "x-hsbc-request-correlation-id": "1fef2122-f7cd-46c4-9190-18f7429a15ab",
+        "date": "Wed, 13 Aug 2025 14:03:48 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "20",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 490b2d87256587a734fcd39d5d6c7392.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1266",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63098\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"SS\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":0.6011,\"currency\":\"USD\",\"companyName\":\"MANULIFE GLOBAL FUND-ASIA PACIFIC REIT FUND CLASS AA(USD-MD-G-C)\",\"securityDescription\":null,\"changeAmount\":-0.0023,\"changePercent\":-0.38117,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":7.14242,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001DXC3\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"SPEC\",\"categoryLevel1Name\":\"Specialties\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":-12.45541},{\"year\":2023,\"annualCalendarYearReturn\":0.39448},{\"year\":2022,\"annualCalendarYearReturn\":-16.48371},{\"year\":2021,\"annualCalendarYearReturn\":-5.1773},{\"year\":2020,\"annualCalendarYearReturn\":-6.04989}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":15.49346,\"dailyPerformanceNAV\":17.51126},{\"period\":\"1M\",\"trailingTotalReturn\":1.46878,\"dailyPerformanceNAV\":3.63133},{\"period\":\"3M\",\"trailingTotalReturn\":8.77458,\"dailyPerformanceNAV\":9.59208},{\"period\":\"6M\",\"trailingTotalReturn\":15.55411,\"dailyPerformanceNAV\":16.78205},{\"period\":\"1Y\",\"trailingTotalReturn\":12.32154,\"dailyPerformanceNAV\":13.9446},{\"period\":\"3Y\",\"trailingTotalReturn\":-1.90116,\"dailyPerformanceNAV\":-1.77276},{\"period\":\"5Y\",\"trailingTotalReturn\":-2.93413,\"dailyPerformanceNAV\":-2.67511},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2021-06-07\"},\"entityUpdatedTime\":\"2025-08-13T22:03:48.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63098\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"MU098\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63098\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1813982136\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DXC3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050488109\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50488109\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

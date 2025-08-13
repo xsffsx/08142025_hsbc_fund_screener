@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61615",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:24.242928",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61615%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7447ca0b-3fb1-4832-b7cf-3898e1b76894:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "fk7McOe8TfqznwekvzYM0lhS3VFfM7RZAOpvPi-7PNvxTyC5bAbG-w==",
+        "x-hsbc-request-correlation-id": "6394129d-62e4-49fe-9cd3-d15dc3707eb1",
+        "date": "Wed, 13 Aug 2025 13:29:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 6c1149c24729f98b60d81a165eb520c8.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "491",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"AR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Adecoagro SA 7.5%\",\"weighting\":1.14065,\"currency\":\"USD\",\"marketValue\":1004167},{\"market\":\"BH\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bahrain (Kingdom of) 5.625%\",\"weighting\":0.97462,\"currency\":\"USD\",\"marketValue\":858002},{\"market\":\"AR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Argentina (Republic Of) 4.125%\",\"weighting\":0.96142,\"currency\":\"USD\",\"marketValue\":846378},{\"market\":\"CI\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ivory Coast (Republic Of) 6.125%\",\"weighting\":0.95237,\"currency\":\"USD\",\"marketValue\":838419},{\"market\":\"EC\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ecuador (Republic Of) 6.9%\",\"weighting\":0.92846,\"currency\":\"USD\",\"marketValue\":817369},{\"market\":\"DO\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dominican Republic 5.875%\",\"weighting\":0.86264,\"currency\":\"USD\",\"marketValue\":759420},{\"market\":\"CL\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Chile (Republic Of) 2.55%\",\"weighting\":0.86037,\"currency\":\"USD\",\"marketValue\":757425},{\"market\":\"RO\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Romania (Republic Of) 6.75%\",\"weighting\":0.8185,\"currency\":\"USD\",\"marketValue\":720560},{\"market\":\"AR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Argentina (Republic Of) 5%\",\"weighting\":0.80656,\"currency\":\"USD\",\"marketValue\":710056},{\"market\":\"ZA\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Liquid Telecommunications Financing plc 5.5%\",\"weighting\":0.79713,\"currency\":\"USD\",\"marketValue\":701748}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

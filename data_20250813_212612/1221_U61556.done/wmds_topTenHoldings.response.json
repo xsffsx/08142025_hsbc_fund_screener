@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61556",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:00:20.030295",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61556%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f1fa8718-df18-49b1-9e65-eb9b99c72af9:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "SoLz694sspmo-FIIKo9_GYoeTCy5lMX_07s1lLTORLObdCnt75PwjA==",
+        "x-hsbc-request-correlation-id": "1adf6c39-9a9b-4b4c-b42e-dedbda542027",
+        "date": "Wed, 13 Aug 2025 14:00:19 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 490b2d87256587a734fcd39d5d6c7392.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "557",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"FR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Banijay Entertainment S.A.S. 7%\",\"weighting\":1.73673,\"currency\":\"EUR\",\"marketValue\":5100697},{\"market\":\"ES\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Aedas Homes OPCO S L U 4%\",\"weighting\":1.72111,\"currency\":\"EUR\",\"marketValue\":5054806},{\"market\":\"DE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ASK Chemicals Deutschland Holding GmbH 10%\",\"weighting\":1.55453,\"currency\":\"EUR\",\"marketValue\":4565575},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Iqvia Inc 2.875%\",\"weighting\":1.52618,\"currency\":\"EUR\",\"marketValue\":4482313},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Boparan Finance PLC 9.375%\",\"weighting\":1.47759,\"currency\":\"EUR\",\"marketValue\":4339598},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Primo Water Holdings Inc 3.875%\",\"weighting\":1.38131,\"currency\":\"EUR\",\"marketValue\":4056849},{\"market\":\"FR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kapla Holding SAS (Kiloutou) 5.475%\",\"weighting\":1.34458,\"currency\":\"EUR\",\"marketValue\":3948974},{\"market\":\"IT\",\"productType\":\"BC\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Nexi S.p.A. 1.75%\",\"weighting\":1.32939,\"currency\":\"EUR\",\"marketValue\":3904348},{\"market\":\"IL\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Teva Pharmaceutical Finance Netherlands II B.V 1.625%\",\"weighting\":1.3174,\"currency\":\"EUR\",\"marketValue\":3869144},{\"market\":\"DE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dynamo Newco II GmbH 6.25%\",\"weighting\":1.26735,\"currency\":\"EUR\",\"marketValue\":3722147}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

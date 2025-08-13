@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62988",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:52.287327",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62988%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "666ca8a0-ab8d-40d6-92da-1e1c6e8dfc6a:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "x2uyvFAPryJZ-LNJQEsnWujj1JaOHXCv8Ve3uu47bf49r1fWQavUVQ==",
+        "x-hsbc-request-correlation-id": "bafead0a-23d9-4f43-b053-6986bb346b9e",
+        "date": "Wed, 13 Aug 2025 13:29:52 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 0d77e3c2bc9ecd8af261bb574e3f0214.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "523",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UBSIrlInvO'ConnorCHNL/SAlpStrats$UBPF\",\"weighting\":9.04707,\"currency\":\"USD\",\"marketValue\":76201577},{\"market\":\"US\",\"productType\":\"ST\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Morgan Stanley/China High Div Trs Eqs 25-04.08.25\",\"weighting\":8.18605,\"currency\":\"USD\",\"marketValue\":68949362},{\"market\":\"US\",\"productType\":\"ST\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Morgan Stanley/China High Div Trs Eqs 25-04.08.25\",\"weighting\":7.788,\"currency\":\"USD\",\"marketValue\":-65596645},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":5.54579,\"currency\":\"USD\",\"marketValue\":46711044},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":5.30914,\"currency\":\"USD\",\"marketValue\":44717747},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":3.64639,\"currency\":\"USD\",\"marketValue\":30712754},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NetEase Inc Ordinary Shares\",\"weighting\":3.37172,\"currency\":\"USD\",\"marketValue\":28399268},{\"market\":\"US\",\"productType\":\"ST\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ms/China New Consumption Index Trs Eqs Rec Perf 25-13.05.26\",\"weighting\":3.22728,\"currency\":\"USD\",\"marketValue\":27182681},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":3.1255,\"currency\":\"USD\",\"marketValue\":26325433},{\"market\":\"US\",\"productType\":\"ST\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ms/China New Consumption Index Trs Eqs Rec Perf 25-13.05.26\",\"weighting\":3.06292,\"currency\":\"USD\",\"marketValue\":-25798310}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

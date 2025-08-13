@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62396",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:56:24.804062",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62396%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "512f6414-649a-442a-82a3-627424cc19f7:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Y8NSHykZEWo9mygufbB1Lix-XspG2ZLvtU9ojpYWqtTpnHi2zm9Ylg==",
+        "x-hsbc-request-correlation-id": "92cf180f-b3e6-48f9-988b-215146b9de85",
+        "date": "Wed, 13 Aug 2025 13:56:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 053b1a4cfd9215b4abb8a58ea35b06aa.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "489",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Agnico Eagle Mines Ltd\",\"weighting\":3.92816,\"currency\":\"USD\",\"marketValue\":26762272},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"G Mining Ventures Corp\",\"weighting\":3.69852,\"currency\":\"USD\",\"marketValue\":25197691},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Barrick Mining Corp\",\"weighting\":3.2232,\"currency\":\"USD\",\"marketValue\":21959436},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alamos Gold Inc Class A\",\"weighting\":3.21471,\"currency\":\"USD\",\"marketValue\":21901590},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Newmont Corp Chess Depository Interest\",\"weighting\":3.09748,\"currency\":\"USD\",\"marketValue\":21102865},{\"market\":\"ZA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Anglogold Ashanti PLC\",\"weighting\":3.07786,\"currency\":\"USD\",\"marketValue\":20969223},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Equinox Gold Corp Ordinary Shares Class A\",\"weighting\":3.02312,\"currency\":\"USD\",\"marketValue\":20596287},{\"market\":\"AU\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Perseus Mining Ltd\",\"weighting\":2.75023,\"currency\":\"USD\",\"marketValue\":18737126},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Orla Mining Ltd\",\"weighting\":2.71495,\"currency\":\"USD\",\"marketValue\":18496716},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Torex Gold Resources Inc\",\"weighting\":2.36434,\"currency\":\"USD\",\"marketValue\":16108044}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

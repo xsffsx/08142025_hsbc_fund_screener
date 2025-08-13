@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62926",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:59:18.868190",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62926%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "fbaf8c68-2f70-4a67-8d7d-9b198d7a230a:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "LgaCkCcfNxF79Ki198ToffWsB8vSGiKEuB6uVp8bScUC1rGePU6vaA==",
+        "x-hsbc-request-correlation-id": "c1b7d75d-cb24-4ad7-9802-6cce01a66304",
+        "date": "Wed, 13 Aug 2025 13:59:18 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 5bbd11939e03577f970787e60c8f7b4e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "528",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":24.10613,\"currency\":\"USD\",\"marketValue\":1500746663},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future Sept 25\",\"weighting\":16.31716,\"currency\":\"USD\",\"marketValue\":1015837788},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bobl Future Sept 25\",\"weighting\":12.60152,\"currency\":\"USD\",\"marketValue\":-784517682},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bund Future Sept 25\",\"weighting\":4.04415,\"currency\":\"USD\",\"marketValue\":-251771849},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder ISF Sust Glb Crdt Inc SDIAccEUR\",\"weighting\":3.53703,\"currency\":\"USD\",\"marketValue\":220200476},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra 10 Year US Treasury Note Future Sept 25\",\"weighting\":3.44195,\"currency\":\"USD\",\"marketValue\":-214281117},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra US Treasury Bond Future Sept 25\",\"weighting\":3.00192,\"currency\":\"USD\",\"marketValue\":-186887200},{\"market\":null,\"productType\":\"IS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Swap/07/24/2035/P:USD/USCPI/1M /R:USD 2.58100\",\"weighting\":2.7342,\"currency\":\"USD\",\"marketValue\":-170220000},{\"market\":null,\"productType\":\"IS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Swap/07/24/2035/P:USD/USCPI/1M /R:USD 2.58100\",\"weighting\":2.72993,\"currency\":\"USD\",\"marketValue\":169953974},{\"market\":\"US\",\"productType\":\"BG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Government National Mortgage Association 6%\",\"weighting\":2.68863,\"currency\":\"USD\",\"marketValue\":167383089}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

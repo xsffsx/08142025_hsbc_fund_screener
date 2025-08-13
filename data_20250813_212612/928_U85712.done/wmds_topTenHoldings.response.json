@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U85712",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:36:46.642833",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U85712%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "bbb1f182-7c46-4b92-a834-dba859d4962f:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "yPeHCGbKhuyj2NhyzZrGe8iVUdyfZvgEmlqHQ2LKTTzZmvfU4jujGQ==",
+        "x-hsbc-request-correlation-id": "ff255fde-8cfe-41ff-ae07-9c69536c8b82",
+        "date": "Wed, 13 Aug 2025 13:36:46 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 aaabf3c304d9acf9f40b5c894869a6cc.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "441",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SAP SE\",\"weighting\":5.70338,\"currency\":\"EUR\",\"marketValue\":60265113},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ASML Holding NV\",\"weighting\":4.04821,\"currency\":\"EUR\",\"marketValue\":42775696},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Siemens AG\",\"weighting\":3.75665,\"currency\":\"EUR\",\"marketValue\":39694901},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Allianz SE\",\"weighting\":3.30329,\"currency\":\"EUR\",\"marketValue\":34904406},{\"market\":\"ES\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Banco Santander SA\",\"weighting\":2.82096,\"currency\":\"EUR\",\"marketValue\":29807827},{\"market\":\"IT\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UniCredit SpA\",\"weighting\":2.77624,\"currency\":\"EUR\",\"marketValue\":29335345},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Deutsche Telekom AG\",\"weighting\":2.71313,\"currency\":\"EUR\",\"marketValue\":28668454},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Safran SA\",\"weighting\":2.41242,\"currency\":\"EUR\",\"marketValue\":25490969},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Engie SA\",\"weighting\":2.25593,\"currency\":\"EUR\",\"marketValue\":23837403},{\"market\":\"IT\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Intesa Sanpaolo\",\"weighting\":2.21104,\"currency\":\"EUR\",\"marketValue\":23363087}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

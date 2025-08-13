@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U40093",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:10.193905",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U40093%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "d996706d-eb98-4d63-8c04-9449d188c068:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "5JH690ry_ElPJVuCtW9AxQIWKCHMatxPnSxKmqMGAzFnzA3pAqI9mg==",
+        "x-hsbc-request-correlation-id": "fa1f76c6-ebc9-4654-bc0c-73582a11902b",
+        "date": "Wed, 13 Aug 2025 13:38:09 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 60da66b0b895927a557eca913aeebc9a.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "530",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":9.67398,\"currency\":\"USD\",\"marketValue\":30692864},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":6.78182,\"currency\":\"USD\",\"marketValue\":21516866},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SK Hynix Inc\",\"weighting\":3.55856,\"currency\":\"USD\",\"marketValue\":11290335},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HDFC Bank Ltd\",\"weighting\":3.47427,\"currency\":\"USD\",\"marketValue\":11022907},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd Ordinary Shares\",\"weighting\":3.41887,\"currency\":\"USD\",\"marketValue\":10847121},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Samsung Electronics Co Ltd\",\"weighting\":3.11133,\"currency\":\"USD\",\"marketValue\":9871387},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hong Kong Exchanges and Clearing Ltd\",\"weighting\":2.97294,\"currency\":\"USD\",\"marketValue\":9432336},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AIA Group Ltd\",\"weighting\":2.59768,\"currency\":\"USD\",\"marketValue\":8241732},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ping An Insurance (Group) Co. of China Ltd Class H\",\"weighting\":2.56196,\"currency\":\"USD\",\"marketValue\":8128408},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Construction Bank Corp Class H\",\"weighting\":2.54811,\"currency\":\"USD\",\"marketValue\":8084454}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

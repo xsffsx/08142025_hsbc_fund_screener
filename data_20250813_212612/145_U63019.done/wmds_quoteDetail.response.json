@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63019",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:55.926710",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63019%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "190c497c-a387-4e6b-9485-3a1078986056:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "qCihxt6BPJWSmNvVMZ_JB4RcNivGu2ozBEaKTHKtJKUk6kpMshM5ew==",
+        "x-hsbc-request-correlation-id": "48e357e8-4d33-48dc-89dc-e0babcdb5cf7",
+        "date": "Wed, 13 Aug 2025 13:47:55 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "46",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 dff94781894736c12dbb6eb4e456a898.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1249",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63019\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MG\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":97.94,\"currency\":\"HKD\",\"companyName\":\"CAPITAL GROUP CAPITAL INCOME BUILDER (LUX) BFDM-HKD (MD-C)\",\"securityDescription\":null,\"changeAmount\":0.75,\"changePercent\":0.77168,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":2.51834,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001HD2C\",\"tradableCurrency\":\"HKD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":7.9956},{\"year\":2023,\"annualCalendarYearReturn\":7.2348},{\"year\":2022,\"annualCalendarYearReturn\":-8.4122},{\"year\":2021,\"annualCalendarYearReturn\":13.99869},{\"year\":2020,\"annualCalendarYearReturn\":0.76667}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":12.44823,\"dailyPerformanceNAV\":14.5729},{\"period\":\"1M\",\"trailingTotalReturn\":-0.15011,\"dailyPerformanceNAV\":1.10231},{\"period\":\"3M\",\"trailingTotalReturn\":7.17509,\"dailyPerformanceNAV\":7.37823},{\"period\":\"6M\",\"trailingTotalReturn\":9.03657,\"dailyPerformanceNAV\":9.55739},{\"period\":\"1Y\",\"trailingTotalReturn\":12.55033,\"dailyPerformanceNAV\":16.80925},{\"period\":\"3Y\",\"trailingTotalReturn\":8.76672,\"dailyPerformanceNAV\":8.92017},{\"period\":\"5Y\",\"trailingTotalReturn\":8.07882,\"dailyPerformanceNAV\":7.95243},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2020-03-30\"},\"entityUpdatedTime\":\"2025-08-13T21:47:54.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63019\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP019\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63019\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1968741600\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001HD2C\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050388324\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50388324\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

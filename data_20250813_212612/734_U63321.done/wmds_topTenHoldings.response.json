@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63321",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:48:42.981391",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63321%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ee306fbb-5bb4-470c-8d22-4c4158199160:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "7eE_UXnf5mCgW9A5AOI-t_CRcR5WHmsn2NZCSdUX6A7PNgYCvNMQ1A==",
+        "x-hsbc-request-correlation-id": "b0c8b551-1359-42d7-8010-4fb3e6537d02",
+        "date": "Wed, 13 Aug 2025 13:48:42 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 de78b5b2f4bbd9bb1abd6bed27a85d78.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "469",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"2 Year Treasury Note Future Sept 25\",\"weighting\":25.84291,\"currency\":\"USD\",\"marketValue\":6379524719},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":14.53756,\"currency\":\"USD\",\"marketValue\":3588709687},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bonds 6.25%\",\"weighting\":3.33724,\"currency\":\"USD\",\"marketValue\":823823278},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"US Treasury Bond Future Sept 25\",\"weighting\":2.82027,\"currency\":\"USD\",\"marketValue\":-696204844},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra US Treasury Bond Future Sept 25\",\"weighting\":2.08119,\"currency\":\"USD\",\"marketValue\":513758687},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 5.5%\",\"weighting\":1.99123,\"currency\":\"USD\",\"marketValue\":491549572},{\"market\":\"US\",\"productType\":\"BG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Government National Mortgage Association 5.5%\",\"weighting\":1.82557,\"currency\":\"USD\",\"marketValue\":450655096},{\"market\":\"US\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 6.625%\",\"weighting\":1.63763,\"currency\":\"USD\",\"marketValue\":404262066},{\"market\":\"US\",\"productType\":\"BG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Government National Mortgage Association 5%\",\"weighting\":1.52852,\"currency\":\"USD\",\"marketValue\":377326601},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bonds 6.125%\",\"weighting\":1.47305,\"currency\":\"USD\",\"marketValue\":363634863}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

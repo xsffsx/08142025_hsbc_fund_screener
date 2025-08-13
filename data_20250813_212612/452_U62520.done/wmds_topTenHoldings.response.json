@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62520",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:27.025792",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62520%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "fc48277f-863a-4016-8b64-d1730789b76c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Haju8Saq7bTph5tmlxo4AXNjwcv2vwpNbQSPBJp7-KMcKs2l1shn7A==",
+        "x-hsbc-request-correlation-id": "bc3e0ec6-3e41-45f4-84b5-478c16659e19",
+        "date": "Wed, 13 Aug 2025 13:47:26 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 30d965dd3bd4ca28c3aa1ccfc6be7c36.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "578",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global HY Sec Credit Bd ZC\",\"weighting\":4.41946,\"currency\":\"USD\",\"marketValue\":45079845},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC US Dollar Liquidity Y\",\"weighting\":3.33081,\"currency\":\"USD\",\"marketValue\":33975278},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CCO Holdings, LLC/ CCO Holdings Capital Corp. 7.375%\",\"weighting\":1.22031,\"currency\":\"USD\",\"marketValue\":12447539},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":0.83264,\"currency\":\"USD\",\"marketValue\":8493164},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future Sept 25\",\"weighting\":0.70189,\"currency\":\"USD\",\"marketValue\":7159500},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tenet Healthcare Corporation 6.125%\",\"weighting\":0.66797,\"currency\":\"USD\",\"marketValue\":6813506},{\"market\":\"CA\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wrangler Holdco Corp. 6.625%\",\"weighting\":0.65439,\"currency\":\"USD\",\"marketValue\":6674953},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Shift4 Payments Llc / Shift4 Payments Finance Subordinated Incorporated 5.5\",\"weighting\":0.62605,\"currency\":\"USD\",\"marketValue\":6385908},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NRG Energy, Inc. 6%\",\"weighting\":0.62103,\"currency\":\"USD\",\"marketValue\":6334658},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Frontier Communications Holdings Llc 8.625%\",\"weighting\":0.60926,\"currency\":\"USD\",\"marketValue\":6214641}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

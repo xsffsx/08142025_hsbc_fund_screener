@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62720",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:59:17.831279",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62720%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f23a950a-7eeb-48f3-a6fc-670067240fff:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "OPXBtOTjrbkVxbsjZoXA8Ak2wDIvjjf2aH4VgsErD4SCaKgTC-eIww==",
+        "x-hsbc-request-correlation-id": "67c213a2-3fae-476e-8cf2-aa42b090faf1",
+        "date": "Wed, 13 Aug 2025 13:59:16 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2e4090c5117f92dd57a3a8b0cbf9daa4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "447",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NVIDIA Corp\",\"weighting\":11.53654,\"currency\":\"USD\",\"marketValue\":969196021},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Microsoft Corp\",\"weighting\":10.00771,\"currency\":\"USD\",\"marketValue\":840757054},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amazon.com Inc\",\"weighting\":8.37342,\"currency\":\"USD\",\"marketValue\":703458878},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Meta Platforms Inc Class A\",\"weighting\":7.48426,\"currency\":\"USD\",\"marketValue\":628759540},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Broadcom Inc\",\"weighting\":5.35546,\"currency\":\"USD\",\"marketValue\":449917268},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alphabet Inc Class C\",\"weighting\":5.14642,\"currency\":\"USD\",\"marketValue\":432355284},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Netflix Inc\",\"weighting\":4.58103,\"currency\":\"USD\",\"marketValue\":384857033},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Visa Inc Class A\",\"weighting\":4.21624,\"currency\":\"USD\",\"marketValue\":354210736},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Eli Lilly and Co\",\"weighting\":2.39914,\"currency\":\"USD\",\"marketValue\":201553624},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Costco Wholesale Corp\",\"weighting\":2.12107,\"currency\":\"USD\",\"marketValue\":178193330}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

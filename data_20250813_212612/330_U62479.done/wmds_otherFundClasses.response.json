@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62479",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:03.924477",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62479%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e2658ddd-7718-4183-b655-59db3706b0eb:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "3MRzSe8q5Sz6mylQVbESare_U_SrhLCJEeVKOp34FzovjwI8KD0mLg==",
+        "x-hsbc-request-correlation-id": "76d8eeb2-f0b4-42af-aa15-5893a645b1da",
+        "date": "Wed, 13 Aug 2025 13:29:03 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "40",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 ebfe2ea28af076dd97d740fa7b754f84.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "553",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JPM Multi Income (RMB Hedged-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"RMB HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62697\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2697\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62697\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000192325\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012NDM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050002804\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50002804\"}]},{\"productName\":\"JPMorgan Multi Income (SGD Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"SGD Hedged-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62546\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2546\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62546\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000122488\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000X4K6\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047695\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047695\"}]},{\"productName\":\"JPMorgan Multi Income (GBP Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"GBP Hedged-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62545\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2545\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62545\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000122470\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000X4K5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047694\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047694\"}]},{\"productName\":\"JPMorgan Multi Income (EUR Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"EUR Hedged-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62544\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2544\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62544\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000122462\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000X4K4\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047693\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047693\"}]},{\"productName\":\"JPMorgan Multi Income (CAD Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CAD Hedged-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62526\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2526\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62526\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000115318\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WFMX\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047658\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047658\"}]},{\"productName\":\"JPMorgan Multi Income (AUD Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"AUD - Hedged MDIST - CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62525\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2525\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62525\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000115300\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WF2A\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047652\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047652\"}]},{\"productName\":\"JPMorgan Multi Income (NZD Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"NZD Hedged-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62524\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2524\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62524\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000115326\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WFMY\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047657\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047657\"}]},{\"productName\":\"JPMorgan Multi Income (USD-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62478\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2478\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62478\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000084514\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000TYLE\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047568\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047568\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

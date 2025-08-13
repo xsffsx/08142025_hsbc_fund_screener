@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61559",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:31:16.136152",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61559%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "fe06a37c-26ee-40f2-8a12-0d3064f1e1c0:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Lp7fZNG70GxMFbsM1vvswXgOfkuZJx5_b3_IQOEBvhaSMo_bwkEc8g==",
+        "x-hsbc-request-correlation-id": "e5694b97-dc88-4841-af49-47d92ff86647",
+        "date": "Wed, 13 Aug 2025 13:31:15 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a5fd5d737f647cccf737a7861eb637b4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "466",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BNP Paribas Act. Cat.A\",\"weighting\":4.93424,\"currency\":\"EUR\",\"marketValue\":30080680},{\"market\":\"CH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Roche Holding AG\",\"weighting\":4.67734,\"currency\":\"EUR\",\"marketValue\":28514538},{\"market\":\"CH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Novartis AG Registered Shares\",\"weighting\":4.04845,\"currency\":\"EUR\",\"marketValue\":24680616},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Deutsche Bank AG\",\"weighting\":4.03971,\"currency\":\"EUR\",\"marketValue\":24627365},{\"market\":\"ES\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CaixaBank SA\",\"weighting\":3.57414,\"currency\":\"EUR\",\"marketValue\":21789124},{\"market\":\"IT\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UniCredit SpA\",\"weighting\":3.28738,\"currency\":\"EUR\",\"marketValue\":20040931},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ASR Nederland NV\",\"weighting\":3.17921,\"currency\":\"EUR\",\"marketValue\":19381449},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Shell PLC\",\"weighting\":3.10831,\"currency\":\"EUR\",\"marketValue\":18949254},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AerCap Holdings NV\",\"weighting\":3.00309,\"currency\":\"EUR\",\"marketValue\":18307778},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BP PLC\",\"weighting\":2.97671,\"currency\":\"EUR\",\"marketValue\":18147001}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

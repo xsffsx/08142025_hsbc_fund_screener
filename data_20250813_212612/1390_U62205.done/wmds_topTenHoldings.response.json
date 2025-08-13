@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62205",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:01:22.311530",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62205%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "92c18ba6-58d3-486b-864b-770943b3fb96:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "wCnkmurvj-nq0ZNaXTzKYhZNFqk7ixS5_8U_VaAyPGJwPgbHUAMotA==",
+        "x-hsbc-request-correlation-id": "926ea411-1dd1-4e64-9720-878ffb733624",
+        "date": "Wed, 13 Aug 2025 14:01:21 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "46",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 900141041f08038f9452e4f1a092ecd2.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "477",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"MY\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Malaysia (Government Of) 3.9%\",\"weighting\":15.42167,\"currency\":\"USD\",\"marketValue\":13034391},{\"market\":\"KR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Korea (Republic Of) 3.25%\",\"weighting\":13.79889,\"currency\":\"USD\",\"marketValue\":11662817},{\"market\":\"ID\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Indonesia (Republic of) 7%\",\"weighting\":11.02928,\"currency\":\"USD\",\"marketValue\":9321944},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 7.26%\",\"weighting\":8.78007,\"currency\":\"USD\",\"marketValue\":7420910},{\"market\":\"KR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Korea (Republic Of) 3.5%\",\"weighting\":6.01155,\"currency\":\"USD\",\"marketValue\":5080960},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 7.18%\",\"weighting\":5.51654,\"currency\":\"USD\",\"marketValue\":4662579},{\"market\":\"MY\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Malaysia (Government Of) 4.498%\",\"weighting\":4.5707,\"currency\":\"USD\",\"marketValue\":3863151},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 7.18%\",\"weighting\":4.10543,\"currency\":\"USD\",\"marketValue\":3469908},{\"market\":\"AU\",\"productType\":\"DS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"New South Wales Treasury Corporation 2%\",\"weighting\":3.58778,\"currency\":\"USD\",\"marketValue\":3032393},{\"market\":\"PH\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Philippines (Republic Of) 6.75%\",\"weighting\":3.44759,\"currency\":\"USD\",\"marketValue\":2913901}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

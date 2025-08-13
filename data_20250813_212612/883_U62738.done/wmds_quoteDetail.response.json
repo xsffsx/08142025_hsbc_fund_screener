@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62738",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:26:32.750973",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62738%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c9d417cf-6143-47a2-ad1d-3ab27f6c80d8:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "X2mHcgzZhm9jjdJRPwNatayd7hun8KH_Tok6e4sxr1y4XgCrwJMbbQ==",
+        "x-hsbc-request-correlation-id": "e6703f31-c2d5-4f98-96d7-9320e04637d2",
+        "date": "Wed, 13 Aug 2025 13:26:31 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "22",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 66a56783d1e9dc3092b15cd0a5351186.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1260",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62738\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"CF\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":190.4548,\"currency\":\"EUR\",\"companyName\":\"Schroder International Selection Fund Global Gold (Class A-Accumulation) EUR - H\",\"securityDescription\":null,\"changeAmount\":2.3237,\"changePercent\":1.23515,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001843K\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"SPEC\",\"categoryLevel1Name\":\"Specialties\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":14.31508},{\"year\":2023,\"annualCalendarYearReturn\":9.82689},{\"year\":2022,\"annualCalendarYearReturn\":-15.34422},{\"year\":2021,\"annualCalendarYearReturn\":-19.70964},{\"year\":2020,\"annualCalendarYearReturn\":26.16033}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":55.13431,\"dailyPerformanceNAV\":74.72917},{\"period\":\"1M\",\"trailingTotalReturn\":-0.46631,\"dailyPerformanceNAV\":10.20484},{\"period\":\"3M\",\"trailingTotalReturn\":8.015,\"dailyPerformanceNAV\":18.27647},{\"period\":\"6M\",\"trailingTotalReturn\":31.86375,\"dailyPerformanceNAV\":41.52253},{\"period\":\"1Y\",\"trailingTotalReturn\":47.0649,\"dailyPerformanceNAV\":73.40099},{\"period\":\"3Y\",\"trailingTotalReturn\":29.35662,\"dailyPerformanceNAV\":33.569},{\"period\":\"5Y\",\"trailingTotalReturn\":3.13303,\"dailyPerformanceNAV\":6.79283},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2016-06-29\"},\"entityUpdatedTime\":\"2025-08-13T21:26:31.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62738\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2738\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62738\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1223083087\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001843K\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004024\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004024\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

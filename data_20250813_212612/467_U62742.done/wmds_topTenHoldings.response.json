@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62742",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:53:53.906876",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62742%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "3b2ae902-e20a-4f04-9bcc-23a56ea79670:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "O9og-Z8l2MEdPnMjpKqnsPV9Dro7-U76CuCmo-Ona7LJ4dRvnL1CvA==",
+        "x-hsbc-request-correlation-id": "1ae72307-157a-40bd-ad05-2de0f787d29c",
+        "date": "Wed, 13 Aug 2025 13:53:53 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 901fdc9beff7ff35478f18c7b70da04e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "496",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"DE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schaeffler AG 4.75%\",\"weighting\":2.43887,\"currency\":\"EUR\",\"marketValue\":315175},{\"market\":\"ES\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Telefonica Europe B V 2.376%\",\"weighting\":2.16025,\"currency\":\"EUR\",\"marketValue\":279168},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vodafone Group PLC 8%\",\"weighting\":2.09862,\"currency\":\"EUR\",\"marketValue\":271204},{\"market\":\"IT\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Telecom Italia S.p.A. 7.875%\",\"weighting\":1.78752,\"currency\":\"EUR\",\"marketValue\":231001},{\"market\":\"FR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Electricite de France SA 7.5%\",\"weighting\":1.76034,\"currency\":\"EUR\",\"marketValue\":227488},{\"market\":\"ES\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Telefonica Europe B V 7.125%\",\"weighting\":1.74541,\"currency\":\"EUR\",\"marketValue\":225558},{\"market\":\"SE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Verisure Midholding AB (publ) 5.25%\",\"weighting\":1.69052,\"currency\":\"EUR\",\"marketValue\":218465},{\"market\":\"IT\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Rossini S.a.r.l. 6.75%\",\"weighting\":1.68148,\"currency\":\"EUR\",\"marketValue\":217296},{\"market\":\"DE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bayer AG 6.625%\",\"weighting\":1.67398,\"currency\":\"EUR\",\"marketValue\":216327},{\"market\":\"NL\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Q-Park Holding I B.V. 5.125%\",\"weighting\":1.61696,\"currency\":\"EUR\",\"marketValue\":208960}],\"lastUpdatedDate\":\"2025-05-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

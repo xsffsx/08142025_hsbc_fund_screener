@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63057",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:59.432137",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63057%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "4f2e8536-6ad6-4a17-8989-799edcf8bd79:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "n8JFZAihhYX4tOgQAC4H7pVs-y_gdORkfg1T6dUMCaIjouUmjlSbJQ==",
+        "x-hsbc-request-correlation-id": "53193a10-2d35-4ba9-9578-52bd15248248",
+        "date": "Wed, 13 Aug 2025 13:50:58 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e3f515cf2b40cd90e36f3532dbd8a5ae.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "498",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF GEM ESG Local Debt ZQ1USD\",\"weighting\":10.05954,\"currency\":\"USD\",\"marketValue\":9453411},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Toyota Motor Corp\",\"weighting\":2.76462,\"currency\":\"USD\",\"marketValue\":2598043},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":2.39865,\"currency\":\"USD\",\"marketValue\":2254125},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Pigeon Corp\",\"weighting\":1.80784,\"currency\":\"USD\",\"marketValue\":1698907},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"DBS Group Holdings Ltd\",\"weighting\":1.65165,\"currency\":\"USD\",\"marketValue\":1552131},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SoftBank Corp\",\"weighting\":1.57705,\"currency\":\"USD\",\"marketValue\":1482027},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Construction Bank Corp Class H\",\"weighting\":1.36513,\"currency\":\"USD\",\"marketValue\":1282873},{\"market\":\"AU\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wesfarmers Ltd\",\"weighting\":1.25097,\"currency\":\"USD\",\"marketValue\":1175589},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MediaTek Inc\",\"weighting\":1.22108,\"currency\":\"USD\",\"marketValue\":1147500},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Quanta Computer Inc\",\"weighting\":1.21435,\"currency\":\"USD\",\"marketValue\":1141184}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

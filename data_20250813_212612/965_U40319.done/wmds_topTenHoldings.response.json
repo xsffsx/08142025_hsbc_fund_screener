@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U40319",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:49:46.972873",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U40319%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e42cc38f-e738-4439-af74-1cdbb14ce804:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "jIMIDyuQUUum9XcCTXIJQN80aH72XCg3_P1IdPTWnnIfGJnIi7Jiug==",
+        "x-hsbc-request-correlation-id": "a33ac11b-e4be-4e26-bb0b-98c43140d183",
+        "date": "Wed, 13 Aug 2025 13:49:45 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 43b4a9a8792e30ac49642ef84dd35fc8.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "540",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Pooled Hong Kong Equity W\",\"weighting\":14.86161,\"currency\":\"HKD\",\"marketValue\":162311033},{\"market\":\"GB\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC European Index Institutional Acc\",\"weighting\":12.69386,\"currency\":\"HKD\",\"marketValue\":138636000},{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Pooled Asia Pac ex Jpn Eq Idx Tra W\",\"weighting\":11.50479,\"currency\":\"HKD\",\"marketValue\":125649578},{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Pooled Japan Equity Idx Tracking W\",\"weighting\":8.86026,\"currency\":\"HKD\",\"marketValue\":96767284},{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Pooled American Equity W\",\"weighting\":8.49891,\"currency\":\"HKD\",\"marketValue\":92820787},{\"market\":\"GB\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC FTSE 100 Index Instl Acc\",\"weighting\":4.35789,\"currency\":\"HKD\",\"marketValue\":47594653},{\"market\":\"LU\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amundi IS JP Morgan GBI Glbl Gvs ETF DR\",\"weighting\":3.96334,\"currency\":\"HKD\",\"marketValue\":43285635},{\"market\":\"HK\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ChinaAMC CSI 300 ETF\",\"weighting\":3.49006,\"currency\":\"HKD\",\"marketValue\":38116736},{\"market\":\"HK\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tracker Fund of Hong Kong ETF\",\"weighting\":2.82323,\"currency\":\"HKD\",\"marketValue\":30833900},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Asia Pac ex Jpn Eq HiDiv ZS\",\"weighting\":2.56803,\"currency\":\"HKD\",\"marketValue\":28046780}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

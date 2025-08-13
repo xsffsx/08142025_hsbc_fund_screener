@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43237",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:04:53.440656",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43237%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "89ffea8a-b5c5-4b23-8b0f-bfc508bc505c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "zsiNCCshtpPfM9tABLpuGtPLJHrjGVVm8gqmqPtS-cuUQTXd6EJ8MQ==",
+        "x-hsbc-request-correlation-id": "896bebf7-4962-4b7f-90cc-674b6296a018",
+        "date": "Wed, 13 Aug 2025 14:04:53 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 901fdc9beff7ff35478f18c7b70da04e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "572",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra 10 Year US Treasury Note Future June 25\",\"weighting\":13.21216,\"currency\":\"USD\",\"marketValue\":10331768},{\"market\":\"AU\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Australian Treasury Bond Future June 25\",\"weighting\":6.87592,\"currency\":\"USD\",\"marketValue\":5376896},{\"market\":\"US\",\"productType\":\"EP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Option on S&P 500 PR\",\"weighting\":5.26755,\"currency\":\"USD\",\"marketValue\":-4119170},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Neuberger Berman ShrtDurHYEggm$InstIn\",\"weighting\":5.06023,\"currency\":\"USD\",\"marketValue\":3957045},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":4.58076,\"currency\":\"USD\",\"marketValue\":3582108},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Schatz Future June 25\",\"weighting\":4.4657,\"currency\":\"USD\",\"marketValue\":-3492133},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future June 25\",\"weighting\":3.7602,\"currency\":\"USD\",\"marketValue\":2940434},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 3.75%\",\"weighting\":3.73665,\"currency\":\"USD\",\"marketValue\":2922020},{\"market\":\"HK\",\"productType\":\"EL\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hang Seng China Enterprises Index Future May 25\",\"weighting\":3.1771,\"currency\":\"USD\",\"marketValue\":2484462},{\"market\":\"AU\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Australia (Commonwealth of) 3.75%\",\"weighting\":2.84053,\"currency\":\"USD\",\"marketValue\":2221263}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62874",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:45:52.780595",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62874%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c2fc822a-a527-401f-bd5e-e3b191983edc:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "moyQiZDj8bQ5TAEZrcAMg_6dQaKHpMDOflv3tVSp7V3knam-kPwKZA==",
+        "x-hsbc-request-correlation-id": "113fde83-17ef-4655-bb98-f4f3cad20186",
+        "date": "Wed, 13 Aug 2025 13:45:52 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "22",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 563524a07ba56bf5eeef232093ce2018.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "515",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":6.38361,\"currency\":\"USD\",\"marketValue\":1530068},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd Ordinary Shares\",\"weighting\":4.75647,\"currency\":\"USD\",\"marketValue\":1140063},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Construction Bank Corp Class H\",\"weighting\":4.14847,\"currency\":\"USD\",\"marketValue\":994333},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Merchants Bank Co Ltd Class A\",\"weighting\":2.28364,\"currency\":\"USD\",\"marketValue\":547358},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Industrial And Commercial Bank Of China Ltd Class H\",\"weighting\":2.04754,\"currency\":\"USD\",\"marketValue\":490769},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kweichow Moutai Co Ltd Class A\",\"weighting\":1.99652,\"currency\":\"USD\",\"marketValue\":478539},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Contemporary Amperex Technology Co Ltd Class A\",\"weighting\":1.92106,\"currency\":\"USD\",\"marketValue\":460454},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NetEase Inc Ordinary Shares\",\"weighting\":1.90764,\"currency\":\"USD\",\"marketValue\":457236},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Yangtze Power Co Ltd Class A\",\"weighting\":1.83831,\"currency\":\"USD\",\"marketValue\":440619},{\"market\":\"CN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China (People's Republic Of) 2.71%\",\"weighting\":1.5989,\"currency\":\"USD\",\"marketValue\":383235}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

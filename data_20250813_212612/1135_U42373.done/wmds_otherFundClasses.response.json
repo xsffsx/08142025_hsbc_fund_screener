@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U42373",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:39:14.575445",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U42373%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "a5bdb803-4c89-4f06-8108-d0d1a33eba2e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "pb8gptfkX0DESNRVL9ikoY3bYDfIv-geCp9qyC2-CiCOqcJZQLldZA==",
+        "x-hsbc-request-correlation-id": "db7a97be-ea3c-4a58-bc75-3044fa4f778f",
+        "date": "Wed, 13 Aug 2025 13:39:14 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "31",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 1115f9e25c9d03c18355ab052e8e9a5c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "413",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF - GLOBAL EMERGING MARKETS BOND (CLASS AM2-HKD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-HKD-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62512\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HGBHM\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62512\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0723558572\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000VGI6\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047643\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047643\"}]},{\"productName\":\"HSBC GIF - GLOBAL EMERGING MARKETS BOND (ClASS AM3-EURH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM EUR-MDIST Cash\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62538\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HGBEU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62538\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0798789797\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WLBD\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047688\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047688\"}]},{\"productName\":\"HSBC GIF - GLOBAL EMERGING MARKETS BOND (CLASS AM3-AUDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-AUD-MDIST Cash\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62537\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HGBAU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62537\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0798789524\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WLBB\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047687\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047687\"}]},{\"productName\":\"HSBC GIF - GLOBAL EMERGING MARKETS BOND (CLASS AM2-USD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-USD-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62497\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HGBAM\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62497\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0571531218\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000S2KI\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047609\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047609\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

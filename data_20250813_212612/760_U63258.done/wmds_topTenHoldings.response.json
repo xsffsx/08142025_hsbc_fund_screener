@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63258",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:57:27.234232",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63258%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "33ab11fe-152d-4100-bed3-3801b9ae1792:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "9kQT7tTN_4oakq0KU74lc5qQLhiXhcEo04ePF6uihUMxlLonAhmZZw==",
+        "x-hsbc-request-correlation-id": "615d994a-514a-4280-b978-9ab8c5f04e16",
+        "date": "Wed, 13 Aug 2025 13:57:26 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 eeb64902174f0e1f0d97e045fce78e24.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "465",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":null,\"productType\":\"C\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Deposit\",\"weighting\":54.39834,\"currency\":\"CNH\",\"marketValue\":689200000},{\"market\":null,\"productType\":\"C\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Current Account\",\"weighting\":4.73578,\"currency\":\"CNH\",\"marketValue\":-60000000},{\"market\":null,\"productType\":\"C\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Unsettle Trans. Receivable\",\"weighting\":3.94648,\"currency\":\"CNH\",\"marketValue\":50000000},{\"market\":\"CN\",\"productType\":\"CD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Construction Bank Corp. 0%\",\"weighting\":3.92942,\"currency\":\"CNH\",\"marketValue\":49783762},{\"market\":null,\"productType\":\"C\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Unsettle Trans. Payable\",\"weighting\":3.92925,\"currency\":\"CNH\",\"marketValue\":-49781663},{\"market\":null,\"productType\":\"C\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Current Account\",\"weighting\":3.57413,\"currency\":\"CNH\",\"marketValue\":-45282484},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Development Bank 3.23%\",\"weighting\":3.17319,\"currency\":\"CNH\",\"marketValue\":40202806},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Agricultural Development Bank of China 1.48%\",\"weighting\":3.15754,\"currency\":\"CNH\",\"marketValue\":40004412},{\"market\":\"CN\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"People's Bank of China 1.45%\",\"weighting\":3.15719,\"currency\":\"CNH\",\"marketValue\":40000000},{\"market\":\"CN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China (People's Republic Of) 0%\",\"weighting\":3.1532,\"currency\":\"CNH\",\"marketValue\":39949433}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

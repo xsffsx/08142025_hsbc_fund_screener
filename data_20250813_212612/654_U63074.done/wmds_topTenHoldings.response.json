@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63074",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:31:22.434029",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63074%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b0440965-64fd-44e3-afc6-5d753c10e278:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "V60W50uy1KXlNTPeOUYPCDeuDfZnx6xmq8O9w88JOq_udR44cZQk7Q==",
+        "x-hsbc-request-correlation-id": "aadbc84c-c841-4176-86d4-9e1203d886f4",
+        "date": "Wed, 13 Aug 2025 13:31:22 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "32",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 82f2cf6e6ef43a962e53cadf485a95b6.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "431",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NVIDIA Corp\",\"weighting\":5.15055,\"currency\":\"USD\",\"marketValue\":22232037},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Microsoft Corp\",\"weighting\":5.06624,\"currency\":\"USD\",\"marketValue\":21868133},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Broadcom Inc\",\"weighting\":4.48,\"currency\":\"USD\",\"marketValue\":19337674},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Flex Ltd\",\"weighting\":3.71473,\"currency\":\"USD\",\"marketValue\":16034404},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Visa Inc Class A\",\"weighting\":3.59456,\"currency\":\"USD\",\"marketValue\":15515685},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Rockwell Automation Inc\",\"weighting\":3.44056,\"currency\":\"USD\",\"marketValue\":14850989},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Intercontinental Exchange Inc\",\"weighting\":3.28091,\"currency\":\"USD\",\"marketValue\":14161866},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Veralto Corp\",\"weighting\":2.96895,\"currency\":\"USD\",\"marketValue\":12815300},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Salesforce Inc\",\"weighting\":2.87565,\"currency\":\"USD\",\"marketValue\":12412576},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AECOM\",\"weighting\":2.87084,\"currency\":\"USD\",\"marketValue\":12391802}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

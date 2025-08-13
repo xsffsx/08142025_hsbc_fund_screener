@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43259",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:32:32.911494",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43259%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7ca604ca-e335-48fe-b762-ffea80d8291c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "iMfpb1LoflZ4yqX5mNHu6bWkQwylHiTU1RlKH8wxMgVwFpXyr-LiFQ==",
+        "x-hsbc-request-correlation-id": "e3f81dad-85f8-41b5-a5ee-8557e7809634",
+        "date": "Wed, 13 Aug 2025 13:32:32 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 545772dad015fa358a082f1282e3ba34.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "447",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal Home Loan Banks\",\"weighting\":4.01675,\"currency\":\"USD\",\"marketValue\":9878839},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Chevron Corp\",\"weighting\":2.44433,\"currency\":\"USD\",\"marketValue\":6011616},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ferguson Enterprises Inc\",\"weighting\":2.35987,\"currency\":\"USD\",\"marketValue\":5803900},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BNP Paribas Act. Cat.A\",\"weighting\":2.25186,\"currency\":\"USD\",\"marketValue\":5538259},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alphabet Inc Class A\",\"weighting\":2.25053,\"currency\":\"USD\",\"marketValue\":5534972},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PPL Corp\",\"weighting\":2.18622,\"currency\":\"USD\",\"marketValue\":5376806},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"EOG Resources Inc\",\"weighting\":2.15151,\"currency\":\"USD\",\"marketValue\":5291442},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Medtronic PLC\",\"weighting\":2.13755,\"currency\":\"USD\",\"marketValue\":5257112},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"D.R. Horton Inc\",\"weighting\":2.10048,\"currency\":\"USD\",\"marketValue\":5165951},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Reliance Inc\",\"weighting\":2.09392,\"currency\":\"USD\",\"marketValue\":5149808}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

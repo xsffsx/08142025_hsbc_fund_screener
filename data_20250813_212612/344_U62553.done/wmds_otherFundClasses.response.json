@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62553",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:40:53.599182",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62553%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "175321c9-c697-4eb2-8142-3d4aff5e452f:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "cVm-HkDXBRhwrAA7oASYiMrrSLQeKoCAC5Yt_nspSbtqrnHXxlSVQg==",
+        "x-hsbc-request-correlation-id": "ff62f55b-fb7e-4f39-969e-174195332d90",
+        "date": "Wed, 13 Aug 2025 13:40:52 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e64bf88d7a539292eb52acf1a0390032.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "481",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"SCHRODER ISF GLOBAL MULTI-ASSET INCOME (A-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62993\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2993\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62993\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0924045015\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YWPM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050167752\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50167752\"}]},{\"productName\":\"Schroder ISF - Global Multi-Asset Income(A-MDIS- AUDH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST CASH -AUDH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62554\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2554\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62554\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0911024122\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YEWL\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047759\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047759\"}]},{\"productName\":\"Schroder ISF - Global Multi-Asset Income(A-MDIS- USD)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST CASH -USD\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62551\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2551\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62551\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0757359954\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000VX17\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047757\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047757\"}]},{\"productName\":\"Schroder ISF - Global Multi-Asset Income(A-MDIS- HKD)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST CASH -HKD\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62550\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2550\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62550\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0894486033\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000Y7K8\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047756\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047756\"}]},{\"productName\":\"Schroder ISF - Global Multi-Asset Income(A-QDIS- EURH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST CASH -EURH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62575\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2575\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62575\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0757360960\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000VXE0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047760\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047760\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63238",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:39:47.416490",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63238%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "8249d4ae-5b64-4bc2-aea7-c176140b10d5:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "QpQdkPQL6si19yW0qnZjaEoCiWVVH0ysaU8dLY3KB-nCibtvnQz_Xg==",
+        "x-hsbc-request-correlation-id": "e9b6f20d-dc06-4f1c-9258-7988a8bc6397",
+        "date": "Wed, 13 Aug 2025 13:39:46 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 21c6636d260b8b6a6c360bf2b5396692.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "469",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes\",\"weighting\":1.82023,\"currency\":\"USD\",\"marketValue\":164397962},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Exxon Mobil Corp\",\"weighting\":1.66887,\"currency\":\"USD\",\"marketValue\":150727397},{\"market\":\"US\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal Home Loan Banks\",\"weighting\":1.6625,\"currency\":\"USD\",\"marketValue\":150152355},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PepsiCo Inc\",\"weighting\":1.45071,\"currency\":\"USD\",\"marketValue\":131024000},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Chevron Corp\",\"weighting\":1.42713,\"currency\":\"USD\",\"marketValue\":128894000},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Johnson & Johnson\",\"weighting\":1.27681,\"currency\":\"USD\",\"marketValue\":115318000},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Community Health Systems Incorporated\",\"weighting\":1.22621,\"currency\":\"USD\",\"marketValue\":110747628},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Procter & Gamble Co\",\"weighting\":1.16622,\"currency\":\"USD\",\"marketValue\":105329000},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Merck & Co Inc\",\"weighting\":1.10282,\"currency\":\"USD\",\"marketValue\":99603000},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Southern Co\",\"weighting\":0.94148,\"currency\":\"USD\",\"marketValue\":85032000}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

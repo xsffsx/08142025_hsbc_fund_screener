@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61060",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:17.035162",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61060%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "0ee8978d-a928-4125-a55e-be36e96a03a2:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "SlW9WHOxvHmbv1i-fL2LFug2gTNSAJ4Xa9kWa6llFXEOG6dL1Bm4TA==",
+        "x-hsbc-request-correlation-id": "0f922f00-afeb-4b6f-b4a4-d024346e776c",
+        "date": "Wed, 13 Aug 2025 13:38:16 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9ae68eb5525ee3d01638b582aa3a4566.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "464",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amazon.com Inc\",\"weighting\":6.44424,\"currency\":\"EUR\",\"marketValue\":56784921},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Microsoft Corp\",\"weighting\":5.63357,\"currency\":\"EUR\",\"marketValue\":49641479},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPMorgan Chase & Co\",\"weighting\":5.50315,\"currency\":\"EUR\",\"marketValue\":48492314},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Meta Platforms Inc Class A\",\"weighting\":5.1484,\"currency\":\"EUR\",\"marketValue\":45366329},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NVIDIA Corp\",\"weighting\":4.8929,\"currency\":\"EUR\",\"marketValue\":43114898},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Netflix Inc\",\"weighting\":4.63387,\"currency\":\"EUR\",\"marketValue\":40832386},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Apple Inc\",\"weighting\":3.46832,\"currency\":\"EUR\",\"marketValue\":30561878},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Essilorluxottica\",\"weighting\":3.25993,\"currency\":\"EUR\",\"marketValue\":28725653},{\"market\":\"CH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Compagnie Financiere Richemont SA Class A\",\"weighting\":3.16741,\"currency\":\"EUR\",\"marketValue\":27910344},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Morgan Stanley\",\"weighting\":2.70267,\"currency\":\"EUR\",\"marketValue\":23815178}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

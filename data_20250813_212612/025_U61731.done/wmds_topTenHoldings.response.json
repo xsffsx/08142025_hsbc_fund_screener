@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61731",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:44:47.484273",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61731%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "57008e26-3047-417d-8ad6-c088d2943e65:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "bqwVvF0fOnIDWl78HLdfh-rvrUfc6Tbv0f_mwiHZaeCG3O9qnEu46A==",
+        "x-hsbc-request-correlation-id": "44ef6446-9c3f-4557-8a08-6b748a071ef4",
+        "date": "Wed, 13 Aug 2025 13:44:47 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 f10cf45262aac2b7dc4882c2d77020e4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "538",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":9.2225,\"currency\":\"HKD\",\"marketValue\":674703862},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd Ordinary Shares\",\"weighting\":7.36787,\"currency\":\"HKD\",\"marketValue\":539021901},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AIA Group Ltd\",\"weighting\":6.56282,\"currency\":\"HKD\",\"marketValue\":480125708},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Standard Chartered PLC\",\"weighting\":5.91299,\"currency\":\"HKD\",\"marketValue\":432584781},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hong Kong Exchanges and Clearing Ltd\",\"weighting\":4.97733,\"currency\":\"HKD\",\"marketValue\":364133658},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Contemporary Amperex Technology Co Ltd Class A\",\"weighting\":3.69963,\"currency\":\"HKD\",\"marketValue\":270659260},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Galaxy Entertainment Group Ltd\",\"weighting\":3.45412,\"currency\":\"HKD\",\"marketValue\":252698013},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Techtronic Industries Co Ltd\",\"weighting\":3.16519,\"currency\":\"HKD\",\"marketValue\":231560357},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"H World Group Ltd ADR\",\"weighting\":2.89769,\"currency\":\"HKD\",\"marketValue\":211990681},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Crystal International Group Ltd Ordinary Shares\",\"weighting\":2.81054,\"currency\":\"HKD\",\"marketValue\":205614935}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

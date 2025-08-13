@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61084",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:19.088372",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61084%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "dc659ee4-a90d-4596-bb0e-4a364d2721e6:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "PvywGqhsHA6gsFBQS-UJv_aMMpDR2DA7lgH5ltvNLjiKG9H9-60tcw==",
+        "x-hsbc-request-correlation-id": "896fa6f2-aa1b-4655-a3d7-46d5dd7352a9",
+        "date": "Wed, 13 Aug 2025 13:38:18 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 aaabf3c304d9acf9f40b5c894869a6cc.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "457",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Siemens AG\",\"weighting\":3.6098,\"currency\":\"EUR\",\"marketValue\":46100664},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Compagnie de Saint-Gobain SA\",\"weighting\":2.88798,\"currency\":\"EUR\",\"marketValue\":36882344},{\"market\":\"IT\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UniCredit SpA\",\"weighting\":2.86802,\"currency\":\"EUR\",\"marketValue\":36627447},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Commerzbank AG\",\"weighting\":2.73064,\"currency\":\"EUR\",\"marketValue\":34872970},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Lloyds Banking Group PLC\",\"weighting\":2.65024,\"currency\":\"EUR\",\"marketValue\":33846127},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TotalEnergies SE\",\"weighting\":2.46751,\"currency\":\"EUR\",\"marketValue\":31512529},{\"market\":\"ES\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CaixaBank SA\",\"weighting\":2.44406,\"currency\":\"EUR\",\"marketValue\":31212972},{\"market\":\"DK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Pandora AS\",\"weighting\":2.33701,\"currency\":\"EUR\",\"marketValue\":29845829},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Thales\",\"weighting\":2.32341,\"currency\":\"EUR\",\"marketValue\":29672198},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Weir Group PLC\",\"weighting\":2.28918,\"currency\":\"EUR\",\"marketValue\":29235001}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62882",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:00:56.305877",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62882%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "cc659821-5b7d-4ef0-93b9-88150511c524:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "vFizK-pdcMJFhNfZW3R02YD5XwwA6KCpxd3x2WpOAsht8bni_C7O4A==",
+        "x-hsbc-request-correlation-id": "8a0da828-f691-4fc9-97f6-ab61bd447fac",
+        "date": "Wed, 13 Aug 2025 14:00:56 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "31",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 55d9a4fa548a24d777eff07223b71680.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "425",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF-Global Emerging Markets Multi-Asset Inc (AM2-USD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-USD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62838\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GEMAM\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62838\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1711226354\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001CEQT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050056478\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50056478\"}]},{\"productName\":\"HSBC GIF-Global Emerging Markets Multi-Asset Inc (AM2-HKD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-HKD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62839\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GEMAH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62839\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1711226867\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001CEQX\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050056477\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50056477\"}]},{\"productName\":\"HSBC GIF-Global Emerging Markets Multi-Asset Inc(AM3O-GBPH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-GBPH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62842\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GEMAG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62842\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1711226941\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001CEQY\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050056476\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50056476\"}]},{\"productName\":\"HSBC GIF-Global Emerging Markets Multi-Asset Inc(AM3O-EURH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-EURH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62841\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GEMAE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62841\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1711227089\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001CEQZ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050056475\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50056475\"}]},{\"productName\":\"HSBC GIF-Global Emerging Markets Multi-Asset Inc(AM3O-AUDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-AUDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62840\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GEMAA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62840\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1711227162\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001CER0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050056474\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50056474\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

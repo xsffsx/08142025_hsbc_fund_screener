@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63475",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:31:05.964777",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63475%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "d72afcaf-bc35-4060-a50d-b1a1bd1f9fd8:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "28DUQ-mlMfe9thU70gj62dvBpFT141yLeGlUTzWXtr9QuRrmjZl79g==",
+        "x-hsbc-request-correlation-id": "bb2c2ac8-a1d9-4e8a-a054-8ed5b7bdfed1",
+        "date": "Wed, 13 Aug 2025 13:31:05 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "47",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 c602cb12ab556aa4e21daf73bcadc730.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "584",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF - STRATEGIC DURATION AND INCOME BOND (AMFIXAH-JPYH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFIXAH-JPYH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63474\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSDFJ\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63474\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2910496640\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001U2HQ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000075633\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000075633\"}]},{\"productName\":\"HSBC GIF - STRATEGIC DURATION AND INCOME BOND (AMFIXA-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFIXA-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63469\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSDFH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63469\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2837853196\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001TP4S\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000075632\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000075632\"}]},{\"productName\":\"HSBC GIF - STRATEGIC DURATION AND INCOME BOND (AMFIXAH-GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFIXAH-GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63473\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSDFG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63473\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2837853436\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001TP4N\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000075631\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000075631\"}]},{\"productName\":\"HSBC GIF - STRATEGIC DURATION AND INCOME BOND (AMFIXAH-EURH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFIXAH-EURH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63472\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSDFE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63472\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2837853519\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001TP4O\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000075630\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000075630\"}]},{\"productName\":\"HSBC GIF - STRATEGIC DURATION AND INCOME BOND (AMFIXAH-CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFIXAH-CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63471\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSDFC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63471\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2837853352\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001TP4U\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000075629\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000075629\"}]},{\"productName\":\"HSBC GIF - STRATEGIC DURATION AND INCOME BOND (AMFIXAH-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFIXAH-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63470\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSDFA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63470\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2837853279\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001TP4T\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000075628\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000075628\"}]},{\"productName\":\"HSBC GIF - STRATEGIC DURATION AND INCOME BOND (AMFIXAH-SGDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFIXAH-SGDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63477\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSDFS\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63477\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2837853865\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001TP4R\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000075636\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000075636\"}]},{\"productName\":\"HSBC GIF - STRATEGIC DURATION AND INCOME BOND (AMFIXAH-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFIXAH-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63476\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSDFR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63476\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2837853600\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001TP4P\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000075635\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000075635\"}]},{\"productName\":\"HSBC GIF - STRATEGIC DURATION AND INCOME BOND (AMFIXA-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFIXA-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63468\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSDBU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63468\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2837852974\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001U3CX\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000075627\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000075627\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

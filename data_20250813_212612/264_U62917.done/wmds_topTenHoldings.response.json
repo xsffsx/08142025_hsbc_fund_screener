@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62917",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:07:13.153722",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62917%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7bd60c9c-e9b3-48da-afec-7706faa6c0a2:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "joPMq4o5tHPj48pziqoKm9UeCmXL_YX_UKIh3CvuirN1sQczaV-SjQ==",
+        "x-hsbc-request-correlation-id": "66ecda8d-23f0-40bc-bf3a-81e84d556fac",
+        "date": "Wed, 13 Aug 2025 14:07:12 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 aebce22763fb7e32a807cd494884a9b4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "494",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"HK\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares Core CSI 300 ETF\",\"weighting\":2.77044,\"currency\":\"USD\",\"marketValue\":10733093},{\"market\":\"US\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares MSCI India ETF\",\"weighting\":2.0065,\"currency\":\"USD\",\"marketValue\":7773480},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alphabet Inc Class A\",\"weighting\":1.52738,\"currency\":\"USD\",\"marketValue\":5917300},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amazon.com Inc\",\"weighting\":1.49521,\"currency\":\"USD\",\"marketValue\":5792656},{\"market\":\"US\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares Core S&P 500 ETF\",\"weighting\":1.26183,\"currency\":\"USD\",\"marketValue\":4888530},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cisco Systems Inc\",\"weighting\":1.11262,\"currency\":\"USD\",\"marketValue\":4310444},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bank of New York Mellon Corp\",\"weighting\":1.03396,\"currency\":\"USD\",\"marketValue\":4005715},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wells Fargo & Co\",\"weighting\":0.97821,\"currency\":\"USD\",\"marketValue\":3789722},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":0.96213,\"currency\":\"USD\",\"marketValue\":3727430},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares Core FTSE 100 ETF GBP Dist\",\"weighting\":0.8991,\"currency\":\"USD\",\"marketValue\":3483237}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

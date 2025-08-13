@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63034",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:51:06.460022",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63034%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "aa87d9d1-a369-4992-a6f5-ea08d5d8164c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "J720rtWqQPCLlSiCSiq_DOi0AF_FF1qcWbaqORkD_p1tgV8CG4E-Lg==",
+        "x-hsbc-request-correlation-id": "75841bea-55d1-4bdb-85c0-42fa1aa8f520",
+        "date": "Wed, 13 Aug 2025 13:51:05 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 de78b5b2f4bbd9bb1abd6bed27a85d78.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "484",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":10.45835,\"currency\":\"USD\",\"marketValue\":148460047},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"2 Year Treasury Note Future Sept 25\",\"weighting\":6.27095,\"currency\":\"USD\",\"marketValue\":89018398},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future Sept 25\",\"weighting\":2.80114,\"currency\":\"USD\",\"marketValue\":39763172},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra US Treasury Bond Future Sept 25\",\"weighting\":2.37086,\"currency\":\"USD\",\"marketValue\":-33655234},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Schatz Future Sept 25\",\"weighting\":1.94905,\"currency\":\"USD\",\"marketValue\":27667536},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bobl Future Sept 25\",\"weighting\":1.86933,\"currency\":\"USD\",\"marketValue\":26535866},{\"market\":\"CA\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Government of Canada Bond Future Sept 25\",\"weighting\":1.64573,\"currency\":\"USD\",\"marketValue\":23361687},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra 10 Year US Treasury Note Future Sept 25\",\"weighting\":1.49768,\"currency\":\"USD\",\"marketValue\":21260156},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Buxl Future Sept 25\",\"weighting\":1.18506,\"currency\":\"USD\",\"marketValue\":-16822319},{\"market\":\"GB\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United Kingdom of Great Britain and Northern Ireland 4.125%\",\"weighting\":0.93877,\"currency\":\"USD\",\"marketValue\":13326162}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

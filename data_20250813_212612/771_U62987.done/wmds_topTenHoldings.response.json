@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62987",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:51:57.070738",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62987%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f6dc5538-667c-434a-9002-f421a4f210c3:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "x8hlWU6g9GjycdTnbbanNiXysYM8heN9jlLrU-bu9AtvPx9CuC5xgg==",
+        "x-hsbc-request-correlation-id": "3c6ced16-ea1f-4fc7-bdb6-12910c2a73b5",
+        "date": "Wed, 13 Aug 2025 13:51:56 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 c44c600db483eb2098670fa47c16d840.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "564",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MTR Corp Ltd. 5.25%\",\"weighting\":1.84225,\"currency\":\"USD\",\"marketValue\":19638910},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"GLP China Holdings Ltd. 2.95%\",\"weighting\":1.77362,\"currency\":\"USD\",\"marketValue\":18907308},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC US Dollar Liquidity Y\",\"weighting\":1.70575,\"currency\":\"USD\",\"marketValue\":18183775},{\"market\":\"IN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Muthoot Finance Ltd. 6.375%\",\"weighting\":1.54902,\"currency\":\"USD\",\"marketValue\":16512971},{\"market\":\"LK\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sri Lanka (Democratic Socialist Republic of) 3.35%\",\"weighting\":1.51741,\"currency\":\"USD\",\"marketValue\":16176086},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Asian Currencies Bond ZD\",\"weighting\":1.26588,\"currency\":\"USD\",\"marketValue\":13494657},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Greentown China Holdings Ltd. 8.45%\",\"weighting\":1.26312,\"currency\":\"USD\",\"marketValue\":13465200},{\"market\":\"IN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vedanta Resources Finance II PLC 9.475%\",\"weighting\":1.16307,\"currency\":\"USD\",\"marketValue\":12398731},{\"market\":\"IN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Piramal Capital & Housing Finance Ltd. 7.8%\",\"weighting\":1.15625,\"currency\":\"USD\",\"marketValue\":12326011},{\"market\":\"GB\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Standard Chartered PLC 7.625%\",\"weighting\":1.14712,\"currency\":\"USD\",\"marketValue\":12228672}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

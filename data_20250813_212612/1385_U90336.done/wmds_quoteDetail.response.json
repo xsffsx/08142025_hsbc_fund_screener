@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U90336",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:40:36.636944",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U90336%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "1b67ac41-8efb-42a8-9140-b4bb4fd14828:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "9EsD2lCRB0Agp0SO09_YrDL7vQoNIYCMedui0MzBdwGgLieMbLPMkA==",
+        "x-hsbc-request-correlation-id": "2c1d5a1c-7aeb-4bd9-b975-f4e3aa73d475",
+        "date": "Wed, 13 Aug 2025 13:40:36 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "20",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e2876f64809db799c11f72a8f088fc24.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1248",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U90336\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"EB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":57.17,\"currency\":\"EUR\",\"companyName\":\"Barings Europa Fund (Class C-EUR-Inc)\",\"securityDescription\":null,\"changeAmount\":0.2,\"changePercent\":0.35106,\"bidPrice\":57.17,\"bidPriceDate\":\"2025-08-12\",\"bidSize\":null,\"askPrice\":57.17,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000FXFM\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Annually\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":0.68939},{\"year\":2023,\"annualCalendarYearReturn\":11.79976},{\"year\":2022,\"annualCalendarYearReturn\":-13.69793},{\"year\":2021,\"annualCalendarYearReturn\":25.90114},{\"year\":2020,\"annualCalendarYearReturn\":-6.49849}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":1.66048,\"dailyPerformanceNAV\":0.98922},{\"period\":\"1M\",\"trailingTotalReturn\":-1.99251,\"dailyPerformanceNAV\":-2.60647},{\"period\":\"3M\",\"trailingTotalReturn\":0.45383,\"dailyPerformanceNAV\":-3.38009},{\"period\":\"6M\",\"trailingTotalReturn\":-3.90716,\"dailyPerformanceNAV\":-5.19071},{\"period\":\"1Y\",\"trailingTotalReturn\":-4.19511,\"dailyPerformanceNAV\":-1.83723},{\"period\":\"3Y\",\"trailingTotalReturn\":3.86777,\"dailyPerformanceNAV\":3.25181},{\"period\":\"5Y\",\"trailingTotalReturn\":6.43814,\"dailyPerformanceNAV\":5.66827},{\"period\":\"10Y\",\"trailingTotalReturn\":2.22197,\"dailyPerformanceNAV\":2.4577}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2008-02-25\"},\"entityUpdatedTime\":\"2025-08-13T21:40:36.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U90336\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"B0336\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U90336\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00B2PF5530\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000FXFM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047990\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047990\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

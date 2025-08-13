@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61062",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:03:30.492848",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61062%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b68a8436-ac5f-4381-90a1-72c0388655a2:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "fINqObIq87-zprCctLRnxPDXZZQdxcKg7D-EtR501gf2sIe0xEvxVQ==",
+        "x-hsbc-request-correlation-id": "310caa68-7e62-4fe3-9707-21538ac4806f",
+        "date": "Wed, 13 Aug 2025 14:03:29 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 782fcf79958c13c01bfababc6fc4b8ce.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "455",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Boston Scientific Corp\",\"weighting\":8.18732,\"currency\":\"EUR\",\"marketValue\":100314090},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Eli Lilly and Co\",\"weighting\":5.85611,\"currency\":\"EUR\",\"marketValue\":71751181},{\"market\":\"CH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Roche Holding AG\",\"weighting\":5.83249,\"currency\":\"EUR\",\"marketValue\":71461747},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Stryker Corp\",\"weighting\":5.62286,\"currency\":\"EUR\",\"marketValue\":68893321},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AstraZeneca PLC\",\"weighting\":5.57063,\"currency\":\"EUR\",\"marketValue\":68253395},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Danaher Corp\",\"weighting\":4.4154,\"currency\":\"EUR\",\"marketValue\":54099047},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Abbott Laboratories\",\"weighting\":4.27528,\"currency\":\"EUR\",\"marketValue\":52382318},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AbbVie Inc\",\"weighting\":3.93587,\"currency\":\"EUR\",\"marketValue\":48223735},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Intuitive Surgical Inc\",\"weighting\":3.64023,\"currency\":\"EUR\",\"marketValue\":44601433},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ConvaTec Group PLC\",\"weighting\":3.38938,\"currency\":\"EUR\",\"marketValue\":41527912}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

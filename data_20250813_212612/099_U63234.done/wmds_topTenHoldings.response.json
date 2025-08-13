@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63234",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:57.466923",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63234%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "31df0f90-1f40-4543-bc22-dd30256b394b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ls0RwA3zrmYhaY-wTiKNv7Mr1UBxMi_EQ6XiV7TCUGiVXB04urowYg==",
+        "x-hsbc-request-correlation-id": "1fc33061-7f37-4071-9f84-f6cd30626011",
+        "date": "Wed, 13 Aug 2025 13:33:57 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 adf20896ff3cee531a636761bf3df840.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "494",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":7.2038,\"currency\":\"USD\",\"marketValue\":15401897},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Telecom Corp Ltd Class H\",\"weighting\":2.98432,\"currency\":\"USD\",\"marketValue\":6380545},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Merchants Bank Co Ltd Class H\",\"weighting\":2.41454,\"currency\":\"USD\",\"marketValue\":5162341},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SK Hynix Inc\",\"weighting\":2.12025,\"currency\":\"USD\",\"marketValue\":4533137},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ICICI Bank Ltd ADR\",\"weighting\":1.91654,\"currency\":\"USD\",\"marketValue\":4097600},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tencent Holdings Ltd\",\"weighting\":1.9063,\"currency\":\"USD\",\"marketValue\":4075708},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Mobile Ltd\",\"weighting\":1.86406,\"currency\":\"USD\",\"marketValue\":3985398},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Construction Bank Corp Class H\",\"weighting\":1.65448,\"currency\":\"USD\",\"marketValue\":3537321},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mizuho Financial Group Inc\",\"weighting\":1.65152,\"currency\":\"USD\",\"marketValue\":3530993},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Meituan Class B\",\"weighting\":1.49865,\"currency\":\"USD\",\"marketValue\":3204154}],\"lastUpdatedDate\":\"2025-03-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

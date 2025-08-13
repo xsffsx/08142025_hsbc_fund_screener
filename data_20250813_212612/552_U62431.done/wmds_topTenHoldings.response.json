@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62431",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:52:36.599156",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62431%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "4d671e12-d4d3-4a5c-bed6-1df244f26481:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "j2mr9GRnR7aChoA9C7hWPukXESp0yukqk6y75whsFeYKMyEFuBXfcw==",
+        "x-hsbc-request-correlation-id": "495a209c-373d-4850-a430-4f46853d25ff",
+        "date": "Wed, 13 Aug 2025 13:52:35 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a492a754c99951a31a41d1c031185610.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "497",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra 10 Year US Treasury Note Future Sept 25\",\"weighting\":3.02138,\"currency\":\"USD\",\"marketValue\":-453615250},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future Sept 25\",\"weighting\":1.89919,\"currency\":\"USD\",\"marketValue\":285134625},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"2 Year Treasury Note Future Sept 25\",\"weighting\":1.47196,\"currency\":\"USD\",\"marketValue\":220991993},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AB SICAV I Sust Euro Hi Yld S EUR\",\"weighting\":1.45416,\"currency\":\"USD\",\"marketValue\":218319461},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bund Future Sept 25\",\"weighting\":1.33039,\"currency\":\"USD\",\"marketValue\":199737980},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"US Treasury Bond Future Sept 25\",\"weighting\":0.97254,\"currency\":\"USD\",\"marketValue\":146012797},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AB Asia Income Opportunities ZT USD\",\"weighting\":0.97089,\"currency\":\"USD\",\"marketValue\":145764180},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bonds 6.75%\",\"weighting\":0.84873,\"currency\":\"USD\",\"marketValue\":127423971},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AB Emerging Market Corp Debt S USD\",\"weighting\":0.80308,\"currency\":\"USD\",\"marketValue\":120569585},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bonds 4%\",\"weighting\":0.59261,\"currency\":\"USD\",\"marketValue\":88970742}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U40124",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:46:44.961940",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U40124%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f9eda226-33ff-466a-aab6-6a079e944bc2:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "hgcfW67i39MZkbsfX4ezzUqqFeHtgJP0Z3AT8gKUJR1XX_AnzJn8jg==",
+        "x-hsbc-request-correlation-id": "c9b529cf-9223-4354-96ca-ccac6342491f",
+        "date": "Wed, 13 Aug 2025 13:46:44 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e3f076a17c429654547283cc3accab70.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "556",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":13.82584,\"currency\":\"USD\",\"marketValue\":33969537},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global IG Sec Credit Bd ZC\",\"weighting\":7.46601,\"currency\":\"USD\",\"marketValue\":18343696},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":4.12154,\"currency\":\"USD\",\"marketValue\":10126464},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 6.5%\",\"weighting\":3.75352,\"currency\":\"USD\",\"marketValue\":9222254},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future Sept 25\",\"weighting\":3.41481,\"currency\":\"USD\",\"marketValue\":8390039},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Equitable Financial Life Global Funding 4.875%\",\"weighting\":2.72979,\"currency\":\"USD\",\"marketValue\":6706985},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 2%\",\"weighting\":2.43136,\"currency\":\"USD\",\"marketValue\":5973744},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 2.5%\",\"weighting\":2.3202,\"currency\":\"USD\",\"marketValue\":5700648},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"US Treasury Bond Future Sept 25\",\"weighting\":2.008,\"currency\":\"USD\",\"marketValue\":4933578},{\"market\":\"NL\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cooperatieve Rabobank U.A. New York Branch 4.494%\",\"weighting\":1.9228,\"currency\":\"USD\",\"marketValue\":4724248}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

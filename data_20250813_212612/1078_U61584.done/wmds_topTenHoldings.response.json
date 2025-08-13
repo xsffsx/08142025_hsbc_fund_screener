@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61584",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:49:44.168612",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61584%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "41f1005e-90e6-47c8-ad73-d2ce9a62a911:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "0Scg6OzNEnOeoZbLu0KzHFtrz31g-X2sDHIG2PsnyXrQfYP2cQPxAA==",
+        "x-hsbc-request-correlation-id": "69c5555d-6a41-4667-8f24-1228361f3d69",
+        "date": "Wed, 13 Aug 2025 13:49:43 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 fda8cdb1c5d1bc3e2d4cabe818dc8c5e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "548",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal Home Loan Banks\",\"weighting\":3.7805,\"currency\":\"USD\",\"marketValue\":18912777},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":3.54232,\"currency\":\"USD\",\"marketValue\":17721245},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BP PLC\",\"weighting\":2.64803,\"currency\":\"USD\",\"marketValue\":13247379},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of)\",\"weighting\":2.50729,\"currency\":\"USD\",\"marketValue\":12543264},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sumitomo Mitsui Financial Group Inc\",\"weighting\":2.47742,\"currency\":\"USD\",\"marketValue\":12393831},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Imperial Brands PLC\",\"weighting\":2.40167,\"currency\":\"USD\",\"marketValue\":12014889},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dell Technologies Inc Ordinary Shares - Class C\",\"weighting\":2.30235,\"currency\":\"USD\",\"marketValue\":11518023},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Samsung Electronics Co Ltd\",\"weighting\":2.02827,\"currency\":\"USD\",\"marketValue\":10146876},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Standard Chartered PLC\",\"weighting\":1.96385,\"currency\":\"USD\",\"marketValue\":9824603},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ING Groep NV\",\"weighting\":1.94193,\"currency\":\"USD\",\"marketValue\":9714965}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

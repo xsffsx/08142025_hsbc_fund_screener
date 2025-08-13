@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62437",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:48:41.335368",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62437%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b8f43806-ef34-4a53-8a87-db169d929971:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Yji88b5Q-E6FdUP_E0UaGP1o8lsK9_DCO0Upc3NTbM8kvYwa8p5BWQ==",
+        "x-hsbc-request-correlation-id": "5dca295f-c486-4c3f-bf32-262ed9375aca",
+        "date": "Wed, 13 Aug 2025 13:48:41 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 612d6e38ca8a5e65776b064d65f27d36.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "500",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Compass Group PLC\",\"weighting\":5.7952,\"currency\":\"USD\",\"marketValue\":6874322},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Graphic Packaging Holding Co\",\"weighting\":4.95234,\"currency\":\"USD\",\"marketValue\":5874506},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Danone SA\",\"weighting\":4.79782,\"currency\":\"USD\",\"marketValue\":5691216},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Costco Wholesale Corp\",\"weighting\":4.6509,\"currency\":\"USD\",\"marketValue\":5516936},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dollarama Inc\",\"weighting\":4.57916,\"currency\":\"USD\",\"marketValue\":5431840},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Eli Lilly and Co\",\"weighting\":4.22292,\"currency\":\"USD\",\"marketValue\":5009260},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Koninklijke Ahold Delhaize NV\",\"weighting\":4.18309,\"currency\":\"USD\",\"marketValue\":4962013},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Republic Services Inc\",\"weighting\":4.07604,\"currency\":\"USD\",\"marketValue\":4835036},{\"market\":\"DK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Novonesis (Novozymes) B Class B\",\"weighting\":3.69385,\"currency\":\"USD\",\"marketValue\":4381674},{\"market\":\"IE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Smurfit WestRock PLC\",\"weighting\":3.64637,\"currency\":\"USD\",\"marketValue\":4325356}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62529",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:28:20.168067",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62529%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "fe9b2b9a-7232-44b7-aba5-e9bc4c563365:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "15",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "gn5HRyWY6lbj-n3m5jo9adSDjCWDrx_w3U8kd1ZkH1YWBfT12syI5w==",
+        "x-hsbc-request-correlation-id": "b08246fb-e2df-4d2d-b3df-aa9cbae7e943",
+        "date": "Wed, 13 Aug 2025 13:28:20 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "15",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 3207e1f50c8d4603820ce82acc837422.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1258",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62529\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"HU\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":10.15,\"currency\":\"AUD\",\"companyName\":\"BlackRock Global Funds-US Dollar High Yield Bond F(A3-AUDH-MDIST-CASH)\",\"securityDescription\":null,\"changeAmount\":0,\"changePercent\":0,\"bidPrice\":10.15,\"bidPriceDate\":\"2025-08-12\",\"bidSize\":null,\"askPrice\":10.15,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":5.63384,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000SM9M\",\"tradableCurrency\":\"AUD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":6.33498},{\"year\":2023,\"annualCalendarYearReturn\":10.46166},{\"year\":2022,\"annualCalendarYearReturn\":-13.22475},{\"year\":2021,\"annualCalendarYearReturn\":4.00587},{\"year\":2020,\"annualCalendarYearReturn\":3.62576}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":4.33767,\"dailyPerformanceNAV\":4.54366},{\"period\":\"1M\",\"trailingTotalReturn\":0.47424,\"dailyPerformanceNAV\":0.67261},{\"period\":\"3M\",\"trailingTotalReturn\":3.7815,\"dailyPerformanceNAV\":2.84369},{\"period\":\"6M\",\"trailingTotalReturn\":3.03367,\"dailyPerformanceNAV\":3.33931},{\"period\":\"1Y\",\"trailingTotalReturn\":6.76345,\"dailyPerformanceNAV\":6.97424},{\"period\":\"3Y\",\"trailingTotalReturn\":5.92584,\"dailyPerformanceNAV\":5.30088},{\"period\":\"5Y\",\"trailingTotalReturn\":3.05674,\"dailyPerformanceNAV\":2.93088},{\"period\":\"10Y\",\"trailingTotalReturn\":3.72023,\"dailyPerformanceNAV\":3.86987}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2012-08-06\"},\"entityUpdatedTime\":\"2025-08-13T21:28:19.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62529\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2529\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62529\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0578942376\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000SM9M\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047662\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047662\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

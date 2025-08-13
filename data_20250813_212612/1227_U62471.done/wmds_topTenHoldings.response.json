@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62471",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:23.980614",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62471%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "d8101b37-64e4-4c38-b2fc-db8cc7695205:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "xA3ucB2DLDZ86Zz_VAiIrP4QIyUIZ37bSw059dtr2YgbzSpZ_k_mDg==",
+        "x-hsbc-request-correlation-id": "cfc7cfd3-a1cf-4a29-b1d5-46e297273877",
+        "date": "Wed, 13 Aug 2025 13:33:23 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 0d77e3c2bc9ecd8af261bb574e3f0214.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "541",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PIMCO US Dollar S/T Fl NAV Z USD Inc\",\"weighting\":9.41336,\"currency\":\"USD\",\"marketValue\":23318600},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future June 25\",\"weighting\":8.99523,\"currency\":\"USD\",\"marketValue\":22282812},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future June 25\",\"weighting\":3.54025,\"currency\":\"USD\",\"marketValue\":8769832},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra US Treasury Bond Future June 25\",\"weighting\":1.63668,\"currency\":\"USD\",\"marketValue\":4054359},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"US Treasury Bond Future June 25\",\"weighting\":1.42545,\"currency\":\"USD\",\"marketValue\":3531094},{\"market\":\"PK\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Pakistan (Islamic Republic of) 6%\",\"weighting\":0.9389,\"currency\":\"USD\",\"marketValue\":2325816},{\"market\":\"KR\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Korea National Oil Corp. 5.25%\",\"weighting\":0.89908,\"currency\":\"USD\",\"marketValue\":2227194},{\"market\":\"CN\",\"productType\":\"BC\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Meituan LLC 0%\",\"weighting\":0.84433,\"currency\":\"USD\",\"marketValue\":2091550},{\"market\":\"ID\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Perusahaan Listrik Negara PT 4%\",\"weighting\":0.78647,\"currency\":\"USD\",\"marketValue\":1948220},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AIA Group Ltd, Hong Kong 5.375%\",\"weighting\":0.7786,\"currency\":\"USD\",\"marketValue\":1928726}],\"lastUpdatedDate\":\"2025-03-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

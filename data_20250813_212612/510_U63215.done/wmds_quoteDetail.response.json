@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63215",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:24.616240",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63215%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "fe258a16-4bca-4358-9dd4-ea95aa85f244:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "wxT_OA1R7ArdKh9pYHUEZlk-sx2kR7OsIkRPw9kEA4TifVQ7x2lu1Q==",
+        "x-hsbc-request-correlation-id": "54c40bef-33bd-4602-964f-ca569a171d21",
+        "date": "Wed, 13 Aug 2025 13:47:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "17",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 612d6e38ca8a5e65776b064d65f27d36.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1255",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63215\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"GB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":11.7555,\"currency\":\"AUD\",\"companyName\":\"ALLIANZ THEMATICA (CLASS AMG-H2-AUD-MD-C)\",\"securityDescription\":null,\"changeAmount\":-0.0256,\"changePercent\":-0.2173,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":3.95717,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001I4BP\",\"tradableCurrency\":\"AUD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":0.6888},{\"year\":2023,\"annualCalendarYearReturn\":12.62666},{\"year\":2022,\"annualCalendarYearReturn\":-23.78805},{\"year\":2021,\"annualCalendarYearReturn\":9.01432},{\"year\":2020,\"annualCalendarYearReturn\":37.12483}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":5.31795,\"dailyPerformanceNAV\":4.37678},{\"period\":\"1M\",\"trailingTotalReturn\":1.27882,\"dailyPerformanceNAV\":-0.10128},{\"period\":\"3M\",\"trailingTotalReturn\":11.69013,\"dailyPerformanceNAV\":5.69329},{\"period\":\"6M\",\"trailingTotalReturn\":1.45745,\"dailyPerformanceNAV\":0.43825},{\"period\":\"1Y\",\"trailingTotalReturn\":4.57211,\"dailyPerformanceNAV\":6.66336},{\"period\":\"3Y\",\"trailingTotalReturn\":4.70699,\"dailyPerformanceNAV\":3.29047},{\"period\":\"5Y\",\"trailingTotalReturn\":3.58898,\"dailyPerformanceNAV\":3.31509},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2022-04-25\"},\"entityUpdatedTime\":\"2025-08-13T21:47:23.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63215\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R3215\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63215\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2023250769\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001I4BP\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050564147\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50564147\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63234",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:57.468154",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63234%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "cf6a92e3-ce86-45fc-92ea-1b1d74eb5fc2:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "L4UNbps3qTKHZsT5g-OQbohIxCPkBi2P5ysGARPLod4c_lk3izigtA==",
+        "x-hsbc-request-correlation-id": "a0c36bfc-8341-4d5d-ad4e-acb46a04a6ee",
+        "date": "Wed, 13 Aug 2025 13:33:57 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 adf20896ff3cee531a636761bf3df840.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "393",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"VALUE PARTNERS ASIAN INCOME FUND (CLASS A-NZDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-NZDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63236\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV236\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63236\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000352309\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BT4L\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050569705\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50569705\"}]},{\"productName\":\"VALUE PARTNERS ASIAN INCOME FUND (CLASS A-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63235\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV235\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63235\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000352259\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BT4G\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050569704\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50569704\"}]},{\"productName\":\"VALUE PARTNERS ASIAN INCOME FUND (CLASS A-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63233\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV233\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63233\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000352317\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BT4M\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050569702\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50569702\"}]},{\"productName\":\"VALUE PARTNERS ASIAN INCOME FUND (CLASS A-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63232\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV232\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63232\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000352291\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BT4K\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050569701\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50569701\"}]},{\"productName\":\"VALUE PARTNERS ASIAN INCOME FUND (CLASS A-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63231\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV231\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63231\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000352382\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BT4T\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050569700\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50569700\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

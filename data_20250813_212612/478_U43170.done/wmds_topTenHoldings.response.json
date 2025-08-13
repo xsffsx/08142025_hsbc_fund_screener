@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43170",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:49:33.256308",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43170%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "3db6cfd0-eeee-438a-b74e-76c0f32db4c8:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "uez7YYW2Fv0uYtQ6KkwDPCBf7DCoeGDeZKrSsRjiy7HV4zUkCpI4lw==",
+        "x-hsbc-request-correlation-id": "9db59d05-da70-4020-abcc-a2239d72d787",
+        "date": "Wed, 13 Aug 2025 13:49:32 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 43b4a9a8792e30ac49642ef84dd35fc8.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "570",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra 10 Year US Treasury Note Future Sept 25\",\"weighting\":4.73517,\"currency\":\"USD\",\"marketValue\":-124981108},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":3.2907,\"currency\":\"USD\",\"marketValue\":86855426},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":2.13875,\"currency\":\"USD\",\"marketValue\":56450669},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Windstream Services LLC / Windstream Escrow Finance Corp. 8.25%\",\"weighting\":1.11506,\"currency\":\"USD\",\"marketValue\":29431192},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"EchoStar Corp. 6.75%\",\"weighting\":1.08452,\"currency\":\"USD\",\"marketValue\":28625020},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Jane Street Group LLC / JSG Finance Inc. 6.125%\",\"weighting\":0.82424,\"currency\":\"USD\",\"marketValue\":21755233},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Venture Global LNG Inc. 9.875%\",\"weighting\":0.81712,\"currency\":\"USD\",\"marketValue\":21567214},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Clear Channel Outdoor Holdings Inc New 9%\",\"weighting\":0.79973,\"currency\":\"USD\",\"marketValue\":21108159},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Rivian Holdings Llc / Rivian Llc / Rivian Automotive Llc 10%\",\"weighting\":0.78757,\"currency\":\"USD\",\"marketValue\":20787224},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Carnival Corporation 6.125%\",\"weighting\":0.78474,\"currency\":\"USD\",\"marketValue\":20712636}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

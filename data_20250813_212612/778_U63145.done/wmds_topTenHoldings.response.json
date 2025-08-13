@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63145",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:05:02.509354",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63145%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e9ca212b-1f6b-496c-8111-4fa003858497:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "szYlNkhW3URVACgOfYmdy-FXjRPIQPhEw9lqhX6wiueqrCR_cpexgA==",
+        "x-hsbc-request-correlation-id": "0d562fd8-edc3-417b-bf38-c41e01d193f3",
+        "date": "Wed, 13 Aug 2025 14:05:01 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "196",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 782fcf79958c13c01bfababc6fc4b8ce.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "499",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cadence Design Systems Inc\",\"weighting\":3.63447,\"currency\":\"EUR\",\"marketValue\":200699436},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Synopsys Inc\",\"weighting\":3.6047,\"currency\":\"EUR\",\"marketValue\":199055760},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"WSP Global Inc\",\"weighting\":3.43696,\"currency\":\"EUR\",\"marketValue\":189793169},{\"market\":\"DK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Novonesis (Novozymes) B Class B\",\"weighting\":3.19193,\"currency\":\"EUR\",\"marketValue\":176262119},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":3.15086,\"currency\":\"EUR\",\"marketValue\":173994423},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Siemens AG\",\"weighting\":3.10233,\"currency\":\"EUR\",\"marketValue\":171314286},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Trane Technologies PLC Class A\",\"weighting\":3.04678,\"currency\":\"EUR\",\"marketValue\":168246936},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tetra Tech Inc\",\"weighting\":2.99776,\"currency\":\"EUR\",\"marketValue\":165539779},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tokyo Electron Ltd\",\"weighting\":2.93639,\"currency\":\"EUR\",\"marketValue\":162150749},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schneider Electric SE\",\"weighting\":2.79319,\"currency\":\"EUR\",\"marketValue\":154243421}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

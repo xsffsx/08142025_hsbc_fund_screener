@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63319",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:20.565179",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63319%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "d24fbd23-73d7-4d22-bd76-98296912c5fe:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "LsQFQebgExcmUJehhavkI08wWBi6PBkLHZ7VWlElPr5p_w6QMLFogw==",
+        "x-hsbc-request-correlation-id": "b51a5664-1149-464a-a83d-efb481a9492d",
+        "date": "Wed, 13 Aug 2025 13:29:20 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "37",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 6c1149c24729f98b60d81a165eb520c8.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "534",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"AB - Low Volatility Equity Portfolio (Class AD-NZD H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-NZD H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62949\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2949\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62949\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0965509440\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZSIO\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050117685\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50117685\"}]},{\"productName\":\"AB - Low Volatility Equity Portfolio (Class AD-GBP H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-GBP H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62948\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2948\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62948\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1037949358\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012MN1\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050117684\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50117684\"}]},{\"productName\":\"AB - Low Volatility Equity Portfolio (Class AD-EUR H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-EUR H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62947\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2947\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62947\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1037949275\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012MN2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050117683\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50117683\"}]},{\"productName\":\"AB - Low Volatility Equity Portfolio (Class AD-CAD H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-CAD H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62946\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2946\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62946\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1037948970\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012MN0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050117682\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50117682\"}]},{\"productName\":\"AB - Low Volatility Equity Portfolio (Class AD-AUD H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-AUD H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62945\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2945\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62945\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0965509010\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZSIQ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050117681\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50117681\"}]},{\"productName\":\"AB - Low Volatility Equity Portfolio (Class AD-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62944\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2944\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62944\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1037948897\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013NAC\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050117680\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50117680\"}]},{\"productName\":\"AB - Low Volatility Equity Portfolio (Class AD-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62943\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2943\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62943\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0965508806\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZSIS\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050117679\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50117679\"}]},{\"productName\":\"AB - Low Volatility Equity Portfolio (Class AD-SGD H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-SGD H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62950\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2950\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62950\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0965509283\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZSIN\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050117686\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50117686\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

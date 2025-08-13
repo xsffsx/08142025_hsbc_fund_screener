@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63294",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:11.949221",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63294%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e8dd5088-e05d-48bd-b4b5-fdd7e797c6ce:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ulyTMl6IbJYKbUpLChy_Nlq8kR7KygJcrf7bUuxh-1ls4BqRTPMRNA==",
+        "x-hsbc-request-correlation-id": "ea754edd-51c0-4faf-aab3-6d7f406be0d1",
+        "date": "Wed, 13 Aug 2025 13:29:11 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 66a56783d1e9dc3092b15cd0a5351186.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "437",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sainsbury (J) PLC\",\"weighting\":4.6008,\"currency\":\"USD\",\"marketValue\":2412091},{\"market\":\"FI\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kemira Oyj\",\"weighting\":4.22294,\"currency\":\"USD\",\"marketValue\":2213991},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Carrefour\",\"weighting\":4.08429,\"currency\":\"USD\",\"marketValue\":2141296},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tesco PLC\",\"weighting\":3.71343,\"currency\":\"USD\",\"marketValue\":1946864},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Nutrien Ltd\",\"weighting\":3.61036,\"currency\":\"USD\",\"marketValue\":1892825},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AGCO Corp\",\"weighting\":3.58666,\"currency\":\"USD\",\"marketValue\":1880402},{\"market\":\"NO\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mowi ASA\",\"weighting\":3.53103,\"currency\":\"USD\",\"marketValue\":1851235},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"A.O. Smith Corp\",\"weighting\":3.36896,\"currency\":\"USD\",\"marketValue\":1766266},{\"market\":\"IE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Glanbia PLC\",\"weighting\":3.29768,\"currency\":\"USD\",\"marketValue\":1728898},{\"market\":\"DK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schouw & Co AS\",\"weighting\":3.236,\"currency\":\"USD\",\"marketValue\":1696561}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

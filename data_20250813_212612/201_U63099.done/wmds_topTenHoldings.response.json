@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63099",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:34:00.257200",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63099%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "2121d72b-53fc-418e-ad13-b54c7dc18880:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Zfc1sKuwfn44dLtlwzJ8t9Z60k7bUlB-WMeO1Do8OgAwQAGdDExWLQ==",
+        "x-hsbc-request-correlation-id": "d83a87bd-5388-46bb-a9c1-cb6b4f66ff54",
+        "date": "Wed, 13 Aug 2025 13:34:00 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 80e912f542ddc55d544339d8db5fb036.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "499",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"HK\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Link Real Estate Investment Trust\",\"weighting\":9.37362,\"currency\":\"USD\",\"marketValue\":31872406},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CapitaLand Ascendas REIT Units\",\"weighting\":9.19834,\"currency\":\"USD\",\"marketValue\":31276418},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CapitaLand Integrated Commercial Trust\",\"weighting\":8.83594,\"currency\":\"USD\",\"marketValue\":30044160},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Keppel DC REIT\",\"weighting\":6.54279,\"currency\":\"USD\",\"marketValue\":22246952},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mapletree Industrial Trust Units Real Estate Investment Trust\",\"weighting\":5.12708,\"currency\":\"USD\",\"marketValue\":17433203},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Frasers Centrepoint Trust\",\"weighting\":4.96138,\"currency\":\"USD\",\"marketValue\":16869793},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mapletree Logistics Trust\",\"weighting\":4.78972,\"currency\":\"USD\",\"marketValue\":16286126},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mapletree Pan Asia Commercial Trust Units Real Estate Investment Trust Reg\",\"weighting\":4.73875,\"currency\":\"USD\",\"marketValue\":16112799},{\"market\":\"HK\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Fortune Real Estate Investment Trust Units Real Estate Investment Trust\",\"weighting\":4.16997,\"currency\":\"USD\",\"marketValue\":14178834},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Frasers Logistics & Commercial Trust\",\"weighting\":3.60576,\"currency\":\"USD\",\"marketValue\":12260401}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

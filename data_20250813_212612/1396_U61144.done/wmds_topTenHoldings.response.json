@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61144",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:13.672756",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61144%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "bbdd51ff-3054-46e3-91d4-475bfdab19b8:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "DCieDC0t6ztDvW5W1-vduaY_I66320XF6_s4VGFCIrcfNikKnOO43A==",
+        "x-hsbc-request-correlation-id": "2f78bc91-13ee-44a6-90db-55602c8c0d74",
+        "date": "Wed, 13 Aug 2025 13:47:12 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e3f076a17c429654547283cc3accab70.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "446",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HDFC Bank Ltd\",\"weighting\":9.4943,\"currency\":\"USD\",\"marketValue\":63091173},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ICICI Bank Ltd\",\"weighting\":8.48015,\"currency\":\"USD\",\"marketValue\":56351977},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mahindra & Mahindra Ltd\",\"weighting\":4.95312,\"currency\":\"USD\",\"marketValue\":32914273},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Reliance Industries Ltd\",\"weighting\":4.6724,\"currency\":\"USD\",\"marketValue\":31048877},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kotak Mahindra Bank Ltd\",\"weighting\":4.06237,\"currency\":\"USD\",\"marketValue\":26995112},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bajaj Finserv Ltd\",\"weighting\":3.30787,\"currency\":\"USD\",\"marketValue\":21981339},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dr Reddy's Laboratories Ltd\",\"weighting\":3.07019,\"currency\":\"USD\",\"marketValue\":20401896},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ITC Ltd\",\"weighting\":2.89023,\"currency\":\"USD\",\"marketValue\":19206076},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tata Consultancy Services Ltd\",\"weighting\":2.84413,\"currency\":\"USD\",\"marketValue\":18899710},{\"market\":\"IN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UltraTech Cement Ltd\",\"weighting\":2.57395,\"currency\":\"USD\",\"marketValue\":17104347}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

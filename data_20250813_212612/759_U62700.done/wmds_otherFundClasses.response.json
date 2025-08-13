@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62700",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:13.401062",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62700%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7127a151-42aa-46dd-8d19-4474b1be760d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "zavF1-dE1e9SeE8DG31sOI0o-Vle4H060ur6EbYurs_jI1P32Z8FVQ==",
+        "x-hsbc-request-correlation-id": "d2cbc0aa-775e-4826-9b80-f0a24ec72b9c",
+        "date": "Wed, 13 Aug 2025 13:38:13 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "39",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 964b789a78c6aafc90242aa316920ac6.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "491",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JPMorgan Global Bond - (USD-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"USD MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62704\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2704\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62704\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000244407\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00015YLK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003049\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003049\"}]},{\"productName\":\"JPMorgan Global Bond - (RMBH-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"RMB HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62703\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2703\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62703\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000244399\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00015YLJ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003048\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003048\"}]},{\"productName\":\"JPMorgan Global Bond - (NZDH-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"NZD Hedged-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62702\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2702\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62702\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000244381\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00015YLI\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003047\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003047\"}]},{\"productName\":\"JPMorgan Global Bond - (HKD-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"HKD MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62701\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2701\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62701\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000244373\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00015YLH\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003046\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003046\"}]},{\"productName\":\"JPMorgan Global Bond - (AUDH-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"AUD - Hedged MDIST - CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62699\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2699\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62699\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000244357\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00015YLF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003044\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003044\"}]},{\"productName\":\"JPMorgan Global Bond Fund - USD (San Dist Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-SDIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61152\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J1152\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61152\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000055654\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001BIP\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046659\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046659\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

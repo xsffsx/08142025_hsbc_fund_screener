@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61087",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:01:09.394089",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61087%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "cec5c010-3afb-4f1f-873c-844483d90925:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "1Q3Lnjc4Slp881Y2ECss1iUInWNWrmyI8BU036lHUcgJfjU4wl-CQQ==",
+        "x-hsbc-request-correlation-id": "c880088b-165a-4326-a8a8-c53ef61b0e7f",
+        "date": "Wed, 13 Aug 2025 14:01:08 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 fbd92e37686376c632f471bbca198756.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "422",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AstraZeneca PLC\",\"weighting\":7.71621,\"currency\":\"GBP\",\"marketValue\":13416995},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"RELX PLC\",\"weighting\":7.41855,\"currency\":\"GBP\",\"marketValue\":12899423},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Shell PLC\",\"weighting\":6.32613,\"currency\":\"GBP\",\"marketValue\":10999916},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Compass Group PLC\",\"weighting\":5.47086,\"currency\":\"GBP\",\"marketValue\":9512777},{\"market\":\"GB\",\"productType\":\"FC\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"3i Group Ord\",\"weighting\":5.1382,\"currency\":\"GBP\",\"marketValue\":8934344},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Standard Chartered PLC\",\"weighting\":4.98464,\"currency\":\"GBP\",\"marketValue\":8667334},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Next PLC\",\"weighting\":4.83704,\"currency\":\"GBP\",\"marketValue\":8410684},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"London Stock Exchange Group PLC\",\"weighting\":4.4042,\"currency\":\"GBP\",\"marketValue\":7658051},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Rightmove PLC\",\"weighting\":3.20372,\"currency\":\"GBP\",\"marketValue\":5570655},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Auto Trader Group PLC\",\"weighting\":3.12681,\"currency\":\"GBP\",\"marketValue\":5436918}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

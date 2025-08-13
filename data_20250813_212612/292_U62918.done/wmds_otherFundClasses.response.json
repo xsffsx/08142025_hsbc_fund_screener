@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62918",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:01:39.937391",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62918%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "8e8261b1-9052-4d3e-9a97-fb3657ce871d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "bkeRJwSAVPbSPtMHTIbwP53Slgc9qOZwTYrxIBzRBf96Rr1l0AYF7w==",
+        "x-hsbc-request-correlation-id": "b5c833f1-ee18-4b43-895e-82368094898c",
+        "date": "Wed, 13 Aug 2025 14:01:39 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "36",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e3f515cf2b40cd90e36f3532dbd8a5ae.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "494",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"Amundi HK - Balanced Fund (Class Classic-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS CLASSIC-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62915\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"A2915\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62915\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000200599\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016750\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050108705\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50108705\"}]},{\"productName\":\"Amundi HK - Balanced Fund (Class Classic-EUR-H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS CLASSIC-EUR-H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62922\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"A2922\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62922\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000279833\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017F6O\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050108712\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50108712\"}]},{\"productName\":\"Amundi HK - Balanced Fund (Class Classic-RMB-H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS CLASSIC-RMB-H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62921\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"A2921\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62921\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000200607\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013P0Q\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050108711\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50108711\"}]},{\"productName\":\"Amundi HK - Balanced Fund (Class Classic-CAD-H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS CLASSIC-CAD-H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62920\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"A2920\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62920\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000279841\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017F6N\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050108710\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50108710\"}]},{\"productName\":\"Amundi HK - Balanced Fund (Class Classic-NZD-H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS CLASSIC-NZD-H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62919\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"A2919\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62919\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000267424\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000179EL\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050108709\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50108709\"}]},{\"productName\":\"Amundi HK - Balanced Fund (Class Classic-GBP-H-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS CLASSIC-GBP-H-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62917\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"A2917\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62917\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000267432\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000179EM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050108707\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50108707\"}]},{\"productName\":\"Amundi HK - Balanced Fund (Class Classic-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS CLASSIC-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62916\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"A2916\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62916\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000251790\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016DGY\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050108706\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50108706\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

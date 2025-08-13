@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62378",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:30:41.519051",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62378%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b87591bf-59de-4ed1-9180-8de1a9960fd6:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "LNl7yI4CiooTRDAfzqiEZzoyeGsJlvCkhg0Ws--cwr0jGRXu6KtoZA==",
+        "x-hsbc-request-correlation-id": "dce68a07-2c87-4370-a350-3f336bac871a",
+        "date": "Wed, 13 Aug 2025 13:30:41 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 bea3c2b46ebd664c1dc4815d2ec8f8d0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "481",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"2 Year Treasury Note Future June 25\",\"weighting\":7.64882,\"currency\":\"USD\",\"marketValue\":-157293855},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Schatz Future June 25\",\"weighting\":6.55068,\"currency\":\"USD\",\"marketValue\":-134711306},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future June 25\",\"weighting\":6.46343,\"currency\":\"USD\",\"marketValue\":-132916977},{\"market\":\"US\",\"productType\":\"TP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 0.125%\",\"weighting\":5.59563,\"currency\":\"USD\",\"marketValue\":115071214},{\"market\":\"US\",\"productType\":\"TP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 0.5%\",\"weighting\":4.72677,\"currency\":\"USD\",\"marketValue\":97203581},{\"market\":\"US\",\"productType\":\"TP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 1.625%\",\"weighting\":3.87533,\"currency\":\"USD\",\"marketValue\":79694020},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future June 25\",\"weighting\":3.68542,\"currency\":\"USD\",\"marketValue\":75788672},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 4.5%\",\"weighting\":3.62517,\"currency\":\"USD\",\"marketValue\":74549615},{\"market\":\"US\",\"productType\":\"TP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 0.25%\",\"weighting\":3.57259,\"currency\":\"USD\",\"marketValue\":73468500},{\"market\":\"IT\",\"productType\":\"TP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Italy (Republic Of) 1.3%\",\"weighting\":3.23074,\"currency\":\"USD\",\"marketValue\":66438394}],\"lastUpdatedDate\":\"2025-03-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

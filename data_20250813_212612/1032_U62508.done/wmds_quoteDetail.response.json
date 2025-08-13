@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62508",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:55:24.970218",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62508%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "9d45e306-374e-44e6-aee8-42d5b7467d46:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "r9DcjchvqfvpT-64b9VKmjjYymSPf8O8uasPAo-McqKqUWo7kWjOjg==",
+        "x-hsbc-request-correlation-id": "a8180811-4b14-45f1-bd75-bb3c158fc6ae",
+        "date": "Wed, 13 Aug 2025 13:55:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 59b0eb2f33939f549a18868a652690fe.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1245",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62508\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"AB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":15.32,\"currency\":\"HKD\",\"companyName\":\"FIDELITY FUNDS - ASEAN FUND (CLASS A-HKD-ACCUMULATION)\",\"securityDescription\":null,\"changeAmount\":0.41,\"changePercent\":2.74983,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000VCI5\",\"tradableCurrency\":\"HKD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":11.11111},{\"year\":2023,\"annualCalendarYearReturn\":0.3231},{\"year\":2022,\"annualCalendarYearReturn\":-7.26592},{\"year\":2021,\"annualCalendarYearReturn\":7.40145},{\"year\":2020,\"annualCalendarYearReturn\":-0.56}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":5.7971,\"dailyPerformanceNAV\":11.01449},{\"period\":\"1M\",\"trailingTotalReturn\":1.03806,\"dailyPerformanceNAV\":4.85969},{\"period\":\"3M\",\"trailingTotalReturn\":7.11665,\"dailyPerformanceNAV\":8.65248},{\"period\":\"6M\",\"trailingTotalReturn\":5.72049,\"dailyPerformanceNAV\":12.23443},{\"period\":\"1Y\",\"trailingTotalReturn\":10.60606,\"dailyPerformanceNAV\":17.215},{\"period\":\"3Y\",\"trailingTotalReturn\":6.49001,\"dailyPerformanceNAV\":6.7606},{\"period\":\"5Y\",\"trailingTotalReturn\":6.57263,\"dailyPerformanceNAV\":7.24252},{\"period\":\"10Y\",\"trailingTotalReturn\":3.64127,\"dailyPerformanceNAV\":4.90243}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2012-04-13\"},\"entityUpdatedTime\":\"2025-08-13T21:55:24.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62508\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2508\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62508\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0737861269\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000VCI5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047634\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047634\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

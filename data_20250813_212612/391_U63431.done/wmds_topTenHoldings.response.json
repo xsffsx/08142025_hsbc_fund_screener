@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63431",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:40:38.100407",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63431%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "50dbaaa8-c44e-45d9-afae-3687773a9589:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Ja4yJjo7D7lEgyrKSWiPlFtXjkhy0Wk0Ov2-AidzAI7NxHj_RCP0ow==",
+        "x-hsbc-request-correlation-id": "4ff7135c-d9d3-4a2d-8328-14216388c822",
+        "date": "Wed, 13 Aug 2025 13:40:37 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9c7184b28c57254d98f583f8eea58496.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "513",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NVIDIA Corp\",\"weighting\":3.0052,\"currency\":\"USD\",\"marketValue\":1593549307},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Microsoft Corp\",\"weighting\":2.64494,\"currency\":\"USD\",\"marketValue\":1402516388},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amazon.com Inc\",\"weighting\":1.79532,\"currency\":\"USD\",\"marketValue\":951995365},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Apple Inc\",\"weighting\":1.46275,\"currency\":\"USD\",\"marketValue\":775646529},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Meta Platforms Inc Class A\",\"weighting\":1.35783,\"currency\":\"USD\",\"marketValue\":720010368},{\"market\":\"US\",\"productType\":\"P\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wells Fargo & Co 7 1/2 % Non Cum Perp Conv Pfd Shs -A- Series -L-\",\"weighting\":0.94398,\"currency\":\"USD\",\"marketValue\":500559062},{\"market\":\"US\",\"productType\":\"BC\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Welltower OP LLC 3.125%\",\"weighting\":0.86587,\"currency\":\"USD\",\"marketValue\":459140459},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Broadcom Inc\",\"weighting\":0.82358,\"currency\":\"USD\",\"marketValue\":436714009},{\"market\":\"US\",\"productType\":\"BC\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Live Nation Entertainment, Inc. 2.875%\",\"weighting\":0.77693,\"currency\":\"USD\",\"marketValue\":411979292},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alphabet Inc Class A\",\"weighting\":0.69964,\"currency\":\"USD\",\"marketValue\":370992070}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

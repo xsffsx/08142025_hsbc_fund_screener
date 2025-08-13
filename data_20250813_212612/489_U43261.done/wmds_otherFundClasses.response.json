@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U43261",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:44:02.334936",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43261%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f3162927-1bc4-46bc-87c2-170e8e538eb0:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "jj2S4XAsrzjwzszc0AcKMEJSUeVrBYnUiQytKrWlqWmgl-sKIggMTQ==",
+        "x-hsbc-request-correlation-id": "1938bbc1-00bc-47eb-83a2-c2be8becec98",
+        "date": "Wed, 13 Aug 2025 13:44:00 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "32",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 1115f9e25c9d03c18355ab052e8e9a5c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "518",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"Franklin Income Fund (Class A-MDIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43262\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3262\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43262\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0098860793\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000B12\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046844\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046844\"}]},{\"productName\":\"FRANKLIN INCOME FUND (CLASS A-JPYH1-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-JPYH1-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63395\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"T3395\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63395\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2657138157\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RG61\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050737474\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50737474\"}]},{\"productName\":\"FRANKLIN INCOME FUND (CLASS A-EURH1-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-EURH1-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63330\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"T3330\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63330\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0976567460\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZT9N\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050693306\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50693306\"}]},{\"productName\":\"FRANKLIN INCOME FUND (CLASS A-AUDH1-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-AUDH1-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63239\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"T3239\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63239\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1162222050\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000158RI\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050571600\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50571600\"}]},{\"productName\":\"FRANKLIN INCOME FUND (CLASS A-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63238\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"T3238\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63238\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1929549753\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001FKZP\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050571599\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50571599\"}]},{\"productName\":\"FRANKLIN INCOME FUND (CLASS A-RMBH1-MDIRC-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-RMBH1-MDIRC-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63237\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"T3237\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63237\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2404266764\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001NSRH\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050571598\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50571598\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

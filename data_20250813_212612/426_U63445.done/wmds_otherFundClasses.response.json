@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63445",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:31:15.647499",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63445%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "dfc75cb3-21a1-4780-89d3-21f14fae55c1:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "15",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "FxB5hb6J-4-aNeKOMSZrW0cYLmfbILSE1e6eu5_gh-yCIGSDvOMF9Q==",
+        "x-hsbc-request-correlation-id": "c8f9f157-8c7f-40c0-9925-2c2370a258b5",
+        "date": "Wed, 13 Aug 2025 13:31:14 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "15",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 b3f5252dafb9ec91f738df64dc00f880.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "364",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"PICTET HK – PICTET STRATEGIC INCOME (HP-RMB-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"HP-RMB-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63446\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"PT446\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63446\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000304813\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00018MSE\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000067380\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000067380\"}]},{\"productName\":\"PICTET HK – PICTET STRATEGIC INCOME (HP-AUD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"HP-AUD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63443\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"PT443\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63443\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000304821\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00018MSF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000067377\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000067377\"}]},{\"productName\":\"PICTET HK – PICTET STRATEGIC INCOME (P-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"P-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63442\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"PT442\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63442\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000304805\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00018MSD\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000067376\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000067376\"}]},{\"productName\":\"PICTET HK – PICTET STRATEGIC INCOME (P-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"P-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63441\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"PT441\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63441\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000304797\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00018MSC\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000067379\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000067379\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

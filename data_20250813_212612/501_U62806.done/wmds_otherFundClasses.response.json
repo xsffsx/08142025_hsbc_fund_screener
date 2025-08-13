@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62806",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:31:55.971924",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62806%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7cfee5cb-da09-4a76-b1c9-ad0e4ad26584:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "xWzHALIcOmKBz_m5hgFMglfIq9VP6aWf03WB6PdMku5vjHEE7KhSrg==",
+        "x-hsbc-request-correlation-id": "9abe3d38-8b57-40a9-b649-5db11d898f2b",
+        "date": "Wed, 13 Aug 2025 13:31:55 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 efb69de1473dfd6cb792e27488cc8640.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "367",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JPMorgan Multi Balanced (AUD Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"AUD HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62810\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2810\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62810\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000312857\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001A0ZE\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050021566\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50021566\"}]},{\"productName\":\"JPMorgan Multi Balanced (EUR Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"EUR HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62809\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2809\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62809\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000312865\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001A0ZF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050021565\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50021565\"}]},{\"productName\":\"JPMorgan Multi Balanced (RMB Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"RMB HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62808\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2808\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62808\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000312873\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001A0ZH\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050021564\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50021564\"}]},{\"productName\":\"JPMorgan Multi Balanced (HKD- MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"HKD MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62807\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2807\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62807\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000312840\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001A0ZG\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050021563\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50021563\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

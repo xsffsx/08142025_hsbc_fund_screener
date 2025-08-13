@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63181",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:30:40.283156",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63181%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "752a95f3-7a96-4658-b872-68e6d7c363a6:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "GJMMZl2OsWtkydtYYHnycUwj6932QnEoOlWjv9hlQqc0SO_RW4zL9Q==",
+        "x-hsbc-request-correlation-id": "c847c634-342f-45f8-9b0c-766254b626c1",
+        "date": "Wed, 13 Aug 2025 13:30:40 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "17",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 061cb325dcc3fc546e8849d1b86b7f40.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1271",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63181\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"GB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":37.13,\"currency\":\"AUD\",\"companyName\":\"NINETY ONE GLOBAL FRANCHISE FUND (A-INC-2-AUDH (IRD)-MD-C)\",\"securityDescription\":null,\"changeAmount\":0.21,\"changePercent\":0.5688,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0.7862,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00012A9L\",\"tradableCurrency\":\"AUD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":5.12476},{\"year\":2023,\"annualCalendarYearReturn\":15.07827},{\"year\":2022,\"annualCalendarYearReturn\":-21.76381},{\"year\":2021,\"annualCalendarYearReturn\":17.38396},{\"year\":2020,\"annualCalendarYearReturn\":10.7532}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":9.01966,\"dailyPerformanceNAV\":9.13714},{\"period\":\"1M\",\"trailingTotalReturn\":-2.88075,\"dailyPerformanceNAV\":-1.48803},{\"period\":\"3M\",\"trailingTotalReturn\":4.67128,\"dailyPerformanceNAV\":2.30708},{\"period\":\"6M\",\"trailingTotalReturn\":5.64164,\"dailyPerformanceNAV\":4.62798},{\"period\":\"1Y\",\"trailingTotalReturn\":9.18887,\"dailyPerformanceNAV\":12.89717},{\"period\":\"3Y\",\"trailingTotalReturn\":7.17903,\"dailyPerformanceNAV\":6.32558},{\"period\":\"5Y\",\"trailingTotalReturn\":5.75032,\"dailyPerformanceNAV\":5.4715},{\"period\":\"10Y\",\"trailingTotalReturn\":7.07551,\"dailyPerformanceNAV\":7.2817}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2022-02-14\"},\"entityUpdatedTime\":\"2025-08-13T21:30:40.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63181\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"V3181\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63181\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1022646571\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012A9L\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050547178\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50547178\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

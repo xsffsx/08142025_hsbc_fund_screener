@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63268",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:42:23.582194",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63268%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "be496584-b3b1-45c7-b744-a44dc2bf960e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "PwFZrZn-CKm3e9g1B0t6MpUkxToGncbEZCHf5-NtSULTsIi1rgO5pw==",
+        "x-hsbc-request-correlation-id": "0c060a3b-0b1e-4163-9fd7-bdc4a542c691",
+        "date": "Wed, 13 Aug 2025 13:42:23 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 7bbe2b3303fef5a6eb0e74bb6f4bdd04.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "543",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Multi-Factor Worldwide Eq ZQ Inc\",\"weighting\":17.70424,\"currency\":\"USD\",\"marketValue\":873758},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global Infrastructure Eq ZQ1\",\"weighting\":15.05261,\"currency\":\"USD\",\"marketValue\":742892},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF US Shrt Dur HY Bd ZQ1\",\"weighting\":10.02637,\"currency\":\"USD\",\"marketValue\":494832},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares Blmbrg Enh Roll Yld Cmd Swap ETF\",\"weighting\":9.71559,\"currency\":\"USD\",\"marketValue\":479494},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC FTSE EPRA/NAREIT Developed ETF\",\"weighting\":9.38728,\"currency\":\"USD\",\"marketValue\":463291},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cross Asset Trend Strategy B USD Acc\",\"weighting\":7.90671,\"currency\":\"USD\",\"marketValue\":390220},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares Physical Gold ETC\",\"weighting\":7.5925,\"currency\":\"USD\",\"marketValue\":374713},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares $ TIPS 0-5 ETF USD Dist\",\"weighting\":5.92087,\"currency\":\"USD\",\"marketValue\":292213},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global IG Sec Credit Bd ZQ1\",\"weighting\":5.08913,\"currency\":\"USD\",\"marketValue\":251164},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares $ TIPS ETF USD Acc\",\"weighting\":3.99963,\"currency\":\"USD\",\"marketValue\":197394}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

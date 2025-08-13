@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63521",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:30:31.499442",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63521%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ac8cd625-2c79-4118-9ee6-9e23d28e9be5:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "rGs1Z4p1pI1GzM8lNaxOzqE5bFO4rZaSSOJ-vWLJkeFRkGwAhYy_kg==",
+        "x-hsbc-request-correlation-id": "003e3922-5207-48c1-9de3-bf1128c55e0a",
+        "date": "Wed, 13 Aug 2025 13:30:31 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 86444509002d660d9bf26870562a58a2.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "549",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Invesco Sterling Liqdty Port Agcy\",\"weighting\":4.04168,\"currency\":\"GBP\",\"marketValue\":37254379},{\"market\":\"GB\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United Kingdom of Great Britain and Northern Ireland 4.375%\",\"weighting\":2.02562,\"currency\":\"GBP\",\"marketValue\":18671200},{\"market\":\"GB\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Lloyds Banking Group PLC 2.707%\",\"weighting\":1.94825,\"currency\":\"GBP\",\"marketValue\":17958111},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vodafone Group PLC 6.375%\",\"weighting\":1.52677,\"currency\":\"GBP\",\"marketValue\":14073044},{\"market\":\"FR\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BNP Paribas SA 6%\",\"weighting\":1.49255,\"currency\":\"GBP\",\"marketValue\":13757612},{\"market\":\"FR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Electricite de France SA 6%\",\"weighting\":1.40402,\"currency\":\"GBP\",\"marketValue\":12941630},{\"market\":\"GB\",\"productType\":\"TP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United Kingdom of Great Britain and Northern Ireland 0.125%\",\"weighting\":1.38367,\"currency\":\"GBP\",\"marketValue\":12754010},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPMorgan Chase & Co. 1.895%\",\"weighting\":1.37071,\"currency\":\"GBP\",\"marketValue\":12634570},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BG Energy Capital PLC 5%\",\"weighting\":1.32956,\"currency\":\"GBP\",\"marketValue\":12255294},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"The Sage Group PLC 5.625%\",\"weighting\":1.29798,\"currency\":\"GBP\",\"marketValue\":11964227}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

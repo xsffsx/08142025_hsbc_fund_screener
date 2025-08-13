@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43169",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:48:27.162864",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43169%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "17122e1d-63cc-496b-8433-339b7dbcd3e5:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "RhYV24ViBei1UxaIF3rxi_VfaVPc46Peo1opGfb6lyajoMLUUuObSg==",
+        "x-hsbc-request-correlation-id": "772c3d0f-05c5-43e3-82c4-c7ed2edbceee",
+        "date": "Wed, 13 Aug 2025 13:48:26 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9fbddde4165412a5f9426c247ca005c0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "446",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 2.6%\",\"weighting\":6.65128,\"currency\":\"USD\",\"marketValue\":128266154},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 4.25%\",\"weighting\":6.11522,\"currency\":\"USD\",\"marketValue\":117928538},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 4.25%\",\"weighting\":5.65437,\"currency\":\"USD\",\"marketValue\":109041253},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 4.875%\",\"weighting\":4.23977,\"currency\":\"USD\",\"marketValue\":81761538},{\"market\":\"GB\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United Kingdom of Great Britain and Northern Ireland 0.875%\",\"weighting\":3.94233,\"currency\":\"USD\",\"marketValue\":76025527},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 2.5%\",\"weighting\":3.41319,\"currency\":\"USD\",\"marketValue\":65821341},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 4.375%\",\"weighting\":3.28353,\"currency\":\"USD\",\"marketValue\":63320877},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 2.2%\",\"weighting\":3.22995,\"currency\":\"USD\",\"marketValue\":62287795},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 4.625%\",\"weighting\":3.03737,\"currency\":\"USD\",\"marketValue\":58573962},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 2.5%\",\"weighting\":2.52826,\"currency\":\"USD\",\"marketValue\":48755993}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

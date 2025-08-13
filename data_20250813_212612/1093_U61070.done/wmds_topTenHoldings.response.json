@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61070",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:44.987233",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61070%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "232dbef6-464c-437b-90b2-967f39e021a3:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "8LL0r6N96m3A8Iq7J4zjN3PbtQdQjS33cgNBWwHJesO6QvDORtGsQw==",
+        "x-hsbc-request-correlation-id": "09e173ca-0529-4761-8d1d-e8fec4c6336f",
+        "date": "Wed, 13 Aug 2025 13:33:44 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a9f2009d5c1905b42b9c7cd7c9d409f4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "530",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"2 Year Treasury Note Future Sept 25\",\"weighting\":14.90448,\"currency\":\"USD\",\"marketValue\":-22630548},{\"market\":\"US\",\"productType\":\"EL\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"E-Mini Russ 1000 Gsep25 Rgyu5\",\"weighting\":9.77683,\"currency\":\"USD\",\"marketValue\":14844873},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NVIDIA Corp\",\"weighting\":2.95895,\"currency\":\"USD\",\"marketValue\":4492787},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":2.75887,\"currency\":\"USD\",\"marketValue\":4188995},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Microsoft Corp\",\"weighting\":2.74247,\"currency\":\"USD\",\"marketValue\":4164095},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Apple Inc\",\"weighting\":2.18481,\"currency\":\"USD\",\"marketValue\":3317351},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Xtrackers AI & Big Data ETF 1C\",\"weighting\":2.00258,\"currency\":\"USD\",\"marketValue\":3040661},{\"market\":\"CA\",\"productType\":\"EL\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Future on S&P Canada 60 Index\",\"weighting\":1.86504,\"currency\":\"USD\",\"marketValue\":2831826},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amazon.com Inc\",\"weighting\":1.55897,\"currency\":\"USD\",\"marketValue\":2367095},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares MSCI Japan Small Cap ETF USD Dis\",\"weighting\":1.53411,\"currency\":\"USD\",\"marketValue\":2329346}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

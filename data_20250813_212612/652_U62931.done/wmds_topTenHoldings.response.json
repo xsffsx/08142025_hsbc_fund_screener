@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62931",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:40.530109",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62931%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "faf8c0ba-bda2-4275-8487-16a856ee5a05:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "rHJFMegbkkzlkoSrqhkhkw1Uit012x8Ge-gFbS1kzMmaShoeK1LfOg==",
+        "x-hsbc-request-correlation-id": "117dd1c5-fb92-4b52-9d4a-a54c63c2a0e3",
+        "date": "Wed, 13 Aug 2025 13:33:40 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 bc32ef126215821e67e47cb1213e8dac.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "565",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":null,\"productType\":\"C\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Deposit\",\"weighting\":34.55959,\"currency\":\"USD\",\"marketValue\":230800000},{\"market\":null,\"productType\":\"C\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Current Account\",\"weighting\":5.32854,\"currency\":\"USD\",\"marketValue\":35585678},{\"market\":\"KR\",\"productType\":\"CD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Korea Exchange Bank Hong Kong Branch 0%\",\"weighting\":3.28899,\"currency\":\"USD\",\"marketValue\":21964945},{\"market\":\"FR\",\"productType\":\"CP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Agence Centrale Des Organismes De Securite Sociale 0%\",\"weighting\":2.98497,\"currency\":\"USD\",\"marketValue\":19934567},{\"market\":\"JP\",\"productType\":\"CD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mizuho Bank, Ltd. Sydney Branch 0%\",\"weighting\":2.95402,\"currency\":\"USD\",\"marketValue\":19727865},{\"market\":\"DE\",\"productType\":\"CP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"DZ Bank AG Deutsche Zentral-Genossenschaftsbank 0%\",\"weighting\":2.65608,\"currency\":\"USD\",\"marketValue\":17738177},{\"market\":\"GB\",\"productType\":\"CD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Rabobank International London Branch 0%\",\"weighting\":2.65291,\"currency\":\"USD\",\"marketValue\":17716968},{\"market\":\"JP\",\"productType\":\"CD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MUFG Bank Ltd (Sydney Branch) 0%\",\"weighting\":2.52158,\"currency\":\"USD\",\"marketValue\":16839911},{\"market\":\"FR\",\"productType\":\"CP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bred Banque Populaire 0%\",\"weighting\":2.3519,\"currency\":\"USD\",\"marketValue\":15706709},{\"market\":\"NL\",\"productType\":\"CP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BGL BNP Paribas S.A. 0%\",\"weighting\":2.23685,\"currency\":\"USD\",\"marketValue\":14938375}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

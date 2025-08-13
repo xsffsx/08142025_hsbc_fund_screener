@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63179",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:41:55.772617",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63179%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e59d707f-984b-4842-b4ca-bb6cbbcaf4ab:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ABuKoEX6jSiPSLSR1zOUBEmlxJkQ0EPtmAYYIKbLgjcpyo_ygRJFvw==",
+        "x-hsbc-request-correlation-id": "4dd3f2a6-e7c7-40ed-9071-43a70504412f",
+        "date": "Wed, 13 Aug 2025 13:41:55 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "20",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 1115f9e25c9d03c18355ab052e8e9a5c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1244",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63179\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"GB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":66.93,\"currency\":\"EUR\",\"companyName\":\"NINETY ONE GLOBAL FRANCHISE FUND (A-EUR-ACC)\",\"securityDescription\":null,\"changeAmount\":0.03,\"changePercent\":0.04484,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000X8OO\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":13.94343},{\"year\":2023,\"annualCalendarYearReturn\":14.54164},{\"year\":2022,\"annualCalendarYearReturn\":-14.22266},{\"year\":2021,\"annualCalendarYearReturn\":26.46268},{\"year\":2020,\"annualCalendarYearReturn\":5.88879}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":-0.21904,\"dailyPerformanceNAV\":-2.26343},{\"period\":\"1M\",\"trailingTotalReturn\":0.11722,\"dailyPerformanceNAV\":-1.22491},{\"period\":\"3M\",\"trailingTotalReturn\":4.28877,\"dailyPerformanceNAV\":-2.67559},{\"period\":\"6M\",\"trailingTotalReturn\":-3.17415,\"dailyPerformanceNAV\":-5.99719},{\"period\":\"1Y\",\"trailingTotalReturn\":4.99385,\"dailyPerformanceNAV\":7.32842},{\"period\":\"3Y\",\"trailingTotalReturn\":5.67022,\"dailyPerformanceNAV\":4.2109},{\"period\":\"5Y\",\"trailingTotalReturn\":8.40121,\"dailyPerformanceNAV\":7.6485},{\"period\":\"10Y\",\"trailingTotalReturn\":8.11671,\"dailyPerformanceNAV\":8.25106}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2022-02-14\"},\"entityUpdatedTime\":\"2025-08-13T21:41:55.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63179\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"V3179\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63179\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0846948197\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000X8OO\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050547176\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50547176\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

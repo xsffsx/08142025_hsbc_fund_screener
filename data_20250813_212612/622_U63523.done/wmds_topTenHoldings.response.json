@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63523",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:52:40.846631",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63523%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "9836d199-b9a2-4664-99ec-3a9057c920bb:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "uEH9lhceJo_xyngybnzIu8D56ij2Li6Vmmblj4LCZTkBsv5siNM47Q==",
+        "x-hsbc-request-correlation-id": "f7c6f012-4bbb-4281-bd76-5635f9b340fd",
+        "date": "Wed, 13 Aug 2025 13:52:40 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 901fdc9beff7ff35478f18c7b70da04e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "612",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CN\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bank of Communications Company Limited, Hong Kong Branch 4.08%\",\"weighting\":3.05712,\"currency\":\"HKD\",\"marketValue\":56455056},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AIA Group Ltd, Hong Kong 3.78%\",\"weighting\":2.56488,\"currency\":\"HKD\",\"marketValue\":47364998},{\"market\":\"HK\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hong Kong Special Administrative Region of the People's Republic of China 0\",\"weighting\":2.46887,\"currency\":\"HKD\",\"marketValue\":45591945},{\"market\":\"HK\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"The Hong Kong Mortgage Corporation Limited 3.45%\",\"weighting\":2.00896,\"currency\":\"HKD\",\"marketValue\":37098874},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Standard Chartered Bank 3.875%\",\"weighting\":1.95199,\"currency\":\"HKD\",\"marketValue\":36046917},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sun Hung Kai Properties (Capital Market) Limited 3.88%\",\"weighting\":1.80278,\"currency\":\"HKD\",\"marketValue\":33291490},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Swire Properties MTN Financing Ltd. 3%\",\"weighting\":1.77108,\"currency\":\"HKD\",\"marketValue\":32706126},{\"market\":\"HK\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Airport Authority Hong Kong 4.1%\",\"weighting\":1.76645,\"currency\":\"HKD\",\"marketValue\":32620531},{\"market\":\"CN\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Development Bank Hong Kong Branch 4.38%\",\"weighting\":1.70172,\"currency\":\"HKD\",\"marketValue\":31425254},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Bank PLC 4.43%\",\"weighting\":1.69767,\"currency\":\"HKD\",\"marketValue\":31350447}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

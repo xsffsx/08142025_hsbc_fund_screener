@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U42792",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:01:52.377441",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U42792%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "664be73b-f390-4ded-b80f-cc41bd8e4278:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "bIJI9NPX-NQRXSaQh7Ihoo2eHNEFWi0CtmjVIeMpDN9jNJ63s6C2Mw==",
+        "x-hsbc-request-correlation-id": "6962241b-84dd-4425-861f-0bdd2807a14d",
+        "date": "Wed, 13 Aug 2025 14:01:51 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "35",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 eeaafdd5e22d1448912c6cf3e1e5bd58.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "577",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"AB FCP I-SHORT DURATION BOND PORTFOLIO (AA - AUD HEDGED - MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AA – AUD HEDGED – MDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62748\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2748\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62748\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1008670520\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00011R21\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004444\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004444\"}]},{\"productName\":\"AB FCP I-SHORT DURATION BOND PORTFOLIO (CLASS AT - USD - MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AT-USD-MDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61759\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N1759\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61759\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0156897653\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000019TT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047836\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047836\"}]},{\"productName\":\"AB FCP I - SHORT DURATION BOND PORTFOLIO (CLASS A2 - EUR)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A2-EUR\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61687\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N1687\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61687\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0232535426\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000019TU\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048213\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048213\"}]},{\"productName\":\"AB FCP I-SHORT DURATION BOND PORTFOLIO (AA - SGD HEDGED - MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AA – SGD HEDGED – MDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62752\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2752\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62752\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1035779005\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012H4G\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004448\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004448\"}]},{\"productName\":\"AB FCP I-SHORT DURATION BOND PORTFOLIO (CLASS AA - HKD - MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AA – HKD – MDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62751\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2751\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62751\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1069346739\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013N60\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004447\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004447\"}]},{\"productName\":\"AB FCP I-SHORT DURATION BOND PORTFOLIO (AA - GBP HEDGED - MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AA – GBP HEDGED – MDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62750\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2750\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62750\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1069346812\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000136X3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004446\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004446\"}]},{\"productName\":\"AB FCP I-SHORT DURATION BOND PORTFOLIO (AA - CAD HEDGED - MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AA – CAD HEDGED – MDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62749\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2749\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62749\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1069346903\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000136WA\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004445\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004445\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

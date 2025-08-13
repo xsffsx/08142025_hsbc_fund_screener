@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61670",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:49:52.464016",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61670%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "2fddfa4a-199e-488f-97fe-8ea9b48e6610:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "BvOvkBIYWNwdj-x5TAcXfqnJv8yBH5fc6bMBRmJ3UIPlw3XSzIDRfQ==",
+        "x-hsbc-request-correlation-id": "462498c3-4a01-49a0-9911-e23ab10ff00a",
+        "date": "Wed, 13 Aug 2025 13:49:51 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 928b9a46c60991369db0a5ad58525eca.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "460",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sony Group Corp\",\"weighting\":5.44397,\"currency\":\"JPY\",\"marketValue\":5435356000},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Toyota Motor Corp\",\"weighting\":5.01437,\"currency\":\"JPY\",\"marketValue\":5006435121},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mitsubishi UFJ Financial Group Inc\",\"weighting\":4.90359,\"currency\":\"JPY\",\"marketValue\":4895828700},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hitachi Ltd\",\"weighting\":4.5566,\"currency\":\"JPY\",\"marketValue\":4549389500},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tokio Marine Holdings Inc\",\"weighting\":3.75626,\"currency\":\"JPY\",\"marketValue\":3750320700},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sumitomo Mitsui Financial Group Inc\",\"weighting\":3.09343,\"currency\":\"JPY\",\"marketValue\":3088536600},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mitsubishi Heavy Industries Ltd\",\"weighting\":2.97827,\"currency\":\"JPY\",\"marketValue\":2973557000},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Shin-Etsu Chemical Co Ltd\",\"weighting\":2.71192,\"currency\":\"JPY\",\"marketValue\":2707632800},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mitsubishi Electric Corp\",\"weighting\":2.67752,\"currency\":\"JPY\",\"marketValue\":2673282300},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dmg Mori Co Ltd\",\"weighting\":2.59093,\"currency\":\"JPY\",\"marketValue\":2586828600}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

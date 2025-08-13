@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U61123",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:01:05.277735",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61123%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "8ecf7853-065d-41e4-a1d9-89fc12035c94:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "fuNxbQ7EcFvE-54eC9o4yMvs0mq-Ep0NH0wChcVsu22vraaDsWP7iA==",
+        "x-hsbc-request-correlation-id": "36cf255c-1e5f-4261-92a2-06d2a8d9c357",
+        "date": "Wed, 13 Aug 2025 14:01:03 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "46",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 612d6e38ca8a5e65776b064d65f27d36.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "793",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"BLACKROCK GLOBAL FUNDS-ASIAN TIGER BOND FUND (A8-AUD-HED-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"A8-AUD-HED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62776\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2776\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62776\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0871639620\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000Y64U\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014289\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014289\"}]},{\"productName\":\"BLACKROCK GLOBAL FUNDS-ASIAN TIGER BOND FUND (A6-USD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"A6-USD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62775\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2775\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62775\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0764618053\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000VU2Y\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014288\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014288\"}]},{\"productName\":\"BLACKROCK GLOBAL FUNDS-ASIAN TIGER BOND FUND (A6-HKD-HED-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"A6-HKD-HED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62773\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2773\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62773\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0784395997\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WB2Q\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014286\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014286\"}]},{\"productName\":\"BLACKROCK GLOBAL FUNDS-ASIAN TIGER BOND FUND (A6-GBP-HED-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"A6-GBP-HED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62772\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2772\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62772\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1200839618\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00015KHZ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014285\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014285\"}]},{\"productName\":\"BLACKROCK GLOBAL FUNDS-ASIAN TIGER BOND FUND (A6-EUR-HED-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"A6-EUR-HED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62771\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2771\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62771\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1200839535\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00015KHY\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014284\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014284\"}]},{\"productName\":\"BLACKROCK GLOBAL FUNDS-ASIAN TIGER BOND FUND (A8-NZD-HED-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"A8-NZD-HED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62777\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2777\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62777\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1200839709\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00015KI1\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014290\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014290\"}]},{\"productName\":\"BLACKROCK GLOBAL FUNDS - ASIAN TIGER BOND FUND (A8-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A8-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63322\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M3322\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63322\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1257007309\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016BAT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050685979\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50685979\"}]},{\"productName\":\"BLACKROCK GLOBAL FUNDS-ASIAN TIGER BOND FUND (A8-CAD-HED-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"A8-CAD-HED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62785\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2785\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62785\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1200839881\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00015KI0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014291\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014291\"}]},{\"productName\":\"BlackRock Asian Tiger Bond Fund (Class A3-MDIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A3-MDIST UNIT\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61124\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M1124\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61124\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0172393414\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000019IQ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046761\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046761\"}]},{\"productName\":\"BlackRock Asian Tiger Bond Fund (Class A2)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A2\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61122\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M1122\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61122\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0063729296\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000RWK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046759\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046759\"}]},{\"productName\":\"BlackRock Asian Tiger Bond Fund (A3-HKDH-MDIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"A3-HKDH-MDIST Unit\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62398\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2398\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62398\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0496654236\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000OO8Z\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047068\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047068\"}]},{\"productName\":\"BlackRock Asian Tiger Bond Fund (A3-HKDH-MDIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"A3-HKDH-MDIST Cash\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62397\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2397\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62397\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0496654236\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000OO8Z\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047067\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047067\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62584",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:53:10.295005",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62584%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "761a1a91-bdf8-4478-9de9-3a45e540edfa:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "3Kc0pUKvpPAu6eZ2MOcC1PM92shndLRAx3vMGvNFqj-SsTES06OqPQ==",
+        "x-hsbc-request-correlation-id": "70ce8176-bff1-47e6-9fdf-d70ef63f38dd",
+        "date": "Wed, 13 Aug 2025 13:53:09 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 de78b5b2f4bbd9bb1abd6bed27a85d78.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "548",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"GB\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC FTSE All-World Index Instl Acc\",\"weighting\":11.38236,\"currency\":\"USD\",\"marketValue\":88469663},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Multi Factor Worldwide Eq ETF\",\"weighting\":10.67635,\"currency\":\"USD\",\"marketValue\":82982172},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC S&P 500 ETF\",\"weighting\":8.63631,\"currency\":\"USD\",\"marketValue\":67125874},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amundi Prime All Country World ETF Inc\",\"weighting\":8.4574,\"currency\":\"USD\",\"marketValue\":65735291},{\"market\":\"GB\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC American Index Institutional Acc\",\"weighting\":8.27814,\"currency\":\"USD\",\"marketValue\":64342001},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global EM Local Dbt ZQ1\",\"weighting\":4.9561,\"currency\":\"USD\",\"marketValue\":38521377},{\"market\":null,\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cbt Us 10y Ult Fut Sep25\",\"weighting\":4.80585,\"currency\":\"USD\",\"marketValue\":37353562},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC US Dollar Liquidity Y\",\"weighting\":4.55946,\"currency\":\"USD\",\"marketValue\":35438532},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global Infrastructure Equity ZD\",\"weighting\":3.77593,\"currency\":\"USD\",\"marketValue\":29348459},{\"market\":\"GB\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC European Index Institutional Acc\",\"weighting\":3.68978,\"currency\":\"USD\",\"marketValue\":28678866}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

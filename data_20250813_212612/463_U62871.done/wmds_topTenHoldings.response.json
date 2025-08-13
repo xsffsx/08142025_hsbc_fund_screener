@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62871",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:56.059169",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62871%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "13b735e7-5140-4775-b4ce-b38230831ceb:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Y1HbwcKFdDNuujN8rXvlG9IWR_SoY3cw7gjgSeebKPZnkhBM7Vqy1g==",
+        "x-hsbc-request-correlation-id": "a0e3d262-5d70-446a-9fc6-57192ead2179",
+        "date": "Wed, 13 Aug 2025 13:33:56 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 3207e1f50c8d4603820ce82acc837422.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "543",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"PL\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Poland (Republic of) 6%\",\"weighting\":1.04866,\"currency\":\"USD\",\"marketValue\":19473919},{\"market\":\"ZA\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"South Africa (Republic of)\",\"weighting\":1.01121,\"currency\":\"USD\",\"marketValue\":18778560},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of)\",\"weighting\":0.93322,\"currency\":\"USD\",\"marketValue\":17330190},{\"market\":\"MY\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Malaysia (Government Of) 4.254%\",\"weighting\":0.84235,\"currency\":\"USD\",\"marketValue\":15642620},{\"market\":\"BR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Brazil Notas Do Tesouro Nacional Serie B Brl I/L 6.0% 08-15-50\",\"weighting\":0.7924,\"currency\":\"USD\",\"marketValue\":14715152},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Rotech Healthcare\",\"weighting\":0.62353,\"currency\":\"USD\",\"marketValue\":11579075},{\"market\":\"PL\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Poland (Republic of)\",\"weighting\":0.62205,\"currency\":\"USD\",\"marketValue\":11551611},{\"market\":\"BR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Secretaria Do Tesouro Nacional\",\"weighting\":0.58182,\"currency\":\"USD\",\"marketValue\":10804622},{\"market\":\"MA\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Morocco (Kingdom of) 3.875%\",\"weighting\":0.57057,\"currency\":\"USD\",\"marketValue\":10595591},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Diebold Nixdorf Inc Ordinary Shares- New\",\"weighting\":0.54251,\"currency\":\"USD\",\"marketValue\":10074490}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

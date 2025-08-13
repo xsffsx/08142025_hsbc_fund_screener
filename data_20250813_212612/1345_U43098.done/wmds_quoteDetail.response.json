@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U43098",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:14.014352",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43098%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "054e8684-aa3d-4200-8b2d-44bdd5ccc9bb:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "8lhGXpltRbht-q-dXrK5iHt_aCqQpPFcipJmBTv5xRIvbIgzALHQRg==",
+        "x-hsbc-request-correlation-id": "6b0cb469-482b-41d5-86f1-1fa2e46ac8b6",
+        "date": "Wed, 13 Aug 2025 13:50:13 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "22",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 900141041f08038f9452e4f1a092ecd2.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1244",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U43098\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"UF\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":11.3,\"currency\":\"USD\",\"companyName\":\"Fidelity Funds - US Dollar Bond Fund (Class A-MDIST Unit)\",\"securityDescription\":null,\"changeAmount\":-0.01,\"changePercent\":-0.08842,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":3.45213,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"2\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00001BMM\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":-0.38655},{\"year\":2023,\"annualCalendarYearReturn\":5.97011},{\"year\":2022,\"annualCalendarYearReturn\":-13.96908},{\"year\":2021,\"annualCalendarYearReturn\":-1.36648},{\"year\":2020,\"annualCalendarYearReturn\":11.90859}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":3.92832,\"dailyPerformanceNAV\":4.45319},{\"period\":\"1M\",\"trailingTotalReturn\":-0.15736,\"dailyPerformanceNAV\":1.13263},{\"period\":\"3M\",\"trailingTotalReturn\":0.45955,\"dailyPerformanceNAV\":2.36985},{\"period\":\"6M\",\"trailingTotalReturn\":3.2356,\"dailyPerformanceNAV\":4.29484},{\"period\":\"1Y\",\"trailingTotalReturn\":2.77914,\"dailyPerformanceNAV\":2.08876},{\"period\":\"3Y\",\"trailingTotalReturn\":1.38006,\"dailyPerformanceNAV\":1.94711},{\"period\":\"5Y\",\"trailingTotalReturn\":-1.43068,\"dailyPerformanceNAV\":-1.24297},{\"period\":\"10Y\",\"trailingTotalReturn\":1.84443,\"dailyPerformanceNAV\":1.84294}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2003-06-09\"},\"entityUpdatedTime\":\"2025-08-13T21:50:13.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43098\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3098\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43098\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0168055563\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001BMM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047315\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047315\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61734",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:32:24.137720",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61734%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "a0c5cb1b-edc5-4c7a-bc7e-e72d331e064e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "mS_8KuP2eJzzDwQMSPPps_UE2vIkzqMn5iI8jSjyjn2_6qCgqHf4yQ==",
+        "x-hsbc-request-correlation-id": "4ef9acf3-a35f-4b50-be0e-e92644a11552",
+        "date": "Wed, 13 Aug 2025 13:32:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 8b4b0c13ccb29eaa324d0f091402d986.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "435",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Rentokil Initial PLC ADR\",\"weighting\":2.26441,\"currency\":\"USD\",\"marketValue\":17536529},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hexcel Corp\",\"weighting\":2.18674,\"currency\":\"USD\",\"marketValue\":16935090},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BWX Technologies Inc\",\"weighting\":2.08571,\"currency\":\"USD\",\"marketValue\":16152632},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Viavi Solutions Inc\",\"weighting\":2.04427,\"currency\":\"USD\",\"marketValue\":15831677},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"LiveRamp Holdings Inc\",\"weighting\":1.95711,\"currency\":\"USD\",\"marketValue\":15156671},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kirby Corp\",\"weighting\":1.73814,\"currency\":\"USD\",\"marketValue\":13460897},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ICU Medical Inc\",\"weighting\":1.69296,\"currency\":\"USD\",\"marketValue\":13111018},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ciena Corp\",\"weighting\":1.6887,\"currency\":\"USD\",\"marketValue\":13078041},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Littelfuse Inc\",\"weighting\":1.68259,\"currency\":\"USD\",\"marketValue\":13030705},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Lumentum Holdings Inc\",\"weighting\":1.66697,\"currency\":\"USD\",\"marketValue\":12909734}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

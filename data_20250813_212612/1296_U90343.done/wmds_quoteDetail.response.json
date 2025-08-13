@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U90343",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:35:48.696409",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U90343%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "302b99e4-cad2-4b58-999a-ed5a34f745ea:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "cap-GfTQjxT2mP_o9305keU8nc9d6kmY2Nx9DdfXigd2iznJOUa4bQ==",
+        "x-hsbc-request-correlation-id": "98d27516-2b1f-4ba6-bb31-9407f7b2892f",
+        "date": "Wed, 13 Aug 2025 13:35:48 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 29e0f55fe1ca6f4301a1803ab1c86bc0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1249",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U90343\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"AS\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":5.4737,\"currency\":\"USD\",\"companyName\":\"Schroder ISF - Asian Bond Total Return (Class D-USD-MDist Cash)\",\"securityDescription\":null,\"changeAmount\":-0.0012,\"changePercent\":-0.02192,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":4.00802,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"2\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000JNYI\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":3.59277},{\"year\":2023,\"annualCalendarYearReturn\":4.43289},{\"year\":2022,\"annualCalendarYearReturn\":-4.90212},{\"year\":2021,\"annualCalendarYearReturn\":-4.24967},{\"year\":2020,\"annualCalendarYearReturn\":7.52505}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":2.20474,\"dailyPerformanceNAV\":2.86625},{\"period\":\"1M\",\"trailingTotalReturn\":0.2019,\"dailyPerformanceNAV\":0.77278},{\"period\":\"3M\",\"trailingTotalReturn\":1.55759,\"dailyPerformanceNAV\":2.08483},{\"period\":\"6M\",\"trailingTotalReturn\":2.12711,\"dailyPerformanceNAV\":2.53367},{\"period\":\"1Y\",\"trailingTotalReturn\":3.71261,\"dailyPerformanceNAV\":4.1701},{\"period\":\"3Y\",\"trailingTotalReturn\":3.59222,\"dailyPerformanceNAV\":3.69526},{\"period\":\"5Y\",\"trailingTotalReturn\":1.17612,\"dailyPerformanceNAV\":1.20036},{\"period\":\"10Y\",\"trailingTotalReturn\":1.50853,\"dailyPerformanceNAV\":1.69558}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2009-03-25\"},\"entityUpdatedTime\":\"2025-08-13T21:35:48.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U90343\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S0343\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U90343\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0417517975\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000JNYI\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048036\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048036\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

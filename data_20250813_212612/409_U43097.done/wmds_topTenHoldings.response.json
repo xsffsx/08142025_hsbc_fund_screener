@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43097",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:32:06.935819",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43097%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "35aebc94-aa33-422e-844b-46ba32ffdb41:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "-Y3iX9hobi6R_P1nUn7WSp_lQhHLF1UftaEBNhDvypv1JRDqXbAb8w==",
+        "x-hsbc-request-correlation-id": "59716c9f-43b5-47ce-ab09-617bab758e1c",
+        "date": "Wed, 13 Aug 2025 13:32:06 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 1b43896e5481a62e6045eebbe6aad12c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "547",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Fidelity ILF - EUR A Acc\",\"weighting\":7.95797,\"currency\":\"EUR\",\"marketValue\":218951876},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"2 Year Treasury Note Future Sept 25\",\"weighting\":3.4047,\"currency\":\"EUR\",\"marketValue\":93675148},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bobl Future Sept 25\",\"weighting\":2.7384,\"currency\":\"EUR\",\"marketValue\":75342935},{\"market\":\"DE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ZF Europe Finance B.V. 7%\",\"weighting\":1.27889,\"currency\":\"EUR\",\"marketValue\":35186637},{\"market\":\"DE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vivion Investments S.a.r.l 6.5%\",\"weighting\":1.20967,\"currency\":\"EUR\",\"marketValue\":33282272},{\"market\":\"CZ\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Energo-Pro AS 8%\",\"weighting\":1.08363,\"currency\":\"EUR\",\"marketValue\":29814426},{\"market\":\"IE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Energia Group ROI FinanceCo DAC 6.875%\",\"weighting\":1.05201,\"currency\":\"EUR\",\"marketValue\":28944499},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bellis Acquisition Co PLC 8.125%\",\"weighting\":1.03776,\"currency\":\"EUR\",\"marketValue\":28552315},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":1.0227,\"currency\":\"EUR\",\"marketValue\":28138140},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Virgin Media O2 Vendor Financing Notes V DAC 7.875%\",\"weighting\":1.00337,\"currency\":\"EUR\",\"marketValue\":27606253}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

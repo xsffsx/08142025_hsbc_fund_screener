@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63415",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:54:44.763156",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63415%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "cb3c639f-42d3-45cd-85a1-2dd3d5064e99:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "hrOQevLfnRj3bx7lS7PoH9eWJAMLbc7iKNDDUY0SzEJ7CTc5QRxzwg==",
+        "x-hsbc-request-correlation-id": "f3a2ba13-f266-4cd1-9cd5-8172fefa9d48",
+        "date": "Wed, 13 Aug 2025 13:54:44 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 55d9a4fa548a24d777eff07223b71680.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1231",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63415\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"AS\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":8.93,\"currency\":\"CNY\",\"companyName\":\"HANG SENG HONG KONG BOND FUND (CLASS A-RMBH-MD-C)\",\"securityDescription\":null,\"changeAmount\":0.05,\"changePercent\":0.56306,\"bidPrice\":8.93,\"bidPriceDate\":\"2025-08-12\",\"bidSize\":null,\"askPrice\":9.29,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":3.37838,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"2\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001N9DS\",\"tradableCurrency\":\"CNY\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":2.67316},{\"year\":2023,\"annualCalendarYearReturn\":5.76692},{\"year\":2022,\"annualCalendarYearReturn\":-9.89689},{\"year\":2021,\"annualCalendarYearReturn\":null},{\"year\":2020,\"annualCalendarYearReturn\":null}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":4.3919,\"dailyPerformanceNAV\":5.45471},{\"period\":\"1M\",\"trailingTotalReturn\":0.40678,\"dailyPerformanceNAV\":1.36053},{\"period\":\"3M\",\"trailingTotalReturn\":2.51604,\"dailyPerformanceNAV\":3.27519},{\"period\":\"6M\",\"trailingTotalReturn\":4.19933,\"dailyPerformanceNAV\":4.98136},{\"period\":\"1Y\",\"trailingTotalReturn\":4.29382,\"dailyPerformanceNAV\":4.39441},{\"period\":\"3Y\",\"trailingTotalReturn\":2.85209,\"dailyPerformanceNAV\":3.36723},{\"period\":\"5Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2024-07-30\"},\"entityUpdatedTime\":\"2025-08-13T21:54:44.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63415\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HS415\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63415\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000756285\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001N9DS\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050780241\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50780241\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

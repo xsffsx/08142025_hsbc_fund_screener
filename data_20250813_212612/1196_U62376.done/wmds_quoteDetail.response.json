@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62376",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:37:00.758856",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62376%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c361567e-cc8a-45d4-a520-eeef91731c43:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ExhZrvZqaMwz1xlvM9vZWiTaUYtc-iJreUt4ZNRpUH66tuSbqMagsw==",
+        "x-hsbc-request-correlation-id": "e19b5135-9dd5-4c41-8ccf-3379004c7f25",
+        "date": "Wed, 13 Aug 2025 13:37:00 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 91b55fd27b9ed7e354f34844be70bbae.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1234",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62376\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"HU\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":9.81,\"currency\":\"USD\",\"companyName\":\"PIMCO US High Yield Bond Fund - Class E Income\",\"securityDescription\":null,\"changeAmount\":0.01,\"changePercent\":0.10204,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":5.72174,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00006D2A\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Quarterly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":7.09512},{\"year\":2023,\"annualCalendarYearReturn\":11.88713},{\"year\":2022,\"annualCalendarYearReturn\":-13.00806},{\"year\":2021,\"annualCalendarYearReturn\":3.47127},{\"year\":2020,\"annualCalendarYearReturn\":4.39335}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":4.24727,\"dailyPerformanceNAV\":4.56705},{\"period\":\"1M\",\"trailingTotalReturn\":0.41068,\"dailyPerformanceNAV\":0.71869},{\"period\":\"3M\",\"trailingTotalReturn\":3.50957,\"dailyPerformanceNAV\":2.54262},{\"period\":\"6M\",\"trailingTotalReturn\":2.86157,\"dailyPerformanceNAV\":3.38853},{\"period\":\"1Y\",\"trailingTotalReturn\":7.32773,\"dailyPerformanceNAV\":7.88054},{\"period\":\"3Y\",\"trailingTotalReturn\":6.68627,\"dailyPerformanceNAV\":6.16109},{\"period\":\"5Y\",\"trailingTotalReturn\":3.48249,\"dailyPerformanceNAV\":3.46658},{\"period\":\"10Y\",\"trailingTotalReturn\":4.03517,\"dailyPerformanceNAV\":4.20616}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2009-11-02\"},\"entityUpdatedTime\":\"2025-08-13T21:37:00.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62376\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P2376\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62376\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00B193MN38\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006D2A\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048078\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048078\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

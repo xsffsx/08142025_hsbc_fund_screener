@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61035",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:48:45.163374",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61035%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "34c4dc9e-2ba2-4cd6-b4a9-c56aef80aabc:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "tmY8N7TfAmwjVEFidFByllnXp1azJHUS_hI89je_yK9xJFeRuvXAdQ==",
+        "x-hsbc-request-correlation-id": "fc82f411-b897-412f-bc4b-fc74767885ef",
+        "date": "Wed, 13 Aug 2025 13:48:44 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 864ad552768d61fe107467e5c647c77a.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "499",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ferrovial SE\",\"weighting\":3.98175,\"currency\":\"EUR\",\"marketValue\":7344671},{\"market\":\"ES\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Industria De Diseno Textil SA Share From Split\",\"weighting\":3.59952,\"currency\":\"EUR\",\"marketValue\":6639606},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Koninklijke Ahold Delhaize NV\",\"weighting\":3.34953,\"currency\":\"EUR\",\"marketValue\":6178482},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TotalEnergies SE\",\"weighting\":3.3025,\"currency\":\"EUR\",\"marketValue\":6091738},{\"market\":\"IT\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UniCredit SpA\",\"weighting\":3.17279,\"currency\":\"EUR\",\"marketValue\":5852474},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Reckitt Benckiser Group PLC\",\"weighting\":3.0931,\"currency\":\"EUR\",\"marketValue\":5705470},{\"market\":\"GB\",\"productType\":\"FC\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"3i Group Ord\",\"weighting\":2.95059,\"currency\":\"EUR\",\"marketValue\":5442603},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sage Group (The) PLC\",\"weighting\":2.90754,\"currency\":\"EUR\",\"marketValue\":5363197},{\"market\":\"IE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AIB Group PLC\",\"weighting\":2.90739,\"currency\":\"EUR\",\"marketValue\":5362926},{\"market\":\"FI\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"KONE Oyj Class B\",\"weighting\":2.86131,\"currency\":\"EUR\",\"marketValue\":5277914}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

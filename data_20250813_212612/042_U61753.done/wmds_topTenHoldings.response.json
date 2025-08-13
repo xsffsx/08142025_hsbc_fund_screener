@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61753",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:36:06.533178",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61753%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c557d0a2-b2d7-4e97-80a6-3b75f0958d86:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "vuwygdmGXm4cEjKtC9eKIkB2N4FKipwSzIzmNv-xbq7Gt4aJwykvUQ==",
+        "x-hsbc-request-correlation-id": "ea84457c-e370-4b76-a51f-4aa02d555306",
+        "date": "Wed, 13 Aug 2025 13:36:05 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 ac1b0b590fa34d8efd3e06ea595821ac.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "508",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kweichow Moutai Co Ltd Class A\",\"weighting\":5.22448,\"currency\":\"USD\",\"marketValue\":30915876},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Contemporary Amperex Technology Co Ltd Class A\",\"weighting\":5.02069,\"currency\":\"USD\",\"marketValue\":29709967},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Merchants Bank Co Ltd Class A\",\"weighting\":4.41847,\"currency\":\"USD\",\"marketValue\":26146305},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ping An Insurance (Group) Co. of China Ltd Class A\",\"weighting\":3.71359,\"currency\":\"USD\",\"marketValue\":21975159},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Yangtze Power Co Ltd Class A\",\"weighting\":3.18277,\"currency\":\"USD\",\"marketValue\":18834050},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CITIC Securities Co Ltd Class A\",\"weighting\":3.15092,\"currency\":\"USD\",\"marketValue\":18645607},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Midea Group Co Ltd Class A\",\"weighting\":2.87213,\"currency\":\"USD\",\"marketValue\":16995834},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Jiangsu Hengrui Pharmaceuticals Co Ltd Class A\",\"weighting\":2.3501,\"currency\":\"USD\",\"marketValue\":13906736},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Foxconn Industrial Internet Co Ltd Class A\",\"weighting\":2.13423,\"currency\":\"USD\",\"marketValue\":12629314},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Zijin Mining Group Co Ltd Class A\",\"weighting\":2.12715,\"currency\":\"USD\",\"marketValue\":12587421}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

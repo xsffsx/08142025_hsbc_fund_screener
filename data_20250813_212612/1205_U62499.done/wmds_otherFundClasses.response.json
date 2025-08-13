@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62499",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:13.827501",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62499%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "8cedda63-ac61-44e5-ac1e-be19e89f045c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "4vreaP_mzu1JJj-ihqDijP9HcTfDhSoiLGCF9lBHdwGShoRoSXkkJA==",
+        "x-hsbc-request-correlation-id": "edc7d1ed-b406-4584-bce3-ebc98cf08bb2",
+        "date": "Wed, 13 Aug 2025 13:47:13 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9ae68eb5525ee3d01638b582aa3a4566.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "418",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"Allianz US High Yield Fund Class AM (H2-EUR-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-EUR-MDIST-Cash\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62503\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R2503\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62503\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0676280711\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000USSV\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047617\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047617\"}]},{\"productName\":\"Allianz US High Yield Fund Class AM (H2-CAD-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-CAD-MDIST-Cash\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62502\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R2502\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62502\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0676280554\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000USSU\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047616\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047616\"}]},{\"productName\":\"Allianz US High Yield Fund Class AM (H2-AUD-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-AUD-MDIST-Cash\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62501\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R2501\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62501\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0649033221\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000USST\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047615\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047615\"}]},{\"productName\":\"Allianz US High Yield Fund Class AM (H2-GBP-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-GBP-MDIST-Cash\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62500\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R2500\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62500\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0676280802\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000USSW\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047614\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047614\"}]},{\"productName\":\"Allianz US High Yield Fund (Class AM-USD-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-USD -MDIST-Cash\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62498\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R2498\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62498\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0516397667\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000PO74\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047612\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047612\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

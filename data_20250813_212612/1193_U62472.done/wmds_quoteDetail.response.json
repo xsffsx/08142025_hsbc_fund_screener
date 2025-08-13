@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62472",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:20.346016",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62472%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "6e1d6f9d-5343-47d8-8d49-bb1ceba1049e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "1fFdky-HtQ145SJqsb2bOmO2FYjPoBbK_hQHt0Fujuj4T1OoxyGg0A==",
+        "x-hsbc-request-correlation-id": "95b1ec15-5f72-4e40-9575-af2017096663",
+        "date": "Wed, 13 Aug 2025 13:33:20 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 bc32ef126215821e67e47cb1213e8dac.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1258",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62472\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"HL\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":7.72,\"currency\":\"USD\",\"companyName\":\"BARINGS DEVELOPED AND EMERGING MKT HIGH YIELD BD (TRANCHE G-USD-MD-C)\",\"securityDescription\":null,\"changeAmount\":0,\"changePercent\":0,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":7.76253,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00000YVC\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":8.65015},{\"year\":2023,\"annualCalendarYearReturn\":11.40704},{\"year\":2022,\"annualCalendarYearReturn\":-15.35578},{\"year\":2021,\"annualCalendarYearReturn\":5.97249},{\"year\":2020,\"annualCalendarYearReturn\":4.31372}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":4.66548,\"dailyPerformanceNAV\":4.94002},{\"period\":\"1M\",\"trailingTotalReturn\":0.91234,\"dailyPerformanceNAV\":0.91336},{\"period\":\"3M\",\"trailingTotalReturn\":3.86042,\"dailyPerformanceNAV\":3.04065},{\"period\":\"6M\",\"trailingTotalReturn\":3.58832,\"dailyPerformanceNAV\":3.85826},{\"period\":\"1Y\",\"trailingTotalReturn\":7.66827,\"dailyPerformanceNAV\":8.08958},{\"period\":\"3Y\",\"trailingTotalReturn\":8.67735,\"dailyPerformanceNAV\":7.65536},{\"period\":\"5Y\",\"trailingTotalReturn\":4.44644,\"dailyPerformanceNAV\":4.25561},{\"period\":\"10Y\",\"trailingTotalReturn\":3.70241,\"dailyPerformanceNAV\":3.89782}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2011-07-18\"},\"entityUpdatedTime\":\"2025-08-13T21:33:20.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62472\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"B2472\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62472\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE0032158457\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000YVC\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047569\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047569\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

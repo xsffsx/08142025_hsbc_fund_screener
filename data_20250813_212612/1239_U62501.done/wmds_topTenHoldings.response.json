@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62501",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:09.403781",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62501%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "13a9f85e-1aa3-4a48-8b1b-372e56b63bd9:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "mX6NuQQVQO6oga2RNAQt3yf-kPPv8oazLFh7HEZs42bk_9ZCCJoH3w==",
+        "x-hsbc-request-correlation-id": "3803c50b-a017-4afd-bc3d-2d59e0c8f780",
+        "date": "Wed, 13 Aug 2025 13:29:09 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a9f2009d5c1905b42b9c7cd7c9d409f4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "499",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"EU\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CCF Holdings LLC Unit - Class A\",\"weighting\":2.71949,\"currency\":\"USD\",\"marketValue\":12440356},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CCO Holdings, LLC/ CCO Holdings Capital Corp. 7.375%\",\"weighting\":2.18917,\"currency\":\"USD\",\"marketValue\":10014403},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Truist Insurance Holdings LLC & Panther Co-Issuer Inc. 7.125%\",\"weighting\":1.79376,\"currency\":\"USD\",\"marketValue\":8205562},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Post Holdings Inc. 6.375%\",\"weighting\":1.53424,\"currency\":\"USD\",\"marketValue\":7018422},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Quikrete Holdings Inc 6.75%\",\"weighting\":1.53314,\"currency\":\"USD\",\"marketValue\":7013392},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TransDigm, Inc. 7.125%\",\"weighting\":1.52437,\"currency\":\"USD\",\"marketValue\":6973264},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mauser Packaging Solutions Holding Co. 7.875%\",\"weighting\":1.50438,\"currency\":\"USD\",\"marketValue\":6881820},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Seagate HDD Cayman 8.5%\",\"weighting\":1.50438,\"currency\":\"USD\",\"marketValue\":6881830},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NCL Corporation Ltd. 6.75%\",\"weighting\":1.50429,\"currency\":\"USD\",\"marketValue\":6881414},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Gen Digital Inc 6.25%\",\"weighting\":1.48856,\"currency\":\"USD\",\"marketValue\":6809452}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

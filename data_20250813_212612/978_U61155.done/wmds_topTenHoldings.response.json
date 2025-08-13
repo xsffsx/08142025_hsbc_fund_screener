@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61155",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:53:04.657488",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61155%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ab527b9b-4a72-4c2a-823d-8075b1306fb0:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "vw5U5pNMGOaNHEBClwIedHBe5jpg9qNPvhvHTp8nVeHXbwrnktlD9g==",
+        "x-hsbc-request-correlation-id": "fa17f481-4a16-469b-b485-80fd4806b4aa",
+        "date": "Wed, 13 Aug 2025 13:53:04 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 eeb64902174f0e1f0d97e045fce78e24.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "469",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SAP SE\",\"weighting\":3.18924,\"currency\":\"EUR\",\"marketValue\":43116955},{\"market\":\"LU\",\"productType\":\"EX\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPM EUR lqdty LVNAV X (T0 acc.)\",\"weighting\":2.65471,\"currency\":\"EUR\",\"marketValue\":35890468},{\"market\":\"CH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Roche Holding AG\",\"weighting\":2.48289,\"currency\":\"EUR\",\"marketValue\":33567466},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Siemens AG\",\"weighting\":2.45991,\"currency\":\"EUR\",\"marketValue\":33256816},{\"market\":\"CH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Novartis AG Registered Shares\",\"weighting\":2.45237,\"currency\":\"EUR\",\"marketValue\":33154908},{\"market\":\"CH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Nestle SA\",\"weighting\":2.32608,\"currency\":\"EUR\",\"marketValue\":31447433},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Shell PLC\",\"weighting\":2.17208,\"currency\":\"EUR\",\"marketValue\":29365455},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ASML Holding NV\",\"weighting\":2.02432,\"currency\":\"EUR\",\"marketValue\":27367838},{\"market\":\"GB\",\"productType\":\"FC\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"3i Group Ord\",\"weighting\":2.0093,\"currency\":\"EUR\",\"marketValue\":27164745},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Deutsche Telekom AG\",\"weighting\":1.81961,\"currency\":\"EUR\",\"marketValue\":24600224}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

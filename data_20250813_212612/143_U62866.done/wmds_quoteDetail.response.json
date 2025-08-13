@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62866",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:26:42.118942",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62866%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f8970c29-ba39-4a3f-a3fd-f661a8400a42:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "RCkwG7fnOuqYFyM93tAzrxaBoO8K_VnUtBCehkKr0GO1oNejPpC5EQ==",
+        "x-hsbc-request-correlation-id": "8a05a16f-066e-4279-8cc8-7f7a7c8ce271",
+        "date": "Wed, 13 Aug 2025 13:26:42 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 b73d78c2d3982931ae8f11fabaa40e2e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1269",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62866\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"AB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":10.269,\"currency\":\"CNY\",\"companyName\":\"HSBC Asia Pacific ex Japan Equity High Dividend (AM3O-RMBH-MDIST-CASH)\",\"securityDescription\":null,\"changeAmount\":0.022,\"changePercent\":0.2147,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":1.04927,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001CW8L\",\"tradableCurrency\":\"CNY\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":7.39038},{\"year\":2023,\"annualCalendarYearReturn\":6.05735},{\"year\":2022,\"annualCalendarYearReturn\":-17.7684},{\"year\":2021,\"annualCalendarYearReturn\":6.07544},{\"year\":2020,\"annualCalendarYearReturn\":13.41205}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":14.02842,\"dailyPerformanceNAV\":15.97087},{\"period\":\"1M\",\"trailingTotalReturn\":2.12393,\"dailyPerformanceNAV\":1.74476},{\"period\":\"3M\",\"trailingTotalReturn\":14.22995,\"dailyPerformanceNAV\":11.16619},{\"period\":\"6M\",\"trailingTotalReturn\":13.61528,\"dailyPerformanceNAV\":16.18802},{\"period\":\"1Y\",\"trailingTotalReturn\":12.96412,\"dailyPerformanceNAV\":17.02367},{\"period\":\"3Y\",\"trailingTotalReturn\":7.56471,\"dailyPerformanceNAV\":7.9532},{\"period\":\"5Y\",\"trailingTotalReturn\":5.74888,\"dailyPerformanceNAV\":5.51748},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2018-04-30\"},\"entityUpdatedTime\":\"2025-08-13T21:26:42.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62866\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HAPHR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62866\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1791438879\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001CW8L\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050076464\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50076464\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U43415",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:53:41.201472",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43415%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f574d22e-d26d-4713-a2fa-8eca2cbaf944:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "DH69k6e0ovkGSTL4ktCTpQOYScbZyRe_4Lf9f3DhoJuo6K9o1FV01g==",
+        "x-hsbc-request-correlation-id": "f5e7fdd2-1b31-4002-8c69-bf693a6c8acc",
+        "date": "Wed, 13 Aug 2025 13:53:40 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "17",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 782fcf79958c13c01bfababc6fc4b8ce.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1261",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U43415\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"AB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":33.11,\"currency\":\"USD\",\"companyName\":\"Fidelity Funds-Asia Pacific Dividend Fund (Class A-SDIST Cash)\",\"securityDescription\":null,\"changeAmount\":0.15,\"changePercent\":0.4551,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":1.60731,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P000020PS\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Semi-Annually\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":2.80625},{\"year\":2023,\"annualCalendarYearReturn\":6.58409},{\"year\":2022,\"annualCalendarYearReturn\":-10.67266},{\"year\":2021,\"annualCalendarYearReturn\":7.59984},{\"year\":2020,\"annualCalendarYearReturn\":21.7626}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":16.47617,\"dailyPerformanceNAV\":18.52523},{\"period\":\"1M\",\"trailingTotalReturn\":2.94579,\"dailyPerformanceNAV\":2.53957},{\"period\":\"3M\",\"trailingTotalReturn\":11.43148,\"dailyPerformanceNAV\":8.70862},{\"period\":\"6M\",\"trailingTotalReturn\":14.62415,\"dailyPerformanceNAV\":16.02881},{\"period\":\"1Y\",\"trailingTotalReturn\":15.19053,\"dailyPerformanceNAV\":18.77555},{\"period\":\"3Y\",\"trailingTotalReturn\":8.256,\"dailyPerformanceNAV\":8.06062},{\"period\":\"5Y\",\"trailingTotalReturn\":7.99539,\"dailyPerformanceNAV\":7.90321},{\"period\":\"10Y\",\"trailingTotalReturn\":7.11937,\"dailyPerformanceNAV\":7.77264}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2004-11-29\"},\"entityUpdatedTime\":\"2025-08-13T21:53:40.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43415\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3415\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43415\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0205439572\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000020PS\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046871\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046871\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

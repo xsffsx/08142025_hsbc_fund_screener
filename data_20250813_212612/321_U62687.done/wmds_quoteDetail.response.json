@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62687",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:04:44.307521",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62687%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c5321c9b-0f09-49b5-838c-ea88fa7e98aa:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "FBVri0XvC80Fg97lgy1pmqX52eDdxkQWmrpR4gQi6bERASlJpuovjw==",
+        "x-hsbc-request-correlation-id": "d2726351-7e23-4998-b180-06f4aa530882",
+        "date": "Wed, 13 Aug 2025 14:04:43 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2e2023905a055fb3a137d4ecfec97d0e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1258",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62687\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MU\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":7.7346,\"currency\":\"AUD\",\"companyName\":\"ALLIANZ INCOME AND GROWTH (CLASS AM-AUDH2-MDIST-CASH)\",\"securityDescription\":null,\"changeAmount\":-0.0069,\"changePercent\":-0.08913,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":7.09219,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000X7WQ\",\"tradableCurrency\":\"AUD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":8.79091},{\"year\":2023,\"annualCalendarYearReturn\":15.16036},{\"year\":2022,\"annualCalendarYearReturn\":-21.22844},{\"year\":2021,\"annualCalendarYearReturn\":11.12333},{\"year\":2020,\"annualCalendarYearReturn\":18.98203}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":5.42826,\"dailyPerformanceNAV\":5.02091},{\"period\":\"1M\",\"trailingTotalReturn\":1.97451,\"dailyPerformanceNAV\":1.10807},{\"period\":\"3M\",\"trailingTotalReturn\":9.38351,\"dailyPerformanceNAV\":5.4605},{\"period\":\"6M\",\"trailingTotalReturn\":2.83117,\"dailyPerformanceNAV\":3.04651},{\"period\":\"1Y\",\"trailingTotalReturn\":9.71996,\"dailyPerformanceNAV\":11.01508},{\"period\":\"3Y\",\"trailingTotalReturn\":7.53997,\"dailyPerformanceNAV\":6.37238},{\"period\":\"5Y\",\"trailingTotalReturn\":5.72546,\"dailyPerformanceNAV\":5.37697},{\"period\":\"10Y\",\"trailingTotalReturn\":6.27229,\"dailyPerformanceNAV\":6.41074}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2015-11-16\"},\"entityUpdatedTime\":\"2025-08-13T22:04:43.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62687\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R2687\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62687\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0820562030\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000X7WQ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050002686\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50002686\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

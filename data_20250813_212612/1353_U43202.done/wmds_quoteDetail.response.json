@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U43202",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:27:38.517714",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43202%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "2b7e3f6b-5e32-420d-8ad9-c483626f2580:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "d4HAl5au5Fn1cs9AVH2RBFG3qGWhcEhgpFu68fAWdX27vxXqcvAP6Q==",
+        "x-hsbc-request-correlation-id": "30c69aa1-d7c8-4467-997b-1c2509f12f48",
+        "date": "Wed, 13 Aug 2025 13:27:38 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "20",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 330354be8b854240bf068e6ab0a9a68c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1233",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U43202\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"EF\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":17.8,\"currency\":\"EUR\",\"companyName\":\"BlackRock Euro Bond Fund (Class A3-MDIST Unit)\",\"securityDescription\":null,\"changeAmount\":-0.06,\"changePercent\":-0.33595,\"bidPrice\":17.8,\"bidPriceDate\":\"2025-08-12\",\"bidSize\":null,\"askPrice\":17.8,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":1.99132,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"2\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00001AZW\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":1.88824},{\"year\":2023,\"annualCalendarYearReturn\":7.30877},{\"year\":2022,\"annualCalendarYearReturn\":-17.25975},{\"year\":2021,\"annualCalendarYearReturn\":-3.8552},{\"year\":2020,\"annualCalendarYearReturn\":4.00978}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":0.96189,\"dailyPerformanceNAV\":0.73552},{\"period\":\"1M\",\"trailingTotalReturn\":-0.00132,\"dailyPerformanceNAV\":0.22315},{\"period\":\"3M\",\"trailingTotalReturn\":0.34231,\"dailyPerformanceNAV\":0.851},{\"period\":\"6M\",\"trailingTotalReturn\":0.96821,\"dailyPerformanceNAV\":0.62908},{\"period\":\"1Y\",\"trailingTotalReturn\":2.29301,\"dailyPerformanceNAV\":1.7776},{\"period\":\"3Y\",\"trailingTotalReturn\":0.24723,\"dailyPerformanceNAV\":0.31675},{\"period\":\"5Y\",\"trailingTotalReturn\":-2.22313,\"dailyPerformanceNAV\":-2.25766},{\"period\":\"10Y\",\"trailingTotalReturn\":0.04912,\"dailyPerformanceNAV\":0.016}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2003-10-13\"},\"entityUpdatedTime\":\"2025-08-13T21:27:38.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43202\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M3202\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43202\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0172396516\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001AZW\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046821\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046821\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

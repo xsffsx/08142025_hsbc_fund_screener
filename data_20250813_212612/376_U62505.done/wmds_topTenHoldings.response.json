@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62505",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:44:51.457369",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62505%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "076ff373-b657-4ff0-8805-e56548c49eee:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "R5DEC1fkar6EGlJJRtG1srz-chY4imwncIkhC3JDiheFm89wAoKeqg==",
+        "x-hsbc-request-correlation-id": "3bfadd50-0e5a-4272-8d52-00b9ffb992f6",
+        "date": "Wed, 13 Aug 2025 13:44:51 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "22",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 29e0f55fe1ca6f4301a1803ab1c86bc0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "493",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BGF Emerging Markets Corp Bd X2 USD\",\"weighting\":3.43433,\"currency\":\"USD\",\"marketValue\":45334800},{\"market\":\"CL\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Chile (Republic Of)\",\"weighting\":1.35701,\"currency\":\"USD\",\"marketValue\":17913098},{\"market\":\"RO\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Romania (Republic Of)\",\"weighting\":1.34332,\"currency\":\"USD\",\"marketValue\":17732446},{\"market\":\"AR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Argentina (Republic Of)\",\"weighting\":1.25157,\"currency\":\"USD\",\"marketValue\":16521327},{\"market\":\"MX\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mexico (United Mexican States)\",\"weighting\":1.15361,\"currency\":\"USD\",\"marketValue\":15228175},{\"market\":\"OM\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Oman (Sultanate Of)\",\"weighting\":1.07121,\"currency\":\"USD\",\"marketValue\":14140412},{\"market\":\"PE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Peru (Republic Of)\",\"weighting\":1.03231,\"currency\":\"USD\",\"marketValue\":13626996},{\"market\":\"TR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Turkey (Republic of)\",\"weighting\":1.03162,\"currency\":\"USD\",\"marketValue\":13617851},{\"market\":\"SA\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"GACI First Investment Co.\",\"weighting\":1.01503,\"currency\":\"USD\",\"marketValue\":13398928},{\"market\":\"CO\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Colombia (Republic Of)\",\"weighting\":0.99084,\"currency\":\"USD\",\"marketValue\":13079484}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62680",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:00:25.038305",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62680%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "76d79b60-f677-4b1b-b6a1-b5be16658b29:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "m40PO8rakuDrkqM1BMsIUJCZH9Z9OMKEGKEnDbcdOjkTzWnmVMPjHw==",
+        "x-hsbc-request-correlation-id": "41ee8c2a-c315-4678-a975-d392dbeab7a0",
+        "date": "Wed, 13 Aug 2025 14:00:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9fbddde4165412a5f9426c247ca005c0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "485",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MingYang Smart Energy Group Ltd Class A\",\"weighting\":9.39106,\"currency\":\"CNY\",\"marketValue\":220660877},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Shanghai Awinic Technology Co Ltd Class A\",\"weighting\":9.2734,\"currency\":\"CNY\",\"marketValue\":217896141},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sangfor Technologies Inc Class A\",\"weighting\":9.0578,\"currency\":\"CNY\",\"marketValue\":212830303},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tongwei Co Ltd Class A\",\"weighting\":7.55142,\"currency\":\"CNY\",\"marketValue\":177434961},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wuxi AppTec Co Ltd Class A\",\"weighting\":7.40483,\"currency\":\"CNY\",\"marketValue\":173990522},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JA Solar Technology Co Ltd Class A\",\"weighting\":5.42717,\"currency\":\"CNY\",\"marketValue\":127521625},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Zhejiang Hangke Technology Incorporated Co Class A\",\"weighting\":5.11694,\"currency\":\"CNY\",\"marketValue\":120232234},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Zhejiang Huayou Cobalt Co Ltd Class A\",\"weighting\":5.03465,\"currency\":\"CNY\",\"marketValue\":118298707},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SG Micro Corp Class A\",\"weighting\":4.94084,\"currency\":\"CNY\",\"marketValue\":116094561},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Yunnan Energy New Material Co Ltd Class A\",\"weighting\":4.70843,\"currency\":\"CNY\",\"marketValue\":110633512}],\"lastUpdatedDate\":\"2024-12-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

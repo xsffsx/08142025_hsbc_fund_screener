@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63562",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:32:10.751377",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63562%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "d8e23f56-85d9-4077-bf41-75f3d111e838:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ISyxNKflPW2tyc8gqzQb5UrqgvqvmJRhWvAGtHFpX4JVvJRAmt9IFQ==",
+        "x-hsbc-request-correlation-id": "cbd6f4c2-0a56-4bca-ae13-c6a54ccd5832",
+        "date": "Wed, 13 Aug 2025 13:32:10 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 bc32ef126215821e67e47cb1213e8dac.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "486",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares $ Treasury Bd 7-10yr ETFUSD Dist\",\"weighting\":12.98438,\"currency\":\"USD\",\"marketValue\":196974},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares $ Corp Bond ETF USD Dist\",\"weighting\":9.99712,\"currency\":\"USD\",\"marketValue\":151657},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares $ Short Dur Corp Bd ETF USD Dist\",\"weighting\":9.99626,\"currency\":\"USD\",\"marketValue\":151644},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares World Eq Hi Inc Actv ETF $ Inc\",\"weighting\":9.98585,\"currency\":\"USD\",\"marketValue\":151486},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares MSCI USA Qul Div Advcd ETF $ Dis\",\"weighting\":8.63938,\"currency\":\"USD\",\"marketValue\":131060},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares MSCI EurpQual Div AdvcdETFEURDis\",\"weighting\":8.31651,\"currency\":\"USD\",\"marketValue\":126162},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares $ High Yld Corp Bd ETF USD Dist\",\"weighting\":7.99331,\"currency\":\"USD\",\"marketValue\":121259},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares $ Short Dur HY CorpBd ETF $ Dist\",\"weighting\":7.00405,\"currency\":\"USD\",\"marketValue\":106252},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BGF Dynamic High Income X2 USD\",\"weighting\":6.69555,\"currency\":\"USD\",\"marketValue\":101572},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares Fallen Angels HY CorpBd ETF$Dist\",\"weighting\":5.00209,\"currency\":\"USD\",\"marketValue\":75882}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61159",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:34:59.133081",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61159%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "4f35ef71-6967-46e4-9f5a-003a68e60b8e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "cQyS95NQClu9A4jIxGnFZcljo2BOB4eNEopEMf5-z4QdSzdKDyRL7w==",
+        "x-hsbc-request-correlation-id": "0a03e3ce-656b-444f-8187-3ffa4a17c6af",
+        "date": "Wed, 13 Aug 2025 13:34:56 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 30d965dd3bd4ca28c3aa1ccfc6be7c36.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "456",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPM Global Aggregate Bond X (acc) USD\",\"weighting\":19.09702,\"currency\":\"USD\",\"marketValue\":15089353},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPM US Growth X (acc) USD\",\"weighting\":9.25827,\"currency\":\"USD\",\"marketValue\":7315349},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPM Europe Equity X (acc) EUR\",\"weighting\":9.03999,\"currency\":\"USD\",\"marketValue\":7142877},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPM US Value X (acc) USD\",\"weighting\":6.74396,\"currency\":\"USD\",\"marketValue\":5328683},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPM Global Bond Opps X (acc) USD\",\"weighting\":6.3552,\"currency\":\"USD\",\"marketValue\":5021513},{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPMorgan SAR American - B acc - USD\",\"weighting\":5.90831,\"currency\":\"USD\",\"marketValue\":4668402},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPM US Select Equity X (acc) USD\",\"weighting\":5.83955,\"currency\":\"USD\",\"marketValue\":4614070},{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPMorgan SAR Asian - B acc - USD\",\"weighting\":5.09689,\"currency\":\"USD\",\"marketValue\":4027264},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPM US Equity All Cap X (acc) USD\",\"weighting\":5.0092,\"currency\":\"USD\",\"marketValue\":3957975},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPM Global High Yield Bond X (acc) USD\",\"weighting\":4.89542,\"currency\":\"USD\",\"marketValue\":3868075}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

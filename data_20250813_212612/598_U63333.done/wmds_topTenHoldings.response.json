@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63333",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:52:38.538892",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63333%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "534f4072-209a-4797-8e16-7ef9c4af42d5:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "fPwFwEAj9vMwATMTJwExkvAJeMnNbsABA36fsLfzhrd7G6DIcMYLOw==",
+        "x-hsbc-request-correlation-id": "6a9b432e-c056-47fe-bea6-e80811ed543c",
+        "date": "Wed, 13 Aug 2025 13:52:37 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2e2023905a055fb3a137d4ecfec97d0e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "562",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future Sept 25\",\"weighting\":10.12202,\"currency\":\"USD\",\"marketValue\":266140372},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bund Future Sept 25\",\"weighting\":3.29609,\"currency\":\"USD\",\"marketValue\":-86664851},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Fidelity ILF - USD A Acc\",\"weighting\":3.14038,\"currency\":\"USD\",\"marketValue\":82570601},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":1.63387,\"currency\":\"USD\",\"marketValue\":42959565},{\"market\":\"CH\",\"productType\":\"CN\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Zurich Finance (Ireland) II DAC 6.25%\",\"weighting\":0.93006,\"currency\":\"USD\",\"marketValue\":24454227},{\"market\":\"GB\",\"productType\":\"BY\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Gatwick Funding Ltd 3.875%\",\"weighting\":0.83794,\"currency\":\"USD\",\"marketValue\":22032165},{\"market\":\"JP\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sumitomo Mitsui Trust Bank Ltd. 4.7%\",\"weighting\":0.80191,\"currency\":\"USD\",\"marketValue\":21084734},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Flutter Treasury Designated Activity Co. 4%\",\"weighting\":0.78552,\"currency\":\"USD\",\"marketValue\":20653819},{\"market\":\"IT\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UniCredit S.p.A. 3.725%\",\"weighting\":0.77787,\"currency\":\"USD\",\"marketValue\":20452812},{\"market\":\"GB\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Long Gilt Future Sept 25\",\"weighting\":0.77134,\"currency\":\"USD\",\"marketValue\":20281113}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

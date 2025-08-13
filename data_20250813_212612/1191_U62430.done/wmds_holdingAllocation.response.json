@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_holdingAllocation",
+  "product_code": "U62430",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:30:38.897392",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/holdingAllocation?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62430%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7e7ff36e-b2ea-4468-a6ed-3955fa194b2e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "mDZIpS0YRwvoZvRkV6DtARP-J2W4vjWD4MGK_rJWNZ-FkrfopMm6YQ==",
+        "x-hsbc-request-correlation-id": "1760f775-ece8-448b-8d94-95b49f0de390",
+        "date": "Wed, 13 Aug 2025 13:30:38 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 202cb43062765e2670eca987cfe03f88.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "584",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"holdingAllocation\":[{\"methods\":\"assetAllocations\",\"breakdowns\":[{\"name\":\"Bond\",\"weighting\":50.98107},{\"name\":\"Cash\",\"weighting\":3.07821},{\"name\":\"Others\",\"weighting\":0.23653},{\"name\":\"Preferred\",\"weighting\":0},{\"name\":\"Stock\",\"weighting\":45.70418}],\"portfolioDate\":\"2025-07-31\"},{\"methods\":\"globalStockSectors\",\"breakdowns\":[{\"name\":\"BM\",\"weighting\":0.86195},{\"name\":\"CC\",\"weighting\":5.24019},{\"name\":\"CD\",\"weighting\":2.12067},{\"name\":\"CS\",\"weighting\":7.44252},{\"name\":\"ENER\",\"weighting\":0.10987},{\"name\":\"FS\",\"weighting\":15.31354},{\"name\":\"HC\",\"weighting\":1.13332},{\"name\":\"INDUS\",\"weighting\":0.97618},{\"name\":\"RE\",\"weighting\":0.63974},{\"name\":\"TECH\",\"weighting\":16.91149},{\"name\":\"UTIL\",\"weighting\":0.21174}],\"portfolioDate\":\"2025-07-31\"},{\"methods\":\"regionalExposures\",\"breakdowns\":[{\"name\":\"AD\",\"weighting\":20.86676},{\"name\":\"AE\",\"weighting\":29.83611},{\"name\":\"AFRICA\",\"weighting\":0.02682},{\"name\":\"AU\",\"weighting\":0.10987},{\"name\":\"CA\",\"weighting\":0},{\"name\":\"EMER\",\"weighting\":0},{\"name\":\"EURO\",\"weighting\":0},{\"name\":\"EZ\",\"weighting\":0},{\"name\":\"JP\",\"weighting\":0},{\"name\":\"LA\",\"weighting\":0},{\"name\":\"ME\",\"weighting\":0},{\"name\":\"NC\",\"weighting\":0},{\"name\":\"UK\",\"weighting\":0.15015},{\"name\":\"US\",\"weighting\":0.11937}],\"portfolioDate\":\"2025-07-31\"},{\"methods\":\"globalBondSectors\",\"breakdowns\":[{\"name\":\"CEQV\",\"weighting\":3.07843},{\"name\":\"CORP\",\"weighting\":31.25191},{\"name\":\"DRVT\",\"weighting\":-0.00023},{\"name\":\"GVT\",\"weighting\":19.72916},{\"name\":\"MNCPL\",\"weighting\":0},{\"name\":\"SECZ\",\"weighting\":0}],\"portfolioDate\":\"2025-07-31\"},{\"methods\":\"bondRegionalExposures\",\"breakdowns\":[{\"name\":\"AD\",\"weighting\":12.30526},{\"name\":\"AE\",\"weighting\":20.65232},{\"name\":\"AFRICA\",\"weighting\":0},{\"name\":\"AU\",\"weighting\":1.2494},{\"name\":\"CA\",\"weighting\":0},{\"name\":\"EMER\",\"weighting\":0},{\"name\":\"EURO\",\"weighting\":0},{\"name\":\"EZ\",\"weighting\":0.68654},{\"name\":\"JP\",\"weighting\":1.41262},{\"name\":\"LA\",\"weighting\":0},{\"name\":\"ME\",\"weighting\":0},{\"name\":\"NC\",\"weighting\":0},{\"name\":\"UK\",\"weighting\":1.1159},{\"name\":\"US\",\"weighting\":13.55903}],\"portfolioDate\":\"2025-07-31\"}],\"numberOfStockHoldings\":44,\"numberOfBondHoldings\":84,\"lastUpdatedDate\":\"2025-07-31\"}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

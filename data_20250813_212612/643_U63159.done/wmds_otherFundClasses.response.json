@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63159",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:39:38.387213",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63159%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "6154095f-875e-41d6-a186-9cce5c4e354e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ErUE49OK-JwAzJOtspfUxvk5zof6eR7B0Quztvj7bLQvFYBQkhOOOA==",
+        "x-hsbc-request-correlation-id": "51985586-b58b-4548-ab12-0db27a36bdf7",
+        "date": "Wed, 13 Aug 2025 13:39:37 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "32",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 7ec5eac2b4b9bb89389a02dcd701883e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "411",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"PIMCO GIS INCOME II FUND (CLASS E-GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63160\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P3160\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63160\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BMD8KZ95\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001LRES\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050524539\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50524539\"}]},{\"productName\":\"PIMCO GIS INCOME II FUND (CLASS E-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63158\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P3158\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63158\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BHR41001\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001ILA3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050524537\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50524537\"}]},{\"productName\":\"PIMCO GIS INCOME II FUND (CLASS E-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63157\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P3157\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63157\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BHR40Y78\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001ILA1\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050524536\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50524536\"}]},{\"productName\":\"PIMCO GIS INCOME II FUND (CLASS E-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63156\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P3156\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63156\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BHR40X61\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001ILA0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050524535\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50524535\"}]},{\"productName\":\"PIMCO GIS INCOME II FUND (CLASS E-JPYH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-JPYH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63396\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P3396\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63396\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00047KYJM6\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RO20\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050737473\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50737473\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43415",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:53:41.613660",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43415%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "057845e6-7c01-429e-94d9-c4a6a0039361:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "opU2sErMPgGSnDE8Mtvm4BespjNMgTEJGrZGrJDTlnjxwhmoVAlUlw==",
+        "x-hsbc-request-correlation-id": "f0baa682-f929-458c-8beb-37117bc9ede9",
+        "date": "Wed, 13 Aug 2025 13:53:40 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 782fcf79958c13c01bfababc6fc4b8ce.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "541",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":5.39769,\"currency\":\"USD\",\"marketValue\":20176443},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Samsung Electronics Co Ltd\",\"weighting\":4.94347,\"currency\":\"USD\",\"marketValue\":18478587},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AIA Group Ltd\",\"weighting\":3.70502,\"currency\":\"USD\",\"marketValue\":13849273},{\"market\":\"IN\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Embassy Office Parks REIT\",\"weighting\":3.4036,\"currency\":\"USD\",\"marketValue\":12722574},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Samsung Fire & Marine Insurance Co Ltd\",\"weighting\":3.35879,\"currency\":\"USD\",\"marketValue\":12555074},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HKT Trust and HKT Ltd\",\"weighting\":3.31136,\"currency\":\"USD\",\"marketValue\":12377799},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Singapore Exchange Ltd\",\"weighting\":3.01841,\"currency\":\"USD\",\"marketValue\":11282756},{\"market\":\"AU\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dyno Nobel Ltd\",\"weighting\":2.95242,\"currency\":\"USD\",\"marketValue\":11036069},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"DFI Retail Group Holdings Ltd\",\"weighting\":2.84771,\"currency\":\"USD\",\"marketValue\":10644667},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BOC Aviation Ltd Shs Unitary 144A/Reg S\",\"weighting\":2.71133,\"currency\":\"USD\",\"marketValue\":10134888}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62622",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:28:19.786402",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62622%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "5fd81ef3-775d-4e9c-94c3-6ac8825dcdc8:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "14",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "j67p9q5SioB-thae6BuTLmSvDF7MBfvWAoQk4Rh7fWvOKMGoJjcb4w==",
+        "x-hsbc-request-correlation-id": "2b7dcfcd-3958-4663-8b38-7d1c3f21456a",
+        "date": "Wed, 13 Aug 2025 13:28:19 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "14",
+        "x-envoy-upstream-service-time": "34",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 34069e752fd2df5539e25daad71c41bc.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "537",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC Portfolios - World Selection 2 (AM-USD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM-USD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62619\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"WAMU2\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62619\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066048197\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013LGX\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049986\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049986\"}]},{\"productName\":\"HSBC Portfolios - World Selection 2 (Class BC-HKD-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"Class BC-HKD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U50013\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"WBCH2\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U50013\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2333286693\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001M5IB\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050493353\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50493353\"}]},{\"productName\":\"HSBC Portfolios - World Selection 2 (AM-EURH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM-EURH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62621\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"WAME2\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62621\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066048510\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013LH0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049971\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049971\"}]},{\"productName\":\"HSBC Portfolios - World Selection 2 (AM-AUDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM-AUDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62620\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"WAMA2\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62620\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066048437\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013LGZ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049966\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049966\"}]},{\"productName\":\"HSBC Portfolios - World Selection 2 (AM-HKD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM-HKD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62618\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"WAMH2\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62618\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066048270\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013LGY\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049981\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049981\"}]},{\"productName\":\"HSBC Portfolios - World Selection 2 (AC) - USD\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62156\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"WSAC2\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62156\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0447610683\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000M2YC\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048086\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048086\"}]},{\"productName\":\"HSBC Portfolios - World Selection 2 (AC) - HKD\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62389\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"WHAC2\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62389\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0447610683\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000PVV2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047077\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047077\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

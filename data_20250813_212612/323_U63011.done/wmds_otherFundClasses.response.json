@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63011",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:56:44.875465",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63011%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "4355a7f4-7855-4456-b641-36513c2638e9:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "WYkk9D-6kLygNlinAyITZ-DjAkaiyj0lJcveWl7vTCJwsJOu6z3A9g==",
+        "x-hsbc-request-correlation-id": "8b51a090-5f3e-499a-a929-94ed4db6faa6",
+        "date": "Wed, 13 Aug 2025 13:56:43 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "33",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 782fcf79958c13c01bfababc6fc4b8ce.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "442",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF- US INCOME FOCUSED (CLASS AM2-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63006\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUIFU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63006\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2083900584\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001IUYK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050366556\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50366556\"}]},{\"productName\":\"HSBC GIF - US INCOME FOCUSED (CLASS AM3-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63012\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUIFR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63012\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2083900741\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001IUYM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050366555\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50366555\"}]},{\"productName\":\"HSBC GIF - US INCOME FOCUSED (CLASS AM2-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63007\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUIFH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63007\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2083900667\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001IUYL\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050366554\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50366554\"}]},{\"productName\":\"HSBC GIF - US INCOME FOCUSED (CLASS AM3-EURH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3-EURH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63010\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUIFE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63010\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2083901129\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001IUYP\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050366552\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50366552\"}]},{\"productName\":\"HSBC GIF - US INCOME FOCUSED (CLASS AM3-CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3-CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63009\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUIFC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63009\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2083900824\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001IUYN\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050366551\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50366551\"}]},{\"productName\":\"HSBC GIF - US INCOME FOCUSED (CLASS AM3-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63008\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUIFA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63008\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2083901046\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001IUYO\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050366550\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50366550\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

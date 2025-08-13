@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63334",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:27:39.044153",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63334%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "1c2c3ce5-b3a3-45ca-9276-d0f178c14361:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "_tMQ5gQ_ldbPS7vdjFYtovdL-JFPsFKBE5DeoI_HcRnZQAfnRjo7pA==",
+        "x-hsbc-request-correlation-id": "344b4f7b-427b-4f9a-8690-e619f564f4a3",
+        "date": "Wed, 13 Aug 2025 13:27:38 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2ccc45379edfa6388c7c37eacad97ec0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1246",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63334\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"SS\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":26.93,\"currency\":\"HKD\",\"companyName\":\"FRANKLIN BIOTECHNOLOGY DISCOVERY FUND (CLASS A-HKD-ACC)\",\"securityDescription\":null,\"changeAmount\":0.5,\"changePercent\":1.89179,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000Y5Q0\",\"tradableCurrency\":\"HKD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"SPEC\",\"categoryLevel1Name\":\"Specialties\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":2.08919},{\"year\":2023,\"annualCalendarYearReturn\":17.35031},{\"year\":2022,\"annualCalendarYearReturn\":-12.39157},{\"year\":2021,\"annualCalendarYearReturn\":-16.8898},{\"year\":2020,\"annualCalendarYearReturn\":26.87282}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":4.6832,\"dailyPerformanceNAV\":5.9819},{\"period\":\"1M\",\"trailingTotalReturn\":8.88252,\"dailyPerformanceNAV\":6.44269},{\"period\":\"3M\",\"trailingTotalReturn\":8.92711,\"dailyPerformanceNAV\":17.49564},{\"period\":\"6M\",\"trailingTotalReturn\":1.44928,\"dailyPerformanceNAV\":5.31873},{\"period\":\"1Y\",\"trailingTotalReturn\":-7.60681,\"dailyPerformanceNAV\":-2.67438},{\"period\":\"3Y\",\"trailingTotalReturn\":9.62639,\"dailyPerformanceNAV\":7.49601},{\"period\":\"5Y\",\"trailingTotalReturn\":0.75358,\"dailyPerformanceNAV\":1.15282},{\"period\":\"10Y\",\"trailingTotalReturn\":0.78471,\"dailyPerformanceNAV\":1.42364}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2023-09-11\"},\"entityUpdatedTime\":\"2025-08-13T21:27:38.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63334\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"T3334\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63334\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0889565916\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000Y5Q0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050700095\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50700095\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

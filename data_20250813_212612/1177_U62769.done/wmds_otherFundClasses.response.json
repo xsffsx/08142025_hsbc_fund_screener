@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62769",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:50.638043",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62769%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b8256f6f-8d9b-485f-9d7f-f82bba93727b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "zphawCSRXHFGZuC_ruj_TcDdNHwZ504Q24Gb4pS_G6gMuVhMXtIyuQ==",
+        "x-hsbc-request-correlation-id": "0f4172e8-6732-4b39-87b6-b9b785f04796",
+        "date": "Wed, 13 Aug 2025 13:50:49 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "42",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 928b9a46c60991369db0a5ad58525eca.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "641",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"Fidelity Funds - Emerging Market Debt Fund (Class A-EUR-MDIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-EUR-MDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61714\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F1714\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61714\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0238204472\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006F0E\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048207\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048207\"}]},{\"productName\":\"Fidelity Funds - Emerging Market Debt Fund (Class A-USD-MDIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-USD-MDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61712\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F1712\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61712\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0238206170\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006F0F\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048205\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048205\"}]},{\"productName\":\"Fidelity Funds - Emerging Market Debt Fund (Class A-EUR-Accumulation)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-EUR-ACCUMULATION\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61667\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F1667\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61667\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0238205289\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00002A5G\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046573\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046573\"}]},{\"productName\":\"Fidelity Funds - Emerging Market Debt Fund (Class A-EUR-MDIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-EUR-MDIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61666\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F1666\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61666\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0238204472\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006F0E\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046572\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046572\"}]},{\"productName\":\"Fidelity Funds - Emerging Market Debt Fund (Class A-USD-ADIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-USD-ADIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61662\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F1662\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61662\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0238205446\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00002A5I\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046568\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046568\"}]},{\"productName\":\"Fidelity Funds - Emerging Market Debt Fund (Class A-USD-Accumulation)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-USD-ACCUMULATION\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61664\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F1664\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61664\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0238205958\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00002ACC\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046570\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046570\"}]},{\"productName\":\"Fidelity Funds - Emerging Market Debt Fund (Class A-USD-MDIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-USD-MDIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61663\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F1663\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61663\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0238206170\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006F0F\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046569\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046569\"}]},{\"productName\":\"Fidelity Funds - Emerging Market Debt Fund A-MINCOME(G)-USD Cash\",\"productShortName\":null,\"fundShreClsName\":\"A-MINCOME(G)\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62770\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2770\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62770\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0937949310\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YWX0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050013895\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50013895\"}]},{\"productName\":\"Fidelity Funds - Emerging Market Debt Fund A-Accumulation-Euro (Hedged)\",\"productShortName\":null,\"fundShreClsName\":\"A-ACC-EURO (HEDGED)\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62768\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2768\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62768\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0337572712\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000P0YD\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050013893\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50013893\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

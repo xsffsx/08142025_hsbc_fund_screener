@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62859",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:36:37.230930",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62859%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b73770d2-eb02-4b0e-ba28-1a923d84c843:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "fBrawLSFBFu1MTuuYBGhTLOBvWOV29TyWoqzSp-uLZu6AN5ZPCsRHg==",
+        "x-hsbc-request-correlation-id": "7a8273c8-204e-4465-8b31-b5c815042e2b",
+        "date": "Wed, 13 Aug 2025 13:36:36 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 80c9eccf6853c0c6a4d2b62ad1d5ae7c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1270",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62859\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MA\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":4.51,\"currency\":\"NZD\",\"companyName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A-NZD HEDGED-MDIST-1-CASH)\",\"securityDescription\":null,\"changeAmount\":-0.01,\"changePercent\":-0.22124,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":5.58758,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00013VZE\",\"tradableCurrency\":\"NZD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":4.82308},{\"year\":2023,\"annualCalendarYearReturn\":1.98099},{\"year\":2022,\"annualCalendarYearReturn\":-22.14216},{\"year\":2021,\"annualCalendarYearReturn\":-8.47154},{\"year\":2020,\"annualCalendarYearReturn\":11.03214}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":7.82265,\"dailyPerformanceNAV\":8.47686},{\"period\":\"1M\",\"trailingTotalReturn\":1.50703,\"dailyPerformanceNAV\":1.96324},{\"period\":\"3M\",\"trailingTotalReturn\":5.84345,\"dailyPerformanceNAV\":3.68022},{\"period\":\"6M\",\"trailingTotalReturn\":6.88065,\"dailyPerformanceNAV\":5.86785},{\"period\":\"1Y\",\"trailingTotalReturn\":7.53489,\"dailyPerformanceNAV\":8.72908},{\"period\":\"3Y\",\"trailingTotalReturn\":3.08227,\"dailyPerformanceNAV\":3.1384},{\"period\":\"5Y\",\"trailingTotalReturn\":-2.20963,\"dailyPerformanceNAV\":-2.17703},{\"period\":\"10Y\",\"trailingTotalReturn\":0.19324,\"dailyPerformanceNAV\":0.35211}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2018-03-19\"},\"entityUpdatedTime\":\"2025-08-13T21:36:36.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62859\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN859\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62859\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1075213055\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013VZE\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050069619\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50069619\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

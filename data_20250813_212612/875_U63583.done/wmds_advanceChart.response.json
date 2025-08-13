@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_advanceChart",
+  "product_code": "U63583",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:31:33.129487",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/advanceChart?body=%7B%22productKeys%22%3A%5B%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63583%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D%5D%2C%22timeZone%22%3A%22Asia%2FHong_Kong%22%2C%22startDate%22%3A%222022-08-13%22%2C%22endDate%22%3A%222025-08-13%22%2C%22currency%22%3A%22EUR%22%2C%22dataType%22%3A%5B%22navPrice%22%5D%2C%22frequency%22%3A%22daily%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "46b09ff2-94b2-4634-b316-3be1020fe356:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "PP1dGqGFoURp9llMnL1fK9HSNCP2gsRs8aZtDWZWOP6hROovMThd3w==",
+        "x-hsbc-request-correlation-id": "d7d70585-afcb-4f4a-98b2-054bf7d4c90e",
+        "date": "Wed, 13 Aug 2025 13:31:33 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 6c1149c24729f98b60d81a165eb520c8.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "447",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"result\":[{\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63583\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JH583\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63583\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE000IZFDI00\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001VQ20\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000162535\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000162535\"}],\"data\":[{\"date\":\"2025-07-01\",\"cumulativeReturn\":null,\"navPrice\":10},{\"date\":\"2025-07-02\",\"cumulativeReturn\":null,\"navPrice\":10.03},{\"date\":\"2025-07-03\",\"cumulativeReturn\":null,\"navPrice\":10.08},{\"date\":\"2025-07-07\",\"cumulativeReturn\":null,\"navPrice\":10.02},{\"date\":\"2025-07-08\",\"cumulativeReturn\":null,\"navPrice\":10},{\"date\":\"2025-07-09\",\"cumulativeReturn\":null,\"navPrice\":10.05},{\"date\":\"2025-07-10\",\"cumulativeReturn\":null,\"navPrice\":10.06},{\"date\":\"2025-07-11\",\"cumulativeReturn\":null,\"navPrice\":10.02},{\"date\":\"2025-07-14\",\"cumulativeReturn\":null,\"navPrice\":10.03},{\"date\":\"2025-07-15\",\"cumulativeReturn\":null,\"navPrice\":9.95},{\"date\":\"2025-07-16\",\"cumulativeReturn\":null,\"navPrice\":9.97},{\"date\":\"2025-07-17\",\"cumulativeReturn\":null,\"navPrice\":10},{\"date\":\"2025-07-18\",\"cumulativeReturn\":null,\"navPrice\":9.99},{\"date\":\"2025-07-21\",\"cumulativeReturn\":null,\"navPrice\":10.01},{\"date\":\"2025-07-22\",\"cumulativeReturn\":null,\"navPrice\":9.99},{\"date\":\"2025-07-23\",\"cumulativeReturn\":null,\"navPrice\":10.04},{\"date\":\"2025-07-24\",\"cumulativeReturn\":null,\"navPrice\":10.07},{\"date\":\"2025-07-25\",\"cumulativeReturn\":null,\"navPrice\":10.09},{\"date\":\"2025-07-28\",\"cumulativeReturn\":null,\"navPrice\":10.1},{\"date\":\"2025-07-29\",\"cumulativeReturn\":null,\"navPrice\":10.1},{\"date\":\"2025-07-30\",\"cumulativeReturn\":null,\"navPrice\":10.09},{\"date\":\"2025-07-31\",\"cumulativeReturn\":null,\"navPrice\":10.07},{\"date\":\"2025-08-01\",\"cumulativeReturn\":null,\"navPrice\":10},{\"date\":\"2025-08-04\",\"cumulativeReturn\":null,\"navPrice\":10.11},{\"date\":\"2025-08-05\",\"cumulativeReturn\":null,\"navPrice\":10.05},{\"date\":\"2025-08-06\",\"cumulativeReturn\":null,\"navPrice\":10.09},{\"date\":\"2025-08-07\",\"cumulativeReturn\":null,\"navPrice\":10.07},{\"date\":\"2025-08-08\",\"cumulativeReturn\":null,\"navPrice\":10.1},{\"date\":\"2025-08-11\",\"cumulativeReturn\":null,\"navPrice\":10.09},{\"date\":\"2025-08-12\",\"cumulativeReturn\":null,\"navPrice\":10.16}],\"productName\":\"JANUS HENDERSON BALANCED FUND (A6M-EURH-MD-C)\",\"indexName\":null,\"currency\":\"EUR\",\"frequency\":\"daily\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

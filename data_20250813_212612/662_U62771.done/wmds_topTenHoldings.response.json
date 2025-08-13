@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62771",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:07:58.523451",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62771%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "8b947e0d-d38d-471c-bdd5-c60ab91df51f:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "apBpIY96WqHmDXgAW_GmdRV03JXuuCEkyB6HLvnTBmDOZYIeUOH-IA==",
+        "x-hsbc-request-correlation-id": "4700f007-6029-44ff-bf16-bfbb0697319a",
+        "date": "Wed, 13 Aug 2025 14:07:57 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 f1635e40dd33e4abcdd79d3670805a7a.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "509",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":null,\"productType\":\"CY\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Usd C Hkd P @7.500000 Eo\",\"weighting\":3.44376,\"currency\":\"USD\",\"marketValue\":-69196541},{\"market\":null,\"productType\":\"CY\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Usd C Hkd P @7.500000 Eo\",\"weighting\":3.44374,\"currency\":\"USD\",\"marketValue\":69196065},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BlackRock ICS USD LiqEnvtlyAwr Agcy Inc\",\"weighting\":2.9382,\"currency\":\"USD\",\"marketValue\":59038139},{\"market\":null,\"productType\":\"CY\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Usd C Hkd P @7.750000 Eo\",\"weighting\":2.63847,\"currency\":\"USD\",\"marketValue\":53015563},{\"market\":null,\"productType\":\"CY\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Usd C Hkd P @7.750000 Eo\",\"weighting\":2.63845,\"currency\":\"USD\",\"marketValue\":-53015198},{\"market\":\"ID\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Perusahaan Listrik Negara PT\",\"weighting\":1.02582,\"currency\":\"USD\",\"marketValue\":20612168},{\"market\":\"ID\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Indonesia (Republic of)\",\"weighting\":1.02208,\"currency\":\"USD\",\"marketValue\":20536957},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CNAC (HK) Finbridge Co Ltd.\",\"weighting\":0.9701,\"currency\":\"USD\",\"marketValue\":19492550},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd.\",\"weighting\":0.96098,\"currency\":\"USD\",\"marketValue\":19309288},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MTR Corporation (C.I.) Limited\",\"weighting\":0.91355,\"currency\":\"USD\",\"marketValue\":18356168}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

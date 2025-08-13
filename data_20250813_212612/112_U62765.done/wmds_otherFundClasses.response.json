@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62765",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:26:44.698661",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62765%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "dde66e34-b780-4545-97b2-ff041c77ab49:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "b0vsR9BrAySNRkBo7iRbFdw8oKrQI8a6Leeao2jydgBEpXoth33nCQ==",
+        "x-hsbc-request-correlation-id": "bb7793cd-c19b-468a-916a-4048fed364aa",
+        "date": "Wed, 13 Aug 2025 13:26:44 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 3207e1f50c8d4603820ce82acc837422.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "431",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"Fidelity Funds - Asia Pacific Dividend Fund A-MINCOME CASH (G)-HKD\",\"productShortName\":null,\"fundShreClsName\":\"A-MINCOME(G)-HKD\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62764\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2764\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62764\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1119993845\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00014F82\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014293\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014293\"}]},{\"productName\":\"Fidelity Funds - Asia Pacific Dividend Fund A-HMDIST CASH (G)-AUD (Hedged)\",\"productShortName\":null,\"fundShreClsName\":\"A-HMDIST(G)-AUD (HEDGED)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62763\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2763\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62763\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1046420714\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012K6F\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014292\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014292\"}]},{\"productName\":\"Fidelity Funds-Asia Pacific Dividend Fund (Class A-SDIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-SDIST UNIT\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43416\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3416\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43416\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0205439572\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000020PS\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046872\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046872\"}]},{\"productName\":\"Fidelity Funds-Asia Pacific Dividend Fund (Class A-SDIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-SDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43415\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3415\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43415\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0205439572\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000020PS\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046871\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046871\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

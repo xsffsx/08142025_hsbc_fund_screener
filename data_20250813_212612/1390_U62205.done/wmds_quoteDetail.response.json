@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62205",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:01:21.771396",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62205%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "facf920e-a6a3-4d15-9ed0-43cf87650403:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "HTaxl0KZW8kMq-f8Wc_6sS517-xxbbEVbgXQ6MTupbdMTlmoAO4hhg==",
+        "x-hsbc-request-correlation-id": "d1ef8202-2bd4-49ed-9867-52707d92f0f0",
+        "date": "Wed, 13 Aug 2025 14:01:21 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "20",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 900141041f08038f9452e4f1a092ecd2.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1238",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62205\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"AS\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":6.44,\"currency\":\"EUR\",\"companyName\":\"Templeton Asian Bond Fund (Class A-EUR-MDIST Unit)\",\"securityDescription\":null,\"changeAmount\":-0.03,\"changePercent\":-0.46368,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":5.0687,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"2\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00006B6J\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":1.78408},{\"year\":2023,\"annualCalendarYearReturn\":-1.78654},{\"year\":2022,\"annualCalendarYearReturn\":-1.29653},{\"year\":2021,\"annualCalendarYearReturn\":3.18285},{\"year\":2020,\"annualCalendarYearReturn\":-8.06831}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":-5.15564,\"dailyPerformanceNAV\":-6.35749},{\"period\":\"1M\",\"trailingTotalReturn\":0.69326,\"dailyPerformanceNAV\":-0.35439},{\"period\":\"3M\",\"trailingTotalReturn\":-1.51163,\"dailyPerformanceNAV\":-3.83346},{\"period\":\"6M\",\"trailingTotalReturn\":-5.5668,\"dailyPerformanceNAV\":-6.54875},{\"period\":\"1Y\",\"trailingTotalReturn\":-0.83981,\"dailyPerformanceNAV\":-2.89558},{\"period\":\"3Y\",\"trailingTotalReturn\":-3.01902,\"dailyPerformanceNAV\":-3.62545},{\"period\":\"5Y\",\"trailingTotalReturn\":-1.03228,\"dailyPerformanceNAV\":-1.15441},{\"period\":\"10Y\",\"trailingTotalReturn\":-1.25406,\"dailyPerformanceNAV\":-0.96674}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2006-12-20\"},\"entityUpdatedTime\":\"2025-08-13T22:01:21.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62205\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"T2205\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62205\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0260863377\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006B6J\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047892\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047892\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63021",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:00:08.551311",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63021%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "19a6ecd8-1b61-99a2-a3af-cedc89b2968b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "UMzr20c10SZJASP1qcl76jXHdkkXE4495wPv4n2T8xXLhKN9k6aPmg==",
+        "x-hsbc-request-correlation-id": "d466bda0-9d3c-42f3-a649-f0f57da6f78e",
+        "date": "Wed, 13 Aug 2025 14:00:08 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 fda8cdb1c5d1bc3e2d4cabe818dc8c5e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1260",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63021\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MG\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":81.92,\"currency\":\"CNY\",\"companyName\":\"CAPITAL GROUP CAPITAL INCOME BUILDER (LUX) BFDMH-CNY (MD-C)\",\"securityDescription\":null,\"changeAmount\":0.62,\"changePercent\":0.76261,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":2.58705,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001HD2E\",\"tradableCurrency\":\"CNY\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":5.89351},{\"year\":2023,\"annualCalendarYearReturn\":4.42632},{\"year\":2022,\"annualCalendarYearReturn\":-8.33366},{\"year\":2021,\"annualCalendarYearReturn\":16.18843},{\"year\":2020,\"annualCalendarYearReturn\":2.97292}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":9.60014,\"dailyPerformanceNAV\":11.58193},{\"period\":\"1M\",\"trailingTotalReturn\":-0.41486,\"dailyPerformanceNAV\":0.85766},{\"period\":\"3M\",\"trailingTotalReturn\":5.07813,\"dailyPerformanceNAV\":5.76647},{\"period\":\"6M\",\"trailingTotalReturn\":6.74667,\"dailyPerformanceNAV\":7.15425},{\"period\":\"1Y\",\"trailingTotalReturn\":8.97887,\"dailyPerformanceNAV\":12.81696},{\"period\":\"3Y\",\"trailingTotalReturn\":6.10209,\"dailyPerformanceNAV\":6.18262},{\"period\":\"5Y\",\"trailingTotalReturn\":7.21015,\"dailyPerformanceNAV\":7.0593},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2020-03-30\"},\"entityUpdatedTime\":\"2025-08-13T22:00:08.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63021\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP021\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63021\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1963344673\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001HD2E\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050388326\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50388326\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

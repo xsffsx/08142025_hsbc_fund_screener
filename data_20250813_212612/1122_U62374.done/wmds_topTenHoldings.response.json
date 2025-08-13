@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62374",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:40:40.281456",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62374%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "00d65bc4-70fa-43a0-8a80-aee91ce6e1d8:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Dvgmfdo_3PVQHcGe7TXIcRxwKFz2DLKLpTAVGirsz7mfI_FXVwc3MQ==",
+        "x-hsbc-request-correlation-id": "4b370853-4134-46df-ad53-72cc0b6d9f26",
+        "date": "Wed, 13 Aug 2025 13:40:39 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 ee53d9169caf0d066385a6a58de01bcc.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "541",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future June 25\",\"weighting\":19.41216,\"currency\":\"USD\",\"marketValue\":915712180},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PIMCO US Dollar S/T Fl NAV Z USD Inc\",\"weighting\":3.9502,\"currency\":\"USD\",\"marketValue\":186339006},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future June 25\",\"weighting\":3.43133,\"currency\":\"USD\",\"marketValue\":161862949},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bonds 3.25%\",\"weighting\":2.03403,\"currency\":\"USD\",\"marketValue\":95949619},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bobl Future June 25\",\"weighting\":1.65883,\"currency\":\"USD\",\"marketValue\":78250648},{\"market\":\"MX\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Petroleos Mexicanos 7.69%\",\"weighting\":1.21967,\"currency\":\"USD\",\"marketValue\":57534310},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"2 Year Treasury Note Future June 25\",\"weighting\":1.20814,\"currency\":\"USD\",\"marketValue\":56990527},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 3.125%\",\"weighting\":1.05627,\"currency\":\"USD\",\"marketValue\":49826250},{\"market\":\"EG\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Egypt (Arab Republic of) 21.954%\",\"weighting\":0.9406,\"currency\":\"USD\",\"marketValue\":44369965},{\"market\":\"AZ\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Southern Gas Corridor 6.875%\",\"weighting\":0.93542,\"currency\":\"USD\",\"marketValue\":44125894}],\"lastUpdatedDate\":\"2025-03-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

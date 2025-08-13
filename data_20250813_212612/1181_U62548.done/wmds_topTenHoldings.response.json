@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62548",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:39:35.730985",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62548%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "61c62881-2b30-48f4-95f3-637f09d0f67b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "MPIgbcb5_2_Z42SKWSUtn6jyU2nJxOGiMYlx3PET07RQQ-l98wdEOQ==",
+        "x-hsbc-request-correlation-id": "e3139dd0-0e44-408a-b24f-99c6dd9ce870",
+        "date": "Wed, 13 Aug 2025 13:39:34 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 f10cf45262aac2b7dc4882c2d77020e4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "609",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra 10 Year US Treasury Note Future June 25\",\"weighting\":11.13531,\"currency\":\"USD\",\"marketValue\":471869109},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 3.75%\",\"weighting\":7.66595,\"currency\":\"USD\",\"marketValue\":324851750},{\"market\":\"AU\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Australian Treasury Bond Future June 25\",\"weighting\":6.45352,\"currency\":\"USD\",\"marketValue\":273474116},{\"market\":\"HK\",\"productType\":\"EL\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hang Seng China Enterprises Index Future May 25\",\"weighting\":5.32054,\"currency\":\"USD\",\"marketValue\":-225462672},{\"market\":\"US\",\"productType\":\"EP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Option on S&P 500 PR\",\"weighting\":5.26823,\"currency\":\"USD\",\"marketValue\":-223246309},{\"market\":\"US\",\"productType\":\"EL\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ixm - Fin Select Sector Index_Fut\",\"weighting\":3.04014,\"currency\":\"USD\",\"marketValue\":-128828982},{\"market\":\"ZA\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"South Africa (Republic of) 8.875%\",\"weighting\":1.83578,\"currency\":\"USD\",\"marketValue\":77793005},{\"market\":\"AU\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Australia (Commonwealth of) 3.75%\",\"weighting\":1.79777,\"currency\":\"USD\",\"marketValue\":76182093},{\"market\":\"MX\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mexico (United Mexican States) 7.5%\",\"weighting\":1.69686,\"currency\":\"USD\",\"marketValue\":71906012},{\"market\":\"BR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Secretaria Do Tesouro Nacional 10%\",\"weighting\":1.42284,\"currency\":\"USD\",\"marketValue\":60294151}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

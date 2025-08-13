@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63292",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:46:15.347080",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63292%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7305c850-f2b6-4021-b1b2-aea49fc5e6e1:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "14",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "2MIzU7-VjC8mutUT7c02bTHBcplfE1KhghMgx998sD6yJqRIwqTijQ==",
+        "x-hsbc-request-correlation-id": "2cc27aeb-5ebb-4dae-b351-b76c1b02e2aa",
+        "date": "Wed, 13 Aug 2025 13:46:13 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "14",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e2876f64809db799c11f72a8f088fc24.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "494",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":8.45741,\"currency\":\"USD\",\"marketValue\":41752143},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Delta Electronics Inc\",\"weighting\":4.58297,\"currency\":\"USD\",\"marketValue\":22624991},{\"market\":\"KR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Samsung Electro-Mechanics Co Ltd\",\"weighting\":3.7223,\"currency\":\"USD\",\"marketValue\":18376099},{\"market\":\"AU\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cleanaway Waste Management Ltd\",\"weighting\":3.61485,\"currency\":\"USD\",\"marketValue\":17845639},{\"market\":\"AU\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"WiseTech Global Ltd\",\"weighting\":3.43403,\"currency\":\"USD\",\"marketValue\":16952976},{\"market\":\"HK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MTR Corp Ltd\",\"weighting\":3.43273,\"currency\":\"USD\",\"marketValue\":16946540},{\"market\":\"AU\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Brambles Ltd\",\"weighting\":3.212,\"currency\":\"USD\",\"marketValue\":15856853},{\"market\":\"AU\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ALS Ltd\",\"weighting\":3.07626,\"currency\":\"USD\",\"marketValue\":15186720},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Keppel DC REIT\",\"weighting\":3.05064,\"currency\":\"USD\",\"marketValue\":15060285},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NAURA Technology Group Co Ltd Class A\",\"weighting\":2.99536,\"currency\":\"USD\",\"marketValue\":14787350}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

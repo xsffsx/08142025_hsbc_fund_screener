@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62999",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:37:07.998965",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62999%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "091d5520-b7e2-4660-a24f-3d952f844e69:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "fUoAu8S7IhAXOkjyvtFWpZ_8STMkRtzaBSFyjAiYTm2XEhf87TH2vw==",
+        "x-hsbc-request-correlation-id": "b9af6b87-3c98-4d6d-994c-4d41acccff90",
+        "date": "Wed, 13 Aug 2025 13:37:07 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "20",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 c0c0b3c6204d00f5a7203f9861b731ae.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1253",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62999\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MG\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":15.99,\"currency\":\"SGD\",\"companyName\":\"NINETY ONE GLOBAL MANAGED INCOME FUND (A INC-3 SGDH(REF)-MD-C)\",\"securityDescription\":null,\"changeAmount\":0.01,\"changePercent\":0.06258,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":5.29541,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"1\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00019QIX\",\"tradableCurrency\":\"SGD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":1.46711},{\"year\":2023,\"annualCalendarYearReturn\":4.48731},{\"year\":2022,\"annualCalendarYearReturn\":-5.916},{\"year\":2021,\"annualCalendarYearReturn\":0.55328},{\"year\":2020,\"annualCalendarYearReturn\":4.47384}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":2.53375,\"dailyPerformanceNAV\":3.04706},{\"period\":\"1M\",\"trailingTotalReturn\":0.25122,\"dailyPerformanceNAV\":0.7531},{\"period\":\"3M\",\"trailingTotalReturn\":1.13393,\"dailyPerformanceNAV\":1.70376},{\"period\":\"6M\",\"trailingTotalReturn\":1.89633,\"dailyPerformanceNAV\":2.53382},{\"period\":\"1Y\",\"trailingTotalReturn\":2.65946,\"dailyPerformanceNAV\":2.98502},{\"period\":\"3Y\",\"trailingTotalReturn\":2.65201,\"dailyPerformanceNAV\":2.78204},{\"period\":\"5Y\",\"trailingTotalReturn\":1.40527,\"dailyPerformanceNAV\":1.39653},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2019-11-11\"},\"entityUpdatedTime\":\"2025-08-13T21:37:07.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62999\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"V2999\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62999\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1554042488\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019QIX\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050355238\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50355238\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

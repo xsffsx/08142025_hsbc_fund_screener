@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U61671",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:27:39.045443",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61671%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f4b7361f-bd18-4482-8ff0-434c4992ca3b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "10",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "HTFAU1Cwm_vauE-mmM1mnT9KTlzBSDmyT9lsoPMsAlq0FLclPrrYTg==",
+        "x-hsbc-request-correlation-id": "9735ffa9-bacb-414a-9e7e-0eb3fc8e02e8",
+        "date": "Wed, 13 Aug 2025 13:27:38 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "10",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 d68bd25f59a68492f9cefc2f64ca2888.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "356",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"INVESCO Emerging Markets Bond Fund (Class A-MDIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61615\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN615\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61615\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1775955278\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DK1L\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046618\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046618\"}]},{\"productName\":\"INVESCO Emerging Markets Bond Fund (Class A-SDIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-SDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61611\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN611\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61611\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1775955864\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DK1O\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046614\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046614\"}]},{\"productName\":\"INVESCO Emerging Markets Bond Fund (Class A-MDIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61188\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN188\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61188\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1775955278\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DK1L\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046695\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046695\"}]},{\"productName\":\"INVESCO Emerging Markets Bond Fund (Class A-SDIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-SDIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61186\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN186\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61186\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1775955864\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DK1O\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046693\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046693\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

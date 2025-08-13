@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62227",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:46:21.220033",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62227%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "71532388-bb15-4ba9-9bf8-9c811183fd02:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Ol8f06ge9WbNaFUStjVoJJsx3Kwg139o5dA-hFFdr1ghxGhcqFp1lg==",
+        "x-hsbc-request-correlation-id": "c72281f9-58b6-4ba4-a860-6b71b11f25b2",
+        "date": "Wed, 13 Aug 2025 13:46:20 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "57",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 563524a07ba56bf5eeef232093ce2018.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "497",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":null,\"productType\":\"SX\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"1Y Rtp 3.700000 09-Dec-2025 1\",\"weighting\":2.97828,\"currency\":\"USD\",\"marketValue\":-29986926},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes\",\"weighting\":2.77144,\"currency\":\"USD\",\"marketValue\":27904263},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills\",\"weighting\":2.09352,\"currency\":\"USD\",\"marketValue\":21078700},{\"market\":null,\"productType\":\"SX\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"1Y Rtp 3.900000 09-Dec-2025 1\",\"weighting\":1.79981,\"currency\":\"USD\",\"marketValue\":18121444},{\"market\":null,\"productType\":\"BZ\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"European Financial Stability Facility (EFSF)\",\"weighting\":1.7391,\"currency\":\"USD\",\"marketValue\":17510161},{\"market\":\"IT\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Italy (Republic Of)\",\"weighting\":1.61259,\"currency\":\"USD\",\"marketValue\":16236438},{\"market\":\"FR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"France (Republic Of)\",\"weighting\":1.55581,\"currency\":\"USD\",\"marketValue\":15664665},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association\",\"weighting\":1.27063,\"currency\":\"USD\",\"marketValue\":12793337},{\"market\":\"FR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"France (Republic Of)\",\"weighting\":1.22834,\"currency\":\"USD\",\"marketValue\":12367528},{\"market\":null,\"productType\":\"BZ\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"European Union\",\"weighting\":1.17101,\"currency\":\"USD\",\"marketValue\":11790299}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

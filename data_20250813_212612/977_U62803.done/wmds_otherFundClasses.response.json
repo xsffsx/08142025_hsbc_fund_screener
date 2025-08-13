@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62803",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:42:35.377677",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62803%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "45ba75b6-9095-488b-8869-6fb0ccd2a3ac:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "MxCbk6_7YOeoG5VgNETT8luFlc1i9id8p7wXu7hkX6mgeWR7JO_pxA==",
+        "x-hsbc-request-correlation-id": "3cec3b5f-98f0-44f8-8fc4-c2f1950c5107",
+        "date": "Wed, 13 Aug 2025 13:42:35 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "32",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 619e9f7b6fc5db300230b5cfc11ec0ca.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "487",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"BLACKROCK GLOBAL F-EMERGING MARKETS EQUITY INCOME F(A6-CADH-MDIS-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A6-CAD-HED-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62799\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2799\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62799\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1529944354\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019JMB\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050018445\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50018445\"}]},{\"productName\":\"BLACKROCK GLOBAL F-EMERGING MARKETS EQUITY INCOME F(A8-NZDH-MDIS-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A8-NZD-HED-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62805\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2805\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62805\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1529944438\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019JMC\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050018451\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50018451\"}]},{\"productName\":\"BLACKROCK GLOBAL F-EMERGING MARKETS EQUITY INCOME F(A8-AUDH-MDIS-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A8-AUD-HED-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62804\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2804\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62804\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1515016217\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000199KX\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050018450\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50018450\"}]},{\"productName\":\"BLACKROCK GLOBAL F-EMERGING MARKETS EQUITY INCOME F(A6-HKDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A6-HKD-HED-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62802\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2802\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62802\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1051769294\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012SKV\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050018448\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50018448\"}]},{\"productName\":\"BLACKROCK GLOBAL F-EMERGING MARKETS EQUITY INCOME F(A6-GBPH-MDIS-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A6-GBP-HED-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62801\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2801\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62801\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1529944198\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019JMA\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050018447\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50018447\"}]},{\"productName\":\"BLACKROCK GLOBAL F-EMERGING MARKETS EQUITY INCOME F(A6-EURH-MDIS-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A6-EUR-HED-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62800\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M2800\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62800\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1529943976\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019G4G\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050018446\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50018446\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

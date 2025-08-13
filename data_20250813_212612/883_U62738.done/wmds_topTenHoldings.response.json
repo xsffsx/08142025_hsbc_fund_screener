@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62738",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:26:32.737508",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62738%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ca319c0f-90ca-4859-9171-fd17671c2f3d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "6gZNpODWZdcvF9W5Vl1n1-xlptcq2hcjq7Vdt9SavfUjDMyh8AzM3w==",
+        "x-hsbc-request-correlation-id": "837a5c92-9a32-45a4-ab4c-79ab57db5fad",
+        "date": "Wed, 13 Aug 2025 13:26:31 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 66a56783d1e9dc3092b15cd0a5351186.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "482",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Newmont Corp\",\"weighting\":7.23181,\"currency\":\"USD\",\"marketValue\":71718114},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Agnico Eagle Mines Ltd\",\"weighting\":6.11078,\"currency\":\"USD\",\"marketValue\":60600833},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Coeur Mining Inc\",\"weighting\":5.75653,\"currency\":\"USD\",\"marketValue\":57087732},{\"market\":\"ZA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Anglogold Ashanti PLC\",\"weighting\":4.79686,\"currency\":\"USD\",\"marketValue\":47570658},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Barrick Mining Corp\",\"weighting\":4.55768,\"currency\":\"USD\",\"marketValue\":45198752},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kinross Gold Corp\",\"weighting\":4.34193,\"currency\":\"USD\",\"marketValue\":43059068},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Endeavour Mining PLC\",\"weighting\":4.09656,\"currency\":\"USD\",\"marketValue\":40625782},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Equinox Gold Corp Ordinary Shares Class A\",\"weighting\":4.0051,\"currency\":\"USD\",\"marketValue\":39718752},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alamos Gold Inc Class A\",\"weighting\":3.91461,\"currency\":\"USD\",\"marketValue\":38821370},{\"market\":\"CA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Pan American Silver Corp\",\"weighting\":3.57341,\"currency\":\"USD\",\"marketValue\":35437645}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

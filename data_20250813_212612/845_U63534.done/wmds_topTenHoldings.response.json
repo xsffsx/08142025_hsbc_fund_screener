@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63534",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:28:19.799150",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63534%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "60c8b92d-5a14-494a-b4ad-6733a02713c0:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "f5KcAc02LXGU6ZUUCYWbBmToCZnQhbXQk7kZb2Ohsw-0kvdDVB2ysA==",
+        "x-hsbc-request-correlation-id": "862bc7bd-b157-4ad3-a1e4-8545d5a5d733",
+        "date": "Wed, 13 Aug 2025 13:28:19 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 be8185e52ca0edbbdfda1ac2c66c1972.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "555",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares $ Corp Bond ETF USD Dist\",\"weighting\":16.47805,\"currency\":\"USD\",\"marketValue\":61241760},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder ISF QEP Glbl Cor I Acc USD\",\"weighting\":16.18424,\"currency\":\"USD\",\"marketValue\":60149797},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills 0%\",\"weighting\":9.66902,\"currency\":\"USD\",\"marketValue\":35935528},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vanguard S&P 500 ETF USD Acc\",\"weighting\":9.6501,\"currency\":\"USD\",\"marketValue\":35865216},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares Core € Corp Bond ETF EUR Acc\",\"weighting\":7.206,\"currency\":\"USD\",\"marketValue\":26781554},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder ISF US Large Cap I Acc USD\",\"weighting\":7.1175,\"currency\":\"USD\",\"marketValue\":26452660},{\"market\":\"SG\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder Asian Invmt Grd Crdt SGD I Acc\",\"weighting\":5.52545,\"currency\":\"USD\",\"marketValue\":20535682},{\"market\":\"ES\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Spain (Kingdom of) 3.2%\",\"weighting\":4.74848,\"currency\":\"USD\",\"marketValue\":17648026},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder ISF Sust Asn Eq I Acc USD\",\"weighting\":4.10168,\"currency\":\"USD\",\"marketValue\":15244169},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder ISF European Value I Acc EUR\",\"weighting\":3.3658,\"currency\":\"USD\",\"marketValue\":12509203}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

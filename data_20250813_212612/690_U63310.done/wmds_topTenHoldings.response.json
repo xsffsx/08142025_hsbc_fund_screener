@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63310",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:06:13.991410",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63310%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "47a15b83-7c14-4c34-b723-7ac7444fb4a3:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "u4TwXvcYrSeb7JOnbCDrmuJRLAj35yQSU0j-HOI0cmCvneDHo2PFXw==",
+        "x-hsbc-request-correlation-id": "5a00fb20-68c2-4a1e-aed9-30ddc3b68165",
+        "date": "Wed, 13 Aug 2025 14:06:13 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 f1635e40dd33e4abcdd79d3670805a7a.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "471",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPMorgan Chase & Co. 4.603%\",\"weighting\":1.92116,\"currency\":\"USD\",\"marketValue\":65234653},{\"market\":\"GR\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"National Bank of Greece SA 3.5%\",\"weighting\":1.36474,\"currency\":\"USD\",\"marketValue\":46340890},{\"market\":\"GR\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Eurobank S.A. 4%\",\"weighting\":1.0909,\"currency\":\"USD\",\"marketValue\":37042386},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Duke Energy Corp 3.75%\",\"weighting\":0.80359,\"currency\":\"USD\",\"marketValue\":27286721},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amgen Inc. 5.25%\",\"weighting\":0.77923,\"currency\":\"USD\",\"marketValue\":26459556},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AbbVie Inc. 5.05%\",\"weighting\":0.77303,\"currency\":\"USD\",\"marketValue\":26248850},{\"market\":\"FR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Orange S.A. 2.75%\",\"weighting\":0.7611,\"currency\":\"USD\",\"marketValue\":25843709},{\"market\":\"FR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Verallia 3.875%\",\"weighting\":0.75429,\"currency\":\"USD\",\"marketValue\":25612634},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wells Fargo & Co. 3.9%\",\"weighting\":0.74665,\"currency\":\"USD\",\"marketValue\":25353332},{\"market\":\"GR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Eurobank S.A. 4.875%\",\"weighting\":0.73699,\"currency\":\"USD\",\"marketValue\":25025151}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

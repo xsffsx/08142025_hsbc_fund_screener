@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U42858",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:32:38.024586",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U42858%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "9dbedc2a-7cc6-406f-913f-e38de362f32e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ho89kMAzpp_Sk49xQMV2MGq2wOpC2m9o57H2w62EgM5ZaH_MYzMrlw==",
+        "x-hsbc-request-correlation-id": "b280e079-f82e-4332-9f23-ab108423c5ed",
+        "date": "Wed, 13 Aug 2025 13:32:38 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 b73d78c2d3982931ae8f11fabaa40e2e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "515",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vale SA ADR\",\"weighting\":6.09805,\"currency\":\"USD\",\"marketValue\":43054431},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grupo Mexico SAB de CV Class B\",\"weighting\":5.61336,\"currency\":\"USD\",\"marketValue\":39632301},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wal - Mart de Mexico SAB de CV\",\"weighting\":4.89242,\"currency\":\"USD\",\"marketValue\":34542195},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Fomento Economico Mexicano SAB de CV ADR\",\"weighting\":4.85522,\"currency\":\"USD\",\"marketValue\":34279570},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BlackRock ICS USD LiqEnvtlyAwr Agcy Inc\",\"weighting\":4.6236,\"currency\":\"USD\",\"marketValue\":32644286},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grupo Financiero Banorte SAB de CV Class O\",\"weighting\":4.58503,\"currency\":\"USD\",\"marketValue\":32371949},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grupo Aeroportuario del Sureste SAB de CV Class B\",\"weighting\":4.11766,\"currency\":\"USD\",\"marketValue\":29072158},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"B3 SA - Brasil Bolsa Balcao\",\"weighting\":3.98942,\"currency\":\"USD\",\"marketValue\":28166730},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"XP Inc Class A\",\"weighting\":3.91231,\"currency\":\"USD\",\"marketValue\":27622268},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Rumo SA\",\"weighting\":3.74444,\"currency\":\"USD\",\"marketValue\":26437092}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

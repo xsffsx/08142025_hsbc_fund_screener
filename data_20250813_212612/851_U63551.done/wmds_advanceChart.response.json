@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_advanceChart",
+  "product_code": "U63551",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:32:48.342591",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/advanceChart?body=%7B%22productKeys%22%3A%5B%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63551%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D%5D%2C%22timeZone%22%3A%22Asia%2FHong_Kong%22%2C%22startDate%22%3A%222022-08-13%22%2C%22endDate%22%3A%222025-08-13%22%2C%22currency%22%3A%22HKD%22%2C%22dataType%22%3A%5B%22navPrice%22%5D%2C%22frequency%22%3A%22daily%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e6adf257-fd58-4aff-9d90-6793507f5ec7:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "xiRNQZx45xLEL5CI76GU0rfTQ13yUZostFtqjqQY0ZhxEjv4rxGslA==",
+        "x-hsbc-request-correlation-id": "04764fb1-153c-4503-a116-236a0fe9d039",
+        "date": "Wed, 13 Aug 2025 13:32:48 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 b3f5252dafb9ec91f738df64dc00f880.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "628",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"result\":[{\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63551\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"MH551\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63551\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001144515\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001VFLY\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000148803\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000148803\"}],\"data\":[{\"date\":\"2025-06-17\",\"cumulativeReturn\":null,\"navPrice\":100},{\"date\":\"2025-06-18\",\"cumulativeReturn\":null,\"navPrice\":99.6632},{\"date\":\"2025-06-19\",\"cumulativeReturn\":null,\"navPrice\":98.8068},{\"date\":\"2025-06-20\",\"cumulativeReturn\":null,\"navPrice\":99.35},{\"date\":\"2025-06-23\",\"cumulativeReturn\":null,\"navPrice\":99.3736},{\"date\":\"2025-06-24\",\"cumulativeReturn\":null,\"navPrice\":100.4223},{\"date\":\"2025-06-25\",\"cumulativeReturn\":null,\"navPrice\":100.1876},{\"date\":\"2025-06-26\",\"cumulativeReturn\":null,\"navPrice\":100.7756},{\"date\":\"2025-06-27\",\"cumulativeReturn\":null,\"navPrice\":101.3219},{\"date\":\"2025-06-30\",\"cumulativeReturn\":null,\"navPrice\":101.3047},{\"date\":\"2025-07-02\",\"cumulativeReturn\":null,\"navPrice\":101.6838},{\"date\":\"2025-07-03\",\"cumulativeReturn\":null,\"navPrice\":102.0575},{\"date\":\"2025-07-04\",\"cumulativeReturn\":null,\"navPrice\":101.7646},{\"date\":\"2025-07-07\",\"cumulativeReturn\":null,\"navPrice\":101.643},{\"date\":\"2025-07-08\",\"cumulativeReturn\":null,\"navPrice\":101.5778},{\"date\":\"2025-07-09\",\"cumulativeReturn\":null,\"navPrice\":101.6956},{\"date\":\"2025-07-10\",\"cumulativeReturn\":null,\"navPrice\":102.0559},{\"date\":\"2025-07-11\",\"cumulativeReturn\":null,\"navPrice\":101.6532},{\"date\":\"2025-07-14\",\"cumulativeReturn\":null,\"navPrice\":101.526},{\"date\":\"2025-07-15\",\"cumulativeReturn\":null,\"navPrice\":101.3423},{\"date\":\"2025-07-16\",\"cumulativeReturn\":null,\"navPrice\":101.0543},{\"date\":\"2025-07-17\",\"cumulativeReturn\":null,\"navPrice\":101.5273},{\"date\":\"2025-07-18\",\"cumulativeReturn\":null,\"navPrice\":101.7846},{\"date\":\"2025-07-21\",\"cumulativeReturn\":null,\"navPrice\":102.1642},{\"date\":\"2025-07-22\",\"cumulativeReturn\":null,\"navPrice\":101.9625},{\"date\":\"2025-07-23\",\"cumulativeReturn\":null,\"navPrice\":102.3997},{\"date\":\"2025-07-24\",\"cumulativeReturn\":null,\"navPrice\":102.7106},{\"date\":\"2025-07-25\",\"cumulativeReturn\":null,\"navPrice\":102.4499},{\"date\":\"2025-07-28\",\"cumulativeReturn\":null,\"navPrice\":102.2953},{\"date\":\"2025-07-29\",\"cumulativeReturn\":null,\"navPrice\":102.0543},{\"date\":\"2025-07-30\",\"cumulativeReturn\":null,\"navPrice\":101.9397},{\"date\":\"2025-07-31\",\"cumulativeReturn\":null,\"navPrice\":101.2144},{\"date\":\"2025-08-01\",\"cumulativeReturn\":null,\"navPrice\":100.4624},{\"date\":\"2025-08-04\",\"cumulativeReturn\":null,\"navPrice\":101.0024},{\"date\":\"2025-08-05\",\"cumulativeReturn\":null,\"navPrice\":101.0417},{\"date\":\"2025-08-06\",\"cumulativeReturn\":null,\"navPrice\":101.3557},{\"date\":\"2025-08-07\",\"cumulativeReturn\":null,\"navPrice\":101.7795},{\"date\":\"2025-08-08\",\"cumulativeReturn\":null,\"navPrice\":101.8565},{\"date\":\"2025-08-11\",\"cumulativeReturn\":null,\"navPrice\":101.844},{\"date\":\"2025-08-12\",\"cumulativeReturn\":null,\"navPrice\":102.2011}],\"productName\":\"BLACKROCK WEALTH NAVIGATOR GROWTH & INCOME FUND (CLASS A10-HKDH-MD-C)\",\"indexName\":null,\"currency\":\"HKD\",\"frequency\":\"daily\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

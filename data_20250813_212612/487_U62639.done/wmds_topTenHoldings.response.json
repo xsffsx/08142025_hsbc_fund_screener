@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62639",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:48:20.062307",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62639%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "06e990e2-ca97-4e62-adef-a1cdff0d22bf:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "IVCMNhZke6nhJsrjArGjdiVZTlnrYSnRf-rJeFcPkzVZSw0cHUj5Tg==",
+        "x-hsbc-request-correlation-id": "093668dc-efe5-4777-86f6-b84c4b45afaf",
+        "date": "Wed, 13 Aug 2025 13:48:19 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2e2023905a055fb3a137d4ecfec97d0e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "573",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"HK\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder China Asset Income Fund I $ Acc\",\"weighting\":4.1733,\"currency\":\"HKD\",\"marketValue\":590935199},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares JPMorgan EM Lcl Govt Bd ETF$Dist\",\"weighting\":2.97038,\"currency\":\"HKD\",\"marketValue\":420603000},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder GAIA Cat Bond I Acc USD\",\"weighting\":2.80455,\"currency\":\"HKD\",\"marketValue\":397121496},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares € High Yield CorpBd ETF EUR Dist\",\"weighting\":2.75708,\"currency\":\"HKD\",\"marketValue\":390400351},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder ISF Asian Eq Yld I Acc USD\",\"weighting\":2.57107,\"currency\":\"HKD\",\"marketValue\":364060913},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Schroder Invmt Fd FlexCatBd I Acc USD\",\"weighting\":2.32399,\"currency\":\"HKD\",\"marketValue\":329074556},{\"market\":\"US\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"iShares MSCI Taiwan ETF\",\"weighting\":1.99299,\"currency\":\"HKD\",\"marketValue\":282205616},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Construction Bank Corp Class H\",\"weighting\":1.98841,\"currency\":\"HKD\",\"marketValue\":281556800},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":1.96712,\"currency\":\"HKD\",\"marketValue\":278541854},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MediaTek Inc\",\"weighting\":1.41735,\"currency\":\"HKD\",\"marketValue\":200695418}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

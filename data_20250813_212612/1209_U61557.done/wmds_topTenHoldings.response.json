@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61557",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:57:20.708190",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61557%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ba752516-f31d-4811-a311-047bd3b9369d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "zrJ2QLyu94ceWSpIc0k43QSDGEk5hrwpVTLmNMezWOoszXAh2cs7BQ==",
+        "x-hsbc-request-correlation-id": "2c21aa36-71e7-46a5-b5af-f54611f39d58",
+        "date": "Wed, 13 Aug 2025 13:57:20 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2e2023905a055fb3a137d4ecfec97d0e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "574",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal Home Loan Banks\",\"weighting\":4.11978,\"currency\":\"USD\",\"marketValue\":47489419},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Martin Midstream Partners LP / Martin Midstream Finance Corp 11.5%\",\"weighting\":1.01448,\"currency\":\"USD\",\"marketValue\":11694068},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CCO Holdings, LLC/ CCO Holdings Capital Corp. 4.5%\",\"weighting\":0.97974,\"currency\":\"USD\",\"marketValue\":11293664},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Commscope LLC 7.125%\",\"weighting\":0.88176,\"currency\":\"USD\",\"marketValue\":10164172},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Rain Carbon Inc 12.25%\",\"weighting\":0.88145,\"currency\":\"USD\",\"marketValue\":10160682},{\"market\":\"IT\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kedrion S.p.A. 6.5%\",\"weighting\":0.8281,\"currency\":\"USD\",\"marketValue\":9545615},{\"market\":\"CA\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"1011778 B.C. Unlimited Liability Company / New Red Finance, Inc. 6.125%\",\"weighting\":0.80496,\"currency\":\"USD\",\"marketValue\":9278950},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mauser Packaging Solutions Holding Co. 9.25%\",\"weighting\":0.80359,\"currency\":\"USD\",\"marketValue\":9263178},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Forestar Group Inc. 6.5%\",\"weighting\":0.77263,\"currency\":\"USD\",\"marketValue\":8906197},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Allied Universal Holdco LLC / Allied Universal Finance Corporation 7.875%\",\"weighting\":0.76285,\"currency\":\"USD\",\"marketValue\":8793518}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

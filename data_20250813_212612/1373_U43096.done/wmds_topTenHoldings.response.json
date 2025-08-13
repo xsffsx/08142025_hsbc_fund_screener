@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43096",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:03:26.935370",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43096%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "2f37a542-6c40-4e30-a0bc-7956cb5aab05:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "3ioOWuGjlIoJUdWCe2fb-SVTSwcbyCyHNWx53Q_rr6ONQ3GN_UEFCQ==",
+        "x-hsbc-request-correlation-id": "ef124a3a-1350-4d7c-9054-f823d2a4fc9e",
+        "date": "Wed, 13 Aug 2025 14:03:26 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 490b2d87256587a734fcd39d5d6c7392.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "481",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 2.5%\",\"weighting\":25.88339,\"currency\":\"EUR\",\"marketValue\":273847670},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 2.4%\",\"weighting\":16.41429,\"currency\":\"EUR\",\"marketValue\":173664137},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 3.1%\",\"weighting\":13.02738,\"currency\":\"EUR\",\"marketValue\":137830463},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bund Future Sept 25\",\"weighting\":12.20713,\"currency\":\"EUR\",\"marketValue\":129152123},{\"market\":\"ES\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Spain (Kingdom of) 3.15%\",\"weighting\":10.19189,\"currency\":\"EUR\",\"marketValue\":107830782},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Fidelity ILF - EUR A Acc\",\"weighting\":7.54898,\"currency\":\"EUR\",\"marketValue\":79868667},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 2.6%\",\"weighting\":5.36563,\"currency\":\"EUR\",\"marketValue\":56768680},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bobl Future Sept 25\",\"weighting\":3.42062,\"currency\":\"EUR\",\"marketValue\":-36190323},{\"market\":\"FR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TotalEnergies SE 2.125%\",\"weighting\":1.60346,\"currency\":\"EUR\",\"marketValue\":16964723},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of) 2.5%\",\"weighting\":1.12826,\"currency\":\"EUR\",\"marketValue\":11937009}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

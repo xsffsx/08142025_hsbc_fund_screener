@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62405",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:57.313260",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62405%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "d1d22447-b1da-4227-98f4-632aec8d35ea:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "HyUdJhYPyJ1XkxyKUGiNhsr5qqVNEy59XrnBNqlXRxTl-NKBwrl1-Q==",
+        "x-hsbc-request-correlation-id": "f6672934-8f28-47a9-8c97-9bb1932041c7",
+        "date": "Wed, 13 Aug 2025 13:33:57 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 202cb43062765e2670eca987cfe03f88.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "583",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":6.31722,\"currency\":\"EUR\",\"marketValue\":-77879668},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"US Treasury Bond Future Sept 25\",\"weighting\":5.29637,\"currency\":\"EUR\",\"marketValue\":65294483},{\"market\":\"CN\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Industrial & Commercial Bank of China Ltd. 3.2%\",\"weighting\":4.94876,\"currency\":\"EUR\",\"marketValue\":61009067},{\"market\":\"CN\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bank of Communications Co Ltd. 3.8%\",\"weighting\":2.53021,\"currency\":\"EUR\",\"marketValue\":31192839},{\"market\":\"MO\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Melco Resorts Finance Limited 5.375%\",\"weighting\":2.20126,\"currency\":\"EUR\",\"marketValue\":27137440},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Fidelity ILF - USD A Acc\",\"weighting\":2.1586,\"currency\":\"EUR\",\"marketValue\":26611630},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ultra 10 Year US Treasury Note Future Sept 25\",\"weighting\":1.97459,\"currency\":\"EUR\",\"marketValue\":-24343030},{\"market\":\"PK\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Pakistan (Islamic Republic of) 6%\",\"weighting\":1.64707,\"currency\":\"EUR\",\"marketValue\":20305318},{\"market\":\"PK\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Pakistan (Islamic Republic of) 6.875%\",\"weighting\":1.62222,\"currency\":\"EUR\",\"marketValue\":19999038},{\"market\":\"TH\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bangkok Bank Public Company Limited (Hong Kong Branch) 3.733%\",\"weighting\":1.53163,\"currency\":\"EUR\",\"marketValue\":18882163}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

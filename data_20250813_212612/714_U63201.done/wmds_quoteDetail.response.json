@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63201",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:05:56.362186",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63201%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "337b41a2-641a-424f-ba3f-555279f37077:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "tIp10a9QMEBu__9YG0S0D-8nv2dIVZeC26TVEzTmy6wmP61qm953Dw==",
+        "x-hsbc-request-correlation-id": "5d030795-c292-431e-9592-fe80bc8bca1a",
+        "date": "Wed, 13 Aug 2025 14:05:55 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 c44c600db483eb2098670fa47c16d840.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1225",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63201\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"GI\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":32.91,\"currency\":\"CNY\",\"companyName\":\"AMUNDI FUNDS EMERGING MARKETS GREEN BOND (A2-RMBH-MD3-C)\",\"securityDescription\":null,\"changeAmount\":0,\"changePercent\":0,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":4.86418,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001N1KH\",\"tradableCurrency\":\"CNY\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":2.35034},{\"year\":2023,\"annualCalendarYearReturn\":1.82948},{\"year\":2022,\"annualCalendarYearReturn\":-17.3143},{\"year\":2021,\"annualCalendarYearReturn\":null},{\"year\":2020,\"annualCalendarYearReturn\":null}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":2.26563,\"dailyPerformanceNAV\":2.64605},{\"period\":\"1M\",\"trailingTotalReturn\":0.45806,\"dailyPerformanceNAV\":1.17128},{\"period\":\"3M\",\"trailingTotalReturn\":1.53957,\"dailyPerformanceNAV\":2.19765},{\"period\":\"6M\",\"trailingTotalReturn\":1.87415,\"dailyPerformanceNAV\":2.09788},{\"period\":\"1Y\",\"trailingTotalReturn\":2.93273,\"dailyPerformanceNAV\":2.86597},{\"period\":\"3Y\",\"trailingTotalReturn\":1.6384,\"dailyPerformanceNAV\":1.54169},{\"period\":\"5Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2022-04-29\"},\"entityUpdatedTime\":\"2025-08-13T22:05:55.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63201\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"A3201\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63201\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2305763786\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001N1KH\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050564972\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50564972\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

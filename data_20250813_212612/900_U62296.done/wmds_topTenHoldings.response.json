@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62296",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:08:21.935952",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62296%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c311d526-cd84-400e-9ab5-3a64b799cced:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "hM3CKFSUhVo-3AR3dax8tW5UDe9hqtVj9wpNpg1I_xYOJRvu04trhg==",
+        "x-hsbc-request-correlation-id": "974da34f-91c3-4e27-a0af-da36d904d105",
+        "date": "Wed, 13 Aug 2025 14:08:21 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a7a7ee092ee4b4df82064022cbdb7e94.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "461",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Semiconductor Manufacturing Co Ltd\",\"weighting\":8.75246,\"currency\":\"USD\",\"marketValue\":2822768},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Elite Material Co Ltd\",\"weighting\":5.69989,\"currency\":\"USD\",\"marketValue\":1838277},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hon Hai Precision Industry Co Ltd\",\"weighting\":5.52153,\"currency\":\"USD\",\"marketValue\":1780756},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MediaTek Inc\",\"weighting\":5.4515,\"currency\":\"USD\",\"marketValue\":1758169},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tripod Technology Corp\",\"weighting\":4.92334,\"currency\":\"USD\",\"marketValue\":1587833},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alltop Technology Inc\",\"weighting\":4.29714,\"currency\":\"USD\",\"marketValue\":1385876},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"WNC Corp\",\"weighting\":4.02517,\"currency\":\"USD\",\"marketValue\":1298163},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mega Financial Holding Co Ltd\",\"weighting\":3.91639,\"currency\":\"USD\",\"marketValue\":1263081},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tong Yang Industry Co Ltd\",\"weighting\":3.83977,\"currency\":\"USD\",\"marketValue\":1238368},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Taiwan Hon Chuan Enterprise Co Ltd\",\"weighting\":3.78859,\"currency\":\"USD\",\"marketValue\":1221864}],\"lastUpdatedDate\":\"2025-03-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

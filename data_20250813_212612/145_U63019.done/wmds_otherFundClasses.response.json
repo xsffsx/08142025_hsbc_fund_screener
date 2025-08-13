@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63019",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:55.926557",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63019%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c418a3c5-6ffd-4213-9412-5809f7e60b8c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "KOmmXfczsKQe65QxouqoiraojjUf86o8uNWrgSlO9S5FXzD2pATVFw==",
+        "x-hsbc-request-correlation-id": "c663e14f-d47f-445a-9955-3913b8c3cea6",
+        "date": "Wed, 13 Aug 2025 13:47:55 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "36",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 dff94781894736c12dbb6eb4e456a898.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "438",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"CAPITAL GROUP CAPITAL INCOME BUILDER (LUX) BFDMH-SGD (MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"BFDMH-SGD (MD-C)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63024\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP024\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63024\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1968741949\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001HD2G\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050388329\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50388329\"}]},{\"productName\":\"CAPITAL GROUP CAPITAL INCOME BUILDER (LUX) BFDMH-GBP (MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"BFDMH-GBP (MD-C)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63023\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP023\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63023\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1968741865\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001HD2F\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050388328\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50388328\"}]},{\"productName\":\"CAPITAL GROUP CAPITAL INCOME BUILDER (LUX) BFDMH-EUR (MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"BFDMH-EUR (MD-C)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63022\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP022\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63022\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1968742087\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001HD2B\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050388327\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50388327\"}]},{\"productName\":\"CAPITAL GROUP CAPITAL INCOME BUILDER (LUX) BFDMH-CNY (MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"BFDMH-CNH (MD-C)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63021\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP021\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63021\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1963344673\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001HD2E\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050388326\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50388326\"}]},{\"productName\":\"CAPITAL GROUP CAPITAL INCOME BUILDER (LUX) BFDMH-AUD (MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"BFDMH-AUD (MD-C)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63020\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP020\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63020\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1968741782\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001HD2D\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050388325\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50388325\"}]},{\"productName\":\"CAPITAL GROUP CAPITAL INCOME BUILDER (LUX) BFDM-USD (MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"BFDM-USD (MD-C)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63018\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP018\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63018\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1968741519\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001HD2A\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050388323\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50388323\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

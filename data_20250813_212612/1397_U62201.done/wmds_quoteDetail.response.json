@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62201",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:54:31.779399",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62201%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "a749c4b9-a050-4059-a0c6-56d3915c3aff:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "rG8cuDxKEPq1hts_0gQqLc-W6rg1gVLiyajMqaCX3qSdiOX-kuC8FA==",
+        "x-hsbc-request-correlation-id": "b5efcf86-2365-4e92-964e-e8b9ba88d851",
+        "date": "Wed, 13 Aug 2025 13:54:31 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "21",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 901fdc9beff7ff35478f18c7b70da04e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1240",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62201\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"SO\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":119.36,\"currency\":\"USD\",\"companyName\":\"INVESCO India Equity Fund (Class A)\",\"securityDescription\":null,\"changeAmount\":-0.61,\"changePercent\":-0.50846,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00006XPF\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Annually\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDIM\",\"categoryLevel1Name\":\"Equity Developing Market\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":24.58291},{\"year\":2023,\"annualCalendarYearReturn\":27.54526},{\"year\":2022,\"annualCalendarYearReturn\":-9.08508},{\"year\":2021,\"annualCalendarYearReturn\":22.95965},{\"year\":2020,\"annualCalendarYearReturn\":10.24341}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":-9.84019,\"dailyPerformanceNAV\":-11.68985},{\"period\":\"1M\",\"trailingTotalReturn\":-3.10115,\"dailyPerformanceNAV\":-3.21116},{\"period\":\"3M\",\"trailingTotalReturn\":1.22103,\"dailyPerformanceNAV\":-2.42786},{\"period\":\"6M\",\"trailingTotalReturn\":1.61775,\"dailyPerformanceNAV\":2.88768},{\"period\":\"1Y\",\"trailingTotalReturn\":-9.1817,\"dailyPerformanceNAV\":-8.79499},{\"period\":\"3Y\",\"trailingTotalReturn\":11.89584,\"dailyPerformanceNAV\":10.02737},{\"period\":\"5Y\",\"trailingTotalReturn\":15.30843,\"dailyPerformanceNAV\":14.37208},{\"period\":\"10Y\",\"trailingTotalReturn\":7.79265,\"dailyPerformanceNAV\":7.8578}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2006-12-11\"},\"entityUpdatedTime\":\"2025-08-13T21:54:31.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62201\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN201\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62201\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0267983889\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006XPF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047888\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047888\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

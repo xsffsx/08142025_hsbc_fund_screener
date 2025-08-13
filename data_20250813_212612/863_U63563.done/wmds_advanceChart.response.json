@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_advanceChart",
+  "product_code": "U63563",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:55:17.087311",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/advanceChart?body=%7B%22productKeys%22%3A%5B%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63563%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D%5D%2C%22timeZone%22%3A%22Asia%2FHong_Kong%22%2C%22startDate%22%3A%222022-08-13%22%2C%22endDate%22%3A%222025-08-13%22%2C%22currency%22%3A%22HKD%22%2C%22dataType%22%3A%5B%22navPrice%22%5D%2C%22frequency%22%3A%22daily%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "47b86eac-2844-4b81-8f7a-51cb29362d2f:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "4-XyMOcMt5vZCMHPqyOfKHnWEhEGZLhzr49ipuITcxC7FyVsRj4v7A==",
+        "x-hsbc-request-correlation-id": "39803098-2dc1-418b-a26d-5860c835d39b",
+        "date": "Wed, 13 Aug 2025 13:55:04 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 f1635e40dd33e4abcdd79d3670805a7a.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "616",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"result\":[{\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63563\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"MH563\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63563\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001149001\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001VFLR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000153442\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000153442\"}],\"data\":[{\"date\":\"2025-06-17\",\"cumulativeReturn\":null,\"navPrice\":100},{\"date\":\"2025-06-18\",\"cumulativeReturn\":null,\"navPrice\":99.865},{\"date\":\"2025-06-19\",\"cumulativeReturn\":null,\"navPrice\":99.3367},{\"date\":\"2025-06-20\",\"cumulativeReturn\":null,\"navPrice\":99.6554},{\"date\":\"2025-06-23\",\"cumulativeReturn\":null,\"navPrice\":99.7881},{\"date\":\"2025-06-24\",\"cumulativeReturn\":null,\"navPrice\":100.387},{\"date\":\"2025-06-25\",\"cumulativeReturn\":null,\"navPrice\":100.1986},{\"date\":\"2025-06-26\",\"cumulativeReturn\":null,\"navPrice\":100.639},{\"date\":\"2025-06-27\",\"cumulativeReturn\":null,\"navPrice\":100.971},{\"date\":\"2025-06-30\",\"cumulativeReturn\":null,\"navPrice\":101.0024},{\"date\":\"2025-07-02\",\"cumulativeReturn\":null,\"navPrice\":101.183},{\"date\":\"2025-07-03\",\"cumulativeReturn\":null,\"navPrice\":101.3431},{\"date\":\"2025-07-04\",\"cumulativeReturn\":null,\"navPrice\":101.1767},{\"date\":\"2025-07-07\",\"cumulativeReturn\":null,\"navPrice\":100.9891},{\"date\":\"2025-07-08\",\"cumulativeReturn\":null,\"navPrice\":100.8643},{\"date\":\"2025-07-09\",\"cumulativeReturn\":null,\"navPrice\":100.9059},{\"date\":\"2025-07-10\",\"cumulativeReturn\":null,\"navPrice\":101.1233},{\"date\":\"2025-07-11\",\"cumulativeReturn\":null,\"navPrice\":100.8148},{\"date\":\"2025-07-14\",\"cumulativeReturn\":null,\"navPrice\":100.6555},{\"date\":\"2025-07-15\",\"cumulativeReturn\":null,\"navPrice\":100.4765},{\"date\":\"2025-07-16\",\"cumulativeReturn\":null,\"navPrice\":100.3226},{\"date\":\"2025-07-17\",\"cumulativeReturn\":null,\"navPrice\":100.6247},{\"date\":\"2025-07-18\",\"cumulativeReturn\":null,\"navPrice\":100.8358},{\"date\":\"2025-07-21\",\"cumulativeReturn\":null,\"navPrice\":101.1155},{\"date\":\"2025-07-22\",\"cumulativeReturn\":null,\"navPrice\":101.0692},{\"date\":\"2025-07-23\",\"cumulativeReturn\":null,\"navPrice\":101.2591},{\"date\":\"2025-07-24\",\"cumulativeReturn\":null,\"navPrice\":101.4389},{\"date\":\"2025-07-25\",\"cumulativeReturn\":null,\"navPrice\":101.2152},{\"date\":\"2025-07-28\",\"cumulativeReturn\":null,\"navPrice\":101.1375},{\"date\":\"2025-07-29\",\"cumulativeReturn\":null,\"navPrice\":101.0315},{\"date\":\"2025-07-30\",\"cumulativeReturn\":null,\"navPrice\":100.9812},{\"date\":\"2025-07-31\",\"cumulativeReturn\":null,\"navPrice\":100.4208},{\"date\":\"2025-08-01\",\"cumulativeReturn\":null,\"navPrice\":100.0251},{\"date\":\"2025-08-04\",\"cumulativeReturn\":null,\"navPrice\":100.5181},{\"date\":\"2025-08-05\",\"cumulativeReturn\":null,\"navPrice\":100.5832},{\"date\":\"2025-08-06\",\"cumulativeReturn\":null,\"navPrice\":100.7489},{\"date\":\"2025-08-07\",\"cumulativeReturn\":null,\"navPrice\":100.9577},{\"date\":\"2025-08-08\",\"cumulativeReturn\":null,\"navPrice\":100.9993},{\"date\":\"2025-08-11\",\"cumulativeReturn\":null,\"navPrice\":100.9349},{\"date\":\"2025-08-12\",\"cumulativeReturn\":null,\"navPrice\":101.1492}],\"productName\":\"BLACKROCK WEALTH NAVIGATOR INCOME FUND (CLASS A10-HKDH-MD-C)\",\"indexName\":null,\"currency\":\"HKD\",\"frequency\":\"daily\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

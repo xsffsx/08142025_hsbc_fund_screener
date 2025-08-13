@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62741",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:57:35.392414",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62741%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "0363fa0d-fcc4-487e-9be3-9580a72937d0:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "0FEniF4YgVfk79T1y-o320WgdNWWip-vzX5v3SpHpANhdX8GmCx3mA==",
+        "x-hsbc-request-correlation-id": "c4f573bf-6778-445f-bc87-b0b6e7ae0677",
+        "date": "Wed, 13 Aug 2025 13:57:34 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 cc5461804f39ae1b3956b0f75ed048ce.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "372",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JPMorgan Europe High Yield Bond - USD (Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"USD-HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62744\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2744\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62744\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000288537\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017QZV\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003888\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003888\"}]},{\"productName\":\"JPMorgan Europe High Yield Bond - RMB (Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"RMB-HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62743\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2743\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62743\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000288529\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017QZU\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003887\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003887\"}]},{\"productName\":\"JPMorgan Europe High Yield Bond - HKD (Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"HKD-HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62742\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2742\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62742\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000288511\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017QZT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003886\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003886\"}]},{\"productName\":\"JPMorgan Europe High Yield Bond - AUD (Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"AUD-HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62740\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2740\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62740\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000288495\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017QZR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003884\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003884\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62710",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:46:50.770370",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62710%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "806de5a0-c3f1-45f4-b9b6-aef3b9115e8d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "pAjFit0dTF8AU-Dl7RZqEhYex8ca5D6DkczFmlciilu6WQvUJeNSYQ==",
+        "x-hsbc-request-correlation-id": "1c2e9aa2-37b1-4714-8ec4-75f4abdc710a",
+        "date": "Wed, 13 Aug 2025 13:46:50 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "38",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 8d361c7914c206daa79bc4dcf73475e4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "453",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC CIT - HSBC EUROPEAN MULTI-ASSET INCOME FUND (AM3H-USD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-USDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62708\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"EMAMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62708\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000284890\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017J4R\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003452\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003452\"}]},{\"productName\":\"HSBC CIT - HSBC EUROPEAN MULTI-ASSET INCOME FUND (AM3H-NZD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-NZDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62713\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"EMAMN\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62713\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000284957\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017HOB\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003450\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003450\"}]},{\"productName\":\"HSBC CIT - HSBC EUROPEAN MULTI-ASSET INCOME FUND (AM3H-HKD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-HKDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62709\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"EMAMH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62709\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000284916\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017J4P\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003449\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003449\"}]},{\"productName\":\"HSBC CIT - HSBC EUROPEAN MULTI-ASSET INCOME FUND (AM2-EUR-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM2-EUR-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62707\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"EMAME\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62707\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000284874\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017J4O\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003448\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003448\"}]},{\"productName\":\"HSBC CIT - HSBC EUROPEAN MULTI-ASSET INCOME FUND (AM3H-CAD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-CADH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62711\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"EMAMC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62711\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000284932\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017J4S\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003447\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003447\"}]},{\"productName\":\"HSBC CIT - HSBC EUROPEAN MULTI-ASSET INCOME FUND (AM3H-AUD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-AUDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62712\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"EMAMA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62712\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000284940\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00017J4T\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003446\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003446\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

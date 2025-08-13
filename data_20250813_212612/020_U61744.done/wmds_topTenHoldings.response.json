@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61744",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:51:11.539084",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61744%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "25b3a84a-75ff-4bd4-a66b-2a3dcced4c6e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Gea1u7flDpCWJEUdr_EKyw9AKdlDck-17PD72KrSn-uEjrkGISgBxQ==",
+        "x-hsbc-request-correlation-id": "02b5a622-c669-4037-8414-c9bddbd68ffb",
+        "date": "Wed, 13 Aug 2025 13:51:09 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e6e7ea42488c65b080113b45f9cdebb4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "459",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Penta-Ocean Construction Co Ltd\",\"weighting\":2.56207,\"currency\":\"JPY\",\"marketValue\":846405420},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kumagai Gumi Co Ltd\",\"weighting\":1.9344,\"currency\":\"JPY\",\"marketValue\":639049500},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TIS Inc\",\"weighting\":1.9038,\"currency\":\"JPY\",\"marketValue\":628940000},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Chugoku Marine Paints Ltd\",\"weighting\":1.81566,\"currency\":\"JPY\",\"marketValue\":599822000},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sojitz Corp\",\"weighting\":1.777,\"currency\":\"JPY\",\"marketValue\":587052000},{\"market\":\"JP\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Japan Metropolitan Fund Investment Corp\",\"weighting\":1.74878,\"currency\":\"JPY\",\"marketValue\":577728000},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tokyu Fudosan Holdings Corp\",\"weighting\":1.7372,\"currency\":\"JPY\",\"marketValue\":573903000},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tokyo Tatemono Co Ltd\",\"weighting\":1.73555,\"currency\":\"JPY\",\"marketValue\":573356100},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Internet Initiative Japan Inc\",\"weighting\":1.70738,\"currency\":\"JPY\",\"marketValue\":564051200},{\"market\":\"JP\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Inpex Corp\",\"weighting\":1.67585,\"currency\":\"JPY\",\"marketValue\":553635000}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

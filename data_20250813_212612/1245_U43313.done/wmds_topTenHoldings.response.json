@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43313",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:45:29.497331",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43313%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "45330cfe-4a00-4916-98bd-6b9c06d61249:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "-5XmnA4K2H-W-oWidxObyB0tZEFG4YT5nH_1NWigBB604A-y1Nj9pQ==",
+        "x-hsbc-request-correlation-id": "1f4b429e-98fa-4cf8-8641-9078d242c1e2",
+        "date": "Wed, 13 Aug 2025 13:45:29 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 f10cf45262aac2b7dc4882c2d77020e4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "621",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"BR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Assuredpartners Inc 6.5% 02/16/2031 2024 Term Loans\",\"weighting\":1.67022,\"currency\":\"USD\",\"marketValue\":7841497},{\"market\":\"US\",\"productType\":\"BR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hub International Ltd 6.5% 06/20/2030 2025 Incremental Term Loans\",\"weighting\":1.49141,\"currency\":\"USD\",\"marketValue\":7002012},{\"market\":\"US\",\"productType\":\"BR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ukg Inc 8.81426% 02/09/2031 Initial Term Loan\",\"weighting\":1.40488,\"currency\":\"USD\",\"marketValue\":6595751},{\"market\":\"US\",\"productType\":\"BR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Medline Borrower Lp 6.5% 10/21/2028 Dollar Incremental Term Loans\",\"weighting\":1.27106,\"currency\":\"USD\",\"marketValue\":5967504},{\"market\":\"US\",\"productType\":\"BR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sedgwick Claims Management Services Inc 9.07734% 07/31/2031 2024 Term Loans\",\"weighting\":1.2267,\"currency\":\"USD\",\"marketValue\":5759232},{\"market\":\"US\",\"productType\":\"AP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UTEX INDUSTRIES INC COM USD 1\",\"weighting\":1.19686,\"currency\":\"USD\",\"marketValue\":5619128},{\"market\":\"US\",\"productType\":\"BR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Boost Newco Borrower Llc 6.5% 01/31/2031 Usd Term B-2 Loans\",\"weighting\":1.12232,\"currency\":\"USD\",\"marketValue\":5269178},{\"market\":\"US\",\"productType\":\"BR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mcafee Corp 6.5% 03/01/2029 Tranche B-1 Term Loans\",\"weighting\":1.02537,\"currency\":\"USD\",\"marketValue\":4814023},{\"market\":\"US\",\"productType\":\"BR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Athenahealth Group Inc 6.5% 02/15/2029 First Amendment Term Loan\",\"weighting\":0.9827,\"currency\":\"USD\",\"marketValue\":4613664},{\"market\":\"US\",\"productType\":\"BR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alliant Holdings Intermediate Llc 6.5% 09/19/2031 Initial Term Loans\",\"weighting\":0.93843,\"currency\":\"USD\",\"marketValue\":4405812}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

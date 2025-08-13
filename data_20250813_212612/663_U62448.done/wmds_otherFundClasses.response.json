@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62448",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:30:20.796894",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62448%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "24a5709a-fc7b-4b0f-a6c4-575b24bc2001:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "VrHhz8Kd7u7SS7GtNuuFUT9M5A63qCiV56_ZepaIKeBtjmwtAQzerw==",
+        "x-hsbc-request-correlation-id": "a451deaf-b13a-42f4-bc36-8c50aed381ec",
+        "date": "Wed, 13 Aug 2025 13:30:20 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "35",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 36e3b84feccf13d57d8091ce9cbaa000.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "475",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC IFT - HSBC ASIAN HIGH YIELD BOND FUND (AM3H-SGDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-SGDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63348\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AHMHS\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63348\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000600269\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001JMFT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050701489\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50701489\"}]},{\"productName\":\"HSBC IFT - HSBC Asian High Yield Bond Fund (AM3-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62987\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AHMHR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62987\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349875\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BIN6\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050447760\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50447760\"}]},{\"productName\":\"HSBC ASIAN HIGH YIELD BOND FUND (CLASS AM3-EURH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-EUR-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62590\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AHMHE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62590\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349594\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BFGL\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049529\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049529\"}]},{\"productName\":\"HSBC ASIAN HIGH YIELD BOND FUND (CLASS AM3-AUDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-AUD-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62588\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AHMHA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62588\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349586\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BFGK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049528\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049528\"}]},{\"productName\":\"HSBC ASIAN HIGH YIELD BOND FUND (CLASS AM2-USD-MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"Class AM-USD-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62447\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AHAMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62447\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349578\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BFGJ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046994\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046994\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}
