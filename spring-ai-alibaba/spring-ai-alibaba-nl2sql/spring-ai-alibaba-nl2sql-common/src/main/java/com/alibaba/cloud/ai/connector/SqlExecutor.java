@@ -20,6 +20,8 @@ import com.alibaba.cloud.ai.connector.bo.ResultSetBO;
 import com.alibaba.cloud.ai.connector.support.ResultSetBuilder;
 import com.alibaba.cloud.ai.enums.DatabaseDialectEnum;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
@@ -32,6 +34,8 @@ import java.util.List;
  * 负责执行 SQL 并返回结构化结果。
  */
 public class SqlExecutor {
+
+	private static final Logger log = LoggerFactory.getLogger(SqlExecutor.class);
 
 	public static final Integer RESULT_SET_LIMIT = 1000;
 
@@ -89,9 +93,18 @@ public class SqlExecutor {
 	}
 
 	private static List<String[]> executeQuery(Connection connection, String sql) throws SQLException {
-		try (Statement statement = connection.createStatement(); ResultSet rs = statement.executeQuery(sql)) {
-
-			return ResultSetConverter.convert(rs);
+		long start = System.currentTimeMillis();
+		try (Statement statement = connection.createStatement()) {
+			statement.setMaxRows(RESULT_SET_LIMIT);
+			statement.setQueryTimeout(STATEMENT_TIMEOUT);
+			log.debug("[SqlExecutor] executeQuery(no-schema) maxRows={}, timeout={}s, sql={}", RESULT_SET_LIMIT,
+					STATEMENT_TIMEOUT, sql);
+			try (ResultSet rs = statement.executeQuery(sql)) {
+				List<String[]> rows = ResultSetConverter.convert(rs);
+				log.debug("[SqlExecutor] executeQuery(no-schema) rows={}, cost={}ms", rows.size(),
+						System.currentTimeMillis() - start);
+				return rows;
+			}
 		}
 	}
 
@@ -101,34 +114,42 @@ public class SqlExecutor {
 		DatabaseMetaData metaData = connection.getMetaData();
 		String dialect = metaData.getDatabaseProductName();
 
-		try (Statement statement = connection.createStatement()) {
+		long start = System.currentTimeMillis();
+	try (Statement statement = connection.createStatement()) {
 
-			if (dialect.equals(DatabaseDialectEnum.MYSQL.code)) {
-				if (StringUtils.isNotEmpty(databaseOrSchema)) {
-					statement.execute("use `" + databaseOrSchema + "`;");
-				}
+		statement.setMaxRows(RESULT_SET_LIMIT);
+		statement.setQueryTimeout(STATEMENT_TIMEOUT);
+		log.debug("[SqlExecutor] executeQuery(schema) maxRows={}, timeout={}s, schema={}, dialect={}, sql={}",
+				RESULT_SET_LIMIT, STATEMENT_TIMEOUT, databaseOrSchema, dialect, sql);
+
+		if (dialect.equals(DatabaseDialectEnum.MYSQL.code)) {
+			if (StringUtils.isNotEmpty(databaseOrSchema)) {
+				statement.execute("use `" + databaseOrSchema + "`;");
 			}
-			else if (dialect.equals(DatabaseDialectEnum.POSTGRESQL.code)) {
-				if (StringUtils.isNotEmpty(databaseOrSchema)) {
-					statement.execute("set search_path = '" + databaseOrSchema + "';");
-				}
-			}
-			else if (dialect.equals(DatabaseDialectEnum.ORACLE.code)) {
-				if (StringUtils.isNotEmpty(databaseOrSchema)) {
-					statement.execute("ALTER SESSION SET CURRENT_SCHEMA = " + databaseOrSchema);
-				}
-			}
-
-			ResultSet rs = statement.executeQuery(sql);
-
-			List<String[]> result = ResultSetConverter.convert(rs);
-
-			if (StringUtils.isNotEmpty(databaseOrSchema) && dialect.equals(DatabaseDialectEnum.MYSQL.code)) {
-				statement.execute("use `" + originalDb + "`;");
-			}
-
-			return result;
 		}
+		else if (dialect.equals(DatabaseDialectEnum.POSTGRESQL.code)) {
+			if (StringUtils.isNotEmpty(databaseOrSchema)) {
+				statement.execute("set search_path = '" + databaseOrSchema + "';");
+			}
+		}
+		else if (dialect.equals(DatabaseDialectEnum.ORACLE.code)) {
+			if (StringUtils.isNotEmpty(databaseOrSchema)) {
+				statement.execute("ALTER SESSION SET CURRENT_SCHEMA = " + databaseOrSchema);
+			}
+		}
+
+		ResultSet rs = statement.executeQuery(sql);
+
+		List<String[]> result = ResultSetConverter.convert(rs);
+		log.debug("[SqlExecutor] executeQuery(schema) rows={}, cost={}ms", result.size(),
+					System.currentTimeMillis() - start);
+
+		if (StringUtils.isNotEmpty(databaseOrSchema) && dialect.equals(DatabaseDialectEnum.MYSQL.code)) {
+			statement.execute("use `" + originalDb + "`;");
+		}
+
+		return result;
+	}
 	}
 
 }

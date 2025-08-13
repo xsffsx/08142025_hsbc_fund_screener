@@ -37,6 +37,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
+import java.util.*;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -250,8 +252,21 @@ public class SimpleVectorStoreService extends BaseVectorStoreService {
 		dqp.setTable(tableInfoBO.getName());
 		List<ColumnInfoBO> columnInfoBOS = accessor.showColumns(dbConfig, dqp);
 		for (ColumnInfoBO columnInfoBO : columnInfoBOS) {
-			dqp.setColumn(columnInfoBO.getName());
-			List<String> sampleColumn = dbAccessor.sampleColumn(dbConfig, dqp);
+			long colStart = System.currentTimeMillis();
+			String colName = columnInfoBO.getName();
+			String colType = Optional.ofNullable(columnInfoBO.getType()).orElse("");
+			log.debug("[schema:init] sampling column: {}.{} type={} ...", tableInfoBO.getName(), colName, colType);
+
+			dqp.setColumn(colName);
+			List<String> sampleColumn;
+			if (colType.equalsIgnoreCase("CLOB") || colType.equalsIgnoreCase("NCLOB") || colType.equalsIgnoreCase("BLOB")) {
+				log.debug("[schema:init] skip sampling for LOB column: {}.{}", tableInfoBO.getName(), colName);
+				sampleColumn = Collections.emptyList();
+			}
+			else {
+				sampleColumn = dbAccessor.sampleColumn(dbConfig, dqp);
+			}
+
 			sampleColumn = Optional.ofNullable(sampleColumn)
 				.orElse(new ArrayList<>())
 				.stream()
@@ -263,6 +278,8 @@ public class SimpleVectorStoreService extends BaseVectorStoreService {
 
 			columnInfoBO.setTableName(tableInfoBO.getName());
 			columnInfoBO.setSamples(gson.toJson(sampleColumn));
+			log.debug("[schema:init] sampled {} values for {}.{}, cost={}ms", sampleColumn.size(), tableInfoBO.getName(), colName,
+					System.currentTimeMillis() - colStart);
 		}
 
 		ColumnInfoBO primaryColumnDO = columnInfoBOS.stream()

@@ -260,7 +260,7 @@ public class OracleJdbcDdl extends AbstractJdbcDdl {
 
 	@Override
 	public List<String> sampleColumn(Connection connection, String schema, String table, String column) {
-		String sql = "SELECT \"%s\" FROM \"%s\" WHERE ROWNUM <= 99";
+		String sql = "SELECT \"%s\" FROM \"%s\" WHERE ROWNUM <= 20";
 		List<String> sampleInfo = Lists.newArrayList();
 		try {
 			String finalSql = String.format(sql, column, table);
