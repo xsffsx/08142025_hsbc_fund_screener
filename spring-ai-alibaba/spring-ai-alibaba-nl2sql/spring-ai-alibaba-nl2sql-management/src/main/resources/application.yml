@@ -161,6 +161,11 @@ logging:
     org.springframework.transaction: INFO
     org.apache.http: WARN
     org.springframework.web.client: INFO
+    com.zaxxer.hikari.pool: INFO
+    org.apache.catalina.session: INFO
+    org.apache.coyote.http11: INFO
+    org.apache.coyote: INFO
+    org.apache.http.wire: OFF
 
     # 🔴 关闭最占用空间的两个无用日志
     org.apache.hc.client5.http.wire: OFF                    # Apache HTTP Client Wire 日志 - 包含完整 embedding 向量数据
