@@ -244,15 +244,15 @@ public class AgentVectorStoreManager {
 	 */
 	public int getDocumentCount(String agentId) {
 		SimpleVectorStore store = agentStores.get(agentId);
-		if (store == null) {
+		// 空库直接返回 0；仅在 hasData=true 时执行一次非空查询
+		if (store == null || !hasAgentData(agentId)) {
 			return 0;
 		}
 
 		try {
-			// 通过搜索所有文档来估算数量
 			List<Document> allDocs = store.similaritySearch(org.springframework.ai.vectorstore.SearchRequest.builder()
-				.query("")
-				.topK(Integer.MAX_VALUE)
+				.query("vector-count-probe")
+				.topK(10_000)
 				.build());
 			return allDocs.size();
 		}
