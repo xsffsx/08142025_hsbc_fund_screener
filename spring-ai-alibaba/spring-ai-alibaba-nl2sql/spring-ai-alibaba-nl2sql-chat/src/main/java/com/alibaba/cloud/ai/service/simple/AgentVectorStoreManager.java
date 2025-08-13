@@ -94,8 +94,24 @@ public class AgentVectorStoreManager {
 		int totalChars = documents.stream().mapToInt(d -> d.getText() != null ? d.getText().length() : 0).sum();
 		int estTokens = Math.max(1, totalChars / 4); // 粗略估算，避免0，便于排序
 		log.info("[Embedding] batch stats: count={}, totalChars={}, estTokens≈{}", n, totalChars, estTokens);
+		// 过滤空文本，避免 embedding 调用 400 "$.input is invalid"
+		List<Document> safeDocs = documents.stream().filter(d -> {
+			String t = d.getText();
+			boolean ok = t != null && !t.trim().isEmpty();
+			if (!ok) {
+				log.warn("Skipping empty-text document for agent {}: id={} metadata={}", agentId, d.getId(), d.getMetadata());
+			}
+			return ok;
+		}).toList();
+		if (safeDocs.size() != documents.size()) {
+			log.info("Filtered {} empty-text documents (kept {} of {})", documents.size() - safeDocs.size(), safeDocs.size(), documents.size());
+		}
 		SimpleVectorStore store = getOrCreateVectorStore(agentId);
-		store.add(documents);
+		if (!safeDocs.isEmpty()) {
+			store.add(safeDocs);
+		} else {
+			log.warn("No non-empty documents to add for agent: {}", agentId);
+		}
 		long duration = System.currentTimeMillis() - startTime;
 		log.info("✅ Added {} documents to vector store for agent: {} ({}ms)", documents.size(), agentId, duration);
 		log.debug("📊 Agent {} now has approximately {} documents", agentId, getDocumentCount(agentId));
