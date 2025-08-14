@@ -1,0 +1,14 @@
+ schemaname |     tablename     |        indexname        |                                             indexdef                                              
+------------+-------------------+-------------------------+---------------------------------------------------------------------------------------------------
+ public     | hsbc_fund_unified | hsbc_fund_unified_pkey  | CREATE UNIQUE INDEX hsbc_fund_unified_pkey ON public.hsbc_fund_unified USING btree (product_code)
+ public     | hsbc_fund_unified | idx_hfu_allow_buy       | CREATE INDEX idx_hfu_allow_buy ON public.hsbc_fund_unified USING btree (allow_buy)
+ public     | hsbc_fund_unified | idx_hfu_chart_ts_gin    | CREATE INDEX idx_hfu_chart_ts_gin ON public.hsbc_fund_unified USING gin (chart_timeseries)
+ public     | hsbc_fund_unified | idx_hfu_currency        | CREATE INDEX idx_hfu_currency ON public.hsbc_fund_unified USING btree (currency)
+ public     | hsbc_fund_unified | idx_hfu_hold_alloc_gin  | CREATE INDEX idx_hfu_hold_alloc_gin ON public.hsbc_fund_unified USING gin (holding_allocation)
+ public     | hsbc_fund_unified | idx_hfu_nav_date        | CREATE INDEX idx_hfu_nav_date ON public.hsbc_fund_unified USING btree (nav_date)
+ public     | hsbc_fund_unified | idx_hfu_risk_json_gin   | CREATE INDEX idx_hfu_risk_json_gin ON public.hsbc_fund_unified USING gin (risk_json)
+ public     | hsbc_fund_unified | idx_hfu_risk_level      | CREATE INDEX idx_hfu_risk_level ON public.hsbc_fund_unified USING btree (risk_level)
+ public     | hsbc_fund_unified | idx_hfu_summary_cum_gin | CREATE INDEX idx_hfu_summary_cum_gin ON public.hsbc_fund_unified USING gin (summary_cumulative)
+ public     | hsbc_fund_unified | idx_hfu_top10_gin       | CREATE INDEX idx_hfu_top10_gin ON public.hsbc_fund_unified USING gin (top10_holdings)
+(10 rows)
+

@@ -1,0 +1,68 @@
+       column_name       |          data_type          | is_nullable | column_default | character_maximum_length 
+-------------------------+-----------------------------+-------------+----------------+--------------------------
+ product_code            | text                        | NO          |                |                         
+ isin_code               | text                        | YES         |                |                         
+ family_code             | text                        | YES         |                |                         
+ family_name             | text                        | YES         |                |                         
+ name                    | text                        | YES         |                |                         
+ risk_level              | smallint                    | YES         |                |                         
+ category_lv1_code       | text                        | YES         |                |                         
+ category_lv1_name       | text                        | YES         |                |                         
+ hsbc_category_code      | text                        | YES         |                |                         
+ hsbc_category_name      | text                        | YES         |                |                         
+ currency                | character                   | YES         |                |                        3
+ tradable_ccy            | ARRAY                       | YES         |                |                         
+ nav                     | numeric                     | YES         |                |                         
+ nav_date                | date                        | YES         |                |                         
+ week_range_low          | numeric                     | YES         |                |                         
+ week_range_high         | numeric                     | YES         |                |                         
+ week_range_ccy          | character                   | YES         |                |                        3
+ allow_buy               | boolean                     | YES         |                |                         
+ allow_sell              | boolean                     | YES         |                |                         
+ allow_sw_in             | boolean                     | YES         |                |                         
+ allow_sw_out            | boolean                     | YES         |                |                         
+ allow_sell_mip          | boolean                     | YES         |                |                         
+ inv_min_init            | numeric                     | YES         |                |                         
+ inv_min_subq            | numeric                     | YES         |                |                         
+ invst_init_min_amt      | numeric                     | YES         |                |                         
+ fund_sw_in_min_amt      | numeric                     | YES         |                |                         
+ fund_sw_out_min_amt     | numeric                     | YES         |                |                         
+ rdm_min_amt             | numeric                     | YES         |                |                         
+ mip_min_amt             | numeric                     | YES         |                |                         
+ mip_incrm_min_amt       | numeric                     | YES         |                |                         
+ retain_min_units        | numeric                     | YES         |                |                         
+ sw_out_retain_min_units | numeric                     | YES         |                |                         
+ expense_ratio           | numeric                     | YES         |                |                         
+ ongoing_charge          | numeric                     | YES         |                |                         
+ annual_mgmt_fee         | numeric                     | YES         |                |                         
+ assets_under_mgmt       | numeric                     | YES         |                |                         
+ aum_ccy                 | character                   | YES         |                |                        3
+ shares_outstanding      | numeric                     | YES         |                |                         
+ next_deal_date          | date                        | YES         |                |                         
+ inception_date          | date                        | YES         |                |                         
+ launch_date             | date                        | YES         |                |                         
+ attribute_map           | jsonb                       | YES         |                |                         
+ alt_codes               | jsonb                       | YES         |                |                         
+ summary_calendar_year   | jsonb                       | YES         |                |                         
+ summary_cumulative      | jsonb                       | YES         |                |                         
+ price_quote             | jsonb                       | YES         |                |                         
+ holding_details         | jsonb                       | YES         |                |                         
+ to_new_investors        | jsonb                       | YES         |                |                         
+ fees_and_expenses       | jsonb                       | YES         |                |                         
+ morningstar_ratings     | jsonb                       | YES         |                |                         
+ mgmt_contact            | jsonb                       | YES         |                |                         
+ investment_strategy     | jsonb                       | YES         |                |                         
+ yield_and_credit        | jsonb                       | YES         |                |                         
+ rating                  | jsonb                       | YES         |                |                         
+ risk_json               | jsonb                       | YES         |                |                         
+ profile                 | jsonb                       | YES         |                |                         
+ holding_allocation      | jsonb                       | YES         |                |                         
+ top10_holdings          | jsonb                       | YES         |                |                         
+ chart_timeseries        | jsonb                       | YES         |                |                         
+ other_fund_classes      | jsonb                       | YES         |                |                         
+ search_criteria         | jsonb                       | YES         |                |                         
+ raw_files               | jsonb                       | YES         |                |                         
+ created_at              | timestamp without time zone | NO          | now()          |                         
+ updated_at              | timestamp without time zone | NO          | now()          |                         
+(64 rows)
+
