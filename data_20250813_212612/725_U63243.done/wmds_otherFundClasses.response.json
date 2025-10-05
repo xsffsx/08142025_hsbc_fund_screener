@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63243",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:42:54.380992",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63243%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "8f92d120-37dd-4dde-87bd-4967e27bf79d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "jdG8S174RS9Z_ZZAsm37J5ugntmrvRfe3Vievb2ydDaTdOTYgaG8UA==",
+        "x-hsbc-request-correlation-id": "318fa0e3-5fbe-4944-a496-3978d422489f",
+        "date": "Wed, 13 Aug 2025 13:42:53 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "32",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 619e9f7b6fc5db300230b5cfc11ec0ca.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "418",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF-GLOBAL INVESTMENT GRADE SECURITISED CREDIT BOND-AM3H-GBPH-MDC\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A3-GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63254\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GIGSG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63254\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2475504457\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001OY5R\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050575800\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50575800\"}]},{\"productName\":\"HSBC GIF-GLOBAL INVESTMENT GRADE SECURITISED CREDIT BOND(AM2-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A2-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63240\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GAAMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63240\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1728044204\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001CC7A\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050570662\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50570662\"}]},{\"productName\":\"HSBC GIF-GLOBAL INVESTMENT GRADE SECURITISED CREDIT BOND(AM2-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A2-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63241\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GAAMH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63241\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1819531440\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DH1V\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050570660\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50570660\"}]},{\"productName\":\"HSBC GIF-GLOBAL INVESTMENT GRADE SECURITISED CREDIT BOND-AM3H-AUDH-MDC\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A3-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63242\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GAAMA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63242\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1728044626\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001CC76\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050570659\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50570659\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+batch:
+  graphQLUrl: "https://product-graphql-b-debug.uat.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+  file:
+    pattern: "^{ctryRecCde}_{grpMembrRecCde}_{systemCde}_(ELI)(.*)_(\\d{14})\\.[Xx][Mm][Ll]$"
+  size: 50
+  format:
+    allow: AMHGSOPS.PD
+  create:
+    not-allow: AMHGSOPS.PD
+  underlying:
+    prodtype:
+      code: SEC,ELI,INDEX,FX
+
+system-update-config:
+  - systemCde: "AMHGSOPS.PD"
+    config:
+      - collection: product
+        updateAttrs:
+          - "prodShrtName"
+          - "prodShrtPllName"
+          - "ccyProdCde"
+          - "prodLnchDt"
+          - "prodMturDt"
+          - "divrNum"
+          #- "mrkToMktInd"
+          - "prodNarrText"
+          - "allowBuyProdInd"
+          - "allowSellProdInd"
+          - "allowSellMipProdInd"
+          - "allowSwInProdInd"
+          - "allowSwOutProdInd"
+          - "eqtyLinkInvst.valnDt"
+          - "eqtyLinkInvst.undlStock"
+          - "eqtyLinkInvst.dscntSellPct"
+          - "altId"

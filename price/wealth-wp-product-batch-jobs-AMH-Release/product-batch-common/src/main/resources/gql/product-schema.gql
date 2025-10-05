@@ -1,0 +1,6 @@
+query graphQLTypeSchema($graphQLType:String!) {
+  graphQLTypeSchema(graphQLType: $graphQLType) {
+    name
+    typeName
+  }
+}

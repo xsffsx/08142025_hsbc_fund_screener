@@ -1,0 +1,22 @@
+spring:
+  batch:
+    initialize-schema: always
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: org.postgresql.Driver
+  data:
+    mongodb:
+      host:
+      port: 27017
+      database:
+      username:
+      password:
+      enable-replica: false
+  main:
+    web-application-type: none
+
+batch:
+  file-pattern: HS@MDFP.*\.txt
+  chunk-size: 100

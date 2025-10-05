@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62902",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:40.629166",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62902%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "5356d453-39a1-480f-a7ba-3eba6d289c6f:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "zk0G_8WMK2aQiXcfHmU2rMh74Z8P6lg3NvgOEl0pCbWTXaWy57GLwQ==",
+        "x-hsbc-request-correlation-id": "0df292e9-6a98-4790-a6bb-003bb19efbb2",
+        "date": "Wed, 13 Aug 2025 13:47:39 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "33",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 928b9a46c60991369db0a5ad58525eca.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "471",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF - INDIA FIXED INCOME (CLASS AM2-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62903\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HIFAH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62903\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1819531796\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DH2F\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050105372\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50105372\"}]},{\"productName\":\"HSBC GIF - INDIA FIXED INCOME (CLASS AM3O-GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63360\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HIFAG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63360\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2639849780\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RKCO\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050713183\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50713183\"}]},{\"productName\":\"HSBC GIF - INDIA FIXED INCOME (CLASS AM3O-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62904\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HIFAA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62904\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1819531879\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DH2G\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050105371\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50105371\"}]},{\"productName\":\"HSBC GIF - INDIA FIXED INCOME (CLASS AM3O-EURH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-EURH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62905\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HIFOE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62905\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1819531952\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DH2H\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050105375\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50105375\"}]},{\"productName\":\"HSBC GIF- INDIA FIXED INCOME(CLASS AM3O-CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63359\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HIFMC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63359\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2639849608\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RKCP\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050713184\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50713184\"}]},{\"productName\":\"HSBC GIF - INDIA FIXED INCOME (CLASS AM3O-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62906\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HIFAR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62906\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1865935297\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001EC3G\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050105374\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50105374\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+HSBC Fund Screener Debug Log
+Generated: 20250906_183129
+Total Log Entries: 11
+================================================================================
+
+Entry #01:
+{'timestamp': '2025-09-06T18:31:48.104491', 'step': '步骤2', 'action': '找到下拉框', 'details': {'selector': '#dropdown-riskLevel', 'element_type': 'A标签'}}
+------------------------------------------------------------
+
+Entry #02:
+{'timestamp': '2025-09-06T18:31:48.144369', 'step': '步骤2', 'action': '点击下拉框', 'details': {'selector': '#dropdown-riskLevel', 'success': True}}
+------------------------------------------------------------
+
+Entry #03:
+{'timestamp': '2025-09-06T18:31:49.174107', 'step': '步骤2', 'action': '成功选择选项', 'details': {'selector': 'li:has-text("Speculative - 5")', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #04:
+{'timestamp': '2025-09-06T18:31:49.683668', 'step': '步骤3', 'action': '找到搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'element_type': 'A标签', 'success': True}}
+------------------------------------------------------------
+
+Entry #05:
+{'timestamp': '2025-09-06T18:31:50.313673', 'step': '步骤3', 'action': '成功点击搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #06:
+{'timestamp': '2025-09-06T18:31:55.479836', 'step': '步骤4', 'action': '成功点击Holdings标签', 'details': {'selector': 'button:has-text("Holdings"), a:has-text("Holdings"), [data-testid*="holdings"], [data-testid*="Holdings"]', 'success': True}}
+------------------------------------------------------------
+
+Entry #07:
+{'timestamp': '2025-09-06T18:31:57.483933', 'step': '步骤4', 'action': 'Holdings页面切换状态不明', 'details': {'url': 'https://investments3.personal-banking.hsbc.com.hk/public/utb/en-gb/fundScreenerResult', 'content_found': False, 'warning': True}}
+------------------------------------------------------------
+
+Entry #08:
+{'timestamp': '2025-09-06T18:32:00.502113', 'step': '步骤4.1', 'action': '成功点击Top 5 bond sector子标签', 'details': {'selector': 'li:has-text("Top 5 bond sector"), button:has-text("Top 5 bond sector"), a:has-text("Top 5 bond sector")', 'action': 'click_subtab', 'success': True}}
+------------------------------------------------------------
+
+Entry #09:
+{'timestamp': '2025-09-06T18:32:03.536420', 'step': '步骤4.2', 'action': '成功点击Fund列标题排序', 'details': {'selector': '[data-locale-key="OrderScreener.H_TABLE_FUND_CODE"], th:has-text("Fund")', 'action': 'click_sort', 'success': True}}
+------------------------------------------------------------
+
+Entry #10:
+{'timestamp': '2025-09-06T18:32:06.538801', 'step': '步骤4.2', 'action': '跳过Fund列标题排序', 'details': {'action': 'skip_fund_sort', 'reason': '使用默认排序获取地理区域数据', 'success': True}}
+------------------------------------------------------------
+
+Entry #11:
+{'timestamp': '2025-09-06T18:32:08.541370', 'step': '步骤5', 'action': '使用默认显示数量', 'details': {'action': 'skip_display_adjustment', 'reason': '使用页面默认显示数量', 'success': True}}
+------------------------------------------------------------
+

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62487",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:39:53.621745",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62487%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "5f505b52-ab28-4100-b5ec-50bbaef0c1da:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "am9JoUnUfooDFDOHKQXABh-2EkMbiX8nmGoC2FA07U49JU-3y0wpvg==",
+        "x-hsbc-request-correlation-id": "5c4bc15e-77b7-43e4-b9d8-64043b86990d",
+        "date": "Wed, 13 Aug 2025 13:39:53 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "44",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2e4090c5117f92dd57a3a8b0cbf9daa4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "547",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CN\",\"productType\":\"DS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Fujian Energy Group Co. Ltd. 3.46%\",\"weighting\":8.92717,\"currency\":\"MYR\",\"marketValue\":4124400},{\"market\":null,\"productType\":\"BQ\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Yanchang Petroleum Group Co Ltd 3.54% A Perp\",\"weighting\":8.85358,\"currency\":\"MYR\",\"marketValue\":4090400},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Financial Street Hldgs Co Ltd 3.29% A\",\"weighting\":8.77321,\"currency\":\"MYR\",\"marketValue\":4053271},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Csc Financial Co Ltd 2.86% A\",\"weighting\":8.71367,\"currency\":\"MYR\",\"marketValue\":4025760},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cofco Commercial Property Investmen Co Ltd 3.2% A\",\"weighting\":8.70293,\"currency\":\"MYR\",\"marketValue\":4020800},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Shanghai Waigaoqiao Free Trade Zone Group Co Ltd 3.19% A\",\"weighting\":8.6973,\"currency\":\"MYR\",\"marketValue\":4018200},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ningbo Commercial Group Co Ltd 2.9% A\",\"weighting\":6.50057,\"currency\":\"MYR\",\"marketValue\":3003300},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Will Semiconductor Ltd Shanghai Cb 0.2% A\",\"weighting\":4.90194,\"currency\":\"MYR\",\"marketValue\":2264722},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wingtech Technology Co Ltd Cb 0.1% A\",\"weighting\":4.90011,\"currency\":\"MYR\",\"marketValue\":2263876},{\"market\":null,\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Py 30y Treasury Bond Etf\",\"weighting\":4.56798,\"currency\":\"MYR\",\"marketValue\":2110431}],\"lastUpdatedDate\":\"2024-12-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

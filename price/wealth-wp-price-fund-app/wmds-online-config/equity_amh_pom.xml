@@ -1,0 +1,108 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hhhh.group.secwealth.mktdata</groupId>
+	<artifactId>wmds-online-config</artifactId>
+	<name>wmds-online-config</name>
+	<packaging>pom</packaging>
+	<description>Config container</description>
+	<version>${project.version}</version>
+
+	<parent>
+		<groupId>com.hhhh.group.secwealth.mktdata</groupId>
+		<artifactId>wmds-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<project.version>1.0.0-SNAPSHOT</project.version>
+		<environment>src/main/resources/Local</environment>
+		<common_env>src/main/resources/common_config</common_env>
+		<server.xml>src/main/resources/wlp_local_config</server.xml>
+	</properties>
+
+	<profiles>
+		<!-- AMH_EQTY -->
+		<profile>
+			<id>DEV_AMH_EQTY</id>
+			<properties>
+				<project.version>1.0.0-DEV_AMH_EQTY-SNAPSHOT</project.version>
+				<environment>src/main/resources/DEV_AMH_EQTY/resources</environment>
+				<server.xml>src/main/resources/DEV_AMH_EQTY/wlp_config</server.xml>
+				<common_env>src/main/resources/common_config/lib</common_env>
+			</properties>
+		</profile>
+		<profile>
+			<id>SIT_AMH_EQTY</id>
+			<properties>
+				<project.version>1.0.0-SIT_AMH_EQTY-SNAPSHOT</project.version>
+				<environment>src/main/resources/SIT_AMH_EQTY/resources</environment>
+				<server.xml>src/main/resources/SIT_AMH_EQTY/wlp_config</server.xml>
+				<common_env>src/main/resources/common_config/lib</common_env>
+			</properties>
+		</profile>
+		<profile>
+			<id>UAT_AMH_EQTY</id>
+			<properties>
+				<project.version>1.0.0-UAT_AMH_EQTY-SNAPSHOT</project.version>
+				<environment>src/main/resources/UAT_AMH_EQTY/resources</environment>
+				<server.xml>src/main/resources/UAT_AMH_EQTY/wlp_config</server.xml>
+				<common_env>src/main/resources/common_config/lib</common_env>
+			</properties>
+		</profile>
+		<profile>
+			<id>PSE_AMH_EQTY</id>
+			<properties>
+				<project.version>1.0.0-PSE_AMH_EQTY-SNAPSHOT</project.version>
+				<environment>src/main/resources/PSE_AMH_EQTY/resources</environment>
+				<server.xml>src/main/resources/PSE_AMH_EQTY/wlp_config</server.xml>
+				<common_env>src/main/resources/common_config/lib</common_env>
+			</properties>
+		</profile>
+		<profile>
+			<id>SKM_AMH_EQTY</id>
+			<properties>
+				<project.version>1.0.0-SKM_AMH_EQTY-${timestamp}</project.version>
+				<environment>src/main/resources/SKM_AMH_EQTY/resources</environment>
+				<server.xml>src/main/resources/SKM_AMH_EQTY/wlp_config</server.xml>
+				<common_env>src/main/resources/common_config/lib</common_env>
+			</properties>
+		</profile>
+		<profile>
+			<id>TKO_AMH_EQTY</id>
+			<properties>
+				<project.version>1.0.0-TKO_AMH_EQTY-${timestamp}</project.version>
+				<environment>src/main/resources/TKO_AMH_EQTY/resources</environment>
+				<server.xml>src/main/resources/TKO_AMH_EQTY/wlp_config</server.xml>
+				<common_env>src/main/resources/common_config/lib</common_env>
+			</properties>
+		</profile>
+		<!-- AMH_EQTY end-->
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2-beta-1</version>
+				<configuration>
+					<descriptors>
+						<descriptor>config-resources.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

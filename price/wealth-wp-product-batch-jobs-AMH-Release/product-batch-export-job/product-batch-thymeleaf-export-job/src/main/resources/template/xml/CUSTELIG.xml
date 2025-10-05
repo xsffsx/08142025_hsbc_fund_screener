@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prodTradElgLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <prodTradElg th:each="product : ${documents}">
+        <prodKeySeg>
+            <ctryRecCde th:text="${product.get('ctryRecCde')}"/>
+            <grpMembrRecCde th:text="${product.get('grpMembrRecCde')}"/>
+            <prodTypeCde th:text="${product.get('prodTypeCde')}"/>
+            <prodCde th:text="${product.get('prodCde')}"/>
+        </prodKeySeg>
+        <prodTraEligSeg th:with="elig=${product.get('tradeElig')}">
+            <ovridEligCuspCatInd product:notNull="${elig.get('ovridCuspCatEligInd')}"/>
+            <reqCmplRpqInd product:notNull="${elig?.get('reqCmplRpqInd')}"/>
+            <ovridReqCmplRpqInd product:notNull="${elig?.get('ovridReqCmplRpqInd')}"/>
+            <prdVlidRpqCde product:notNull="${elig?.get('prdVlidRpqCde')}"/>
+            <prdVlidRpqNum product:notNull="${#objects.nullSafe(elig?.get('prdVlidRpqNum'), 0)}"/>
+            <ovridRpqVlidPrdInd product:notNull="${elig?.get('ovridRpqVlidPrdInd')}"/>
+            <actionLowRpqScrText product:notNull="${elig?.get('actionLowRpqScrText')}"/>
+            <ovridReqFormInd product:notNull="${elig?.get('ovridReqFormInd')}"/>
+            <ageAllowTrdMinNum product:notNull="${#objects.nullSafe(elig?.get('ageAllowTrdMinNum'), 0)}"/>
+            <ageAllowTrdMaxNum product:notNull="${#objects.nullSafe(elig?.get('ageAllowTrdMaxNum'), 0)}"/>
+            <ovridMinAgeRestrInd product:notNull="${elig?.get('ovridMinAgeRestrInd')}"/>
+            <ovridMaxAgeRestrInd product:notNull="${elig?.get('ovridMaxAgeRestrInd')}"/>
+            <operTypeCde product:notNull="${elig?.get('operTypeCde')}"/>
+            <ovridCorsCtryChkInd product:notNull="${elig?.get('ovridCorsCtryChkInd')}"/>
+            <ovridResCtryChkInd product:notNull="${elig?.get('ovridResCtryChkInd')}"/>
+            <ovridNatlChkInd product:notNull="${elig?.get('ovridNatlChkInd')}"/>
+            <reqInvstHldgChkInd product:notNull="${elig?.get('reqInvstHldgChkInd')}"/>
+            <ovridInvstHldgChkInd product:notNull="${elig?.get('ovridInvstHldgChkInd')}"/>
+            <ovridRestrCtryChkInd product:notNull="${elig?.get('ovridRestrFisclCtryChkInd')}"/>
+        </prodTraEligSeg>
+        <custCateEligSeg th:each="rcg:${product.get('restrCustGroup')}">
+            <cuspCatCde th:text="${rcg?.custProdCatCde}"/>
+            <eligCuspCatInd th:text="${rcg?.eligCuspCatInd}"/>
+        </custCateEligSeg>
+        <custFormEligSeg th:each="frt:${product.get('formReqmt')}">
+            <formReqCde th:text="${frt?.formReqCde}"/>
+        </custFormEligSeg>
+        <prodRestCustCtrySeg th:each="rcc:${product.get('restrCustCtry')}">
+            <restrCtryTypeCde th:text="${rcc?.restrCtryTypeCde}"/>
+            <ctryIsoCde th:text="${rcc?.ctryIsoCde}"/>
+            <restrCde th:text="${rcc?.restrCde}"/>
+        </prodRestCustCtrySeg>
+        <recDtTmSeg th:with="elig=${product.get('tradeElig')}">
+            <recCreatDtTm th:text="${#timeZones.format(elig.recCreatDtTm, 'yyyy-MM-dd HH:mm:ss')}"/>
+            <recUpdtDtTm th:text="${#timeZones.format(elig.recUpdtDtTm, 'yyyy-MM-dd HH:mm:ss')}"/>
+            <timeZone product:notNull="${#timeZones.get()}"/>
+        </recDtTmSeg>
+    </prodTradElg>
+</prodTradElgLst>

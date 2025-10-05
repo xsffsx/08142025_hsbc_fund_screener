@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62846",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:47.295951",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62846%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "4dbe9a5b-c24e-4336-95dc-09b74e5b9b9d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "uAsCrDcsgziY4hHyKDCtUSueso_joYZ19H8MftSbRBoMIx16HPqCzg==",
+        "x-hsbc-request-correlation-id": "8638d12b-1b51-4fb6-9aa8-09bd28f9bd6c",
+        "date": "Wed, 13 Aug 2025 13:38:46 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 cfdb67f0afc2541274fe78c533711e9e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "474",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 6%\",\"weighting\":10.45986,\"currency\":\"USD\",\"marketValue\":9937286010},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 6.5%\",\"weighting\":10.19705,\"currency\":\"USD\",\"marketValue\":9687600098},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future June 25\",\"weighting\":9.63891,\"currency\":\"USD\",\"marketValue\":9157344625},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 5%\",\"weighting\":8.5023,\"currency\":\"USD\",\"marketValue\":8077519356},{\"market\":\"GB\",\"productType\":\"DM\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Low Sulphur Gas Oil Futures June25\",\"weighting\":6.95451,\"currency\":\"USD\",\"marketValue\":6607065349},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 5.5%\",\"weighting\":6.77855,\"currency\":\"USD\",\"marketValue\":6439889792},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future June 25\",\"weighting\":4.32821,\"currency\":\"USD\",\"marketValue\":4111968529},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 6%\",\"weighting\":3.16816,\"currency\":\"USD\",\"marketValue\":3009874134},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association 6.5%\",\"weighting\":3.0802,\"currency\":\"USD\",\"marketValue\":2926312754},{\"market\":\"US\",\"productType\":\"TP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes 1.875%\",\"weighting\":2.95482,\"currency\":\"USD\",\"marketValue\":2807194853}],\"lastUpdatedDate\":\"2025-03-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

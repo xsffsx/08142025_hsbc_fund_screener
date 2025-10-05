@@ -1,0 +1,77 @@
+{
+  "matchCount": 1,
+  "invalidProducts": [
+    {
+      "product": {
+        "ctryRecCde": "HK",
+        "grpMembrRecCde": "HBAP",
+        "prodId": 50398351,
+        "prodTypeCde": "BOND",
+        "prodSubtpCde": "CORPBOND",
+        "prodCde": "50398351",
+        "prodAltPrimNum": "XS2001732010",
+        "prodName": "Huarong Finance 2019 Company Limited 3.375% 29 May 2022 USD BOND",
+        "prodShrtName": "HUARONG FIN 3.375 29MAY22",
+        "prodDesc": " ",
+        "prodStatCde": "S",
+        "ccyProdCde": "USD",
+        "prodLnchDt": "2019-05-23",
+        "allowBuyProdInd": "Y",
+        "allowSellProdInd": "Y",
+        "allowBuyUtProdInd": "Y",
+        "allowBuyAmtProdInd": "N",
+        "allowSellUtProdInd": "Y",
+        "allowSellAmtProdInd": "N",
+        "allowSellMipProdInd": "N",
+        "allowSellMipUtProdInd": "N",
+        "allowSellMipAmtProdInd": "N",
+        "allowSwInProdInd": "N",
+        "allowSwInUtProdInd": "N",
+        "allowSwInAmtProdInd": "N",
+        "allowSwOutProdInd": "N",
+        "allowSwOutUtProdInd": "N",
+        "allowSwOutAmtProdInd": "N",
+        "incmCharProdInd": "Y",
+        "cptlGurntProdInd": "Y",
+        "yieldEnhnProdInd": "N",
+        "grwthCharProdInd": "N",
+        "prtyProdSrchRsultNum": 0,
+        "dispComProdSrchInd": "Y",
+        "mrkToMktInd": "Y",
+        "ccyInvstCde": "USD",
+        "qtyUnitProdCde": "FMT",
+        "prodLocCde": "MSC",
+        "dcmlPlaceTradeUnitNum": 0,
+        "pldgLimitAssocAcctInd": "N",
+        "prodStatUpdtDtTm": "2022-10-20T09:42:01.146Z",
+        "recCreatDtTm": "2020-04-16T03:31:33.086Z",
+        "recUpdtDtTm": "2022-10-20T09:24:44.206Z",
+        "suptRcblCashProdInd": "N",
+        "suptRcblScripProdInd": "N",
+        "asetUnderMgmtChrgProdInd": "N",
+        "invstInitMinAmt": 200000.0,
+        "divrNum": 100.0,
+        "recStgcFinPlnUpdtDtTm": "2020-04-16T03:31:33.086Z",
+        "createdBy": "load",
+        "lastUpdatedBy": "product-data-processing"
+      },
+      "errors": [
+        {
+          "jsonPath": "debtInstm.prodIssDt",
+          "code": "debtInstm.prodIssDt@spel",
+          "message": "Issue Date[Product Issue Date] should be before Maturity Date[Product Maturity Date ]"
+        },
+        {
+          "jsonPath": "debtInstm.credRtng[0].creditRtngCde",
+          "code": "debtInstm.credRtng[*].creditRtngCde@referenceData",
+          "message": "Reference data doesn't exist: {cdvTypeCde=CRMOODYS, cdvCde=WR}"
+        },
+        {
+          "jsonPath": "cmplxProdInd",
+          "code": "cmplxProdInd@enum",
+          "message": "Value should be one of the enum values [S, C], value=Y"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63534",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:28:19.808122",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63534%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "367d3a96-b771-4301-8e89-ee2dfb413b62:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "F2hsf4Hzq8iYdvO8Xn2h6k3ViXK_ujUEdVA4rhif6wYnKNEQDiyJrg==",
+        "x-hsbc-request-correlation-id": "c7ca66c4-7229-4c43-bd26-e882af94df4a",
+        "date": "Wed, 13 Aug 2025 13:28:19 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 be8185e52ca0edbbdfda1ac2c66c1972.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "361",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"SCHRODER FLEXI TOTAL RETURN FUND (CLASS R-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS R-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63538\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3538\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63538\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001122081\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UX8M\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000139339\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000139339\"}]},{\"productName\":\"SCHRODER FLEXI TOTAL RETURN FUND (CLASS R-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS R-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63537\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3537\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63537\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001122099\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UX8N\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000139338\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000139338\"}]},{\"productName\":\"SCHRODER FLEXI TOTAL RETURN FUND (CLASS R-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS R-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63536\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3536\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63536\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001122123\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UYG0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000139337\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000139337\"}]},{\"productName\":\"SCHRODER FLEXI TOTAL RETURN FUND (CLASS R-GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS R-GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63535\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3535\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63535\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001122107\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UX8O\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000139336\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000139336\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

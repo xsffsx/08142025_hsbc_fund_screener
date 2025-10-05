@@ -1,0 +1,23 @@
+{
+  "_id" : "ALL/user-defined-field-mapping",
+  "forEntity" : "ALL",
+  "name" : "user-defined-field-mapping",
+  "description" : "User Defined Field Mapping",
+  "config" : {
+    "ext" : [
+      {
+        "jsonPath": "afterRemodel",
+        "fieldCde": "beforeRemodel",
+        "fieldDataTypeText": "String",
+        "fieldTypeCde": "A"
+      }
+    ],
+    "udf" : [
+      {
+        "jsonPath" : "udf.udf01",
+        "fieldCde" : "UDF_01",
+        "fieldTypeCde" : "U"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+spring:
+  batch:
+    job:
+      enabled: false
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  main:
+    web-application-type: none
+
+batch:
+  file-pattern: HS@MDFP.*\.txt
+  chunk-size: 10

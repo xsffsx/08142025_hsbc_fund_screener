@@ -1,0 +1,63 @@
+# noinspection GraphQLUnresolvedReference
+mutation finDocBatchUpdate($filter: JSON!, $operations: [OperationInput!]!, $allowPartial: Boolean) {
+    finDocBatchUpdate(filter: $filter, operations: $operations, allowPartial: $allowPartial) {
+        matchCount
+        matchFinDocs {
+            _id
+            rsrcItemIdFinDoc
+            ctryRecCde
+            grpMembrRecCde
+            docFinCatCde
+            docFinCde
+            docStatCde
+            docServrStatCde
+            docFinTypeCde
+            langFinDocCde
+            urlFileServrText
+            formtDocCde
+            docSzNum
+            docRecvName
+            fileDocName
+        }
+        updatedFinDocs {
+            _id
+            rsrcItemIdFinDoc
+            ctryRecCde
+            grpMembrRecCde
+            docFinCatCde
+            docFinCde
+            docStatCde
+            docServrStatCde
+            docFinTypeCde
+            langFinDocCde
+            urlFileServrText
+            formtDocCde
+            docSzNum
+            docRecvName
+            fileDocName
+        }
+        invalidFinDocs {
+            finDoc {
+                rsrcItemIdFinDoc
+                ctryRecCde
+                grpMembrRecCde
+                docFinCatCde
+                docFinCde
+                docStatCde
+                docServrStatCde
+                docFinTypeCde
+                langFinDocCde
+                urlFileServrText
+                formtDocCde
+                docSzNum
+                docRecvName
+                fileDocName
+            }
+            errors {
+                jsonPath
+                code
+                message
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+# DB profile
+spring:
+#  datasource:
+#    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+#    username: ocushkd
+#    password:
+#    driver-class-name: org.postgresql.Driver
+#  batch:
+#    jdbc:
+#      initialize-schema: always
+  data:
+    mongodb:
+      host: "amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: 27017
+      database: WPC_AMH_DEV
+      username: WPCHKGLUA9_APPUSER
+      password: 
+      enable-replica: false
+
+batch:
+  graphQLUrl: https://product-graphql-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql
+#  graphQLUrl: http://localhost:8080/graphql
+
+logging:
+  level:
+    org: ERROR
+    com: ERROR
+    com.dummy.wpb.product: DEBUG
+    com.dummy.wpb.product.service.GraphQLService: INFO
+
+### Termsheet PDF file upload job properties ###
+termsheet:
+  sidUrl: https://hfi-qualityassurance.p2g.netd2.dummy.com.hk/data/hk/invest/sid/
+  docTypeMap:
+    ap: APPENDIX
+    fs: FACTSHEETS
+    ts: TERMSHEETS
+  transfer:
+    local:
+      path: /appvol/product-spring-batch/data/incoming/findoc
+    remote-s3:
+      bucket: s3://wealth-dev-appcontent
+      path: wealth-platform-amh/v1/wpc/data/hk/invest
+      region: eu-west-1
+      url: https://bucket.vpce-0e83146b05ad4df52-1o03o9fz.s3.eu-west-1.vpce.amazonaws.com
+
+server:
+  port: 8283 

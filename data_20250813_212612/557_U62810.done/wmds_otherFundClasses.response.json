@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62810",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:15.622140",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62810%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "08ae4e9c-5f9a-4b4d-8527-8c431460d9c2:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "qgJshOxopSInNZmzO1-52X9HbL4WVDgjeJ77Vnmw111xRlalBc3VWQ==",
+        "x-hsbc-request-correlation-id": "a23f846b-d32c-4b27-9130-1e5e90d500f4",
+        "date": "Wed, 13 Aug 2025 13:50:14 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 03b68196a4924b2e14289edfecca0cae.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "360",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JPMorgan Multi Balanced (EUR Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"EUR HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62809\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2809\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62809\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000312865\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001A0ZF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050021565\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50021565\"}]},{\"productName\":\"JPMorgan Multi Balanced (RMB Hedged-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"RMB HEDGED-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62808\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2808\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62808\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000312873\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001A0ZH\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050021564\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50021564\"}]},{\"productName\":\"JPMorgan Multi Balanced (HKD- MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"HKD MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62807\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2807\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62807\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000312840\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001A0ZG\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050021563\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50021563\"}]},{\"productName\":\"JPMorgan Multi Balanced (USD- MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"USD MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62806\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2806\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62806\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000312832\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001A0ZI\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050021562\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50021562\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

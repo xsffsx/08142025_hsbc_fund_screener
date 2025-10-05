@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "product User Defined Field Mapping schema",
+  "description": "User Defined Field Mapping for rest adapter api",
+  "type": "object",
+  "properties": {
+    "ext": {
+      "description": "compare ignore for TB_PROD_USER_DEFIN_EXT_FIELD",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "jsonPath": {
+            "description": "jsonpath for the field",
+            "type": "string"
+          },
+          "fieldCde": {
+            "description": "FIELD_CDE",
+            "type": "string"
+          },
+          "fieldDataTypeText": {
+            "description": "FIELD_DATA_TYPE_TEXT",
+            "type": "string"
+          },
+          "fieldTypeCde": {
+            "description": "FIELD_TYPE_CDE",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "extOp": {
+      "description": "compare ignore for TB_PROD_USER_DEFIN_OP_EXT_FIEL",
+      "type": "array",
+      "items": {
+        "properties": {
+          "jsonPath": {
+            "description": "jsonpath for the field",
+            "type": "string"
+          },
+          "fieldCde": {
+            "description": "FIELD_CDE",
+            "type": "string"
+          },
+          "fieldDataTypeText": {
+            "description": "FIELD_DATA_TYPE_TEXT",
+            "type": "string"
+          },
+          "fieldTypeCde": {
+            "description": "FIELD_TYPE_CDE",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "extEg": {
+      "description": "compare ignore for TB_PROD_USER_DEFIN_EG_EXT_FIEL",
+      "type": "array",
+      "items": {
+        "properties": {
+          "jsonPath": {
+            "description": "jsonpath for the field",
+            "type": "string"
+          },
+          "fieldCde": {
+            "description": "FIELD_CDE",
+            "type": "string"
+          },
+          "fieldDataTypeText": {
+            "description": "FIELD_DATA_TYPE_TEXT",
+            "type": "string"
+          },
+          "fieldTypeCde": {
+            "description": "FIELD_TYPE_CDE",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "udf": {
+      "description": "compare ignore for TB_PROD_USER_DEFIN_FIELD",
+      "type": "array",
+      "items": {
+        "properties": {
+          "jsonPath": {
+            "description": "jsonpath for the field",
+            "type": "string"
+          },
+          "fieldCde": {
+            "description": "FIELD_CDE",
+            "type": "string"
+          },
+          "fieldDataTypeText": {
+            "description": "FIELD_DATA_TYPE_TEXT",
+            "type": "string"
+          },
+          "fieldTypeCde": {
+            "description": "FIELD_TYPE_CDE",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

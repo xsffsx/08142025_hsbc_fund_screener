@@ -1,0 +1,50 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "BlackRock World Gold Fund (Class A2)",
+    "data_type": "string",
+    "example": "BlackRock World Gold Fund (Class A2)"
+  },
+  "Annualised return": {
+    "frontend_name": "Annualised return",
+    "frontend_description": "年化收益率",
+    "api_path": "performance.annualizedReturns.return1Yr",
+    "api_value": 76.91936,
+    "data_type": "percentage",
+    "example": "76.92%"
+  },
+  "Standard deviation": {
+    "frontend_name": "Standard deviation",
+    "frontend_description": "标准差",
+    "api_path": "risk[year=10].yearRisk.stdDev",
+    "api_value": 32.254,
+    "data_type": "percentage",
+    "example": "28.68%"
+  },
+  "Sharpe ratio": {
+    "frontend_name": "Sharpe ratio",
+    "frontend_description": "夏普比率",
+    "api_path": "risk[year=10].yearRisk.sharpeRatio",
+    "api_value": 0.476,
+    "data_type": "number",
+    "example": "1.635"
+  },
+  "Alpha": {
+    "frontend_name": "Alpha",
+    "frontend_description": "阿尔法值",
+    "api_path": "risk[year=10].yearRisk.alpha",
+    "api_value": -2.8,
+    "data_type": "number",
+    "example": "0.93"
+  },
+  "Beta": {
+    "frontend_name": "Beta",
+    "frontend_description": "贝塔值",
+    "api_path": "risk[year=10].yearRisk.beta",
+    "api_value": 0.93,
+    "data_type": "number",
+    "example": "0.93"
+  }
+}

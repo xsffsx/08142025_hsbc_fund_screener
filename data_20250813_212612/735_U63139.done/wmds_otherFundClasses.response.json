@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63139",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:03:00.226881",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63139%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "a12d8ee5-a175-4854-a8d2-0fa211613d3a:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "x5SQ-wFEIS9LprCbCmAuK7gLNpnoo8ys2A9V7FCkVHESx4WZbB5r_g==",
+        "x-hsbc-request-correlation-id": "7b082364-e300-44f0-9040-8f8157325097",
+        "date": "Wed, 13 Aug 2025 14:02:59 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 5bbd11939e03577f970787e60c8f7b4e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "361",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF - ULTRA SHORT DURATION BOND (CLASS PC-USD-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS PC-USD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63135\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"USDPC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63135\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2334455255\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MF1Q\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050504864\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50504864\"}]},{\"productName\":\"HSBC GIF - ULTRA SHORT DURATION BOND (CLASS PC-HKD-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS PC-HKD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63136\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"USDCH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63136\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2334458861\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MF1T\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050504862\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50504862\"}]},{\"productName\":\"HSBC GIF - ULTRA SHORT DURATION BOND (CLASS PC-GBPH-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS PC-GBPH-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63138\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"USDCG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63138\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2334457038\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MF1U\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050504861\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50504861\"}]},{\"productName\":\"HSBC GIF - ULTRA SHORT DURATION BOND (CLASS PC-AUDH-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS PC-AUDH-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63137\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"USDCA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63137\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2334459596\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MF1W\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050504860\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50504860\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

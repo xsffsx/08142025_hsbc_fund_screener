@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62495",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:07:07.143212",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62495%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b1123ea4-21ff-4048-965c-340a112c4955:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "uY-7wbbcRX7X6OtOPe-n7j2DD0hbfWjgYRAup7DVWdN9KLyAM528cA==",
+        "x-hsbc-request-correlation-id": "ade7b509-2f1a-409a-b3db-23f4b16f317d",
+        "date": "Wed, 13 Aug 2025 14:07:06 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a7a7ee092ee4b4df82064022cbdb7e94.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "492",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal Home Loan Banks\",\"weighting\":20.52909,\"currency\":\"USD\",\"marketValue\":367442533},{\"market\":\"MY\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Malaysia (Government Of) 3.899%\",\"weighting\":6.31728,\"currency\":\"USD\",\"marketValue\":113070586},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 7.18%\",\"weighting\":4.13031,\"currency\":\"USD\",\"marketValue\":73926943},{\"market\":\"EC\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ecuador (Republic Of) 5.5%\",\"weighting\":3.29422,\"currency\":\"USD\",\"marketValue\":58962029},{\"market\":\"BR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Secretaria Do Tesouro Nacional 10.08183%\",\"weighting\":3.11966,\"currency\":\"USD\",\"marketValue\":55837576},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 6.79%\",\"weighting\":3.02772,\"currency\":\"USD\",\"marketValue\":54191978},{\"market\":null,\"productType\":\"BZ\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Asian Development Bank 10.1%\",\"weighting\":2.60343,\"currency\":\"USD\",\"marketValue\":46597870},{\"market\":\"BR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Secretaria Do Tesouro Nacional 10.08183%\",\"weighting\":2.52784,\"currency\":\"USD\",\"marketValue\":45244909},{\"market\":\"BR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Secretaria Do Tesouro Nacional 10.08183%\",\"weighting\":2.4947,\"currency\":\"USD\",\"marketValue\":44651680},{\"market\":\"BR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Secretaria Do Tesouro Nacional 10.08183%\",\"weighting\":2.46486,\"currency\":\"USD\",\"marketValue\":44117539}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

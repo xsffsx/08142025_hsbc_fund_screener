@@ -1,0 +1,75 @@
+com:
+  hhhh:
+    wmd:
+      itt:
+        security:
+          filter:
+            url-patterns: /wealth/api/v1/market-data/*
+            digital:
+              enable: false
+              verify-date: false
+              saml3-certificates:
+              - certificate-source: ldap
+                ldap:
+                  provider: ldap://ldap-hbap-prod.hk.hhhh:1636/uid=SAAS_AP01.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=hk,dc=hhhh,dc=com
+                  username: uid=SAAS_AP01.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=hk,dc=hhhh,dc=com
+                  password: ENC(cEUQccSxAWQozMwh6CddF8v+SV5ge+kA)
+                  timeout: 1000
+
+jasypt:
+  encryptor:
+    password: HaSe?StMaPS7RTQ,TwPnO+ct4fbt6c-TEZQw3T8q.5OSN0k=
+
+connection:
+  NON_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: false
+    proxyHostname:
+    proxyPort:
+    retryCount: 5
+    enableGzip: true
+  NON_PROD_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: intpxy6.hk.hhhh
+    proxyPort: 18084
+    retryCount: 5
+    enableGzip: false
+  HK_PRD_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: apxy1.hk.hhhh
+    proxyPort: 18084
+    retryCount: 5
+    enableGzip: false
+  HK_PRD_PROXY_18084:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: apxy1.hk.hhhh
+    proxyPort: 18084
+    retryCount: 5
+    enableGzip: false
+
+labci:
+  proxy_name: HK_PRD_PROXY
+  token-keystore:
+    DEFAULT:
+      keystore-file-path: '/keystore/labci/protal/prod/labci_hase_stma_keystore.dat'
+      keystore-password-file-path: '/keystore/labci/protal/prod/labci_hase_stma_keystore_password.dat'
+      initialisation-vector: 52,69,04,00,14,10,96,49
+  query-url: https://mkdlc.ebanking.hhhh.com.hk/hase-moveapi/query
+
+swagger:
+  disabled: true

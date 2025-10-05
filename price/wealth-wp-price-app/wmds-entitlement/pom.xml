@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hhhh.group.secwealth.mktdata</groupId>
+  <artifactId>wmds-entitlement</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>wmds-entitlement</name>
+	<parent>
+		<groupId>com.hhhh.group.secwealth.mktdata.starter</groupId>
+		<artifactId>parent-spring-boot-starter</artifactId>
+		<version>1.0.0-HASE-RELEASE</version>
+		<relativePath>../parent-spring-boot-starter/pom.xml</relativePath>
+	</parent>
+
+	<profiles>
+		<profile>
+			<id>releaseVersion</id>
+			<properties>
+				<project.version>1.0.0-RELEASE</project.version>
+			</properties>
+		</profile>
+	</profiles>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.hhhh.group.secwealth.mktdata</groupId>
+			<artifactId>wmds-prototype</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus306</id>
+			<url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-prod_n3p/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus306</id>
+			<url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-snapshots_n3p/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>

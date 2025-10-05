@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dpsLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <dps th:each="product : ${documents}">
+        <th:block th:insert="~{COMMON::prodKeySeg}"/>
+        <th:block th:each="alt : ${product.get('altId')}" th:insert="~{COMMON::prodAltNumSeg}"/>
+        <th:block th:insert="~{COMMON::prodInfoSeg}"/>
+        <dpsSeg th:with="dps=${product.get('ccyOptLinkDepst')}">
+            <ccyFromCde product:notNull="${dps.get('ccyFromCde')}"/>
+            <ccyLinkDepstCde product:notNull="${dps.get('ccyLinkDepstCde')}"/>
+            <ccyToCde product:notNull="${dps.get('ccyToCde')}"/>
+            <depstPlusTypeCde product:notNull="${dps.get('depstPlusTypeCde')}"/>
+            <exchgBreakEvenRate product:notNull="${#doubles.stripTrailingZeros(dps.get('exchgBreakEvenRate'))}"/>
+            <exchgInitRate product:notNull="${#doubles.stripTrailingZeros(dps.get('exchgInitRate'))}"/>
+            <exchgRateFixDt product:notNull="${#dates.format(dps.get('exchgRateFixDt'), 'yyyy-MM-dd')}"/>
+            <exchgSpotRate product:notNull="${#doubles.stripTrailingZeros(dps.get('exchgSpotRate'))}"/>
+            <exchgTrigRate product:notNull="${#doubles.stripTrailingZeros(dps.get('exchgTrigRate'))}"/>
+            <factrConvRate product:notNull="${#doubles.stripTrailingZeros(dps.get('factrConvRate'))}"/>
+            <intRate product:notNull="${#doubles.stripTrailingZeros(dps.get('intRate'))}"/>
+            <knockTypeCde product:notNull="${dps.get('knockTypeCde')}"/>
+            <obsrvEndDt product:notNull="${#dates.format(dps.get('obsrvEndDt'), 'yyyy-MM-dd')}"/>
+            <obsrvStartDt product:notNull="${#dates.format(dps.get('obsrvStartDt'), 'yyyy-MM-dd')}"/>
+            <prodExtnlCde product:notNull="${dps.get('prodExtnlCde')}"/>
+            <prodExtnlSuffNum product:notNull="${dps.get('prodExtnlSuffNum')}"/>
+            <rtnOptCde product:notNull="${dps.get('rtnOptCde')}"/>
+            <tailrMadeDepstInd product:notNull="${dps.get('tailrMadeDepstInd')}"/>
+        </dpsSeg>
+        <th:block th:insert="~{COMMON::recDtTmSeg}"/>
+    </dps>
+</dpsLst>

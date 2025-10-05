@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+  data:
+    mongodb:
+      host: "amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: 27017
+      database: WPC_AMH_DEV
+      username: WPCHKGLUA9_APPUSER
+      password: "{cipher}aa279e18a8d106e2860aec459ecc538ec0bda1dec541b663b9d367ec31b3711e5ad3af8461293ea3d7ae96f5d6f73510"
+      enable-replica: false
+
+
+#############for account variable#############
+### for update prod globalId job ###(cannot call in sit env)
+smart:
+  globalIdUrl: https://digitaldev-int-rbwm.hk.dummy/smart-assetdataservice-sct-internal-proxy/v0/assetdata/registerProduct/SMART-HK
+  tokenUrl: https://cmb-ib2b-dsp-pprod-ap.hk.dummy:8443/dsp/rest-sts/DSP_iB2B/iB2B_tokenTranslator?_action=translate
+  password:  "{cipher}0ff97218bdb122a558130baac6a717bd2713f95b0364de0d8efa330d36226fb2"
+  username: HK-SMARTPlus-Dev
+
+start-time-delay-minutes: 10
+

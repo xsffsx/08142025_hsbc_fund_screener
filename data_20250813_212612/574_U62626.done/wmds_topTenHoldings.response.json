@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62626",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:35:27.116059",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62626%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "1f77af21-74e2-4002-92f8-cda842e9f725:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "A0KnIkqVCSUDMZmcI_43FCB_H_33hb-0U-mqjUtOA7sFzpnK3Cskqg==",
+        "x-hsbc-request-correlation-id": "acbb6e8f-0130-4fea-9755-56e8947d797e",
+        "date": "Wed, 13 Aug 2025 13:35:27 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 f10cf45262aac2b7dc4882c2d77020e4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "518",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of)\",\"weighting\":11.27604,\"currency\":\"EUR\",\"marketValue\":165242961},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AB Euro Corporate Bond Port ZT EUR Inc\",\"weighting\":2.58675,\"currency\":\"EUR\",\"marketValue\":37907064},{\"market\":\"DE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Germany (Federal Republic Of)\",\"weighting\":2.55265,\"currency\":\"EUR\",\"marketValue\":37407437},{\"market\":\"GB\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United Kingdom of Great Britain and Northern Ireland\",\"weighting\":2.37575,\"currency\":\"EUR\",\"marketValue\":34815129},{\"market\":\"ES\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Spain (Kingdom of)\",\"weighting\":2.00523,\"currency\":\"EUR\",\"marketValue\":29385293},{\"market\":null,\"productType\":\"BZ\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"European Union\",\"weighting\":1.18351,\"currency\":\"EUR\",\"marketValue\":17343504},{\"market\":\"ES\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Spain (Kingdom of)\",\"weighting\":1.02527,\"currency\":\"EUR\",\"marketValue\":15024723},{\"market\":\"FR\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CNP Assurances SA\",\"weighting\":0.82501,\"currency\":\"EUR\",\"marketValue\":12090000},{\"market\":\"DE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Allianz SE\",\"weighting\":0.81537,\"currency\":\"EUR\",\"marketValue\":11948747},{\"market\":\"IT\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Italy (Republic Of)\",\"weighting\":0.80868,\"currency\":\"EUR\",\"marketValue\":11850627}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

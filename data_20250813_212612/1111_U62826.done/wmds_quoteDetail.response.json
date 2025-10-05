@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62826",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:48:22.742500",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62826%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ef8924aa-7c4e-4cd7-8633-b2ed6c197787:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "7qjJNE2YNoCcBdr9Fvkvaj8-3BXgqYLiW3yR4xDmz-5xce-WW05WdA==",
+        "x-hsbc-request-correlation-id": "3d40d1e1-c9e5-42ab-ae88-5142970b3f62",
+        "date": "Wed, 13 Aug 2025 13:48:19 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "17",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 f1635e40dd33e4abcdd79d3670805a7a.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1264",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62826\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"EB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":41.41,\"currency\":\"USD\",\"companyName\":\"Capital Group European Growth and Income Fund (LUX) Bgdmh USD (MD-C)\",\"securityDescription\":null,\"changeAmount\":0.22,\"changePercent\":0.53411,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":3.45784,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001BKZ5\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":5.02184},{\"year\":2023,\"annualCalendarYearReturn\":12.66445},{\"year\":2022,\"annualCalendarYearReturn\":-3.25699},{\"year\":2021,\"annualCalendarYearReturn\":19.31296},{\"year\":2020,\"annualCalendarYearReturn\":-3.48953}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":9.58597,\"dailyPerformanceNAV\":11.44584},{\"period\":\"1M\",\"trailingTotalReturn\":0.07753,\"dailyPerformanceNAV\":0.07827},{\"period\":\"3M\",\"trailingTotalReturn\":4.77849,\"dailyPerformanceNAV\":3.35115},{\"period\":\"6M\",\"trailingTotalReturn\":4.05464,\"dailyPerformanceNAV\":3.90369},{\"period\":\"1Y\",\"trailingTotalReturn\":5.74268,\"dailyPerformanceNAV\":11.381},{\"period\":\"3Y\",\"trailingTotalReturn\":10.12422,\"dailyPerformanceNAV\":10.02519},{\"period\":\"5Y\",\"trailingTotalReturn\":11.68872,\"dailyPerformanceNAV\":10.93983},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2017-09-18\"},\"entityUpdatedTime\":\"2025-08-13T21:48:19.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62826\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP826\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62826\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1669199751\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BKZ5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050043018\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50043018\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

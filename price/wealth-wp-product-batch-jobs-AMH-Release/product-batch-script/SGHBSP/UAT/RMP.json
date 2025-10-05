@@ -1,0 +1,296 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "RMP",
+  "path": "/appvol/product-spring-batch/data/Adaptor/outgoing/Treemap/SG",
+  "params": {
+    "prodNameControl": true
+  },
+  "tasks": [
+    {
+      "files": [
+        {
+          "name": "UT CSV",
+          "templateName": "/csv/UT.html",
+          "fileName": "SGHBSPtreemap_UT_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "UT",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        },
+        "oferChanl": {
+          "$not": {
+            "$elemMatch": {
+              "chanlComnCde": "RMP"
+            }
+          }
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "ALLPROD CSV",
+          "templateName": "/csv/ALLPROD.html",
+          "fileName": "SGHBSPtreemap_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": {
+          "$in": [
+            "SN",
+            "UT",
+            "BOND",
+            "ELI",
+            "DPS",
+            "SID",
+            "LCYDEP",
+            "FCYDEP",
+            "SEC",
+            "ALT"
+          ]
+        },
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        },
+        "oferChanl": {
+          "$not": {
+            "$elemMatch": {
+              "chanlComnCde": "RMP"
+            }
+          }
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "BOND CSV",
+          "templateName": "/csv/BOND.html",
+          "fileName": "SGHBSPtreemap_BOND_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "BOND",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        },
+        "oferChanl": {
+          "$not": {
+            "$elemMatch": {
+              "chanlComnCde": "RMP"
+            }
+          }
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "DPS CSV",
+          "templateName": "/csv/RMP_DPS.html",
+          "fileName": "SGHBSPtreemap_DPS_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "DPS",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        },
+        "oferChanl": {
+          "$not": {
+            "$elemMatch": {
+              "chanlComnCde": "RMP"
+            }
+          }
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "SID CSV",
+          "templateName": "/csv/SID.html",
+          "fileName": "SGHBSPtreemap_SID_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SID",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        },
+        "oferChanl": {
+          "$not": {
+            "$elemMatch": {
+              "chanlComnCde": "RMP"
+            }
+          }
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "ELI CSV",
+          "templateName": "/csv/ELI.html",
+          "fileName": "SGHBSPtreemap_ELI_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "ELI",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        },
+        "oferChanl": {
+          "$not": {
+            "$elemMatch": {
+              "chanlComnCde": "RMP"
+            }
+          }
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "SEC CSV",
+          "templateName": "/csv/SEC.html",
+          "fileName": "SGHBSPtreemap_SEC_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SEC",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        },
+        "oferChanl": {
+          "$not": {
+            "$elemMatch": {
+              "chanlComnCde": "RMP"
+            }
+          }
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "ALT CSV",
+          "templateName": "/csv/SEC.html",
+          "fileName": "SGHBSPtreemap_ALT_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "ALT",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        },
+        "oferChanl": {
+          "$not": {
+            "$elemMatch": {
+              "chanlComnCde": "RMP"
+            }
+          }
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    }
+  ]
+}

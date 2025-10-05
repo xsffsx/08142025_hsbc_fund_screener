@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: "{cipher}b9e5429aeba0924f88e964d9e9ae7c37e8b9b28cc13a70c7b872480109c66508eb7378c1fedb944c1f318dfede8569e5"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+batch:
+  graphQLUrl: "https://product-graphql-b-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+  file:
+    pattern: ^{ctryRecCde}_{grpMembrRecCde}_WISDOM_BOND_(\d{14})\.[Xx][Mm][Ll]$
+  size: 50
+  top-seller-num: 10

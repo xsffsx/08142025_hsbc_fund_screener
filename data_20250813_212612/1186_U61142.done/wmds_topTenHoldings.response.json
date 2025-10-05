@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61142",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:03:48.466020",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61142%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ea4a101e-60fe-47e0-81ae-909652199903:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Tppxw6XnBV-V1IoxIG20rB9uB8ypeHd_DWpT0DJCjBkKAunDyY-nUg==",
+        "x-hsbc-request-correlation-id": "1a8aaef4-cf3c-4006-bf05-105d143234b5",
+        "date": "Wed, 13 Aug 2025 14:03:48 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 612d6e38ca8a5e65776b064d65f27d36.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "446",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"FR\",\"productType\":\"ST\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TRSWAP: IBOXHY INDEX\",\"weighting\":1.356,\"currency\":\"USD\",\"marketValue\":26590399},{\"market\":\"FR\",\"productType\":\"ST\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TRSWAP: IBOXHY INDEX\",\"weighting\":1.2078,\"currency\":\"USD\",\"marketValue\":23684242},{\"market\":\"GB\",\"productType\":\"ST\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TRSWAP: IBOXHY INDEX\",\"weighting\":0.88768,\"currency\":\"USD\",\"marketValue\":17406860},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HUB International Ltd.\",\"weighting\":0.8168,\"currency\":\"USD\",\"marketValue\":16016882},{\"market\":\"GB\",\"productType\":\"ST\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"TRSWAP: IBOXHY INDEX\",\"weighting\":0.75421,\"currency\":\"USD\",\"marketValue\":14789677},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mauser Packaging Solutions Holding Co.\",\"weighting\":0.65695,\"currency\":\"USD\",\"marketValue\":12882448},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Minerva Merger Subordinated Inc.\",\"weighting\":0.64668,\"currency\":\"USD\",\"marketValue\":12680917},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"1261229 Bc Ltd.\",\"weighting\":0.6207,\"currency\":\"USD\",\"marketValue\":12171455},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cloud Software Group Inc.\",\"weighting\":0.60772,\"currency\":\"USD\",\"marketValue\":11916923},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UKG Inc.\",\"weighting\":0.56852,\"currency\":\"USD\",\"marketValue\":11148332}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

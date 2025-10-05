@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61151",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:11.371684",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61151%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7a4117ac-5430-4429-ad7b-b86e84b18193:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "LD7prEG_AikldQFfIy7ZMYlFnt-oI2mM8EKvz0hzDj7WwHGmGReZaQ==",
+        "x-hsbc-request-correlation-id": "55beba79-f86a-4b35-b33c-0904c56b4a1c",
+        "date": "Wed, 13 Aug 2025 13:33:11 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 80e912f542ddc55d544339d8db5fb036.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "481",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Advanced Info Service PCL\",\"weighting\":9.40695,\"currency\":\"USD\",\"marketValue\":15555258},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bangkok Dusit Medical Services PCL\",\"weighting\":8.79783,\"currency\":\"USD\",\"marketValue\":14548019},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CP All PCL\",\"weighting\":8.54205,\"currency\":\"USD\",\"marketValue\":14125071},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ptt PCL\",\"weighting\":8.36158,\"currency\":\"USD\",\"marketValue\":13826647},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Delta Electronics (Thailand) PCL\",\"weighting\":6.78637,\"currency\":\"USD\",\"marketValue\":11221889},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Gulf Energy Development PCL\",\"weighting\":6.49002,\"currency\":\"USD\",\"marketValue\":10731843},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PTT Exploration & Production PCL\",\"weighting\":5.44218,\"currency\":\"USD\",\"marketValue\":8999151},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kasikornbank Public Co Ltd\",\"weighting\":3.58163,\"currency\":\"USD\",\"marketValue\":5922561},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"True Corp PCL\",\"weighting\":3.51499,\"currency\":\"USD\",\"marketValue\":5812366},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Central Pattana PCL\",\"weighting\":3.49308,\"currency\":\"USD\",\"marketValue\":5776137}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

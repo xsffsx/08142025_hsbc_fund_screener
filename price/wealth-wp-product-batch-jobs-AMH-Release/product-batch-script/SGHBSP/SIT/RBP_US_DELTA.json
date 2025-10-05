@@ -1,0 +1,118 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "RBP",
+  "path": "/appvol/product-spring-batch-sit/data/outgoing/SGHBSP/RBP/",
+  "version": 33,
+  "tasks": [
+    {
+      "files": [
+        {
+          "interfaceType": "SEC",
+          "templateName": "/xml/33/SEC.xml",
+          "fileName": "${ctryRecCde}_{grpMembrRecCde}_RBP_SEC-US_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SEC",
+        "ctryProdTradeCde.0": "US",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      },
+      "deltaKey": "EGRESS.RBP.SEC~US.PRODUCT.LAST.SUCCESSFUL.DT.TM"
+    },
+    {
+      "files": [
+        {
+          "interfaceType": "PRODPRC",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_RBP_Price-SEC-US_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SEC",
+        "ctryProdTradeCde.0": "US",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prcEffDt": {
+          "$ne": null
+        },
+        "ccyProdMktPrcCde": {
+          "$ne": null
+        },
+        "$or": [
+          {
+            "prodBidPrcAmt": {
+              "$ne": null
+            }
+          },
+          {
+            "prodOffrPrcAmt": {
+              "$ne": null
+            }
+          },
+          {
+            "prodNavPrcAmt": {
+              "$ne": null
+            }
+          },
+          {
+            "prodMktPrcAmt": {
+              "$ne": null
+            }
+          }
+        ]
+      },
+      "deltaKey": "EGRESS.RBP.SEC~US.PRICE.LAST.SUCCESSFUL.DT.TM"
+    },
+    {
+      "files": [
+        {
+          "interfaceType": "CUSTELIG",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_RBP_TradingEligibility-SEC-US_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SEC",
+        "ctryProdTradeCde.0": "US",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "tradeElig": {
+          "$ne": null
+        },
+        "$or": [
+          {
+            "formReqmt": {
+              "$ne": null
+            }
+          },
+          {
+            "restrCustGroup": {
+              "$ne": null
+            }
+          },
+          {
+            "restrCustCtry": {
+              "$ne": null
+            }
+          },
+          {
+            "tradeElig": {
+              "$ne": null
+            }
+          }
+        ]
+      },
+      "deltaKey": "EGRESS.RBP.SEC~US.TradingEligibility.LAST.SUCCESSFUL.DT.TM"
+    }
+  ],
+  "ack": {
+    "generate": true
+  },
+  "timeZone": "Asia/Singapore"
+}

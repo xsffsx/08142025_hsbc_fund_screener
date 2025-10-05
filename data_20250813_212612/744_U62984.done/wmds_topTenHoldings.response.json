@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62984",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:29.871304",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62984%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c0dd2a2a-d86a-427b-88c9-4bfbd8dce3ce:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "90yXTaMiSNzMuo7l_EaaaUSe-RFnedc_rpo2YNgWMYXqgDKW9eKG3g==",
+        "x-hsbc-request-correlation-id": "b67d481e-3f04-43fc-aa86-8022ba0dd9db",
+        "date": "Wed, 13 Aug 2025 13:50:29 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "22",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a492a754c99951a31a41d1c031185610.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "529",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MTR Corp Ltd. 5.25%\",\"weighting\":2.05528,\"currency\":\"USD\",\"marketValue\":66650533},{\"market\":\"SG\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ST Engineering RHQ Ltd. 4.25%\",\"weighting\":1.67168,\"currency\":\"USD\",\"marketValue\":54210811},{\"market\":\"IN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tata Capital Ltd. 5.389%\",\"weighting\":1.58315,\"currency\":\"USD\",\"marketValue\":51339783},{\"market\":\"KR\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Woori Bank 6.375%\",\"weighting\":1.30044,\"currency\":\"USD\",\"marketValue\":42171902},{\"market\":\"MY\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"GOHL Capital Ltd. 4.25%\",\"weighting\":1.22846,\"currency\":\"USD\",\"marketValue\":39837516},{\"market\":\"ID\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bank Kb Bukopin Tbk 5.658%\",\"weighting\":1.22329,\"currency\":\"USD\",\"marketValue\":39669941},{\"market\":\"KR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SK Hynix Inc. 6.5%\",\"weighting\":1.09065,\"currency\":\"USD\",\"marketValue\":35368537},{\"market\":\"ID\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"LLPL Capital Pte Ltd 6.875%\",\"weighting\":1.08577,\"currency\":\"USD\",\"marketValue\":35210382},{\"market\":\"PH\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Philippines (Republic Of) 2.95%\",\"weighting\":0.97449,\"currency\":\"USD\",\"marketValue\":31601728},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ck Hutchison International 24 Ltd. 5.5%\",\"weighting\":0.92036,\"currency\":\"USD\",\"marketValue\":29846444}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

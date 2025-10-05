@@ -1,0 +1,29 @@
+mutation productBatchCreate($products: [ProductInput!]!, $allowPartial: Boolean) {
+  productBatchCreate(products: $products, allowPartial: $allowPartial) {
+    createdProducts {
+      ctryRecCde
+      grpMembrRecCde
+      prodId
+      prodTypeCde
+      prodCde
+      prodAltPrimNum
+      prodName
+    }
+    invalidProducts {
+      product {
+        ctryRecCde
+        grpMembrRecCde
+        prodId
+        prodTypeCde
+        prodCde
+        prodAltPrimNum
+        prodName
+      }
+      errors {
+        jsonPath
+        code
+        message
+      }
+    }
+  }
+}

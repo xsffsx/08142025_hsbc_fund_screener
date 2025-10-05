@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U43191",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:04.749228",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43191%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c504f7fe-258b-442d-b059-9fe7d35fbd76:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "NiGdCJuer6G-OqtggcAWubrTkJJrNi31xKMIl2wZQomRCK5fTh1YJw==",
+        "x-hsbc-request-correlation-id": "f6398c1a-f1cf-4be1-8d4d-22f419bc61e0",
+        "date": "Wed, 13 Aug 2025 13:33:04 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "36",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a9f2009d5c1905b42b9c7cd7c9d409f4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "422",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JPMORGAN ASIA EQUITY HIGH INCOME (RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63421\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3421\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63421\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001000121\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001SJ9I\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050771121\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50771121\"}]},{\"productName\":\"JPMORGAN ASIA EQUITY HIGH INCOME (GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63420\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3420\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63420\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001010351\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001SQS5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050771120\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50771120\"}]},{\"productName\":\"JPMORGAN ASIA EQUITY HIGH INCOME (CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63419\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3419\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63419\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001010344\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001SQS4\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050771119\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50771119\"}]},{\"productName\":\"JPMORGAN ASIA EQUITY HIGH INCOME (AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63418\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3418\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63418\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001010336\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001SQS3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050771118\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50771118\"}]},{\"productName\":\"JPMORGAN ASIA EQUITY HIGH INCOME (HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63417\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3417\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63417\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000964616\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RSU9\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050771117\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50771117\"}]},{\"productName\":\"JPMORGAN ASIA EQUITY HIGH INCOME (USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63416\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3416\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63416\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000964608\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RSU8\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050771116\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50771116\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

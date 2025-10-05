@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61137",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:40:46.119948",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61137%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "d8cc23db-28d8-401e-9a86-6510eb99e256:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "-O9Y3WqgLgVU_VQ3-smD-6P6c7oNTZ9bG_XPpXZNM475m5sH64Hb2Q==",
+        "x-hsbc-request-correlation-id": "9bf9e72a-8a54-4c2e-9dd9-b42848183c56",
+        "date": "Wed, 13 Aug 2025 13:40:45 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 c0c0b3c6204d00f5a7203f9861b731ae.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "416",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Government National Mortgage Association\",\"weighting\":19.66948,\"currency\":\"USD\",\"marketValue\":14817655},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Government National Mortgage Association\",\"weighting\":7.7663,\"currency\":\"USD\",\"marketValue\":-5850604},{\"market\":\"US\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Bills\",\"weighting\":6.09002,\"currency\":\"USD\",\"marketValue\":4587808},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Government National Mortgage Association\",\"weighting\":5.691,\"currency\":\"USD\",\"marketValue\":-4287217},{\"market\":\"US\",\"productType\":\"BG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal Home Loan Mortgage Corp.\",\"weighting\":4.7447,\"currency\":\"USD\",\"marketValue\":3574339},{\"market\":\"US\",\"productType\":\"BG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association\",\"weighting\":4.51166,\"currency\":\"USD\",\"marketValue\":3398782},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Government National Mortgage Association\",\"weighting\":4.32329,\"currency\":\"USD\",\"marketValue\":-3256876},{\"market\":\"US\",\"productType\":\"BG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association\",\"weighting\":3.58744,\"currency\":\"USD\",\"marketValue\":2702534},{\"market\":\"US\",\"productType\":\"BG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Government National Mortgage Association\",\"weighting\":3.58647,\"currency\":\"USD\",\"marketValue\":2701807},{\"market\":\"US\",\"productType\":\"TG\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Government National Mortgage Association\",\"weighting\":3.23087,\"currency\":\"USD\",\"marketValue\":2433922}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

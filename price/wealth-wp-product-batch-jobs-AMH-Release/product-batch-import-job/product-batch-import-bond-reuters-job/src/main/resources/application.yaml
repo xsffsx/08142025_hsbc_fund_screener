@@ -1,0 +1,61 @@
+# DB profile
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+
+# product-graphql url
+batch:
+  graphQLUrl: "https://product-graphql-b-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+  report-systemCde: "REUTERSBOND"
+
+# Reuters Job config
+BOND:
+  REUTERS:
+    LOCALPATH: "C:\\Users\\43695783"
+    FILENAME: "REUTER.csv"
+    USERNAME: "9001453"
+    PASSWORD: "{cipher}3aac15b4f0110d0c023344ba8f0418da6ce82b3d6ca585e8801245daa1d97388"
+    PROXYHOST: "intpxy1.hk.dummy"
+    PROXYPORT: 8080
+    CONFIGFILE: "/batch-import-bond-csv-column-info.yaml"
+
+system-update-config:
+  - systemCde: REUTERSBOND
+    config:
+      - collection: product
+        updateAttrs:
+          - altId
+          - prodStatCde
+          - ccyProdCde
+          - recUpdtDtTm
+          - prodStatUpdtDtTm
+          - debtInstm.isrBondName
+          - debtInstm.prodIssDt
+          - debtInstm.mturExtDt
+          - debtInstm.coupnAnnlRate
+          - debtInstm.coupnAnnlText
+          - debtInstm.coupnPrevRate
+          - debtInstm.pdcyCoupnPymtCde
+          - debtInstm.pymtCoupnNextDt
+          - debtInstm.coupnCurrStartDt
+          - debtInstm.coupnPrevStartDt
+          - debtInstm.pymtCoupnNextDt
+          - debtInstm.flexMatOptInd
+          - debtInstm.prodBodLotQtyCnt
+          - debtInstm.grntrName
+          - debtInstm.ctryBondIssueCde
+          - debtInstm.bondCallNextDt
+          - debtInstm.coupnType
+          - debtInstm.cptlTierText
+          - debtInstm.subDebtInd
+          - debtInstm.intBasisCalcText
+          - debtInstm.indexFltRateName
+          - debtInstm.bondFltSprdRate
+          - debtInstm.credRtng
+          - debtInstm.isPerpetualInd

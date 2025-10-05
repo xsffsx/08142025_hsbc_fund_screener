@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  batch:
+    job:
+      enabled: false
+##batch:
+##  graphQLUrl: "http://localhost:8080/graphql"
+
+finDoc:
+  ftp: "src/test/resources/test"
+  doc:
+    src: "src/test/resources/test/req/incoming"
+    chk: "src/test/resources/test/req/chk"
+  map:
+    inFile:
+      prefix: MAP.WPCE,MAP.HFIE
+
+CHMOD:
+  Script: "/chmod.sh"

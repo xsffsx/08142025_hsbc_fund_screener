@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: product-graphql
+  cloud:
+    config:
+      fail-fast: true
+      enabled: true
+      discovery:
+        enabled: true
+        service-id: configServer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8089/eureka
+  instance:
+    hostname: localhost
+health:
+  config:
+    enabled: false
+---
+spring.profiles: standalone
+spring:
+  cloud:
+    config:
+      fail-fast: true
+      enabled: false
+      discovery:
+        enabled: false
+eureka:
+  client:
+    enabled: false
+
+---
+spring.profiles: ikp, aws
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_SERVER_ADDRESS} # get from env
+  instance:
+    hostname: ${HOSTNAME} # provided by env
+    prefer-ip-address: true
+    instanceId:  ${spring.application.name}:${eureka.instance.hostname}:${random.uuid}
+encrypt:
+  key: ${ENCRYPT_KEY}

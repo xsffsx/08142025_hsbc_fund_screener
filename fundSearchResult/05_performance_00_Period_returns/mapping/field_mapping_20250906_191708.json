@@ -1,0 +1,74 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "HSBC ASIAN HIGH YIELD BOND FUND (CLASS AM3-EURH-MDIST-CASH)",
+    "data_type": "string",
+    "example": "HSBC ASIAN HIGH YIELD BOND FUND (CLASS AM3-EURH-MDIST-CASH)"
+  },
+  "1 month": {
+    "frontend_name": "1 month",
+    "frontend_description": "1个月年化收益率",
+    "api_path": "performance.annualizedReturns.return1Mth",
+    "api_value": 1.23709,
+    "data_type": "percentage",
+    "example": "1.24%"
+  },
+  "3 month": {
+    "frontend_name": "3 month",
+    "frontend_description": "3个月年化收益率",
+    "api_path": "performance.annualizedReturns.return3Mth",
+    "api_value": 3.24671,
+    "data_type": "percentage",
+    "example": "3.25%"
+  },
+  "6 month": {
+    "frontend_name": "6 month",
+    "frontend_description": "6个月年化收益率",
+    "api_path": "performance.annualizedReturns.return6Mth",
+    "api_value": 0.89675,
+    "data_type": "percentage",
+    "example": "0.90%"
+  },
+  "1 year": {
+    "frontend_name": "1 year",
+    "frontend_description": "1年年化收益率",
+    "api_path": "performance.annualizedReturns.return1Yr",
+    "api_value": 1.85406,
+    "data_type": "percentage",
+    "example": "1.85%"
+  },
+  "3 year": {
+    "frontend_name": "3 year",
+    "frontend_description": "3年年化收益率",
+    "api_path": "performance.annualizedReturns.return3Yr",
+    "api_value": 1.81547,
+    "data_type": "percentage",
+    "example": "1.82%"
+  },
+  "5 year": {
+    "frontend_name": "5 year",
+    "frontend_description": "5年年化收益率",
+    "api_path": "performance.annualizedReturns.return5Yr",
+    "api_value": -7.36271,
+    "data_type": "percentage",
+    "example": "-7.36%"
+  },
+  "10 year": {
+    "frontend_name": "10 year",
+    "frontend_description": "10年年化收益率",
+    "api_path": "performance.annualizedReturns.return10Yr",
+    "api_value": -1.35852,
+    "data_type": "percentage",
+    "example": "-1.36%"
+  },
+  "Since inception": {
+    "frontend_name": "Since inception",
+    "frontend_description": "成立以来年化收益率",
+    "api_path": "performance.annualizedReturns.returnSinceInception",
+    "api_value": -1.1207,
+    "data_type": "percentage",
+    "example": "-1.12%"
+  }
+}

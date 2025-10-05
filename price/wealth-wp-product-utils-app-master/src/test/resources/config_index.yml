@@ -1,0 +1,105 @@
+######################################################product######################################################
+- collection: product
+  indexes:
+    # Need to create this index, because that this index is not in MongoDB index
+    - key:
+        - prodId
+        - prodCde
+      order: 1
+      sparse: true
+      name: idx_prodId
+
+
+    # important index for PW2 query
+    # Need to drop and create index, because that index key is not in the same order
+    - key:
+        - prodCde
+        - prodTypeCde
+        - prodStatCde
+      order: 1
+      sparse: true
+      name: idx_prodCde
+
+    # Need to create this index, because that this index is not in MongoDB index
+    - key:
+        - prodAltPrimNum
+      order: 1
+      name: idx_prodAltPrimNum
+
+
+    # Need to drop and create index, because that MongoDB's index for setting sparse true
+    - key:
+        - eqtyLinkInvst.trdDt
+      order: 1
+      name: idx_eqtyLinkInvst_trdDt
+
+    # Need to drop and create index, because that config file's key has prodTypeCde which MongoDB does not have it.
+    - key:
+        - fieldGroupCtoff.fieldGroupCtoffDtTm
+        - prodTypeCde
+      order: 1
+      name: idx_fieldGroupCtoff_fieldGroupCtoffDtTm
+
+    # Need to drop and create index, because that config file's order is 1 and MongoDB's order is -1.
+    - key:
+        - prodReln.prodIdRel
+      order: 1
+      name: idx_prodReln_prodIdRel
+
+    # Need to drop and create index, because that config file's sparse is true and MongoDB's sparse is false.
+    - key:
+        - prodName
+      order: 1
+      sparse: true
+      name: idx_prodName
+
+    # Need to drop and create index, because that config file's order is 1 and MongoDB's order is -1.
+    - key:
+        - gac.assClasWthTopContrbtn
+      order: 1
+      name: idx_gac_assClasWthTopContrbtn
+
+    # Need to drop and create index, because that config file' key has two and MongoDB's only have one.
+    - key:
+        - stockInstm.vaEtfIndicator
+        - prodTypeCde
+      order: 1
+      name: idx_stockInstm_vaEtfIndicator
+
+    # Need to drop and create index, because that config file' sparse is false MongoDB's sparse is true.
+    - key:
+        - eqtyLinkInvst.mktStartDtTm
+      order: 1
+      name: idx_eqtyLinkInvst_mktStartDtTm
+
+    # Need to drop and create index, because that config file' key's order is different from MongoDB's key orders
+    - key:
+        - eqtyLinkInvst.mktStartDtTm
+        - eqtyLinkInvst.mktEndDtTm
+      order: 1
+      name: idx_eqtyLinkInvst_mktEndDtTm
+
+    # Need to drop and create index, because that config file's unique is true and MongoDB's unique is false.
+    - key:
+        - cdvCde
+      order: 1
+      unique: true
+      name: idx_refdata
+
+    # No Need to drop and create index
+    - key:
+        - eqtyLinkInvst.mktStartDtTm
+      order: 1
+      name: idx_partial_test1
+      partialFilterExpression:
+        prodTypeCde:
+          $eq: ELI
+
+    # Need to drop and create index, because that config file's partialFilterExpression is different
+    - key:
+        - eqtyLinkInvst.mktStartDtTm
+      order: 1
+      name: idx_partial_test2
+      partialFilterExpression:
+        prodTypeCde:
+          $eq: WRTS

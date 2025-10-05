@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62384",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:40:18.675282",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62384%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "248afff9-9f8f-4531-8629-f021d447f2ea:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "sQb1U2Xenw15xeS7YAeYVvdzJwKGpWqkx_fj0AB3I7V_bN5fhnPgTQ==",
+        "x-hsbc-request-correlation-id": "8e499427-7605-42ed-92e9-4a51e6e4f9e7",
+        "date": "Wed, 13 Aug 2025 13:40:18 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2e4090c5117f92dd57a3a8b0cbf9daa4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "522",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal Home Loan Banks\",\"weighting\":15.15377,\"currency\":\"USD\",\"marketValue\":392098923},{\"market\":\"AU\",\"productType\":\"DS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Treasury Corporation of Victoria\",\"weighting\":5.70508,\"currency\":\"USD\",\"marketValue\":147617179},{\"market\":\"BR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Secretaria Do Tesouro Nacional\",\"weighting\":5.46501,\"currency\":\"USD\",\"marketValue\":141405446},{\"market\":\"MY\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Malaysia (Government Of)\",\"weighting\":4.77244,\"currency\":\"USD\",\"marketValue\":123485391},{\"market\":\"NO\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Norway (Kingdom Of)\",\"weighting\":4.67745,\"currency\":\"USD\",\"marketValue\":121027391},{\"market\":\"BR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Secretaria Do Tesouro Nacional\",\"weighting\":2.99246,\"currency\":\"USD\",\"marketValue\":77428906},{\"market\":\"UY\",\"productType\":\"TP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Uruguay (Republic Of)\",\"weighting\":2.98618,\"currency\":\"USD\",\"marketValue\":77266412},{\"market\":\"ZA\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"South Africa (Republic of)\",\"weighting\":2.93972,\"currency\":\"USD\",\"marketValue\":76064200},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes\",\"weighting\":2.8552,\"currency\":\"USD\",\"marketValue\":73877321},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of)\",\"weighting\":2.65503,\"currency\":\"USD\",\"marketValue\":68697930}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

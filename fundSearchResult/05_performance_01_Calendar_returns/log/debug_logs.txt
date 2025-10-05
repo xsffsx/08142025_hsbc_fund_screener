@@ -1,0 +1,45 @@
+HSBC Fund Screener Debug Log
+Generated: 20250906_193854
+Total Log Entries: 10
+================================================================================
+
+Entry #01:
+{'timestamp': '2025-09-06T19:39:57.790389', 'step': '步骤2', 'action': '找到下拉框', 'details': {'selector': '#dropdown-riskLevel', 'element_type': 'A标签'}}
+------------------------------------------------------------
+
+Entry #02:
+{'timestamp': '2025-09-06T19:39:57.853357', 'step': '步骤2', 'action': '点击下拉框', 'details': {'selector': '#dropdown-riskLevel', 'success': True}}
+------------------------------------------------------------
+
+Entry #03:
+{'timestamp': '2025-09-06T19:39:58.885780', 'step': '步骤2', 'action': '成功选择选项', 'details': {'selector': 'li:has-text("Speculative - 5")', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #04:
+{'timestamp': '2025-09-06T19:39:59.394996', 'step': '步骤3', 'action': '找到搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'element_type': 'A标签', 'success': True}}
+------------------------------------------------------------
+
+Entry #05:
+{'timestamp': '2025-09-06T19:39:59.728112', 'step': '步骤3', 'action': '成功点击搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #06:
+{'timestamp': '2025-09-06T19:40:04.846198', 'step': '步骤4', 'action': '成功点击Performance标签', 'details': {'selector': 'button:has-text("Performance"), a:has-text("Performance"), [data-testid*="performance"], [data-testid*="Performance"]', 'success': True}}
+------------------------------------------------------------
+
+Entry #07:
+{'timestamp': '2025-09-06T19:40:06.854019', 'step': '步骤4', 'action': 'Performance页面切换状态不明', 'details': {'url': 'https://investments3.personal-banking.hsbc.com.hk/public/utb/en-gb/fundScreenerResult', 'content_found': False, 'warning': True}}
+------------------------------------------------------------
+
+Entry #08:
+{'timestamp': '2025-09-06T19:40:09.900000', 'step': '步骤4.1', 'action': '成功点击Calendar returns子标签', 'details': {'selector': 'li:has-text("Calendar returns"), button:has-text("Calendar returns"), a:has-text("Calendar returns"), [data-testid*="calendar-returns"]', 'success': True}}
+------------------------------------------------------------
+
+Entry #09:
+{'timestamp': '2025-09-06T19:40:12.931918', 'step': '步骤4.2', 'action': '成功点击Fund列标题', 'details': {'selector': 'th:has-text("Fund"), button:has-text("Fund"), [data-testid*="fund"], .fund-header', 'success': True}}
+------------------------------------------------------------
+
+Entry #10:
+{'timestamp': '2025-09-06T19:40:15.934495', 'step': '步骤5', 'action': '使用默认显示数量', 'details': {'action': 'skip_display_adjustment', 'reason': '使用页面默认显示数量', 'success': True}}
+------------------------------------------------------------
+

@@ -1,0 +1,89 @@
+# Asset Volatility Class Characteristic
+type AssetVolatilityClassChar {
+    _id: Long!
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    recCreatDtTm: DateTime!
+    recUpdtDtTm: DateTime!
+    list: [AssetVolatilityClassCharItem]
+    revision: Long!
+    createdBy: String
+    lastUpdatedBy: String
+
+    # Retrieve related amendments, by default return the last change only, sorting is supported
+    amendments(lastOnly: Boolean = true, sort: JSON): [AmendmentType]
+}
+
+# Asset Volatility Class Characteristic Item
+type AssetVolatilityClassCharItem {
+    rowid: String!
+    asetVoltlClassCde: String!
+    rtrnVoltlPct: Float!
+}
+
+# Asset Volatility Class Correlation
+type AssetVolatilityClassCorl {
+    _id: Long!
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    recCreatDtTm: DateTime!
+    recUpdtDtTm: DateTime!
+    list: [AssetVolatilityClassCorlItem]
+    revision: Long!
+    createdBy: String
+    lastUpdatedBy: String
+
+    # Retrieve related amendments, by default return the last change only, sorting is supported
+    amendments(lastOnly: Boolean = true, sort: JSON): [AmendmentType]
+}
+
+# Asset Volatility Class Correlation Item
+type AssetVolatilityClassCorlItem {
+    rowid: String!
+    asetVoltlClassCde: String!
+    asetVoltlClassRelCde: String!
+    asetVoltlClassCorlRate: Float!
+}
+
+# Asset Volatility Class Characteristic Input
+input AssetVolatilityClassCharInput {
+    _id: Long
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+    list: [AssetVolatilityClassCharItemInput]
+    revision: Long
+    createdBy: String
+    lastUpdatedBy: String
+    lastSyncTime: DateTime
+}
+
+# Asset Volatility Class Characteristic Item Input
+input AssetVolatilityClassCharItemInput {
+    rowid: String
+    asetVoltlClassCde: String!
+    rtrnVoltlPct: Float!
+}
+
+# Asset Volatility Class Correlation Input
+input AssetVolatilityClassCorlInput {
+    _id: Long
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+    list: [AssetVolatilityClassCorlItemInput]
+    revision: Long
+    createdBy: String
+    lastUpdatedBy: String
+    lastSyncTime: DateTime
+}
+
+# Asset Volatility Class Correlation Item Input
+input AssetVolatilityClassCorlItemInput {
+    rowid: String
+    asetVoltlClassCde: String!
+    asetVoltlClassRelCde: String!
+    asetVoltlClassCorlRate: Float!
+}

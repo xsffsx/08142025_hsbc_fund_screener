@@ -1,0 +1,266 @@
+- attrName: "isrBondNameDesc"
+  jsonPath: "debtInstm.isrBondNameDesc"
+  dataType: "String"
+  desc: "Issuer"
+  column: 1
+
+- attrName: "credRtng[CRMOODYS].creditRtngCde"
+  jsonPath: "debtInstm.credRtng[?(@.creditRtngAgcyCde=='CRMOODYS')].creditRtngCde"
+  dataType: "creditRtngCde"
+  desc: "Moodys Rating"
+  column: 2
+
+- attrName: "credRtng[CRSP].creditRtngCde"
+  jsonPath: "debtInstm.credRtng[?(@.creditRtngAgcyCde=='CRSP')].creditRtngCde"
+  dataType: "creditRtngCde"
+  desc: "S&P Rating"
+  column: 3
+
+- attrName:
+  jsonPath:
+  dataType:
+  desc: "Fitch Rating"
+  column: 4
+  remark: "not in use"
+
+- attrName: "ccyProdCde"
+  jsonPath: "ccyProdCde"
+  dataType: "String"
+  desc: "CCY"
+  column: 5
+
+- attrName: "prodIssDt"
+  jsonPath: "debtInstm.prodIssDt"
+  dataType: "Date"
+  dateFormat: "MM/dd/yyyy"
+  desc: "Issue Date"
+  column: 6
+
+- attrName: "prodMturDt"
+  jsonPath: "debtInstm.mturExtDt"
+  dataType: "Date"
+  dateFormat: "MM/dd/yyyy"
+  desc: "Maturity"
+  column: 7
+
+- attrName: "coupnAnnlRate"
+  jsonPath: "debtInstm.coupnAnnlRate"
+  dataType: "BigDecimal"
+  desc: "Coupon"
+  column: 8
+
+- attrName: "pdcyCoupnPymtCde"
+  jsonPath: "debtInstm.pdcyCoupnPymtCde"
+  dataType: "String"
+  desc: "Coupon Freq"
+  column: 9
+
+- attrName: "pymtCoupnNextDt"
+  jsonPath: "debtInstm.pymtCoupnNextDt"
+  dataType: "Date"
+  dateFormat: "MM/dd/yyyy"
+  desc: "Next Coupon"
+  column: 10
+
+- attrName: "invstInitMinAmt"
+  jsonPath: "invstInitMinAmt"
+  dataType: "BigDecimal"
+  desc: "Min Size"
+  column: 11
+
+- attrName: "intIndAccrAmt"
+  jsonPath: "debtInstm.intIndAccrAmt"
+  dataType: "BigDecimal"
+  desc: "Accrued Interest"
+  column: 12
+
+- attrName: "extAble"
+  jsonPath: "debtInstm.extAble"
+  dataType: "String"
+  desc: "Extend Term Flag"
+  column: 13
+  remark: "if extAble=Y or callAble=Y, then flexMatOptInd=Y, else N"
+
+- attrName: "callAble"
+  jsonPath: "debtInstm.callAble"
+  dataType: "String"
+  desc: "Callable Flag"
+  column: 14
+  remark: "if extAble=Y or callAble=Y, then flexMatOptInd=Y, else N"
+
+- attrName: putAble
+  jsonPath:
+  dataType:
+  desc: "Putable Flag"
+  remark: "not in use"
+  column: 15
+
+- attrName: convAble
+  jsonPath:
+  dataType:
+  desc: "Convertible Flag"
+  remark: "not in use"
+  column: 16
+
+- attrName: capitalTier
+  jsonPath:
+  dataType:
+  desc: "Debt Seniority Type Code"
+  remark: "not in use"
+  column: 17
+
+- attrName: "cptlTierText"
+  jsonPath: "debtInstm.cptlTierText"
+  dataType: "String"
+  desc: "Debt Seniority Type Code Description"
+  column: 18
+  remark: "if startsWith Subordinated, then debtInstm.subDebtInd = Y else N"
+
+- attrName: "prodBodLotQtyCnt"
+  jsonPath: "debtInstm.prodBodLotQtyCnt"
+  dataType: "prodBodLotQtyCnt"
+  desc: "Total Amount Outstanding"
+  column: 19
+
+- attrName: "prodName"
+  jsonPath: "prodName"
+  dataType: "String"
+  desc: "Bond Name"
+  column: 20
+
+- attrName: "altId[I].prodAltNum"
+  jsonPath: "altId[?(@.prodCdeAltClassCde=='I')].prodAltNum"
+  dataType: "altId"
+  desc: "ISIN Code"
+  column: 21
+
+- attrName: "grntrNameDesc"
+  jsonPath: "debtInstm.grntrNameDesc"
+  dataType: "String"
+  desc: "Guarantor"
+  column: 22
+
+- attrName:
+  jsonPath:
+  dataType:
+  desc: "Country of Issuance"
+  remark: "not in use"
+  column: 23
+
+- attrName:
+  jsonPath:
+  dataType:
+  desc: "Issue Country"
+  remark: "not in use"
+  column: 24
+
+- attrName: "ctryBondIssueCde"
+  jsonPath: "debtInstm.ctryBondIssueCde"
+  dataType: "String"
+  desc: "Country of Incorporation"
+  column: 25
+
+- attrName:
+  jsonPath:
+  dataType:
+  desc: "Country of Incorporation Description"
+  remark: "not in use"
+  column: 26
+
+- attrName:
+  jsonPath:
+  dataType:
+  desc: "Domicile"
+  remark: "not in use"
+  column: 27
+
+- attrName:
+  jsonPath:
+  dataType:
+  desc: "Domicile Description"
+  remark: "not in use"
+  column: 28
+
+- attrName:
+  jsonPath:
+  dataType:
+  desc: "Issuer Country Code"
+  remark: "not in use"
+  column: 29
+
+- attrName:
+  jsonPath:
+  dataType:
+  desc: "Issuer ISO Country Name"
+  remark: "not in use"
+  column: 30
+
+- attrName: "bondCallNextDt"
+  jsonPath: "debtInstm.bondCallNextDt"
+  dataType: "Date"
+  dateFormat: "MM/dd/yyyy"
+  desc: "Call Date"
+  column: 31
+
+- attrName: "coupnType"
+  jsonPath: "debtInstm.coupnType"
+  dataType: "String"
+  desc: "Coupon Type"
+  column: 32
+
+- attrName: couponTypeDesc
+  jsonPath:
+  dataType:
+  desc: "Coupon Type Description"
+  column: 33
+  remark: "not in use"
+
+- attrName: "intBasisCalcText"
+  jsonPath: "debtInstm.intBasisCalcText"
+  dataType: "String"
+  desc: "Interest Rate Basis"
+  column: 34
+
+- attrName: "indexFltRateName"
+  jsonPath: "debtInstm.indexFltRateName"
+  dataType: "String"
+  desc: "Floating Rate Index"
+  column: 35
+
+- attrName: "bondFltSprdRate"
+  jsonPath: "debtInstm.bondFltSprdRate"
+  dataType: "BigDecimal"
+  desc: "Floating Rate Spread"
+  column: 36
+
+- attrName: "prodAltPrimNum"
+  jsonPath: "prodAltPrimNum"
+  dataType: "String"
+  desc: "Bond Code"
+  column: 37
+
+- attrName: "isrId"
+  jsonPath: "debtInstm.isrBondName"
+  dataType: "isrBondName"
+  desc: "Issuer ID"
+  column: 38
+  remark: "If Issuer OrgID is blank, then use Issuer ID"
+
+- attrName: "isrOrgId"
+  jsonPath: "debtInstm.isrBondName"
+  dataType: "isrBondName"
+  desc: "Issuer OrgID"
+  column: 39
+  remark: "If Issuer OrgID is blank, then use Issuer ID"
+
+- attrName: "grntrName"
+  jsonPath: "debtInstm.grntrName"
+  dataType: "String"
+  desc: "Guarantor OrgID"
+  column: 40
+
+- attrName: "isPerpetualInd"
+  jsonPath: "debtInstm.isPerpetualInd"
+  dataType: "String"
+  desc: "Perpetual Product Indicator"
+  column: 41

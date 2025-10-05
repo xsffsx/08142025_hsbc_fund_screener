@@ -1,0 +1,272 @@
+{
+  "apiMappingSummary": {
+    "documentTitle": "HSBC Fund Detail Page API Mapping Summary - CAPTURED DATA",
+    "targetPage": "https://investments3.personal-banking.hsbc.com.hk/public/utb/en-gb/fundDetail/U63166",
+    "fundCode": "U63166",
+    "fundName": "HCIT-HSBC GLOBAL SUSTAINABLE MULTI-ASSET INCOME FUND (AM2-USD-MD-C)",
+    "lastUpdated": "2025-09-10T14:00:00Z",
+    "captureMethod": "Playwright browser automation with network monitoring",
+    "totalModules": 19,
+    "mappedModules": 17,
+    "actualCapturedAPIs": 7,
+    "successfulCaptures": 1,
+    "failedCaptures": 6,
+    "apiEndpoints": [
+      {
+        "endpoint": "/shp/wealth-mobile-utb-tp-public-shp-api-hk-hbap-prod-proxy/v0/amh/ut/product",
+        "description": "基金产品基本信息API",
+        "requestFile": "product_request.json",
+        "responseFile": "product_response.json",
+        "usedInModules": [
+          "1. Fund Summary Information",
+          "2. Fund Risk Level",
+          "3. Fund Offering Documents",
+          "4. Investment Objective",
+          "12. Other Fund Classes",
+          "13. Fund Profile",
+          "14. Investment Strategy",
+          "15. Dividend Information",
+          "18. Fees and Charges"
+        ]
+      },
+      {
+        "endpoint": "/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail",
+        "description": "基金报价详情API",
+        "requestFile": "quote_detail_request.json",
+        "responseFile": "quote_detail_response.json",
+        "usedInModules": [
+          "9. Fund Price History Enquiry"
+        ]
+      },
+      {
+        "endpoint": "/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/fundQuoteSummary",
+        "description": "基金报价摘要API",
+        "requestFile": "fund_quote_summary_request.json",
+        "responseFile": "fund_quote_summary_response.json",
+        "usedInModules": [
+          "7. Performance - Period Returns",
+          "8. Performance - Calendar Returns",
+          "16. Risk Return Profile",
+          "17. Rating"
+        ]
+      },
+      {
+        "endpoint": "/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/holdingAllocation",
+        "description": "基金持仓分配API",
+        "requestFile": "holding_allocation_request.json",
+        "responseFile": "holding_allocation_response.json",
+        "usedInModules": [
+          "10. Holdings Diversification"
+        ]
+      },
+      {
+        "endpoint": "/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings",
+        "description": "基金前十大持仓API",
+        "requestFile": "top_ten_holdings_request.json",
+        "responseFile": "top_ten_holdings_response.json",
+        "usedInModules": [
+          "11. Top 10 Holdings"
+        ]
+      },
+      {
+        "endpoint": "/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/advanceChart",
+        "description": "基金高级图表数据API",
+        "requestFile": "advance_chart_request.json",
+        "responseFile": "advance_chart_response.json",
+        "usedInModules": [
+          "5. Performance Chart - Performance",
+          "6. Performance Chart - Price Chart"
+        ]
+      },
+      {
+        "endpoint": "https://quotespeed.morningstar.com/ra/snChartData",
+        "description": "Morningstar图表数据API (外部第三方)",
+        "requestFile": "morningstar_chart_1m_request.json",
+        "responseFile": "morningstar_chart_1m_response.json",
+        "usedInModules": [
+          "5.1. Performance Chart - Performance (Minute View)"
+        ]
+      }
+    ],
+    "mappedModulesDetails": [
+      {
+        "moduleNumber": 1,
+        "moduleName": "Fund Summary Information",
+        "apiEndpoint": "/v0/amh/ut/product",
+        "mappedFields": 6,
+        "precisionIssues": [
+          "Current Price: 前端显示USD 9.307，API返回9.351（实时价格变化）",
+          "Price Change: 前端显示+0.026 (+0.28%)，API返回+0.044 (+0.47%)（实时变化）"
+        ]
+      },
+      {
+        "moduleNumber": 2,
+        "moduleName": "Fund Risk Level",
+        "apiEndpoint": "/v0/amh/ut/product",
+        "mappedFields": 4,
+        "precisionIssues": [
+          "Risk Level: 前端显示\"2\"，API返回2（前端添加引号格式化）"
+        ]
+      },
+      {
+        "moduleNumber": 3,
+        "moduleName": "Fund Offering Documents",
+        "apiEndpoint": "/v0/amh/ut/product",
+        "mappedFields": 7,
+        "precisionIssues": [
+          "Document URLs: API返回文档URL标识符，前端需要转换为实际链接"
+        ]
+      },
+      {
+        "moduleNumber": 4,
+        "moduleName": "Investment Objective",
+        "apiEndpoint": "/v0/amh/ut/product",
+        "mappedFields": 2,
+        "precisionIssues": []
+      },
+      {
+        "moduleNumber": 5,
+        "moduleName": "Performance Chart - Performance",
+        "apiEndpoint": "/v0/wmds/advanceChart",
+        "mappedFields": 17,
+        "precisionIssues": [
+          "Chart Type: 前端处理Performance Chart和Price Chart的切换状态",
+          "Loading Status: 前端动态显示加载状态",
+          "Data Points: 图表悬停显示完整基金名称，前端截断显示",
+          "Date Format: API返回ISO格式，前端显示DD/MM/YYYY格式",
+          "Growth Display: 前端添加+号和%符号显示增长率"
+        ]
+      },
+      {
+        "moduleNumber": "5.1",
+        "moduleName": "Performance Chart - Performance (Minute View)",
+        "apiEndpoint": "https://quotespeed.morningstar.com/ra/snChartData",
+        "apiType": "external_morningstar",
+        "mappedFields": 20,
+        "precisionIssues": [
+          "External API Integration: 使用Morningstar第三方API获取图表数据",
+          "Fund Code Mapping: HSBC代码(U63166) ↔ Morningstar代码(F000017RIG/0P0001MQYT)",
+          "Date Format: API使用YYYY-MM-DD，前端显示DD/MM/YYYY",
+          "Performance Format: API返回数值1.25，前端显示为+1.25%",
+          "Currency Symbol: API返回数值9.351，前端显示为USD 9.351",
+          "Fund Name Truncation: 图表悬停显示完整名称，列表中显示截断版本"
+        ]
+      },
+      {
+        "moduleNumber": 6,
+        "moduleName": "Performance Chart - Price Chart",
+        "apiEndpoint": "/v0/wmds/advanceChart",
+        "mappedFields": 16,
+        "precisionIssues": [
+          "Price Range: 前端显示约8.20-9.40 USD，API返回具体价格数组（前端计算最小最大值）",
+          "Data Points: 图表悬停显示完整基金名称，前端截断显示",
+          "Date Format: API返回ISO格式，前端显示DD/MM/YYYY格式",
+          "Growth Display: 前端添加+号和%符号显示增长率"
+        ]
+      },
+      {
+        "moduleNumber": 7,
+        "moduleName": "Performance - Period Returns",
+        "apiEndpoint": "/v0/wmds/fundQuoteSummary",
+        "mappedFields": 12,
+        "precisionIssues": [
+          "所有收益率数据存在实时更新差异，前端显示值与API返回值略有不同"
+        ]
+      },
+      {
+        "moduleNumber": 8,
+        "moduleName": "Performance - Calendar Returns",
+        "apiEndpoint": "/v0/wmds/fundQuoteSummary",
+        "mappedFields": 8,
+        "precisionIssues": [
+          "2025年收益率实时更新：前端显示+6.51%，API返回+7.01%"
+        ]
+      },
+      {
+        "moduleNumber": 9,
+        "moduleName": "Fund Price History Enquiry",
+        "apiEndpoint": "/v0/wmds/quoteDetail",
+        "mappedFields": 10,
+        "precisionIssues": [
+          "日期格式转换：前端显示09 Sep 2022，API返回2022-09-09",
+          "价格显示组合：前端组合显示日期和价格，API分别返回"
+        ]
+      },
+      {
+        "moduleNumber": 10,
+        "moduleName": "Holdings Diversification",
+        "apiEndpoint": "/v0/wmds/holdingAllocation",
+        "mappedFields": 18,
+        "precisionIssues": []
+      },
+      {
+        "moduleNumber": 11,
+        "moduleName": "Top 10 Holdings",
+        "apiEndpoint": "/v0/wmds/topTenHoldings",
+        "mappedFields": 11,
+        "precisionIssues": [
+          "持仓显示: 前端组合显示持仓名称+市值+百分比，API分别返回各字段"
+        ]
+      },
+      {
+        "moduleNumber": 12,
+        "moduleName": "Other Fund Classes",
+        "apiEndpoint": "/v0/amh/ut/product",
+        "mappedFields": 8,
+        "precisionIssues": [
+          "基金代码显示：前端组合显示代码和类别名称，API分别返回各字段"
+        ]
+      },
+      {
+        "moduleNumber": 13,
+        "moduleName": "Fund Profile",
+        "apiEndpoint": "/v0/amh/ut/product",
+        "mappedFields": 10,
+        "precisionIssues": []
+      },
+      {
+        "moduleNumber": 14,
+        "moduleName": "Investment Strategy",
+        "apiEndpoint": "/v0/amh/ut/product",
+        "mappedFields": 5,
+        "precisionIssues": []
+      },
+      {
+        "moduleNumber": 15,
+        "moduleName": "Dividend Information",
+        "apiEndpoint": "/v0/amh/ut/product",
+        "mappedFields": 7,
+        "precisionIssues": [
+          "Dividend Yield: 前端显示3.99%，API返回3.99（前端添加%符号）"
+        ]
+      },
+      {
+        "moduleNumber": 16,
+        "moduleName": "Risk Return Profile",
+        "apiEndpoint": "/v0/wmds/fundQuoteSummary",
+        "mappedFields": 11,
+        "precisionIssues": [
+          "数值格式化: Sharpe Ratio、Alpha、Beta前端添加引号显示"
+        ]
+      },
+      {
+        "moduleNumber": 17,
+        "moduleName": "Rating",
+        "apiEndpoint": "/v0/wmds/fundQuoteSummary",
+        "mappedFields": 5,
+        "precisionIssues": [
+          "Morningstar Rating: 前端转换为星号显示，API返回数字评级"
+        ]
+      },
+      {
+        "moduleNumber": 18,
+        "moduleName": "Fees and Charges",
+        "apiEndpoint": "/v0/amh/ut/product",
+        "mappedFields": 7,
+        "precisionIssues": [
+          "费用显示: 前端为数值添加%符号，API返回纯数值"
+        ]
+      }
+    ]
+  }
+}

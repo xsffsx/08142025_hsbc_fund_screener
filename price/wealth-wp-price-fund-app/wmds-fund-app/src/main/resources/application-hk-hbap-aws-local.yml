@@ -1,0 +1,35 @@
+#dataSourceConfiguration
+#self: 
+#  datasource: 
+#    databaseName: ORACLE
+#    username: MDSHKUTUA1_APPUSER
+#    password: MDSHKUTUA1_APPUSER.123
+#    url: jdbc:oracle:thin:@amh-dev-wporcl01.wealth-platform-amh.dev.aws.cloud.hhhh:1521:UAMHWP01
+#    
+
+server:
+  max-http-header-size: 163840
+
+logging:
+  level:
+    root: info
+    com.hhhh.wealth: debug
+ 
+spring: 
+  datasource:
+    hikari:
+      connection-test-query: SELECT 1 FROM DUAL
+      minimum-idle: 5
+      maximum-pool-size: 10
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@hkg3pl0038-vip.hk.hhhh:2001/dwcs2a.hk.hhhh
+    username: MDSHKUA1_APPUSER
+    password: MDSHKUA1_APPUSER.123
+    
+#spring: 
+#  datasource: 
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@amh-dev-wporcl01.wealth-platform-amh.dev.aws.cloud.hhhh:1521:UAMHWP01
+#    username: MDSHKUTUA1_APPUSER
+#    password: MDSHKUTUA1_APPUSER.123
+

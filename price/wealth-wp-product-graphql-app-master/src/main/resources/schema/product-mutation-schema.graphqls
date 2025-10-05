@@ -1,0 +1,168 @@
+# Result of product creation
+type ProductBatchCreateResultType {
+    # products that being created
+    createdProducts: [ProductType!]
+    # invalid products
+    invalidProducts: [ProductValidationResultType!]
+}
+
+# Result of product update
+type ProductBatchUpdateResultType {
+    # product count that match the filter criteria
+    matchCount: Long!
+    # all products that input (for product creation) or match the filter criteria (for product update)
+    matchProducts: [ProductType!]
+    # products that being mutated
+    updatedProducts: [ProductType!]
+    # invalid products
+    invalidProducts: [ProductValidationResultType!]
+}
+
+type ProductValidationResultType {
+    # The product data which is going to be created or updated
+    product: ProductType!
+
+    # Errors in the product validation
+    errors: [Error]!
+}
+
+
+# Result of ReferData update
+type ReferDataBatchCreateResultType {
+    # ReferData that being created
+    createdReferenceData: [ReferenceDataType!]
+    # invalid ReferData
+    invalidReferenceData: [ReferDataValidationResultType!]
+}
+
+# Result of ReferData update
+type ReferDataBatchUpdateResultType {
+    matchCount: Long!
+    matchReferenceData: [ReferenceDataType!]
+    updatedReferenceData: [ReferenceDataType!]
+    invalidReferenceData: [ReferDataValidationResultType!]
+}
+
+# Result of StaffLicenseCheck import
+type StaffLicenseCheckBatchImportResultType {
+    createdStaffLicenseCheck: [StaffLicenseCheckType!]
+    updatedStaffLicenseCheck: [StaffLicenseCheckType!]
+    invalidStaffLicenseCheck: [StaffLicenseCheckValidationResultType!]
+}
+
+# Result of Sys Param batch update
+type SysParamBatchUpdateResult {
+    # SysParam that being updated
+    updatedSysParams: [SysParamType!]
+    # not existing SysParam
+    notExistingSysParams: [SysParamKeyType!]
+}
+
+# Result of ReferData import
+type ReferDataBatchImportResultType {
+    # ReferData that being imported
+    importedReferenceData: [ReferenceDataType!]
+    # invalid ReferData
+    invalidReferenceData: [ReferDataValidationResultType!]
+}
+# Result of ReferData delete
+type ReferenceDataBatchDeleteResult {
+    deletedCount: Long!
+    # ReferData that being deleted
+    deletedReferenceData: [ReferenceDataType!]
+    # invalid ReferData
+    invalidReferenceData: [ReferenceDataType!]
+}
+
+type ReferDataValidationResultType {
+    referData: ReferenceDataType!
+    errors: [Error]!
+}
+
+type ReferenceDataType {
+    _id : Long
+    ctryRecCde : String
+    grpMembrRecCde : String
+    cdvTypeCde : String
+    cdvCde : String!
+    cdvDesc : String
+    cdvPllDesc : String
+    cdvSllDesc : String
+    cdvDispSeqNum : Long
+    cdvParntTypeCde : String
+    cdvParntCde : String
+    recCmntText : String
+    recCreatDtTm : DateTime
+    recUpdtDtTm : DateTime
+    revision : Long
+    createdBy : String
+}
+
+type StaffLicenseCheckValidationResultType {
+    staffLicenseCheck: StaffLicenseCheckType!
+    errors: [Error]!
+}
+
+type StaffLicenseCheckType{
+    _id: Long
+    revision: Long
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    prodTypeCde: String
+    prodSubtpCde: String
+    employPosnCde: String!
+    frmlaEmplyEligText: String
+    ovridEmplyEligChkInd: String
+    ctoffEmplyEligChkInd: String
+    emplyEligCtoffDt: Date
+    frmlaEmpEligBfrCtoffText: String
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+    createdBy: String
+    lastUpdatedBy: String
+}
+
+input OperationInput {
+    # operation, set, delete, add
+    op: Operation!
+
+    # json path of the data points, eg. $.a.b[1]
+    path: String!
+
+    # value of the operation
+    value: JSON
+}
+
+type OperationType {
+    # operation, set, delete, add
+    op: Operation!
+
+    # json path of the data points, eg. $.a.b[1]
+    path: String!
+
+    # value of the operation
+    value: JSON
+}
+
+enum Operation {
+    # set value of the field no matter the field exist or not
+    put
+    # set value of an existing field, will be ignore if the field doesn't exist
+    set
+    # delete a field, will be ignore if the field doesn't exist
+    delete
+    # add an element to an array
+    add
+}
+
+input ProductBatchUpdateInput {
+    filter: JSON!
+
+    operations: [OperationInput!]!
+}
+
+input ProductBatchUpdateByIdInput {
+    prodId: Long!
+
+    operations: [OperationInput!]!
+}

@@ -1,0 +1,727 @@
+#####################################################################################################################
+# Manipulate product data according to remodel request, currently handle only UDF and EXT fields, but the design.
+# See https://wpb-confluence.systems.uk.dummy/display/WWS/UK+WPC+existing+User+Define+Fields+and+user+Extension+Fields
+#####################################################################################################################
+# Copy fields, 'from' field will be copied to 'to' field, if the parent doesn't exist, it will be created as as map object to contain the sub field
+move:
+  ####### copy UDF fields #######
+  # Restricted Fund Indicator - CAT Standard Fund
+  - from: "udf.udf14"
+    to: "utTrstInstm.rstFundInd"
+
+  # Insurance Sub-category
+  - from: "udf.udf15"
+    to: "insSubCat"
+
+  ####### copy EXT fields #######
+  # Fund Category
+  - from: "ext.fundCatCde"
+    to: "utTrstInstm.fundCatCde"
+
+  # Guaranteed Fund Indicator
+  - from: "ext.gteFundInd"
+    to: "utTrstInstm.gteFundInd"
+
+  # Manual Override Asset Class Indicator
+  - from: "ext.manOverAssClaInd"
+    to: "manOverAssClaInd"
+
+  # Settlement Lead Time for Subscription
+  - from: "ext.setlLeadTmScrib"
+    to: "setlLeadTmScrib"
+
+  # Settlement Lead Time for Redemption
+  - from: "ext.setlLeadTmRdm"
+    to: "setlLeadTmRdm"
+
+  # GIC fund indicator
+  - from: "ext.gicFundIndicator"
+    to: "gicFundIndicator"
+
+  # Execution only Minimum Investment Amount
+  - from: "ext.exoMIPMinAmt"
+    to: "utTrstInstm.exoMIPMinAmt"
+
+  # Premier Recommended indicator
+  - from: "ext.premRecomInd"
+    to: "premRecomInd"
+
+  # Auction Limit Trading Indicator
+  - from: "ext.allowAtAucLmtInd"
+    to: "stockInstm.allowAtAucLmtInd"
+
+  # Retain Minimum Amount
+  - from: "ext.retnMinAmt"
+    to: "rtainMinAmt"
+
+  # Bond Retain Minimum Amount
+  - from: "ext.bondRtainMinAmt"
+    to: "rtainMinAmt"
+
+  # Underlying Index Type
+  - from: "ext.undlIdxType"
+    to: "undlIdxType"
+
+  # EuroFund Indicator
+  - from: "ext.euroFundInd"
+    to: "euroFundInd"
+
+  # Jurisdiction
+  - from: "ext.jurisCde"
+    to: "jurisCde"
+
+  # Complex Product Indicator
+  - from: "ext.cmplxProdInd"
+    to: "cmplxProdInd"
+
+  # Subject to Lien B
+  - from: "ext.lienbIndicator"
+    to: "lienbIndicator"
+
+  # Retain Minimum Amount
+  - from: "ext.rtainMinAmt"
+    to: "rtainMinAmt"
+  #=================================new ext fields====================================
+  # Max Investment Horizon
+  - from: "ext.invstMaxHoriz"
+    to: "invstMaxHoriz"
+
+  # bondFeatures
+  - from: "ext.bondFeatures"
+    to: "debtInstm.bondFeatures"
+
+  # SOD Margin Rate
+  - from: "ext.sodMarginRate"
+    to: "sodMarginRate"
+
+  # secIssQty
+  - from: "ext.secIssQty"
+    to: "eqtyLinkInvst.secIssQty"
+
+  # Knock in Status
+  - from: "ext.knockInStatus"
+    to: "eqtyLinkInvst.knockInStatus"
+
+  # minRedmpRate
+  - from: "ext.minRedmpRate"
+    to: "strucInvstDepst.minRedmpRate"
+
+  # Worst Performing Underlying
+  - from: "ext.maturityInstmUndlCde"
+    to: "eqtyLinkInvst.maturityInstmUndlCde"
+
+  # Potential Coupon Percent
+  - from: "ext.potentCoupnPct"
+    to: "eqtyLinkInvst.potentCoupnPct"
+
+  # Partcipation Rate
+  - from: "ext.participationRatePct"
+    to: "participationRatePct"
+
+  # Customer Discretionary Rate
+  - from: "ext.discretionRate"
+    to: "eqtyLinkInvst.discretionRate"
+
+  # Fixed Coupon Rate Percent - Flat Range To
+  - from: "ext.fixCoupnToPct"
+    to: "eqtyLinkInvst.fixCoupnToPct"
+
+  # Min Investment Horizon
+  - from: "ext.invstMinHoriz"
+    to: "invstMinHoriz"
+
+  # bondIndusGrp
+  - from: "ext.bondIndusGrp"
+    to: "debtInstm.bondIndusGrp"
+
+  # ESG Indicator
+  - from: "ext.esgInd"
+    to: "esg.esgInd"
+
+  # Product IF Risk Level
+  - from: "ext.prodIFRskLvl"
+    to: "utTrstInstm.prodIFRskLvl"
+
+  # Suspend IF Trade indicator
+  - from: "ext.susIFTradeInd"
+    to: "utTrstInstm.susIFTradeInd"
+
+  # Market Start Date Time
+  - from: "ext.mktStartDtTm"
+    to: "eqtyLinkInvst.mktStartDtTm"
+
+  # restrCtryChkFlg
+  - from: "ext.restrCtryChkFlg"
+    to: "eqtyLinkInvst.restrCtryChkFlg"
+
+  # Re-offer Price Percent
+  - from: "ext.rofrPrcPct"
+    to: "eqtyLinkInvst.rofrPrcPct"
+
+  # Execution Type
+  - from: "ext.execType"
+    to: "eqtyLinkInvst.execType"
+
+  # Fixed Coupon Rate Percent  - Per annum
+  - from: "ext.fixCashDivRtPa"
+    to: "eqtyLinkInvst.eqtyLinkInvst.fixCashDivRtPa"
+
+  # US Senior Loan Indicator
+  - from: "ext.usSnrLoanInd"
+    to: "utTrstInstm.usSnrLoanInd"
+
+  # DayOut Rate Percent  - Flat
+  - from: "ext.dayOutCashDivRt"
+    to: "eqtyLinkInvst.dayOutCashDivRt"
+
+  # cutofftm
+  - from: "ext.cutofftm"
+    to: "strucInvstDepst.cutofftm"
+
+  # Shares to deliver Per Note
+  - from: "ext.sharToDeliPerNote"
+    to: "eqtyLinkInvst.sharToDeliPerNote"
+
+  # Early Call Status
+  - from: "ext.earlCallPayDt"
+    to: "eqtyLinkInvst.earlCallPayDt"
+
+  # Early Call Payment Date
+  - from: "ext.earlCallTrigDt"
+    to: "eqtyLinkInvst.earlCallTrigDt"
+
+  # maturityProdExerPrcAmt
+  - from: "ext.maturityProdExerPrcAmt"
+    to: "eqtyLinkInvst.maturityProdExerPrcAmt"
+
+  # Trigger Level Step down Frequency
+  - from: "ext.stepDownFreqCde"
+    to: "eqtyLinkInvst.stepDownFreqCde"
+
+  # Customer Tiering Rate
+  - from: "ext.custTierRate"
+    to: "eqtyLinkInvst.custTierRate"
+
+  # SFP Product Constraint Indicator
+  - from: "ext.prodCnstrtInd"
+    to: "prodCnstrtInd"
+
+  # High Yield Bond Indicator
+  - from: "ext.highYieldBondInd"
+    to: "highYieldBondInd"
+
+  # Guaranteed Fund Indicator
+  - from: "ext.gteFundInd"
+    to: "utTrstInstm.gteFundInd"
+
+  # Settlement Lead Time for Subscription
+  - from: "ext.setlLeadTmScrib"
+    to: "setlLeadTmScrib"
+
+  # longTermSubObjInd
+  - from: "ext.longTermSubObjInd"
+    to: "longTermSubObjInd"
+
+  # Has projected return value indicator
+  - from: "ext.projRtrnAmtInd"
+    to: "projRtrnAmtInd"
+
+  # Investment Grade Bond Indicator
+  - from: "ext.igBondInd"
+    to: "debtInstm.igBondInd"
+
+  # Age Calculation Method
+  - from: "ext.ageCalType"
+    to: "ageCalType"
+
+  # Protection Level
+  - from: "ext.cptlProtcPct"
+    to: "eqtyLinkInvst.cptlProtcPct"
+
+  # DayIn Coupon Rate Percent  - Flat
+  - from: "ext.dayInCashDivRt"
+    to: "eqtyLinkInvst.dayInCashDivRt"
+
+  # DayOut Rate Percent - Per annum
+  - from: "ext.dayOutCashDivRtPa"
+    to: "eqtyLinkInvst.dayOutCashDivRtPa"
+
+  # Payoff Type
+  - from: "ext.eliPayoffTypeCde"
+    to: "eqtyLinkInvst.eliPayoffTypeCde"
+
+  # Knock in Date
+  - from: "ext.knockInDate"
+    to: "eqtyLinkInvst.knockInDate"
+
+  # Underlying Index Name in Primary Language
+  - from: "ext.undlIndexPllName"
+    to: "utTrstInstm.undlIndexPllName"
+
+  # Product Grouping Audio Recording
+  - from: "ext.grpNumAudioRecording"
+    to: "grpNumAudioRecording"
+
+  # Product Grouping Risk Disclosure
+  - from: "ext.grpNumRiskDisclosure"
+    to: "grpNumRiskDisclosure"
+
+  # Legacy Goal Objective Priority
+  - from: "ext.prtyLgcyCde"
+    to: "prtyLgcyCde"
+
+  # Annual Management fee
+  - from: "ext.annMgmtFeePct"
+    to: "utTrstInstm.annMgmtFeePct"
+
+  # General Account Tradable
+  - from: "ext.gnrAcctTrdb"
+    to: "gnrAcctTrdb"
+
+  # Settlement Lead Time for Redemption
+  - from: "ext.setlLeadTmRdm"
+    to: "setlLeadTmRdm"
+
+  # Switchable Fund Groups
+  - from: "ext.switchFundGrpList"
+    to: "utTrstInstm.switchFundGrpList"
+
+  # Protection Period
+  - from: "ext.protectPeriod"
+    to: "protectPeriod"
+
+  # Market End Date Time
+  - from: "ext.mktEndDtTm"
+    to: "eqtyLinkInvst.mktEndDtTm"
+
+  # Periodicity Call Code
+  - from: "ext.spCoupnPymtCde"
+    to: "eqtyLinkInvst.spCoupnPymtCde"
+
+  # Barrier Price Percent
+  - from: "ext.barrierPrcPct"
+    to: "eqtyLinkInvst.barrierPrcPct"
+
+  # Exercise Price Percentage
+  - from: "ext.exerPrcPct"
+    to: "eqtyLinkInvst.exerPrcPct"
+
+  # Exercise Price Percentage Range From
+  - from: "ext.autocallDtList"
+    to: "eqtyLinkInvst.autocallDtList"
+
+  # Exercise Price Percentage RangeTo
+  - from: "ext.cmbProdInd"
+    to: "eqtyLinkInvst.cmbProdInd"
+
+  # Issuer
+  - from: "ext.eliIssuer"
+    to: "eqtyLinkInvst.eliIssuer"
+
+  # miniInitAmt
+  - from: "ext.miniInitAmt"
+    to: "eqtyLinkInvst.miniInitAmt"
+
+  # miniTopUpAmt
+  - from: "ext.miniTopUpAmt"
+    to: "eqtyLinkInvst.miniTopUpAmt"
+
+  # txtBoxReqInd
+  - from: "ext.txtBoxReqInd"
+    to: "eqtyLinkInvst.txtBoxReqInd"
+
+  # targetTrigRate
+  - from: "ext.targetTrigRate"
+    to: "strucInvstDepst.targetTrigRate"
+
+  # popularRankNum
+  - from: "ext.popularRankNum"
+    to: "utTrstInstm.popularRankNum"
+
+  # Cash Value for Cash Settlement Per Note
+  - from: "ext.cashValuForCashSettPerNote"
+    to: "eqtyLinkInvst.cashValuForCashSettPerNote"
+
+  # Fixing FX Rate
+  - from: "ext.fxRate"
+    to: "eqtyLinkInvst.fxRate"
+
+  # Fixed Coupon Rate Percent - Flat Range From
+  - from: "ext.fixCoupnFrPct"
+    to: "eqtyLinkInvst.fixCoupnFrPct"
+
+  # Min Finical Knowledge score
+  - from: "ext.finKnowMinScore"
+    to: "finKnowMinScore"
+
+  # jadeBondProdInd
+  - from: "ext.jadeBondProdInd"
+    to: "debtInstm.jadeBondProdInd"
+
+  # Jurisdiction
+  - from: "ext.jurisCde"
+    to: "jurisCde"
+
+  # mktOrderInd
+  - from: "ext.mktOrderInd"
+    to: "debtInstm.mktOrderInd"
+
+  # rbpMigrInd
+  - from: "ext.rbpMigrInd"
+    to: "debtInstm.rbpMigrInd"
+
+  # Fund Class Group Code
+  - from: "ext.fundClsGrpCde"
+    to: "utTrstInstm.fundClsGrpCde"
+
+  # Share Class Name
+  - from: "ext.fundShreClsName"
+    to: "utTrstInstm.fundShreClsName"
+
+  # Share Class Name in Secondary Local Language
+  - from: "ext.fundShreClsNameSecLang"
+    to: "utTrstInstm.fundShreClsNameSecLang"
+
+  # Insurance Type
+  - from: "ext.insuranceType"
+    to: "insuranceType"
+
+  # Launching Insurance Sales Application
+  - from: "ext.quotAppCde"
+    to: "quotAppCde"
+
+  # Launching Insurance Sales Application
+  - from: "ext.saleAppCde"
+    to: "saleAppCde"
+
+  # Primary Share Class Indicator
+  - from: "ext.priShareClassInd"
+    to: "utTrstInstm.priShareClassInd"
+
+  # Knock In Price Percent
+  - from: "ext.knockInPrcPct"
+    to: "eqtyLinkInvst.knockInPrcPct"
+
+  # Minimun Tranche Size
+  - from: "ext.minTrnchSz"
+    to: "eqtyLinkInvst.minTrnchSz"
+
+  # restrCtry
+  - from: "ext.restrCtry"
+    to: "eqtyLinkInvst.restrCtry"
+
+  # Default Settle Method
+  - from: "ext.dfltSetlMeth"
+    to: "eqtyLinkInvst.dfltSetlMeth"
+
+  # Exercise Price Percentage Range From
+  - from: "ext.exerPrcPctRgeFrom"
+    to: "eqtyLinkInvst.exerPrcPctRgeFrom"
+
+  # DayIn Coupon Rate Percent  - Per annum
+  - from: "ext.dayInCashDivRtPa"
+    to: "eqtyLinkInvst.dayInCashDivRtPa"
+
+  # currDervFlg
+  - from: "ext.currDervFlg"
+    to: "eqtyLinkInvst.currDervFlg"
+
+  # initialSpotRate
+  - from: "ext.initialSpotRate"
+    to: "strucInvstDepst.initialSpotRate"
+
+  # maxRedmpRate
+  - from: "ext.maxRedmpRate"
+    to: "strucInvstDepst.maxRedmpRate"
+
+  # tradeDt
+  - from: "ext.tradeDt"
+    to: "strucInvstDepst.tradeDt"
+
+  # execDt
+  - from: "ext.execDt"
+    to: "strucInvstDepst.execDt"
+
+  # Underlying Index Code
+  - from: "ext.undlIndexCde"
+    to: "utTrstInstm.undlIndexCde"
+
+  # Underlying Index Name in Primary Language
+  - from: "ext.undlIndexName"
+    to: "utTrstInstm.undlIndexName"
+
+  # Underlying Index Name in Secondary Language
+  - from: "ext.undlIndexSllName"
+    to: "utTrstInstm.undlIndexSllName"
+
+  # First Call Date
+  - from: "ext.autocallDt"
+    to: "eqtyLinkInvst.autocallDt"
+
+  # Max Risk Level
+  - from: "ext.maxRiskLvlCde"
+    to: "eqtyLinkInvst.maxRiskLvlCde"
+
+  # SFP Shortlisted Product Indicator
+  - from: "ext.sfpShtLstInd"
+    to: "sfpShtLstInd"
+
+  # prodSubtpCdeCat
+  - from: "ext.prodSubtpCdeCat"
+    to: "debtInstm.prodSubtpCdeCat"
+
+  # Minimum Payment Terms in Years
+  - from: "ext.minPaymentTerm"
+    to: "minPaymentTerm"
+
+  # Number Of Guaranteed Period
+  - from: "ext.numOfGurntPrd"
+    to: "eqtyLinkInvst.numOfGurntPrd"
+
+  # QuoteType
+  - from: "ext.quoteType"
+    to: "eqtyLinkInvst.quoteType"
+
+  # QuoteType
+  - from: "ext.quoteType"
+    to: "eqtyLinkInvst.quoteType"
+
+  # Call Price Percent
+  - from: "ext.autoCallTrigPrcPct"
+    to: "eqtyLinkInvst.autoCallTrigPrcPct"
+
+  # Floor Price Percent
+  - from: "ext.floorLvlPct"
+    to: "eqtyLinkInvst.floorLvlPct"
+
+  # eliRiskLvlCde
+  - from: "ext.eliRiskLvlCde"
+    to: "stockInstm.eliRiskLvlCde"
+
+  # paymentSchedule
+  - from: "ext.paymentSchedule"
+    to: "eqtyLinkInvst.paymentSchedule"
+
+  # Customer Tier
+  - from: "ext.custTier"
+    to: "eqtcustTieryLinkInvst."
+
+  # ELI Price Effective Date
+  - from: "ext.eliPrcEffDt"
+    to: "eqtyLinkInvst.eliPrcEffDt"
+
+  # Quote Type
+  - from: "ext.quotType"
+    to: "eqtyLinkInvst.quotType"
+
+  # Cash Value of Excess Shares Per Note
+  - from: "ext.cashValuOfExceSharPerNote"
+    to: "eqtyLinkInvst.cashValuOfExceSharPerNote"
+
+
+  # Trigger Level Step down Percentage
+  - from: "ext.stepDownPct"
+    to: "eqtyLinkInvst.stepDownPct"
+
+  # US Underlying Indicator
+  - from: "ext.usUndlInd"
+    to: "eqtyLinkInvst.usUndlInd"
+
+  # newlyIssBondInd
+  - from: "ext.newlyIssBondInd"
+    to: "debtInstm.newlyIssBondInd"
+
+  # Recommended Action
+  - from: "ext.recomActCde"
+    to: "recomActCde"
+
+  # Wrapper
+  - from: "ext.wrapCde"
+    to: "wrapCde"
+
+  # Share Class Name in Primary Local Language
+  - from: "ext.fundShreClsNamePriLang"
+    to: "utTrstInstm.fundShreClsNamePriLang"
+
+  # Liquid Alternatives Indicator
+  - from: "ext.liqAltInd"
+    to: "utTrstInstm.liqAltInd"
+
+  # dealPartCde
+  - from: "ext.dealPartCde"
+    to: "eqtyLinkInvst.dealPartCde"
+
+  # Early Call Trigger Date
+  - from: "ext.earlCallStat"
+    to: "eqtyLinkInvst.earlCallStat"
+
+  # Single/Basket Indicator
+  - from: "ext.undlQtyInd"
+    to: "eqtyLinkInvst.undlQtyInd"
+
+  # siFundCatCde
+  - from: "ext.siFundCatCde"
+    to: "utTrstInstm.siFundCatCde"
+
+  # Quote By Rm
+  - from: "ext.quoteByRm"
+    to: "eqtyLinkInvst.quoteByRm"
+
+  # RM staff id
+  - from: "ext.relMgrIds"
+    to: "eqtyLinkInvst.relMgrIds"
+
+  # Complex Product Indicator
+  - from: "ext.cmplxProdInd"
+    to: "cmplxProdInd"
+
+  # Max Finical Knowledge score
+  - from: "ext.finKnowMaxScore"
+    to: "finKnowMaxScore"
+
+  # Clear Fund Indicator
+  - from: "ext.clearFundInd"
+    to: "utTrstInstm.clearFundInd"
+
+  # GBA Account Tradable
+  - from: "ext.gbaAcctTrdb"
+    to: "gbaAcctTrdb"
+
+  # End Year of timeframe to assess fund
+  - from: "ext.accesEndYrNum"
+    to: "accesEndYrNum"
+
+  # Start Year of timeframe to assess fund
+  - from: "ext.accesStartYrNum"
+    to: "accesStartYrNum"
+
+  # crtIllSubObjInd
+  - from: "ext.crtIllSubObjInd"
+    to: "crtIllSubObjInd"
+
+  # Evaluation of Liquidity Indicator
+  - from: "ext.evalLqdyInd"
+    to: "evalLqdyInd"
+
+  # Preparation For Health Care Needs Indicator
+  - from: "ext.healthobjInd"
+    to: "healthobjInd"
+
+  # Allow TT customer only
+  - from: "ext.restrTtInd"
+    to: "restrTtInd"
+
+  # Significant Life Product Indicator
+  - from: "ext.sgnfcntLifeProdInd"
+    to: "sgnfcntLifeProdInd"
+
+  # Required Audio Recording
+  - from: "ext.audRecInd"
+    to: "utTrstInstm.audRecInd"
+
+  # Trade Price Percent
+  - from: "ext.tradePrcPct"
+    to: "eqtyLinkInvst.tradePeqtyLinkInvst.ttlMaxOrderSzlimitrcPct"
+
+  # Total Maximun Order Size Limit
+  - from: "ext.ttlMaxOrderSzlimit"
+    to: "eqtyLinkInvst.ttlMaxOrderSzlimit"
+
+  # Distributor Fee
+  - from: "ext.distbrFeePct"
+    to: "eqtyLinkInvst.distbrFeePct"
+
+  # Exercise Price Percentage RangeTo
+  - from: "ext.exerPrcPctRgeTo"
+    to: "eqtyLinkInvst.exerPrcPctRgeTo"
+
+  # Fixed Coupon Rate Percent - Flat
+  - from: "ext.fixCashDivRt"
+    to: "eqtyLinkInvst.fixCashDivRt"
+
+  # Last Deal Date
+  - from: "ext.lastDealDt"
+    to: "utTrstInstm.lastDealDt"
+
+  # Final Callable Date
+  - from: "ext.finacallDt"
+    to: "eqtyLinkInvst.finacallDt"
+
+  # appCde
+  - from: "ext.appCde"
+    to: "strucInvstDepst.appCde"
+
+  # Original WPB fee
+  - from: "ext.originalFeePct"
+    to: "eqtyLinkInvst.originalFeePct"
+
+  # Exclude from Collateral for Certain Customers
+  - from: "ext.exclCollatInd"
+    to: "utTrstInstm.exclCollatInd"
+
+  # shortLstRPQLvlNum
+  - from: "ext.shortLstRPQLvlNum"
+    to: "utTrstInstm.shortLstRPQLvlNum"
+
+  # inDealBefDt
+  - from: "ext.inDealBefDt"
+    to: "utTrstInstm.inDealBefDt"
+
+  # Indicative Settlement Date for Redemption(before fund cutoff)
+  - from: "ext.inRedempStlBefDt"
+    to: "utTrstInstm.inRedempStlBefDt"
+
+  # inScribStlBefDt
+  - from: "ext.inScribStlBefDt"
+    to: "utTrstInstm.inScribStlBefDt"
+
+  # Restricted Online Subscription Indicator
+  - from: "ext.restrOnlScribInd"
+    to: "utTrstInstm.restrOnlScribInd"
+
+  # Interface Date
+  - from: "ext.infcDt"
+    to: "utTrstInstm.infcDt"
+
+  # Minimum Initial Charge for Staff
+  - from: "ext.minStaffFicPct"
+    to: "utTrstInstm.minStaffFicPct"
+
+  # Indicative Settlement Date for Subscription(before fund cutoff)
+  - from: "ext.inRedempStlAftDt"
+    to: "utTrstInstm.inRedempStlAftDt"
+
+  # De-authorized Fund Indicator
+  - from: "ext.deAuthFundInd"
+    to: "utTrstInstm.deAuthFundInd"
+
+  # dummy Maximum Initial Charge Rate
+  - from: "ext.dummyMaxInitchrgPct"
+    to: "utTrstInstm.dummyMaxInitchrgPct"
+
+  # Minimum Initial Charge
+  - from: "ext.minFicPct"
+    to: "utTrstInstm.minFicPct"
+
+  # Private Fund Indicator
+  - from: "ext.piFundInd"
+    to: "utTrstInstm.piFundInd"
+
+  # Indicative Deal Date(after fund cutoff)
+  - from: "ext.inDealAftDt"
+    to: "utTrstInstm.inDealAftDt"
+
+  # Indicative Settlement Date for Subscription(after fund cutoff)
+  - from: "ext.inScribStlAftDt"
+    to: "utTrstInstm.inScribStlAftDt"
+
+  # Sweep Invest Fund Indicator
+  - from: "ext.siFundInd"
+    to: "utTrstInstm.siFundInd"
+
+# delete fields, all fields listed will be removed from the product document
+#delete:
+#  - "udf"
+#  - "ext"
+#  - "extOp"
+#  - "extEg"

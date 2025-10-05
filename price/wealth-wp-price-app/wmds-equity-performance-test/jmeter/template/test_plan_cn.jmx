@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">true</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="SetUp Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_53146260-b347-45bd-bae9-8a9b40f0f812&apos; IssueInstant=&apos;2020-07-13T03:59:44.447Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_53146260-b347-45bd-bae9-8a9b40f0f812&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;2fM36POlu8b+dPY/16Odo2ih0dgqrjR0AyI6WE/CIXs=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;eAOyPtmHKzKzKy2XhccJ3gFsb41VT7cfI+bYG0UD6TCg+ix+9p9iUE+wko4jQJ3AnAGZEhUD0OljAMZn0b4mIXq6Td7zhJb/ayw9PiJnV2B5NSsJTlhdgbc7J5tIUINsL4CRB2LcuufrKfOr/bcFgpxWiHrAxj+z7BpKO2Xwd9GZsLROMomdsB+fgpXIsR3pFuHginQsu0ZqFV8Jv6NJe7TohQwjEew5lOk+3ff7MLkGlfslXwOygqIbbESOTcSw6ce9hCMrOjbljfCXeDB5zOwkx9GBl5r1Ya0fvcxayJrQtUoV8ne7NihwUMWL349JlTTKar1DlDbZcfs+HhkX9Q==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;HK26719562688801F&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2020-07-13T03:59:43.447Z&apos; NotOnOrAfter=&apos;2020-07-13T04:00:44.447Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;c14e0090-b3ea-11e2-b7aa-000006010303&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;KeyAlias&apos;&gt;&lt;saml:AttributeValue&gt;E2E_TRUST_SAAS_EU01_PPROD_ALIAS&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Distributed-Cache" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;value&quot;: &quot;{\&quot;lineOfBusiness\&quot;:\&quot;\&quot;,\&quot;eID\&quot;:\&quot;DKQ089QQS089FI29F\&quot;,\&quot;cusSegment\&quot;:\&quot;N\&quot;,\&quot;freeQuote\&quot;:\&quot;50\&quot;,\&quot;chargeAcStatusUS\&quot;:\&quot;01\&quot;,\&quot;lastLogonTime\&quot;:\&quot;0\&quot;,\&quot;bonus\&quot;:\&quot;100\&quot;,\&quot;permID\&quot;:\&quot;HK26713763688801A\&quot;,\&quot;packageID\&quot;:\&quot;0\&quot;,\&quot;chargeAcStatusHK\&quot;:\&quot;01\&quot;,\&quot;packageStatus\&quot;:\&quot;0\&quot;,\&quot;staffId\&quot;:\&quot;\&quot;}&quot;,&#xd;
+	&quot;key&quot;: &quot;cc8691fa23da45ae71ef9819cb47a0b803125721a4f487fdb57b19ecfda356c5~~~S4F5PS5JysXYbvcgOptir7j~~~marketData&quot;,&#xd;
+	&quot;expiryTimeFlag&quot;: &quot;L&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">distributed-cache-system-hk-hase-v1-cert.apps.cf.skm-drn-01.cloud.hk.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/cache</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Quotes-List" enabled="{RUN_QUOTE_LIST}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">{RUN_QUOTE_LIST_THREAD_COUNT}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Function-Id</stringProp>
+              <stringProp name="Header.value">21</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-User-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+              <stringProp name="Header.value">HK26713763688801A</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+              <stringProp name="Header.value">S4F5PS5JysXYbvcgOptir7j</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+              <stringProp name="Header.value">HK</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+              <stringProp name="Header.value">HASE</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+              <stringProp name="Header.value">OHI</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Locale" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+              <stringProp name="Header.value">zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-App-Code" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-App-Code</stringProp>
+              <stringProp name="Header.value">STMA</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos; IssueInstant=&apos;2018-09-13T06:34:32.938Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;MTorXOJZywI0rGxRejeh25NnHd597uZ6vjl1+zb4AY8=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;BUCrrR+kHl4WEXRQga7kMlNjFF4/u/qsTXtwetexIvE4TtMnnjSF6XlgmLvbwpqI2xz0bUmanNqVWJnIcaU2gzbHCgI/hypX4XtQTuEKYEn87ZvNwAaeZmpLb361GPeghZC7/TIQBHvRpbbe2MKR3Y3gk2R1KIYCEEdmf3MaxsB/35E8Yf2bqlHo3GKpClPebnNqa1eQmrmnzZKpOFgR4nv+bHRc/cB7GNwcaOdEUQwq3IyimVOfG0v+lWBQzaJ9sQmuhQKZoI/Dp2yGovYz9DFBQZt9Q1bCIKn9kPTtrQnqF3yd3mRTPjxK/ZawyzhVomQmbDuDwExGMf/fdFgd6g==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;80f19b7022b611e8bb8b006136&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2018-09-13T06:34:31.938Z&apos; NotOnOrAfter=&apos;2018-09-13T06:35:32.938Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;80f19b70-22b6-11e8-bb8b-000006010306&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Quotes-List-CN" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="param" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{QUOTE_LIST_PARAM}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">param</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">aag.{TARGET_ENV}.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/wealth/api/v1/market-data/equity/quotes</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>{RUN_QUOTE_LIST_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="duration">{TEST_DURATION}</longProp>
+          <intProp name="batchSize">{RUN_QUOTE_LIST_TPS_INT}</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <longProp name="randomSeed">0</longProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>{RUN_QUOTE_LIST_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Quotes-Detail" enabled="{RUN_QUOTE_DETAIL}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">{RUN_QUOTE_DETAIL_THREAD_COUNT}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Function-Id</stringProp>
+              <stringProp name="Header.value">21</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-User-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+              <stringProp name="Header.value">HK26713763688801A</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+              <stringProp name="Header.value">S4F5PS5JysXYbvcgOptir7j</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+              <stringProp name="Header.value">HK</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+              <stringProp name="Header.value">HASE</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+              <stringProp name="Header.value">OHI</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Locale" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+              <stringProp name="Header.value">zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-App-Code" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-App-Code</stringProp>
+              <stringProp name="Header.value">STMA</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos; IssueInstant=&apos;2018-09-13T06:34:32.938Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;MTorXOJZywI0rGxRejeh25NnHd597uZ6vjl1+zb4AY8=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;BUCrrR+kHl4WEXRQga7kMlNjFF4/u/qsTXtwetexIvE4TtMnnjSF6XlgmLvbwpqI2xz0bUmanNqVWJnIcaU2gzbHCgI/hypX4XtQTuEKYEn87ZvNwAaeZmpLb361GPeghZC7/TIQBHvRpbbe2MKR3Y3gk2R1KIYCEEdmf3MaxsB/35E8Yf2bqlHo3GKpClPebnNqa1eQmrmnzZKpOFgR4nv+bHRc/cB7GNwcaOdEUQwq3IyimVOfG0v+lWBQzaJ9sQmuhQKZoI/Dp2yGovYz9DFBQZt9Q1bCIKn9kPTtrQnqF3yd3mRTPjxK/ZawyzhVomQmbDuDwExGMf/fdFgd6g==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;80f19b7022b611e8bb8b006136&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2018-09-13T06:34:31.938Z&apos; NotOnOrAfter=&apos;2018-09-13T06:35:32.938Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;80f19b70-22b6-11e8-bb8b-000006010306&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Quotes-Detail-CN" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="param" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{QUOTE_DETAIL_PARAM}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">param</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">aag.{TARGET_ENV}.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/wealth/api/v1/market-data/equity/quotes</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>1.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="duration">{TEST_DURATION}</longProp>
+          <intProp name="batchSize">{RUN_QUOTE_DETAIL_TPS_INT}</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <longProp name="randomSeed">0</longProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>{RUN_QUOTE_DETAIL_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Predictive-Search" enabled="{RUN_PREDICTIVE_SEARCH}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">{RUN_PREDICTIVE_SEARCH_THREAD_COUNT}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Function-Id</stringProp>
+              <stringProp name="Header.value">21</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-User-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+              <stringProp name="Header.value">HK26713763688801A</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+              <stringProp name="Header.value">S4F5PS5JysXYbvcgOptir7j</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+              <stringProp name="Header.value">HK</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+              <stringProp name="Header.value">HASE</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+              <stringProp name="Header.value">OHI</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Locale" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+              <stringProp name="Header.value">zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-App-Code" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-App-Code</stringProp>
+              <stringProp name="Header.value">STMA</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos; IssueInstant=&apos;2018-09-13T06:34:32.938Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;MTorXOJZywI0rGxRejeh25NnHd597uZ6vjl1+zb4AY8=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;BUCrrR+kHl4WEXRQga7kMlNjFF4/u/qsTXtwetexIvE4TtMnnjSF6XlgmLvbwpqI2xz0bUmanNqVWJnIcaU2gzbHCgI/hypX4XtQTuEKYEn87ZvNwAaeZmpLb361GPeghZC7/TIQBHvRpbbe2MKR3Y3gk2R1KIYCEEdmf3MaxsB/35E8Yf2bqlHo3GKpClPebnNqa1eQmrmnzZKpOFgR4nv+bHRc/cB7GNwcaOdEUQwq3IyimVOfG0v+lWBQzaJ9sQmuhQKZoI/Dp2yGovYz9DFBQZt9Q1bCIKn9kPTtrQnqF3yd3mRTPjxK/ZawyzhVomQmbDuDwExGMf/fdFgd6g==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;80f19b7022b611e8bb8b006136&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2018-09-13T06:34:31.938Z&apos; NotOnOrAfter=&apos;2018-09-13T06:35:32.938Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;80f19b70-22b6-11e8-bb8b-000006010306&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Predictive-Search-CN" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="param" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{PREDICTIVE_SEARCH_PARAM}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">param</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">aag.{TARGET_ENV}.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/wealth/api/v1/market-data/product/predictive-search</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout">100000</stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>{RUN_PREDICTIVE_SEARCH_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="duration">{TEST_DURATION}</longProp>
+          <intProp name="batchSize">{RUN_PREDICTIVE_SEARCH_TPS_INT}</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <longProp name="randomSeed">0</longProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>{RUN_PREDICTIVE_SEARCH_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="News-Headlines" enabled="{RUN_NEWS_HEADLINE}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">{RUN_NEWS_HEADLINE_THREAD_COUNT}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Function-Id</stringProp>
+              <stringProp name="Header.value">21</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-User-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+              <stringProp name="Header.value">HK26713763688801A</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+              <stringProp name="Header.value">S4F5PS5JysXYbvcgOptir7j</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+              <stringProp name="Header.value">HK</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+              <stringProp name="Header.value">HASE</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+              <stringProp name="Header.value">OHI</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Locale" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+              <stringProp name="Header.value">zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-App-Code" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-App-Code</stringProp>
+              <stringProp name="Header.value">STMA</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos; IssueInstant=&apos;2018-09-13T06:34:32.938Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;MTorXOJZywI0rGxRejeh25NnHd597uZ6vjl1+zb4AY8=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;BUCrrR+kHl4WEXRQga7kMlNjFF4/u/qsTXtwetexIvE4TtMnnjSF6XlgmLvbwpqI2xz0bUmanNqVWJnIcaU2gzbHCgI/hypX4XtQTuEKYEn87ZvNwAaeZmpLb361GPeghZC7/TIQBHvRpbbe2MKR3Y3gk2R1KIYCEEdmf3MaxsB/35E8Yf2bqlHo3GKpClPebnNqa1eQmrmnzZKpOFgR4nv+bHRc/cB7GNwcaOdEUQwq3IyimVOfG0v+lWBQzaJ9sQmuhQKZoI/Dp2yGovYz9DFBQZt9Q1bCIKn9kPTtrQnqF3yd3mRTPjxK/ZawyzhVomQmbDuDwExGMf/fdFgd6g==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;80f19b7022b611e8bb8b006136&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2018-09-13T06:34:31.938Z&apos; NotOnOrAfter=&apos;2018-09-13T06:35:32.938Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;80f19b70-22b6-11e8-bb8b-000006010306&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="News-Headlines-CN" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="param" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{NEWS_HEADLINE_PARAM}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">param</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">aag.{TARGET_ENV}.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/wealth/api/v1/market-data/news/equity/headlines</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>{RUN_NEWS_HEADLINE_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="duration">{TEST_DURATION}</longProp>
+          <intProp name="batchSize">{RUN_NEWS_HEADLINE_TPS_INT}</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <longProp name="randomSeed">0</longProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>{RUN_NEWS_HEADLINE_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="News-Content" enabled="{RUN_NEWS_CONTENT}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">{RUN_NEWS_CONTENT_THREAD_COUNT}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Function-Id</stringProp>
+              <stringProp name="Header.value">21</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-User-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+              <stringProp name="Header.value">HK26713763688801A</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+              <stringProp name="Header.value">S4F5PS5JysXYbvcgOptir7j</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+              <stringProp name="Header.value">HK</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+              <stringProp name="Header.value">HASE</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+              <stringProp name="Header.value">OHI</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Locale" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+              <stringProp name="Header.value">zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-App-Code" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-App-Code</stringProp>
+              <stringProp name="Header.value">STMA</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos; IssueInstant=&apos;2018-09-13T06:34:32.938Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;MTorXOJZywI0rGxRejeh25NnHd597uZ6vjl1+zb4AY8=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;BUCrrR+kHl4WEXRQga7kMlNjFF4/u/qsTXtwetexIvE4TtMnnjSF6XlgmLvbwpqI2xz0bUmanNqVWJnIcaU2gzbHCgI/hypX4XtQTuEKYEn87ZvNwAaeZmpLb361GPeghZC7/TIQBHvRpbbe2MKR3Y3gk2R1KIYCEEdmf3MaxsB/35E8Yf2bqlHo3GKpClPebnNqa1eQmrmnzZKpOFgR4nv+bHRc/cB7GNwcaOdEUQwq3IyimVOfG0v+lWBQzaJ9sQmuhQKZoI/Dp2yGovYz9DFBQZt9Q1bCIKn9kPTtrQnqF3yd3mRTPjxK/ZawyzhVomQmbDuDwExGMf/fdFgd6g==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;80f19b7022b611e8bb8b006136&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2018-09-13T06:34:31.938Z&apos; NotOnOrAfter=&apos;2018-09-13T06:35:32.938Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;80f19b70-22b6-11e8-bb8b-000006010306&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="News-Content-CN" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="param" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{NEWS_CONTENT_PARAM}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">param</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">aag.{TARGET_ENV}.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/wealth/api/v1/market-data/news/equity/detail</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>{RUN_NEWS_CONTENT_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="duration">{TEST_DURATION}</longProp>
+          <intProp name="batchSize">{RUN_NEWS_CONTENT_TPS_INT}</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <longProp name="randomSeed">0</longProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>{RUN_NEWS_CONTENT_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Index-Quotes-Detail" enabled="{RUN_INDEX_DETAIL}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">{RUN_INDEX_DETAIL_THREAD_COUNT}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Function-Id</stringProp>
+              <stringProp name="Header.value">21</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-User-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+              <stringProp name="Header.value">HK26713763688801A</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+              <stringProp name="Header.value">S4F5PS5JysXYbvcgOptir7j</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+              <stringProp name="Header.value">HK</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+              <stringProp name="Header.value">HASE</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+              <stringProp name="Header.value">OHI</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Locale" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+              <stringProp name="Header.value">zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-App-Code" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-App-Code</stringProp>
+              <stringProp name="Header.value">STMA</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos; IssueInstant=&apos;2018-09-13T06:34:32.938Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;MTorXOJZywI0rGxRejeh25NnHd597uZ6vjl1+zb4AY8=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;BUCrrR+kHl4WEXRQga7kMlNjFF4/u/qsTXtwetexIvE4TtMnnjSF6XlgmLvbwpqI2xz0bUmanNqVWJnIcaU2gzbHCgI/hypX4XtQTuEKYEn87ZvNwAaeZmpLb361GPeghZC7/TIQBHvRpbbe2MKR3Y3gk2R1KIYCEEdmf3MaxsB/35E8Yf2bqlHo3GKpClPebnNqa1eQmrmnzZKpOFgR4nv+bHRc/cB7GNwcaOdEUQwq3IyimVOfG0v+lWBQzaJ9sQmuhQKZoI/Dp2yGovYz9DFBQZt9Q1bCIKn9kPTtrQnqF3yd3mRTPjxK/ZawyzhVomQmbDuDwExGMf/fdFgd6g==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;80f19b7022b611e8bb8b006136&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2018-09-13T06:34:31.938Z&apos; NotOnOrAfter=&apos;2018-09-13T06:35:32.938Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;80f19b70-22b6-11e8-bb8b-000006010306&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Index-Quotes-Detail-CN" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="param" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{INDEX_DETAIL_PARAM}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">param</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">aag.{TARGET_ENV}.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/wealth/api/v1/market-data/index/quotes</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>{RUN_INDEX_DETAIL_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="duration">{TEST_DURATION}</longProp>
+          <intProp name="batchSize">{RUN_INDEX_DETAIL_TPS_INT}</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <longProp name="randomSeed">0</longProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>{RUN_INDEX_DETAIL_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Index-Quotes-List" enabled="{RUN_INDEX_LIST}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">{RUN_INDEX_LIST_THREAD_COUNT}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Function-Id</stringProp>
+              <stringProp name="Header.value">21</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-User-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+              <stringProp name="Header.value">HK26713763688801A</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+              <stringProp name="Header.value">S4F5PS5JysXYbvcgOptir7j</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+              <stringProp name="Header.value">HK</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+              <stringProp name="Header.value">HASE</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+              <stringProp name="Header.value">OHI</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Locale" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+              <stringProp name="Header.value">zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-App-Code" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-App-Code</stringProp>
+              <stringProp name="Header.value">STMA</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos; IssueInstant=&apos;2018-09-13T06:34:32.938Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;MTorXOJZywI0rGxRejeh25NnHd597uZ6vjl1+zb4AY8=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;BUCrrR+kHl4WEXRQga7kMlNjFF4/u/qsTXtwetexIvE4TtMnnjSF6XlgmLvbwpqI2xz0bUmanNqVWJnIcaU2gzbHCgI/hypX4XtQTuEKYEn87ZvNwAaeZmpLb361GPeghZC7/TIQBHvRpbbe2MKR3Y3gk2R1KIYCEEdmf3MaxsB/35E8Yf2bqlHo3GKpClPebnNqa1eQmrmnzZKpOFgR4nv+bHRc/cB7GNwcaOdEUQwq3IyimVOfG0v+lWBQzaJ9sQmuhQKZoI/Dp2yGovYz9DFBQZt9Q1bCIKn9kPTtrQnqF3yd3mRTPjxK/ZawyzhVomQmbDuDwExGMf/fdFgd6g==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;80f19b7022b611e8bb8b006136&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2018-09-13T06:34:31.938Z&apos; NotOnOrAfter=&apos;2018-09-13T06:35:32.938Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;80f19b70-22b6-11e8-bb8b-000006010306&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Index-Quotes-List-CN" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="param" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{INDEX_LIST_PARAM}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">param</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">aag.{TARGET_ENV}.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/wealth/api/v1/market-data/index/quotes</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>{RUN_INDEX_LIST_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="duration">{TEST_DURATION}</longProp>
+          <intProp name="batchSize">{RUN_INDEX_LIST_TPS_INT}</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <longProp name="randomSeed">0</longProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>{RUN_INDEX_LIST_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TopMover" enabled="{RUN_TOP_MOVER}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">{RUN_TOP_MOVER_THREAD_COUNT}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Function-Id</stringProp>
+              <stringProp name="Header.value">21</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-User-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+              <stringProp name="Header.value">HK26713763688801A</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+              <stringProp name="Header.value">S4F5PS5JysXYbvcgOptir7j</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+              <stringProp name="Header.value">HK</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+              <stringProp name="Header.value">HASE</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+              <stringProp name="Header.value">OHI</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Locale" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+              <stringProp name="Header.value">zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-App-Code" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-App-Code</stringProp>
+              <stringProp name="Header.value">STMA</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos; IssueInstant=&apos;2018-09-13T06:34:32.938Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;MTorXOJZywI0rGxRejeh25NnHd597uZ6vjl1+zb4AY8=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;BUCrrR+kHl4WEXRQga7kMlNjFF4/u/qsTXtwetexIvE4TtMnnjSF6XlgmLvbwpqI2xz0bUmanNqVWJnIcaU2gzbHCgI/hypX4XtQTuEKYEn87ZvNwAaeZmpLb361GPeghZC7/TIQBHvRpbbe2MKR3Y3gk2R1KIYCEEdmf3MaxsB/35E8Yf2bqlHo3GKpClPebnNqa1eQmrmnzZKpOFgR4nv+bHRc/cB7GNwcaOdEUQwq3IyimVOfG0v+lWBQzaJ9sQmuhQKZoI/Dp2yGovYz9DFBQZt9Q1bCIKn9kPTtrQnqF3yd3mRTPjxK/ZawyzhVomQmbDuDwExGMf/fdFgd6g==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;80f19b7022b611e8bb8b006136&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2018-09-13T06:34:31.938Z&apos; NotOnOrAfter=&apos;2018-09-13T06:35:32.938Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;80f19b70-22b6-11e8-bb8b-000006010306&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TopMover-CN" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="param" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{TOP_MOVER_PARAM}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">param</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">aag.{TARGET_ENV}.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/wealth/api/v1/market-data/equity/quotes/top-mover</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>{RUN_TOP_MOVER_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="duration">{TEST_DURATION}</longProp>
+          <intProp name="batchSize">{RUN_TOP_MOVER_TPS_INT}</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <longProp name="randomSeed">0</longProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>{RUN_TOP_MOVER_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chart-Data" enabled="{RUN_CHART_DATA}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">{RUN_CHART_DATA_THREAD_COUNT}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Function-Id</stringProp>
+              <stringProp name="Header.value">21</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-User-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+              <stringProp name="Header.value">HK26713763688801A</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+              <stringProp name="Header.value">S4F5PS5JysXYbvcgOptir7j</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+              <stringProp name="Header.value">HK</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+              <stringProp name="Header.value">HASE</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+              <stringProp name="Header.value">OHI</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Locale" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+              <stringProp name="Header.value">zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-App-Code" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-App-Code</stringProp>
+              <stringProp name="Header.value">STMA</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos; IssueInstant=&apos;2018-09-13T06:34:32.938Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_f05dfba8-f54f-4bb2-8b09-8841eed507a9&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;MTorXOJZywI0rGxRejeh25NnHd597uZ6vjl1+zb4AY8=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;BUCrrR+kHl4WEXRQga7kMlNjFF4/u/qsTXtwetexIvE4TtMnnjSF6XlgmLvbwpqI2xz0bUmanNqVWJnIcaU2gzbHCgI/hypX4XtQTuEKYEn87ZvNwAaeZmpLb361GPeghZC7/TIQBHvRpbbe2MKR3Y3gk2R1KIYCEEdmf3MaxsB/35E8Yf2bqlHo3GKpClPebnNqa1eQmrmnzZKpOFgR4nv+bHRc/cB7GNwcaOdEUQwq3IyimVOfG0v+lWBQzaJ9sQmuhQKZoI/Dp2yGovYz9DFBQZt9Q1bCIKn9kPTtrQnqF3yd3mRTPjxK/ZawyzhVomQmbDuDwExGMf/fdFgd6g==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;80f19b7022b611e8bb8b006136&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2018-09-13T06:34:31.938Z&apos; NotOnOrAfter=&apos;2018-09-13T06:35:32.938Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;80f19b70-22b6-11e8-bb8b-000006010306&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Chart-Data-CN" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="param" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{CHART_DATA_PARAM}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">param</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">aag.{TARGET_ENV}.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/wealth/api/v1/market-data/equity/charts/performance</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <PreciseThroughputTimer guiclass="TestBeanGUI" testclass="PreciseThroughputTimer" testname="Precise Throughput Timer" enabled="true">
+          <doubleProp>
+            <name>allowedThroughputSurplus</name>
+            <value>{RUN_CHART_DATA_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <longProp name="duration">{TEST_DURATION}</longProp>
+          <intProp name="batchSize">{RUN_CHART_DATA_TPS_INT}</intProp>
+          <intProp name="batchThreadDelay">0</intProp>
+          <intProp name="exactLimit">10000</intProp>
+          <longProp name="randomSeed">0</longProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>{RUN_CHART_DATA_TPS}</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+          <intProp name="throughputPeriod">1</intProp>
+        </PreciseThroughputTimer>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Refresh Distributed Cache Thread Group" enabled="{RUN_REFRESH_DISTRIBUTED_CACHE}">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">{TEST_DURATION}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+            <elementProp name="X-hhhh-Saml3" elementType="Header">
+              <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+              <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_53146260-b347-45bd-bae9-8a9b40f0f812&apos; IssueInstant=&apos;2020-07-13T03:59:44.447Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_53146260-b347-45bd-bae9-8a9b40f0f812&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;2fM36POlu8b+dPY/16Odo2ih0dgqrjR0AyI6WE/CIXs=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;eAOyPtmHKzKzKy2XhccJ3gFsb41VT7cfI+bYG0UD6TCg+ix+9p9iUE+wko4jQJ3AnAGZEhUD0OljAMZn0b4mIXq6Td7zhJb/ayw9PiJnV2B5NSsJTlhdgbc7J5tIUINsL4CRB2LcuufrKfOr/bcFgpxWiHrAxj+z7BpKO2Xwd9GZsLROMomdsB+fgpXIsR3pFuHginQsu0ZqFV8Jv6NJe7TohQwjEew5lOk+3ff7MLkGlfslXwOygqIbbESOTcSw6ce9hCMrOjbljfCXeDB5zOwkx9GBl5r1Ya0fvcxayJrQtUoV8ne7NihwUMWL349JlTTKar1DlDbZcfs+HhkX9Q==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;HK26719562688801F&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2020-07-13T03:59:43.447Z&apos; NotOnOrAfter=&apos;2020-07-13T04:00:44.447Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;c14e0090-b3ea-11e2-b7aa-000006010303&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;KeyAlias&apos;&gt;&lt;saml:AttributeValue&gt;E2E_TRUST_SAAS_EU01_PPROD_ALIAS&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Distributed-Cache" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;value&quot;: &quot;{\&quot;lineOfBusiness\&quot;:\&quot;\&quot;,\&quot;eID\&quot;:\&quot;DKQ089QQS089FI29F\&quot;,\&quot;cusSegment\&quot;:\&quot;N\&quot;,\&quot;freeQuote\&quot;:\&quot;50\&quot;,\&quot;chargeAcStatusUS\&quot;:\&quot;01\&quot;,\&quot;lastLogonTime\&quot;:\&quot;0\&quot;,\&quot;bonus\&quot;:\&quot;100\&quot;,\&quot;permID\&quot;:\&quot;HK26713763688801A\&quot;,\&quot;packageID\&quot;:\&quot;0\&quot;,\&quot;chargeAcStatusHK\&quot;:\&quot;01\&quot;,\&quot;packageStatus\&quot;:\&quot;0\&quot;,\&quot;staffId\&quot;:\&quot;\&quot;}&quot;,&#xd;
+	&quot;key&quot;: &quot;cc8691fa23da45ae71ef9819cb47a0b803125721a4f487fdb57b19ecfda356c5~~~S4F5PS5JysXYbvcgOptir7j~~~marketData&quot;,&#xd;
+	&quot;expiryTimeFlag&quot;: &quot;L&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">distributed-cache-system-hk-hase-v1-cert.apps.cf.skm-drn-01.cloud.hk.hhhh</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/cache</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

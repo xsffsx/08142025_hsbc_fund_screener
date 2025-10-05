@@ -1,0 +1,16 @@
+
+server:
+  max-http-header-size: 163840
+
+logging:
+  level:
+    root: info
+    com.hhhh.wealth: debug
+ 
+spring: 
+  profiles: test
+  datasource: 
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@(DESCRIPTION_LIST=(LOAD_BALANCE=OFF)(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=hkg3pl0038n3-scan.p2g.netd.hk.hhhh)(PORT=2000))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=dwcs2a.hk.hhhh))))
+    username: MDSHKUA1_APPUSER
+    password: MDSHKUA1_APPUSER.123

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build
+    xsi:schemaLocation="http://www.dummy.com bf_schema.xsd"
+    xmlns="http://www.dummy.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <project>
+        <name>mavensimplex</name>
+        <owner>WPC Development Team </owner>
+        <contact></contact>
+        <environment>
+            <library />
+        </environment>
+       <steps>
+            <linux-unix>
+            	<!-- Compile, one by one, stop on failure -->
+            	 <!-- dir is pom.xml location -->
+				<step
+                    description="Build WP30 SIT Adaptor JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                    
+                    timeout="900"
+                    id="1"
+                    threadable="N"
+                    onfail="H"
+                    command="${MVNRUN} -X -e antrun:run install -PWP30SIT -Dmaven.test.skip=true" />  	
+                 <step
+                    description="ZIP WP30 SIT Adaptor Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} package -PWP30SIT" />   
+                  <step
+                    description="Copy WP30 SIT Adaptor JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} deploy -Dmaven.test.skip=true -PWP30SIT --no-snapshot-updates" />
+                  <step
+                    description="Build WP30 UAT Adaptor JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                    
+                    timeout="900"
+                    id="1"
+                    threadable="N"
+                    onfail="H"
+                    command="${MVNRUN} -X -e antrun:run install -PWP30UAT -Dmaven.test.skip=true" />  	
+                 <step
+                    description="ZIP WP30 UAT Adaptor Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} package -PWP30UAT" />   
+                  <step
+                    description="Copy WP30 UAT Adaptor JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} deploy -Dmaven.test.skip=true -PWP30UAT --no-snapshot-updates" /> 
+                    
+                  <step
+                    description="Build WP30 Production Adaptor JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                    
+                    timeout="900"
+                    id="1"
+                    threadable="N"
+                    onfail="H"
+                    command="${MVNRUN} -X -e antrun:run install -PWP30PROD -Dmaven.test.skip=true" />  	
+                 <step
+                    description="ZIP WP30 Production Adaptor Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} package -PWP30PROD" />   
+                  <step
+                    description="Copy WP30 Production Adaptor JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} deploy -Dmaven.test.skip=true -PWP30PROD --no-snapshot-updates" />
+                    
+				
+            </linux-unix>            
+        </steps>        
+    </project>
+</build>

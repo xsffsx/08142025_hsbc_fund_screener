@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63375",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:09.718451",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63375%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "2f4165b4-5096-4168-bcb7-4d98e25f738e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "t3-_eIMihIxlfPUDI47a-7dHNQ9peY-cZqt-dmsTz4rNV1dpCxNarw==",
+        "x-hsbc-request-correlation-id": "061cf6b2-7eb9-4dfe-8e9d-c7760ee1628f",
+        "date": "Wed, 13 Aug 2025 13:29:09 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a5fd5d737f647cccf737a7861eb637b4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "466",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 7.18%\",\"weighting\":5.29514,\"currency\":\"USD\",\"marketValue\":2989315},{\"market\":\"IN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Small Industries Development Bank of India 7.83%\",\"weighting\":5.22335,\"currency\":\"USD\",\"marketValue\":2948789},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 7.3%\",\"weighting\":5.20684,\"currency\":\"USD\",\"marketValue\":2939468},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 7.1%\",\"weighting\":4.21637,\"currency\":\"USD\",\"marketValue\":2380308},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 7.34%\",\"weighting\":4.15894,\"currency\":\"USD\",\"marketValue\":2347885},{\"market\":\"IN\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"India (Republic of) 7.09%\",\"weighting\":4.09379,\"currency\":\"USD\",\"marketValue\":2311106},{\"market\":\"IN\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Export-Import Bank of India 5.5%\",\"weighting\":3.64749,\"currency\":\"USD\",\"marketValue\":2059156},{\"market\":\"IN\",\"productType\":\"DS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Maharashtra (Government of) 7.71%\",\"weighting\":3.20875,\"currency\":\"USD\",\"marketValue\":1811469},{\"market\":\"IN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bajaj Finance Ltd. 7.6%\",\"weighting\":3.07802,\"currency\":\"USD\",\"marketValue\":1737665},{\"market\":\"IN\",\"productType\":\"DS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tamil Nadu (Government of) 7.66%\",\"weighting\":2.13434,\"currency\":\"USD\",\"marketValue\":1204921}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

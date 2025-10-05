@@ -1,0 +1,45 @@
+mutation productBatchUpdateById($updateParams: [ProductBatchUpdateByIdInput]!, $allowPartial: Boolean) {
+    productBatchUpdateById(updateParams: $updateParams, allowPartial: $allowPartial) {
+        matchCount
+        matchProducts {
+            ctryRecCde
+            grpMembrRecCde
+            prodId
+            prodType
+            prodTypeCde
+            prodSubtpCde
+            prodCde
+            prodAltPrimNum
+            prodName
+        }
+        updatedProducts {
+            ctryRecCde
+            grpMembrRecCde
+            prodId
+            prodType
+            prodTypeCde
+            prodSubtpCde
+            prodCde
+            prodAltPrimNum
+            prodName
+        }
+        invalidProducts {
+            product {
+                ctryRecCde
+                grpMembrRecCde
+                prodId
+                prodType
+                prodTypeCde
+                prodSubtpCde
+                prodCde
+                prodAltPrimNum
+                prodName
+            }
+            errors {
+                jsonPath
+                code
+                message
+            }
+        }
+    }
+}

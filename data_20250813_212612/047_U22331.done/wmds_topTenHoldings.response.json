@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U22331",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:34.988655",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U22331%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "a1956a4a-d555-423d-8f3f-fad2ecf69b2d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "iVbJl_JD1im7ALwff3MqIpCiFj7AgjQybEWewZISWcJuBvLc9BHiSA==",
+        "x-hsbc-request-correlation-id": "1da9cb25-aa73-481b-9655-2ae1c73f09fc",
+        "date": "Wed, 13 Aug 2025 13:47:34 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 db987b94354bedc3a16788229c0e652c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "483",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"AT\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bawag Group AG Ordinary Shares\",\"weighting\":5.30766,\"currency\":\"EUR\",\"marketValue\":46372244},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SigmaRoc PLC\",\"weighting\":3.91333,\"currency\":\"EUR\",\"marketValue\":34190208},{\"market\":\"SE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Asker Healthcare Group AB\",\"weighting\":3.81843,\"currency\":\"EUR\",\"marketValue\":33361072},{\"market\":\"CH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Accelleron Industries AG Ordinary Shares\",\"weighting\":3.46829,\"currency\":\"EUR\",\"marketValue\":30301887},{\"market\":\"SE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Karnov Group AB\",\"weighting\":3.33057,\"currency\":\"EUR\",\"marketValue\":29098673},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CTS Eventim AG & Co. KGaA\",\"weighting\":3.08051,\"currency\":\"EUR\",\"marketValue\":26913918},{\"market\":\"SE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bufab AB\",\"weighting\":3.06101,\"currency\":\"EUR\",\"marketValue\":26743537},{\"market\":\"FR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Coface SA\",\"weighting\":2.98678,\"currency\":\"EUR\",\"marketValue\":26094997},{\"market\":\"FI\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Konecranes Oyj\",\"weighting\":2.87896,\"currency\":\"EUR\",\"marketValue\":25153015},{\"market\":\"DE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Scout24 SE\",\"weighting\":2.80462,\"currency\":\"EUR\",\"marketValue\":24503544}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

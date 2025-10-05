@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62540",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:07:25.239582",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62540%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "102fb450-1ad2-4493-b34e-bb03f7177acf:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "OHML5QHYR-GOhjOoS-2EjdO_jVFmPsxqzVRN6h7vPO8nntMq9ykcdQ==",
+        "x-hsbc-request-correlation-id": "169f1a57-afa0-4cbc-b348-a4e22f90da15",
+        "date": "Wed, 13 Aug 2025 14:07:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "20",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9fbddde4165412a5f9426c247ca005c0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1267",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62540\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"GO\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":7.314,\"currency\":\"AUD\",\"companyName\":\"HSBC GIF - GLOBAL HIGH INCOME BOND FUND (CLASS AM3-AUDH-MDIST CASH)\",\"securityDescription\":null,\"changeAmount\":0.002,\"changePercent\":0.02735,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":5.78384,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000WLCM\",\"tradableCurrency\":\"AUD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":4.15861},{\"year\":2023,\"annualCalendarYearReturn\":6.56651},{\"year\":2022,\"annualCalendarYearReturn\":-16.66506},{\"year\":2021,\"annualCalendarYearReturn\":-1.51859},{\"year\":2020,\"annualCalendarYearReturn\":5.67071}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":4.26011,\"dailyPerformanceNAV\":4.70389},{\"period\":\"1M\",\"trailingTotalReturn\":0.59576,\"dailyPerformanceNAV\":1.02394},{\"period\":\"3M\",\"trailingTotalReturn\":2.20868,\"dailyPerformanceNAV\":3.01444},{\"period\":\"6M\",\"trailingTotalReturn\":3.19504,\"dailyPerformanceNAV\":3.82019},{\"period\":\"1Y\",\"trailingTotalReturn\":6.08915,\"dailyPerformanceNAV\":6.04505},{\"period\":\"3Y\",\"trailingTotalReturn\":4.02911,\"dailyPerformanceNAV\":3.94076},{\"period\":\"5Y\",\"trailingTotalReturn\":-0.24751,\"dailyPerformanceNAV\":-0.2969},{\"period\":\"10Y\",\"trailingTotalReturn\":1.91402,\"dailyPerformanceNAV\":1.99234}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2012-09-12\"},\"entityUpdatedTime\":\"2025-08-13T22:07:24.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62540\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GHBAU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62540\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0798789102\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WLCM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047685\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047685\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refDataLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <refData th:each="ref : ${documents}">
+        <ctryRecCde th:text="${ref?.get('ctryRecCde')}"/>
+        <grpMembrRecCde th:text="${ref?.get('grpMembrRecCde')}"/>
+        <cdvTypeCde th:text="${ref?.get('cdvTypeCde')}"/>
+        <cdvCde th:text="${ref?.get('cdvCde')}"/>
+        <cdvDesc product:notNull="${ref?.get('cdvDesc')}"/>
+        <cdvPllDesc product:notNull="${ref?.get('cdvPllDesc')}"/>
+        <cdvSllDesc product:notNull="${ref?.get('cdvSllDesc')}"/>
+        <cdvDispSeqNum product:notNull="${#doubles.stripTrailingZeros(ref?.get('cdvDispSeqNum'))}"/>
+        <cdvParntTypeCde product:notNull="${ref?.get('cdvParntTypeCde')}"/>
+        <cdvParntCde product:notNull="${ref?.get('cdvParntCde')}"/>
+        <recDtTmSeg>
+            <recCreatDtTm th:text="${#timeZones.format(ref.recCreatDtTm, 'yyyy-MM-dd HH:mm:ss')}"/>
+            <recUpdtDtTm th:text="${#timeZones.format(ref.recUpdtDtTm, 'yyyy-MM-dd HH:mm:ss')}"/>
+            <timeZone product:notNull="${#timeZones.get()}"/>
+        </recDtTmSeg>
+    </refData>
+</refDataLst>

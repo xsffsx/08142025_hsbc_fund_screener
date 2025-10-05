@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63080",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:17.173215",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63080%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "23f24384-b0de-4d96-bee6-d54ddfe4a4f0:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "0AokKsbhtMzWMJH1RcKz-sPw_s7RoRjREcHD_HjKJVEJ1uyDv_QTRA==",
+        "x-hsbc-request-correlation-id": "e102c242-6dda-4c09-9594-249928d2867d",
+        "date": "Wed, 13 Aug 2025 13:29:17 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 ebfe2ea28af076dd97d740fa7b754f84.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "514",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"CAPITAL GROUP NEW PERSPECTIVE FUND (LUX) (BH-AUD-ACC) \",\"productShortName\":null,\"fundShreClsName\":\"BH-AUD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63081\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP081\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63081\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1865209396\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001EEYT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050470324\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50470324\"}]},{\"productName\":\"Capital Group New Perspective Fund (LUX) B (Hedge Class) - SGD (Accumulation)\",\"productShortName\":null,\"fundShreClsName\":\"BH – SGD (ACCUMULATION)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62756\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP756\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62756\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1295552977\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016RQ4\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004547\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004547\"}]},{\"productName\":\"Capital Group New Perspective Fund (LUX) B (Hedge Class) - GBP (Accumulation)\",\"productShortName\":null,\"fundShreClsName\":\"BH – GBP (ACCUMULATION)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62755\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP755\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62755\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1295552894\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016RQ3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004546\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004546\"}]},{\"productName\":\"Capital Group New Perspective Fund (LUX) B (Hedge Class) - EUR (Accumulation)\",\"productShortName\":null,\"fundShreClsName\":\"BH – EUR (ACCUMULATION)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62754\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP754\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62754\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1295552621\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016RQ2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004545\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004545\"}]},{\"productName\":\"Capital Group New Perspective Fund (LUX) Bd - USD (ADIS-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"BD – USD (ADIS-CASH)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62753\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CP753\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62753\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1295552035\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016RPW\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004544\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004544\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

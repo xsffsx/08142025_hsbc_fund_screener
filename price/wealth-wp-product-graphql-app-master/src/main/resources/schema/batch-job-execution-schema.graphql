@@ -1,0 +1,57 @@
+type BatchJobExecutionType {
+    shortContext: String
+    serializedContext: String
+    jobInstanceId: Long
+    jobExecutionId:Long
+    createTime: DateTime
+    startTime: DateTime
+    endTime: DateTime
+    status: String
+    exitCode: String
+    exitMessage: String
+    lastupdated: DateTime
+    jobName: String
+    systemCde: String
+}
+
+type BatchJobExecutionPaginationType {
+    total: Long
+    resultList: [BatchJobExecutionType]
+}
+
+type  BatchJobExecutionStepType {
+    shortContext: String
+    serializedContext: String
+    jobExecutionId: Long
+    stepName: String
+    startTime: DateTime
+    status: String
+    commitCount: String
+    readCount: String
+    filterCount: String
+    writeCount: String
+    readSkipCount: String
+    writeSkipCount: String
+    processSkipCount: String
+    rollbackCount: String
+    exitCode: String
+    exitMessage: String
+}
+
+type BatchJobExecutionStepPaginationType {
+    total: Long
+    resultList: [BatchJobExecutionStepType]
+}
+
+
+type BatchJobExecutionParamsType {
+    jobExecutionId: Long
+    createTime: Date
+    typeCd: String
+    keyName: String
+    stringVal: String
+    dateVal: Date
+    longVal: String
+    doubleVal: String
+    identifying: String
+}

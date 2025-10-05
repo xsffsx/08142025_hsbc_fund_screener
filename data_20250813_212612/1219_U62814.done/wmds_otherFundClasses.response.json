@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62814",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:52:42.636979",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62814%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "44e4b027-c808-4a4e-bb7c-8ab4a3de6661:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "INdoTUqFLO41cd8xWKdxEejEM1UpJ8_TGKGdAb9sBBnFZns4ALFVVQ==",
+        "x-hsbc-request-correlation-id": "dfb31fcc-1d56-4382-abd5-c1d642112014",
+        "date": "Wed, 13 Aug 2025 13:52:42 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e6e7ea42488c65b080113b45f9cdebb4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "416",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"Value Partners Greater China High Yield Income (A-NZDH-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"A-NZDH-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62816\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV816\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62816\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"KYG9319N2574\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZL1M\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050039168\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50039168\"}]},{\"productName\":\"Value Partners Greater China High Yield Income (A-AUDH-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"A-AUDH-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62815\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV815\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62815\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"KYG9319N2327\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZL1N\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050039167\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50039167\"}]},{\"productName\":\"Value Partners Greater China High Yield Income (P-HKD-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"P-HKD-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62813\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV813\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62813\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"KYG9319N1337\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000VR2E\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050039165\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50039165\"}]},{\"productName\":\"Value Partners Greater China High Yield Income (P-USD-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"P-USD-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62812\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV812\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62812\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"KYG9319N1170\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000VR2C\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050039164\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50039164\"}]},{\"productName\":\"Value Partners Greater China High Yield Income (A-CADH-MDIST-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"A-CADH-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62811\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"XV811\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62811\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"KYG9319N2400\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZL1L\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050039163\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50039163\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

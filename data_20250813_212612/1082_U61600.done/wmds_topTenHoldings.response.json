@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61600",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:12.457727",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61600%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "65ed1c0d-2a2e-47a5-9a0a-28f0de627d95:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "zytBrD1pjMDjNk92JrlDXZCe6xrpiIS9oFxT1fAFp9XxGtZqvi6gjg==",
+        "x-hsbc-request-correlation-id": "6e314192-cbbd-40a7-9a04-5e1c0cd36f6f",
+        "date": "Wed, 13 Aug 2025 13:50:11 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 cf3f6fdeca566994c58f318f9ac55680.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "498",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Petroleo Brasileiro Sa Petrobr\",\"weighting\":8.72202,\"currency\":\"USD\",\"marketValue\":47171709},{\"market\":\"BR\",\"productType\":\"P\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Itausa S.A.\",\"weighting\":7.14887,\"currency\":\"USD\",\"marketValue\":38663602},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Centrais Eletricas Brasileiras SA\",\"weighting\":5.75202,\"currency\":\"USD\",\"marketValue\":31108935},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grupo Financiero Banorte SAB de CV Class O\",\"weighting\":5.5436,\"currency\":\"USD\",\"marketValue\":29981727},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vale SA\",\"weighting\":5.46511,\"currency\":\"USD\",\"marketValue\":29557230},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Itau Unibanco Holding SA ADR\",\"weighting\":4.9912,\"currency\":\"USD\",\"marketValue\":26994124},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grupo Mexico SAB de CV Class B\",\"weighting\":4.80198,\"currency\":\"USD\",\"marketValue\":25970792},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kimberly - Clark de Mexico SAB de CV Class A\",\"weighting\":4.7117,\"currency\":\"USD\",\"marketValue\":25482522},{\"market\":\"MX\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bolsa Mexicana de Valores SAB de CV Class A\",\"weighting\":4.41065,\"currency\":\"USD\",\"marketValue\":23854309},{\"market\":\"BR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Totvs SA\",\"weighting\":4.07318,\"currency\":\"USD\",\"marketValue\":22029181}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

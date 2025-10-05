@@ -1,0 +1,85 @@
+input ProductPriceHistoryInput {
+    # product id
+    prodId: Long!
+
+    # Periodicity Price Code
+    pdcyPrcCde: String
+
+    # Price effect date
+    prcEffDt: Date!
+
+    # Price Input Date
+    prcInpDt: Date!
+
+    # Currency Code
+    ccyProdMktPrcCde: String
+
+    # Product Bid Price Amount
+    prodBidPrcAmt: Float
+
+    # Product Offer Price Amount
+    prodOffrPrcAmt: Float
+
+    # Product Market Price Amount
+    prodMktPrcAmt: Float
+
+    # Product Net Asset Value Price Amount
+    prodNavPrcAmt: Float
+
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+type PriceHistoryBatchImportResultType {
+    #Imported Prod Product History
+    importedPriceHistories: [ProductPriceHistoryImportedType!]
+
+    #Invalid Prod Product History
+    invalidPriceHistories: [ProductPriceHistoryValidationResultType!]
+}
+
+type ProductPriceHistoryValidationResultType {
+    # The product data which is going to be created or updated
+    priceHistory: ProductPriceHistoryImportedType!
+
+    # Errors in the product validation
+    errors: [Error]!
+}
+
+type ProductPriceHistoryImportedType {
+    # product id
+    prodId: Long!
+
+    # Periodicity Price Code
+    pdcyPrcCde: String!
+
+    # Price effect date
+    prcEffDt: Date!
+
+    # Price Input Date
+    prcInpDt: Date
+
+    # Currency Code
+    ccyProdMktPrcCde: String
+
+    # Product Bid Price Amount
+    prodBidPrcAmt: Float
+
+    # Product Offer Price Amount
+    prodOffrPrcAmt: Float
+
+    # Product Market Price Amount
+    prodMktPrcAmt: Float
+
+    # Product Net Asset Value Price Amount
+    prodNavPrcAmt: Float
+
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}

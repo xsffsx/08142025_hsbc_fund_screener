@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63496",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:28:18.348701",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63496%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ac153f5f-f0e9-4b01-9b30-2215cef8131e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "15",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "C2ErhhW202nKiuO5x3be7owm4LM4_nIST-MUUyCRLO9ggifQWbUN4w==",
+        "x-hsbc-request-correlation-id": "ecfbc66a-af98-432a-966d-c5b20f2086ce",
+        "date": "Wed, 13 Aug 2025 13:28:18 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "15",
+        "x-envoy-upstream-service-time": "35",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 ebfe2ea28af076dd97d740fa7b754f84.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "460",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JPMORGAN GLOBAL EQUITY HIGH INCOME (RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63497\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3497\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63497\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001099743\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UH8D\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000111374\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000111374\"}]},{\"productName\":\"JPMORGAN GLOBAL EQUITY HIGH INCOME (GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63495\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3495\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63495\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001099776\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UH8G\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000111379\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000111379\"}]},{\"productName\":\"JPMORGAN GLOBAL EQUITY HIGH INCOME (CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63494\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3494\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63494\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001099768\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UH8F\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000111375\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000111375\"}]},{\"productName\":\"JPMORGAN GLOBAL EQUITY HIGH INCOME (AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63493\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3493\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63493\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001099750\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UH8E\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000111377\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000111377\"}]},{\"productName\":\"JPMORGAN GLOBAL EQUITY HIGH INCOME (HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63492\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3492\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63492\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001099727\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UH8B\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000111376\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000111376\"}]},{\"productName\":\"JPMORGAN GLOBAL EQUITY HIGH INCOME (USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63491\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3491\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63491\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001099735\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UH8C\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000111372\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000111372\"}]},{\"productName\":\"JPMORGAN GLOBAL EQUITY HIGH INCOME (USD-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"USD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63490\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J3490\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63490\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001099701\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UH89\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000111373\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000111373\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

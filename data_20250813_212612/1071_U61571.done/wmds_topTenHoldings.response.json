@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61571",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:32.085850",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61571%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "a2da56f2-aa95-4422-acbb-f107bc6529ec:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "v5RHW6BDRPi6O3TBxMUvxnidViGYuHokDGmHP6SGIkMdmuJWq1w2NQ==",
+        "x-hsbc-request-correlation-id": "7fcfcb5f-781a-46af-b223-524e8a7cdbe3",
+        "date": "Wed, 13 Aug 2025 13:50:30 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 db987b94354bedc3a16788229c0e652c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "549",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"UY\",\"productType\":\"TP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Uruguay (Republic Of) 3.875%\",\"weighting\":5.71093,\"currency\":\"USD\",\"marketValue\":127921370},{\"market\":\"EC\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ecuador (Republic Of) 5.5%\",\"weighting\":5.19574,\"currency\":\"USD\",\"marketValue\":116381495},{\"market\":\"MY\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Malaysia (Government Of) 3.899%\",\"weighting\":4.04336,\"currency\":\"USD\",\"marketValue\":90568957},{\"market\":\"KE\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kenya (Republic of) 9.75%\",\"weighting\":3.43193,\"currency\":\"USD\",\"marketValue\":76873199},{\"market\":\"US\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal Home Loan Banks 0%\",\"weighting\":3.09659,\"currency\":\"USD\",\"marketValue\":69361849},{\"market\":\"ZA\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"South Africa (Republic of) 8.75%\",\"weighting\":3.02857,\"currency\":\"USD\",\"marketValue\":67838230},{\"market\":\"ZA\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"South Africa (Republic of) 9%\",\"weighting\":3.02356,\"currency\":\"USD\",\"marketValue\":67726043},{\"market\":null,\"productType\":\"BZ\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"European Bank For Reconstruction & Development 8.85%\",\"weighting\":2.92051,\"currency\":\"USD\",\"marketValue\":65417672},{\"market\":null,\"productType\":\"BZ\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"International Bank for Reconstruction & Development 6.5%\",\"weighting\":2.48372,\"currency\":\"USD\",\"marketValue\":55633793},{\"market\":\"DO\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dominican Republic 5.875%\",\"weighting\":2.47621,\"currency\":\"USD\",\"marketValue\":55465705}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

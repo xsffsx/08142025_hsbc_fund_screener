@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "product configuration package information schema",
+  "description": "for config-package-info.yaml validation",
+  "type": "object",
+  "properties": {
+    "configList": {
+      "description": "configuration item list",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "name of the config item",
+            "type": "string"
+          },
+          "forEntity": {
+            "description": "the entity apply to",
+            "type": "string"
+          },
+          "description": {
+            "description": "description of the config item",
+            "type": "string"
+          },
+          "configFile": {
+            "description": "config file path in the package",
+            "type": "string"
+          },
+          "schemaFile": {
+            "description": "json schema file path in the package",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "configFile"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "configList"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stockInstmLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <stockInstm th:each="product : ${documents}">
+        <th:block th:insert="~{COMMON::prodKeySeg}"/>
+        <th:block th:each="alt : ${product.get('altId')}" th:insert="~{COMMON::prodAltNumSeg}"/>
+        <th:block th:insert="~{COMMON::prodInfoSeg}"/>
+        <stockInstmSeg th:with="sec=${product.get('stockInstm')}">
+            <earnPerShareAnnlAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('earnPerShareAnnlAmt'))}"/>
+            <mrgnTrdInd th:text="${sec.get('mrgnTrdInd')}"/>
+            <mrgnSecODPct product:notNull="${#doubles.stripTrailingZeros(sec.get('mrgnSecOdPct'))}"/>
+            <suptAuctnTrdInd th:text="${sec.get('suptAuctnTrdInd')}"/>
+            <stopLossMinPct product:notNull="${#doubles.stripTrailingZeros(sec.get('stopLossMinPct'))}"/>
+            <stopLossMaxPct product:notNull="${#doubles.stripTrailingZeros(sec.get('stopLossMaxPct'))}"/>
+            <sprdStopLossMinCnt product:notNull="${#objects.nullSafe(sec.get('sprdStopLossMinCnt'), 0)}"/>
+            <sprdStopLossMaxCnt product:notNull="${#objects.nullSafe(sec.get('sprdStopLossMaxCnt'), 0)}"/>
+            <prodBodLotQtyCnt th:text="${#doubles.stripTrailingZeros(sec.get('prodBodLotQtyCnt'))}"/>
+            <mktProdTrdCde th:text="${sec.get('mktProdTrdCde')}"/>
+            <suptMipInd product:notNull="${sec.get('suptMipInd')}"/>
+            <invstMipMinAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('invstMipMinAmt'))}"/>
+            <invstMipIncrmMinAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('invstMipIncrmMinAmt'))}"/>
+            <prodIssQtyTtlCnt product:notNull="${sec.get('prodIssQtyTtlCnt')}"/>
+            <bodLotProdInd th:text="${sec.get('bodLotProdInd')}"/>
+            <trdLimitInd th:text="${sec.get('trdLimitInd')}"/>
+            <prodMaxIndvOwnrPct product:notNull="${#doubles.stripTrailingZeros(sec.get('prodMaxIndvOwnrPct'))}"/>
+            <prodMaxIndvForgnInvstrPct product:notNull="${#doubles.stripTrailingZeros(sec.get('prodMaxIndvForgnInvstrPct'))}"/>
+            <prodMaxForgnInvstrTtlPct product:notNull="${#doubles.stripTrailingZeros(sec.get('prodMaxForgnInvstrTtlPct'))}"/>
+            <prodExerPrcAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('prodExerPrcAmt'))}"/>
+            <psblProdBorwInd th:text="${sec.get('psblProdBorwInd')}"/>
+            <allowProdLendInd th:text="${sec.get('allwProdLendInd')}"/>
+            <poolProdInd th:text="${sec.get('poolProdInd')}"/>
+            <scripOnlyProdInd th:text="${sec.get('scripOnlyProdInd')}"/>
+            <suptAtmcTrdInd th:text="${sec.get('suptAtmcTrdInd')}"/>
+            <suptNetSetlInd th:text="${sec.get('suptNetSetlInd')}"/>
+            <suptStopLossOrdInd th:text="${sec.get('suptStopLossOrdInd')}"/>
+            <suptWinWinOrdInd th:text="${sec.get('suptWinWinOrdInd')}"/>
+            <suptAllIn1OrdInd th:text="${sec.get('suptAllIn1OrdInd')}"/>
+            <suptProdSpltInd th:text="${sec.get('suptProdSpltInd')}"/>
+            <mrgnPrcAuctnTrdPct product:notNull="${#doubles.stripTrailingZeros(sec.get('mrgnPrcAuctnTrdPct'))}"/>
+            <prodAuctnTrdExpirDt product:notNull="${#dates.format(sec.get('prodAuctnTrdExpirDt'), 'yyyy-MM-dd')}"/>
+            <loanProdMrgnTrdPct product:notNull="${#doubles.stripTrailingZeros(sec.get('loanProdMrgnTrdPct'))}"/>
+            <loanBdgtProdIPOAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('loanBdgtProdIpoAmt'))}"/>
+            <loanProdIPOTtlAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('loanProdIpoTtlAmt'))}"/>
+            <exclLimitCalcInd th:text="${sec.get('exclLimitCalcInd')}"/>
+            <prodMktStatChngLaDt th:text="${#dates.format(sec.prodMktStatChngLaDt, 'yyyy-MM-dd')}"/>
+            <prcVarCde th:text="${sec.get('prcVarCde')}"/>
+            <methCalcScripChrgCde th:text="${sec.get('methCalcScripChrgCde')} ?: _"/>
+            <prodSellMaxQtyCnt product:notNull="${sec.get('prodSellMaxQtyCnt')}"/>
+            <prodBuyMaxQtyCnt product:notNull="${sec.get('prodBuyMaxQtyCnt')}"/>
+            <prcVarMinAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('prcVarMinAmt'))}"/>
+            <prcVarMinEffDt product:notNull="${#dates.format(sec.get('prcVarMinEffDt'), 'yyyy-MM-dd')}"/>
+            <mktSegExchgCde th:text="${sec.get('mktSegExchgCde')} ?: _"/>
+            <ctryProdRegisCde th:text="${sec.get('ctryProdRegisCde')} ?: _"/>
+        </stockInstmSeg>
+        <th:block th:insert="~{COMMON::recDtTmSeg}"/>
+    </stockInstm>
+</stockInstmLst>

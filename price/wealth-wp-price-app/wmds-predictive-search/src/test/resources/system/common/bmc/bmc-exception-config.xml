@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<siteEntitys>
+	<bmcLogFilePath>/appvol/WLP85/{instanceName}/applog/patrol/keepalive/</bmcLogFilePath>
+
+	<!-- default -->
+	<siteEntity prefix="Default" countryCode="" groupMember="">
+
+		<!-- <exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.VendorException" key="">
+			<maxCount>-1</maxCount>
+			<timeDuration></timeDuration>
+			<bmcErrCde></bmcErrCde>
+			<bmcErrMsg></bmcErrMsg>
+		</exceptionCounter> -->
+
+		<!-- <exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.ApplicationException" key="">
+			<maxCount>20</maxCount>
+			<bmcErrCde>MDSRBP8003E</bmcErrCde>
+			<bmcErrMsg>MDS online application errors encountered in async flow</bmcErrMsg>
+		</exceptionCounter> -->
+		
+		<!-- Validator Exception -->
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.ValidatorException" key="InputParameterInvalid">
+			<!-- <maxCount>20</maxCount> -->
+			<maxCount>-1</maxCount>
+			<bmcErrCde>MDSRBP8013Z</bmcErrCde>
+			<bmcErrMsg>MDS online application request parameter is invalid</bmcErrMsg>
+		</exceptionCounter>
+
+		<!-- Common Exception -->
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="InputParameterInvalid">
+			<!-- <maxCount>20</maxCount> -->
+			<maxCount>-1</maxCount>
+			<bmcErrCde>MDSRBP8013Z</bmcErrCde>
+			<bmcErrMsg>MDS online application request parameter is invalid</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="XssSecurityErr">
+			<!-- <maxCount>20</maxCount> -->
+			<maxCount>-1</maxCount>
+			<bmcErrCde>MDSRBP8014Z</bmcErrCde>
+			<bmcErrMsg>MDS online application request parameter is unsafe</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="SiteNotSupport">
+			<!-- <maxCount>20</maxCount> -->
+			<maxCount>-1</maxCount>
+			<bmcErrCde>MDSRBP8015Z</bmcErrCde>
+			<bmcErrMsg>MDS online application unsupportted site is detected</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="ServiceNoAvailable">
+			<!-- <maxCount>20</maxCount> -->
+			<maxCount>-1</maxCount>
+			<bmcErrCde>MDSRBP8018Z</bmcErrCde>
+			<bmcErrMsg>MDS online application unsupportted site is detected</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="Undefined">
+			<maxCount>20</maxCount>
+			<bmcErrCde>MDSRBP8099Z</bmcErrCde>
+			<bmcErrMsg>MDS online application undefined error</bmcErrMsg>
+		</exceptionCounter>
+
+		<!-- WPC predictive search -->
+		<!-- <exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="NoRecordFound">
+			<maxCount>-1</maxCount>
+			<bmcErrCde></bmcErrCde>
+			<bmcErrMsg></bmcErrMsg>
+		</exceptionCounter> -->
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="DataParsingErr">
+			<maxCount>1</maxCount>
+			<bmcErrCde>MDSRBP8102E</bmcErrCde>
+			<bmcErrMsg>MDS predictive search data parsing error</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="DataUnavailable">
+			<maxCount>1</maxCount>
+			<bmcErrCde>MDSRBP8103E</bmcErrCde>
+			<bmcErrMsg>MDS predictive search data unavailable</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="QueryStringInvalid">
+			<!-- <maxCount>20</maxCount> -->
+			<maxCount>-1</maxCount>
+			<bmcErrCde>MDSRBP8106Z</bmcErrCde>
+			<bmcErrMsg>MDS predictive search data of queried keyword is invalid</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="VolumeServiceErr">
+			<maxCount>1</maxCount>
+			<bmcErrCde>MDSRBP8107E</bmcErrCde>
+			<bmcErrMsg>MDS predictive search volume service error</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="DataVerifyErr">
+			<maxCount>1</maxCount>
+			<bmcErrCde>MDSRBP8108E</bmcErrCde>
+			<bmcErrMsg>MDS predictive search wpc files verify error</bmcErrMsg>
+		</exceptionCounter>
+
+		<!-- MSTAR -->
+		<!-- <exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="MstarTimeout">
+			<maxCount>10</maxCount>
+			<bmcErrCde>MDSRBP8401E</bmcErrCde>
+			<bmcErrMsg>MDS online application connect to MSTAR is timeout</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="MstarInvalidResponse">
+			<maxCount>20</maxCount>
+			<bmcErrCde>MDSRBP8403Z</bmcErrCde>
+			<bmcErrMsg>MDS online application MSTAR response is invalid</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="MstarUnmarshalFail">
+			<maxCount>20</maxCount>
+			<bmcErrCde>MDSRBP8404Z</bmcErrCde>
+			<bmcErrMsg>MDS online application MSTAR response format is invalid</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="MstarNoData">
+			<maxCount>20</maxCount>
+			<bmcErrCde>MDSRBP8405Z</bmcErrCde>
+			<bmcErrMsg>MDS online application MSTAR response is no data</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="MstarUndefinedError">
+			<maxCount>20</maxCount>
+			<bmcErrCde>MDSRBP8499Z</bmcErrCde>
+			<bmcErrMsg>MDS online application MSTAR undefined error</bmcErrMsg>
+		</exceptionCounter> -->
+
+		<!-- Wpc WebService -->
+		<!-- <exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="WpcWSInvalidRequest">
+			<maxCount>20</maxCount>
+			<bmcErrCde>MDSRBP8501Z</bmcErrCde>
+			<bmcErrMsg>MDS online application Wpc WebService request is invalid</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="WpcWSInvalidResponse">
+			<maxCount>10</maxCount>
+			<bmcErrCde>MDSRBP8502E</bmcErrCde>
+			<bmcErrMsg>MDS online application Wpc WebService response is invalid</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.CommonException" key="WpcWSUndefinedError">
+			<maxCount>10</maxCount>
+			<bmcErrCde>MDSRBP8599E</bmcErrCde>
+			<bmcErrMsg>MDS online application Wpc WebService undefined error</bmcErrMsg>
+		</exceptionCounter> -->
+		
+		<!-- System Exception -->
+		<!-- <exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.SystemException" key="SystemInitError">
+			<maxCount>1</maxCount>
+			<bmcErrCde>MDSRBP8601E</bmcErrCde>
+			<bmcErrMsg>MDS online System errors are thrown in system init</bmcErrMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.SystemException" key="DBDataUnavailable">
+			<maxCount>1</maxCount>
+			<bmcErrCde>MDSRBP8602E</bmcErrCde>
+			<bmcErrMsg>MDS online System errors are thrown query data from DB</bmcErrMsg>
+		</exceptionCounter> -->
+		<exceptionCounter exceptionName="com.hhhh.group.secwealth.mktdata.common.exception.SystemException" key="SystemError">
+			<maxCount>10</maxCount>
+			<bmcErrCde>MDSRBP8699Z</bmcErrCde>
+			<bmcErrMsg>MDS online System errors</bmcErrMsg>
+		</exceptionCounter>
+
+		<timeDuration>60</timeDuration>
+		<errNum>2</errNum>
+		<errCdeThrownPastSec>MDSRBP8001E</errCdeThrownPastSec>
+
+		<errNumStart>30</errNumStart>
+		<errCdeExceedLimit>MDSRBP8002E</errCdeExceedLimit>
+		<errmgsThrownPastSec>MDS online application errors are thrown in the past time</errmgsThrownPastSec>
+		<errmgsExceedLimit>MDS online application errors exceed limitation</errmgsExceedLimit>
+
+	</siteEntity>
+</siteEntitys>

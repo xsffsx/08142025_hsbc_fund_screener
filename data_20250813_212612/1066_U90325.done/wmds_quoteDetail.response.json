@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U90325",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:27:36.901445",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U90325%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "6fda0444-7d76-4111-a7a9-fa831f5ffa86:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "IaTV_2X3ppOxKbrMgophreh1w2wr22wKqLsD9M4Sp8V1E40caQRpFw==",
+        "x-hsbc-request-correlation-id": "eada1284-51fa-49dc-9aa0-7c29a689f01b",
+        "date": "Wed, 13 Aug 2025 13:27:36 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "22",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 36e3b84feccf13d57d8091ce9cbaa000.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1270",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U90325\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"GB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":18.92,\"currency\":\"USD\",\"companyName\":\"BLACKROCK SYSTEMATIC GLOBAL EQUITY HIGH INC FUND (CLASS C2-USD)\",\"securityDescription\":null,\"changeAmount\":0.01,\"changePercent\":0.05288,\"bidPrice\":18.92,\"bidPriceDate\":\"2025-08-12\",\"bidSize\":null,\"askPrice\":18.92,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00008FL8\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":15.23179},{\"year\":2023,\"annualCalendarYearReturn\":14.30734},{\"year\":2022,\"annualCalendarYearReturn\":-15.91343},{\"year\":2021,\"annualCalendarYearReturn\":15.51471},{\"year\":2020,\"annualCalendarYearReturn\":7.50988}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":7.75862,\"dailyPerformanceNAV\":8.73563},{\"period\":\"1M\",\"trailingTotalReturn\":0.80645,\"dailyPerformanceNAV\":1.12239},{\"period\":\"3M\",\"trailingTotalReturn\":8.13149,\"dailyPerformanceNAV\":6.29213},{\"period\":\"6M\",\"trailingTotalReturn\":4.9832,\"dailyPerformanceNAV\":5.58036},{\"period\":\"1Y\",\"trailingTotalReturn\":11.9403,\"dailyPerformanceNAV\":15.22533},{\"period\":\"3Y\",\"trailingTotalReturn\":10.91872,\"dailyPerformanceNAV\":10.50731},{\"period\":\"5Y\",\"trailingTotalReturn\":9.04695,\"dailyPerformanceNAV\":8.76521},{\"period\":\"10Y\",\"trailingTotalReturn\":5.73036,\"dailyPerformanceNAV\":5.92487}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2007-11-05\"},\"entityUpdatedTime\":\"2025-08-13T21:27:36.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U90325\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M0325\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U90325\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0265551670\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00008FL8\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047951\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047951\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

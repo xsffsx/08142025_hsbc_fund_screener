@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62855",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:48:59.867471",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62855%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "4079f2d5-1606-4884-b769-bf4d1e896674:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ISoAQLi7vywkcsTk3DCVGmRzgTobtUpzSmACS25xkPyzGCovap8ccA==",
+        "x-hsbc-request-correlation-id": "2453de68-3580-4736-a1cd-bc244c8e2e45",
+        "date": "Wed, 13 Aug 2025 13:48:59 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "45",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a492a754c99951a31a41d1c031185610.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "633",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A - QDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-QDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62344\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN344\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62344\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0367026134\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00002BZ2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048122\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048122\"}]},{\"productName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A - QDIST UNIT)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-QDIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62343\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN343\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62343\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0367026134\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00002BZ2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048121\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048121\"}]},{\"productName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A -ACCUMULATION)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-ACCUMULATION\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62342\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN342\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62342\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0367026217\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00002BZ1\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048120\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048120\"}]},{\"productName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A-AUD HEDGED-MDIST-1-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-AUD HEDGED-MDIST-1-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62857\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN857\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62857\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1075212750\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013VZD\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050069617\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50069617\"}]},{\"productName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A - ACCUMULATION EUR HEDGED)\",\"productShortName\":null,\"fundShreClsName\":\"Class A-Accumulation EUR Hedged\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62430\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN430\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62430\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0482498259\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000NIAY\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047251\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047251\"}]},{\"productName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A - QDIST UNIT HKD)\",\"productShortName\":null,\"fundShreClsName\":\"Class A-QDIST Unit HKD\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62414\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN414\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62414\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0580551074\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000SBNE\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047244\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047244\"}]},{\"productName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A - QDIST CASH HKD)\",\"productShortName\":null,\"fundShreClsName\":\"Class A-QDIST Cash HKD\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62413\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN413\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62413\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0580551074\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000SBNE\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047243\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047243\"}]},{\"productName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A-NZD HEDGED-MDIST-1-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-NZD HEDGED-MDIST-1-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62859\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN859\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62859\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1075213055\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013VZE\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050069619\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50069619\"}]},{\"productName\":\"INVESCO ASIA ASSET ALLOCATION FUND (CLASS A-CAD HEDGED-MDIST-1-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-CAD HEDGED-MDIST-1-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62858\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN858\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62858\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1075212834\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013VZP\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050069618\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50069618\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

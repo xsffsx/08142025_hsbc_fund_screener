@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U22331",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:38.617193",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U22331%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "04bd0aef-7e1d-4b1b-ae5d-ca220b9c3df7:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Uzxhp6n1ezZ-scOcxAtRCsdQFIsKu8LSFUbS_lN3ed89oFXilw21Aw==",
+        "x-hsbc-request-correlation-id": "352aa018-86f6-48e8-be4b-52fb9eb1aa71",
+        "date": "Wed, 13 Aug 2025 13:47:34 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 db987b94354bedc3a16788229c0e652c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1268",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U22331\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"ES\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":462.22,\"currency\":\"USD\",\"companyName\":\"INVESCO Continental European Small Cap Equity Fund (Class A)\",\"securityDescription\":null,\"changeAmount\":-2.93,\"changePercent\":-0.6299,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0.63068,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001DK0T\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Annually\",\"topPerformersIndicator\":\"Y\",\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":7.85103},{\"year\":2023,\"annualCalendarYearReturn\":12.86726},{\"year\":2022,\"annualCalendarYearReturn\":-21.91943},{\"year\":2021,\"annualCalendarYearReturn\":14.88014},{\"year\":2020,\"annualCalendarYearReturn\":25.73598}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":28.94447,\"dailyPerformanceNAV\":29.76988},{\"period\":\"1M\",\"trailingTotalReturn\":-0.54569,\"dailyPerformanceNAV\":-1.52751},{\"period\":\"3M\",\"trailingTotalReturn\":13.01737,\"dailyPerformanceNAV\":11.38905},{\"period\":\"6M\",\"trailingTotalReturn\":23.738,\"dailyPerformanceNAV\":23.11774},{\"period\":\"1Y\",\"trailingTotalReturn\":20.57507,\"dailyPerformanceNAV\":25.82886},{\"period\":\"3Y\",\"trailingTotalReturn\":17.71147,\"dailyPerformanceNAV\":17.26365},{\"period\":\"5Y\",\"trailingTotalReturn\":14.32465,\"dailyPerformanceNAV\":13.50065},{\"period\":\"10Y\",\"trailingTotalReturn\":8.47891,\"dailyPerformanceNAV\":8.57395}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2000-07-31\"},\"entityUpdatedTime\":\"2025-08-13T21:47:34.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U22331\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"INEET\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U22331\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1775961243\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DK0T\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047408\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047408\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{"config" : [
+  {
+    "key" : "wpc.webservice.data.cutoff.delay",
+    "desc" : "Web service data cut off time delay setting in second",
+    "value" : 60
+  },
+  {
+    "key" : "TERM_REMAIN_DAY_CNT.DIVIDER",
+    "desc" : "Field Divider",
+    "value" : 0
+  },
+  {
+    "key" : "ONLINE.PRODKEY.PRODCDE",
+    "desc" : "search by prod_cde",
+    "value" : "W"
+  },
+  {
+    "key" : "ONLINE.PRODKEY.UNIQUE",
+    "desc" : "search in prod_alt_id",
+    "value" : ""
+  },
+  {
+    "key" : "ONLINE.PRODKEY.PRIMARY",
+    "value" : "P|T|R"
+  },
+  {
+    "key" : "ONLINE.PRODKEY.ALL",
+    "value" : "I"
+  },
+  {
+    "key" : "ONLINE.PRODKEY.OTHER",
+    "value" : "M"
+  },
+  {
+    "key" : "BATCH.PRODKEY.PRODCDE",
+    "desc" : "search by prod_cde",
+    "value" : "W"
+  },
+  {
+    "key" : "BATCH.PRODKEY.UNIQUE",
+    "desc" : "search in prod_alt_id",
+    "value" : ""
+  },
+  {
+    "key" : "BATCH.PRODKEY.PRIMARY",
+    "value" : "P|T"
+  },
+  {
+    "key" : "BATCH.PRODKEY.ALL",
+    "value" : ""
+  },
+  {
+    "key" : "BATCH.PRODKEY.OTHER",
+    "value" : "M|Y|B|S|E|F"
+  },
+  {
+    "key" : "PRODKEY.FILTER_PROD_STATUS_CODE.IGNORE_TYPE",
+    "desc" : "product status filtering ignore type",
+    "value" : "W"
+  },
+  {
+    "key" : "PRODKEY.FILTER_PROD_STATUS_CODE.DEFAULT",
+    "desc" : "product status filtering default",
+    "value" : "D,P"
+  },
+  {
+    "key" : "sortingAttributeMapping",
+    "desc" : "PW2 search sorting",
+    "value" : {
+      "invstMinHoriz" : "ext.invstMinHoriz"
+    }
+  },
+  {
+    "key" : "attrPair",
+    "value" : {
+      "prodNavPrcAmt" : [
+        "ccyProdMktPrcCde",
+        "prcEffDt"
+      ],
+      "prodBidPrcAmt" : [
+        "ccyProdMktPrcCde",
+        "prcEffDt"
+      ],
+      "prodOffrPrcAmt" : [
+        "ccyProdMktPrcCde",
+        "prcEffDt"
+      ],
+      "prodMktPrcAmt" : [
+        "ccyProdMktPrcCde",
+        "prcEffDt"
+      ],
+      "prodMktPricePrevAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "invstInitMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "invstInitMaxAmt" : [
+        "ccyInvstCde"
+      ],
+      "asetVoltlClass_Cde" : [
+        "asetVoltlClass_WghtPct"
+      ],
+      "asetVoltlClass_WghtPct" : [
+        "asetVoltlClass_Cde"
+      ],
+      "asetGeoLocAlloc_Cde" : [
+        "asetGeoLocAlloc_WghtPct"
+      ],
+      "asetGeoLocAlloc_WghtPct" : [
+        "asetGeoLocAlloc_Cde"
+      ],
+      "asetSicAlloc_Cde" : [
+        "asetSicAlloc_WghtPct"
+      ],
+      "asetSicAlloc_WghtPct" : [
+        "asetSicAlloc_Cde"
+      ],
+      "finDoc_DocURL_*" : [
+        "finDoc_LangCde_*"
+      ],
+      "finDoc_LangCde_*" : [
+        "finDoc_DocURL_*"
+      ],
+      "invstIncrmMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "rdmMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "retnMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "wrapCeilAmt" : [
+        "ccyInvstCde"
+      ],
+      "utPrcProdLnchAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "fundAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "fundRtainMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "invstMipMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "invstMipIncrmMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "rdmMipMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "fundMipRtainMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "fundSwInMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "fundSwOutMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "fundSwOutRtainMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "fundSwOutMaxAmt" : [
+        "ccyInvstCde"
+      ],
+      "tranMaxAmt" : [
+        "ccyInvstCde"
+      ],
+      "IntIndAccrAmt" : [
+        "ccyInvstCde"
+      ],
+      "InvstIncMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "invstSoldLestAmt" : [
+        "ccyInvstCde"
+      ],
+      "invstIncrmSoldAmt" : [
+        "ccyInvstCde"
+      ],
+      "prodClsBidPrcAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "prodClsOffrPrcAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "yieldToCallBidPct" : [
+        "yieldEffDt"
+      ],
+      "YieldToMturBidPct" : [
+        "yieldEffDt"
+      ],
+      "yieldToCallOfferPct" : [
+        "yieldEffDt"
+      ],
+      "yieldToMturOfferText" : [
+        "yieldEffDt"
+      ],
+      "yieldBidClosePct" : [
+        "yieldEffDt"
+      ],
+      "yieldOfferClosePct" : [
+        "yieldEffDt"
+      ],
+      "yieldDt" : [
+        "yieldEffDt"
+      ],
+      "yieldBidPct" : [
+        "yieldEffDt"
+      ],
+      "yieldOfferPct" : [
+        "yieldEffDt"
+      ],
+      "prodGbmBidPrcAmt" : [
+        "ccyInvstCde"
+      ],
+      "prodGbmOffrPrcAmt" : [
+        "ccyInvstCde"
+      ],
+      "prodPrcChngAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "prodOpenPrcAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "prodTdyHighPrcAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "prodTdyLowPrcAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "prodTrnvrAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "prodPrc52WeekMaxAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "prodPrc52WeekMinAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "earnPerShareAnnlAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "prodExerPrcAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "loanBdgtProdIPOAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "loanProdIPOTtlAmt" : [
+        "ccyProdMktPrcCde"
+      ],
+      "denAmt" : [
+        "ccyInvstCde"
+      ],
+      "trdMinAmt" : [
+        "ccyInvstCde"
+      ],
+      "undlStock_ProdStrkPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdStrkCallPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdStrkPutPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdClosePrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdCloseLowPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdCloseUpprPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdClosePutPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdCloseCallPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdExerPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdBrkEvnPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdBrkEvnLowPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdBrkEvnUpprPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdBrkEvnPutPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdBrkEvnCallPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdKnockInPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdFlrPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdBarPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdKnockInTrigPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdEarlCallTrigPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdDownOutBarPrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "undlStock_ProdExpiClosePrcAmt" : [
+        "undlStock_CcyInstmUndlPrcCde"
+      ],
+      "rtrnIntrm_PaidDt" : [
+        "rtrnIntrm_Pct"
+      ],
+      "rtrnIntrm_Pct" : [
+        "rtrnIntrm_PaidDt"
+      ]
+    }
+  },
+  {
+    "key" : "productDetailByKeysMappingConfig",
+    "value" : {
+      "chanlAttrOverrideFieldMapping" : {
+        "allowBuyProdInd" : "ALLOW_BUY_PROD_IND",
+        "allowSellProdInd" : "ALLOW_SELL_PROD_IND",
+        "allowSwInProdInd" : "ALLOW_SW_IN_PROD_IND",
+        "allowSwOutProdInd" : "ALLOW_SW_OUT_PROD_IND",
+        "allowSellMipProdInd" : "ALLOW_SELL_MIP_PROD_IND"
+      }
+    }
+  }
+]}

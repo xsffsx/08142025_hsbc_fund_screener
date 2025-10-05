@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63344",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:44:59.198017",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63344%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "24ff5e36-c42e-49e8-a20c-7a7fb198ae9d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "faEJWrTwIUd4FajqiSzO6zn_5Srwc_tlT7V9ewMAvMq8oWXvwdlJEw==",
+        "x-hsbc-request-correlation-id": "88fda3de-402c-4351-b978-6a58e0ee8485",
+        "date": "Wed, 13 Aug 2025 13:44:58 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "33",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2e4090c5117f92dd57a3a8b0cbf9daa4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "427",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"GOLDMAN SACHS GLOBAL MULTI-ASSET INCOME PORTFOLIO (GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63423\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"G3423\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63423\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2743029410\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001SCW1\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050760932\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50760932\"}]},{\"productName\":\"GOLDMAN SACHS GLOBAL MULTI-ASSET INCOME PORTFOLIO (CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63422\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"G3422\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63422\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2743029337\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001SCW3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050760931\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50760931\"}]},{\"productName\":\"GOLDMAN SACHS GLOBAL MULTI-ASSET INCOME PORTFOLIO (RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63345\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"G3345\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63345\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2435152892\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001OR3O\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050760930\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50760930\"}]},{\"productName\":\"GOLDMAN SACHS GLOBAL MULTI-ASSET INCOME PORTFOLIO (HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63343\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"G3343\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63343\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2011196776\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001HWJ2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050760928\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50760928\"}]},{\"productName\":\"GOLDMAN SACHS GLOBAL MULTI-ASSET INCOME PORTFOLIO (USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63342\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"G3342\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63342\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1038298870\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012JR3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050760927\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50760927\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62560",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:20.379411",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62560%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "8b3d3c69-f9a2-46c0-a41a-071a8804ed2a:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Js9bmWzsTN0rC6WKJ_C5TQYrIG87CUr8Vy0pwirJHpSXNKcBzqFS2A==",
+        "x-hsbc-request-correlation-id": "bdf3a465-cdce-4337-bd29-798e894bcd09",
+        "date": "Wed, 13 Aug 2025 13:38:20 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e2876f64809db799c11f72a8f088fc24.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1264",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62560\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MA\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":11.322,\"currency\":\"EUR\",\"companyName\":\"HSBC GIF-MANAGED SOLUTION-ASIA FOCUSED CONSERVATIVE (CLASS ACO-EURH)\",\"securityDescription\":null,\"changeAmount\":0.005,\"changePercent\":0.04418,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"2\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000Y8CR\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":3.47168},{\"year\":2023,\"annualCalendarYearReturn\":1.07822},{\"year\":2022,\"annualCalendarYearReturn\":-15.2517},{\"year\":2021,\"annualCalendarYearReturn\":-4.37684},{\"year\":2020,\"annualCalendarYearReturn\":9.66028}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":5.52952,\"dailyPerformanceNAV\":6.11059},{\"period\":\"1M\",\"trailingTotalReturn\":0.67054,\"dailyPerformanceNAV\":1.35171},{\"period\":\"3M\",\"trailingTotalReturn\":3.75012,\"dailyPerformanceNAV\":3.58646},{\"period\":\"6M\",\"trailingTotalReturn\":5.44058,\"dailyPerformanceNAV\":5.51724},{\"period\":\"1Y\",\"trailingTotalReturn\":5.36165,\"dailyPerformanceNAV\":5.78343},{\"period\":\"3Y\",\"trailingTotalReturn\":2.74965,\"dailyPerformanceNAV\":2.98752},{\"period\":\"5Y\",\"trailingTotalReturn\":-0.90223,\"dailyPerformanceNAV\":-0.88068},{\"period\":\"10Y\",\"trailingTotalReturn\":0.93536,\"dailyPerformanceNAV\":1.04807}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2013-03-04\"},\"entityUpdatedTime\":\"2025-08-13T21:38:19.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62560\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HFCCE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62560\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0854295077\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000Y8CR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047723\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047723\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

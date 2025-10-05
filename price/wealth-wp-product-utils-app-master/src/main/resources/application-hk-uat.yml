@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: "jdbc:oracle:thin:@//amh-dev-wporcl01.wealth-platform-amh.dev.aws.cloud.dummy:1521/UAMHWP01"
+    username: WPCHKGLUA8
+    password: WPCHKGLUA8.123
+  data:
+    mongodb:
+      port: 27017
+      #      host: localhost
+      #      database: WPC_UK
+
+      host: docdb.wealth-platform-amh.dev.aws.cloud.dummy
+      database: WPC_AMH_UAT
+      username: wpdocdbadmin
+      #      password: wpdocdbadmin.123
+      password: "{cipher}6f5472fb2340bcfdafb0435724d6fb29a98bff0fbc9e18bf89ccc848c3772b22813f1a12d096926033cfccaa2b7a28c9"
+
+product:
+  sync:
+    interval: 60   # 60 seconds by default
+    auto-watch: false
+
+  product-rest-adapter:
+    url: https://product-rest-adapter-debug.uat.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+  product-soap-adapter:
+    url: https://product-soap-adapter-debug.uat.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+  product-dp-file-egress:
+    url: https://product-dp-file-egress-debug.uat.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+  product-dp-file-ingress:
+    url: https://product-dp-file-ingress-debug.uat.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+  product-graphql:
+    url: https://product-graphql-debug.uat.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+
+server:
+  port: 8088

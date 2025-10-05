@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <!--{-1} is productDescriptor,{0} is Product Alternative Number, {1} is Product Long Name, {2} is listed exchange, [t] is '<',[/t] is '>'-->
+	<product type="BOND|QDOB">
+	  <entity>
+	    <text>[t]span title="{-1}"[/t]{-1}[t]/span[/t]</text>
+	    <dataConverter>com.hhhh.group.secwealth.mktdata.predsrch.svc.converter.BondDataConverter</dataConverter>
+        <productDescriptor>{0} {1}</productDescriptor>
+		<productPackage>com.hhhh.group.secwealth.mktdata.predsrch.dal.model.debt</productPackage>
+		<delayConversion>0</delayConversion>
+	  </entity>
+	</product>
+	<product type="ETF|UT|QDII-UT">
+	  <entity>
+	    <text>[t]span title="{-1}"[/t]{-1}[t]/span[/t]</text>
+	    <dataConverter>com.hhhh.group.secwealth.mktdata.predsrch.svc.converter.UtDataConverter</dataConverter>
+        <productDescriptor>{0} {1}</productDescriptor>
+		<productPackage>com.hhhh.group.secwealth.mktdata.predsrch.dal.model.ut</productPackage>
+		<delayConversion>0</delayConversion>
+      </entity>
+	</product>
+	<product type="SEC|ALT|CA_HCSC_ETF|CA_HKBC_ETF|CA_hhhh_ETF|CN_hhhh_ETF">
+	  <entity>
+	    <text>[t]strong[/t]{2}[t]/strong[/t] [t]span title="{-1}"[/t]{-1}[t]/span[/t]</text>
+	    <dataConverter>com.hhhh.group.secwealth.mktdata.predsrch.svc.converter.SecDataConverter</dataConverter>
+        <productDescriptor>{0} {1}</productDescriptor>
+		<productPackage>com.hhhh.group.secwealth.mktdata.predsrch.dal.model.stock</productPackage>
+		<delayConversion>0</delayConversion>
+	  </entity>
+	</product>
+	<product type="WRTS">
+	  <entity>
+	    <text>[t]strong[/t]{2}[t]/strong[/t] [t]span title="{-1}"[/t]{-1}[t]/span[/t]</text>
+	    <dataConverter>com.hhhh.group.secwealth.mktdata.predsrch.svc.converter.WrtsDataConverter</dataConverter>
+        <productDescriptor>{0} {1}</productDescriptor>
+		<productPackage>com.hhhh.group.secwealth.mktdata.predsrch.dal.model.warrant</productPackage>
+		<delayConversion>0</delayConversion>
+	  </entity>
+	</product>
+	<product type="CURRENCY|SN|COMM|FX|IR">
+	  <entity>
+	    <text>[t]span title="{-1}"[/t]{-1}[t]/span[/t]</text>
+	    <dataConverter>com.hhhh.group.secwealth.mktdata.predsrch.svc.converter.GnrcProdDataConverter</dataConverter>
+        <productDescriptor>{0} {1}</productDescriptor>
+		<productPackage>com.hhhh.group.secwealth.mktdata.predsrch.dal.model.generic</productPackage>
+		<delayConversion>0</delayConversion>
+	  </entity>
+	</product>
+	<product type="SID">
+	  <entity>
+	    <text>[t]span title="{-1}"[/t]{-1}[t]/span[/t]</text>
+	    <dataConverter>com.hhhh.group.secwealth.mktdata.predsrch.svc.converter.SidDataConverter</dataConverter>
+        <productDescriptor>{0} {1}</productDescriptor>
+		<productPackage>com.hhhh.group.secwealth.mktdata.predsrch.dal.model.sid</productPackage>
+		<delayConversion>0</delayConversion>
+	  </entity>
+	</product>
+	<product type="DPS">
+	  <entity>
+	    <text>[t]span title="{-1}"[/t]{-1}[t]/span[/t]</text>
+	    <dataConverter>com.hhhh.group.secwealth.mktdata.predsrch.svc.converter.DpsDataConverter</dataConverter>
+        <productDescriptor>{0} {1}</productDescriptor>
+		<productPackage>com.hhhh.group.secwealth.mktdata.predsrch.dal.model.dps</productPackage>
+		<delayConversion>0</delayConversion>
+	  </entity>
+	</product>
+	<product type="ELI">
+	  <entity>
+	    <text>[t]span title="{-1}"[/t]{-1}[t]/span[/t]</text>
+	    <dataConverter>com.hhhh.group.secwealth.mktdata.predsrch.svc.converter.EliDataConverter</dataConverter>
+        <productDescriptor>{0} {1}</productDescriptor>
+		<productPackage>com.hhhh.group.secwealth.mktdata.predsrch.dal.model.eli</productPackage>
+		<delayConversion>0</delayConversion>
+	  </entity>
+	</product>
+	<product type="INDEX">
+	  <entity>
+	    <text>[t]strong[/t]{2}[t]/strong[/t] [t]span title="{-1}"[/t]{-1}[t]/span[/t]</text>
+	    <dataConverter>com.hhhh.group.secwealth.mktdata.predsrch.svc.converter.IndexDataConverter</dataConverter>
+        <productDescriptor>{0} {1}</productDescriptor>
+		<productPackage>com.hhhh.group.secwealth.mktdata.predsrch.dal.model.generic</productPackage>
+		<delayConversion>0</delayConversion>
+	  </entity>
+	</product>
+</products>

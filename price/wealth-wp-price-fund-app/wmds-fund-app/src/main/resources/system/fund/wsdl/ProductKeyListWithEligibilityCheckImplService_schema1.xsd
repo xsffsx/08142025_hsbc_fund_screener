@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema targetNamespace="http://impl.service.prodkeylistwitheligcheck.webservice.wpc.wmd.hhhh.com/" version="1.0" xmlns:tns="http://impl.service.prodkeylistwitheligcheck.webservice.wpc.wmd.hhhh.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="enquire" type="tns:enquire"/>
+
+  <xs:element name="enquireResponse" type="tns:enquireResponse"/>
+
+  <xs:complexType name="enquire">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="request" type="tns:productKeyListWithEligibilityCheckRequest"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productKeyListWithEligibilityCheckRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="localeCode" type="tns:localeCode"/>
+      <xs:element minOccurs="0" name="marketCriteria" type="tns:marketCriteria"/>
+      <xs:element minOccurs="0" name="businessProcessCode" type="tns:businessProcessCode"/>
+      <xs:element minOccurs="0" name="filterCriteriaFormula" type="tns:filterCriteriaFormula"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="keyValueCriteriaWithIndex" nillable="true" type="tns:keyValueCriteriaWithIndex"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="keyEligibilityCriteriaValue" nillable="true" type="tns:keyEligibilityCriteriaValue"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="requestProdCdeAltClsCde" nillable="true" type="tns:requestProdCdeAltClsCde"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="requestAttribute" nillable="true" type="tns:requestAttribute"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="sortingCriteriaList" nillable="true" type="tns:sortingCriteria"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="localeCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="localeNationalLanguageSupportCode" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="marketCriteria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="countryRecordCode" type="xs:string"/>
+      <xs:element minOccurs="0" name="groupMemberRecordCode" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="businessProcessCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="businessProcessCode" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="filterCriteriaFormula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filterFormula" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="keyValueCriteriaWithIndex">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="keyValueWithIndex" type="tns:keyValueWithIndex"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="value" nillable="true" type="tns:value"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="keyValueWithIndex">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="index" type="xs:string"/>
+      <xs:element minOccurs="0" name="keyType" type="xs:string"/>
+      <xs:element minOccurs="0" name="key" type="xs:string"/>
+      <xs:element minOccurs="0" name="operator" type="xs:string"/>
+      <xs:element minOccurs="0" name="valueType" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="value">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="keyEligibilityCriteriaValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="keyEligCritValue" type="tns:keyEligCritValue"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="eligCrtaValue" nillable="true" type="tns:eligCrtaValue"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="keyEligCritValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="key" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eligCrtaValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="requestProdCdeAltClsCde">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="productCodeAlternativeClassCode" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="requestAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="attributeName" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sortingCriteria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sortField" type="xs:string"/>
+      <xs:element minOccurs="0" name="sortOrder" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="enquireResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:productKeyListWithEligibilityCheckResponse"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productKeyListWithEligibilityCheckResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responseDetails" type="tns:responseDetails"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="reasonCode" nillable="true" type="tns:reasonCode"/>
+      <xs:element minOccurs="0" name="productKeyObjectListJsonString" type="tns:productKeyObjectListJsonString"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="responseDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responseCode" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="reasonCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="reasonCode" type="xs:string"/>
+      <xs:element minOccurs="0" name="trackingNumber" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productKeyObjectListJsonString">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="prodKeyObjListJsonStr" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

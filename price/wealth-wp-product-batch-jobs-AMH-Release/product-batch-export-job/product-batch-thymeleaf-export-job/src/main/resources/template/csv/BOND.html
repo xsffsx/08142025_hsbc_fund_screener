@@ -1,0 +1,72 @@
+<html lang="en" th:remove="tag">
+<th:block th:if="${isFirst}">
+        HEADERRISHFI_GENERAL_BOND_INTERFACE                     [(${#dates.format(startTime,'yyyyMMddHHmmss')})]
+</th:block>
+<th:block th:with="bondCsvInfos=${#csvs.parse(
+    'ISS_CDE: debtInstm.get(''isrBondName'')',
+    'ISS_DESC: #refDatas.desc(''BONDISSUER'', debtInstm.get(''isrBondName''))',
+    'ISS_PLL_DESC: #refDatas.pllDesc(''BONDISSUER'', debtInstm.get(''isrBondName''))',
+    'ISS_SLL_DESC: #refDatas.sllDesc(''BONDISSUER'', debtInstm.get(''isrBondName''))',
+    'ISS_NUM: debtInstm.get(''issueNum'')',
+    'ISS_DT: #dates.format(debtInstm.get(''prodIssDt''), ''yyyyMMdd'')',
+    'FREQ_COUPN_CDE: debtInstm.get(''pdcyCoupnPymtCde'')',
+    'COUPN_ANNL_PCT: #doubles.stripTrailingZeros(debtInstm.get(''coupnAnnlRate''))',
+    'COUPN_ANNL_PCT_TXT: debtInstm.get(''coupnAnnlText'')',
+    'EXT_COUPN_ANNL_TXT: #doubles.stripTrailingZeros(debtInstm.get(''coupnExtInstmRate''))',
+    'PAY_NEXT_COUPN_DT: #dates.format(debtInstm.get(''pymtCoupnNextDt''), ''yyyyMMdd'')',
+    'EXBL_CLBL_IND: debtInstm.get(''flexMatOptInd'')',
+    'CRED_RTNG_1_CDE: #products.creditRtngCde(debtInstm, ''CRMOODYS'')',
+    'CRED_RTNG_1_SEQ_NO: #doubles.stripTrailingZeros(#refDatas.cdvDispSeqNum(''CRMOODYS'', #products.creditRtngCde(debtInstm, ''CRMOODYS'')))',
+    'CRED_RTNG_2_CDE: #products.creditRtngCde(debtInstm, ''CRSP'')',
+    'CRED_RTNG_2_SEQ_NO: #doubles.stripTrailingZeros(#refDatas.cdvDispSeqNum(''CRSP'', #products.creditRtngCde(debtInstm, ''CRSP'')))',
+    'CRED_RTNG_3_CDE: #products.creditRtngCde(debtInstm, ''CR3'')',
+    'INT_IND_ACCR_AMT: #doubles.stripTrailingZeros(debtInstm.get(''intIndAccrAmt''))',
+    'INVST_INIT_MIN_CCY: #doubles.stripTrailingZeros(product.get(''invstInitMinAmt'')) == null ? '''' : product.get(''ccyInvstCde'')',
+    'INVST_INIT_MIN_AMT: #doubles.stripDeciaml(product.get(''invstInitMinAmt''))',
+    'INVST_INIT_MIN_DP: #doubles.decimalPlace(product.get(''invstInitMinAmt''))',
+    'INVST_INIT_MIN: #doubles.stripTrailingZeros(product.get(''invstInitMinAmt''))',
+    'INVST_ICT_MIN_CCY: #doubles.stripDeciaml(debtInstm.get(''invstIncrmMinAmt'')) == null ? '''' : product.get(''ccyInvstCde'')',
+    'INVST_ICT_MIN_AMT: #doubles.stripDeciaml(debtInstm.get(''invstIncrmMinAmt''))',
+    'INVST_ICT_MIN_DP: #doubles.decimalPlace(debtInstm.get(''invstIncrmMinAmt''))',
+    'INVST_ICT_MIN: #doubles.stripTrailingZeros(debtInstm.get(''invstIncrmMinAmt''))',
+    'LOT_SIZE_NUM: #doubles.stripTrailingZeros(debtInstm.get(''prodBodLotQtyCnt''))',
+    'MAT_EXT_DT: #dates.format(debtInstm.get(''mturExtDt''), ''yyyyMMdd'')',
+    'BID_PRC_CCY: #doubles.stripDeciaml(product.get(''prodBidPrcAmt'')) == null ? '''' : product.get(''ccyProdMktPrcCde'')',
+    'BID_PRC_AMT: #doubles.stripDeciaml(product.get(''prodBidPrcAmt''))',
+    'BID_PRC_DP: #doubles.decimalPlace(product.get(''prodBidPrcAmt''))',
+    'BID_PRC: #doubles.stripTrailingZeros(product.get(''prodBidPrcAmt''))',
+    'OFFER_PRC_CCY: #doubles.stripDeciaml(product.get(''prodOffrPrcAmt'')) == null ? '''' : product.get(''ccyProdMktPrcCde'')',
+    'OFFER_PRC_AMT: #doubles.stripDeciaml(product.get(''prodOffrPrcAmt''))',
+    'OFFER_PRC_DP: #doubles.decimalPlace(product.get(''prodOffrPrcAmt''))',
+    'OFFER_PRC: #doubles.stripTrailingZeros(product.get(''prodOffrPrcAmt''))',
+    'BID_YLD_TEXT: #doubles.stripTrailingZeros(debtInstm.get(''yieldBidPct''))',
+    'BID_YTC_TEXT: #doubles.stripTrailingZeros(debtInstm.get(''yieldToCallBidPct''))',
+    'BID_YTM_TEXT: #doubles.stripTrailingZeros(debtInstm.get(''yieldToMturBidPct''))',
+    'OFFER_YLD_TEXT: debtInstm.get(''YIELD_OFFER_TEXT'')',
+    'OFFER_YLD: #doubles.stripTrailingZeros(debtInstm.get(''yieldOfferPct''))',
+    'OFFER_YTC_TXT: #doubles.stripTrailingZeros(debtInstm.get(''yieldToCallOfferPct''))',
+    'OFFER_YTM_TXT: debtInstm.get(''yieldToMturOfferPct'')',
+    'OVDFT_SEC_PCT: #doubles.stripTrailingZeros(debtInstm.get(''loanProdOdMrgnPct''))',
+    'SUB_ORDNT: debtInstm.get(''subDebtInd'')',
+    'PRFM_DT: #dates.format(performance?.get(''perfmCalcDt''), ''yyyyMMdd'')',
+    'PRFM_YTD_PCT: #doubles.stripTrailingZeros(performance?.get(''perfmYrToDtPct''))',
+    'PRFM_1MO_PCT: #doubles.stripTrailingZeros(performance?.get(''perfm1MoPct''))',
+    'PRFM_3MO_PCT: #doubles.stripTrailingZeros(performance?.get(''perfm3MoPct''))',
+    'PRFM_6MO_PCT: #doubles.stripTrailingZeros(performance?.get(''perfm6MoPct''))',
+    'PRFM_1YR_PCT: #doubles.stripTrailingZeros(performance?.get(''perfm1YrPct''))',
+    'PRFM_1YR_PCT_EXT: #doubles.stripTrailingZeros(performance?.get(''perfmExt1YrPct''))',
+    'PRFM_3YR_PCT: #doubles.stripTrailingZeros(performance?.get(''perfm3YrPct''))',
+    'PRFM_5YR_PCT: #doubles.stripTrailingZeros(performance?.get(''perfm5YrPct''))',
+    'PRFM_SNC_LNCH_PCT: #doubles.stripTrailingZeros(performance?.get(''perfmSinceLnchPct''))',
+    'VOLAT_1YR_PCT: #doubles.stripTrailingZeros(performance?.get(''rtrnVoltl1YrPct''))',
+    'VOLAT_1YR_PCT_EXT: #doubles.stripTrailingZeros(performance?.get(''rtrnVoltlExt1YrPct''))',
+    'VOLAT_3YR_PCT: #doubles.stripTrailingZeros(performance?.get(''rtrnVoltl3YrPct''))',
+    'VOLAT_3YR_PCT_EXT: #doubles.stripTrailingZeros(performance?.get(''rtrnVoltlExt3YrPct''))'
+    )}
+">
+    <th:block th:replace="~{COMMON.html :: export (${bondCsvInfos})}"/>
+    <th:block th:if="${isLast}">
+        TRAILERRISHFI_GENERAL_BOND_INTERFACE                    [(${#numbers.formatInteger(count,7)})]
+    </th:block>
+</th:block>
+</html>

@@ -1,0 +1,3264 @@
+{
+  "type" : "object",
+  "properties" : {
+    "ctryRecCde" : {
+      "type" : "string",
+      "description" : "Country Record Code(e.g. HK)"
+    },
+    "grpMembrRecCde" : {
+      "type" : "string",
+      "description" : "Group Member Record Code(e.g. HBAP)"
+    },
+    "prodId" : {
+      "type" : "integer",
+      "description" : "Product Identifier Currency Option Linked Deposit"
+    },
+    "prodType" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Type"
+    },
+    "prodTypeCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Type Code(ref. Reference Data Type [PRODTYP])(e.g. INS)"
+    },
+    "prodSubtpCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Subtype Code"
+    },
+    "prodCde" : {
+      "type" : "string",
+      "description" : "Product Code"
+    },
+    "prodAltPrimNum" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Alternative Primary Number"
+    },
+    "prodName" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Name"
+    },
+    "prodPllName" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Primary Local Language Name"
+    },
+    "prodSllName" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Secondary Local Language Name"
+    },
+    "prodShrtName" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Short Name"
+    },
+    "prodShrtPllName" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Short Primary Local Language Name"
+    },
+    "prodShrtSllName" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Short Secondary Local Language Name"
+    },
+    "prodDesc" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Description"
+    },
+    "prodPllDesc" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Primary Local Language Description"
+    },
+    "prodSllDesc" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Secondary Local Language Description"
+    },
+    "asetClassCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Asset 1 Classification Code"
+    },
+    "prodStatCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Status Code"
+    },
+    "ccyProdCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Currency Product Code"
+    },
+    "riskLvlCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Risk Level Code"
+    },
+    "prdProdCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Period Product Code"
+    },
+    "prdProdNum" : {
+      "type" : [ "integer", "null" ],
+      "description" : "Period Product Number"
+    },
+    "termRemainDayCnt" : {
+      "type" : [ "integer", "null" ],
+      "description" : "Term Remaining Day Count"
+    },
+    "prodLnchDt" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Launch Date"
+    },
+    "prodMturDt" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Maturity Date"
+    },
+    "mktInvstCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Market Investment Code"
+    },
+    "sectInvstCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Sector Investment Code"
+    },
+    "allowBuyProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Buy Product Indicator"
+    },
+    "allowSellProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Sell Product Indicator"
+    },
+    "allowBuyUtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Buy Unit Product Indicator"
+    },
+    "allowBuyAmtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Buy Amount Product Indicator"
+    },
+    "allowSellUtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Sell Unit Product Indicator"
+    },
+    "allowSellAmtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Sell Amount Product Indicator"
+    },
+    "allowSellMipProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Sell Monthly Investment Program Product Indicator"
+    },
+    "allowSellMipUtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Sell Monthly Investment Program Unit Product Indicator"
+    },
+    "allowSellMipAmtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Sell Monthly Investment Program Amount Product Indicator"
+    },
+    "allowSwInProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Switch In Product Indicator"
+    },
+    "allowSwInUtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Switch In Unit Product Indicator"
+    },
+    "allowSwInAmtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Switch In Amount Product Indicator"
+    },
+    "allowSwOutProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Switch Out Product Indicator"
+    },
+    "allowSwOutUtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Switch Out Unit Product Indicator"
+    },
+    "allowSwOutAmtProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Allow Switch Out Amount Product Indicator"
+    },
+    "incmCharProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Income Characteristic Product Indicator"
+    },
+    "cptlGurntProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Capital Guaranteed Product Indicator"
+    },
+    "yieldEnhnProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Yield Enhancement Product Indicator"
+    },
+    "grwthCharProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Growth Characteristic Product Indicator"
+    },
+    "prtyProdSrchRsultNum" : {
+      "type" : [ "integer", "null" ],
+      "description" : "Priority Product Search Result Number"
+    },
+    "availMktInfoInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Available Market Information Indicator"
+    },
+    "prdRtrnAvgNum" : {
+      "type" : [ "number", "null" ],
+      "description" : "Period Return Average Number"
+    },
+    "rtrnVoltlAvgPct" : {
+      "type" : [ "number", "null" ],
+      "description" : "Return Volatility Average Percent"
+    },
+    "dmyProdSubtpRecInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Dummy Product Subtype Record Indicator"
+    },
+    "dispComProdSrchInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Display Common Product Search Indicator"
+    },
+    "mrkToMktInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Mark To Market Indicator"
+    },
+    "prodNarrText" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Narrative Text"
+    },
+    "ctryProdTrade1Cde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Country Product Tradable Code 1(e.g. HK)"
+    },
+    "ctryProdTrade2Cde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Country Product Tradable Code 2(e.g. HK)"
+    },
+    "ctryProdTrade3Cde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Country Product Tradable Code 3(e.g. HK)"
+    },
+    "ctryProdTrade4Cde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Country Product Tradable Code 4(e.g. HK)"
+    },
+    "ctryProdTrade5Cde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Country Product Tradable Code 5(e.g. HK)"
+    },
+    "busStartTm" : {
+      "type" : [ "string", "null" ],
+      "description" : "Business Start Time"
+    },
+    "busEndTm" : {
+      "type" : [ "string", "null" ],
+      "description" : "Business End Time"
+    },
+    "introProdCurrPrdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Introduce Product Current Period Indicator"
+    },
+    "prodTopSellRankNum" : {
+      "type" : [ "integer", "null" ],
+      "description" : "Product Top Sell Rank Number"
+    },
+    "prodTopPerfmRankNum" : {
+      "type" : [ "integer", "null" ],
+      "description" : "Product Top Performance Rank Number"
+    },
+    "prodTopYieldRankNum" : {
+      "type" : [ "integer", "null" ],
+      "description" : "Product Top Yield Rank Number"
+    },
+    "prodIssueCrosReferDt" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Issue Cross Reference Date"
+    },
+    "prodCmntText" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Comment Text"
+    },
+    "ccyInvstCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Currency Investment Code"
+    },
+    "bchmkName" : {
+      "type" : [ "string", "null" ],
+      "description" : "Benchmark Name"
+    },
+    "bchmkPllName" : {
+      "type" : [ "string", "null" ],
+      "description" : "Benchmark Primary Local Language Name"
+    },
+    "bchmkSllName" : {
+      "type" : [ "string", "null" ],
+      "description" : "Benchmark Secondary Local Language Name"
+    },
+    "trdFirstDt" : {
+      "type" : [ "string", "null" ],
+      "description" : "Trade First Date"
+    },
+    "loanProdOdMrgnPct" : {
+      "type" : [ "number", "null" ],
+      "description" : "Loan Product Overdraft Margin Percent"
+    },
+    "qtyUnitProdCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Quantity Unit Product Code"
+    },
+    "prodLocCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Location Code"
+    },
+    "prodTaxFreeWrapActStaCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Tax Free Wrapper Account Status Code"
+    },
+    "prcEffDt" : {
+      "type" : [ "string", "null" ],
+      "description" : "Price Effective Date(DD/MM/YYYY)(e.g. 24/12/2006)"
+    },
+    "ccyProdMktPrcCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Currency Product Market Price Code(e.g. USD)"
+    },
+    "prodBidPrcAmt" : {
+      "type" : [ "number", "null" ],
+      "description" : "Product Bid Price Amount(e.g 1500000)"
+    },
+    "prodOffrPrcAmt" : {
+      "type" : [ "number", "null" ],
+      "description" : "Product Offer Price Amount(e.g 1500000)"
+    },
+    "prodMktPrcAmt" : {
+      "type" : [ "number", "null" ],
+      "description" : "Product Market Price Amount(e.g 1500000)"
+    },
+    "prodNavPrcAmt" : {
+      "type" : [ "number", "null" ],
+      "description" : "Product Net Asset Value Price Amount(e.g. 110000)"
+    },
+    "prodPrcUpdtDtTm" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Price Update Date Time"
+    },
+    "dcmlPlaceTradeUnitNum" : {
+      "type" : [ "integer", "null" ],
+      "description" : "Decimal Place Trade Unit Number"
+    },
+    "prodOffrChanlUpdtDtTm" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Offer Channel Update Date Time"
+    },
+    "recCreatDtTm" : {
+      "type" : "string",
+      "description" : "Record Create Date Time"
+    },
+    "recUpdtDtTm" : {
+      "type" : "string",
+      "description" : "Record Update Date Time"
+    },
+    "recOnlnUpdtDtTm" : {
+      "type" : [ "string", "null" ],
+      "description" : "Record Online Update Date Time"
+    },
+    "prodOwnCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Ownership Code"
+    },
+    "forgnProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Foreign Product Indicator"
+    },
+    "asetCatExtnlCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Asset Category External Code"
+    },
+    "prodMktPricePrevAmt" : {
+      "type" : [ "number", "null" ],
+      "description" : "Product Market Price Previous Amount"
+    },
+    "prcInpDt" : {
+      "type" : [ "string", "null" ],
+      "description" : "Price Input Date(DD/MM/YYYY)(e.g. 24/12/2006)"
+    },
+    "chrgCatCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Charge Category Code"
+    },
+    "pldgLimitAssocAcctInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Pledge Limit Associate Account Indicator"
+    },
+    "prodStatUpdtDtTm" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Status Update Date Time"
+    },
+    "suptRcblCashProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Support Receivable Cash Product Indicator"
+    },
+    "suptRcblScripProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Support Receivable Scrip Product Indicator"
+    },
+    "asetUnderMgmtChrgProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Asset Under Management Chargeable Product Indicator"
+    },
+    "invstImigProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Investment Immigration Product Indicator"
+    },
+    "restrInvstrProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Restricted Investor Product Indicator"
+    },
+    "prodInvstObjText" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Investment Objective Text"
+    },
+    "invstInitMinAmt" : {
+      "type" : [ "number", "null" ],
+      "description" : "Investment Initial Minimum Amount"
+    },
+    "noScribFeeProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "No Subscription Fee Product Indicator"
+    },
+    "topSellProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Top Sell Product Indicator"
+    },
+    "topPerfmProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Top Performance Product Indicator"
+    },
+    "invstInitMaxAmt" : {
+      "type" : [ "number", "null" ],
+      "description" : "Investment Initial Maximum Amount"
+    },
+    "rcmndProdDecsnCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Recommended Product Decision Code"
+    },
+    "asetText" : {
+      "type" : [ "string", "null" ],
+      "description" : "Asset Text"
+    },
+    "prodDervtCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Derivative Code"
+    },
+    "prodDervtRvsCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Derivative Revised Code"
+    },
+    "prdDervRvsEffDt" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Derivative Revised Effective Date"
+    },
+    "eqtyUndlInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Equity Underlying Indicator"
+    },
+    "wlthAccumGoalInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Wealth Accumulation Goal Indicator"
+    },
+    "prtyWlthAccumGoalCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Priority Wealth Accumulation Goal Code"
+    },
+    "planForRtireGoalInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Plan For Retirement Goal Indicator"
+    },
+    "prtyPlnForRtireCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Priority Plan For Retirement Code"
+    },
+    "educGoalInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Education Goal indicator"
+    },
+    "prtyEducCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Priority Education Code"
+    },
+    "liveInRtireGoalInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Live In Retirement Goal indicator"
+    },
+    "prtyLiveInRtireCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Priority Live In Retirement Code"
+    },
+    "protcGoalInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Protection Goal Indicator"
+    },
+    "prtyProtcCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Priority Protection Code"
+    },
+    "mngSolnInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Manage Solution Indicator"
+    },
+    "prdInvstTnorNum" : {
+      "type" : [ "integer", "null" ],
+      "description" : "Period Investment Tenor Number"
+    },
+    "geoRiskInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Geographical Risk Indicator"
+    },
+    "prodLqdyInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Liquidity Indicator"
+    },
+    "rvrseEnqProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Reverse Enquiry Product Indicator"
+    },
+    "prodInvstTypeCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Product Investment Type Code"
+    },
+    "divrNum" : {
+      "type" : [ "number", "null" ],
+      "description" : "Divisor Number"
+    },
+    "priceHistSrceRdyStatCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "Price History Source Ready Status Code"
+    },
+    "priceHistDelvrDtTm" : {
+      "type" : [ "string", "null" ],
+      "description" : "Price History Delivered Date Time"
+    },
+    "islmProdInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Islamic Product Indicator"
+    },
+    "cntlAdvcInd" : {
+      "type" : [ "string", "null" ],
+      "description" : "Control Advice Indicator(Y/N)"
+    },
+    "asetVoltlClassMajrPrntCde" : {
+      "type" : [ "string", "null" ],
+      "description" : "The second level of Asset Volatility Class Code(Asset Volatility Class Major Parent Code) NAM_EQTY:North America; EME_EQTY: Europe & Mid East  PAC_EQTY:Pacific  SAM_EQTY:South America  EMM_EQTY:Emerging Markets  ASI_EQTY:Asia  OTH_EQTY:Other Equity  OTH_DEBT_FI:Other Debt  GOV_BOND_FI:Government Bond  ALTERN:Alternatives  CASH:Cash  OTHER:Other "
+    },
+    "recStgcFinPlnUpdtDtTm" : {
+      "type" : [ "string", "null" ],
+      "description" : "TODO"
+    },
+    "prodParntId" : {
+      "type" : [ "integer", "null" ],
+      "description" : "Product Parent ID"
+    },
+    "oferChanl" : {
+      "type" : "array",
+      "description" : "Channel Communication Code",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "tradeCcy" : {
+      "type" : "array",
+      "description" : "Currency Product Tradable Code",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "formReqmt" : {
+      "type" : [ "array", "null" ],
+      "description" : "Form Required Code",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "ovridField" : {
+      "type" : [ "array", "null" ],
+      "description" : "**** DO NOT REMOVE ****",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "tradeElig" : {
+      "type" : [ "object", "null" ],
+      "description" : "Trade Eligibility",
+      "$ref" : "#/definitions/TradeEligInput"
+    },
+    "narr" : {
+      "type" : [ "object", "null" ],
+      "description" : "Narrative",
+      "$ref" : "#/definitions/NarrInput"
+    },
+    "ccyOptLinkDepst" : {
+      "type" : [ "object", "null" ],
+      "description" : "Currency Option Linked Deposit",
+      "$ref" : "#/definitions/CcyOptLinkDepstInput"
+    },
+    "mpfInstm" : {
+      "type" : [ "array", "null" ],
+      "description" : "MPF",
+      "items" : {
+        "$ref" : "#/definitions/MpfInstmInput"
+      }
+    },
+    "debtInstm" : {
+      "type" : [ "object", "null" ],
+      "description" : "Debt Instrument",
+      "$ref" : "#/definitions/DebtInstmInput"
+    },
+    "eqtyLinkInvst" : {
+      "type" : [ "object", "null" ],
+      "description" : "Equity Linked Investment",
+      "$ref" : "#/definitions/EqtyLinkInvstInput"
+    },
+    "stockInstm" : {
+      "type" : [ "object", "null" ],
+      "description" : "Stock Instrument",
+      "$ref" : "#/definitions/StockInstmInput"
+    },
+    "strucInvstDepst" : {
+      "type" : [ "object", "null" ],
+      "description" : "Structured Investment Deposit",
+      "$ref" : "#/definitions/StrucInvstDepstInput"
+    },
+    "utTrstInstm" : {
+      "type" : [ "object", "null" ],
+      "description" : "Unit Trust instrument",
+      "$ref" : "#/definitions/UtTrstInstmInput"
+    },
+    "warrInstm" : {
+      "type" : [ "object", "null" ],
+      "description" : "Warrant Instrument",
+      "$ref" : "#/definitions/WarrInstmInput"
+    },
+    "altId" : {
+      "type" : [ "array", "null" ],
+      "description" : "Product Alternative Identification",
+      "items" : {
+        "$ref" : "#/definitions/AltIdInput"
+      }
+    },
+    "finDoc" : {
+      "type" : [ "array", "null" ],
+      "description" : "Financial Doc",
+      "items" : {
+        "$ref" : "#/definitions/FinDocInput"
+      }
+    },
+    "listProd" : {
+      "type" : [ "array", "null" ],
+      "description" : "Product List Product",
+      "items" : {
+        "$ref" : "#/definitions/ListProdInput"
+      }
+    },
+    "perfm" : {
+      "type" : [ "array", "null" ],
+      "description" : "Product Performance",
+      "items" : {
+        "$ref" : "#/definitions/PerfmInput"
+      }
+    },
+    "prodReln" : {
+      "type" : [ "array", "null" ],
+      "description" : "Product Product Relationship",
+      "items" : {
+        "$ref" : "#/definitions/ProdRelnInput"
+      }
+    },
+    "restrCustCtry" : {
+      "type" : [ "array", "null" ],
+      "description" : "Product Restricted Customer Country",
+      "items" : {
+        "$ref" : "#/definitions/RestrCustCtryInput"
+      }
+    },
+    "stafLicCheck" : {
+      "type" : [ "array", "null" ],
+      "description" : "Staff Eligibility",
+      "items" : {
+        "$ref" : "#/definitions/StafLicCheckInput"
+      }
+    },
+    "undlAset" : {
+      "type" : [ "array", "null" ],
+      "description" : "Product Underlying Asset",
+      "items" : {
+        "$ref" : "#/definitions/UndlAsetInput"
+      }
+    },
+    "prcCmpar" : {
+      "type" : [ "array", "null" ],
+      "description" : "Product Price Compare?",
+      "items" : {
+        "$ref" : "#/definitions/PrcCmparInput"
+      }
+    },
+    "asetGeoLocAlloc" : {
+      "type" : [ "array", "null" ],
+      "description" : "Asset Geographic Location Allocation",
+      "items" : {
+        "$ref" : "#/definitions/AsetGeoLocAllocInput"
+      }
+    },
+    "asetSicAlloc" : {
+      "type" : [ "array", "null" ],
+      "description" : "Asset Standard Industry Classification Allocation",
+      "items" : {
+        "$ref" : "#/definitions/AsetSicAllocInput"
+      }
+    },
+    "asetVoltlClass" : {
+      "type" : [ "array", "null" ],
+      "description" : "Product Asset Volatility Class",
+      "items" : {
+        "$ref" : "#/definitions/AsetVoltlClassInput"
+      }
+    },
+    "fieldGroupCtoff" : {
+      "type" : [ "array", "null" ],
+      "description" : "Product Field Group Cut Off?",
+      "items" : {
+        "$ref" : "#/definitions/FieldGroupCtoffInput"
+      }
+    },
+    "trnsl" : {
+      "type" : [ "object", "null" ],
+      "description" : "Product Translation",
+      "$ref" : "#/definitions/TrnslInput"
+    },
+    "ext" : {
+      "type" : [ "object", "null" ],
+      "description" : "Extension Fields",
+      "$ref" : "#/definitions/ExtInput"
+    },
+    "udf" : {
+      "type" : [ "object", "null" ],
+      "description" : "User Defined Fields",
+      "$ref" : "#/definitions/UdfInput"
+    },
+    "_id" : {
+      "type" : "integer"
+    }
+  },
+  "required" : [ "ctryRecCde", "grpMembrRecCde", "prodId", "prodCde", "recCreatDtTm", "recUpdtDtTm", "oferChanl", "tradeCcy" ],
+  "additionalProperties" : false,
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "title" : "Product",
+  "description" : "WPC product document",
+  "definitions" : {
+    "TradeEligInput" : {
+      "type" : "object",
+      "properties" : {
+        "ovridCuspCatEligInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Customer Product Category Eligibility Indicator"
+        },
+        "reqCmplRpqInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Require Complete Risk Profiling Questionnaire Indicator"
+        },
+        "ovridReqCmplRpqInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Require Complete Risk Profiling Questionnaire Indicator"
+        },
+        "prdVlidRpqCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Period Valid Risk Profiling Questionnaire Code"
+        },
+        "prdVlidRpqNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Period Valid Risk Profiling Questionnaire Number"
+        },
+        "ovridRpqVlidPrdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Risk Profiling Questionnaire Valid Period Indicator"
+        },
+        "actionLowRpqScrText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Action Low Risk Profiling Questionnaire Score Text"
+        },
+        "ovridReqFormInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Require Form Indicator"
+        },
+        "ageAllowTrdMinNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Age Allow Trade Minimum Number"
+        },
+        "ageAllowTrdMaxNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Age Allow Trade Maximum Number"
+        },
+        "ovridMinAgeRestrInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Minimum Age Restriction Indicator"
+        },
+        "ovridMaxAgeRestrInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Maximum Age Restriction Indicator"
+        },
+        "operTypeCde" : {
+          "type" : "string",
+          "description" : "Operation Type Code"
+        },
+        "ovridCorsCtryChkInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Correspondence Country Check Indicator"
+        },
+        "ovridResCtryChkInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Residence Country Check Indicator"
+        },
+        "ovridNatlChkInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Nationality Check Indicator"
+        },
+        "reqInvstHldgChkInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Require Investment Holding Check Indicator"
+        },
+        "ovridInvstHldgChkInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Override Investment Holding Check Indicator"
+        },
+        "ovridRestrFisclCtryChkInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Customer Eligibility"
+        }
+      },
+      "required" : [ "operTypeCde" ],
+      "additionalProperties" : false
+    },
+    "NarrInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodNarrPllText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Narrative Primary Local Language Text"
+        },
+        "prodNarrSllText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Narrative Secondary Local Language Text"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "CcyOptLinkDepstInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodExtnlCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product External Code(e.g. KO001)"
+        },
+        "depstPlusTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Deposit Plus Type Code"
+        },
+        "prodExtnlSuffNum" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product External Suffix Number"
+        },
+        "ccyLinkDepstCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Currency Link Deposit Code"
+        },
+        "tailrMadeDepstInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Tailored Made Deposit Indicator"
+        },
+        "knockTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Knock Type Code"
+        },
+        "exchgRateFixDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Exchange Rate Fix Date"
+        },
+        "factrConvRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Factor Conversion Rate"
+        },
+        "intRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Interest Rate"
+        },
+        "exchgSpotRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Exchange Spot Rate"
+        },
+        "exchgInitRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Exchange Initial Rate"
+        },
+        "exchgBreakEvenRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Exchange Break Even Rate"
+        },
+        "obsrvStartDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Observation Start Date"
+        },
+        "obsrvEndDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Observation End Date"
+        },
+        "exchgTrigRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Exchange Trigger Rate"
+        },
+        "rtnOptCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Return Option Code"
+        },
+        "ccyFromCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Currency From Code"
+        },
+        "ccyToCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Currency To Code"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "MpfInstmInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodMpfCde" : {
+          "type" : "string",
+          "description" : "TODO"
+        },
+        "fundMpfCde" : {
+          "type" : "string",
+          "description" : "TODO"
+        },
+        "seqNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        },
+        "prcEffDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "offerPrcCcy" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "offerPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "offerPrcDp" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        },
+        "bidPrcCcy" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "bidPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "bidPrcDp" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        },
+        "perfmCumPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "perfm1moPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "perfm6moPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "perfm1yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "perfm3yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "perfm5yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "perfmSinceLnchPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "pfrmEffDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "disIndc" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "rmk" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "pfrmUpdtDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        }
+      },
+      "required" : [ "prodMpfCde", "fundMpfCde" ],
+      "additionalProperties" : false
+    },
+    "DebtInstmInput" : {
+      "type" : "object",
+      "properties" : {
+        "isrBondName" : {
+          "type" : [ "string", "null" ],
+          "description" : "Issuer Bond Name"
+        },
+        "issueNum" : {
+          "type" : [ "string", "null" ],
+          "description" : "Issue Number"
+        },
+        "prodIssDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Issue Date"
+        },
+        "pdcyCoupnPymtCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Periodicity Coupon Payment Code"
+        },
+        "coupnAnnlRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Coupon Annual Rate"
+        },
+        "coupnExtInstmRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Coupon Extendable Instrument Rate"
+        },
+        "pymtCoupnNextDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Payment Coupon Next Date"
+        },
+        "flexMatOptInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Flexible Maturity Option Indicator"
+        },
+        "intIndAccrAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Interest Indicative Accrue Amount"
+        },
+        "invstIncrmMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Investment Increment Minimum Amount"
+        },
+        "prodBodLotQtyCnt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Board Lot Quantity Count"
+        },
+        "mturExtDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Maturity Extended Date"
+        },
+        "subDebtInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Subordinated Debt Indicator"
+        },
+        "bondStatCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Bond Status Code"
+        },
+        "ctryBondIssueCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Country Bond Issue Code(e.g. HK)"
+        },
+        "grntrName" : {
+          "type" : [ "string", "null" ],
+          "description" : "Guarantor Name"
+        },
+        "cptlTierText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Capital Tier Text"
+        },
+        "coupnType" : {
+          "type" : [ "string", "null" ],
+          "description" : "Coupon Type"
+        },
+        "coupnPrevRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Coupon Previous Rate"
+        },
+        "indexFltRateName" : {
+          "type" : [ "string", "null" ],
+          "description" : "Index Float Rate Name"
+        },
+        "bondFltSprdRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Bond Float Spread Rate"
+        },
+        "coupnCurrStartDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Coupon Current Start Date"
+        },
+        "coupnPrevStartDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Coupon Previous Start Date"
+        },
+        "bondCallNextDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Bond Callable Next Date"
+        },
+        "intBasisCalcText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Interest Basis Calculation Text"
+        },
+        "intAccrDayCnt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Interest Accrue Day Count"
+        },
+        "invstSoldLestAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Investment Sold Least Amount"
+        },
+        "invstIncrmSoldAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Investment Increment Sold Amount"
+        },
+        "shrBidCnt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Share Bid Count"
+        },
+        "shrOffrCnt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Share Offer Count"
+        },
+        "prodCloseBidPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Closing Bid Price Amount"
+        },
+        "prodCloseOffrPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Closing Offer Price Amount"
+        },
+        "bondCloseDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Bond Closing Date"
+        },
+        "bondSetlDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Bond Settlement Date"
+        },
+        "dscntMrgnBselPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Discount Margin Bank Sell Percent"
+        },
+        "dscntMrgnBbuyPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Discount Margin Bank Buy Percent"
+        },
+        "prcBondRecvDtTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Price Bond Receive Date Time"
+        },
+        "yieldOfferText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Yield Offer Text"
+        },
+        "coupnAnnlText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Coupon Annual Text"
+        },
+        "yieldEffDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Yield Effective Date"
+        },
+        "yieldBidPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Bid Percent (%)(e.g. 20)"
+        },
+        "yieldToCallBidPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield To Call Bid Percent (%)(e.g. 20)"
+        },
+        "yieldToMturBidPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield To Maturity Bid Percent (%)(e.g. 20)"
+        },
+        "yieldBidClosePct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Bid Closing Percent (%)"
+        },
+        "yieldOfferPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Offer Percent (%)(e.g. 20)"
+        },
+        "yieldToCallOfferPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield To Call Offer Percent (%)(e.g. 20)"
+        },
+        "yieldToMturOfferText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Yield To Maturity Offer Text"
+        },
+        "yieldOfferClosePct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Offer Closing Percent (%)"
+        },
+        "yieldDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Yield Date"
+        },
+        "isrDesc" : {
+          "type" : [ "string", "null" ],
+          "description" : "Issuer Description"
+        },
+        "srTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Seniority Type Code"
+        },
+        "yieldHist" : {
+          "type" : [ "array", "null" ],
+          "description" : "Yield History",
+          "items" : {
+            "$ref" : "#/definitions/DebtInstmYieldHistInput"
+          }
+        },
+        "credRtng" : {
+          "type" : [ "array", "null" ],
+          "description" : "Credit Rating",
+          "items" : {
+            "$ref" : "#/definitions/DebtInstmCredRtngInput"
+          }
+        },
+        "trnsl" : {
+          "type" : [ "object", "null" ],
+          "description" : "Translation",
+          "$ref" : "#/definitions/DebtInstmTrnslInput"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "DebtInstmYieldHistInput" : {
+      "type" : "object",
+      "properties" : {
+        "yieldTypeCde" : {
+          "type" : "string",
+          "description" : "Yield Type Code"
+        },
+        "yieldEffDt" : {
+          "type" : "string",
+          "description" : "Yield Effective Date"
+        },
+        "yieldDt" : {
+          "type" : "string",
+          "description" : "Yield Date"
+        },
+        "yieldBidPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Bid Percent"
+        },
+        "yieldToCallBidPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield To Call Bid Percent"
+        },
+        "yieldToMturBidPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "yieldBidClosePct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Bid Closing Percent"
+        },
+        "yieldOfferPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Offer Percent"
+        },
+        "yieldToCallOfferPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield To Call Offer Percent"
+        },
+        "yieldToMturOfferText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Yield To Maturity Offer Text"
+        },
+        "yieldOfferClosePct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Offer Closing Percent"
+        }
+      },
+      "required" : [ "yieldTypeCde", "yieldEffDt", "yieldDt" ],
+      "additionalProperties" : false
+    },
+    "DebtInstmCredRtngInput" : {
+      "type" : "object",
+      "properties" : {
+        "creditRtngAgcyCde" : {
+          "type" : "string",
+          "description" : "Credit Rating Agency Code"
+        },
+        "creditRtngCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Credit Rating Code"
+        }
+      },
+      "required" : [ "creditRtngAgcyCde" ],
+      "additionalProperties" : false
+    },
+    "DebtInstmTrnslInput" : {
+      "type" : "object",
+      "properties" : {
+        "isrPllDesc" : {
+          "type" : [ "string", "null" ],
+          "description" : "Issuer Primary Local Language Description"
+        },
+        "isrSllDesc" : {
+          "type" : [ "string", "null" ],
+          "description" : "Issuer Secondary Local Language Description"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "EqtyLinkInvstInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodExtnlCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product External Code(e.g. A51H5215)"
+        },
+        "prodExtnlTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product External Type Code"
+        },
+        "eqtyLinkInvstTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Equity Linked Investment Type Code"
+        },
+        "trdDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Trade Date"
+        },
+        "dscntBuyPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Discount Buy Percent"
+        },
+        "dscntSellPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Discount Sell Percent"
+        },
+        "yieldToMturPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield To Maturity Percent"
+        },
+        "denAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Denomination Amount"
+        },
+        "trdMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Trading Minimum Amount"
+        },
+        "suptAonInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support All Or Nothing Indicator"
+        },
+        "pymtDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Payment Date"
+        },
+        "valnDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Valuation Date"
+        },
+        "offerTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Offer Type Code"
+        },
+        "custSellQtaCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Customer Sell Quota Count"
+        },
+        "ruleQtaAltmtCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Rule Quota Allotment Code"
+        },
+        "setlDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Settlement Date"
+        },
+        "lnchProdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Launch Product Indicator"
+        },
+        "rtrvProdExtnlInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Retrieve Product External Indicator"
+        },
+        "prodExtnlCatCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product External Category Code"
+        },
+        "pdcyCallCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Periodicity Call Code"
+        },
+        "pdcyKnockInCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Periodicity Knock In Code"
+        },
+        "undlStock" : {
+          "type" : [ "array", "null" ],
+          "description" : "Equity Linked Investment Underlying Stock",
+          "items" : {
+            "$ref" : "#/definitions/EqtyLinkInvstUndlStockInput"
+          }
+        }
+      },
+      "additionalProperties" : false
+    },
+    "EqtyLinkInvstUndlStockInput" : {
+      "type" : "object",
+      "properties" : {
+        "instmUndlCde" : {
+          "type" : "string",
+          "description" : "Instrument Underlying Code"
+        },
+        "instmUndlText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Instrument Underlying Text"
+        },
+        "crncyInstmUndlPriceCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Currency Instrument Underlying Price Code"
+        },
+        "prodStrkPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Strike Price Amount"
+        },
+        "prodStrkCallPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Strike Call Price Amount"
+        },
+        "prodStrkPutPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Strike Put Price Amount"
+        },
+        "prodClosePrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Closing Price Amount"
+        },
+        "prodCloseLowPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Closing Lower Price Amount"
+        },
+        "prodCloseUpprPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Closing Upper Price Amount"
+        },
+        "prodClosePutPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Closing Put Price Amount"
+        },
+        "prodCloseCallPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Closing Call Price Amount"
+        },
+        "prodExerPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Exercise Price Amount"
+        },
+        "prodBreakEvenPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Break Even Price Amount"
+        },
+        "prodBreakEvenLowPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Break Even Lower Price Amount"
+        },
+        "prodBreakEvenUpprPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Break Even Upper Price Amount"
+        },
+        "prodBreakEvenPutPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Break Even Put Price Amount"
+        },
+        "prodBreakEvenCallPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Break Even Call Price Amount"
+        },
+        "sprdCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Spread Count"
+        },
+        "instmEntlCnt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Instrument Entitle Count"
+        },
+        "prodKnockInPriceAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Knock In Price Amount"
+        },
+        "prodStrkPriceInitPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Strike Price Initial Percent"
+        },
+        "prodStrkCallPriceInitPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Strike Call Price Initial Percent"
+        },
+        "prodKnockInPriceInitPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Knock In Price Initial Percent"
+        },
+        "prodIdUndlInstm" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        }
+      },
+      "required" : [ "instmUndlCde" ],
+      "additionalProperties" : false
+    },
+    "StockInstmInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodPrcChngPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Price Change Percent"
+        },
+        "prodPrcChngAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Price Change Amount"
+        },
+        "prodOpenPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Opening Price Amount"
+        },
+        "prodTdyHighPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Today Highest Price Amount"
+        },
+        "prodTdyLowPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Today Lowest Price Amount"
+        },
+        "shareTrdCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Share Trade Count"
+        },
+        "prodTrnvrAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Turnover Amount"
+        },
+        "prodPrc52WeekMaxAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Price 52 Week Maximum Amount"
+        },
+        "prodPrc52WeekMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Price 52 Week Minimum Amount"
+        },
+        "prcEarnRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Price Earnings Rate"
+        },
+        "earnPerShareAnnlAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Earnings Per Share Annual Amount"
+        },
+        "divPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Dividend Percent"
+        },
+        "mrgnTrdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Margin Trade Indicator"
+        },
+        "mrgnSecOdPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Margin Secured Overdraft Percent"
+        },
+        "suptAuctnTrdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support Auction Trading Indicator"
+        },
+        "stopLossMinPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Stop Loss Minimum Percent"
+        },
+        "stopLossMaxPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Stop Loss Maximum Percent"
+        },
+        "sprdStopLossMinCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Spread Stop Loss Minimum Count"
+        },
+        "sprdStopLossMaxCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Spread Stop Loss Maximum Count"
+        },
+        "prodBodLotQtyCnt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Board Lot Quantity Count"
+        },
+        "mktProdTrdCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Market Product Trading Code"
+        },
+        "suptMipInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support Monthly Investment Program Indicator"
+        },
+        "invstMipMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Investment Monthly Investment Program Minimum Amount"
+        },
+        "invstMipIncrmMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Investment Monthly Investment Program Increment Minimum Amount"
+        },
+        "prodIssQtyTtlCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Product Issue Quantity Total Count"
+        },
+        "bodLotProdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Board Lot Product Indicator"
+        },
+        "trdLimitInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Trading Limit Indicator"
+        },
+        "prodMaxIndvOwnrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Maximum Individual Owner Percent"
+        },
+        "prodMaxIndvForgnInvstrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Maximum Individual Foreign Investor Percent"
+        },
+        "prodMaxForgnInvstrTtlPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Maximum Foreign Investor Total Percent"
+        },
+        "prodExerPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Exercise Price Amount"
+        },
+        "psblProdBorwInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Possible Product Borrow Indicator"
+        },
+        "allwProdLendInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Allow Product Lending Indicator"
+        },
+        "poolProdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Pool Product Indicator"
+        },
+        "scripOnlyProdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Scrip Only Product Indicator"
+        },
+        "suptAtmcTrdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support Automatic Trade Indicator"
+        },
+        "suptNetSetlInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support Net Settlement Indicator"
+        },
+        "suptStopLossOrdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support Stop Loss Order Indicator"
+        },
+        "suptWinWinOrdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support Win Win Order Indicator"
+        },
+        "suptAllIn1OrdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support All In One Order Indicator"
+        },
+        "suptProdSpltInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support Product Split Indicator"
+        },
+        "mrgnPrcAuctnTrdPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Margin Price Auction Trading Percent"
+        },
+        "prodAuctnTrdExpirDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Auction Trading Expiry Date"
+        },
+        "loanProdMrgnTrdPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Loan Product Margin Trading Percent"
+        },
+        "loanBdgtProdIpoAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Loan Budget Product Initial Public Offer Amount"
+        },
+        "loanProdIpoTtlAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Loan Product Initial Public Offer Total Amount"
+        },
+        "exclLimitCalcInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Exclude Limit Calculation Indicator"
+        },
+        "prodMktStatChngLaDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Market Status Change Last Date"
+        },
+        "prcVarCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Price Variance Code"
+        },
+        "methCalcScripChrgCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Method Calculation Scrip Charge Code"
+        },
+        "prodSellMaxQtyCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Product Sell Maximum Quantity Count"
+        },
+        "prodBuyMaxQtyCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Product Buy Maximum Quantity Count"
+        },
+        "prcVarMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Price Variance Minimum Amount"
+        },
+        "prcVarMinEffDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Price Variance Minimum Effective Date"
+        },
+        "mktSegExchgCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Market Segment Exchange Code"
+        },
+        "ctryProdRegisCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Country Product Registered Code"
+        },
+        "mktProcLastCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Market Process Last Code"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "StrucInvstDepstInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodExtnlCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product External Code(e.g. 78620)"
+        },
+        "prodExtnlTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product External Type Code"
+        },
+        "prodConvCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Conversion Code"
+        },
+        "rtrnIntrmPrevPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Return Interim Previous Percent"
+        },
+        "rtrnIntrmPaidPrevDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Return Interim Paid Previous Date"
+        },
+        "rtrnIntrmPaidNextDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Return Interim Paid Next Date"
+        },
+        "ccyLinkDepstCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Currency Link Deposit Code"
+        },
+        "mktStartDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Marketing Start Date"
+        },
+        "mktEndDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Marketing End Date"
+        },
+        "yieldAnnlMinPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Annual Minimum Percent"
+        },
+        "yieldAnnlPotenPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Yield Annual Potential Percent"
+        },
+        "allowEarlyRdmInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Allow Early Redemption Indicator"
+        },
+        "rdmEarlyDalwText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Redemption Early Disallow Text"
+        },
+        "prcEarlyRdmPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Price Early Redemption Percent"
+        },
+        "rdmEarlyIndAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Redemption Early Indicative Amount"
+        },
+        "offerTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Offer Type Code"
+        },
+        "custSellQtaNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Customer Sell Quota Number"
+        },
+        "ruleQtaAltmtCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Rule Quota Allotment Code"
+        },
+        "bonusIntCalcTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Bonus Interest Calculate Type Code"
+        },
+        "bonusIntDtTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Bonus Interest Date Type Code"
+        },
+        "cptlProtcPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Capital Protection Percent"
+        },
+        "lnchProdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Launch Product Indicator"
+        },
+        "rtrvProdExtnlInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Retrieve Product External Indicator"
+        },
+        "intrmRtn" : {
+          "type" : [ "array", "null" ],
+          "description" : "Return Interim",
+          "items" : {
+            "$ref" : "#/definitions/StrucInvstDepstIntrmRtnInput"
+          }
+        }
+      },
+      "additionalProperties" : false
+    },
+    "StrucInvstDepstIntrmRtnInput" : {
+      "type" : "object",
+      "properties" : {
+        "rtrnIntrmPaidDt" : {
+          "type" : "string",
+          "description" : "Return Interim Paid Date sequence:1(DD/MM/YYYY)(e.g. 24/12/2006) NOTE: The Return Interim Paid Date sequence 1 to 24 MUST be unique or leave it blank."
+        },
+        "rtrnIntrmPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Return Interim Percent sequence:1(e.g. 110.03)"
+        }
+      },
+      "required" : [ "rtrnIntrmPaidDt" ],
+      "additionalProperties" : false
+    },
+    "UtTrstInstmInput" : {
+      "type" : "object",
+      "properties" : {
+        "fundHouseCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Fund House Code"
+        },
+        "closeEndFundInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Closed End Fund Indicator"
+        },
+        "utPrcProdLnchAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Unit Price Product Launch Amount"
+        },
+        "fundAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Fund Amount"
+        },
+        "invstIncrmMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Investment Increment Minimum Amount"
+        },
+        "utRdmMinNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Unit Redemption Minimum Number"
+        },
+        "rdmMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Redemption Minimum Amount"
+        },
+        "utRtainMinNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Unit Retain Minimum Number"
+        },
+        "fundRtainMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Fund Retain Minimum Amount"
+        },
+        "suptMipInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Support Monthly Investment Program Indicator"
+        },
+        "invstMipMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Investment Monthly Investment Program Minimum Amount"
+        },
+        "invstMipIncrmMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Investment Monthly Investment Program Increment Minimum Amount"
+        },
+        "utMipRdmMinNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Unit Monthly Investment Program Redemption Minimum Number"
+        },
+        "rdmMipMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Redemption Monthly Investment Program Minimum Amount"
+        },
+        "utMipRtainMinNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Unit Monthly Investment Program Retain Minimum Number"
+        },
+        "fundMipRtainMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Fund Monthly Investment Program Retain Minimum Amount"
+        },
+        "rtrnGurntPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Return Guarantee Percent"
+        },
+        "schemChrgCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Scheme Charge Code"
+        },
+        "chrgInitSalesPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Charge Initial Sales Percent"
+        },
+        "chrgFundSwPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Charge Fund Switch Percent"
+        },
+        "dscntMaxPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Discount Maximum Percent"
+        },
+        "offerStartDtTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Offer Start Date Time"
+        },
+        "offerEndDtTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Offer End Date Time"
+        },
+        "payCashDivInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Pay Cash Dividend Indicator"
+        },
+        "hldayFundNextDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Holiday Fund Next Date"
+        },
+        "scribCtoffNextDtTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Subscription Cutoff Next Date Time"
+        },
+        "rdmCtoffNextDtTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Redemption Cutoff Next Date Time"
+        },
+        "dealNextDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Deal Next Date"
+        },
+        "fundClassCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Fund Class Code"
+        },
+        "amcmInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Amcm Indicator"
+        },
+        "divDclrDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Dividend Declaration Date"
+        },
+        "divPymtDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Dividend Payment Date"
+        },
+        "autoSweepFundInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Auto Sweep Fund Indicator"
+        },
+        "spclFundInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Special Fund Indicator"
+        },
+        "insuLinkUtTrstInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Insurance Linked Unit Trust Indicator"
+        },
+        "prodTrmtDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Terminate Date"
+        },
+        "fundSwInMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Fund Switch In Minimum Amount"
+        },
+        "fundSwOutMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Fund Switch Out Minimum Amount"
+        },
+        "fundSwOutRtainMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Fund Switch Out Retain Minimum Amount"
+        },
+        "utSwOutRtainMinNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Unit Switch Out Retain Minimum Number"
+        },
+        "fundSwOutMaxAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Fund Switch Out Maximum Amount"
+        },
+        "tranMaxAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Transaction Maximum Amount"
+        },
+        "incmHandlOptCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Income Handle Option Code"
+        },
+        "autoRenewFundInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Auto Renewable Fund Indicator"
+        },
+        "fundValnTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Fund Valuation Time"
+        },
+        "prodShoreLocCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Shore Location Code"
+        },
+        "divYieldPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Dividend Yield Percent"
+        },
+        "sw" : {
+          "type" : "array",
+          "description" : "Fund Unswitchable Code",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      },
+      "required" : [ "sw" ],
+      "additionalProperties" : false
+    },
+    "WarrInstmInput" : {
+      "type" : "object",
+      "properties" : {
+        "warrTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Warrant Type Code"
+        },
+        "prodStrkPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Strike Price Amount"
+        },
+        "prodPrcChngPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Price Change Percent"
+        },
+        "prodPrcChngAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Price Change Amount"
+        },
+        "entlRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Entitlement Rate"
+        },
+        "prodTdyHighPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Today Highest Price Amount"
+        },
+        "prodTdyLowPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Today Lowest Price Amount"
+        },
+        "shareTrdCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Share Trade Count"
+        },
+        "prodTrnvrAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Turnover Amount"
+        },
+        "prodClosePrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Closing Price Amount"
+        },
+        "prodPrc52WeekMaxAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Price 52 Week Maximum Amount"
+        },
+        "prodPrc52WeekMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Price 52 Week Minimum Amount"
+        },
+        "instmUndlCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Instrument Underlying Code"
+        },
+        "ccyUndlInstmCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Currency Underlying Instrument Code"
+        },
+        "instmUndlMktPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Instrument Underlying Market Price Amount"
+        },
+        "voltlImplyPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Volatility Implied Percent"
+        },
+        "moneyPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Moneyness Percent"
+        },
+        "moneyTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Moneyness Type Code"
+        },
+        "premPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Premium Percent"
+        },
+        "gearEffRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Gearing Effective Rate"
+        },
+        "deltaPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Delta Percent"
+        },
+        "prodBodLotQtyCnt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Board Lot Quantity Count"
+        },
+        "isrCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Issuer Code"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "AltIdInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodCdeAltClassCde" : {
+          "type" : "string",
+          "description" : "Product Code Alternative Classification Code"
+        },
+        "prodTypeCde" : {
+          "type" : "string",
+          "description" : "Product Alternative ID"
+        },
+        "prodAltNum" : {
+          "type" : "string",
+          "description" : "Product Alternative Number"
+        }
+      },
+      "required" : [ "prodCdeAltClassCde", "prodTypeCde", "prodAltNum" ],
+      "additionalProperties" : false
+    },
+    "FinDocInput" : {
+      "type" : "object",
+      "properties" : {
+        "docFinTypeCde" : {
+          "type" : "string",
+          "description" : "Product FinDoc"
+        },
+        "langFinDocCde" : {
+          "type" : "string",
+          "description" : "Product FinDoc"
+        },
+        "rsrcItemIdFinDoc" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Product FinDoc"
+        },
+        "urlDocText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product FinDoc"
+        },
+        "finDocConHashCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product FinDoc"
+        },
+        "finDocCustClassCde" : {
+          "type" : "string",
+          "description" : "TODO"
+        }
+      },
+      "required" : [ "docFinTypeCde", "langFinDocCde", "finDocCustClassCde" ],
+      "additionalProperties" : false
+    },
+    "ListProdInput" : {
+      "type" : "object",
+      "properties" : {
+        "listProdCde" : {
+          "type" : "string",
+          "description" : "List Product Code"
+        },
+        "listProdType" : {
+          "type" : "string",
+          "description" : "List Product Type"
+        },
+        "prodEffSlstDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Effective Shortlist 1 Date"
+        }
+      },
+      "required" : [ "listProdCde", "listProdType" ],
+      "additionalProperties" : false
+    },
+    "PerfmInput" : {
+      "type" : "object",
+      "properties" : {
+        "perfmTypeCde" : {
+          "type" : "string",
+          "description" : "Performance Type Code"
+        },
+        "perfmCalcDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Performance Calculate Date"
+        },
+        "perfmYrToDtPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Variance Benchmark Year To Date Percent"
+        },
+        "perfm1moPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance 1 Month Percent"
+        },
+        "perfm3moPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance 3 Month Percent"
+        },
+        "perfm6moPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance 6 Month Percent"
+        },
+        "perfm1yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Variance Benchmark 1 Year Percent"
+        },
+        "perfm3yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance 3 Year Percent"
+        },
+        "perfm5yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Variance Benchmark 5 Year Percent"
+        },
+        "perfmExt1yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance Extended 1 Year Percent"
+        },
+        "perfmSinceLnchPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance Since Launch Percent"
+        },
+        "rtrnVoltl1yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Return Volatility 1 Year Percent"
+        },
+        "rtrnVoltlExt1yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Return Volatility Extended 1 Year Percent"
+        },
+        "rtrnVoltl3yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Return Volatility 3 Year Percent"
+        },
+        "rtrnVoltlExt3yrPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Return Volatility Extended 3 Year Percent"
+        },
+        "perfm6moAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance 6 Month Amount"
+        },
+        "perfmYrToDtAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance Year To Date Amount"
+        },
+        "perfm1yrAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance 1 Year Amount"
+        },
+        "perfm3yrAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Performance 3 Year Amount"
+        }
+      },
+      "required" : [ "perfmTypeCde" ],
+      "additionalProperties" : false
+    },
+    "ProdRelnInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodIdRel" : {
+          "type" : "integer",
+          "description" : "Product Identifier Related"
+        },
+        "prodProdRelnCde" : {
+          "type" : "string",
+          "description" : "Product Product Relationship Code"
+        }
+      },
+      "required" : [ "prodIdRel", "prodProdRelnCde" ],
+      "additionalProperties" : false
+    },
+    "RestrCustCtryInput" : {
+      "type" : "object",
+      "properties" : {
+        "ctryIsoCde" : {
+          "type" : "string",
+          "description" : "Country ISO Code"
+        },
+        "restrCtryTypeCde" : {
+          "type" : "string",
+          "description" : "Restriction Country Type Code"
+        },
+        "restrCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Restriction Code"
+        }
+      },
+      "required" : [ "ctryIsoCde", "restrCtryTypeCde" ],
+      "additionalProperties" : false
+    },
+    "StafLicCheckInput" : {
+      "type" : "object",
+      "properties" : {
+        "employPosnCde" : {
+          "type" : "string",
+          "description" : "Staff Eligibility"
+        },
+        "frmlaEmplyEligText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Staff Eligibility"
+        },
+        "ovridEmplyEligChkInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Staff Eligibility"
+        },
+        "ctoffEmplyEligChkInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Staff Eligibility"
+        },
+        "emplyEligCtoffDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Staff Eligibility"
+        },
+        "frmlaEmpEligBfrCtoffText" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        }
+      },
+      "required" : [ "employPosnCde" ],
+      "additionalProperties" : false
+    },
+    "UndlAsetInput" : {
+      "type" : "object",
+      "properties" : {
+        "seqNum" : {
+          "type" : "integer",
+          "description" : "Sequence Number"
+        },
+        "asetUndlCde" : {
+          "type" : "string",
+          "description" : "Asset underlying 3 Code"
+        }
+      },
+      "required" : [ "seqNum", "asetUndlCde" ],
+      "additionalProperties" : false
+    },
+    "PrcCmparInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodPrcTypeCde" : {
+          "type" : "string",
+          "description" : "Product Price Type Code"
+        },
+        "rptProdPrcTypeCde" : {
+          "type" : "string",
+          "description" : "Report Product Price Type Code"
+        },
+        "prodTypeCde" : {
+          "type" : "string",
+          "description" : "Product Type Code"
+        },
+        "prodAltPrimNum" : {
+          "type" : "string",
+          "description" : "Product Alternative Primary Number"
+        },
+        "prcEffDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Price Effective Date"
+        },
+        "prcEffExtnlDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Price Effective External Date"
+        },
+        "limitPrcDviatPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Limit Price Deviation Percent"
+        },
+        "prodPrcDviatPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Price Deviation Percent"
+        },
+        "prcChkngIntrnCnt" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Price Checking Internal Count"
+        },
+        "prodNavPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Net Asset Value Price Amount"
+        },
+        "prodNavPrcExtnlAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Net Asset Value Price External Amount"
+        },
+        "prodBidPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Bid Price Amount"
+        },
+        "prodBidPrcExtnlAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Bid Price External Amount"
+        },
+        "prodMktPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Market Price Amount"
+        },
+        "prodMktPrcExtnlAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Market Price External Amount"
+        },
+        "prodOffrPrcAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Offer Price Amount"
+        },
+        "prodOffrPrcExtnlAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Product Offer Price External Amount"
+        },
+        "rptPrcChkngDtTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Report Price Checking Date Time"
+        }
+      },
+      "required" : [ "prodPrcTypeCde", "rptProdPrcTypeCde", "prodTypeCde", "prodAltPrimNum" ],
+      "additionalProperties" : false
+    },
+    "AsetGeoLocAllocInput" : {
+      "type" : "object",
+      "properties" : {
+        "geoLocCde" : {
+          "type" : "string",
+          "description" : "Geographic Location Code"
+        },
+        "asetAllocWghtPct" : {
+          "type" : "number",
+          "description" : "Asset Allocation Weight Percent"
+        }
+      },
+      "required" : [ "geoLocCde", "asetAllocWghtPct" ],
+      "additionalProperties" : false
+    },
+    "AsetSicAllocInput" : {
+      "type" : "object",
+      "properties" : {
+        "sicCde" : {
+          "type" : "string",
+          "description" : "Standard Industry Classification Code"
+        },
+        "asetAllocWghtPct" : {
+          "type" : "number",
+          "description" : "Asset Allocation Weight Percent"
+        }
+      },
+      "required" : [ "sicCde", "asetAllocWghtPct" ],
+      "additionalProperties" : false
+    },
+    "AsetVoltlClassInput" : {
+      "type" : "object",
+      "properties" : {
+        "asetVoltlClassCde" : {
+          "type" : "string",
+          "description" : "Asset Volatility Class Code"
+        },
+        "asetVoltlClassWghtPct" : {
+          "type" : "number",
+          "description" : "Asset Volatility Class Weighting Percent"
+        }
+      },
+      "required" : [ "asetVoltlClassCde", "asetVoltlClassWghtPct" ],
+      "additionalProperties" : false
+    },
+    "FieldGroupCtoffInput" : {
+      "type" : "object",
+      "properties" : {
+        "fieldGroupCde" : {
+          "type" : "string",
+          "description" : "**** DO NOT REMOVE ****"
+        },
+        "fieldGroupCtoffDtTm" : {
+          "type" : "string",
+          "description" : "**** DO NOT REMOVE ****"
+        }
+      },
+      "required" : [ "fieldGroupCde", "fieldGroupCtoffDtTm" ],
+      "additionalProperties" : false
+    },
+    "TrnslInput" : {
+      "type" : "object",
+      "properties" : {
+        "prodInvstObjPllText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Investment Objective Primary Local Language Text"
+        },
+        "prodInvstObjSllText" : {
+          "type" : [ "string", "null" ],
+          "description" : "Product Investment Objective Secondary Local Language Text"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "ExtInput" : {
+      "type" : "object",
+      "properties" : {
+        "maxAccruPayoutPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Maximum Accrual Payout"
+        },
+        "bondFaceVal" : {
+          "type" : [ "number", "null" ],
+          "description" : "Bond Face Value"
+        },
+        "mktEndTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Marketing Period To Time"
+        },
+        "unwindEndTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Early Redemption End Datetime"
+        },
+        "floorLvlPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Floor Level Percent"
+        },
+        "custClass" : {
+          "type" : [ "string", "null" ],
+          "description" : "Customer Classification"
+        },
+        "minCoupnPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Minimum Coupon Percent"
+        },
+        "prodMarketDataAvailInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Market Data Availability"
+        },
+        "idxExchg" : {
+          "type" : [ "string", "null" ],
+          "description" : "Exchange"
+        },
+        "unwindCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Early Redemption Frequency"
+        },
+        "spKnockInNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Knock-in Frequency"
+        },
+        "spKnockOutCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Knock-out Frequency Type"
+        },
+        "finKnowMaxScore" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Max Finical Knowledge score"
+        },
+        "prtylgcyCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "maxCoupon" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "spCoupnPymtNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Coupon Frequency"
+        },
+        "mobInvstinitmaxamt" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "ohbInvstinitmaxamt" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "eliSpCoupnPymtNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        },
+        "fixCashDivRt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Fixed Coupon Rate Percentage - Flat"
+        },
+        "spKnockInCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Knock-in Frequency Type"
+        },
+        "mktStartTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Marketing Period From Time"
+        },
+        "trancheMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Minimum Tranche Amount"
+        },
+        "trancheMaxAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Maximum Tranche Amount"
+        },
+        "busTmzn" : {
+          "type" : [ "string", "null" ],
+          "description" : "Business Timezone"
+        },
+        "autoCallableInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Autocallable Indicator"
+        },
+        "overdueCoupnRatePct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Overdue Coupon Rate"
+        },
+        "potentCoupnPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Potential Coupon Percent"
+        },
+        "nonCallPrdNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Non-call Period(Period number)"
+        },
+        "disclaimer_sll" : {
+          "type" : [ "string", "null" ],
+          "description" : "Disclaimer In Secondary Language"
+        },
+        "eliPrcEffDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "rainbowWeight" : {
+          "type" : [ "string", "null" ],
+          "description" : "Rainbow Weights"
+        },
+        "spBarrierCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Barrier Frequency Type"
+        },
+        "autocallDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Auto Callable Date"
+        },
+        "tailorMadeInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "tradeAccList" : {
+          "type" : [ "string", "null" ],
+          "description" : "Tradable Account Type List"
+        },
+        "invstMinHoriz" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Min Investment Horizon"
+        },
+        "wrapCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Wrapper"
+        },
+        "observNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        },
+        "maxRiskLvlCde" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Max Risk Level"
+        },
+        "strikeUndlAmt_2" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "mktStartDtTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Market Start Date Time"
+        },
+        "disclaimer" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "newMoneyOvridInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "eliPayoffTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "eliMktMovement" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "allowAtAucLmtInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Auction Limit Trading Indicator  (Y/N)"
+        },
+        "sodMarginRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "SOD Margin Rate"
+        },
+        "stockParVal" : {
+          "type" : [ "number", "null" ],
+          "description" : "Stock Par Value"
+        },
+        "gurntRatePct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Guaranteed Rate"
+        },
+        "bonusRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "Bonus Rate"
+        },
+        "fixDayAhead" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Fixing Days Ahead"
+        },
+        "unwindStartTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Early Redemption Start Datetime"
+        },
+        "strikeUndlAmt_3" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "nonCallPrdCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Non-call Period(Period type)"
+        },
+        "permissEntCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Permission Entry Code"
+        },
+        "spCoupnPymtCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Coupon Frequency Type"
+        },
+        "strikeUndlAmt_1" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "sfpShtLstInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "SFP shortlisted product indicator   (Y/N)"
+        },
+        "unwindStartDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "mktEndDtTm" : {
+          "type" : [ "string", "null" ],
+          "description" : "Market End Date Time"
+        },
+        "sidNavPriceEffDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "minRiskLvlCde" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Minimum Risk Level"
+        },
+        "newMoneyDate" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "priShareClassInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "numOfGurntPrd" : {
+          "type" : [ "number", "null" ],
+          "description" : "Number Of Guaranteed Period"
+        },
+        "tradePrcPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Trade Price Percentage"
+        },
+        "minTrnchSz" : {
+          "type" : [ "number", "null" ],
+          "description" : "Minimun Tranche Size"
+        },
+        "valnDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "payoffTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Payoff Type"
+        },
+        "trancheCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Tranche Type"
+        },
+        "knockInPrcPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Knock-in Level"
+        },
+        "spTrdDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Trade Date"
+        },
+        "mktMovement" : {
+          "type" : [ "string", "null" ],
+          "description" : "Market Movement"
+        },
+        "spStrkDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Strike Date"
+        },
+        "coupnPayFirstDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "1st Coupon Payment Date"
+        },
+        "invstIncrmMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "potentialCpPercentSp" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Potential Coupon Percent Spread"
+        },
+        "participationRtSp" : {
+          "type" : [ "number", "null" ],
+          "description" : "Participation Rate Spread"
+        },
+        "switchFundGrpList" : {
+          "type" : [ "string", "null" ],
+          "description" : "Switchable Fund Groups"
+        },
+        "disclaimer_pll" : {
+          "type" : [ "string", "null" ],
+          "description" : "Disclaimer In Primary Language"
+        },
+        "capLvlPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Cap Level Percent"
+        },
+        "prtyLgcyCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Legacy Goal Objective Priority"
+        },
+        "jurisCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Jurisdiction"
+        },
+        "invstMaxHoriz" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Max Investment Horizon"
+        },
+        "bondRtainMinAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Bond Retain Minimum Amount"
+        },
+        "spBarrierNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Barrier Frequency"
+        },
+        "pdcyKnockInNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        },
+        "cptlProtcPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Protection Level"
+        },
+        "pdcyCallNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        },
+        "execOnlyInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "ttlMaxOrderSzlimit" : {
+          "type" : [ "number", "null" ],
+          "description" : "Total Maximun Order Size Limit"
+        },
+        "dayInCashDivRt" : {
+          "type" : [ "number", "null" ],
+          "description" : "DayIn Coupon Rate Percentage - Flat"
+        },
+        "bookBillingTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Book Billing Type"
+        },
+        "coupnTypeCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Coupon Rate Type Code"
+        },
+        "spValnDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Valuation Date"
+        },
+        "accrRange" : {
+          "type" : [ "string", "null" ],
+          "description" : "Range Accrual"
+        },
+        "maxAccruPaySp" : {
+          "type" : [ "number", "null" ],
+          "description" : "Maximum Accrual Payout Spread"
+        },
+        "spStartDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "Start Date"
+        },
+        "knockInLvlSp" : {
+          "type" : [ "number", "null" ],
+          "description" : "Knock-in Level Spread"
+        },
+        "lgcyObjInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Legacy Goal Objective Indicator"
+        },
+        "quotAppCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Launching Insurance Sales Application"
+        },
+        "fundCatCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Fund Category"
+        },
+        "triggerOutEventInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "ohiInvstinitmaxamt" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "exerPrcPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Exercise Price Percentage"
+        },
+        "rofrPrcPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Re-offer Price Percentage"
+        },
+        "preDtrmCoupnRate" : {
+          "type" : [ "string", "null" ],
+          "description" : "Predetermined Coupon Rate"
+        },
+        "accrRatePct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Accrual Rate"
+        },
+        "valuationDate" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "couponBarrie" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "recomActCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Recommended Action"
+        },
+        "saleAppCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Launching Insurance Sales Application"
+        },
+        "ohbInvstinitminamt" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "sidNavPrice" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "prodLqdyInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "eliPdcyCallNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        },
+        "distbrFeePct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Distributor Fee"
+        },
+        "termRef" : {
+          "type" : [ "string", "null" ],
+          "description" : "Term of Reference"
+        },
+        "spKnockOutNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Knock-out Frequency"
+        },
+        "coupnCalTypCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Coupon Calculation Method"
+        },
+        "rateMktPrd" : {
+          "type" : [ "number", "null" ],
+          "description" : "Rate in Marketing Period"
+        },
+        "participationRatePct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Partcipation Rate"
+        },
+        "undlIdxType" : {
+          "type" : [ "string", "null" ],
+          "description" : "Underlying Index Type"
+        },
+        "fundClsGrpCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Fund class group Code"
+        },
+        "invstAccumMaxAmt" : {
+          "type" : [ "number", "null" ],
+          "description" : "Investment Accumulated Maximum Amount"
+        },
+        "prodCnstrtInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "SFP Product Constraint Indicator"
+        },
+        "nonStdrdProdInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Non Standard Product Indicator"
+        },
+        "newMoneyInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "priceWarning" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "eliPdcyKnockInNum" : {
+          "type" : [ "integer", "null" ],
+          "description" : "TODO"
+        },
+        "autoCallTrigPrcPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Call Price Percentage"
+        },
+        "execType" : {
+          "type" : [ "string", "null" ],
+          "description" : "Execution Type"
+        },
+        "withInterimCoupnInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "With Interim Coupon Indicator"
+        },
+        "commissionFeeRate" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "knockOutPrcPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Knock-out Level"
+        },
+        "barrierPrcPct" : {
+          "type" : [ "number", "null" ],
+          "description" : "Barrier Level"
+        },
+        "observCde" : {
+          "type" : [ "string", "null" ],
+          "description" : "Observation Frequency Type"
+        },
+        "fxFixingDate" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "finKnowMinScore" : {
+          "type" : [ "integer", "null" ],
+          "description" : "Min Finical Knowledge score"
+        },
+        "unwindEndDt" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "euroFundInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "EuroFund Indicator"
+        },
+        "triggerOutEventDate" : {
+          "type" : [ "string", "null" ],
+          "description" : "TODO"
+        },
+        "ohiInvstinitminamt" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "mobInvstinitminamt" : {
+          "type" : [ "number", "null" ],
+          "description" : "TODO"
+        },
+        "exerPrcPctRgeFrom" : {
+          "type" : [ "number", "null" ],
+          "description" : "Exercise Price Percentage Range From"
+        },
+        "exerPrcPctRgeTo" : {
+          "type" : [ "number", "null" ],
+          "description" : "Exercise Price Percentage RangeTo"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "ExtEgInput" : {
+      "type" : "object",
+      "properties" : {
+        "jointEligInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Eligiable for Joint Goal"
+        }
+      },
+      "additionalProperties" : false
+    },
+    "RestrCustGroupInput" : {
+      "type" : "object",
+      "properties" : {
+        "custProdCatCde" : {
+          "type" : "string",
+          "description" : "Customer Product Category Code"
+        },
+        "eligCuspCatInd" : {
+          "type" : [ "string", "null" ],
+          "description" : "Eligible Customer Product Category Indicator"
+        }
+      },
+      "required" : [ "custProdCatCde" ],
+      "additionalProperties" : false
+    },
+    "UdfInput" : {
+      "type" : "object",
+      "properties" : {
+        "udf08" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_08"
+        },
+        "udf15" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_15"
+        },
+        "udf12" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_12"
+        },
+        "udf11" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_11"
+        },
+        "udf04" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_04"
+        },
+        "cuegCri19" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field CUEG_CRI_19"
+        },
+        "udf14" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_14"
+        },
+        "udf06" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_06"
+        },
+        "udf07" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_07"
+        },
+        "cuegCri20" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field CUEG_CRI_20"
+        },
+        "udf10" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_10"
+        },
+        "udf09" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_09"
+        },
+        "udf03" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_03"
+        },
+        "udf02" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_02"
+        },
+        "cuegCri18" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field CUEG_CRI_18"
+        },
+        "udf05" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_05"
+        },
+        "udf13" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_13"
+        },
+        "udf01" : {
+          "type" : [ "string", "null" ],
+          "description" : "User defined field UDF_01"
+        }
+      },
+      "additionalProperties" : false
+    }
+  }
+}

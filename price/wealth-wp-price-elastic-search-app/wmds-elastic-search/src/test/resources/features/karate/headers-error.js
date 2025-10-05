@@ -1,0 +1,11 @@
+function fn() {
+    return {
+        'X-hhhh-Chnl-CountryCode': 'HKK',
+        'X-hhhh-Chnl-Group-Member': 'hhhh',
+        'X-hhhh-Channel-Id': 'OHI',
+        'X-hhhh-Locale': 'zh_HK',
+        'X-hhhh-App-Code': 'STB',
+        'X-hhhh-Customer-Id': 'HK06838990788801',
+        'X-hhhh-Saml3': '<saml:Assertion xmlns:saml="http://www.hhhh.com/saas/assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="id_3b02c13c-6d0f-4306-b65c-60cee8f66d58" IssueInstant="2020-01-14T09:29:42.886Z" Version="3.0"><saml:Issuer>https://www.hhhh.com/rbwm/dtp</saml:Issuer><ds:Signature><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference URI="#id_3b02c13c-6d0f-4306-b65c-60cee8f66d58"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"><ds:InclusiveNamespaces xmlns:ds="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="#default saml ds xs xsi"/></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>miH8Oii5TAV4HFy/CotCWSXEzDUoavZryV9rzKirdbk=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>TD29zb6exGWe+K2VVJDYPEn6Izb3/I9a1Q3ov4XtcGmRz0ZyBh/g8mSec3dIoiYA+dUOFWEX0etQ 9il8lFbp0EfbJrpVW+CAAe1KjQRfhIbzI2QRkdZBv49EyM5xl3EJ+5kzkmy65RvYivtPQfkDC1+W 1VTIKohZTasBQuCE80mmKhTAPYF/wnUwvJKuaoh/YGxkGDysYzjy/RJGohSE54z1yEoz3ZMeetEd 4Ou6FXbdkKbhaatknGDJIcMZue3CFQLOZcu1OZRgNJUbX8wDB2vktqE9zVApCvuREJ5bntr6Ec7E QfoKpqQ2ZEd2p2UEiN/LplTLZL1xHfLKrLwaaA==</ds:SignatureValue></ds:Signature><saml:Subject><saml:NameID>HK00456417588801</saml:NameID></saml:Subject><saml:Conditions NotBefore="2020-01-14T09:29:41.886Z" NotOnOrAfter="2020-01-14T09:30:12.886Z"/><saml:AttributeStatement><saml:Attribute Name="GUID"><saml:AttributeValue>4061cb10-cdad-11dd-bfe4-000309040604</saml:AttributeValue></saml:Attribute><saml:Attribute Name="CAM"><saml:AttributeValue>40</saml:AttributeValue></saml:Attribute></saml:AttributeStatement></saml:Assertion>'
+    };
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62406",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:58:33.697356",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62406%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "0efe8327-0851-42c9-8785-bb18a3ec2793:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "PnYyhZF2asuej9i61-g3n12osAEmWlhdGcdZw7ux8mD0lWGeMbL8QQ==",
+        "x-hsbc-request-correlation-id": "57b7025b-634c-4c7e-b09a-c2c68dc3ccb5",
+        "date": "Wed, 13 Aug 2025 13:58:33 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 fd8b250e4ee7cd8e5de453d78708baee.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "357",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"Fidelity Funds - US High Yield Fund (Class A-MDIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST UNIT\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43173\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3173\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43173\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0168057262\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001DUV\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046795\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046795\"}]},{\"productName\":\"Fidelity Funds - US High Yield Fund (Class A-MDIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43172\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3172\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43172\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0168057262\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001DUV\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046794\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046794\"}]},{\"productName\":\"Fidelity Funds - US High Yield Fund (Class A-ADIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-ADIST UNIT\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43171\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3171\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43171\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0132282301\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000KGG\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046793\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046793\"}]},{\"productName\":\"Fidelity Funds - US High Yield Fund (Class A-ADIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-ADIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43170\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F3170\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43170\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0132282301\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000KGG\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046792\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046792\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

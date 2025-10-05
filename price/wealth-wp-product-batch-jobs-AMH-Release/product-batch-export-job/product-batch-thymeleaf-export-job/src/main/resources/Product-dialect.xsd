@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.dummy.wpb.com/product"
+           xmlns:product="http://www.dummy.wpb.com/product"
+           elementFormDefault="qualified"
+           version="1.1">
+
+    <!-- Define the product:notNull attribute -->
+    <xs:attribute name="notNull" type="xs:string"/>
+
+</xs:schema>

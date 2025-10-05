@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "product WPS product detail page config schema",
+  "description": "for wps-product-detail-*.yaml validation",
+  "type": "object",
+  "properties": {
+    "pageLayout": {
+      "description": "page layout configuration",
+      "type": "array",
+      "items": {}
+    },
+    "defaultValues": {
+      "description": "configuration value",
+      "type": "object"
+    }
+  },
+  "required": ["pageLayout", "defaultValues"],
+  "additionalProperties": false
+}

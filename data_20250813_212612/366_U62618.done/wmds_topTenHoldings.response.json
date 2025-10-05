@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62618",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:32.503288",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62618%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "6cad1476-b0bb-48bc-a268-3d833914d1da:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "IMgMIGmHgq2hf3rVR0UWXjvl3P2rBOUArfqZ4fKQywaXmKPN0Qs66A==",
+        "x-hsbc-request-correlation-id": "07e67dea-90fa-4ce8-9110-8f8766179f84",
+        "date": "Wed, 13 Aug 2025 13:50:31 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 c44c600db483eb2098670fa47c16d840.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "524",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global Govt Bd ZQ1\",\"weighting\":13.71123,\"currency\":\"USD\",\"marketValue\":67329367},{\"market\":\"GB\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC FTSE All-World Index Instl Acc\",\"weighting\":8.76055,\"currency\":\"USD\",\"marketValue\":43018931},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC Multi Factor Worldwide Eq ETF\",\"weighting\":5.48963,\"currency\":\"USD\",\"marketValue\":26956962},{\"market\":null,\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Cbt Us 10y Ult Fut Sep25\",\"weighting\":4.91661,\"currency\":\"USD\",\"marketValue\":24143156},{\"market\":\"GB\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC American Index Institutional Acc\",\"weighting\":4.22382,\"currency\":\"USD\",\"marketValue\":20741177},{\"market\":null,\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Icf Long Gilt Fut Sep25\",\"weighting\":3.99954,\"currency\":\"USD\",\"marketValue\":19639859},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global EM Local Dbt ZQ1\",\"weighting\":3.81211,\"currency\":\"USD\",\"marketValue\":18719483},{\"market\":\"IE\",\"productType\":\"FE\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC S&P 500 ETF\",\"weighting\":2.85426,\"currency\":\"USD\",\"marketValue\":14015917},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global IG Sec Credit Bd ZC\",\"weighting\":2.59982,\"currency\":\"USD\",\"marketValue\":12766473},{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC GIF Global Infl Lnkd Bd ZQ1\",\"weighting\":2.54844,\"currency\":\"USD\",\"marketValue\":12514185}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U43504",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:10.522309",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43504%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7763ab79-a545-4006-9a7c-c8b571a5a97b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Q3iby65sbs3W35BSrZk7tzFluJavuV9v8-MtOgaiZaoWVKBwSCb13g==",
+        "x-hsbc-request-correlation-id": "30ecfeca-796d-4df9-8055-e5299be931a6",
+        "date": "Wed, 13 Aug 2025 13:33:10 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 86444509002d660d9bf26870562a58a2.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1268",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U43504\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"GB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":11.8,\"currency\":\"USD\",\"companyName\":\"TEMPLETON GLOBAL LEADERS FUND (CLASS A-USD-MDIST-PLUS-UNIT)\",\"securityDescription\":null,\"changeAmount\":0.15,\"changePercent\":1.28755,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":2.25916,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00001BJ6\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":14.01126},{\"year\":2023,\"annualCalendarYearReturn\":13.302},{\"year\":2022,\"annualCalendarYearReturn\":-11.97323},{\"year\":2021,\"annualCalendarYearReturn\":8.241},{\"year\":2020,\"annualCalendarYearReturn\":0.7715}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":13.21076,\"dailyPerformanceNAV\":14.10441},{\"period\":\"1M\",\"trailingTotalReturn\":1.46155,\"dailyPerformanceNAV\":1.74349},{\"period\":\"3M\",\"trailingTotalReturn\":11.11555,\"dailyPerformanceNAV\":7.29232},{\"period\":\"6M\",\"trailingTotalReturn\":7.52381,\"dailyPerformanceNAV\":6.95204},{\"period\":\"1Y\",\"trailingTotalReturn\":14.59697,\"dailyPerformanceNAV\":18.22879},{\"period\":\"3Y\",\"trailingTotalReturn\":12.92529,\"dailyPerformanceNAV\":12.21748},{\"period\":\"5Y\",\"trailingTotalReturn\":10.72604,\"dailyPerformanceNAV\":10.01612},{\"period\":\"10Y\",\"trailingTotalReturn\":4.57214,\"dailyPerformanceNAV\":4.83644}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2005-05-03\"},\"entityUpdatedTime\":\"2025-08-13T21:33:10.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43504\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"T3504\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43504\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0211328371\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001BJ6\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046892\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046892\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

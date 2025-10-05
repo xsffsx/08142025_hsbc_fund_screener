@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62670",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:55:42.171175",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62670%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "298313c2-0a68-4e3a-85cb-d74c4392e952:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Ml3zjtavapzWTKklRGPjm_SGqCl6-KhVHSQRMNdpD2Qoa0nYTaLHTA==",
+        "x-hsbc-request-correlation-id": "1b4aa554-42c3-445f-a029-c17568489b79",
+        "date": "Wed, 13 Aug 2025 13:55:42 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 43b4a9a8792e30ac49642ef84dd35fc8.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1256",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62670\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"EB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":10.4008,\"currency\":\"EUR\",\"companyName\":\"Allianz European Equity Dividend Class AM (EUR-MDIST-Cash)\",\"securityDescription\":null,\"changeAmount\":0.0143,\"changePercent\":0.13768,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":4.34388,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000ZQ61\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":8.08122},{\"year\":2023,\"annualCalendarYearReturn\":15.96893},{\"year\":2022,\"annualCalendarYearReturn\":-6.66694},{\"year\":2021,\"annualCalendarYearReturn\":16.10264},{\"year\":2020,\"annualCalendarYearReturn\":-13.58987}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":8.11671,\"dailyPerformanceNAV\":8.54879},{\"period\":\"1M\",\"trailingTotalReturn\":0.57878,\"dailyPerformanceNAV\":0.14948},{\"period\":\"3M\",\"trailingTotalReturn\":1.98825,\"dailyPerformanceNAV\":-0.54501},{\"period\":\"6M\",\"trailingTotalReturn\":1.67813,\"dailyPerformanceNAV\":0.84646},{\"period\":\"1Y\",\"trailingTotalReturn\":7.15099,\"dailyPerformanceNAV\":11.70904},{\"period\":\"3Y\",\"trailingTotalReturn\":11.05172,\"dailyPerformanceNAV\":10.86145},{\"period\":\"5Y\",\"trailingTotalReturn\":9.72185,\"dailyPerformanceNAV\":9.44223},{\"period\":\"10Y\",\"trailingTotalReturn\":3.35725,\"dailyPerformanceNAV\":3.71337}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2015-03-18\"},\"entityUpdatedTime\":\"2025-08-13T21:55:42.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62670\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R2670\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62670\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0971552913\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZQ61\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050000744\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50000744\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

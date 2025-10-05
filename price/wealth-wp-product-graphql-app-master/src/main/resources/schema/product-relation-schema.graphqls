@@ -1,0 +1,29 @@
+# Customer Eligibility Input
+input ProductRelationInput {
+    _id: Long!
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    prodName: String
+    prodTypeCde: String
+    prodSubtpCde: String
+    prodAltPrimNum: String
+    prodReln: [ProdRelnAmendmentInput]
+    revision: Long
+}
+
+input ProdRelnAmendmentInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+
+    # Product Identifier Related
+    prodIdRel: Long!
+
+    # Product Product Relationship Code
+    prodProdRelnCde: String!
+
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}

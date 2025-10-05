@@ -1,0 +1,225 @@
+swagger: "2.0"
+info:
+  description: "Query - HK Market"
+  version: "1.0.0"
+  title: "Market Data Service"
+  termsOfService: "https://wpb-confluence.systems.uk.hhhh/display/HASEWP/HASE+Wealth+Platform+Home"
+
+basePath: "/wealth/api/v1/market-data"
+tags:
+- name: "News"
+  description: ""
+schemes:
+- "https"
+paths:
+  /equity/charts/performance:
+    get:
+      tags:
+        - "Charts"
+      summary: "Query charts performance"
+      description: ""
+      produces:
+        - "application/json"
+      parameters:
+        - name: "param"
+          in: "query"
+          description: "request payload"
+          required: true
+          type: "string"
+          example: "{\"market\": \"CN\",\"productType\": \"INDEX\",\"symbol\": [\"CSI300\"],\"period\": 1,\"intCnt\": 15,\"intType\": \"MINUTE\",\"filters\": [\"DATE\",\"OPEN\",\"HIGH\",\"LOW\",\"CLOSE\",\"VOLUME\"]}"
+      responses:
+        "200":
+          description: "successful"
+      security:
+        - X-hhhh-Function-Id: [ ]
+        - X-hhhh-User-Id: [ ]
+        - X-hhhh-Session-Correlation-Id: [ ]
+        - X-hhhh-Chnl-CountryCode: [ ]
+        - X-hhhh-Chnl-Group-Member: [ ]
+        - X-hhhh-Channel-Id: [ ]
+        - X-hhhh-Locale: [ ]
+        - X-hhhh-App-Code: [ ]
+        - X-hhhh-Saml3: [ ]
+
+  /product/predictive-search:
+    get:
+      tags:
+        - "Common"
+      summary: "Query predictive search"
+      description: ""
+      produces:
+        - "application/json"
+      parameters:
+        - name: "param"
+          in: "query"
+          description: "request payload"
+          required: true
+          type: "string"
+          example: "{\"market\": \"CN\",\"assetClasses\": [\"SEC\",\"WRTS\"],\"keyword\": \"1\"}"
+      responses:
+        "200":
+          description: "successful"
+      security:
+        - X-hhhh-Function-Id: [ ]
+        - X-hhhh-User-Id: [ ]
+        - X-hhhh-Session-Correlation-Id: [ ]
+        - X-hhhh-Chnl-CountryCode: [ ]
+        - X-hhhh-Chnl-Group-Member: [ ]
+        - X-hhhh-Channel-Id: [ ]
+        - X-hhhh-Locale: [ ]
+        - X-hhhh-App-Code: [ ]
+        - X-hhhh-Saml3: [ ]
+
+  /product/multi-predictive-search:
+    get:
+      tags:
+        - "Common"
+      summary: "Query multi predictive search"
+      description: ""
+      produces:
+        - "application/json"
+      parameters:
+        - name: "param"
+          in: "query"
+          description: "request payload"
+          required: true
+          type: "string"
+          example: "{\"assetClasses\":[\"SEC\"],\"market\":\"CN\",\"keyword\":[\"600000\"],\"topNum\":5,\"filterCriterias\":[]}"
+      responses:
+        "200":
+          description: "successful"
+      security:
+        - X-hhhh-Function-Id: [ ]
+        - X-hhhh-User-Id: [ ]
+        - X-hhhh-Session-Correlation-Id: [ ]
+        - X-hhhh-Chnl-CountryCode: [ ]
+        - X-hhhh-Chnl-Group-Member: [ ]
+        - X-hhhh-Channel-Id: [ ]
+        - X-hhhh-Locale: [ ]
+        - X-hhhh-App-Code: [ ]
+        - X-hhhh-Saml3: [ ]
+
+  /equity/quotes:
+    get:
+      tags:
+        - "Quote"
+      summary: "Query quotes"
+      description: ""
+      produces:
+        - "application/json"
+      parameters:
+        - name: "param"
+          in: "query"
+          description: "request payload"
+          required: true
+          type: "string"
+          example: "{\"market\": \"CN\",\"productKeys\": [{\"productType\": \"SEC\",\"prodCdeAltClassCde\": \"M\",\"prodAltNum\": \"000858\"}],\"delay\": true,\"requestType\": \"0\"}"
+      responses:
+        "200":
+          description: "successful"
+      security:
+        - X-hhhh-Function-Id: [ ]
+        - X-hhhh-User-Id: [ ]
+        - X-hhhh-Session-Correlation-Id: [ ]
+        - X-hhhh-Chnl-CountryCode: [ ]
+        - X-hhhh-Chnl-Group-Member: [ ]
+        - X-hhhh-Channel-Id: [ ]
+        - X-hhhh-Locale: [ ]
+        - X-hhhh-App-Code: [ ]
+        - X-hhhh-Saml3: [ ]
+
+  /index/quotes:
+    get:
+      tags:
+        - "Quote"
+      summary: "Query index quotes"
+      description: ""
+      produces:
+        - "application/json"
+      parameters:
+        - name: "param"
+          in: "query"
+          description: "request payload"
+          required: true
+          type: "string"
+          example: "{\"market\": \"CN\",\"symbol\": [\"SZSC\"]}"
+      responses:
+        "200":
+          description: "successful"
+      security:
+        - X-hhhh-Function-Id: [ ]
+        - X-hhhh-User-Id: [ ]
+        - X-hhhh-Session-Correlation-Id: [ ]
+        - X-hhhh-Chnl-CountryCode: [ ]
+        - X-hhhh-Chnl-Group-Member: [ ]
+        - X-hhhh-Channel-Id: [ ]
+        - X-hhhh-Locale: [ ]
+        - X-hhhh-App-Code: [ ]
+        - X-hhhh-Saml3: [ ]
+
+  /equity/quotes/top-mover:
+    get:
+      tags:
+        - "Quote"
+      summary: "Query top mover"
+      description: ""
+      produces:
+        - "application/json"
+      parameters:
+        - name: "param"
+          in: "query"
+          description: "request payload"
+          required: true
+          type: "string"
+          example: "{\"productType\":\"SEC\",\"exchangeCode\":\"SZSE\",\"moverType\":\"VOL\",\"delay\":\"true\",\"topNum\":\"2\",\"market\":\"CN\"}"
+      responses:
+        "200":
+          description: "successful"
+      security:
+        - X-hhhh-Function-Id: [ ]
+        - X-hhhh-User-Id: [ ]
+        - X-hhhh-Session-Correlation-Id: [ ]
+        - X-hhhh-Chnl-CountryCode: [ ]
+        - X-hhhh-Chnl-Group-Member: [ ]
+        - X-hhhh-Channel-Id: [ ]
+        - X-hhhh-Locale: [ ]
+        - X-hhhh-App-Code: [ ]
+        - X-hhhh-Saml3: [ ]
+
+securityDefinitions:
+  X-hhhh-Function-Id:
+    type: "apiKey"
+    name: "X-hhhh-Function-Id"
+    in: "header"
+  X-hhhh-User-Id:
+    type: "apiKey"
+    name: "X-hhhh-User-Id"
+    in: "header"
+  X-hhhh-Session-Correlation-Id:
+    type: "apiKey"
+    name: "X-hhhh-Session-Correlation-Id"
+    in: "header"
+  X-hhhh-Chnl-CountryCode:
+    type: "apiKey"
+    name: "X-hhhh-Chnl-CountryCode"
+    in: "header"
+  X-hhhh-Chnl-Group-Member:
+    type: "apiKey"
+    name: "X-hhhh-Chnl-Group-Member"
+    in: "header"
+  X-hhhh-Channel-Id:
+    type: "apiKey"
+    name: "X-hhhh-Channel-Id"
+    in: "header"
+  X-hhhh-Locale:
+    type: "apiKey"
+    name: "X-hhhh-Locale"
+    in: "header"
+  X-hhhh-App-Code:
+    type: "apiKey"
+    name: "X-hhhh-App-Code"
+    in: "header"
+  X-hhhh-Saml3:
+    type: "apiKey"
+    name: "X-hhhh-Saml3"
+    in: "header"

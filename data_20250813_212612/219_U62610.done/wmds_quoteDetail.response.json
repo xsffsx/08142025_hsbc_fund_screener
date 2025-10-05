@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62610",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:55:31.109204",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62610%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "05ea1ef9-211b-4911-8757-2aa0ca3ad1e9:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "P03tvmkIIBCkGFe-1P7B-IuKhdF4gs-Nbc6KNtcj_kM0a0lPIEooxQ==",
+        "x-hsbc-request-correlation-id": "ec61f742-e69b-47e9-b2ea-db7a6575624a",
+        "date": "Wed, 13 Aug 2025 13:55:29 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 43b4a9a8792e30ac49642ef84dd35fc8.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1268",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62610\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MG\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":12.8081,\"currency\":\"AUD\",\"companyName\":\"HSBC Portfolios - World Selection 5 (AM-AUDH-MDIST-CASH)\",\"securityDescription\":null,\"changeAmount\":0.0358,\"changePercent\":0.28029,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":1.75902,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00013FCK\",\"tradableCurrency\":\"AUD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":10.72465},{\"year\":2023,\"annualCalendarYearReturn\":13.84928},{\"year\":2022,\"annualCalendarYearReturn\":-19.9256},{\"year\":2021,\"annualCalendarYearReturn\":14.75892},{\"year\":2020,\"annualCalendarYearReturn\":5.796}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":8.59797,\"dailyPerformanceNAV\":9.6726},{\"period\":\"1M\",\"trailingTotalReturn\":0.95106,\"dailyPerformanceNAV\":1.62356},{\"period\":\"3M\",\"trailingTotalReturn\":9.68241,\"dailyPerformanceNAV\":7.4523},{\"period\":\"6M\",\"trailingTotalReturn\":5.17618,\"dailyPerformanceNAV\":6.51307},{\"period\":\"1Y\",\"trailingTotalReturn\":10.33042,\"dailyPerformanceNAV\":14.03602},{\"period\":\"3Y\",\"trailingTotalReturn\":8.82037,\"dailyPerformanceNAV\":8.43749},{\"period\":\"5Y\",\"trailingTotalReturn\":7.49027,\"dailyPerformanceNAV\":7.08334},{\"period\":\"10Y\",\"trailingTotalReturn\":5.39634,\"dailyPerformanceNAV\":5.68691}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2014-06-30\"},\"entityUpdatedTime\":\"2025-08-13T21:55:29.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62610\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"WAMA5\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62610\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066050417\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013FCK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049969\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049969\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

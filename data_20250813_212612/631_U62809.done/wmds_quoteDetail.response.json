@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62809",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:34:02.600301",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62809%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "73b43b21-f096-416e-8e6e-7d4c7ec976d5:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "mZJnlTHSujhvdixK1esxojbR0-iDjLxbOCTSkovAcgMWo9Ci3pwqxg==",
+        "x-hsbc-request-correlation-id": "d2abb923-0e43-4820-aa69-ae2453d8c76d",
+        "date": "Wed, 13 Aug 2025 13:34:02 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 efb69de1473dfd6cb792e27488cc8640.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1229",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62809\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MG\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":9.29,\"currency\":\"EUR\",\"companyName\":\"JPMorgan Multi Balanced (EUR Hedged-MDIST-Cash)\",\"securityDescription\":null,\"changeAmount\":0.02,\"changePercent\":0.21575,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":3.99131,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"2\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001A0ZF\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":3.6375},{\"year\":2023,\"annualCalendarYearReturn\":4.66793},{\"year\":2022,\"annualCalendarYearReturn\":-14.48534},{\"year\":2021,\"annualCalendarYearReturn\":2.77353},{\"year\":2020,\"annualCalendarYearReturn\":4.20363}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":3.39538,\"dailyPerformanceNAV\":4.2935},{\"period\":\"1M\",\"trailingTotalReturn\":-0.04654,\"dailyPerformanceNAV\":1.26004},{\"period\":\"3M\",\"trailingTotalReturn\":2.77118,\"dailyPerformanceNAV\":3.43503},{\"period\":\"6M\",\"trailingTotalReturn\":2.46075,\"dailyPerformanceNAV\":3.4637},{\"period\":\"1Y\",\"trailingTotalReturn\":3.61203,\"dailyPerformanceNAV\":4.73849},{\"period\":\"3Y\",\"trailingTotalReturn\":2.0154,\"dailyPerformanceNAV\":2.1688},{\"period\":\"5Y\",\"trailingTotalReturn\":0.34021,\"dailyPerformanceNAV\":0.49486},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2017-04-05\"},\"entityUpdatedTime\":\"2025-08-13T21:34:02.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62809\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2809\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62809\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000312865\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001A0ZF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050021565\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50021565\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

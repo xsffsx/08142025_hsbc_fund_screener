@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.hhhh.group.secwealth.mktdata</groupId>
+	<artifactId>wmds-buildaggregate-online-ide</artifactId>
+	<version>${project.version}</version>
+	<packaging>pom</packaging>
+	
+	<name>wmds-buildaggregate-online-ide</name>
+
+	<properties>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+		<project.version>1.0.0-SNAPSHOT</project.version>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>releaseVersion</id>
+			<properties>
+				<project.version>1.0.0-RELEASE-${timestamp}</project.version>
+			</properties>
+		</profile>
+	</profiles>
+
+	<distributionManagement>
+		<repository>
+			<id>dsnexus</id>
+			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/releases
+			</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>dsnexus-snapshots</id>
+			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/snapshots
+			</url>
+			<layout>default</layout>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<modules>
+		<module>../wmds-parent</module>
+		<module>../wmds-encryptor/equity_tw_pom.xml</module>
+		
+		<module>../wmds-online-config</module>
+		
+		<module>../wmds-prototype</module>
+		<module>../wmds-equity-common</module>
+		<module>../wmds-equity-quotes</module>
+		<module>../wmds-equity-same-sector</module>
+		<module>../wmds-equity-top-mover</module>
+		<module>../wmds-equity-admin-agreement</module>
+		<module>../wmds-entitlement</module>
+		<module>../wmds-equity/equity_tw_pom.xml</module>
+		<module>../wmds-pcf/equity_tw_pom.xml</module>
+	</modules>
+
+</project>

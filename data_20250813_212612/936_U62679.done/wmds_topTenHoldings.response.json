@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62679",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:58.184785",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62679%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "216c54eb-c4dc-4a87-b77d-c4a7ae898262:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "K45yeE7IEUL4hmWBDXf6SIoFsqZpaZll38QBzI3vycZWgPb9uY_qqw==",
+        "x-hsbc-request-correlation-id": "bfff491d-17a7-4263-9935-c819276d4878",
+        "date": "Wed, 13 Aug 2025 13:29:58 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 8b4b0c13ccb29eaa324d0f091402d986.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "499",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tongkun Group Co Ltd Class A\",\"weighting\":8.14755,\"currency\":\"CNY\",\"marketValue\":188461021},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Yunnan Aluminium Co Ltd Class A\",\"weighting\":5.85929,\"currency\":\"CNY\",\"marketValue\":135531322},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Xinyu Iron And Steel Co Ltd Class A\",\"weighting\":5.55095,\"currency\":\"CNY\",\"marketValue\":128398952},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Gree Electric Appliances Inc of Zhuhai Class A\",\"weighting\":4.67154,\"currency\":\"CNY\",\"marketValue\":108057375},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Industrial Bank Co Ltd Class A\",\"weighting\":4.60093,\"currency\":\"CNY\",\"marketValue\":106424220},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Weichai Power Co Ltd Class A\",\"weighting\":4.12605,\"currency\":\"CNY\",\"marketValue\":95439680},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Huatai Securities Co Ltd Class A\",\"weighting\":3.91271,\"currency\":\"CNY\",\"marketValue\":90504948},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sany Heavy Industry Co Ltd Class A\",\"weighting\":3.86533,\"currency\":\"CNY\",\"marketValue\":89408944},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Henan Shenhuo Coal & Power Co Ltd Class A\",\"weighting\":3.60189,\"currency\":\"CNY\",\"marketValue\":83315310},{\"market\":\"CN\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Zhengzhou Coal Mining Machinery Group Co Ltd Class A\",\"weighting\":3.56444,\"currency\":\"CNY\",\"marketValue\":82448947}],\"lastUpdatedDate\":\"2024-12-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

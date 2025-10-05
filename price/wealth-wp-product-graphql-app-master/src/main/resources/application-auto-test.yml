@@ -1,0 +1,100 @@
+management.endpoints:
+  shutdown:
+    enabled: true
+  health:
+    show-details: always
+  web:
+    exposure:
+      base-path: /monitor
+      include: "*"
+
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
+  data:
+    mongodb:
+      host: "wealthukdocdb01.cluster-cv5rvutafnw8.eu-west-1.docdb.amazonaws.com"
+      port: 27017
+      database: WPC_CORE_TESTING
+      username: wpdocdbadmin
+      password: "{cipher}02fab32f253d49687b86c47d43efc627815f23b80aa6e0ca5d9e31a93e56f363202bb0d123ee0e119c024dba760fc412"
+
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+    cors:
+      allowed-origins: "*"
+
+graphiql:
+  mapping: /graphiql
+  endpoint:
+    graphql: /graphql
+    #subscriptions: /subscriptions
+  static:
+    basePath: /
+  enabled: true
+  pageTitle: product Playground
+  cdn:
+    enabled: false
+    version: 0.11.11
+  props:
+    resources:
+      query: query.graphql
+      defaultQuery: defaultQuery.graphql
+      variables: variables.graphql
+    variables:
+      editorTheme: "solarized light"
+  headers:
+    Authorization: "Bearer <your-token>"
+
+product:
+  request-log:
+    keep-days: 7
+  document-revision:
+    keep-days: 30
+  graphql:
+    default-limit: 10
+    enable-console-request-log: true
+    enable-console-data-log: false
+    enable-db-request-log: true
+    enable-db-data-log: true
+  ldap:
+    security:
+      principal: CN=HBAP-HKGLUEWPCA003,OU=Service Accounts,DC=InfoDir,DC=Dev,DC=dummy
+      credentials: "{cipher}84ab9783bda58e47fa0782b49565b4611e2eab4150767adc32869d39d4756842"
+    provider:
+      url: ldap://aa-lds-test.uk.dummy:3269
+    base: OU=dummyPeople,DC=InfoDir,DC=Dev,DC=dummy
+  testing-enabled: true
+  role-mapping:
+    viewer:
+      - CN=BR_GB_HBEU_ENQ,OU=BUSSINESS_ROLES,OU=HTSE,OU=EU,OU=ROLES,OU=GROUPS,DC=INFODIR,DC=PROD,DC=dummy
+      #- any   # for test purpose, assign this role to 'any' staff
+    approver:
+      - CN=BR_GB_HBEU_APP,OU=BUSSINESS_ROLES,OU=HTSE,OU=EU,OU=ROLES,OU=GROUPS,DC=INFODIR,DC=PROD,DC=dummy
+      #- any
+      #- 43591421    # for test purpose, assign this role to a staff id
+    editor:
+      - CN=BR_GB_HBEU_MNT,OU=BUSSINESS_ROLES,OU=HTSE,OU=EU,OU=ROLES,OU=GROUPS,DC=INFODIR,DC=PROD,DC=dummy
+      #- any
+  report:
+    path: /appvol/product/data/report
+  log:
+    path: /appvol/product/data/logs/batch
+
+server:
+  shutdown: graceful
+  max-http-header-size: 512000
+
+batch:
+  ingress:
+    path: /appvol/product/data/incoming/batch/
+
+logging:
+  level:
+    com.dummy.wmd.wpc.graphql.validator: info

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63060",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:06.916440",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63060%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "1a001f9b-e9bb-49d9-8496-f2955148aaf9:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "16yzeCHQ-zNGgTG0GzNZvqyZzHT5295dPoDRnOPRaCBvtnU4uR2e3Q==",
+        "x-hsbc-request-correlation-id": "4a05f832-4883-40db-ac8a-855348ff69ad",
+        "date": "Wed, 13 Aug 2025 13:29:06 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "39",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 d807e8bf545cda2fbfdee6c26f2b48dc.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "507",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC CIT-HSBC ASIA MULTI-ASSET HIGH INCOME FUND (CLASS AM2-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63055\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AMAAU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63055\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000469194\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001FDL1\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050450315\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50450315\"}]},{\"productName\":\"HSBC CIT-HSBC ASIA MULTI-ASSET HIGH INCOME FUND (CLASS AM3O-SGDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-SGDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63349\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AMAAS\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63349\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000677317\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001LB5R\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050701491\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50701491\"}]},{\"productName\":\"HSBC CIT-HSBC ASIA MULTI-ASSET HIGH INCOME FUND (CLASS AM3O-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63061\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AMAAR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63061\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000469210\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001FEJ2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050450314\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50450314\"}]},{\"productName\":\"HSBC CIT-HSBC ASIA MULTI-ASSET HIGH INCOME FUND (CLASS AM2-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63056\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AMAAH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63056\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000469202\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001FDL2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050450313\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50450313\"}]},{\"productName\":\"HSBC CIT-HSBC ASIA MULTI-ASSET HIGH INCOME FUND (CLASS AM3O-EURH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-EURH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63059\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AMAAE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63059\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000469236\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001FEJ4\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050450311\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50450311\"}]},{\"productName\":\"HSBC CIT-HSBC ASIA MULTI-ASSET HIGH INCOME FUND (CLASS AM3O-CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63058\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AMAAC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63058\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000469228\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001FEJ3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050450310\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50450310\"}]},{\"productName\":\"HSBC CIT-HSBC ASIA MULTI-ASSET HIGH INCOME FUND (CLASS AM3O-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63057\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"AMAAA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63057\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000469244\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001FEJ5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050450309\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50450309\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

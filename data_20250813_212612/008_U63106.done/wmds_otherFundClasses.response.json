@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63106",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:09.006913",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63106%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "274bedff-914b-448f-9861-9b9e8fba6155:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "mMN3WLzUN7rAZAKQREeUZa47MNf2p2orqJGJXeeiOzuTtn3ov0TWXw==",
+        "x-hsbc-request-correlation-id": "2312541f-af44-459a-877e-54c5b5583967",
+        "date": "Wed, 13 Aug 2025 13:29:08 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "32",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 1b43896e5481a62e6045eebbe6aad12c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "407",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"NEUBERGER BERMAN NEXT GENERATION CONNECTIVITY FUND (A-USD-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"A-USD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63103\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"NB103\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63103\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BMPRXN33\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001JWAH\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050502163\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50502163\"}]},{\"productName\":\"NEUBERGER BERMAN NEXT GENERATION CONNECTIVITY FUND (A-SGDH-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"A-SGDH-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63108\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"NB108\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63108\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BMPRXR70\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001JY31\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050502168\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50502168\"}]},{\"productName\":\"NEUBERGER BERMAN NEXT GENERATION CONNECTIVITY FUND (A-HKDH-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"A-HKDH-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63107\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"NB107\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63107\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BMPRXQ63\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001JY33\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050502167\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50502167\"}]},{\"productName\":\"NEUBERGER BERMAN NEXT GENERATION CONNECTIVITY FUND (A-EURH-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"A-EURH-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63105\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"NB105\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63105\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BMPRXP56\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001JY32\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050502165\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50502165\"}]},{\"productName\":\"NEUBERGER BERMAN NEXT GENERATION CONNECTIVITY FUND (A-AUDH-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"A-AUDH-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63104\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"NB104\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63104\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BMPRXT94\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001K188\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050502164\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50502164\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

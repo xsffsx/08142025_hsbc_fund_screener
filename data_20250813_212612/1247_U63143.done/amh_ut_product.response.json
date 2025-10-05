@@ -1,0 +1,48 @@
+{
+  "api_name": "amh_ut_product",
+  "product_code": "U63143",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:40:56.510663",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-utb-tp-public-shp-api-hk-hbap-prod-proxy/v0/amh/ut/product?body=%7B%22productIds%22%3A%5B%7B%22productTypeCode%22%3A%22UT%22%2C%22productAlternativeNumber%22%3A%22U63143%22%2C%22productAlternativeClassificationCode%22%3A%22M%22%2C%22countryProductTradableCode%22%3A%22HK%22%7D%5D%2C%22attrName%22%3A%5B%22riskLvlCde%22%2C%22ccyInvstCde%22%2C%22invstInitMinAmt%22%2C%22fundRtainMinAmt%22%2C%22rdmMinAmt%22%2C%22fundHouseCde%22%2C%22fundCatCde%22%2C%22ccyProdCde%22%2C%22prodName%22%2C%22topSellProdInd%22%2C%22ccyProdTradeCde%22%2C%22utRdmMinNum%22%2C%22utRtainMinNum%22%2C%22allowBuyProdInd%22%2C%22allowSellProdInd%22%2C%22allowSellMipProdInd%22%2C%22allowSwOutProdInd%22%2C%22prodStatCde%22%2C%22ccyProdMktPrcCde%22%2C%22prodNavPrcAmt%22%2C%22prodBidPrcAmt%22%2C%22prcEffDt%22%2C%22deAuthFundInd%22%2C%22piFundInd%22%2C%22setlLeadTmScrib%22%2C%22setlLeadTmRdm%22%2C%22restrOnlScribInd%22%2C%22dcmlPlaceTradeUnitNum%22%2C%22invstMipMinAmt%22%2C%22invstMipIncrmMinAmt%22%2C%22gbaAcctTrdb%22%2C%22esgInd%22%2C%22finDocURL_FACTSHEET%22%2C%22finDocURL_PROSPECTUS%22%2C%22finDocURL_ANULRPT%22%2C%22finDocURL_INTRMRPT%22%2C%22restrOnlScribInd%22%2C%22fundSwInMinAmt%22%2C%22fundSwOutMinAmt%22%2C%22fundSwOutRtainMinAmt%22%2C%22utSwOutRtainMinNum%22%2C%22siFundInd%22%5D%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "28787787-c5c2-4103-b295-eb3605c124d4:-:-:-",
+        "ratelimit-remaining": "4",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "5",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Ftf1zzoQyy03BDlFmK25VM2yBfHvi6di8nW3LMH0xX9VPEzdqIHdHg==",
+        "x-hsbc-request-correlation-id": "a22f8354-52eb-4384-99c1-b82460dcfa6f",
+        "date": "Wed, 13 Aug 2025 13:40:55 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src, default-src",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\", no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "x-envoy-upstream-service-time": "265",
+        "x-ratelimit-remaining-second": "4",
+        "pragma": "no-cache",
+        "ratelimit-limit": "5",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e3f076a17c429654547283cc3accab70.cloudfront.net (CloudFront)",
+        "access-control-allow-origin": "domain",
+        "x-xss-protection": "1; mode= block",
+        "content-language": "en-US",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"payload\":[{\"productAlternativeNumber\":\"U63143\",\"attributeMap\":{\"allowSellProdInd\":\"Y\",\"prodBidPrcAmt\":\"\",\"prcEffDt\":\"2025-08-11\",\"piFundInd\":\"N\",\"utRdmMinNum\":\"\",\"fundSwOutMinAmt\":\"10000\",\"fundCatCde\":\"\",\"fundSwInMinAmt\":\"10000\",\"minMipAmountCurrency\":\"HKD\",\"topSellProdInd\":\"N\",\"ccyProdTradeCde\":\"HKD\",\"gbaAcctTrdb\":\"N\",\"finDocURL_INTRMRPT\":\"https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_ir_ubshk_en.pdf\",\"finDocURL_FACTSHEET\":\"https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_fs_U63143_en.pdf\",\"prodStatCde\":\"C\",\"ccyInvstCde\":\"HKD\",\"utSwOutRtainMinNum\":\"0\",\"productDocumentSid\":\"\",\"allowSellMipProdInd\":\"N\",\"siFundInd\":\"N\",\"fundCatDesc\":null,\"dcmlPlaceTradeUnitNum\":\"3\",\"productPerformanceId\":\"0P0001M7GP\",\"riskLvlCde\":\"2\",\"prodName\":\"UBS (HK) FUND SERIES - ASIA INCOME BOND (A-HKD-MD-C)\",\"prodNavPrcAmt\":\"68.588\",\"utRtainMinNum\":\"0\",\"restrOnlScribInd\":\"N\",\"fundHouseName\":\"UBS Asset Management (Hong Kong) Ltd\",\"fundHouseCde\":\"UBSHK\",\"rdmMinAmt\":\"10000\",\"ccyProdCde\":\"HKD\",\"invstMipIncrmMinAmt\":\"0\",\"deAuthFundInd\":\"N\",\"finDocURL_PROSPECTUS\":\"https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_pr_ubshk_en.pdf\",\"fundSwOutRtainMinAmt\":\"10000\",\"setlLeadTmScrib\":\"2\",\"invstMipMinAmt\":\"10000\",\"fundRtainMinAmt\":\"10000\",\"allowBuyProdInd\":\"N\",\"ccyProdMktPrcCde\":\"HKD\",\"setlLeadTmRdm\":\"4\",\"allowSwOutProdInd\":\"Y\",\"finDocURL_ANULRPT\":\"https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_ar_ubshk_en.pdf\",\"esgInd\":\"\",\"invstInitMinAmt\":\"10000\"}}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

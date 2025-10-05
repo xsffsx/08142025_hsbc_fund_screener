@@ -1,0 +1,65 @@
+spring:
+  datasource:
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 20
+      idle-timeout: 500000
+      max-lifetime: 540000
+      connection-timeout: 60000
+  cache:
+    type: ehcache
+  profiles:
+    active: uat_hase_stma_eqty
+  jpa:
+    database-platform: "org.hibernate.dialect.Oracle10gDialect"
+  #  http:
+  #    encoding:
+  #      charset: UTF-8
+  #      enabled: true
+  #      force: true
+  #      force-response: true
+
+  service-api:
+    QUOTES:
+      request-parameters:
+      rules:
+        DEFAULT: DEFAULT
+      end-point:
+        DEFAULT: tris
+    TopMover:
+      request-parameters:
+      rules:
+        DEFAULT: DEFAULT
+      end-point:
+        DEFAULT: trisTopmover
+
+entitlement:
+  enable: true
+  interceptor-url: "/wealth/api/v1/market-data/**"
+  service-url-mapping:
+    "/equity/quotes/same-sector-equity": EQTY_QUOTES
+    "/equity/quotes/top-mover": EQTY_QUOTES
+    "/equity/quotes": EQTY_QUOTES
+    "/quotes": QUOTES
+  service-api:
+    EQTY_QUOTES:
+      checklist: countryCode, groupMember, appCode
+      white-list-rules:
+        countryCode_groupMember: TW_hhhh
+        appCode: SRBP, WD, SRBPBE
+    QUOTES:
+      checklist: appCode
+      white-list-rules:
+        appCode: HCBS-SRBP
+
+jasypt:
+  encryptor:
+    password: "HaSe?StMaUS7RTQ,TwPnO+ct4fbt6c-TEZQw3T8q.5OSN0k="
+
+server:
+  max-http-header-size: 4915200
+#  tomcat:
+#    uri-encoding=UTF-8: UTF-8
+#  servlet:
+#    encoding:
+#      force-response: true

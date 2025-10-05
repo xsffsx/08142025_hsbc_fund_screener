@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U61752",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:39:54.554559",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61752%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "339bb7f9-44df-433f-902f-1b3a8408ad07:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "LfoneBnQ9jQr4zPB-7NZK7B_GZHiNI2gpd4JpwIzfCA6zXKlFwuMgg==",
+        "x-hsbc-request-correlation-id": "f41607de-c962-42c6-89f8-fabfcc854c5e",
+        "date": "Wed, 13 Aug 2025 13:39:54 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9c7184b28c57254d98f583f8eea58496.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "456",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"SCHRODER ISF US DOLLAR BOND (A-RMBH-DIST-MFC-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-RMBH-DIST-MFC-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63054\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3054\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63054\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2229748103\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001KW1Z\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050447756\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50447756\"}]},{\"productName\":\"SCHRODER ISF US DOLLAR BOND (A-AUDH-DIST-MFC-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-AUDH-DIST-MFC-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63053\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3053\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63053\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2229748012\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001KW1Y\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050447755\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50447755\"}]},{\"productName\":\"SCHRODER ISF US DOLLAR BOND (A-HKD-DIST-MF-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-HKD-DIST-MF-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63052\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3052\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63052\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2229747980\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001KW1X\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050447754\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50447754\"}]},{\"productName\":\"SCHRODER ISF US DOLLAR BOND (A-USD-DIST-MF-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-USD-DIST-MF-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63051\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3051\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63051\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2229747808\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001KW1W\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050447753\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50447753\"}]},{\"productName\":\"Schroder ISF US Dollar Bond (Class A-Accumulation)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-ACCUMULATION\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61737\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S1737\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61737\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0106260564\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000AQF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047823\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047823\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

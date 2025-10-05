@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+  data:
+    mongodb:
+      host: "amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: 27017
+      database: WPC_AMH_DEV
+      username: WPCHKGLUA9_APPUSER
+      password: "{cipher}6d805893f32a5fae77a9a145fdfc12561ebb42bbfdf6635ac6380eec8a179c86e80943b17ec7a07cd8db0949a62b7dd3"
+      enable-replica: false

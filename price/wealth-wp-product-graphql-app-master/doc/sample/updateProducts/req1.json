@@ -1,0 +1,17 @@
+{
+  "filter": {
+    "prodId": {
+      "$in": [
+        90000000,
+        90000001
+      ]
+    }
+  },
+  "operations": [
+    {
+      "op": "put",
+      "path": "$.prodPllName",
+      "value": "test1"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62762",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:08:28.042238",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62762%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7b77b4ba-e790-49c7-bb26-c4051757d87d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "aeV5D_tpGyvPkX3YHM54jNuSH_RAr_duj1JOQwsLluBUcsnAGOIxWw==",
+        "x-hsbc-request-correlation-id": "e59fcb73-002c-4c08-bf2b-293d04e68d4d",
+        "date": "Wed, 13 Aug 2025 14:08:27 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 59b0eb2f33939f549a18868a652690fe.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "489",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF US Dollar Bond (Class PD)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS PD\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U40124\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUSDB\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U40124\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0011820056\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000ETR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047438\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047438\"}]},{\"productName\":\"HSBC Global Investment Funds US Dollar Bond (Class AM2-USD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-USD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62761\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUBAU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62761\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1481106976\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00018V5G\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004669\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004669\"}]},{\"productName\":\"HSBC GLOBAL INVESTMENT FUNDS-US DOLLAR BOND (CLASS AM3H-GBPH-MD-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3H-GBPH-MD-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63364\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUBAG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63364\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2639849434\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RKCJ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050719559\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50719559\"}]},{\"productName\":\"HSBC GLOBAL INVESTMENT FUNDS-US DOLLAR BOND (CLASS AM3H-EURH-MD-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3H-EURH-MD-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63363\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUBAE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63363\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2639849517\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RKCK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050719558\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50719558\"}]},{\"productName\":\"HSBC GLOBAL INVESTMENT FUNDS-US DOLLAR BOND (CLASS AM3H-CADH-MD-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3H-CADH-MD-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63362\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HUBAC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63362\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2639849350\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RKCL\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050719557\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50719557\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

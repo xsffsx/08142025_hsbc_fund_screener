@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63071",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:24.596944",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63071%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "0758d3ec-191b-4ae4-b878-e593d6e36b24:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "kvqwM2t_9fgppX8KZS51TWdLWhz1H786OiRrhp8Dh0wl-pzPoA7JOg==",
+        "x-hsbc-request-correlation-id": "09dccf45-0ff8-47db-bdd0-a0ec8428c606",
+        "date": "Wed, 13 Aug 2025 13:33:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 1290d5bc33e3f2067ac27034e6b94eac.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1249",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63071\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"UB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":77.37,\"currency\":\"AUD\",\"companyName\":\"AB-SUSTAINABLE US THEMATIC PORTFOLIO (A-AUDH-ACC)\",\"securityDescription\":null,\"changeAmount\":1.15,\"changePercent\":1.50879,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000UIOZ\",\"tradableCurrency\":\"AUD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":8.1521},{\"year\":2023,\"annualCalendarYearReturn\":16.55196},{\"year\":2022,\"annualCalendarYearReturn\":-26.24737},{\"year\":2021,\"annualCalendarYearReturn\":23.42604},{\"year\":2020,\"annualCalendarYearReturn\":31.40562}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":2.19736,\"dailyPerformanceNAV\":3.03636},{\"period\":\"1M\",\"trailingTotalReturn\":1.25346,\"dailyPerformanceNAV\":1.48216},{\"period\":\"3M\",\"trailingTotalReturn\":13.53751,\"dailyPerformanceNAV\":7.36886},{\"period\":\"6M\",\"trailingTotalReturn\":0.19585,\"dailyPerformanceNAV\":2.30067},{\"period\":\"1Y\",\"trailingTotalReturn\":-0.4411,\"dailyPerformanceNAV\":3.27015},{\"period\":\"3Y\",\"trailingTotalReturn\":5.55,\"dailyPerformanceNAV\":4.79401},{\"period\":\"5Y\",\"trailingTotalReturn\":6.65701,\"dailyPerformanceNAV\":6.34635},{\"period\":\"10Y\",\"trailingTotalReturn\":9.44206,\"dailyPerformanceNAV\":9.78819}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2021-02-24\"},\"entityUpdatedTime\":\"2025-08-13T21:33:24.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63071\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N3071\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63071\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0689626504\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000UIOZ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050465003\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50465003\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

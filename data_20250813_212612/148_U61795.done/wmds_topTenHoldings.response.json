@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61795",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:44:22.832281",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61795%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "70f3ef79-a8b5-4bb4-862b-3ca4bf2cc3a3:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "mhz6vkYsIsNaiFhlywzy5xP2mTDW3XZMLI0rmozmLmLN49xt0j-J6Q==",
+        "x-hsbc-request-correlation-id": "009fd913-858f-43e9-a1ec-f608d6f8c390",
+        "date": "Wed, 13 Aug 2025 13:44:22 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "23",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9ae68eb5525ee3d01638b582aa3a4566.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "481",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"EL\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"E-mini S&P 500 Future Sept 25\",\"weighting\":20.36904,\"currency\":\"USD\",\"marketValue\":2109702562},{\"market\":\"US\",\"productType\":\"DH\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Jul25 Spx C @ 6080.000000\",\"weighting\":6.23982,\"currency\":\"USD\",\"marketValue\":-646283399},{\"market\":\"US\",\"productType\":\"DH\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Jul25 Spx C @ 6065.000000\",\"weighting\":5.7474,\"currency\":\"USD\",\"marketValue\":-595280722},{\"market\":\"US\",\"productType\":\"DH\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Jul25 Spx C @ 6110.000000\",\"weighting\":5.72881,\"currency\":\"USD\",\"marketValue\":-593355112},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Microsoft Corp\",\"weighting\":4.57656,\"currency\":\"USD\",\"marketValue\":474012331},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NVIDIA Corp\",\"weighting\":3.78942,\"currency\":\"USD\",\"marketValue\":392485710},{\"market\":\"US\",\"productType\":\"DH\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Jul25 Spx C @ 6275.000000\",\"weighting\":3.28312,\"currency\":\"USD\",\"marketValue\":-340045746},{\"market\":\"IE\",\"productType\":\"FM\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BlackRock ICS US Treasury Agency Inc\",\"weighting\":2.96107,\"currency\":\"USD\",\"marketValue\":306689300},{\"market\":\"JP\",\"productType\":\"EL\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Nikkei 225 Future Sept 25\",\"weighting\":2.60989,\"currency\":\"USD\",\"marketValue\":270316418},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Apple Inc\",\"weighting\":2.24885,\"currency\":\"USD\",\"marketValue\":232922115}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

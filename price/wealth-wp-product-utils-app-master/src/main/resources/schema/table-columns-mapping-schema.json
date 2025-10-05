@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "PW0 Table Columns Mapping Schema",
+  "description": "for table-columns-mapping.yaml validation",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "sourceTable": {
+        "description": "the source table name which to be export",
+        "type": "string"
+      },
+      "entityLevelSupport": {
+        "description": "If the table record has ctryRecCde and grpMembrRecCde field, put Y",
+        "type": "string"
+      },
+      "sourceColumn": {
+        "description": "The FK column in the source table",
+        "type": "string"
+      },
+      "referenceTable": {
+        "description": "The master table name",
+        "type": "string"
+      },
+      "referenceColumn": {
+        "description": "PK of the master table",
+        "type": "string"
+      },
+      "productLevelSupport": {
+        "description": "In case the table has PROD_ID field, put Y",
+        "type": "string"
+      },
+      "jsonPath": {
+        "description": "json path of the table in the product document",
+        "type": "string"
+      },
+      "columns": {
+        "description": "Columns to be exported",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "logicalKey": {
+              "description": "A logical name of the field, should be unique globally?",
+              "type": "string"
+            },
+            "columnName": {
+              "description": "Column name in the table",
+              "type": "string"
+            },
+            "jsonPath": {
+              "description": "json path of the field in the product document, without parent",
+              "type": "string"
+            },
+            "skipUpdateCheckIndicator": {
+              "description": "Skip update check indicator, Y/N",
+              "type": "string"
+            },
+            "fieldType": {
+              "description": "Data type of the field",
+              "type": "string"
+            },
+            "interestedGroups": {
+              "description": "Group names which interested in this field. if a group is not listed, the field won't be exported for the group.",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "params": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "logicalKey",
+            "columnName",
+            "jsonPath",
+            "interestedGroups"
+          ]
+        }
+      },
+      "params": {
+        "description": "Extra parameters",
+        "type": "object"
+      }
+    },
+    "required": [
+      "sourceTable",
+      "entityLevelSupport",
+      "productLevelSupport",
+      "columns"
+    ],
+    "additionalProperties": false
+  }
+}

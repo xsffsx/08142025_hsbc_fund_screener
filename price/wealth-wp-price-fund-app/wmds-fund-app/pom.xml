@@ -1,0 +1,291 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.hhhh.group.secwealth.mktdata</groupId>
+		<artifactId>wmds-parent-amh</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../wmds-parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>wmds-fund-app</artifactId>
+	<packaging>jar</packaging>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<timestamp>${maven.build.timestamp}</timestamp>
+
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Dalston.SR1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>1.5.9.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+	
+	    <!--  <dependency>
+		    <groupId>com.intuit.karate</groupId>
+		    <artifactId>karate-apache</artifactId>
+		    <version>0.9.5</version>
+		    <scope>test</scope>
+	   </dependency>
+ 
+		<dependency>
+		    <groupId>com.intuit.karate</groupId>
+		    <artifactId>karate-junit4</artifactId>
+		    <version>0.9.5</version>
+		    <scope>test</scope>
+		</dependency>
+		 
+		<dependency>
+		    <groupId>net.masterthought</groupId>
+		    <artifactId>cucumber-reporting</artifactId>
+		    <version>4.9.0</version>
+		    <scope>test</scope>
+		</dependency>
+		 
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-test</artifactId>
+		    <scope>test</scope>
+		</dependency>-->
+	
+		<!-- eureka -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<!-- actuator -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		<!-- starter-web -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- thymeleaf -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<!-- Spring data jpa -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+     <dependency> 
+	   <groupId>org.springframework.boot</groupId>
+	   <artifactId>spring-boot-starter-jdbc</artifactId>
+     </dependency>
+		<!-- wmds-common -->
+		<dependency>
+			<groupId>com.hhhh.group.secwealth.mktdata.common</groupId>
+			<artifactId>wmds-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hhhh.group.secwealth.mktdata.fund</groupId>
+			<artifactId>wmds-fund</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- wmds-quote -->
+		<dependency>
+			<groupId>com.hhhh.group.secwealth.mktdata.quote</groupId>
+			<artifactId>wmds-quote</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>hk-hbap-aws-local</id>
+			<properties>
+				<environment>hk-hbap-aws-local</environment>
+			</properties>
+		</profile>
+		<profile>
+			<id>hk-hbap-aws-sit</id>
+			<properties>
+				<environment>hk-hbap-aws-sit</environment>
+			</properties>
+		</profile>
+		<profile>
+			<id>hk-hbap-aws-uat</id>
+			<properties>
+				<environment>hk-hbap-aws-uat</environment>
+			</properties>
+		</profile>
+		<profile>
+			<id>hk-hbap-aws-perf</id>
+			<properties>
+				<environment>hk-hbap-aws-perf</environment>
+			</properties>
+		</profile>
+		<profile>
+			<id>hk-hbap-aws-prod</id>
+			<properties>
+				<environment>hk-hbap-aws-prod</environment>
+			</properties>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins> 
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>1.5.9.RELEASE</version>
+				<configuration>
+					<mainClass>com.hhhh.group.secwealth.mktdata.Application_App</mainClass>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+			</plugin>
+			<!-- Step 1: copy config files to wmds-fund-app/.../resources -->
+			<!-- Note: Config Files will be overwrite, final trust the last step's 
+				files -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<overwrite>true</overwrite>
+				</configuration>
+				<executions>
+					<!-- Step 1.1: copy *.xml from wmds-war/.../resources -->
+					<!--  <execution>
+						<id>copy-wmds-war</id>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>./target/classes</outputDirectory>
+							<resources>
+								<resource>
+									<directory>../wmds-war/src/main/resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>-->
+					<!-- Step 1.2: copy common config from wmds-online-config/.../resources/common_config -->
+					<execution>
+						<id>copy-common-config</id>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>./target/classes</outputDirectory>
+							<resources>
+								<resource>
+									<directory>../wmds-online-config/src/main/resources/common_config</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					
+					<!-- Step 1.3: copy special profile's config from wmds-online-config/。。。/${profile.id}/resources -->
+					<execution>
+						<id>copy-wmds-online-config_${environment}</id>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<overwrite>true</overwrite>
+							<outputDirectory>./target/classes</outputDirectory>
+							<resources>
+								<resource>
+									<directory>../wmds-online-config/src/main/resources/${environment}/resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					 
+				</executions>
+			</plugin>
+			 <!--  <plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-surefire-plugin</artifactId>
+			    <version>2.22.1</version>
+			    <configuration>
+			        <includes>
+			            <include>com.hhhh.group.secwealth.mktdata.test.KarateApiTest</include>
+			        </includes>
+			    </configuration>
+			</plugin>-->
+		</plugins>
+	</build>
+
+<!--	<distributionManagement>-->
+<!--		<repository>-->
+<!--			<id>dsnexus</id>-->
+<!--			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/releases-->
+<!--		</url>-->
+<!--			<layout>default</layout>-->
+<!--		</repository>-->
+<!--		<snapshotRepository>-->
+<!--			<id>dsnexus-snapshots</id>-->
+<!--			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/snapshots-->
+<!--		</url>-->
+<!--			<layout>default</layout>-->
+<!--			<uniqueVersion>false</uniqueVersion>-->
+<!--		</snapshotRepository>-->
+<!--	</distributionManagement>-->
+
+	<distributionManagement>
+		<repository>
+			<id>nexus306</id>
+			<url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-prod_n3p/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus306</id>
+			<url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-snapshots_n3p/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>

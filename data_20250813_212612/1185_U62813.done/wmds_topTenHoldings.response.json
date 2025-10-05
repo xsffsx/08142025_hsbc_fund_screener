@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62813",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:39:00.626445",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62813%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ad3e8b3b-e621-4602-b2a1-038ee6111592:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "W1zKVJvPyo3rIrt0cU05yHj7KH7tIfJFu9b-B0oR-WNRLWD9j-LmEw==",
+        "x-hsbc-request-correlation-id": "bbd75e6d-b1fe-4d31-a546-e9d044525cfd",
+        "date": "Wed, 13 Aug 2025 13:39:00 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 fc2107bc4873ea9a245c05665d003180.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "506",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"MO\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Wynn Macau Ltd. 5.625%\",\"weighting\":2.84759,\"currency\":\"USD\",\"marketValue\":12870735},{\"market\":\"MO\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Studio City Company Limited 7%\",\"weighting\":2.67376,\"currency\":\"USD\",\"marketValue\":12085080},{\"market\":\"ID\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kawasan Industri Jababeka Tbk PT 8%\",\"weighting\":2.63891,\"currency\":\"USD\",\"marketValue\":11927542},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PCPD Capital Ltd 5.125%\",\"weighting\":2.59595,\"currency\":\"USD\",\"marketValue\":11733378},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Oil and Gas Group Ltd. 4.7%\",\"weighting\":2.28977,\"currency\":\"USD\",\"marketValue\":10349470},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"GLP China Holdings Ltd. 2.95%\",\"weighting\":2.24935,\"currency\":\"USD\",\"marketValue\":10166760},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Central Plaza Development Ltd. 6.8%\",\"weighting\":2.16493,\"currency\":\"USD\",\"marketValue\":9785202},{\"market\":\"SG\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"GLP Pte Ltd. 3.875%\",\"weighting\":2.11962,\"currency\":\"USD\",\"marketValue\":9580399},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Central Plaza Development Ltd. 7.15%\",\"weighting\":2.0832,\"currency\":\"USD\",\"marketValue\":9415785},{\"market\":\"CN\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hilong Holding Limited 9.75%\",\"weighting\":2.03025,\"currency\":\"USD\",\"marketValue\":9176471}],\"lastUpdatedDate\":\"2025-03-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eliLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <eli th:each="product : ${documents}">
+        <th:block th:insert="~{COMMON::prodKeySeg}"/>
+        <th:block th:each="alt : ${product.get('altId')}" th:insert="~{COMMON::prodAltNumSeg}"/>
+        <th:block th:insert="~{COMMON::prodInfoSeg}"/>
+        <eliSeg th:with="eli=${product.get('eqtyLinkInvst')}">
+            <custSellQtaCnt th:text="${#objects.nullSafe(eli.get('custSellQtaCnt'), 0)}"/>
+            <denAmt product:notNull="${#doubles.stripTrailingZeros(eli.get('denAmt'))}"/>
+            <dscntBuyPct product:notNull="${#doubles.stripTrailingZeros(eli.get('dscntBuyPct'))}"/>
+            <dscntSellPct product:notNull="${#doubles.stripTrailingZeros(eli.get('dscntSellPct'))}"/>
+            <eqtyLinkInvstTypeCde product:notNull="${eli.get('eqtyLinkInvstTypeCde')}"/>
+            <lnchProdInd product:notNull="${eli.get('lnchProdInd')}"/>
+            <offerTypeCde product:notNull="${eli.get('offerTypeCde')}"/>
+            <prodExtnlCatCde product:notNull="${eli.get('prodExtnlCatCde')}"/>
+            <prodExtnlCde product:notNull="${eli.get('prodExtnlCde')}"/>
+            <prodExtnlTypeCde product:notNull="${eli.get('prodExtnlTypeCde')}"/>
+            <pymtDt product:notNull="${#dates.format(eli.get('pymtDt'), 'yyyy-MM-dd')}"/>
+            <rtrvProdExtnlInd product:notNull="${eli.get('rtrvProdExtnlInd')}"/>
+            <ruleQtaAltmtCde product:notNull="${eli.get('ruleQtaAltmtCde')}"/>
+            <setlDt product:notNull="${#dates.format(eli.get('setlDt'), 'yyyy-MM-dd')}"/>
+            <suptAonInd product:notNull="${eli.get('suptAonInd')}"/>
+            <trdDt product:notNull="${#dates.format(eli.get('trdDt'), 'yyyy-MM-dd')}"/>
+            <trdMinAmt product:notNull="${#doubles.stripTrailingZeros(eli.get('trdMinAmt'))}"/>
+            <valnDt product:notNull="${#dates.format(eli.get('valnDt'), 'yyyy-MM-dd')}"/>
+            <yieldToMturPct product:notNull="${#doubles.stripTrailingZeros(eli.get('yieldToMturPct'))}"/>
+            <pdcyCallCde product:notNull="${eli.get('pdcyCallCde')}"/>
+            <pdcyKnockInCde product:notNull="${eli.get('pdcyKnockInCde')}"/>
+            <eliUndlStockSeg th:each="undlStock : ${eli.get('undlStock')}">
+                <instmUndlCde th:text="${undlStock.get('instmUndlCde')}"/>
+                <instmUndlText product:notNull="${undlStock.get('instmUndlText')}"/>
+                <crncyInstmUndlPriceCde product:notNull="${undlStock.get('crncyInstmUndlPriceCde')}"/>
+                <prodStrkPrcAmt product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodStrkPrcAmt'))}"/>
+                <prodStrkCallPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodStrkCallPrcAmt'))}"/>
+                <prodStrkPutPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodStrkPutPrcAmt'))}"/>
+                <prodClosePrcAmt product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodClosePrcAmt'))}"/>
+                <prodCloseLowPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodCloseLowPrcAmt'))}"/>
+                <prodCloseUpprPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodCloseUpprPrcAmt'))}"/>
+                <prodClosePutPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodClosePutPrcAmt'))}"/>
+                <prodCloseCallPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodCloseCallPrcAmt'))}"/>
+                <prodExerPrcAmt product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodExerPrcAmt'))}"/>
+                <prodBreakEvenPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodBreakEvenPrcAmt'))}"/>
+                <prodBreakEvenLowPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodBreakEvenLowPrcAmt'))}"/>
+                <prodBreakEvenUpprPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodBreakEvenUpprPrcAmt'))}"/>
+                <prodBreakEvenPutPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodBreakEvenPutPrcAmt'))}"/>
+                <prodBreakEvenCallPrcAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodBreakEvenCallPrcAmt'))}"/>
+                <sprdCnt product:notNull="${undlStock.get(sprdCnt)}"/>
+                <instmEntlCnt product:notNull="${#doubles.stripTrailingZeros(undlStock.get('instmEntlCnt'))}"/>
+                <prodKnockInPriceAmt
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodKnockInPriceAmt'))}"/>
+                <prodStrkPriceInitPct
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodStrkPriceInitPct'))}"/>
+                <prodStrkCallPriceInitPct
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodStrkCallPriceInitPct'))}"/>
+                <prodKnockInPriceInitPct
+                        product:notNull="${#doubles.stripTrailingZeros(undlStock.get('prodKnockInPriceInitPct'))}"/>
+            </eliUndlStockSeg>
+        </eliSeg>
+        <th:block th:insert="~{COMMON::recDtTmSeg}"/>
+    </eli>
+</eliLst>

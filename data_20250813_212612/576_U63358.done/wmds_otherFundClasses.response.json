@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63358",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:39.337005",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63358%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "6fc7e941-4ff6-43d9-8b76-f4972274eb8d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "BUiyTeWoA2ksV0dhunJuSKZHSteGjns36yfYaHFABaJ9W9TQqBSWrg==",
+        "x-hsbc-request-correlation-id": "81fcb8a5-b418-4699-802f-dcd3d762209a",
+        "date": "Wed, 13 Aug 2025 13:50:39 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "32",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 864ad552768d61fe107467e5c647c77a.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "478",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF-GLOBAL SHORT DURATION BOND (CLASS AM2-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62953\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSBAH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62953\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1819532257\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DH28\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050120340\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50120340\"}]},{\"productName\":\"HSBC GIF- GLOBAL SHORT DURATION BOND (CLASS AM3H-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3H-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62954\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSBAA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62954\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1819532331\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DH29\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050120339\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50120339\"}]},{\"productName\":\"HSBC GIF - GLOBAL SHORT DURATION BOND (CLASS AM3H-EURH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3H-EURH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63357\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSBME\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63357\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2639850283\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RKCR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050713181\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50713181\"}]},{\"productName\":\"HSBC GIF - GLOBAL SHORT DURATION BOND (CLASS AM3H-CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3H-CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63356\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSBMC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63356\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2639850366\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RKCS\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050713180\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50713180\"}]},{\"productName\":\"HSBC GIF- GLOBAL SHORT DURATION BOND (CLASS AM3H-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3H-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62955\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSBAR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62955\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1912829493\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001F3UX\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050120342\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50120342\"}]},{\"productName\":\"HSBC GIF-GLOBAL SHORT DURATION BOND (CLASS AM2-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62952\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSBAM\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62952\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1819532174\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001DH27\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050120341\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50120341\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

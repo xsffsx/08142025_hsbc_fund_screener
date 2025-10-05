@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prodPrefLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <prodPerf th:each="product : ${documents}">
+        <prodKeySeg>
+            <ctryRecCde th:text="${product.get('ctryRecCde')}"/>
+            <grpMembrRecCde th:text="${product.get('grpMembrRecCde')}"/>
+            <prodTypeCde th:text="${product.get('prodTypeCde')}"/>
+            <prodCde th:text="${product.get('prodCde')}"/>
+        </prodKeySeg>
+        <prodPerfmSeg th:if="${product.get('benchmark') != null}" th:with="ben=${product.get('benchmark')}">
+            <perfm1moPct product:notNull="${ben.get('perfm1MoPct')}"/>
+            <perfm1yrPct th:text="${ben.get('perfm1YrPct')}"/>
+            <perfm3moPct product:notNull="${ben.get('perfm3MoPct')}"/>
+            <perfm3yrPct product:notNull="${ben.get('perfm3YrPct')}"/>
+            <perfm5yrPct product:notNull="${ben.get('perfm5YrPct')}"/>
+            <perfm6moPct product:notNull="${ben.get('perfm6MoPct')}"/>
+            <perfmCalcDt product:notNull="${#dates.format(ben.get('perfmCalcDt'), 'yyyy-MM-dd')}"/>
+            <perfmExt1yrPct product:notNull="${ben.get('perfmExt1YrPct')}"/>
+            <perfmSinceLnchPct product:notNull="${ben.get('perfmSinceLnchPct')}"/>
+            <perfmTypeCde th:text="${ben.get('perfmTypeCde')}"/>
+            <perfmYrToDtPct product:notNull="${ben.get('perfmYrToDtPct')}"/>
+            <rtrnVoltl1yrPct product:notNull="${ben.get('rtrnVoltl1YrPct')}"/>
+            <rtrnVoltl3yrPct product:notNull="${ben.get('rtrnVoltl3YrPct')}"/>
+            <rtrnVoltlExt1yrPct product:notNull="${ben.get('rtrnVoltlExt1YrPct')}"/>
+            <rtrnVoltlExt3yrPct product:notNull="${ben.get('rtrnVoltlExt3YrPct')}"/>
+            <perfm6moAmt product:notNull="${ben.get('perfm6MoAmt')}"/>
+            <perfmYrToDtAmt product:notNull="${ben.get('perfmYrToDtAmt')}"/>
+            <perfm1yrAmt product:notNull="${ben.get('perfm1YrAmt')}"/>
+            <perfm3yrAmt product:notNull="${ben.get('perfm3YrAmt')}"/>
+            <recDtTmSeg>
+                <recCreatDtTm th:text="${#timeZones.format(ben.recCreatDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+                <recUpdtDtTm th:text="${#timeZones.format(ben.recUpdtDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+                <timeZone product:notNull="${#timeZones.get()}"/>
+            </recDtTmSeg>
+        </prodPerfmSeg>
+        <prodPerfmSeg th:if="${product.get('performance') != null}" th:with="perfm=${product.get('performance')}">
+            <perfm1moPct product:notNull="${perfm.get('perfm1MoPct')}"/>
+            <perfm1yrPct th:text="${perfm.get('perfm1YrPct')}"/>
+            <perfm3moPct product:notNull="${perfm.get('perfm3MoPct')}"/>
+            <perfm3yrPct product:notNull="${perfm.get('perfm3YrPct')}"/>
+            <perfm5yrPct product:notNull="${perfm.get('perfm5YrPct')}"/>
+            <perfm6moPct product:notNull="${perfm.get('perfm6MoPct')}"/>
+            <perfmCalcDt product:notNull="${#dates.format(perfm.get('perfmCalcDt'), 'yyyy-MM-dd')}"/>
+            <perfmExt1yrPct product:notNull="${perfm.get('perfmExt1YrPct')}"/>
+            <perfmSinceLnchPct product:notNull="${perfm.get('perfmSinceLnchPct')}"/>
+            <perfmTypeCde th:text="${perfm.get('perfmTypeCde')}"/>
+            <perfmYrToDtPct product:notNull="${perfm.get('perfmYrToDtPct')}"/>
+            <rtrnVoltl1yrPct product:notNull="${perfm.get('rtrnVoltl1YrPct')}"/>
+            <rtrnVoltl3yrPct product:notNull="${perfm.get('rtrnVoltl3YrPct')}"/>
+            <rtrnVoltlExt1yrPct product:notNull="${perfm.get('rtrnVoltlExt1YrPct')}"/>
+            <rtrnVoltlExt3yrPct product:notNull="${perfm.get('rtrnVoltlExt3YrPct')}"/>
+            <perfm6moAmt product:notNull="${perfm.get('perfm6MoAmt')}"/>
+            <perfmYrToDtAmt product:notNull="${perfm.get('perfmYrToDtAmt')}"/>
+            <perfm1yrAmt product:notNull="${perfm.get('perfm1YrAmt')}"/>
+            <perfm3yrAmt product:notNull="${perfm.get('perfm3YrAmt')}"/>
+            <recDtTmSeg>
+                <recCreatDtTm th:text="${#timeZones.format(perfm.recCreatDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+                <recUpdtDtTm th:text="${#timeZones.format(perfm.recUpdtDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+                <timeZone product:notNull="${#timeZones.get()}"/>
+            </recDtTmSeg>
+        </prodPerfmSeg>
+    </prodPerf>
+</prodPrefLst>

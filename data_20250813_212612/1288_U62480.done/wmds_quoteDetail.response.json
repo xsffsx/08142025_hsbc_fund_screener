@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62480",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:52:03.815406",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62480%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "1d8fa1a7-67df-45d2-88f1-ec3bcdf8665c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "0wWG0i6dtBEZ_K0aBgeNMAtur3R4Qee6dnwjWLAz_UiKoM-W3KYbsA==",
+        "x-hsbc-request-correlation-id": "b4cc8936-6f8c-4c34-adf2-08c111cd6c06",
+        "date": "Wed, 13 Aug 2025 13:52:03 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9fbddde4165412a5f9426c247ca005c0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1243",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62480\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"AS\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":11.26,\"currency\":\"USD\",\"companyName\":\"AB - RMB Income Plus Portfolio (AT - USD - MDIST Cash)\",\"securityDescription\":null,\"changeAmount\":-0.01,\"changePercent\":-0.08873,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":4.72727,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000TPS2\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":4.03314},{\"year\":2023,\"annualCalendarYearReturn\":-2.01956},{\"year\":2022,\"annualCalendarYearReturn\":-12.11476},{\"year\":2021,\"annualCalendarYearReturn\":3.10509},{\"year\":2020,\"annualCalendarYearReturn\":9.90498}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":4.01303,\"dailyPerformanceNAV\":4.38384},{\"period\":\"1M\",\"trailingTotalReturn\":-0.40495,\"dailyPerformanceNAV\":0.03856},{\"period\":\"3M\",\"trailingTotalReturn\":2.27935,\"dailyPerformanceNAV\":2.45937},{\"period\":\"6M\",\"trailingTotalReturn\":3.41436,\"dailyPerformanceNAV\":3.87654},{\"period\":\"1Y\",\"trailingTotalReturn\":4.64007,\"dailyPerformanceNAV\":4.45553},{\"period\":\"3Y\",\"trailingTotalReturn\":2.35571,\"dailyPerformanceNAV\":2.50499},{\"period\":\"5Y\",\"trailingTotalReturn\":0.99042,\"dailyPerformanceNAV\":0.81462},{\"period\":\"10Y\",\"trailingTotalReturn\":1.07783,\"dailyPerformanceNAV\":1.42583}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2011-09-26\"},\"entityUpdatedTime\":\"2025-08-13T21:52:03.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62480\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2480\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62480\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0633139984\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000TPS2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047572\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047572\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

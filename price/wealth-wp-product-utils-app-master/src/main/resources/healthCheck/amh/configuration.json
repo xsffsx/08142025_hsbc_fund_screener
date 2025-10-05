@@ -1,0 +1,150 @@
+{
+  "checkList": [
+    {
+      "serviceId": "product-soap-adapter",
+      "position": "left",
+      "url": "/wpcwebservice/WpcProductDetailByKeysEnquiryService",
+      "method": "POST",
+      "dataType": "xml",
+      "requestTemplateFile": "soap-adapter-request-template.xml",
+      "parameters": [
+        {
+          "key": "countryRecordCode",
+          "value": "HK",
+          "desc": "Country Code"
+        },
+        {
+          "key": "groupMemberRecordCode",
+          "value": "HBAP",
+          "desc": "Group Memger"
+        },
+        {
+          "key": "channelCode",
+          "value": "OHB",
+          "desc": "Channel Code"
+        },
+        {
+          "key": "PROD_TYPE_CDE",
+          "value": "SEC",
+          "desc": "Product Type Code"
+        },
+        {
+          "key": "PROD_CDE",
+          "value": "00005",
+          "desc": "Product Alternative Primary Code"
+        }
+      ],
+      "errorCode": "OTPSERR_ESA000"
+    },
+    {
+      "serviceId": "product-rest-adapter",
+      "position": "right",
+      "url": "/products/eligibility/customer?applicationCommon={applicationCommon}&criteria={criteria}",
+      "method": "GET",
+      "requestTemplateFile": "rest-adapter-request-template.json",
+      "parameters": [
+        {
+          "key": "countryCode",
+          "value": "HK",
+          "desc": "Country Code"
+        },
+        {
+          "key": "groupMember",
+          "value": "HBAP",
+          "desc": "Group Memger"
+        },
+        {
+          "key": "channelId",
+          "value": "WL",
+          "desc": "Channel ID"
+        },
+        {
+          "key": "productTypeCode",
+          "value": "SEC",
+          "desc": "Product Type Code"
+        },
+        {
+          "key": "productAlternativeNumber",
+          "value": "00005",
+          "desc": "Product Alternative Number"
+        },
+        {
+          "key": "productCodeAlternativeClassCode",
+          "value": "P",
+          "desc": "Product Alternative Class Code"
+        }
+      ],
+      "errorCode": "OTPSERR_ERA000"
+    },
+    {
+      "serviceId": "product-graphql",
+      "position": "right",
+      "url": "/graphql",
+      "method": "POST",
+      "dataType": "json",
+      "requestTemplateFile": "graphql-request-template.json",
+      "parameters": [
+        {
+          "key": "ctryRecCde",
+          "value": "HK",
+          "desc": "Country Code"
+        },
+        {
+          "key": "grpMembrRecCde",
+          "value": "HBAP",
+          "desc": "Group Memger"
+        },
+        {
+          "key": "prodAltPrimNum",
+          "value": "00005",
+          "desc": "Product Alternative Primary Number"
+        }
+      ],
+      "errorCode": "OTPSERR_ZGQ000"
+    },
+    {
+      "serviceId": "product-dp-file-egress",
+      "position": "left",
+      "url": "/actuator/health",
+      "method": "GET",
+      "errorCode": "OTPSERR_EDP000"
+    },
+    {
+      "serviceId": "product-dp-file-ingress",
+      "position": "left",
+      "url": "/actuator/health",
+      "method": "GET",
+      "errorCode": "OTPSERR_EDP000"
+    }
+  ],
+  "connectionList": [
+    {
+      "source": "product-utils",
+      "target": "product-rest-adapter"
+    },
+    {
+      "source": "product-utils",
+      "target": "product-soap-adapter"
+    },
+    {
+      "source": "product-utils",
+      "target": "product-dp-file-egress"
+    },
+    {
+      "source": "product-utils",
+      "target": "product-dp-file-ingress"
+    },
+    {
+      "source": "product-utils",
+      "target": "product-graphql"
+    },
+    {
+      "source": "product-rest-adapter",
+      "target": "product-graphql"
+    },
+    {
+      "source": "product-soap-adapter",
+      "target": "product-graphql"
+    }
+  ]
+}

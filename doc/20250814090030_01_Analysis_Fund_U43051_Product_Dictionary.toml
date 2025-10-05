@@ -1,0 +1,649 @@
+[meta]
+source_path = "/Users/paulo/PycharmProjects/20250809/08132025_hsbc_fund_screener/output/001_U43051.done_amh_ut_product_response_body.json"
+
+[product]
+productAlternativeNumber.value = "U43051"
+productAlternativeNumber.desc  = "产品替代编号"
+
+[attributeMap_meta]
+field_count = 46
+
+[attributeMap.allowSellProdInd]
+value = "Y"
+desc  = "是否允许卖出该产品"
+
+[attributeMap.prodBidPrcAmt]
+value = ""
+desc  = "买入/买价净值（若为空由其他字段补充）"
+
+[attributeMap.prcEffDt]
+value = "2025-08-12"
+desc  = "价格生效日期（NAV/报价对应日期）"
+
+[attributeMap.piFundInd]
+value = ""
+desc  = "私人银行/特定投资者基金标识"
+
+[attributeMap.utRdmMinNum]
+value = ""
+desc  = "基金赎回最小份额（单位）"
+
+[attributeMap.fundSwOutMinAmt]
+value = "1000"
+desc  = "基金转换（换出）最低金额"
+
+[attributeMap.fundCatCde]
+value = ""
+desc  = "基金内部类别代码"
+
+[attributeMap.fundSwInMinAmt]
+value = "1000"
+desc  = "基金转换（换入）最低金额"
+
+[attributeMap.minMipAmountCurrency]
+value = "HKD"
+desc  = "MIP（定投）最低金额的币种"
+
+[attributeMap.topSellProdInd]
+value = "N"
+desc  = "是否热门销售产品"
+
+[attributeMap.ccyProdTradeCde]
+value = ["HKD", "USD"]
+desc  = "可交易币种列表"
+
+[attributeMap.gbaAcctTrdb]
+value = "N"
+desc  = "大湾区账户可交易标识"
+
+[attributeMap.finDocURL_INTRMRPT]
+value = "https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_ir_merrl001_en.pdf"
+desc  = "中期报告（Interim Report）链接"
+
+[attributeMap.finDocURL_FACTSHEET]
+value = "https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_fs_43051_en.pdf"
+desc  = "基金资料概要（Factsheet）链接"
+
+[attributeMap.prodStatCde]
+value = "A"
+desc  = "产品状态代码（A=可用/在售等）"
+
+[attributeMap.ccyInvstCde]
+value = "USD"
+desc  = "投资/计价货币代码"
+
+[attributeMap.utSwOutRtainMinNum]
+value = "0"
+desc  = "转换后最低保留份额（单位）"
+
+[attributeMap.productDocumentSid]
+value = ""
+desc  = "产品文档内部标识"
+
+[attributeMap.allowSellMipProdInd]
+value = "Y"
+desc  = "是否允许卖出MIP产品"
+
+[attributeMap.siFundInd]
+value = "N"
+desc  = "智能投顾/系统投资基金标识"
+
+[attributeMap.fundCatDesc]
+value = ""  # 原始值为 null，这里用空串占位以便 TOML 一致
+desc  = "基金类别描述"
+
+[attributeMap.dcmlPlaceTradeUnitNum]
+value = "2"
+desc  = "交易单位小数位数"
+
+[attributeMap.productPerformanceId]
+value = "0P00000B0I"
+desc  = "第三方业绩ID/跟踪ID"
+
+[attributeMap.riskLvlCde]
+value = "5"
+desc  = "风险等级代码"
+
+[attributeMap.prodName]
+value = "BlackRock World Gold Fund (Class A2)"
+desc  = "产品名称"
+
+[attributeMap.prodNavPrcAmt]
+value = "64.36"
+desc  = "最新净值/报价"
+
+[attributeMap.utRtainMinNum]
+value = "0"
+desc  = "账户最低保留份额（单位）"
+
+[attributeMap.restrOnlScribInd]
+value = ""
+desc  = "网上认购限制标识"
+
+[attributeMap.fundHouseName]
+value = "BlackRock"
+desc  = "基金公司名称"
+
+[attributeMap.fundHouseCde]
+value = "MERRL"
+desc  = "基金公司代码"
+
+[attributeMap.rdmMinAmt]
+value = "1000"
+desc  = "赎回最低金额"
+
+[attributeMap.ccyProdCde]
+value = "USD"
+desc  = "产品货币代码"
+
+[attributeMap.invstMipIncrmMinAmt]
+value = "1000"
+desc  = "MIP（定投）最小递增金额"
+
+[attributeMap.deAuthFundInd]
+value = ""
+desc  = "非授权基金标识"
+
+[attributeMap.finDocURL_PROSPECTUS]
+value = "https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_pr_merrl001_en.pdf"
+desc  = "招募说明书（Prospectus）链接"
+
+[attributeMap.fundSwOutRtainMinAmt]
+value = "1000"
+desc  = "转换后最低保留金额"
+
+[attributeMap.setlLeadTmScrib]
+value = "1"
+desc  = "申购结算提前期（工作日）"
+
+[attributeMap.invstMipMinAmt]
+value = "1000"
+desc  = "MIP（定投）最低金额"
+
+[attributeMap.fundRtainMinAmt]
+value = "1000"
+desc  = "账户最低保留金额"
+
+[attributeMap.allowBuyProdInd]
+value = "Y"
+desc  = "是否允许买入该产品"
+
+[attributeMap.ccyProdMktPrcCde]
+value = "USD"
+desc  = "产品市场价格货币代码"
+
+[attributeMap.setlLeadTmRdm]
+value = "3"
+desc  = "赎回结算提前期（工作日）"
+
+[attributeMap.allowSwOutProdInd]
+value = "Y"
+desc  = "是否允许基金转换（换出）"
+
+[attributeMap.finDocURL_ANULRPT]
+value = "https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_ar_merrl001_en.pdf"
+desc  = "年度报告（Annual Report）链接"
+
+[attributeMap.esgInd]
+value = ""
+desc  = "ESG 标识（若有则表示ESG相关）"
+
+[attributeMap.invstInitMinAmt]
+value = "1000"
+desc  = "初始最低申购金额"
+
+
+[advanceChart.meta]
+source_path = "/Users/paulo/PycharmProjects/20250809/08132025_hsbc_fund_screener/output/001_U43051.done_wmds_advanceChart_response_body.json"
+result_count = 1
+
+[advanceChart.result0.overview]
+productName = "BlackRock World Gold Fund (Class A2)"
+indexName  = ""
+currency   = "USD"
+frequency  = "daily"
+
+[[advanceChart.result0.prodAltNumSegs]]
+prodCdeAltClassCde = "P"
+prodAltNum         = "U43051"
+
+[[advanceChart.result0.prodAltNumSegs]]
+prodCdeAltClassCde = "F"
+prodAltNum         = "MTWGF"
+
+[[advanceChart.result0.prodAltNumSegs]]
+prodCdeAltClassCde = "M"
+prodAltNum         = "U43051"
+
+[[advanceChart.result0.prodAltNumSegs]]
+prodCdeAltClassCde = "I"
+prodAltNum         = "LU0055631609"
+
+[[advanceChart.result0.prodAltNumSegs]]
+prodCdeAltClassCde = "O"
+prodAltNum         = "0P00000B0I"
+
+[[advanceChart.result0.prodAltNumSegs]]
+prodCdeAltClassCde = "T"
+prodAltNum         = "000000000000000000001000047299"
+
+[[advanceChart.result0.prodAltNumSegs]]
+prodCdeAltClassCde = "W"
+prodAltNum         = "1000047299"
+
+[advanceChart.result0.data_meta]
+range_note = "自 2022-08-16 起至最新，条目较多"
+
+[advanceChart.result0.data_sample]
+date             = "2022-08-16"
+navPrice         = 29.14
+cumulativeReturn = ""
+
+
+[fundQuoteSummary.meta]
+source_path = "/Users/paulo/PycharmProjects/20250809/08132025_hsbc_fund_screener/output/001_U43051.done_wmds_fundQuoteSummary_response_body.json"
+
+[fundQuoteSummary.summary]
+bid               = 64.36
+offer             = 64.36
+weekRangeLow      = 38.62
+weekRangeHigh     = 65.1
+weekRangeCurrency = "USD"
+
+[[fundQuoteSummary.summary.calendarYearTotalReturns.items]]
+year                         = 2024
+fundCalendarYearReturn       = 13.5817
+fundStubYearEndReturn        = ""
+stubYearEndReturnIndicator   = ""
+bestFitIndexCalendarYearReturn = 8.51827
+categoryCalendarYearReturn   = 11.93036
+
+[[fundQuoteSummary.summary.calendarYearTotalReturns.items.prospectusPrimaryIndexYearReturns]]
+indexId     = "FOUSA06EP4"
+indexName   = "FTSE Gold Mines PR USD"
+weighting   = 100
+prospectusPrimaryIndex = 6.61898
+
+[[fundQuoteSummary.summary.calendarYearTotalReturns.items]]
+year                         = 2023
+fundCalendarYearReturn       = 6.46471
+fundStubYearEndReturn        = ""
+stubYearEndReturnIndicator   = ""
+bestFitIndexCalendarYearReturn = 7.41756
+categoryCalendarYearReturn   = 4.47281
+
+[[fundQuoteSummary.summary.calendarYearTotalReturns.items.prospectusPrimaryIndexYearReturns]]
+indexId     = "FOUSA06EP4"
+indexName   = "FTSE Gold Mines PR USD"
+weighting   = 100
+prospectusPrimaryIndex = 9.36456
+
+[[fundQuoteSummary.summary.calendarYearTotalReturns.items]]
+year                         = 2022
+fundCalendarYearReturn       = -17.00363
+fundStubYearEndReturn        = ""
+stubYearEndReturnIndicator   = ""
+bestFitIndexCalendarYearReturn = -9.71394
+categoryCalendarYearReturn   = -16.22157
+
+[[fundQuoteSummary.summary.calendarYearTotalReturns.items.prospectusPrimaryIndexYearReturns]]
+indexId     = "FOUSA06EP4"
+indexName   = "FTSE Gold Mines PR USD"
+weighting   = 100
+prospectusPrimaryIndex = -15.47431
+
+
+[fundSearchCriteria.meta]
+source_path = "/Users/paulo/PycharmProjects/20250809/08132025_hsbc_fund_screener/output/001_U43051.done_wmds_fundSearchCriteria_response_body.json"
+
+[[fundSearchCriteria.minMaxCriterias]]
+criteriaKey = "BETA"
+minimum     = -0.22
+maximum     = 1.65
+
+[[fundSearchCriteria.minMaxCriterias]]
+criteriaKey = "STDDVIAT1Y"
+minimum     = 0.112
+maximum     = 129.354
+
+[[fundSearchCriteria.minMaxCriterias]]
+criteriaKey = "STDDVIAT3Y"
+minimum     = 0.239
+maximum     = 44.252
+
+[[fundSearchCriteria.listCriterias]]
+criteriaKey = "FAM"
+
+[[fundSearchCriteria.listCriterias.items]]
+itemKey   = "MERRL"
+itemValue = "BlackRock"
+parent    = ""
+
+
+[holdingAllocation.meta]
+source_path = "/Users/paulo/PycharmProjects/20250809/08132025_hsbc_fund_screener/output/001_U43051.done_wmds_holdingAllocation_response_body.json"
+numberOfStockHoldings = 43
+numberOfBondHoldings  = 0
+lastUpdatedDate       = "2025-06-30"
+
+# assetAllocations
+[[holdingAllocation.assetAllocations.breakdowns]]
+name = "Bond"
+weighting = 0.0132
+
+[[holdingAllocation.assetAllocations.breakdowns]]
+name = "Cash"
+weighting = 1.19581
+
+[[holdingAllocation.assetAllocations.breakdowns]]
+name = "Others"
+weighting = 3.59616
+
+[[holdingAllocation.assetAllocations.breakdowns]]
+name = "Preferred"
+weighting = 0
+
+[[holdingAllocation.assetAllocations.breakdowns]]
+name = "Stock"
+weighting = 95.19483
+
+# globalStockSectors
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "BM"
+weighting = 95.11477
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "CC"
+weighting = 0
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "CD"
+weighting = 0
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "CS"
+weighting = 0
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "ENER"
+weighting = 0
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "FS"
+weighting = 0
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "HC"
+weighting = 0
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "INDUS"
+weighting = 0
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "RE"
+weighting = 0
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "TECH"
+weighting = 0
+
+[[holdingAllocation.globalStockSectors.breakdowns]]
+name = "UTIL"
+weighting = 0
+
+# regionalExposures
+[[holdingAllocation.regionalExposures.breakdowns]]
+name = "AFRICA"
+weighting = 4.55105
+
+[[holdingAllocation.regionalExposures.breakdowns]]
+name = "AU"
+weighting = 9.0891
+
+[[holdingAllocation.regionalExposures.breakdowns]]
+name = "CA"
+weighting = 67.56528
+
+[[holdingAllocation.regionalExposures.breakdowns]]
+name = "EMER"
+weighting = 0.00089
+
+[[holdingAllocation.regionalExposures.breakdowns]]
+name = "UK"
+weighting = 6.45792
+
+[[holdingAllocation.regionalExposures.breakdowns]]
+name = "US"
+weighting = 7.5306
+
+# globalBondSectors
+[[holdingAllocation.globalBondSectors.breakdowns]]
+name = "CEQV"
+weighting = 1.01743
+
+[[holdingAllocation.globalBondSectors.breakdowns]]
+name = "CORP"
+weighting = 0.00774
+
+[[holdingAllocation.globalBondSectors.breakdowns]]
+name = "DRVT"
+weighting = 0.17838
+
+[[holdingAllocation.globalBondSectors.breakdowns]]
+name = "GVT"
+weighting = 0.00546
+
+# bondRegionalExposures (仅包含非零/示例值)
+[[holdingAllocation.bondRegionalExposures.breakdowns]]
+name = "AD"
+weighting = 0.00172
+
+[[holdingAllocation.bondRegionalExposures.breakdowns]]
+name = "EZ"
+weighting = 0.00665
+
+[[holdingAllocation.bondRegionalExposures.breakdowns]]
+name = "US"
+weighting = 0.00484
+
+
+[otherFundClasses]
+meta_source_path = "/Users/paulo/PycharmProjects/20250809/08132025_hsbc_fund_screener/output/001_U43051.done_wmds_otherFundClasses_response_body.json"
+assetClasses = []
+assetClasses_desc = "无返回"
+
+
+[quoteDetail.meta]
+source_path = "/Users/paulo/PycharmProjects/20250809/08132025_hsbc_fund_screener/output/001_U43051.done_wmds_quoteDetail_response_body.json"
+entityUpdatedTime = "2025-08-13T21:32:30.000+08:00"
+
+[quoteDetail.priceQuote]
+symbol = "U43051"
+market = "HK"
+productType = "UT"
+productSubTypeCode = "CF"
+quoteIndicator = true
+priceQuote = 64.36
+currency = "USD"
+companyName = "BlackRock World Gold Fund (Class A2)"
+changeAmount = 0.63
+changePercent = 0.98855
+bidPrice = 64.36
+bidPriceDate = "2025-08-12"
+askPrice = 64.36
+dividendYield = 0
+riskLvlCde = "5"
+performanceId = "0P00000B0I"
+tradableCurrency = "USD"
+topPerformersIndicator = "Y"
+topSellProdIndex = "N"
+categoryLevel1Code = "SPEC"
+categoryLevel1Name = "Specialties"
+exchangeUpdatedTime = "2025-08-12"
+allowBuy = "Y"
+allowSell = "Y"
+launchDate = "2003-02-28"
+
+[[quoteDetail.priceQuote.calendarReturns.items]]
+year = 2024
+annualCalendarYearReturn = 13.5817
+
+[[quoteDetail.priceQuote.calendarReturns.items]]
+year = 2023
+annualCalendarYearReturn = 6.46471
+
+[[quoteDetail.priceQuote.calendarReturns.items]]
+year = 2022
+annualCalendarYearReturn = -17.00363
+
+[[quoteDetail.priceQuote.calendarReturns.items]]
+year = 2021
+annualCalendarYearReturn = -10.59096
+
+[[quoteDetail.priceQuote.calendarReturns.items]]
+year = 2020
+annualCalendarYearReturn = 28.38441
+
+[[quoteDetail.priceQuote.cumulativeReturns.items]]
+period = "YTD"
+trailingTotalReturn = 50.4907
+dailyPerformanceNAV = 66.21901
+
+[[quoteDetail.priceQuote.cumulativeReturns.items]]
+period = "1M"
+trailingTotalReturn = 0.34441
+dailyPerformanceNAV = 8.84492
+
+[[quoteDetail.priceQuote.cumulativeReturns.items]]
+period = "3M"
+trailingTotalReturn = 6.74116
+dailyPerformanceNAV = 20.38908
+
+[[quoteDetail.priceQuote.cumulativeReturns.items]]
+period = "6M"
+trailingTotalReturn = 30.53315
+dailyPerformanceNAV = 37.05281
+
+[[quoteDetail.priceQuote.cumulativeReturns.items]]
+period = "1Y"
+trailingTotalReturn = 43.55753
+dailyPerformanceNAV = 60.94024
+
+[[quoteDetail.priceQuote.cumulativeReturns.items]]
+period = "3Y"
+trailingTotalReturn = 27.32433
+dailyPerformanceNAV = 29.17406
+
+[[quoteDetail.priceQuote.cumulativeReturns.items]]
+period = "5Y"
+trailingTotalReturn = 3.24527
+dailyPerformanceNAV = 6.44799
+
+[[quoteDetail.priceQuote.cumulativeReturns.items]]
+period = "10Y"
+trailingTotalReturn = 11.39253
+dailyPerformanceNAV = 11.80313
+
+[[quoteDetail.prodAltNumSegs]]
+prodCdeAltClassCde = "P"
+prodAltNum = "U43051"
+
+[[quoteDetail.prodAltNumSegs]]
+prodCdeAltClassCde = "F"
+prodAltNum = "MTWGF"
+
+[[quoteDetail.prodAltNumSegs]]
+prodCdeAltClassCde = "M"
+prodAltNum = "U43051"
+
+[[quoteDetail.prodAltNumSegs]]
+prodCdeAltClassCde = "I"
+prodAltNum = "LU0055631609"
+
+[[quoteDetail.prodAltNumSegs]]
+prodCdeAltClassCde = "O"
+prodAltNum = "0P00000B0I"
+
+[[quoteDetail.prodAltNumSegs]]
+prodCdeAltClassCde = "T"
+prodAltNum = "000000000000000000001000047299"
+
+[[quoteDetail.prodAltNumSegs]]
+prodCdeAltClassCde = "W"
+prodAltNum = "1000047299"
+
+
+[topTenHoldings.meta]
+source_path = "/Users/paulo/PycharmProjects/20250809/08132025_hsbc_fund_screener/output/001_U43051.done_wmds_topTenHoldings_response_body.json"
+lastUpdatedDate = "2025-06-30"
+
+[[topTenHoldings.items]]
+securityName = "Barrick Mining Corp"
+market       = "CA"
+weighting    = 8.01326
+currency     = "USD"
+marketValue  = 480067185
+
+[[topTenHoldings.items]]
+securityName = "Newmont Corp"
+market       = "US"
+weighting    = 7.45054
+currency     = "USD"
+marketValue  = 446355087
+
+[[topTenHoldings.items]]
+securityName = "Agnico Eagle Mines Ltd"
+market       = "CA"
+weighting    = 6.99598
+currency     = "USD"
+marketValue  = 419122576
+
+[[topTenHoldings.items]]
+securityName = "Kinross Gold Corp"
+market       = "CA"
+weighting    = 6.70162
+currency     = "USD"
+marketValue  = 401487709
+
+[[topTenHoldings.items]]
+securityName = "Endeavour Mining PLC"
+market       = "GB"
+weighting    = 6.06107
+currency     = "USD"
+marketValue  = 363113364
+
+[[topTenHoldings.items]]
+securityName = "Wheaton Precious Metals Corp"
+market       = "CA"
+weighting    = 4.76404
+currency     = "USD"
+marketValue  = 285409611
+
+[[topTenHoldings.items]]
+securityName = "Alamos Gold Inc Class A"
+market       = "CA"
+weighting    = 4.51714
+currency     = "USD"
+marketValue  = 270617604
+
+[[topTenHoldings.items]]
+securityName = "Northern Star Resources Ltd"
+market       = "AU"
+weighting    = 4.51296
+currency     = "USD"
+marketValue  = 270367242
+
+[[topTenHoldings.items]]
+securityName = "Eldorado Gold Corp"
+market       = "CA"
+weighting    = 4.23196
+currency     = "USD"
+marketValue  = 253532730
+
+[[topTenHoldings.items]]
+securityName = "Lundin Gold Inc"
+market       = "CA"
+weighting    = 3.55042
+currency     = "USD"
+marketValue  = 212702437

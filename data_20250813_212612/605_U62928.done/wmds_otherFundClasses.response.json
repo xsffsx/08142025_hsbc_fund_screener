@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62928",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:59:25.137744",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62928%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f45498d7-f20b-4f6a-9832-ce2057ddd86c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "boAg4rYMz79jAIUWLUmgjUjDBuw84r6zSvoJqv3CdAo-H2N4U2idVA==",
+        "x-hsbc-request-correlation-id": "cfcf7aac-5f91-43bd-9331-f4ba30099810",
+        "date": "Wed, 13 Aug 2025 13:59:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "31",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 053b1a4cfd9215b4abb8a58ea35b06aa.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "420",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"Schroder ISF - Global Credit Income (A-DIST-RMB Hedged-MFC-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-DIST-RMB HEDGED-MFC-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62927\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2927\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62927\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1514169009\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019ECD\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050106992\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50106992\"}]},{\"productName\":\"Schroder ISF - Global Credit Income (A-DIST-GBP Hedged-MF-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-DIST-GBP HEDGED-MF-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62926\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2926\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62926\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1514168530\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019BRG\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050106991\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50106991\"}]},{\"productName\":\"Schroder ISF - Global Credit Income (A-DIST-AUD Hedged-MFC-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-DIST-AUD HEDGED-MFC-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62925\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2925\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62925\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1514168969\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019BRF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050106990\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50106990\"}]},{\"productName\":\"Schroder ISF - Global Credit Income (A-DIST-HKD-MF-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-DIST-HKD-MF-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62924\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2924\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62924\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1514167649\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019BR6\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050106989\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50106989\"}]},{\"productName\":\"Schroder ISF - Global Credit Income (A-DIST-USD-MF-C)\",\"productShortName\":null,\"fundShreClsName\":\"A-DIST-USD-MF-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62923\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S2923\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62923\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1514167136\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019BR5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050106988\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50106988\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

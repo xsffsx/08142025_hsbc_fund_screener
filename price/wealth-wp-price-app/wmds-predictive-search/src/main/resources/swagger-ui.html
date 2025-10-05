@@ -1,0 +1,246 @@
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HASE Wealth Platform Market Data Service - Swagger UI</title>
+    <link rel="stylesheet" type="text/css" href="webjars/springfox-swagger-ui/springfox.css?v=2.9.2">
+    <link rel="stylesheet" type="text/css" href="webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2">
+    <link rel="icon" type="image/png" href="webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="webjars/springfox-swagger-ui/favicon-16x16.png?v=2.9.2" sizes="16x16"/>
+    <style>
+        html {
+            box-sizing: border-box;
+            overflow: -moz-scrollbars-vertical;
+            overflow-y: scroll;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            background: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+    <defs>
+        <symbol viewBox="0 0 20 20" id="unlocked">
+            <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"></path>
+        </symbol>
+
+        <symbol viewBox="0 0 20 20" id="locked">
+            <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"/>
+        </symbol>
+
+        <symbol viewBox="0 0 20 20" id="close">
+            <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"/>
+        </symbol>
+
+        <symbol viewBox="0 0 20 20" id="large-arrow">
+            <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"/>
+        </symbol>
+
+        <symbol viewBox="0 0 20 20" id="large-arrow-down">
+            <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"/>
+        </symbol>
+
+
+        <symbol viewBox="0 0 24 24" id="jump-to">
+            <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"/>
+        </symbol>
+
+        <symbol viewBox="0 0 24 24" id="expand">
+            <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+        </symbol>
+
+    </defs>
+</svg>
+
+<div id="swagger-ui"></div>
+
+<script src="webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2"></script>
+<script src="webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2"></script>
+<script src="webjars/springfox-swagger-ui/springfox.js?v=2.9.2"></script>
+<style>
+    .hidden {
+        display: none;
+    }
+    .opblock-body .btn-group .btn.btn-clear.opblock-control__btn {
+        display: none;
+    }
+    .pretty-json-checkbox label type[checkbox]{
+        position: relative;
+        top: 2px;
+    }
+    .pretty-json-checkbox label span{
+        padding-left: 4px;
+    }
+</style>
+<script>
+    // default headers setting
+    const auths = {
+        'X-hhhh-Function-Id': '29',
+        'X-hhhh-User-Id': 'HK26713763688801A',
+        'X-hhhh-Session-Correlation-Id': 'S4F5PS5JysXYbvcgOptir7j',
+        'X-hhhh-Chnl-CountryCode': 'HK',
+        'X-hhhh-Chnl-Group-Member': 'HASE',
+        'X-hhhh-Channel-Id': 'OHI',
+        'X-hhhh-Locale': 'en',
+        'X-hhhh-App-Code': 'STMA',
+        'X-hhhh-Saml3': '<saml:Assertion xmlns:saml=\'http://www.hhhh.com/saas/assertion\' xmlns:ds=\'http://www.w3.org/2000/09/xmldsig#\' xmlns:xsi=\'http://www.w3.org/2001/XMLSchema-instance\' ID=\'id_8617f5fb-e443-4d8f-aa37-f4f9965da66f\' IssueInstant=\'2019-07-15T09:01:59.661Z\' Version=\'3.0\'><saml:Issuer>https://www.hhhh.com/rbwm/dtp</saml:Issuer><ds:Signature><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=\'http://www.w3.org/2001/10/xml-exc-c14n#\'/><ds:SignatureMethod Algorithm=\'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\'/><ds:Reference URI=\'#id_8617f5fb-e443-4d8f-aa37-f4f9965da66f\'><ds:Transforms><ds:Transform Algorithm=\'http://www.w3.org/2000/09/xmldsig#enveloped-signature\'/><ds:Transform Algorithm=\'http://www.w3.org/2001/10/xml-exc-c14n#\'><ds:InclusiveNamespaces xmlns:ds=\'http://www.w3.org/2001/10/xml-exc-c14n#\' PrefixList=\'#default saml ds xs xsi\'/></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\'http://www.w3.org/2001/04/xmlenc#sha256\'/><ds:DigestValue>FtIDuv4fU+UosU38WjaFyx69tPKUkbhvOxgY3Shjric=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>tQ4Wwmy9XGCmPm4J7o6NhFGn9nUzHONJdU70cht+vzEDhRRGqrvFtzTBe1TxEcoGcfPk4WgRLfBxJd6bK8TFY1Sa+m/kIzCTMAdtMK2P9vzb4efYcgFP60rygu2lh896VNpjqOZgWGkc+903w8eGy8IvTVKyr4RhdPVu+oVvt2k62QwOG6UKJwLgW1/dQwck9C34RJdfgKLNdF6wTdbvuQIyhPQ1nUmFZy/8edDTIUm9Yd69yabPfD2gK57FqspmtNHlHhiKxxLf3hugz8jAzAIAKd4TdeMPAsRMnqj1GncBri0E6dv3F69JwsCu7TQXCTejUxc/HECSzJbreohGXQ==</ds:SignatureValue></ds:Signature><saml:Subject><saml:NameID>HK26713763688801A</saml:NameID></saml:Subject><saml:Conditions NotBefore=\'2019-07-15T09:01:58.661Z\' NotOnOrAfter=\'2019-07-15T09:02:59.661Z\'/><saml:AttributeStatement><saml:Attribute Name=\'GUID\'><saml:AttributeValue>f20fe6e0-b3e4-11e2-b7aa-000006010303</saml:AttributeValue></saml:Attribute><saml:Attribute Name=\'CAM\'><saml:AttributeValue>30</saml:AttributeValue></saml:Attribute></saml:AttributeStatement></saml:Assertion>',
+    };
+
+    function initAuths() {
+        for (const key in auths) {
+            ui.authActions.preAuthorizeImplicit({
+                auth: {
+                    schema: {
+                        type: 'apiKey',
+                        in: 'header',
+                        name: key,
+                        get: function (key) {
+                            return this[key];
+                        },
+                    },
+                    name: key,
+                    value: auths[key],
+                },
+                token: {},
+                isValid: true,
+            });
+        }
+    }
+
+    function initEventListener(){
+        document.addEventListener('click', function (e) {
+            function hasClass(elem, className) {
+                return elem.className.split(' ').indexOf(className) > -1;
+            }
+            function setVal(elem, val) {
+                var paramInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value").set;
+                paramInputValueSetter.call(elem, val);
+                elem.dispatchEvent(new Event('input', { bubbles: true}));
+            }
+            function formatVal(elem, val) {
+                try{
+                    var val = val.trim();
+                    if(val.startsWith('%')){
+                        val = decodeURIComponent(val);
+                    }
+                    var obj = JSON.parse(val);
+                    elem.value = JSON.stringify(obj, null, 4);
+                } catch (e){
+                    elem.value = val;
+                }
+            }
+            // try it out
+            if (hasClass(e.target, 'try-out__btn')) {
+                var paramBox = e.target.parentElement.parentElement.parentElement.getElementsByTagName('table')[0].getElementsByTagName('tbody')[0].getElementsByClassName('parameters-col_description')[0];
+                var paramInputBox = paramBox.getElementsByTagName('input')[0];
+                if (hasClass(e.target, 'cancel')) {
+                    if (!hasClass(paramInputBox, 'hidden')) {
+                        //create textarea
+                        var textarea = document.createElement("textarea");
+                        var lastVal = '';
+                        textarea.onkeyup = function (){
+                            var val = this.value;
+                            setVal(paramInputBox, val)
+                            var prettyChecked = paramBox.getElementsByClassName('pretty-json-checkbox')[0].getElementsByTagName('input')[0].checked;
+                            if(prettyChecked && lastVal != this.value.trim()){
+                                formatVal(this, this.value);
+                            }
+                            lastVal = this.value.trim();
+                        };
+                        paramInputBox.className += 'hidden';
+                        paramBox.appendChild(textarea);
+                        textarea.focus();
+                        //clear old data or set default data
+                        if(paramInputBox.value!=''){
+                            var val = paramInputBox.value;
+                            formatVal(textarea, val);
+                        }else{
+                            setVal(paramInputBox, '');
+                        }
+                        //create checkbox
+                        var div = document.createElement("div");
+                        div.className = 'pretty-json-checkbox';
+                        var label = document.createElement("label");
+                        var checkbox = document.createElement("input");
+                        checkbox.type = 'checkbox';
+                        checkbox.checked = 'checked';
+                        var span = document.createElement("span");
+                        span.innerText = 'Pretty JSON';
+                        label.appendChild(checkbox);
+                        label.appendChild(span);
+                        div.appendChild(label);
+                        paramBox.appendChild(div);
+                        checkbox.onchange = function (){
+                            if(this.checked){
+                                formatVal(textarea, textarea.value);
+                            }
+                        }
+                    }
+                } else {
+                    if(paramBox.getElementsByTagName('textarea')[0]){
+                        paramBox.getElementsByTagName('textarea')[0].remove()
+                    }
+                    if(paramBox.getElementsByClassName('pretty-json-checkbox')[0]){
+                        paramBox.getElementsByClassName('pretty-json-checkbox')[0].remove()
+                    }
+                }
+            } else if(e.target.parentElement &&  hasClass(e.target.parentElement, 'opblock-summary')){
+                var btn = e.target.parentElement.parentElement.getElementsByClassName('try-out__btn')[0];
+                if(btn && hasClass(btn, 'cancel')){
+                    btn.click();
+                }
+            } else if(e.target.parentElement && e.target.parentElement.parentElement && hasClass(e.target.parentElement.parentElement, 'opblock-summary-path') ){
+                var btn = e.target.parentElement.parentElement.parentElement.parentElement.getElementsByClassName('try-out__btn')[0];
+                if(btn && hasClass(btn, 'cancel')){
+                    btn.click();
+                }
+            }
+        }, false);
+    }
+
+    function changeSpec(e){
+        var options = this.innerText.split('\n');
+        var targetOption = options[this.selectedIndex];
+        var uri = this.baseURI;
+        if(uri.indexOf('urls.primaryName')>-1){
+            options.forEach(function(item){
+                if(item){
+                    uri = uri.replace(item, targetOption)
+                }
+            })
+        }else if(uri.indexOf('?')>-1){
+            uri = uri + '&urls.primaryName=' + targetOption;
+        }else{
+            uri = uri.replace('swagger-ui.html', 'swagger-ui.html?urls.primaryName=' + targetOption);
+        }
+        window.location.replace(uri);
+        e.stopPropagation();
+    }
+
+    function tryInit() {
+        if (typeof ui == 'object' && document.getElementsByClassName('scheme-container')[0] && document.getElementsByClassName('scheme-container')[0].getElementsByTagName('label')[0]) {
+            initAuths();
+            initEventListener();
+            document.getElementById('select').onchange = changeSpec
+        } else {
+            setTimeout(tryInit, 300);
+        }
+    }
+
+    tryInit();
+</script>
+</body>
+
+</html>

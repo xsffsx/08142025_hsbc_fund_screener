@@ -1,0 +1,2324 @@
+{
+  "excel_path": "/Users/paulo/PycharmProjects/20250809_MCP/08132025_hsbc_fund_screener/20251005_fund_view_sql/Fund attributes analysis.xlsx",
+  "analyses": {
+    "Sheet1": {
+      "shape": {
+        "rows": 118,
+        "cols": 8
+      },
+      "columns": [
+        "## FUND_PRODUCTS_NL2SQL",
+        "Unnamed: 1",
+        "Unnamed: 2",
+        "Unnamed: 3",
+        "Keep?",
+        "Need enum?",
+        "Unnamed: 6",
+        "Unnamed: 7"
+      ],
+      "dtypes": {
+        "## FUND_PRODUCTS_NL2SQL": "object",
+        "Unnamed: 1": "object",
+        "Unnamed: 2": "object",
+        "Unnamed: 3": "object",
+        "Keep?": "object",
+        "Need enum?": "float64",
+        "Unnamed: 6": "object",
+        "Unnamed: 7": "object"
+      },
+      "missing": {
+        "count": {
+          "## FUND_PRODUCTS_NL2SQL": 0,
+          "Unnamed: 1": 0,
+          "Unnamed: 2": 8,
+          "Unnamed: 3": 9,
+          "Keep?": 115,
+          "Need enum?": 118,
+          "Unnamed: 6": 7,
+          "Unnamed: 7": 0
+        },
+        "percent": {
+          "## FUND_PRODUCTS_NL2SQL": 0.0,
+          "Unnamed: 1": 0.0,
+          "Unnamed: 2": 0.06779661016949153,
+          "Unnamed: 3": 0.07627118644067797,
+          "Keep?": 0.9745762711864406,
+          "Need enum?": 1.0,
+          "Unnamed: 6": 0.059322033898305086,
+          "Unnamed: 7": 0.0
+        }
+      },
+      "numeric_summary": {
+        "Need enum?": {
+          "count": 0.0,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        }
+      },
+      "correlation": {
+        "Need enum?": {
+          "Need enum?": NaN
+        }
+      },
+      "categorical_summary": {
+        "## FUND_PRODUCTS_NL2SQL": {
+          "unique_count": 118,
+          "top_values": [
+            {
+              "value": "# column_name",
+              "count": 1
+            },
+            {
+              "value": "return_calendar_2024_pct",
+              "count": 1
+            },
+            {
+              "value": "top3_sector_allocation_pct",
+              "count": 1
+            },
+            {
+              "value": "top2_sector_allocation_pct",
+              "count": 1
+            },
+            {
+              "value": "top1_sector_allocation_pct",
+              "count": 1
+            },
+            {
+              "value": "preferred_allocation_pct",
+              "count": 1
+            },
+            {
+              "value": "others_allocation_pct",
+              "count": 1
+            },
+            {
+              "value": "cash_allocation_pct",
+              "count": 1
+            },
+            {
+              "value": "bond_allocation_pct",
+              "count": 1
+            },
+            {
+              "value": "stock_allocation_pct",
+              "count": 1
+            },
+            {
+              "value": "return_calendar_2020_pct",
+              "count": 1
+            },
+            {
+              "value": "return_calendar_2021_pct",
+              "count": 1
+            },
+            {
+              "value": "return_calendar_2022_pct",
+              "count": 1
+            },
+            {
+              "value": "return_calendar_2023_pct",
+              "count": 1
+            },
+            {
+              "value": "return_ytd_calendar_pct",
+              "count": 1
+            }
+          ]
+        },
+        "Unnamed: 1": {
+          "unique_count": 17,
+          "top_values": [
+            {
+              "value": "numeric",
+              "count": 70
+            },
+            {
+              "value": "character varying(200)",
+              "count": 12
+            },
+            {
+              "value": "text",
+              "count": 7
+            },
+            {
+              "value": "bigint",
+              "count": 6
+            },
+            {
+              "value": "character(1)",
+              "count": 5
+            },
+            {
+              "value": "date",
+              "count": 3
+            },
+            {
+              "value": "numeric(38,0)",
+              "count": 2
+            },
+            {
+              "value": "numeric(19,5)",
+              "count": 2
+            },
+            {
+              "value": "character varying(20)",
+              "count": 2
+            },
+            {
+              "value": "character varying(30)",
+              "count": 2
+            },
+            {
+              "value": "character(3)",
+              "count": 1
+            },
+            {
+              "value": "character varying(5)",
+              "count": 1
+            },
+            {
+              "value": "character varying(10)",
+              "count": 1
+            },
+            {
+              "value": "character varying(15)",
+              "count": 1
+            },
+            {
+              "value": "character varying(300)",
+              "count": 1
+            }
+          ]
+        },
+        "Unnamed: 2": {
+          "unique_count": 108,
+          "top_values": [
+            {
+              "value": "NULL",
+              "count": 8
+            },
+            {
+              "value": "1年四分位排名 ",
+              "count": 2
+            },
+            {
+              "value": "1年年化收益率百分比 ",
+              "count": 2
+            },
+            {
+              "value": "平均信用质量评级 ",
+              "count": 2
+            },
+            {
+              "value": "年初至今日历收益率百分比 ",
+              "count": 1
+            },
+            {
+              "value": "第一大行业配置百分比 ",
+              "count": 1
+            },
+            {
+              "value": "优先股配置百分比 ",
+              "count": 1
+            },
+            {
+              "value": "其他资产配置百分比 ",
+              "count": 1
+            },
+            {
+              "value": "现金配置百分比 ",
+              "count": 1
+            },
+            {
+              "value": "债券配置百分比 ",
+              "count": 1
+            },
+            {
+              "value": "股票配置百分比 ",
+              "count": 1
+            },
+            {
+              "value": "2020年日历收益率百分比 ",
+              "count": 1
+            },
+            {
+              "value": "2021年日历收益率百分比 ",
+              "count": 1
+            },
+            {
+              "value": "2022年日历收益率百分比 ",
+              "count": 1
+            },
+            {
+              "value": "2023年日历收益率百分比 ",
+              "count": 1
+            }
+          ]
+        },
+        "Unnamed: 3": {
+          "unique_count": 108,
+          "top_values": [
+            {
+              "value": "NULL",
+              "count": 9
+            },
+            {
+              "value": " 1 year annualized return percentage",
+              "count": 2
+            },
+            {
+              "value": " Average credit quality rating",
+              "count": 2
+            },
+            {
+              "value": " Year-to-date calendar return percentage",
+              "count": 1
+            },
+            {
+              "value": " Top 1st sector allocation percentage",
+              "count": 1
+            },
+            {
+              "value": " Preferred stock allocation percentage",
+              "count": 1
+            },
+            {
+              "value": " Others allocation percentage",
+              "count": 1
+            },
+            {
+              "value": " Cash allocation percentage",
+              "count": 1
+            },
+            {
+              "value": " Bond allocation percentage",
+              "count": 1
+            },
+            {
+              "value": " Stock allocation percentage",
+              "count": 1
+            },
+            {
+              "value": " 2020 calendar year return percentage",
+              "count": 1
+            },
+            {
+              "value": " 2021 calendar year return percentage",
+              "count": 1
+            },
+            {
+              "value": " 2022 calendar year return percentage",
+              "count": 1
+            },
+            {
+              "value": " 2023 calendar year return percentage",
+              "count": 1
+            },
+            {
+              "value": " 2024 calendar year return percentage",
+              "count": 1
+            }
+          ]
+        },
+        "Keep?": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "NULL",
+              "count": 115
+            },
+            {
+              "value": "N",
+              "count": 2
+            },
+            {
+              "value": "Y",
+              "count": 1
+            }
+          ]
+        },
+        "Unnamed: 6": {
+          "unique_count": 63,
+          "top_values": [
+            {
+              "value": "0",
+              "count": 26
+            },
+            {
+              "value": "AB - ALL CHINA EQUITY PORTFOLIO (A-EUR-ACC),AB - A...",
+              "count": 9
+            },
+            {
+              "value": "NULL",
+              "count": 7
+            },
+            {
+              "value": "2,3",
+              "count": 3
+            },
+            {
+              "value": "0.0000,22.4199",
+              "count": 3
+            },
+            {
+              "value": "1,2,3,4,5",
+              "count": 3
+            },
+            {
+              "value": "0.0000,2.9012",
+              "count": 2
+            },
+            {
+              "value": "0.0000,23.8355",
+              "count": 2
+            },
+            {
+              "value": "0.0000,12.0528",
+              "count": 2
+            },
+            {
+              "value": "0.0000,13.2195",
+              "count": 2
+            },
+            {
+              "value": "3",
+              "count": 2
+            },
+            {
+              "value": "0,0.76700",
+              "count": 2
+            },
+            {
+              "value": "N,Y",
+              "count": 2
+            },
+            {
+              "value": "2",
+              "count": 2
+            },
+            {
+              "value": "0.0000,18.6251",
+              "count": 2
+            }
+          ]
+        },
+        "Unnamed: 7": {
+          "unique_count": 20,
+          "top_values": [
+            {
+              "value": "2",
+              "count": 47
+            },
+            {
+              "value": "1",
+              "count": 31
+            },
+            {
+              "value": "1420",
+              "count": 12
+            },
+            {
+              "value": "0",
+              "count": 7
+            },
+            {
+              "value": "5",
+              "count": 3
+            },
+            {
+              "value": "39",
+              "count": 2
+            },
+            {
+              "value": "36",
+              "count": 2
+            },
+            {
+              "value": "4",
+              "count": 2
+            },
+            {
+              "value": "distinct_count",
+              "count": 1
+            },
+            {
+              "value": "209",
+              "count": 1
+            },
+            {
+              "value": "18",
+              "count": 1
+            },
+            {
+              "value": "278",
+              "count": 1
+            },
+            {
+              "value": "272",
+              "count": 1
+            },
+            {
+              "value": "240",
+              "count": 1
+            },
+            {
+              "value": "1324",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "low_cardinality_distributions": {
+        "Unnamed: 1": [
+          {
+            "value": "numeric",
+            "count": 70
+          },
+          {
+            "value": "character varying(200)",
+            "count": 12
+          },
+          {
+            "value": "text",
+            "count": 7
+          },
+          {
+            "value": "bigint",
+            "count": 6
+          },
+          {
+            "value": "character(1)",
+            "count": 5
+          },
+          {
+            "value": "date",
+            "count": 3
+          },
+          {
+            "value": "numeric(38,0)",
+            "count": 2
+          },
+          {
+            "value": "numeric(19,5)",
+            "count": 2
+          },
+          {
+            "value": "character varying(20)",
+            "count": 2
+          },
+          {
+            "value": "character varying(30)",
+            "count": 2
+          },
+          {
+            "value": "character(3)",
+            "count": 1
+          },
+          {
+            "value": "character varying(5)",
+            "count": 1
+          },
+          {
+            "value": "character varying(10)",
+            "count": 1
+          },
+          {
+            "value": "character varying(15)",
+            "count": 1
+          },
+          {
+            "value": "character varying(300)",
+            "count": 1
+          },
+          {
+            "value": "character varying(100)",
+            "count": 1
+          },
+          {
+            "value": "data_type",
+            "count": 1
+          }
+        ],
+        "Keep?": [
+          {
+            "value": "NULL",
+            "count": 115
+          },
+          {
+            "value": "N",
+            "count": 2
+          },
+          {
+            "value": "Y",
+            "count": 1
+          }
+        ],
+        "Need enum?": [
+          {
+            "value": "NULL",
+            "count": 118
+          }
+        ],
+        "Unnamed: 7": [
+          {
+            "value": "2",
+            "count": 47
+          },
+          {
+            "value": "1",
+            "count": 31
+          },
+          {
+            "value": "1420",
+            "count": 12
+          },
+          {
+            "value": "0",
+            "count": 7
+          },
+          {
+            "value": "5",
+            "count": 3
+          },
+          {
+            "value": "39",
+            "count": 2
+          },
+          {
+            "value": "36",
+            "count": 2
+          },
+          {
+            "value": "4",
+            "count": 2
+          },
+          {
+            "value": "distinct_count",
+            "count": 1
+          },
+          {
+            "value": "209",
+            "count": 1
+          },
+          {
+            "value": "18",
+            "count": 1
+          },
+          {
+            "value": "278",
+            "count": 1
+          },
+          {
+            "value": "272",
+            "count": 1
+          },
+          {
+            "value": "240",
+            "count": 1
+          },
+          {
+            "value": "1324",
+            "count": 1
+          },
+          {
+            "value": "408",
+            "count": 1
+          },
+          {
+            "value": "12",
+            "count": 1
+          },
+          {
+            "value": "1421",
+            "count": 1
+          },
+          {
+            "value": "17",
+            "count": 1
+          },
+          {
+            "value": "3",
+            "count": 1
+          }
+        ]
+      },
+      "duplicate_rows": 0,
+      "key_duplicates": {}
+    },
+    "fund_master_view": {
+      "shape": {
+        "rows": 132,
+        "cols": 9
+      },
+      "columns": [
+        "Field Name",
+        "Column Name",
+        "Data Type",
+        "Description",
+        "Table",
+        "MDS API",
+        "MDS API attributes",
+        "ENUM?",
+        "Unnamed: 8"
+      ],
+      "dtypes": {
+        "Field Name": "object",
+        "Column Name": "object",
+        "Data Type": "object",
+        "Description": "object",
+        "Table": "object",
+        "MDS API": "object",
+        "MDS API attributes": "object",
+        "ENUM?": "object",
+        "Unnamed: 8": "object"
+      },
+      "missing": {
+        "count": {
+          "Field Name": 0,
+          "Column Name": 0,
+          "Data Type": 0,
+          "Description": 0,
+          "Table": 0,
+          "MDS API": 0,
+          "MDS API attributes": 0,
+          "ENUM?": 128,
+          "Unnamed: 8": 0
+        },
+        "percent": {
+          "Field Name": 0.0,
+          "Column Name": 0.0,
+          "Data Type": 0.0,
+          "Description": 0.0,
+          "Table": 0.0,
+          "MDS API": 0.0,
+          "MDS API attributes": 0.0,
+          "ENUM?": 0.9696969696969697,
+          "Unnamed: 8": 0.0
+        }
+      },
+      "numeric_summary": {},
+      "correlation": {},
+      "categorical_summary": {
+        "Field Name": {
+          "unique_count": 132,
+          "top_values": [
+            {
+              "value": "Fund code",
+              "count": 1
+            },
+            {
+              "value": "Asset Allocation in Preferred",
+              "count": 1
+            },
+            {
+              "value": "Equity geographic allocation in Asia - Emerging",
+              "count": 1
+            },
+            {
+              "value": "Equity geographic allocation in Asia - Developed",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Utilities",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Technology",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Real Estate",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Industrials",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Healthcare",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Financial Services",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Energy",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Communication Services",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Consumer Defensive",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Consumer Cyclical",
+              "count": 1
+            },
+            {
+              "value": "Equity sector allocation in Basic Materials",
+              "count": 1
+            }
+          ]
+        },
+        "Column Name": {
+          "unique_count": 130,
+          "top_values": [
+            {
+              "value": "quartile_ranking_1_year",
+              "count": 3
+            },
+            {
+              "value": "fund_code",
+              "count": 1
+            },
+            {
+              "value": "asset_allocation_stock",
+              "count": 1
+            },
+            {
+              "value": "equity_geographic_allocation_in_asia_emerging",
+              "count": 1
+            },
+            {
+              "value": "equity_geographic_allocation_in_asia_developed",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_ultilities",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_technology",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_real_estate",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_industrials",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_healthcare",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_financial_services",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_energy",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_communication_services",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_consumer_defensive",
+              "count": 1
+            },
+            {
+              "value": "equity_sector_allocation_in_consumer_cyclical",
+              "count": 1
+            }
+          ]
+        },
+        "Data Type": {
+          "unique_count": 4,
+          "top_values": [
+            {
+              "value": "Decimal",
+              "count": 101
+            },
+            {
+              "value": "Text",
+              "count": 20
+            },
+            {
+              "value": "Integer",
+              "count": 7
+            },
+            {
+              "value": "Date",
+              "count": 4
+            }
+          ]
+        },
+        "Description": {
+          "unique_count": 132,
+          "top_values": [
+            {
+              "value": "Unique fund code or symbol, usually we display this code on frontend. ",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's assets invested in preferred stocks. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in emerging Asian markets, such as China, India, Indonesia, Cambodia, Malaysia, Philippines, Thailand, Vietnam and other emerging Aisan countries. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in developed Asian markets, such as Brunei, French Polynesia, Guam, Hong Kong, Macau, New Caledonia, Singapore, South Korea, Taiwan. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in utility sector. This sector includes electric, gas, and water utilities. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in technology sector.This sector includes companies that engaged in the design, development, and support of computer operating systems and applications, provide computer technology consulting services and companies engaged in the manufacturing of computer equipment, data storage products, networking products, semiconductors, and components. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in real estate sector. This sector includes mortgage companies, property management companies, and REITs. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in industrials sector. This sector includes manufacture machinery, hand-held tools, industrial products, aerospace and defense firms as well as companies engaged in transportation and logistic services. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in healthcare sector. This sector includes biotechnology, pharmaceuticals, research services, home healthcare, hospitals, long-term-care facilities, and medical equipment and supplies. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in financial services sector. This sector includes banks, savings and loans, asset management companies, credit services, investment brokerage firms, and insurance companies. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in energy sector. This sector includes companies engaged in the mining of coal, produce or refine oil and gas, oil field services and equipment companies, and pipeline operators.  Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in communication services sector. This sector includes companies that provide internet services such as access, navigation, and internet-related software and services. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in consumer defensive sector. This sector includes companies that engaged in the manufacturing of food, beverages, household and personal products, packaging, or tobacco and provide services such as education and training services. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in consumer cyclical sector. This sector includes retail stores, auto and auto parts manufacturers, companies engaged in residential construction, lodging facilities, restaurants, and entertainment companies. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the fund's equity investments in basic materials sector. Companies that manufacture chemicals, building materials and paper products. This sector also includes companies engaged in commodities exploration and processing. Value is in decimal (e.g. 23.15)",
+              "count": 1
+            }
+          ]
+        },
+        "Table": {
+          "unique_count": 4,
+          "top_values": [
+            {
+              "value": "fund_quote_summary",
+              "count": 59
+            },
+            {
+              "value": "fund_holding_allocation",
+              "count": 52
+            },
+            {
+              "value": "fund_quote_detail",
+              "count": 13
+            },
+            {
+              "value": "fund_product",
+              "count": 8
+            }
+          ]
+        },
+        "MDS API": {
+          "unique_count": 4,
+          "top_values": [
+            {
+              "value": "/fundQuoteSummary",
+              "count": 59
+            },
+            {
+              "value": "/holdingAllocation",
+              "count": 52
+            },
+            {
+              "value": "/quoteDetail",
+              "count": 13
+            },
+            {
+              "value": "/product",
+              "count": 8
+            }
+          ]
+        },
+        "MDS API attributes": {
+          "unique_count": 131,
+          "top_values": [
+            {
+              "value": "summary.profile.relativeRiskMeasuresIndexName",
+              "count": 2
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"HC\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"BM\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"CC\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"CD\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"CS\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"ENER\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"FS\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "payload[0].productAlternativeNumber",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"assetAllocations\"}.breakdowns[]->{name=\"Preferred\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"INDUS\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"RE\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"TECH\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"globalStockSectors\"}.breakdowns[]->{name=\"UTIL\"}.weighting",
+              "count": 1
+            },
+            {
+              "value": "holdingAllocation[]->{methods=\"regionalExposures\"}.breakdowns[]->{name=\"AD\"}.weighting",
+              "count": 1
+            }
+          ]
+        },
+        "ENUM?": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "NULL",
+              "count": 128
+            },
+            {
+              "value": "Y",
+              "count": 4
+            }
+          ]
+        },
+        "Unnamed: 8": {
+          "unique_count": 132,
+          "top_values": [
+            {
+              "value": "fp.product_code AS fund_code,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'assetAllocations' AND ba->>'name' = 'Preferred') AS asset_allocation_preferred,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'regionalExposures' AND ba->>'name' = 'AE') AS equity_geographic_allocation_in_asia_emerging,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'regionalExposures' AND ba->>'name' = 'AD') AS equity_geographic_allocation_in_asia_developed,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'UTIL') AS equity_sector_allocation_in_utilities,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'TECH') AS equity_sector_allocation_in_technology,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'RE') AS equity_sector_allocation_in_real_estate,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'INDUS') AS equity_sector_allocation_in_industrials,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'HC') AS equity_sector_allocation_in_healthcare,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'FS') AS equity_sector_allocation_in_financial_services,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'ENER') AS equity_sector_allocation_in_energy,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'CS') AS equity_sector_allocation_in_communication_services,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'CD') AS equity_sector_allocation_in_consumer_defensive,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'CC') AS equity_sector_allocation_in_consumer_cyclical,",
+              "count": 1
+            },
+            {
+              "value": "(SELECT (ba->>'weighting')::decimal FROM jsonb_array_elements(ha.response_data->'holdingAllocation') AS ha CROSS JOIN jsonb_array_elements(ha->'breakdowns') AS ba WHERE ha->>'methods' = 'globalStockSectors' AND ba->>'name' = 'BM') AS equity_sector_allocation_in_basic_materials,",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "low_cardinality_distributions": {
+        "Data Type": [
+          {
+            "value": "Decimal",
+            "count": 101
+          },
+          {
+            "value": "Text",
+            "count": 20
+          },
+          {
+            "value": "Integer",
+            "count": 7
+          },
+          {
+            "value": "Date",
+            "count": 4
+          }
+        ],
+        "Table": [
+          {
+            "value": "fund_quote_summary",
+            "count": 59
+          },
+          {
+            "value": "fund_holding_allocation",
+            "count": 52
+          },
+          {
+            "value": "fund_quote_detail",
+            "count": 13
+          },
+          {
+            "value": "fund_product",
+            "count": 8
+          }
+        ],
+        "MDS API": [
+          {
+            "value": "/fundQuoteSummary",
+            "count": 59
+          },
+          {
+            "value": "/holdingAllocation",
+            "count": 52
+          },
+          {
+            "value": "/quoteDetail",
+            "count": 13
+          },
+          {
+            "value": "/product",
+            "count": 8
+          }
+        ],
+        "ENUM?": [
+          {
+            "value": "NULL",
+            "count": 128
+          },
+          {
+            "value": "Y",
+            "count": 4
+          }
+        ]
+      },
+      "duplicate_rows": 0,
+      "key_duplicates": {}
+    },
+    "fund_class_view": {
+      "shape": {
+        "rows": 3,
+        "cols": 8
+      },
+      "columns": [
+        "Field Name",
+        "Column Name",
+        "Data Type",
+        "Description",
+        "Table",
+        "MDS API",
+        "MDS API attributes",
+        "ENUM?"
+      ],
+      "dtypes": {
+        "Field Name": "object",
+        "Column Name": "object",
+        "Data Type": "object",
+        "Description": "object",
+        "Table": "object",
+        "MDS API": "object",
+        "MDS API attributes": "object",
+        "ENUM?": "float64"
+      },
+      "missing": {
+        "count": {
+          "Field Name": 0,
+          "Column Name": 0,
+          "Data Type": 0,
+          "Description": 0,
+          "Table": 0,
+          "MDS API": 1,
+          "MDS API attributes": 1,
+          "ENUM?": 3
+        },
+        "percent": {
+          "Field Name": 0.0,
+          "Column Name": 0.0,
+          "Data Type": 0.0,
+          "Description": 0.0,
+          "Table": 0.0,
+          "MDS API": 0.3333333333333333,
+          "MDS API attributes": 0.3333333333333333,
+          "ENUM?": 1.0
+        }
+      },
+      "numeric_summary": {
+        "ENUM?": {
+          "count": 0.0,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        }
+      },
+      "correlation": {
+        "ENUM?": {
+          "ENUM?": NaN
+        }
+      },
+      "categorical_summary": {
+        "Field Name": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "Fund code",
+              "count": 1
+            },
+            {
+              "value": "fund class name",
+              "count": 1
+            },
+            {
+              "value": "fund class fund code",
+              "count": 1
+            }
+          ]
+        },
+        "Column Name": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "fund_code",
+              "count": 1
+            },
+            {
+              "value": "fund_class_name",
+              "count": 1
+            },
+            {
+              "value": "fund_class_fund_code",
+              "count": 1
+            }
+          ]
+        },
+        "Data Type": {
+          "unique_count": 1,
+          "top_values": [
+            {
+              "value": "Text",
+              "count": 3
+            }
+          ]
+        },
+        "Description": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "Foreign key from fund_master_view",
+              "count": 1
+            },
+            {
+              "value": "The name assigned to the specific class of the fund",
+              "count": 1
+            },
+            {
+              "value": "The fund code of  the specific class of the fund",
+              "count": 1
+            }
+          ]
+        },
+        "Table": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "fund_class",
+              "count": 2
+            },
+            {
+              "value": "fund_product",
+              "count": 1
+            }
+          ]
+        },
+        "MDS API": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "/otherFundClasses",
+              "count": 2
+            },
+            {
+              "value": "NULL",
+              "count": 1
+            }
+          ]
+        },
+        "MDS API attributes": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "NULL",
+              "count": 1
+            },
+            {
+              "value": "assetClasses[].fundShreClsName",
+              "count": 1
+            },
+            {
+              "value": "assetClasses[].prodAltNumSegs[](prodCdeAltClassCde=\"M\").prodAltNum",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "low_cardinality_distributions": {
+        "Field Name": [
+          {
+            "value": "Fund code",
+            "count": 1
+          },
+          {
+            "value": "fund class name",
+            "count": 1
+          },
+          {
+            "value": "fund class fund code",
+            "count": 1
+          }
+        ],
+        "Column Name": [
+          {
+            "value": "fund_code",
+            "count": 1
+          },
+          {
+            "value": "fund_class_name",
+            "count": 1
+          },
+          {
+            "value": "fund_class_fund_code",
+            "count": 1
+          }
+        ],
+        "Data Type": [
+          {
+            "value": "Text",
+            "count": 3
+          }
+        ],
+        "Description": [
+          {
+            "value": "Foreign key from fund_master_view",
+            "count": 1
+          },
+          {
+            "value": "The name assigned to the specific class of the fund",
+            "count": 1
+          },
+          {
+            "value": "The fund code of  the specific class of the fund",
+            "count": 1
+          }
+        ],
+        "Table": [
+          {
+            "value": "fund_class",
+            "count": 2
+          },
+          {
+            "value": "fund_product",
+            "count": 1
+          }
+        ],
+        "MDS API": [
+          {
+            "value": "/otherFundClasses",
+            "count": 2
+          },
+          {
+            "value": "NULL",
+            "count": 1
+          }
+        ],
+        "MDS API attributes": [
+          {
+            "value": "NULL",
+            "count": 1
+          },
+          {
+            "value": "assetClasses[].fundShreClsName",
+            "count": 1
+          },
+          {
+            "value": "assetClasses[].prodAltNumSegs[](prodCdeAltClassCde=\"M\").prodAltNum",
+            "count": 1
+          }
+        ],
+        "ENUM?": [
+          {
+            "value": "NULL",
+            "count": 3
+          }
+        ]
+      },
+      "duplicate_rows": 0,
+      "key_duplicates": {}
+    },
+    "fund_top_ten_holding_view": {
+      "shape": {
+        "rows": 5,
+        "cols": 8
+      },
+      "columns": [
+        "Field Name",
+        "Column Name",
+        "Data Type",
+        "Description",
+        "Table",
+        "MDS API",
+        "MDS API attributes",
+        "ENUM?"
+      ],
+      "dtypes": {
+        "Field Name": "object",
+        "Column Name": "object",
+        "Data Type": "object",
+        "Description": "object",
+        "Table": "object",
+        "MDS API": "object",
+        "MDS API attributes": "object",
+        "ENUM?": "float64"
+      },
+      "missing": {
+        "count": {
+          "Field Name": 0,
+          "Column Name": 0,
+          "Data Type": 0,
+          "Description": 0,
+          "Table": 0,
+          "MDS API": 1,
+          "MDS API attributes": 1,
+          "ENUM?": 5
+        },
+        "percent": {
+          "Field Name": 0.0,
+          "Column Name": 0.0,
+          "Data Type": 0.0,
+          "Description": 0.0,
+          "Table": 0.0,
+          "MDS API": 0.2,
+          "MDS API attributes": 0.2,
+          "ENUM?": 1.0
+        }
+      },
+      "numeric_summary": {
+        "ENUM?": {
+          "count": 0.0,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        }
+      },
+      "correlation": {
+        "ENUM?": {
+          "ENUM?": NaN
+        }
+      },
+      "categorical_summary": {
+        "Field Name": {
+          "unique_count": 5,
+          "top_values": [
+            {
+              "value": "Fund code",
+              "count": 1
+            },
+            {
+              "value": "Holding name",
+              "count": 1
+            },
+            {
+              "value": "Market value",
+              "count": 1
+            },
+            {
+              "value": "Market value currency",
+              "count": 1
+            },
+            {
+              "value": "Weighting",
+              "count": 1
+            }
+          ]
+        },
+        "Column Name": {
+          "unique_count": 5,
+          "top_values": [
+            {
+              "value": "fund_code",
+              "count": 1
+            },
+            {
+              "value": "holding_name",
+              "count": 1
+            },
+            {
+              "value": "market_value",
+              "count": 1
+            },
+            {
+              "value": "market_value_currency",
+              "count": 1
+            },
+            {
+              "value": "weighting",
+              "count": 1
+            }
+          ]
+        },
+        "Data Type": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "Text",
+              "count": 3
+            },
+            {
+              "value": "Decimal",
+              "count": 2
+            }
+          ]
+        },
+        "Description": {
+          "unique_count": 5,
+          "top_values": [
+            {
+              "value": "Foreign key from fund_master_view",
+              "count": 1
+            },
+            {
+              "value": "The name of the specific asset or security held within the fund.",
+              "count": 1
+            },
+            {
+              "value": "The total value of the holding in the fund. This value must be shown with market value currency.",
+              "count": 1
+            },
+            {
+              "value": "The currency in which the market value of the holding is denominated",
+              "count": 1
+            },
+            {
+              "value": "The percentage of the total fund's assets that is allocated to a particular holding",
+              "count": 1
+            }
+          ]
+        },
+        "Table": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "fund_top_ten_holdings",
+              "count": 4
+            },
+            {
+              "value": "Foreign key from fund_master_view",
+              "count": 1
+            }
+          ]
+        },
+        "MDS API": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "/topTenHolding",
+              "count": 4
+            },
+            {
+              "value": "NULL",
+              "count": 1
+            }
+          ]
+        },
+        "MDS API attributes": {
+          "unique_count": 5,
+          "top_values": [
+            {
+              "value": "NULL",
+              "count": 1
+            },
+            {
+              "value": "top10Holdings.items[].securityName",
+              "count": 1
+            },
+            {
+              "value": "top10Holdings.items[].marketValue",
+              "count": 1
+            },
+            {
+              "value": "top10Holdings.items[].currency",
+              "count": 1
+            },
+            {
+              "value": "top10Holdings.items[].weighting",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "low_cardinality_distributions": {
+        "Field Name": [
+          {
+            "value": "Fund code",
+            "count": 1
+          },
+          {
+            "value": "Holding name",
+            "count": 1
+          },
+          {
+            "value": "Market value",
+            "count": 1
+          },
+          {
+            "value": "Market value currency",
+            "count": 1
+          },
+          {
+            "value": "Weighting",
+            "count": 1
+          }
+        ],
+        "Column Name": [
+          {
+            "value": "fund_code",
+            "count": 1
+          },
+          {
+            "value": "holding_name",
+            "count": 1
+          },
+          {
+            "value": "market_value",
+            "count": 1
+          },
+          {
+            "value": "market_value_currency",
+            "count": 1
+          },
+          {
+            "value": "weighting",
+            "count": 1
+          }
+        ],
+        "Data Type": [
+          {
+            "value": "Text",
+            "count": 3
+          },
+          {
+            "value": "Decimal",
+            "count": 2
+          }
+        ],
+        "Description": [
+          {
+            "value": "Foreign key from fund_master_view",
+            "count": 1
+          },
+          {
+            "value": "The name of the specific asset or security held within the fund.",
+            "count": 1
+          },
+          {
+            "value": "The total value of the holding in the fund. This value must be shown with market value currency.",
+            "count": 1
+          },
+          {
+            "value": "The currency in which the market value of the holding is denominated",
+            "count": 1
+          },
+          {
+            "value": "The percentage of the total fund's assets that is allocated to a particular holding",
+            "count": 1
+          }
+        ],
+        "Table": [
+          {
+            "value": "fund_top_ten_holdings",
+            "count": 4
+          },
+          {
+            "value": "Foreign key from fund_master_view",
+            "count": 1
+          }
+        ],
+        "MDS API": [
+          {
+            "value": "/topTenHolding",
+            "count": 4
+          },
+          {
+            "value": "NULL",
+            "count": 1
+          }
+        ],
+        "MDS API attributes": [
+          {
+            "value": "NULL",
+            "count": 1
+          },
+          {
+            "value": "top10Holdings.items[].securityName",
+            "count": 1
+          },
+          {
+            "value": "top10Holdings.items[].marketValue",
+            "count": 1
+          },
+          {
+            "value": "top10Holdings.items[].currency",
+            "count": 1
+          },
+          {
+            "value": "top10Holdings.items[].weighting",
+            "count": 1
+          }
+        ],
+        "ENUM?": [
+          {
+            "value": "NULL",
+            "count": 5
+          }
+        ]
+      },
+      "duplicate_rows": 0,
+      "key_duplicates": {}
+    },
+    "fund_calendar_returns_view": {
+      "shape": {
+        "rows": 3,
+        "cols": 8
+      },
+      "columns": [
+        "Field Name",
+        "Column Name",
+        "Data Type",
+        "Description",
+        "Table",
+        "MDS API",
+        "MDS API attributes",
+        "ENUM?"
+      ],
+      "dtypes": {
+        "Field Name": "object",
+        "Column Name": "object",
+        "Data Type": "object",
+        "Description": "object",
+        "Table": "object",
+        "MDS API": "object",
+        "MDS API attributes": "object",
+        "ENUM?": "float64"
+      },
+      "missing": {
+        "count": {
+          "Field Name": 0,
+          "Column Name": 0,
+          "Data Type": 0,
+          "Description": 0,
+          "Table": 0,
+          "MDS API": 1,
+          "MDS API attributes": 1,
+          "ENUM?": 3
+        },
+        "percent": {
+          "Field Name": 0.0,
+          "Column Name": 0.0,
+          "Data Type": 0.0,
+          "Description": 0.0,
+          "Table": 0.0,
+          "MDS API": 0.3333333333333333,
+          "MDS API attributes": 0.3333333333333333,
+          "ENUM?": 1.0
+        }
+      },
+      "numeric_summary": {
+        "ENUM?": {
+          "count": 0.0,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        }
+      },
+      "correlation": {
+        "ENUM?": {
+          "ENUM?": NaN
+        }
+      },
+      "categorical_summary": {
+        "Field Name": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "Fund code",
+              "count": 1
+            },
+            {
+              "value": "Calendar year",
+              "count": 1
+            },
+            {
+              "value": "Calendar year return",
+              "count": 1
+            }
+          ]
+        },
+        "Column Name": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "fund_code",
+              "count": 1
+            },
+            {
+              "value": "calendar_year",
+              "count": 1
+            },
+            {
+              "value": "calendar_year_return",
+              "count": 1
+            }
+          ]
+        },
+        "Data Type": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "Text",
+              "count": 1
+            },
+            {
+              "value": "Date",
+              "count": 1
+            },
+            {
+              "value": "Decimal",
+              "count": 1
+            }
+          ]
+        },
+        "Description": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "Foreign key from fund_master_view",
+              "count": 1
+            },
+            {
+              "value": "Denote the calendar year of the return figure",
+              "count": 1
+            },
+            {
+              "value": "Denote the the performance of that calendar year in percentage",
+              "count": 1
+            }
+          ]
+        },
+        "Table": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "fund_quote_detail",
+              "count": 2
+            },
+            {
+              "value": "fund_product",
+              "count": 1
+            }
+          ]
+        },
+        "MDS API": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "/quoteDetail",
+              "count": 2
+            },
+            {
+              "value": "NULL",
+              "count": 1
+            }
+          ]
+        },
+        "MDS API attributes": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "NULL",
+              "count": 1
+            },
+            {
+              "value": "priceQuote.calendarReturns.items[].year",
+              "count": 1
+            },
+            {
+              "value": "priceQuote.calendarReturns.items[].annualCalendarYearReturn",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "low_cardinality_distributions": {
+        "Field Name": [
+          {
+            "value": "Fund code",
+            "count": 1
+          },
+          {
+            "value": "Calendar year",
+            "count": 1
+          },
+          {
+            "value": "Calendar year return",
+            "count": 1
+          }
+        ],
+        "Column Name": [
+          {
+            "value": "fund_code",
+            "count": 1
+          },
+          {
+            "value": "calendar_year",
+            "count": 1
+          },
+          {
+            "value": "calendar_year_return",
+            "count": 1
+          }
+        ],
+        "Data Type": [
+          {
+            "value": "Text",
+            "count": 1
+          },
+          {
+            "value": "Date",
+            "count": 1
+          },
+          {
+            "value": "Decimal",
+            "count": 1
+          }
+        ],
+        "Description": [
+          {
+            "value": "Foreign key from fund_master_view",
+            "count": 1
+          },
+          {
+            "value": "Denote the calendar year of the return figure",
+            "count": 1
+          },
+          {
+            "value": "Denote the the performance of that calendar year in percentage",
+            "count": 1
+          }
+        ],
+        "Table": [
+          {
+            "value": "fund_quote_detail",
+            "count": 2
+          },
+          {
+            "value": "fund_product",
+            "count": 1
+          }
+        ],
+        "MDS API": [
+          {
+            "value": "/quoteDetail",
+            "count": 2
+          },
+          {
+            "value": "NULL",
+            "count": 1
+          }
+        ],
+        "MDS API attributes": [
+          {
+            "value": "NULL",
+            "count": 1
+          },
+          {
+            "value": "priceQuote.calendarReturns.items[].year",
+            "count": 1
+          },
+          {
+            "value": "priceQuote.calendarReturns.items[].annualCalendarYearReturn",
+            "count": 1
+          }
+        ],
+        "ENUM?": [
+          {
+            "value": "NULL",
+            "count": 3
+          }
+        ]
+      },
+      "duplicate_rows": 0,
+      "key_duplicates": {}
+    },
+    "fund_manager_view": {
+      "shape": {
+        "rows": 3,
+        "cols": 8
+      },
+      "columns": [
+        "Field Name",
+        "Column Name",
+        "Data Type",
+        "Description",
+        "Table",
+        "MDS API",
+        "MDS API attributes",
+        "ENUM?"
+      ],
+      "dtypes": {
+        "Field Name": "object",
+        "Column Name": "object",
+        "Data Type": "object",
+        "Description": "object",
+        "Table": "object",
+        "MDS API": "object",
+        "MDS API attributes": "object",
+        "ENUM?": "float64"
+      },
+      "missing": {
+        "count": {
+          "Field Name": 0,
+          "Column Name": 0,
+          "Data Type": 0,
+          "Description": 0,
+          "Table": 0,
+          "MDS API": 1,
+          "MDS API attributes": 1,
+          "ENUM?": 3
+        },
+        "percent": {
+          "Field Name": 0.0,
+          "Column Name": 0.0,
+          "Data Type": 0.0,
+          "Description": 0.0,
+          "Table": 0.0,
+          "MDS API": 0.3333333333333333,
+          "MDS API attributes": 0.3333333333333333,
+          "ENUM?": 1.0
+        }
+      },
+      "numeric_summary": {
+        "ENUM?": {
+          "count": 0.0,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        }
+      },
+      "correlation": {
+        "ENUM?": {
+          "ENUM?": NaN
+        }
+      },
+      "categorical_summary": {
+        "Field Name": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "Fund code",
+              "count": 1
+            },
+            {
+              "value": "Fund manager",
+              "count": 1
+            },
+            {
+              "value": "Fund manager start date",
+              "count": 1
+            }
+          ]
+        },
+        "Column Name": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "fund_code",
+              "count": 1
+            },
+            {
+              "value": "fund_manager",
+              "count": 1
+            },
+            {
+              "value": "fund_manager_start_date",
+              "count": 1
+            }
+          ]
+        },
+        "Data Type": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "Text",
+              "count": 2
+            },
+            {
+              "value": "Date",
+              "count": 1
+            }
+          ]
+        },
+        "Description": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "Foreign key from fund_master_view",
+              "count": 1
+            },
+            {
+              "value": "Fund manager of the fund",
+              "count": 1
+            },
+            {
+              "value": "Denote when the fund manager start managing the fund",
+              "count": 1
+            }
+          ]
+        },
+        "Table": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "fund_quote_summary",
+              "count": 2
+            },
+            {
+              "value": "fund_product",
+              "count": 1
+            }
+          ]
+        },
+        "MDS API": {
+          "unique_count": 2,
+          "top_values": [
+            {
+              "value": "/fundQuoteSummary",
+              "count": 2
+            },
+            {
+              "value": "NULL",
+              "count": 1
+            }
+          ]
+        },
+        "MDS API attributes": {
+          "unique_count": 3,
+          "top_values": [
+            {
+              "value": "NULL",
+              "count": 1
+            },
+            {
+              "value": "mgmtAndContactInfo.mgmtInfos[].managerName",
+              "count": 1
+            },
+            {
+              "value": "mgmtAndContactInfo.mgmtInfos[].startDate",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "low_cardinality_distributions": {
+        "Field Name": [
+          {
+            "value": "Fund code",
+            "count": 1
+          },
+          {
+            "value": "Fund manager",
+            "count": 1
+          },
+          {
+            "value": "Fund manager start date",
+            "count": 1
+          }
+        ],
+        "Column Name": [
+          {
+            "value": "fund_code",
+            "count": 1
+          },
+          {
+            "value": "fund_manager",
+            "count": 1
+          },
+          {
+            "value": "fund_manager_start_date",
+            "count": 1
+          }
+        ],
+        "Data Type": [
+          {
+            "value": "Text",
+            "count": 2
+          },
+          {
+            "value": "Date",
+            "count": 1
+          }
+        ],
+        "Description": [
+          {
+            "value": "Foreign key from fund_master_view",
+            "count": 1
+          },
+          {
+            "value": "Fund manager of the fund",
+            "count": 1
+          },
+          {
+            "value": "Denote when the fund manager start managing the fund",
+            "count": 1
+          }
+        ],
+        "Table": [
+          {
+            "value": "fund_quote_summary",
+            "count": 2
+          },
+          {
+            "value": "fund_product",
+            "count": 1
+          }
+        ],
+        "MDS API": [
+          {
+            "value": "/fundQuoteSummary",
+            "count": 2
+          },
+          {
+            "value": "NULL",
+            "count": 1
+          }
+        ],
+        "MDS API attributes": [
+          {
+            "value": "NULL",
+            "count": 1
+          },
+          {
+            "value": "mgmtAndContactInfo.mgmtInfos[].managerName",
+            "count": 1
+          },
+          {
+            "value": "mgmtAndContactInfo.mgmtInfos[].startDate",
+            "count": 1
+          }
+        ],
+        "ENUM?": [
+          {
+            "value": "NULL",
+            "count": 3
+          }
+        ]
+      },
+      "duplicate_rows": 0,
+      "key_duplicates": {}
+    }
+  }
+}

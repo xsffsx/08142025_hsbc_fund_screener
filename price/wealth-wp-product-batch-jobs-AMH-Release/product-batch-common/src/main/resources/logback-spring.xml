@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- although reload is not much useful normal deployment in PCF as cannot
+	deploy file only it is still useful in local debug or patching by PCF SSH -->
+<configuration>
+
+    <!-- https://github.com/spring-projects/spring-boot/blob/2.2.x/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/logback/base.xml -->
+    <property name="ROLLING_FILE_NAME_PATTERN" value="${LOG_FILE}_%d{yyyy-MM-dd}.%i.log"/>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+
+	<springProfile name="!test">
+		<appender name="batchCouldLogAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+			<file>/var/log/app/product_batch_cloud_log.log</file>
+			<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+				<!-- daily rollover -->
+				<fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.gz</fileNamePattern>
+				<maxHistory>7</maxHistory>
+				<totalSizeCap>5MB</totalSizeCap>
+			</rollingPolicy>
+			<encoder>
+				<pattern>%-5p [Thread-%t] %d %c{1} | %m %n</pattern>
+			</encoder>
+		</appender>
+
+		<logger name="COULD_LOG_RECORDER" level="INFO" additivity="false" >
+			<appender-ref ref="batchCouldLogAppender" />
+		</logger>
+	</springProfile>
+
+</configuration>

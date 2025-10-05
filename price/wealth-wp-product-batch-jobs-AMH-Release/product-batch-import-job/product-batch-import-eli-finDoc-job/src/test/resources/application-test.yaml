@@ -1,0 +1,67 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  batch:
+    job:
+      enabled: false
+batch:
+  graphQLUrl: "http://localhost:8080/graphql"
+
+
+PDF:
+  basePath: "/appvol/product-spring-batch/bin/HKHBAP/config/pdf/"
+  IMPORTANT_FILE_FOR_DCDC_ELI: "${PDF.basePath}important_cmb_eli_dcdc.pdf"
+  IMPORTANT_FILE_FOR_PPR_ELI: "${PDF.basePath}important_cmb_eli_ppr.pdf"
+  IMPORTANT_FILE_FOR_PPR_PPN_1: "${PDF.basePath}important_cmb_ppn_ppr_1.pdf"
+  IMPORTANT_FILE_FOR_PPR_PPN_2: "${PDF.basePath}important_cmb_ppn_ppr_2.pdf"
+  IMPORTANT_FILE_FOR_PPN_FCN_1: "${PDF.basePath}important_cmb_ppn_fcn_1.pdf"
+  IMPORTANT_FILE_FOR_PPN_FCN_2: "${PDF.basePath}important_cmb_ppn_fcn_2.pdf"
+  IMPORTANT_FILE_FOR_PPN_STPDWN_1: "${PDF.basePath}important_cmb_ppn_stpdwn_1.pdf"
+  IMPORTANT_FILE_FOR_PPN_STPDWN_2: "${PDF.basePath}important_cmb_ppn_stpdwn_2.pdf"
+  IMPORTANT_FILE_FOR_PPN_UPOUT_1: "${PDF.basePath}important_cmb_ppn_upout_1.pdf"
+  IMPORTANT_FILE_FOR_PPN_UPOUT_2: "${PDF.basePath}important_cmb_ppn_upout_2.pdf"
+  IMPORTANT_FILE_FOR_PPN_TWSF_1: "${PDF.basePath}important_cmb_ppn_kos_1.pdf"
+  IMPORTANT_FILE_FOR_PPN_TWSF_2: "${PDF.basePath}important_cmb_ppn_kos_2.pdf"
+  IMPORTANT_FILE_FOR_DCDC: "${PDF.basePath}impotant_dcdc.pdf"
+  IMPORTANT_FILE_FOR_PPR: "${PDF.basePath}impotant_ppr.pdf"
+  IMPORTANT_FILE_FOR_STPDN: "${PDF.basePath}impotant_stpdn.pdf"
+  IMPORTANT_FILE_FOR_UPOUT: "${PDF.basePath}impotant_upout.pdf"
+  IMPORTANT_FILE_FOR_FCN: "${PDF.basePath}impotant_fcn.pdf"
+  IMPORTANT_FILE_FOR_TWSF: "${PDF.basePath}impotant_twsf.pdf"
+  IMPORTANT_FILE_FOR_CFFN: "${PDF.basePath}impotant_cffn.pdf"
+  IMPORTANT_FILE_FOR_DCNFORPP: "${PDF.basePath}impotant_dcnpp.pdf"
+  IMPORTANT_FILE_FOR_DCNFORNPP: "${PDF.basePath}impotant_dcnnpp.pdf"
+  IMPORTANT_FILE_FOR_PNOTE: "${PDF.basePath}impotant_pnote.pdf"
+  IMPORTANT_FILE_FOR_TWAC: "${PDF.basePath}impotant_twac.pdf"
+  IMPORTANT_FILE_FOR_RAN: "${PDF.basePath}impotant_ran.pdf"
+  IMPORTANT_FILE_FOR_STEEPENER: "${PDF.basePath}impotant_steepener.pdf"
+  IMPORTANT_FILE_FOR_UPOUTELI: "${PDF.basePath}impotant_uoeli.pdf"
+  IMPORTANT_FILE_FOR_FCELI: "${PDF.basePath}impotant_fceli.pdf"
+  IMPORTANT_FILE_FOR_INVERSE: "${PDF.basePath}impotant_inverse.pdf"
+  IMPORTANT_FILE_FOR_SBN: "${PDF.basePath}impotant_sbn.pdf"
+  IMPORTANT_FILE_FOR_LINEAR: "${PDF.basePath}impotant_linear.pdf"
+  IMPORTANT_FILE_FOR_FXN: "${PDF.basePath}impotant_fxn.pdf"
+  IMPORTANT_FILE_FOR_FXWCN: "${PDF.basePath}impotant_fxwcn.pdf"
+  IMPORTANT_FILE_FOR_BEN: "${PDF.basePath}impotant_ben.pdf"
+  IMPORTANT_FILE_FOR_BENELI: "${PDF.basePath}impotant_beneli.pdf"
+  IMPORTANT_FILE_FOR_APENDIX1: "${PDF.basePath}impotant_apendix1.pdf"
+  IMPORTANT_FILE_FOR_APENDIX2: "${PDF.basePath}impotant_apendix2.pdf"
+  IMPORTANT_FILE_FOR_APENDIX3: "${PDF.basePath}impotant_apendix3.pdf"
+  IMPORTANT_FILE_FOR_APENDIX4: "${PDF.basePath}impotant_apendix4.pdf"
+  IMPORTANT_FILE_FOR_APENDIX5: "${PDF.basePath}impotant_apendix5.pdf"
+
+
+ISSUER:
+  INFO:
+    UNDL_TYPE_CODE: "IR,FX"
+
+Chmod:
+  Script: "chmod 775"
+Chown:
+  Script: "chown wpsftp:wealth-grp"
+ELI:
+  SFTP:
+    Script: "src/test/resources/wpc_eli_findoc_transfer_test.sh"

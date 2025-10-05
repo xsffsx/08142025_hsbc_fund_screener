@@ -1,0 +1,20 @@
+{
+	"index": {
+		"number_of_shards": "3",
+		"number_of_replicas": "0",
+		"merge": {
+			"policy": {
+				"max_merged_segment": "500mb"
+			}
+		}
+	},
+	"analysis": {
+		"normalizer": {
+			"my_normalizer": {
+				"type": "custom",
+				"char_filter": [],
+				"filter": ["lowercase"]
+			}
+		}
+	}
+}

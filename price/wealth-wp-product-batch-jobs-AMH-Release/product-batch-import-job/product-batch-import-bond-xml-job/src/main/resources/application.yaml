@@ -1,0 +1,225 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+batch:
+  graphQLUrl: "https://product-graphql-b-debug.uat.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+  file:
+    pattern: ^{ctryRecCde}_{grpMembrRecCde}_{systemCde}_BOND_(\d{14})\.[Xx][Mm][Ll]$
+  format:
+    allow: "RBT"
+  create-custelig:
+    allow: "RBT"
+  size: 100
+
+system-default-values:
+  - systemCde: "RBT"
+    defaultValues:
+      allowBuyUtProdInd: "N"
+      allowBuyProdInd: "N"
+      allowSellProdInd: "N"
+      allowBuyAmtProdInd: "N"
+      allowSellUtProdInd: "N"
+      allowSellAmtProdInd: "N"
+      allowSellMipProdInd: "N"
+      allowSellMipUtProdInd: "N"
+      allowSellMipAmtProdInd: "N"
+      allowSwInProdInd: "N"
+      allowSwInUtProdInd: "N"
+      allowSwInAmtProdInd: "N"
+      allowSwOutProdInd: "N"
+      allowSwOutUtProdInd: "N"
+      allowSwOutAmtProdInd: "N"
+      qtyUnitProdCde: "FMT"
+      prodLocCde: "MSC"
+      suptRcblCashProdInd: "N"
+      suptRcblScripProdInd: "N"
+      dcmlPlaceTradeUnitNum: 0
+      asetUnderMgmtChrgProdInd: "N"
+      pldgLimitAssocAcctInd: "N"
+      "[ctryProdTradeCde[0]]": "HK"
+      dmyProdSubtpRecInd: "N"
+      dispComProdSrchInd: "N"
+      incmCharProdInd: "Y"
+      cptlGurntProdInd: "Y"
+      yieldEnhnProdInd: "N"
+      grwthCharProdInd: "N"
+      prtyProdSrchRsultNum: 0
+      availMktInfoInd: "N"
+      mrkToMktInd: "Y"
+      ccyInvstCde: "HKD"
+      prodShrtName: "XXX"
+      divrNum: 100
+      ccyProdMktPrcCde: "HKD"
+      restrInvstrProdInd: "N"
+      prodDervtCde: "N"
+      eqtyUndlInd: "N"
+      wlthAccumGoalInd: "Y"
+      planForRtireGoalInd: "Y"
+      educGoalInd: "Y"
+      liveInRtireGoalInd: "N"
+      protcGoalInd: "N"
+      mngSolnInd: "Y"
+      geoRiskInd: "N"
+      prodLqdyInd: "a"
+      gnrAcctTrdb: "Y"
+      gbaAcctTrdb: "N"
+
+      "[debtInstm.newlyIssBondInd]": "N"
+      "[debtInstm.rbpMigrInd]": "N"
+      "[debtInstm.mktOrderInd]": "N"
+      "[debtInstm.jadeBondProdInd]": "N"
+      "[debtInstm.bondIndusGrp]": "Fin"
+      "[debtInstm.isAlgoInd]": "Y"
+      "[debtInstm.isManualTradeInd]": "N"
+
+      "[tradeElig.ovridCuspCatEligInd]": "Y"
+      "[tradeElig.reqCmplRpqInd]": "Y"
+      "[tradeElig.ovridReqCmplRpqInd]": "N"
+      "[tradeElig.ovridReqFormInd]": "Y"
+      "[tradeElig.ageAllowTrdMinNum]": 18
+      "[tradeElig.ovridMinAgeRestrInd]": "N"
+      "[tradeElig.ovridMaxAgeRestrInd]": "Y"
+      "[tradeElig.operTypeCde]": "T"
+      "[tradeElig.ovridCorsCtryChkInd]": "Y"
+      "[tradeElig.ovridResCtryChkInd]": "Y"
+      "[tradeElig.ovridNatlChkInd]": "Y"
+      "[tradeElig.reqInvstHldgChkInd]": "N"
+      "[tradeElig.ovridInvstHldgChkInd]": "N"
+
+      "[restrCustCtry[0].restrCtryTypeCde]": "R"
+      "[restrCustCtry[0].ctryIsoCde]": "US"
+      "[restrCustCtry[0].restrCde]": "R"
+      "[restrCustCtry[1].restrCtryTypeCde]": "R"
+      "[restrCustCtry[1].ctryIsoCde]": "CA"
+      "[restrCustCtry[1].restrCde]": "R"
+      "[restrCustCtry[2].restrCtryTypeCde]": "C"
+      "[restrCustCtry[2].ctryIsoCde]": "US"
+      "[restrCustCtry[2].restrCde]": "R"
+      "[restrCustCtry[3].restrCtryTypeCde]": "C"
+      "[restrCustCtry[3].ctryIsoCde]": "CA"
+      "[restrCustCtry[3].restrCde]": "R"
+
+      "[esg.esgInd]": "N"
+
+  - systemCde: "AMHGSOPS.PD"
+    defaultValues:
+      prodSubtpCde: "BOND"
+      allowBuyProdInd: "N"
+      allowSellProdInd: "N"
+      allowBuyUtProdInd: "N"
+      allowBuyAmtProdInd: "N"
+      allowSellUtProdInd: "N"
+      allowSellAmtProdInd: "N"
+      allowSellMipProdInd: "N"
+      allowSellMipUtProdInd: "N"
+      allowSellMipAmtProdInd: "N"
+      allowSwInProdInd: "N"
+      allowSwInUtProdInd: "N"
+      allowSwInAmtProdInd: "N"
+      allowSwOutProdInd: "N"
+      allowSwOutUtProdInd: "N"
+      allowSwOutAmtProdInd: "N"
+      qtyUnitProdCde: "FMT"
+      prodLocCde: "MSC"
+      pldgLimitAssocAcctInd: "N"
+      suptRcblCashProdInd: "N"
+      suptRcblScripProdInd: "N"
+      asetUnderMgmtChrgProdInd: "N"
+      "[ctryProdTradeCde[0]]": "HK"
+      incmCharProdInd: "Y"
+      cptlGurntProdInd: "Y"
+      yieldEnhnProdInd: "N"
+      grwthCharProdInd: "N"
+      prtyProdSrchRsultNum: 0
+      availMktInfoInd: "N"
+      dmyProdSubtpRecInd: "N"
+      dispComProdSrchInd: "Y"
+      mrkToMktInd: "Y"
+      ccyProdMktPrcCde: "HKD"
+      dcmlPlaceTradeUnitNum: 0
+      restrInvstrProdInd: "N"
+      prodDervtCde: "N"
+      eqtyUndlInd: "N"
+      wlthAccumGoalInd: "Y"
+      planForRtireGoalInd: "Y"
+      educGoalInd: "Y"
+      liveInRtireGoalInd: "N"
+      protcGoalInd: "N"
+      mngSolnInd: "Y"
+      geoRiskInd: "N"
+      prodLqdyInd: "a"
+      gnrAcctTrdb: "Y"
+      gbaAcctTrdb: "N"
+      "[esg.esgInd]": "N"
+      "[debtInstm.prodSubtpCdeCat]": "BOND"
+      "[debtInstm.jadeBondProdInd]": "N"
+      "[debtInstm.newlyIssBondInd]": "N"
+      "[debtInstm.rbpMigrInd]": "N"
+      "[debtInstm.mktOrderInd]": "N"
+      "[debtInstm.invstIncrmSoldAmt]": 0
+      "[debtInstm.invstIncrmMinAmt]": 0
+      "[debtInstm.isAlgoInd]": "N"
+      "[debtInstm.isManualTradeInd]": "N"
+
+system-update-config:
+  - systemCde: "RBT"
+    config:
+      - collection: product
+        updateAttrs:
+          - "prodSubtpCde"
+          - "riskLvlCde"
+          - "busStartTm"
+          - "busEndTm"
+          - "prodMturDt"
+          - "ccyInvstCde"
+          - "invstInitMinAmt"
+          - "debtInstm.prodIssDt"
+          - "debtInstm.pdcyCoupnPymtCde"
+          - "debtInstm.coupnAnnlRate"
+          - "debtInstm.pymtCoupnNextDt"
+          - "debtInstm.flexMatOptInd"
+          - "debtInstm.invstIncrmMinAmt"
+          - "debtInstm.intIndAccrAmt"
+          - "debtInstm.mturExtDt"
+          - "debtInstm.subDebtInd"
+          - "debtInstm.bondStatCde"
+          - "debtInstm.ctryBondIssueCde"
+          - "debtInstm.cptlTierText"
+          - "debtInstm.coupnType"
+          - "debtInstm.coupnCurrStartDt"
+          - "debtInstm.coupnPrevStartDt"
+          - "debtInstm.intBasisCalcText"
+          - "debtInstm.invstSoldLestAmt"
+          - "debtInstm.invstIncrmSoldAmt"
+          - "debtInstm.coupnAnnlText"
+          - "altId"
+          - "ext"
+
+  - systemCde: "AMHGSOPS.PD"
+    config:
+      - collection: product
+        updateAttrs:
+          - "prodShrtName"
+          - "prodShrtPllName"
+          - "tradeCcy"
+          - "altId"
+
+  - systemCde: "MDSBE"
+    config:
+      - collection: product
+        updateAttrs:
+          - "allowBuyProdInd"
+          - "allowSellProdInd"
+          - "debtInstm.bondSetlDt"
+          - "debtInstm.intIndAccrAmt"
+          - "debtInstm.intAccrDayCnt"
+          - "debtInstm.yieldDt"
+          - "debtInstm.yieldEffDt"
+          - "debtInstm.yieldBidPct"
+          - "debtInstm.yieldOfferPct"

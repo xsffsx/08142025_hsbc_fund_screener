@@ -1,0 +1,14 @@
+query  prodTypeFinDocByFilter($filter: JSON!, $sort: JSON, $limit: Int = 0, $skip: Int = 0) {
+  prodTypeFinDocByFilter(filter: $filter, sort: $sort, limit: $limit, skip: $skip) {
+        ctryRecCde
+        grpMembrRecCde
+        prodTypeCde
+        prodSubtpCde
+        docFinTypeCde
+        langFinDocCde
+        rsrcItemIdFinDoc
+        urlDocText
+        recCreatDtTm
+        recUpdtDtTm
+  }
+}

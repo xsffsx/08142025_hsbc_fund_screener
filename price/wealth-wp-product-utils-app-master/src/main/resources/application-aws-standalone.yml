@@ -1,0 +1,34 @@
+management.endpoints:
+  shutdown:
+    enabled: true
+  health:
+    show-details: always
+  web:
+    exposure:
+      base-path: /monitor
+      include: "*"
+
+#spring:
+#  autoconfigure:
+#    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
+#  datasource:
+#    url: "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=xu03-scan.gsdegss.hk.dummy)(PORT=2001)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=UHKWPCA1.hk.dummy)))"
+#    username: WPCHKGLUA9
+#    password: "{cipher}08ecd25c138bd1ec7a94adf0df87a9f5c00727cd4f0ffe7872ca886e093fc764"
+#  data:
+#    mongodb:
+#      host: wealthhksgdocdb1.cluster-c4tkw11vtl4d.ap-southeast-1.docdb.amazonaws.com
+#      port: 20017
+#      database: WPC_HK_DEV
+#      username: WPCGLHKPA6_APPUSER
+#      password: "{cipher}c1dc3231e2100c8eb92ee62fb3fa1bdeab9c13dbcc153e7cd715c0c3157d0207f886d329b16f59a10c50b6356dbd37ac"
+#  servlet:
+#    multipart:
+#      max-file-size: 10MB
+#      max-request-size: 20MB
+
+product:
+  sync:
+    interval: 60   # 60 seconds by default
+    keep-data-sync-log-days: 7  # housekeeping data_sync_log out of the setting days
+    auto-watch: false  # start watch thread automatically

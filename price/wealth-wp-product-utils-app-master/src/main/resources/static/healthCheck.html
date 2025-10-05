@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Render Graph</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0, maxmum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/healthCheck.css" />
+    <script src="js/mermaid.min.js"></script>
+</head>
+
+<body>
+    <div class="container_loading" id="loading">
+        <div class="lading_circle lading_circle1"></div>
+        <div class="lading_circle lading_circle2"></div>
+        <div class="lading_circle"></div>
+    </div>
+
+    <div class="container_graph" id="main">
+        <div id="healthCheckDiv" class="div_graph"></div>
+        <div class="div_list">
+            <div class="graph_contain_title">Performance List</div>
+            <div class="div_list_items" id="div_list_items"></div>
+        </div>
+        <button class="graph_btn" onclick="healthCheck()">Check Now</button>
+        <div id="graph_box" class="graph_box">
+        </div>
+    </div>
+    <div id="div_prediv_pre" class="graph_box_pre"></div>
+    <script src="js/healthCheck.js"></script>
+</body>
+
+</html>

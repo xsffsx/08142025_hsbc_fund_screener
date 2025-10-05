@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62725",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:50:56.711999",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62725%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "6d240a50-352d-4521-8db4-17aa81654e75:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "voGDAbwPNQzcSQ3GEiyH_Z6y40IK_di2oUUDO4HmhjYq31blJPJaqA==",
+        "x-hsbc-request-correlation-id": "06c2b8e0-1c6b-4496-9d2f-07acacb24f6a",
+        "date": "Wed, 13 Aug 2025 13:50:56 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 928b9a46c60991369db0a5ad58525eca.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "587",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"2 Year Treasury Note Future Sept 25\",\"weighting\":7.07005,\"currency\":\"USD\",\"marketValue\":126450937},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"5 Year Treasury Note Future Sept 25\",\"weighting\":3.1344,\"currency\":\"USD\",\"marketValue\":-56060109},{\"market\":null,\"productType\":\"ST\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"European Option Expiring On 09/17/2025 To Buy Protection On Itraxx.Europe.C\",\"weighting\":2.42955,\"currency\":\"USD\",\"marketValue\":-43453601},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future Sept 25\",\"weighting\":2.14554,\"currency\":\"USD\",\"marketValue\":-38373938},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Nesco Holdings II Incorporated 5.5%\",\"weighting\":1.27864,\"currency\":\"USD\",\"marketValue\":22869043},{\"market\":\"ES\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grifols S.A. 7.125%\",\"weighting\":1.26128,\"currency\":\"USD\",\"marketValue\":22558635},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Centerfield Media Parent Inc 6.625%\",\"weighting\":1.21716,\"currency\":\"USD\",\"marketValue\":21769517},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"MPT Operating Partnership LP / MPT Finance Corporation 4.625%\",\"weighting\":1.17104,\"currency\":\"USD\",\"marketValue\":20944620},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CCO Holdings, LLC/ CCO Holdings Capital Corp. 4.5%\",\"weighting\":1.16004,\"currency\":\"USD\",\"marketValue\":20747906},{\"market\":\"BR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mc Brazil Downstream Trading Sarl 7.25%\",\"weighting\":1.13609,\"currency\":\"USD\",\"marketValue\":20319486}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

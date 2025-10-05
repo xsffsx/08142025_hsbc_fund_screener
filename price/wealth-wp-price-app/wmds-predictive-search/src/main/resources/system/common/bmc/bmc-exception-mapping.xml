@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:cst="http://castor.exolab.org/">
+	<description>SiteExceptionEntitys</description>
+	<class cst:name="com.hhhh.group.secwealth.mktdata.common.bmc.SiteExceptionEntitys">
+		<map-to cst:xml="siteEntitys" />
+		<field cst:name="siteEntityList"
+			cst:type="com.hhhh.group.secwealth.mktdata.common.bmc.SiteExceptionEntity"
+			collection="collection">
+			<bind-xml name="siteEntity" node="element" />
+		</field>
+		<field cst:name="bmcLogFilePath" cst:type="java.lang.String">
+			<bind-xml name="bmcLogFilePath" node="element" />
+		</field>
+	</class>
+
+	<class cst:name="com.hhhh.group.secwealth.mktdata.common.bmc.SiteExceptionEntity">
+		<field cst:name="prefix" cst:type="java.lang.String">
+			<bind-xml name="prefix" node="attribute" />
+		</field>
+		<field cst:name="countryCode" cst:type="java.lang.String">
+			<bind-xml name="countryCode" node="attribute" />
+		</field>
+		<field cst:name="groupMember" cst:type="java.lang.String">
+			<bind-xml name="groupMember" node="attribute" />
+		</field>
+		<field cst:name="timeDuration" cst:type="integer">
+			<bind-xml name="timeDuration" node="element" />
+		</field>
+		<field cst:name="errNum" cst:type="integer">
+			<bind-xml name="errNum" node="element" />
+		</field>
+		<field cst:name="errNumStart" cst:type="integer">
+			<bind-xml name="errNumStart" node="element" />
+		</field>
+		<field cst:name="errCdeThrownPastSec" cst:type="java.lang.String">
+			<bind-xml name="errCdeThrownPastSec" node="element" />
+		</field>
+		<field cst:name="errCdeExceedLimit" cst:type="java.lang.String">
+			<bind-xml name="errCdeExceedLimit" node="element" />
+		</field>
+		<field cst:name="errmgsThrownPastSec" cst:type="java.lang.String">
+			<bind-xml name="errmgsThrownPastSec" node="element" />
+		</field>
+		<field cst:name="errmgsExceedLimit" cst:type="java.lang.String">
+			<bind-xml name="errmgsExceedLimit" node="element" />
+		</field>
+		<field cst:name="counterList"
+			cst:type="com.hhhh.group.secwealth.mktdata.common.bmc.ExceptionCounter"
+			collection="collection">
+			<bind-xml name="exceptionCounter" node="element" />
+		</field>
+	</class>
+
+	<class cst:name="com.hhhh.group.secwealth.mktdata.common.bmc.ExceptionCounter">
+		<field cst:name="exceptionName" cst:type="java.lang.String">
+			<bind-xml name="exceptionName" node="attribute" />
+		</field>
+		<field cst:name="key" cst:type="java.lang.String">
+			<bind-xml name="key" node="attribute" />
+		</field>
+		<field cst:name="timeDuration" cst:type="integer">
+			<bind-xml name="timeDuration" node="element" />
+		</field>
+		<field cst:name="maxCount" cst:type="integer">
+			<bind-xml name="maxCount" node="element" />
+		</field>
+		<field cst:name="bmcErrCde" cst:type="java.lang.String">
+			<bind-xml name="bmcErrCde" node="element" />
+		</field>
+		<field cst:name="bmcErrMsg" cst:type="java.lang.String">
+			<bind-xml name="bmcErrMsg" node="element" />
+		</field>
+	</class>
+
+</mapping>
+    

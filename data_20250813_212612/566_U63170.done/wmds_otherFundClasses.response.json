@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63170",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:30:39.014422",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63170%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c3e490bd-6eb7-476a-8585-8d9c909f3192:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "13",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "99SSN49zH52MdAdH_pYzXAR4_97LCs-ETPvnNjxMfSWhmZ23B2FpaQ==",
+        "x-hsbc-request-correlation-id": "c116027b-9af9-4d83-8faf-9c8802292139",
+        "date": "Wed, 13 Aug 2025 13:30:38 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "13",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 5af7e2a3313b9d445377a246e1053f74.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "455",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HCIT-HSBC GLOBAL SUSTAINABLE MULTI-ASSET INCOME FUND (AM2-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM2-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63166\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSMAU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63166\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000748027\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MQYT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050539293\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50539293\"}]},{\"productName\":\"HCIT-HSBC GLOBAL SUSTAINABLE MULTI-ASSET INCOME FUND (AM3-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63172\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSMAR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63172\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000748050\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MQYR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050539292\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50539292\"}]},{\"productName\":\"HCIT-HSBC GLOBAL SUSTAINABLE MULTI-ASSET INCOME FUND (AM2-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM2-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63167\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSMAH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63167\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000748035\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MQYD\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050539291\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50539291\"}]},{\"productName\":\"HCIT-HSBC GLOBAL SUSTAINABLE MULTI-ASSET INCOME FUND (AM3-GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63171\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSMAG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63171\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000748076\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MQYP\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050539290\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50539290\"}]},{\"productName\":\"HCIT-HSBC GLOBAL SUSTAINABLE MULTI-ASSET INCOME FUND (AM3-CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63169\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSMAC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63169\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000748068\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MQYQ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050539288\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50539288\"}]},{\"productName\":\"HCIT-HSBC GLOBAL SUSTAINABLE MULTI-ASSET INCOME FUND (AM3-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63168\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GSMAA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63168\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000748043\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MQYK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050539287\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50539287\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

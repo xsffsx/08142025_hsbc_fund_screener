@@ -1,0 +1,41 @@
+HSBC Fund Screener Debug Log
+Generated: 20250906_145908
+Total Log Entries: 9
+================================================================================
+
+Entry #01:
+{'timestamp': '2025-09-06T15:00:12.316338', 'step': '步骤2', 'action': '找到下拉框', 'details': {'selector': '#dropdown-riskLevel', 'element_type': 'A标签'}}
+------------------------------------------------------------
+
+Entry #02:
+{'timestamp': '2025-09-06T15:00:12.350025', 'step': '步骤2', 'action': '点击下拉框', 'details': {'selector': '#dropdown-riskLevel', 'success': True}}
+------------------------------------------------------------
+
+Entry #03:
+{'timestamp': '2025-09-06T15:00:13.377343', 'step': '步骤2', 'action': '成功选择选项', 'details': {'selector': 'li:has-text("Speculative - 5")', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #04:
+{'timestamp': '2025-09-06T15:00:13.887064', 'step': '步骤3', 'action': '找到搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'element_type': 'A标签', 'success': True}}
+------------------------------------------------------------
+
+Entry #05:
+{'timestamp': '2025-09-06T15:00:14.219757', 'step': '步骤3', 'action': '成功点击搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #06:
+{'timestamp': '2025-09-06T15:00:19.334314', 'step': '步骤4', 'action': '成功点击Holdings标签', 'details': {'selector': 'button:has-text("Holdings"), a:has-text("Holdings"), [data-testid*="holdings"], [data-testid*="Holdings"]', 'success': True}}
+------------------------------------------------------------
+
+Entry #07:
+{'timestamp': '2025-09-06T15:00:21.342556', 'step': '步骤4', 'action': 'Holdings页面切换状态不明', 'details': {'url': 'https://investments3.personal-banking.hsbc.com.hk/public/utb/en-gb/fundScreenerResult', 'content_found': False, 'warning': True}}
+------------------------------------------------------------
+
+Entry #08:
+{'timestamp': '2025-09-06T15:00:24.372997', 'step': '步骤4.1', 'action': '成功点击Stock列标题', 'details': {'selector': 'th:has-text("Stock"), button:has-text("Stock"), [data-testid*="stock"], .stock', 'success': True}}
+------------------------------------------------------------
+
+Entry #09:
+{'timestamp': '2025-09-06T15:00:27.374109', 'step': '步骤5', 'action': '使用默认显示数量', 'details': {'action': 'skip_display_adjustment', 'reason': '使用页面默认显示数量', 'success': True}}
+------------------------------------------------------------
+

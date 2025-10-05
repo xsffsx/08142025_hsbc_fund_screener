@@ -1,0 +1,79 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "BlackRock World Gold Fund (Class A2)",
+    "data_type": "string",
+    "example": "BlackRock World Gold Fund (Class A2)"
+  },
+  "NAV": {
+    "frontend_name": "NAV",
+    "frontend_description": "净资产值",
+    "api_path": "summary.dayEndNAV",
+    "api_value": 73.28,
+    "currency_path": "summary.dayEndNAVCurrencyCode",
+    "currency_value": "USD",
+    "data_type": "number",
+    "example": "71.76 USD"
+  },
+  "YTD return": {
+    "frontend_name": "YTD return",
+    "frontend_description": "年初至今回报",
+    "api_path": "performance.calendarReturns.returnYTD",
+    "api_value": 89.2562,
+    "data_type": "percentage",
+    "example": "85.33%"
+  },
+  "1Y return": {
+    "frontend_name": "1Y return",
+    "frontend_description": "1年回报",
+    "api_path": "performance.annualizedReturns.return1Yr",
+    "api_value": 76.91936,
+    "data_type": "percentage",
+    "example": "76.36%"
+  },
+  "Fund class currency": {
+    "frontend_name": "Fund class currency",
+    "frontend_description": "基金类别货币",
+    "api_path": "header.currency",
+    "api_value": "USD",
+    "data_type": "string",
+    "example": "USD"
+  },
+  "1 year sharpe ratio": {
+    "frontend_name": "1 year sharpe ratio",
+    "frontend_description": "1年夏普比率",
+    "api_path": "risk[year=1].yearRisk.sharpeRatio",
+    "api_value": 1.635,
+    "data_type": "number",
+    "example": "1.635"
+  },
+  "Fund size (USD/Million)": {
+    "frontend_name": "Fund size (USD/Million)",
+    "frontend_description": "基金规模(美元/百万)",
+    "api_path": "summary.assetsUnderManagement",
+    "api_value": 6911586496,
+    "currency_path": "summary.assetsUnderManagementCurrencyCode",
+    "currency_value": "USD",
+    "data_type": "number_millions",
+    "example": "6911.59 (Million USD)",
+    "calculation": "assetsUnderManagement / 1000000"
+  },
+  "HSBC risk level": {
+    "frontend_name": "HSBC risk level",
+    "frontend_description": "汇丰风险等级",
+    "api_path": "summary.riskLvlCde",
+    "api_value": "5",
+    "data_type": "string",
+    "example": "5"
+  },
+  "Morningstar rating": {
+    "frontend_name": "Morningstar rating",
+    "frontend_description": "晨星评级",
+    "api_path": "rating.morningstarRating",
+    "api_value": "3",
+    "data_type": "string",
+    "example": "3 (stars)"
+  }
+}

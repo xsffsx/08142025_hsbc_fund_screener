@@ -1,0 +1,14 @@
+mutation updateProd($filter: JSON!, $operations: [OperationInput!]) {
+  updateProducts(filter: $filter, operations: $operations) {
+    productCount
+    products {
+      prodId
+    }
+    mutatedProducts {
+      prodId
+    }
+    invalidProducts {
+      prodId
+    }
+  }
+}

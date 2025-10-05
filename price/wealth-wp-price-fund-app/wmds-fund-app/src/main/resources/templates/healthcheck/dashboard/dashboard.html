@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Title</title>
+</head>
+<style type="text/css">
+table.sample1 {
+	border-width: 1px;
+	border-spacing:;
+	border-style: hidden;
+	border-color: #CECECE;
+	border-collapse: collapse;
+	background-color: #EDEDED;
+}
+
+table.sample1 th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: hidden;
+	border-color: white;
+	background-color: #CECECE;
+	-moz-border-radius:;
+}
+
+table.sample1 td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: solid;
+	border-color: white;
+	-moz-border-radius:;
+}
+
+#healthCheckTb {
+	border: 1px solid gray;
+}
+
+#healthCheckTb tr {
+	border: 1px solid gray;
+	height: 20px;
+	width: 200px;
+}
+
+#healthCheckTb td {
+	border: 1px solid gray;
+}
+</style>
+<body>
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<tr>
+			<td><b>MDS App Server </b> <span th:text="${INSTANCE_NAME}" /></td>
+			<td align="right"><font size="1">Request: <span
+					th:text="${requestTimestamp}" />;&nbsp;&nbsp;&nbsp;Response: <span th:text="${resposneTimestamp}"/>| Ver. <span th:text="${version}"/></font></td>
+		</tr>
+	</table>
+	<br />
+	<b>This page refreshes every <span th:text="${refreshTime}" />
+		seconds.
+	</b>
+	<br />
+	<br />
+	<span th:text="${results}" /> *
+	<FONT COLOR="#008000">OK</FONT> for positive status with response time;
+	*
+	<FONT COLOR="#FF0000">Failed</FONT> for negative status with Exception
+	name.
+	<br />
+	<br />
+
+	<table id="healthCheckTb">
+		<tr>
+			<th th:utext="${HEALTH_DASHBOARD}"></th>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td>
+				<form th:action="@{/healthcheck/dashboard}" method="post">
+					<input id="event" name="event" value="submit" type="hidden" />
+					<div class="buttons">
+						<button accesskey="s" onclick="" type="submit" name="submit"
+							value="submit">Refresh</button>
+					</div>
+				</form>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

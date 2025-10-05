@@ -1,0 +1,309 @@
+[
+    {
+    "attrName": "isrBondNameDesc",
+    "jsonPath": "debtInstm.isrBondNameDesc",
+    "dataType": "String",
+    "value": "dummy HOLDINGS PLC",
+    "desc": "Issuer",
+    "column": 1
+    },
+  {
+    "attrName": "credRtng[CRMOODYS].creditRtngCde",
+    "jsonPath": "debtInstm.credRtng[creditRtngAgcyCde].creditRtngCde",
+    "dataType": "creditRtngCde",
+    "value": "Baa1",
+    "desc": "Moodys Rating",
+    "column": 2
+  },
+  {
+    "attrName": "credRtng[CRSP].creditRtngCde",
+    "jsonPath": "debtInstm.credRtng[creditRtngAgcyCde].creditRtngCde",
+    "dataType": "creditRtngCde",
+    "value": "BBB",
+    "desc": "S&P Rating",
+    "column": 3
+  },
+  {
+    "value": "",
+    "desc": "Fitch Rating",
+    "remark": "not in use",
+    "column": 4
+  },
+  {
+    "attrName": "ccyProdCde",
+    "jsonPath": "ccyProdCde",
+    "dataType": "String",
+    "value": "USD",
+    "desc": "CCY",
+    "column": 5
+  },
+  {
+    "attrName": "prodIssDt",
+    "jsonPath": "debtInstm.prodIssDt",
+    "dataType": "Date",
+    "dateFormat": "MM/dd/yyyy",
+    "value": "05/03/2006",
+    "desc": "Issue Date",
+    "column": 6
+  },
+  {
+    "attrName": "prodMturDt",
+    "jsonPath": "prodMturDt",
+    "dataType": "Date",
+    "dateFormat": "MM/dd/yyyy",
+    "value": "05/02/2036",
+    "desc": "Maturity",
+    "column": 7
+  },
+  {
+    "attrName": "coupnAnnlRate",
+    "jsonPath": "debtInstm.coupnAnnlRate",
+    "dataType": "BigDecimal",
+    "value": "6.5",
+    "desc": "Coupon"
+  },
+  {
+    "attrName": "pdcyCoupnPymtCde",
+    "jsonPath": "debtInstm.pdcyCoupnPymtCde",
+    "dataType": "String",
+    "value": "2",
+    "desc": "Coupon Freq"
+  },
+  {
+    "attrName": "pymtCoupnNextDt",
+    "jsonPath": "debtInstm.pymtCoupnNextDt",
+    "dataType": "Date",
+    "dateFormat": "MM/dd/yyyy",
+    "value": "11/02/2023",
+    "desc": "Next Coupon",
+    "column": 10
+  },
+  {
+    "attrName": "invstInitMinAmt",
+    "jsonPath": "invstInitMinAmt",
+    "dataType": "BigDecimal",
+    "value": "100,000",
+    "desc": "Min Size",
+    "column": 11
+  },
+  {
+    "attrName": "intIndAccrAmt",
+    "jsonPath": "debtInstm.intIndAccrAmt",
+    "dataType": "BigDecimal",
+    "value": "1.71528",
+    "desc": "Accrued Interest",
+    "column": 12
+  },
+  {
+    "attrName": "extAble",
+    "jsonPath": "debtInstm.flexMatOptInd",
+    "dataType": "flexMatOptInd",
+    "value": "N",
+    "desc": "Extend Term Flag",
+    "remark": "if extAble=Y or callAble=Y, then flexMatOptInd=Y, else N",
+    "column": 13
+  },
+  {
+    "attrName": "callAble",
+    "jsonPath": "debtInstm.flexMatOptInd",
+    "dataType": "flexMatOptInd",
+    "value": "N",
+    "desc": "Callable Flag",
+    "remark": "if extAble=Y or callAble=Y, then flexMatOptInd=Y, else N",
+    "column": 14
+  },
+  {
+    "attrName": "putAble",
+    "value": "N",
+    "desc": "Putable Flag",
+    "remark": "not in use",
+    "column": 15
+  },
+  {
+    "attrName": "convAble",
+    "value": "N",
+    "desc": "Convertible Flag",
+    "remark": "not in use",
+    "column": 16
+  },
+  {
+    "attrName": "capitalTier",
+    "value": "SUB",
+    "desc": "Debt Seniority Type Code",
+    "remark": "not in use",
+    "column": 17
+  },
+  {
+    "attrName": "cptlTierText",
+    "jsonPath": "debtInstm.cptlTierText",
+    "dataType": "String",
+    "value": "Subordinated",
+    "desc": "Debt Seniority Type Code Description",
+    "remark": "if startsWith Subordinated, then debtInstm.subDebtInd = Y else N",
+    "column": 18
+  },
+  {
+    "attrName": "prodBodLotQtyCnt",
+    "jsonPath": "debtInstm.prodBodLotQtyCnt",
+    "dataType": "prodBodLotQtyCnt",
+    "value": "1,430,811,000",
+    "desc": "Total Amount Outstanding",
+    "column": 19
+  },
+  {
+    "attrName": "prodName",
+    "jsonPath": "prodName",
+    "dataType": "String",
+    "value": "HSBA   6.500 05/02/36",
+    "desc": "Bond Name",
+    "column": 20
+  },
+  {
+    "attrName": "altId[I].prodAltNum",
+    "jsonPath": "altId[prodCdeAltClassCde].prodAltNum",
+    "dataType": "altId",
+    "value": "US404280AG49",
+    "desc": "ISIN Code",
+    "column": 21
+  },
+  {
+    "attrName": "grntrNameDesc",
+    "jsonPath": "debtInstm.grntrNameDesc",
+    "dataType": "String",
+    "value": "",
+    "desc": "Guarantor",
+    "column": 22
+  },
+  {
+    "value": "US",
+    "desc": "Country of Issuance",
+    "remark": "not in use",
+    "column": 23
+  },
+  {
+    "value": "United States",
+    "desc": "Issue Country",
+    "remark": "not in use",
+    "column": 24
+  },
+  {
+    "attrName": "ctryBondIssueCde",
+    "jsonPath": "debtInstm.ctryBondIssueCde",
+    "dataType": "String",
+    "value": "GB",
+    "desc": "Country of Incorporation",
+    "column": 25
+  },
+  {
+    "value": "United Kingdom",
+    "desc": "Country of Incorporation Description",
+    "remark": "not in use",
+    "column": 26
+  },
+  {
+    "value": "GB",
+    "desc": "Domicile",
+    "remark": "not in use",
+    "column": 27
+  },
+  {
+    "value": "United Kingdom",
+    "desc": "Domicile Description",
+    "remark": "not in use",
+    "column": 28
+  },
+  {
+    "value": "GB",
+    "desc": "Issuer Country Code",
+    "remark": "not in use",
+    "column": 29
+  },
+  {
+    "value": "UNITED KINGDOM",
+    "desc": "Issuer ISO Country Name",
+    "remark": "not in use",
+    "column": 30
+  },
+  {
+    "attrName": "bondCallNextDt",
+    "jsonPath": "debtInstm.bondCallNextDt",
+    "dataType": "Date",
+    "dateFormat": "MM/dd/yyyy",
+    "value": "",
+    "desc": "Call Date",
+    "column": 31
+  },
+  {
+    "attrName": "coupnType",
+    "jsonPath": "debtInstm.coupnType",
+    "dataType": "String",
+    "value": "FXPV",
+    "desc": "Coupon Type",
+    "column": 32
+  },
+  {
+    "attrName": "couponTypeDesc",
+    "value": "Fixed:Plain Vanilla Fixed Coupon",
+    "desc": "Coupon Type Description",
+    "remark": "not in use",
+    "column": 33
+  },
+  {
+    "attrName": "intBasisCalcText",
+    "jsonPath": "debtInstm.intBasisCalcText",
+    "dataType": "String",
+    "value": "30E/360 ICMA, 30E/360 (Eurobond basis), 30/360 AIBD (Euro)",
+    "desc": "Interest Rate Basis",
+    "column": 34
+  },
+  {
+    "attrName": "indexFltRateName",
+    "jsonPath": "debtInstm.indexFltRateName",
+    "dataType": "String",
+    "value": "",
+    "desc": "Floating Rate Index",
+    "column": 35
+  },
+  {
+    "attrName": "bondFltSprdRate",
+    "jsonPath": "debtInstm.bondFltSprdRate",
+    "dataType": "BigDecimal",
+    "value": "",
+    "desc": "Floating Rate Spread",
+    "column": 36
+  },
+  {
+    "attrName": "prodAltPrimNum",
+    "jsonPath": "prodAltPrimNum",
+    "dataType": "String",
+    "value": "US404280AG49",
+    "desc": "Bond Code",
+    "column": 37
+  },
+  {
+    "attrName": "isrId",
+    "jsonPath": "debtInstm.isrBondName",
+    "dataType": "isrBondName",
+    "value": "0x0000fa0004a4e5bf",
+    "desc": "Issuer ID",
+    "remark": "If Issuer OrgID is blank, then use Issuer ID",
+    "column": 38
+  },
+  {
+    "attrName": "isrOrgId",
+    "jsonPath": "debtInstm.isrBondName",
+    "dataType": "isrBondName",
+    "value": "13109",
+    "desc": "Issuer OrgID",
+    "remark": "If Issuer OrgID is blank, then use Issuer ID",
+    "column": 39
+  },
+  {
+    "attrName": "grntrName",
+    "jsonPath": "debtInstm.grntrName",
+    "dataType": "String",
+    "value": "",
+    "desc": "Guarantor OrgID",
+    "column": 40
+  }
+  ]

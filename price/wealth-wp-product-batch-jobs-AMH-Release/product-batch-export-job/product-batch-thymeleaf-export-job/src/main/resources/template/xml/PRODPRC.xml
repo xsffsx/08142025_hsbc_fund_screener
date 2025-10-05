@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prodPrcLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <prodPrc th:each="product : ${documents}">
+        <prodKeySeg>
+            <ctryRecCde th:text="${product.get('ctryRecCde')}"/>
+            <grpMembrRecCde th:text="${product.get('grpMembrRecCde')}"/>
+            <prodTypeCde th:text="${product.get('prodTypeCde')}"/>
+            <prodCde th:text="${product.get('prodCde')}"/>
+        </prodKeySeg>
+        <prodPrcSeg>
+            <prcEffDt th:text="${#dates.format(product.prcEffDt, 'yyyy-MM-dd')}"/>
+            <pdcyPrcCde th:text="D"/>
+            <prcInpDt th:text="${#dates.format(product.prcInpDt, 'yyyy-MM-dd')}"/>
+            <ccyProdMktPrcCde th:text="${product.get('ccyProdMktPrcCde')}"/>
+            <prodBidPrcAmt product:notNull="${#doubles.stripTrailingZeros(product.get('prodBidPrcAmt'))}"/>
+            <prodOffrPrcAmt product:notNull="${#doubles.stripTrailingZeros(product.get('prodOffrPrcAmt'))}"/>
+            <prodNavPrcAmt product:notNull="${#doubles.stripTrailingZeros(product.get('prodNavPrcAmt'))}"/>
+            <prodMktPrcAmt product:notNull="${#doubles.stripTrailingZeros(product.get('prodMktPrcAmt'))}"/>
+            <prodMktPricePrevAmt product:notNull="${#doubles.stripTrailingZeros(product.get('prodMktPricePrevAmt'))}"/>
+            <stockPrcSeg th:if="${product.get('stockInstm') != null}" th:with="sec=${product.get('stockInstm')}">
+                <prodPrcChngPct product:notNull="${#doubles.stripTrailingZeros(sec.get('prodPrcChngPct'))}"/>
+                <prodPrcChngAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('prodPrcChngAmt'))}"/>
+                <prodOpenPrcAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('prodOpenPrcAmt'))}"/>
+                <prodTdyHighPrcAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('prodTdyHighPrcAmt'))}"/>
+                <prodTdyLowPrcAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('prodTdyLowPrcAmt'))}"/>
+                <shareTrdCnt th:text="${#objects.nullSafe(sec.get('shareTrdCnt'), 0)}"/>
+                <prodTrnvrAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('prodTrnvrAmt'))}"/>
+                <prodPrc52WeekMaxAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('prodPrc52WeekMaxAmt'))}"/>
+                <prodPrc52WeekMinAmt product:notNull="${#doubles.stripTrailingZeros(sec.get('prodPrc52WeekMinAmt'))}"/>
+                <prcEarnRate product:notNull="${#doubles.stripTrailingZeros(sec.get('prcEarnRate'))}"/>
+                <divPct product:notNull="${#doubles.stripTrailingZeros(sec.get('divPct'))}"/>
+            </stockPrcSeg>
+            <recDtTmSeg>
+                <recCreatDtTm th:text="${#timeZones.format(product.prodPrcUpdtDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+                <recUpdtDtTm th:text="${#timeZones.format(product.prodPrcUpdtDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+                <timeZone product:notNull="${#timeZones.get()}"/>
+            </recDtTmSeg>
+        </prodPrcSeg>
+    </prodPrc>
+</prodPrcLst>

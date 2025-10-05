@@ -1,0 +1,40 @@
+{
+  "_id" : "ALL/user-defined-field-mapping",
+  "forEntity" : "ALL",
+  "name" : "user-defined-field-mapping",
+  "description" : "User Defined Field Mapping",
+  "config" : {
+    "ext" : [
+      {
+        "jsonPath": "extField",
+        "fieldCde": "extField",
+        "fieldDataTypeText": "Char",
+        "fieldTypeCde": "A"
+      }
+    ],
+    "udf" : [
+      {
+        "jsonPath" : "udfField",
+        "fieldCde" : "udfField",
+        "fieldDataTypeText": "Char",
+        "fieldTypeCde" : "A"
+      }
+    ],
+    "extEg" : [
+      {
+        "jsonPath" : "extEgField",
+        "fieldCde" : "extEgField",
+        "fieldDataTypeText": "Char",
+        "fieldTypeCde" : "A"
+      }
+    ],
+    "extOp" : [
+      {
+        "jsonPath" : "extOpField",
+        "fieldCde" : "extOpField",
+        "fieldDataTypeText": "Char",
+        "fieldTypeCde" : "A"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63215",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:24.648033",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63215%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "beff5f9e-c759-450a-87f9-b779900df9f7:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "OK36E_YsQoCMyUJxiq86AR-KMmkfkxl0p18WEltIhclaTxS074JJvA==",
+        "x-hsbc-request-correlation-id": "7efab0a5-4612-4d0d-981c-99d9d096152a",
+        "date": "Wed, 13 Aug 2025 13:47:24 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "31",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 612d6e38ca8a5e65776b064d65f27d36.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "423",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"ALLIANZ THEMATICA (CLASS AMG-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AMG-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63213\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R3213\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63213\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1974910355\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001H7WJ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050564145\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50564145\"}]},{\"productName\":\"ALLIANZ THEMATICA (CLASS AMG-H2-RMB-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AMG-H2-RMB-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63216\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R3216\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63216\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2014482397\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001I311\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050564148\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50564148\"}]},{\"productName\":\"ALLIANZ THEMATICA (CLASS A-EUR-AD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-EUR-AD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63221\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R3221\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63221\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1479563717\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019CJT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050564427\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50564427\"}]},{\"productName\":\"ALLIANZ THEMATICA (CLASS AMG-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AMG-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63218\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R3218\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63218\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2106854487\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001JBSJ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050564150\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50564150\"}]},{\"productName\":\"ALLIANZ THEMATICA (CLASS AMG-H2-SGD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AMG-H2-SGD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63217\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R3217\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63217\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2023250504\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001I4B7\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050564149\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50564149\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

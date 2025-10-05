@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62226",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:58:29.506932",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62226%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "1b209b8e-2a06-42a6-9e0f-88d4c1986426:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "KDFcv99VzCnZd8zalmwi3Bz2UVYjatPgvIGYRK5W6MODHqnnGo_XMQ==",
+        "x-hsbc-request-correlation-id": "4009bd8b-2737-4fc4-9c1b-ebe478159303",
+        "date": "Wed, 13 Aug 2025 13:58:29 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "21",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 cf3f6fdeca566994c58f318f9ac55680.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1264",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62226\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"DC\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":13.382,\"currency\":\"USD\",\"companyName\":\"HSBC Investment Funds Trust - HSBC China Growth Fund (Class AC-USD)\",\"securityDescription\":null,\"changeAmount\":0.06,\"changePercent\":0.45038,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001BFGG\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDIM\",\"categoryLevel1Name\":\"Equity Developing Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":11.94386},{\"year\":2023,\"annualCalendarYearReturn\":-14.02533},{\"year\":2022,\"annualCalendarYearReturn\":-27.7527},{\"year\":2021,\"annualCalendarYearReturn\":-17.66772},{\"year\":2020,\"annualCalendarYearReturn\":39.81923}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":17.89811,\"dailyPerformanceNAV\":18.98284},{\"period\":\"1M\",\"trailingTotalReturn\":5.42217,\"dailyPerformanceNAV\":5.26233},{\"period\":\"3M\",\"trailingTotalReturn\":12.64973,\"dailyPerformanceNAV\":8.36505},{\"period\":\"6M\",\"trailingTotalReturn\":17.75153,\"dailyPerformanceNAV\":11.87092},{\"period\":\"1Y\",\"trailingTotalReturn\":24.94111,\"dailyPerformanceNAV\":27.35059},{\"period\":\"3Y\",\"trailingTotalReturn\":2.85548,\"dailyPerformanceNAV\":3.08263},{\"period\":\"5Y\",\"trailingTotalReturn\":-3.81177,\"dailyPerformanceNAV\":-3.65575},{\"period\":\"10Y\",\"trailingTotalReturn\":2.13109,\"dailyPerformanceNAV\":2.51766}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2007-06-06\"},\"entityUpdatedTime\":\"2025-08-13T21:58:29.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62226\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HMACF\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62226\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349701\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BFGG\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047922\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047922\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

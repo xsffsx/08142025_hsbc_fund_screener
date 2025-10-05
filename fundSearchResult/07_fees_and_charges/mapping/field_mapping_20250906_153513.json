@@ -1,0 +1,43 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "HSBC GIF - ULTRA SHORT DURATION BOND (CLASS PC-HKD-ACC)",
+    "data_type": "string",
+    "example": "HSBC GIF - ULTRA SHORT DURATION BOND (CLASS PC-HKD-ACC)"
+  },
+  "HSBC initial charge": {
+    "frontend_name": "HSBC initial charge",
+    "frontend_description": "HSBC初始费用/认购费",
+    "api_path": "profile.initialCharge",
+    "api_value": 2,
+    "data_type": "percentage",
+    "example": "2.00%"
+  },
+  "Annual management fee (maximum)": {
+    "frontend_name": "Annual management fee (maximum)",
+    "frontend_description": "年度管理费(最高)",
+    "api_path": "profile.annualManagementFee",
+    "api_value": 0.3,
+    "data_type": "percentage",
+    "example": "0.30%"
+  },
+  "HSBC minimum investment amount": {
+    "frontend_name": "HSBC minimum investment amount",
+    "frontend_description": "HSBC最低投资金额",
+    "api_path": "summary.switchInMinAmount",
+    "api_value": 10000,
+    "data_type": "currency",
+    "currency_code": "HKD",
+    "example": "HKD 10,000"
+  },
+  "Expense ratio": {
+    "frontend_name": "Expense ratio",
+    "frontend_description": "费用比率/总费用率",
+    "api_path": "profile.expenseRatio",
+    "api_value": 0.45,
+    "data_type": "percentage",
+    "example": "0.45%"
+  }
+}

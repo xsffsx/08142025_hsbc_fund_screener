@@ -1,0 +1,4531 @@
+[
+  {
+    "attrName": "yieldBidClosePct",
+    "fieldName": "YIELD_BID_CLOSE_PCT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "Float",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldBidPct",
+    "fieldName": "YIELD_BID_PCT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "Float",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldDt",
+    "fieldName": "YIELD_DT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "Date",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldEffDt",
+    "fieldName": "YIELD_EFF_DT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "Date",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldOfferClosePct",
+    "fieldName": "YIELD_OFFER_CLOSE_PCT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "Float",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldOfferPct",
+    "fieldName": "YIELD_OFFER_PCT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "Float",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldToCallBidPct",
+    "fieldName": "YIELD_TO_CALL_BID_PCT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "Float",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldToCallOfferPct",
+    "fieldName": "YIELD_TO_CALL_OFFER_PCT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "Float",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldToMturBidPct",
+    "fieldName": "YIELD_TO_MTUR_BID_PCT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "Float",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldToMturOfferText",
+    "fieldName": "YIELD_TO_MTUR_OFFER_TEXT",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "String",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "yieldTypeCde",
+    "fieldName": "YIELD_TYPE_CDE",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "String",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "docFinTypeCde",
+    "fieldName": "DOC_FIN_TYPE_CDE",
+    "table": "PROD_FIN_DOC",
+    "type": "String",
+    "parent": "finDoc[*]"
+  },
+  {
+    "attrName": "finDocConHashCde",
+    "fieldName": "FIN_DOC_CON_HASH_CDE",
+    "table": "PROD_FIN_DOC",
+    "type": "String",
+    "parent": "finDoc[*]"
+  },
+  {
+    "attrName": "finDocCustClassCde",
+    "fieldName": "FIN_DOC_CUST_CLASS_CDE",
+    "table": "PROD_FIN_DOC",
+    "type": "String",
+    "parent": "finDoc[*]"
+  },
+  {
+    "attrName": "langFinDocCde",
+    "fieldName": "LANG_FIN_DOC_CDE",
+    "table": "PROD_FIN_DOC",
+    "type": "String",
+    "parent": "finDoc[*]"
+  },
+  {
+    "attrName": "rsrcItemIdFinDoc",
+    "fieldName": "RSRC_ITEM_ID_FIN_DOC",
+    "table": "PROD_FIN_DOC",
+    "type": "Long",
+    "parent": "finDoc[*]"
+  },
+  {
+    "attrName": "urlDocText",
+    "fieldName": "URL_DOC_TEXT",
+    "table": "PROD_FIN_DOC",
+    "type": "String",
+    "parent": "finDoc[*]"
+  },
+  {
+    "attrName": "formReqCde",
+    "fieldName": "FORM_REQ_CDE",
+    "table": "PROD_FORM_REQMT",
+    "type": "String",
+    "parent": "formReqmt[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_FORM_REQMT",
+    "type": "DateTime",
+    "parent": "formReqmt[*]"
+  },
+  {
+    "attrName": "chanlComnCde",
+    "fieldName": "CHANL_COMN_CDE",
+    "table": "PROD_OFER_CHANL",
+    "type": "String",
+    "parent": "oferChanl[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_OFER_CHANL",
+    "type": "DateTime",
+    "parent": "oferChanl[*]"
+  },
+  {
+    "attrName": "fieldCde",
+    "fieldName": "FIELD_CDE",
+    "table": "PROD_OVRID_FIELD",
+    "type": "String",
+    "parent": "ovridField[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_OVRID_FIELD",
+    "type": "DateTime",
+    "parent": "ovridField[*]"
+  },
+  {
+    "attrName": "perfm1MoPct",
+    "fieldName": "PERFM_1MO_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfm1YrAmt",
+    "fieldName": "PERFM_1YR_AMT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfm1YrPct",
+    "fieldName": "PERFM_1YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfm3MoPct",
+    "fieldName": "PERFM_3MO_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfm3YrAmt",
+    "fieldName": "PERFM_3YR_AMT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfm3YrPct",
+    "fieldName": "PERFM_3YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfm5YrPct",
+    "fieldName": "PERFM_5YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfm6MoAmt",
+    "fieldName": "PERFM_6MO_AMT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfm6MoPct",
+    "fieldName": "PERFM_6MO_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfmCalcDt",
+    "fieldName": "PERFM_CALC_DT",
+    "table": "PROD_PERFM",
+    "type": "Date",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfmExt1YrPct",
+    "fieldName": "PERFM_EXT_1YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfmSinceLnchPct",
+    "fieldName": "PERFM_SINCE_LNCH_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfmTypeCde",
+    "fieldName": "PERFM_TYPE_CDE",
+    "table": "PROD_PERFM",
+    "type": "String",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfmYrToDtAmt",
+    "fieldName": "PERFM_YR_TO_DT_AMT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfmYrToDtPct",
+    "fieldName": "PERFM_YR_TO_DT_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "rtrnVoltl1YrPct",
+    "fieldName": "RTRN_VOLTL_1YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "rtrnVoltl3YrPct",
+    "fieldName": "RTRN_VOLTL_3YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "rtrnVoltlExt1YrPct",
+    "fieldName": "RTRN_VOLTL_EXT_1YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "rtrnVoltlExt3YrPct",
+    "fieldName": "RTRN_VOLTL_EXT_3YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "performance"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_PERFM",
+    "type": "DateTime",
+    "parent": "performance"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "PROD_PERFM",
+    "type": "DateTime",
+    "parent": "performance"
+  },
+  {
+    "attrName": "perfm1MoPct",
+    "fieldName": "PERFM_1MO_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfm1YrAmt",
+    "fieldName": "PERFM_1YR_AMT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfm1YrPct",
+    "fieldName": "PERFM_1YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfm3MoPct",
+    "fieldName": "PERFM_3MO_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfm3YrAmt",
+    "fieldName": "PERFM_3YR_AMT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfm3YrPct",
+    "fieldName": "PERFM_3YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfm5YrPct",
+    "fieldName": "PERFM_5YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfm6MoAmt",
+    "fieldName": "PERFM_6MO_AMT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfm6MoPct",
+    "fieldName": "PERFM_6MO_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfmCalcDt",
+    "fieldName": "PERFM_CALC_DT",
+    "table": "PROD_PERFM",
+    "type": "Date",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfmExt1YrPct",
+    "fieldName": "PERFM_EXT_1YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfmSinceLnchPct",
+    "fieldName": "PERFM_SINCE_LNCH_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfmTypeCde",
+    "fieldName": "PERFM_TYPE_CDE",
+    "table": "PROD_PERFM",
+    "type": "String",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfmYrToDtAmt",
+    "fieldName": "PERFM_YR_TO_DT_AMT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "perfmYrToDtPct",
+    "fieldName": "PERFM_YR_TO_DT_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "rtrnVoltl1YrPct",
+    "fieldName": "RTRN_VOLTL_1YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "rtrnVoltl3YrPct",
+    "fieldName": "RTRN_VOLTL_3YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "rtrnVoltlExt1YrPct",
+    "fieldName": "RTRN_VOLTL_EXT_1YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "rtrnVoltlExt3YrPct",
+    "fieldName": "RTRN_VOLTL_EXT_3YR_PCT",
+    "table": "PROD_PERFM",
+    "type": "Float",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_PERFM",
+    "type": "DateTime",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "PROD_PERFM",
+    "type": "DateTime",
+    "parent": "benchmark"
+  },
+  {
+    "attrName": "limitPrcDviatPct",
+    "fieldName": "LIMIT_PRC_DVIAT_PCT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prcChkngIntrnCnt",
+    "fieldName": "PRC_CHKNG_INTRN_CNT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Long",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prcEffDt",
+    "fieldName": "PRC_EFF_DT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Date",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prcEffExtnlDt",
+    "fieldName": "PRC_EFF_EXTNL_DT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Date",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodAltPrimNum",
+    "fieldName": "PROD_ALT_PRIM_NUM",
+    "table": "PROD_PRC_CMPAR",
+    "type": "String",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodBidPrcAmt",
+    "fieldName": "PROD_BID_PRC_AMT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodBidPrcExtnlAmt",
+    "fieldName": "PROD_BID_PRC_EXTNL_AMT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodMktPrcAmt",
+    "fieldName": "PROD_MKT_PRC_AMT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodMktPrcExtnlAmt",
+    "fieldName": "PROD_MKT_PRC_EXTNL_AMT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodNavPrcAmt",
+    "fieldName": "PROD_NAV_PRC_AMT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodNavPrcExtnlAmt",
+    "fieldName": "PROD_NAV_PRC_EXTNL_AMT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodOffrPrcAmt",
+    "fieldName": "PROD_OFFR_PRC_AMT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodOffrPrcExtnlAmt",
+    "fieldName": "PROD_OFFR_PRC_EXTNL_AMT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodPrcDviatPct",
+    "fieldName": "PROD_PRC_DVIAT_PCT",
+    "table": "PROD_PRC_CMPAR",
+    "type": "Float",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodPrcTypeCde",
+    "fieldName": "PROD_PRC_TYPE_CDE",
+    "table": "PROD_PRC_CMPAR",
+    "type": "String",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodTypeCde",
+    "fieldName": "PROD_TYPE_CDE",
+    "table": "PROD_PRC_CMPAR",
+    "type": "String",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "rptPrcChkngDtTm",
+    "fieldName": "RPT_PRC_CHKNG_DT_TM",
+    "table": "PROD_PRC_CMPAR",
+    "type": "DateTime",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "rptProdPrcTypeCde",
+    "fieldName": "RPT_PROD_PRC_TYPE_CDE",
+    "table": "PROD_PRC_CMPAR",
+    "type": "String",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "prodIdRel",
+    "fieldName": "PROD_ID_REL",
+    "table": "PROD_PROD_RELN",
+    "type": "Long",
+    "parent": "prodReln[*]"
+  },
+  {
+    "attrName": "prodProdRelnCde",
+    "fieldName": "PROD_PROD_RELN_CDE",
+    "table": "PROD_PROD_RELN",
+    "type": "String",
+    "parent": "prodReln[*]"
+  },
+  {
+    "attrName": "ctryIsoCde",
+    "fieldName": "CTRY_ISO_CDE",
+    "table": "PROD_RESTR_CUST_CTRY",
+    "type": "String",
+    "parent": "restrCustCtry[*]"
+  },
+  {
+    "attrName": "restrCde",
+    "fieldName": "RESTR_CDE",
+    "table": "PROD_RESTR_CUST_CTRY",
+    "type": "String",
+    "parent": "restrCustCtry[*]"
+  },
+  {
+    "attrName": "restrCtryTypeCde",
+    "fieldName": "RESTR_CTRY_TYPE_CDE",
+    "table": "PROD_RESTR_CUST_CTRY",
+    "type": "String",
+    "parent": "restrCustCtry[*]"
+  },
+  {
+    "attrName": "custProdCatCde",
+    "fieldName": "CUST_PROD_CAT_CDE",
+    "table": "PROD_RESTR_CUST_GROUP",
+    "type": "String",
+    "parent": "restrCustGroup[*]"
+  },
+  {
+    "attrName": "eligCuspCatInd",
+    "fieldName": "ELIG_CUSP_CAT_IND",
+    "table": "PROD_RESTR_CUST_GROUP",
+    "type": "String",
+    "parent": "restrCustGroup[*]"
+  },
+  {
+    "attrName": "ctoffEmplyEligChkInd",
+    "fieldName": "CTOFF_EMPLY_ELIG_CHK_IND",
+    "table": "PROD_STAF_LIC_CHECK",
+    "type": "String",
+    "parent": "stafLicCheck[*]"
+  },
+  {
+    "attrName": "employPosnCde",
+    "fieldName": "EMPLOY_POSN_CDE",
+    "table": "PROD_STAF_LIC_CHECK",
+    "type": "String",
+    "parent": "stafLicCheck[*]"
+  },
+  {
+    "attrName": "emplyEligCtoffDt",
+    "fieldName": "EMPLY_ELIG_CTOFF_DT",
+    "table": "PROD_STAF_LIC_CHECK",
+    "type": "Date",
+    "parent": "stafLicCheck[*]"
+  },
+  {
+    "attrName": "frmlaEmplyEligText",
+    "fieldName": "FRMLA_EMPLY_ELIG_TEXT",
+    "table": "PROD_STAF_LIC_CHECK",
+    "type": "String",
+    "parent": "stafLicCheck[*]"
+  },
+  {
+    "attrName": "frmlaEmpEligBfrCtoffText",
+    "fieldName": "FRMLA_EMP_ELIG_BFR_CTOFF_TEXT",
+    "table": "PROD_STAF_LIC_CHECK",
+    "type": "String",
+    "parent": "stafLicCheck[*]"
+  },
+  {
+    "attrName": "ovridEmplyEligChkInd",
+    "fieldName": "OVRID_EMPLY_ELIG_CHK_IND",
+    "table": "PROD_STAF_LIC_CHECK",
+    "type": "String",
+    "parent": "stafLicCheck[*]"
+  },
+  {
+    "attrName": "actionLowRpqScrText",
+    "fieldName": "ACTION_LOW_RPQ_SCR_TEXT",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ageAllowTrdMaxNum",
+    "fieldName": "AGE_ALLOW_TRD_MAX_NUM",
+    "table": "PROD_TRADE_ELIG",
+    "type": "Long",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ageAllowTrdMinNum",
+    "fieldName": "AGE_ALLOW_TRD_MIN_NUM",
+    "table": "PROD_TRADE_ELIG",
+    "type": "Long",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "operTypeCde",
+    "fieldName": "OPER_TYPE_CDE",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridCorsCtryChkInd",
+    "fieldName": "OVRID_CORS_CTRY_CHK_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridCuspCatEligInd",
+    "fieldName": "OVRID_CUSP_CAT_ELIG_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridInvstHldgChkInd",
+    "fieldName": "OVRID_INVST_HLDG_CHK_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridMaxAgeRestrInd",
+    "fieldName": "OVRID_MAX_AGE_RESTR_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridMinAgeRestrInd",
+    "fieldName": "OVRID_MIN_AGE_RESTR_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridNatlChkInd",
+    "fieldName": "OVRID_NATL_CHK_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridReqCmplRpqInd",
+    "fieldName": "OVRID_REQ_CMPL_RPQ_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridPlaceCtryChkInd",
+    "fieldName": "OVRID_PLACE_CTRY_CHK_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridReqFormInd",
+    "fieldName": "OVRID_REQ_FORM_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridRestrFisclCtryChkInd",
+    "fieldName": "OVRID_RESTR_FISCL_CTRY_CHK_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridResCtryChkInd",
+    "fieldName": "OVRID_RES_CTRY_CHK_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridRpqVlidPrdInd",
+    "fieldName": "OVRID_RPQ_VLID_PRD_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "prdVlidRpqCde",
+    "fieldName": "PRD_VLID_RPQ_CDE",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "prdVlidRpqNum",
+    "fieldName": "PRD_VLID_RPQ_NUM",
+    "table": "PROD_TRADE_ELIG",
+    "type": "Long",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "reqCmplRpqInd",
+    "fieldName": "REQ_CMPL_RPQ_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "reqInvstHldgChkInd",
+    "fieldName": "REQ_INVST_HLDG_CHK_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridBusCtryChkInd",
+    "fieldName": "OVRID_BUS_CTRY_CHK_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "ovridPriCtryChkInd",
+    "fieldName": "OVRID_PRI_CTRY_CHK_IND",
+    "table": "PROD_TRADE_ELIG",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "asetAllocWghtPct",
+    "fieldName": "ASET_ALLOC_WGHT_PCT",
+    "table": "TB_ASET_GEO_LOC_ALLOC",
+    "type": "Float",
+    "parent": "asetGeoLocAlloc[*]"
+  },
+  {
+    "attrName": "geoLocCde",
+    "fieldName": "GEO_LOC_CDE",
+    "table": "TB_ASET_GEO_LOC_ALLOC",
+    "type": "String",
+    "parent": "asetGeoLocAlloc[*]"
+  },
+  {
+    "attrName": "asetAllocWghtPct",
+    "fieldName": "ASET_ALLOC_WGHT_PCT",
+    "table": "TB_ASET_SIC_ALLOC",
+    "type": "Float",
+    "parent": "asetSicAlloc[*]"
+  },
+  {
+    "attrName": "sicCde",
+    "fieldName": "SIC_CDE",
+    "table": "TB_ASET_SIC_ALLOC",
+    "type": "String",
+    "parent": "asetSicAlloc[*]"
+  },
+  {
+    "attrName": "ccyFromCde",
+    "fieldName": "CCY_FROM_CDE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "String",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "ccyLinkDepstCde",
+    "fieldName": "CCY_LINK_DEPST_CDE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "String",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "ccyToCde",
+    "fieldName": "CCY_TO_CDE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "String",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "depstPlusTypeCde",
+    "fieldName": "DEPST_PLUS_TYPE_CDE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "String",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "exchgBreakEvenRate",
+    "fieldName": "EXCHG_BREAK_EVEN_RATE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "Float",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "exchgInitRate",
+    "fieldName": "EXCHG_INIT_RATE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "Float",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "bondFltSprdRate",
+    "fieldName": "BOND_FLT_SPRD_RATE",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "exchgRateFixDt",
+    "fieldName": "EXCHG_RATE_FIX_DT",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "Date",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "exchgSpotRate",
+    "fieldName": "EXCHG_SPOT_RATE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "Float",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "exchgTrigRate",
+    "fieldName": "EXCHG_TRIG_RATE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "Float",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "factrConvRate",
+    "fieldName": "FACTR_CONV_RATE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "Float",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "intRate",
+    "fieldName": "INT_RATE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "Float",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "knockTypeCde",
+    "fieldName": "KNOCK_TYPE_CDE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "String",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "obsrvEndDt",
+    "fieldName": "OBSRV_END_DT",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "Date",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "obsrvStartDt",
+    "fieldName": "OBSRV_START_DT",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "Date",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "prodExtnlCde",
+    "fieldName": "PROD_EXTNL_CDE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "String",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "prodExtnlSuffNum",
+    "fieldName": "PROD_EXTNL_SUFF_NUM",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "String",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "rtnOptCde",
+    "fieldName": "RTN_OPT_CDE",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "String",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "tailrMadeDepstInd",
+    "fieldName": "TAILR_MADE_DEPST_IND",
+    "table": "TB_CCY_OPT_LINK_DEPST",
+    "type": "String",
+    "parent": "ccyOptLinkDepst"
+  },
+  {
+    "attrName": "bondCallNextDt",
+    "fieldName": "BOND_CALL_NEXT_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "bondCloseDt",
+    "fieldName": "BOND_CLOSE_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "bidPrcAmt",
+    "fieldName": "BID_PRC_AMT",
+    "table": "TB_MPF_INSTM",
+    "type": "Float",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "bondSetlDt",
+    "fieldName": "BOND_SETL_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "bondStatCde",
+    "fieldName": "BOND_STAT_CDE",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "coupnAnnlRate",
+    "fieldName": "COUPN_ANNL_RATE",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "coupnAnnlText",
+    "fieldName": "COUPN_ANNL_TEXT",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "coupnCurrStartDt",
+    "fieldName": "COUPN_CURR_START_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "coupnExtInstmRate",
+    "fieldName": "COUPN_EXT_INSTM_RATE",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "coupnPrevRate",
+    "fieldName": "COUPN_PREV_RATE",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "coupnPrevStartDt",
+    "fieldName": "COUPN_PREV_START_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "coupnType",
+    "fieldName": "COUPN_TYPE",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "bidPrcCcy",
+    "fieldName": "BID_PRC_CCY",
+    "table": "TB_MPF_INSTM",
+    "type": "String",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "cptlTierText",
+    "fieldName": "CPTL_TIER_TEXT",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "ctryBondIssueCde",
+    "fieldName": "CTRY_BOND_ISSUE_CDE",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "dscntMrgnBbuyPct",
+    "fieldName": "DSCNT_MRGN_BBUY_PCT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "dscntMrgnBselPct",
+    "fieldName": "DSCNT_MRGN_BSEL_PCT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "flexMatOptInd",
+    "fieldName": "FLEX_MAT_OPT_IND",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "grntrName",
+    "fieldName": "GRNTR_NAME",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "indexFltRateName",
+    "fieldName": "INDEX_FLT_RATE_NAME",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "intAccrDayCnt",
+    "fieldName": "INT_ACCR_DAY_CNT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "bidPrcDp",
+    "fieldName": "BID_PRC_DP",
+    "table": "TB_MPF_INSTM",
+    "type": "Long",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "intBasisCalcText",
+    "fieldName": "INT_BASIS_CALC_TEXT",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "intIndAccrAmt",
+    "fieldName": "INT_IND_ACCR_AMT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "invstIncrmMinAmt",
+    "fieldName": "INVST_INCRM_MIN_AMT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "invstIncrmSoldAmt",
+    "fieldName": "INVST_INCRM_SOLD_AMT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "invstSoldLestAmt",
+    "fieldName": "INVST_SOLD_LEST_AMT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "isrBondName",
+    "fieldName": "ISR_BOND_NAME",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "isrDesc",
+    "fieldName": "ISR_DESC",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "issueNum",
+    "fieldName": "ISSUE_NUM",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "mturExtDt",
+    "fieldName": "MTUR_EXT_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "pdcyCoupnPymtCde",
+    "fieldName": "PDCY_COUPN_PYMT_CDE",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "prcBondRecvDtTm",
+    "fieldName": "PRC_BOND_RECV_DT_TM",
+    "table": "TB_DEBT_INSTM",
+    "type": "DateTime",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "prodBodLotQtyCnt",
+    "fieldName": "PROD_BOD_LOT_QTY_CNT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "prodCloseBidPrcAmt",
+    "fieldName": "PROD_CLOSE_BID_PRC_AMT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "prodCloseOffrPrcAmt",
+    "fieldName": "PROD_CLOSE_OFFR_PRC_AMT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "prodIssDt",
+    "fieldName": "PROD_ISS_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "pymtCoupnNextDt",
+    "fieldName": "PYMT_COUPN_NEXT_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "shrBidCnt",
+    "fieldName": "SHR_BID_CNT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "shrOffrCnt",
+    "fieldName": "SHR_OFFR_CNT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "srTypeCde",
+    "fieldName": "SR_TYPE_CDE",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "subDebtInd",
+    "fieldName": "SUB_DEBT_IND",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldBidClosePct",
+    "fieldName": "YIELD_BID_CLOSE_PCT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldBidPct",
+    "fieldName": "YIELD_BID_PCT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldDt",
+    "fieldName": "YIELD_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldEffDt",
+    "fieldName": "YIELD_EFF_DT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Date",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldOfferClosePct",
+    "fieldName": "YIELD_OFFER_CLOSE_PCT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldToMturPct",
+    "fieldName": "YIELD_TO_MTUR_PCT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Float",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "yieldOfferPct",
+    "fieldName": "YIELD_OFFER_PCT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldOfferText",
+    "fieldName": "YIELD_OFFER_TEXT",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldToCallBidPct",
+    "fieldName": "YIELD_TO_CALL_BID_PCT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldToCallOfferPct",
+    "fieldName": "YIELD_TO_CALL_OFFER_PCT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldToMturBidPct",
+    "fieldName": "YIELD_TO_MTUR_BID_PCT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "yieldToMturOfferText",
+    "fieldName": "YIELD_TO_MTUR_OFFER_TEXT",
+    "table": "TB_DEBT_INSTM",
+    "type": "String",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "creditRtngAgcyCde",
+    "fieldName": "CREDIT_RTNG_AGCY_CDE",
+    "table": "TB_DEBT_INSTM_CRED_RTNG",
+    "type": "String",
+    "parent": "debtInstm.credRtng[*]"
+  },
+  {
+    "attrName": "creditRtngCde",
+    "fieldName": "CREDIT_RTNG_CDE",
+    "table": "TB_DEBT_INSTM_CRED_RTNG",
+    "type": "String",
+    "parent": "debtInstm.credRtng[*]"
+  },
+  {
+    "attrName": "isrPllDesc",
+    "fieldName": "ISR_PLL_DESC",
+    "table": "TB_DEBT_INSTM_TRNSL",
+    "type": "String",
+    "parent": "debtInstm.trnsl"
+  },
+  {
+    "attrName": "isrSllDesc",
+    "fieldName": "ISR_SLL_DESC",
+    "table": "TB_DEBT_INSTM_TRNSL",
+    "type": "String",
+    "parent": "debtInstm.trnsl"
+  },
+  {
+    "attrName": "custSellQtaCnt",
+    "fieldName": "CUST_SELL_QTA_CNT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Long",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "denAmt",
+    "fieldName": "DEN_AMT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Float",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "dscntBuyPct",
+    "fieldName": "DSCNT_BUY_PCT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Float",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "dscntSellPct",
+    "fieldName": "DSCNT_SELL_PCT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Float",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "eqtyLinkInvstTypeCde",
+    "fieldName": "EQTY_LINK_INVST_TYPE_CDE",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "lnchProdInd",
+    "fieldName": "LNCH_PROD_IND",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "offerTypeCde",
+    "fieldName": "OFFER_TYPE_CDE",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "pdcyCallCde",
+    "fieldName": "PDCY_CALL_CDE",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "pdcyKnockInCde",
+    "fieldName": "PDCY_KNOCK_IN_CDE",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "prodExtnlCatCde",
+    "fieldName": "PROD_EXTNL_CAT_CDE",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "prodExtnlCde",
+    "fieldName": "PROD_EXTNL_CDE",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "prodExtnlTypeCde",
+    "fieldName": "PROD_EXTNL_TYPE_CDE",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "pymtDt",
+    "fieldName": "PYMT_DT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Date",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "rtrvProdExtnlInd",
+    "fieldName": "RTRV_PROD_EXTNL_IND",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "ruleQtaAltmtCde",
+    "fieldName": "RULE_QTA_ALTMT_CDE",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "setlDt",
+    "fieldName": "SETL_DT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Date",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "suptAonInd",
+    "fieldName": "SUPT_AON_IND",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "String",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "trdDt",
+    "fieldName": "TRD_DT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Date",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "trdMinAmt",
+    "fieldName": "TRD_MIN_AMT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Float",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "valnDt",
+    "fieldName": "VALN_DT",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Date",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "disIndc",
+    "fieldName": "DIS_INDC",
+    "table": "TB_MPF_INSTM",
+    "type": "String",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "crncyInstmUndlPriceCde",
+    "fieldName": "CRNCY_INSTM_UNDL_PRICE_CDE",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "String",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "instmEntlCnt",
+    "fieldName": "INSTM_ENTL_CNT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "instmUndlCde",
+    "fieldName": "INSTM_UNDL_CDE",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "String",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "instmUndlText",
+    "fieldName": "INSTM_UNDL_TEXT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "String",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodBreakEvenCallPrcAmt",
+    "fieldName": "PROD_BREAK_EVEN_CALL_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodBreakEvenLowPrcAmt",
+    "fieldName": "PROD_BREAK_EVEN_LOW_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodBreakEvenPrcAmt",
+    "fieldName": "PROD_BREAK_EVEN_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodBreakEvenPutPrcAmt",
+    "fieldName": "PROD_BREAK_EVEN_PUT_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "fundMpfCde",
+    "fieldName": "FUND_MPF_CDE",
+    "table": "TB_MPF_INSTM",
+    "type": "String",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "prodBreakEvenUpprPrcAmt",
+    "fieldName": "PROD_BREAK_EVEN_UPPR_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodCloseCallPrcAmt",
+    "fieldName": "PROD_CLOSE_CALL_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodCloseLowPrcAmt",
+    "fieldName": "PROD_CLOSE_LOW_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodClosePrcAmt",
+    "fieldName": "PROD_CLOSE_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodClosePutPrcAmt",
+    "fieldName": "PROD_CLOSE_PUT_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodCloseUpprPrcAmt",
+    "fieldName": "PROD_CLOSE_UPPR_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodExerPrcAmt",
+    "fieldName": "PROD_EXER_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodIdUndlInstm",
+    "fieldName": "PROD_ID_UNDL_INSTM",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Long",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodKnockInPriceAmt",
+    "fieldName": "PROD_KNOCK_IN_PRICE_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodKnockInPriceInitPct",
+    "fieldName": "PROD_KNOCK_IN_PRICE_INIT_PCT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodStrkCallPrcAmt",
+    "fieldName": "PROD_STRK_CALL_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodStrkCallPriceInitPct",
+    "fieldName": "PROD_STRK_CALL_PRICE_INIT_PCT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodStrkPrcAmt",
+    "fieldName": "PROD_STRK_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodStrkPriceInitPct",
+    "fieldName": "PROD_STRK_PRICE_INIT_PCT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodStrkPutPrcAmt",
+    "fieldName": "PROD_STRK_PUT_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "sprdCnt",
+    "fieldName": "SPRD_CNT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Long",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "offerPrcAmt",
+    "fieldName": "OFFER_PRC_AMT",
+    "table": "TB_MPF_INSTM",
+    "type": "Float",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "offerPrcCcy",
+    "fieldName": "OFFER_PRC_CCY",
+    "table": "TB_MPF_INSTM",
+    "type": "String",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "offerPrcDp",
+    "fieldName": "OFFER_PRC_DP",
+    "table": "TB_MPF_INSTM",
+    "type": "Long",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "perfm1MoPct",
+    "fieldName": "PERFM_1MO_PCT",
+    "table": "TB_MPF_INSTM",
+    "type": "Float",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "perfm1YrPct",
+    "fieldName": "PERFM_1YR_PCT",
+    "table": "TB_MPF_INSTM",
+    "type": "Float",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "perfm3YrPct",
+    "fieldName": "PERFM_3YR_PCT",
+    "table": "TB_MPF_INSTM",
+    "type": "Float",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "perfm5YrPct",
+    "fieldName": "PERFM_5YR_PCT",
+    "table": "TB_MPF_INSTM",
+    "type": "Float",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "perfm6MoPct",
+    "fieldName": "PERFM_6MO_PCT",
+    "table": "TB_MPF_INSTM",
+    "type": "Float",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "perfmCumPct",
+    "fieldName": "PERFM_CUM_PCT",
+    "table": "TB_MPF_INSTM",
+    "type": "Float",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "perfmSinceLnchPct",
+    "fieldName": "PERFM_SINCE_LNCH_PCT",
+    "table": "TB_MPF_INSTM",
+    "type": "Float",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "pfrmEffDt",
+    "fieldName": "PFRM_EFF_DT",
+    "table": "TB_MPF_INSTM",
+    "type": "Date",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "pfrmUpdtDt",
+    "fieldName": "PFRM_UPDT_DT",
+    "table": "TB_MPF_INSTM",
+    "type": "Date",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "prcEffDt",
+    "fieldName": "PRC_EFF_DT",
+    "table": "TB_MPF_INSTM",
+    "type": "Date",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "prodMpfCde",
+    "fieldName": "PROD_MPF_CDE",
+    "table": "TB_MPF_INSTM",
+    "type": "String",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "rmk",
+    "fieldName": "RMK",
+    "table": "TB_MPF_INSTM",
+    "type": "String",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "seqNum",
+    "fieldName": "SEQ_NUM",
+    "table": "TB_MPF_INSTM",
+    "type": "Long",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "allowBuyAmtProdInd",
+    "fieldName": "ALLOW_BUY_AMT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowBuyProdInd",
+    "fieldName": "ALLOW_BUY_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowBuyUtProdInd",
+    "fieldName": "ALLOW_BUY_UT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSellAmtProdInd",
+    "fieldName": "ALLOW_SELL_AMT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSellMipAmtProdInd",
+    "fieldName": "ALLOW_SELL_MIP_AMT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSellMipProdInd",
+    "fieldName": "ALLOW_SELL_MIP_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSellMipUtProdInd",
+    "fieldName": "ALLOW_SELL_MIP_UT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSellProdInd",
+    "fieldName": "ALLOW_SELL_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSellUtProdInd",
+    "fieldName": "ALLOW_SELL_UT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSwInAmtProdInd",
+    "fieldName": "ALLOW_SW_IN_AMT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSwInProdInd",
+    "fieldName": "ALLOW_SW_IN_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSwInUtProdInd",
+    "fieldName": "ALLOW_SW_IN_UT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSwOutAmtProdInd",
+    "fieldName": "ALLOW_SW_OUT_AMT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSwOutProdInd",
+    "fieldName": "ALLOW_SW_OUT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "allowSwOutUtProdInd",
+    "fieldName": "ALLOW_SW_OUT_UT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "asetCatExtnlCde",
+    "fieldName": "ASET_CAT_EXTNL_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "asetClassCde",
+    "fieldName": "ASET_CLASS_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "asetText",
+    "fieldName": "ASET_TEXT",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "asetUnderMgmtChrgProdInd",
+    "fieldName": "ASET_UNDER_MGMT_CHRG_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "ccyProdCde",
+    "fieldName": "CCY_PROD_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "asetVoltlClassMajrPrntCde",
+    "fieldName": "ASET_VOLTL_CLASS_MAJR_PRNT_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "availMktInfoInd",
+    "fieldName": "AVAIL_MKT_INFO_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "bchmkName",
+    "fieldName": "BCHMK_NAME",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "bchmkPllName",
+    "fieldName": "BCHMK_PLL_NAME",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "bchmkSllName",
+    "fieldName": "BCHMK_SLL_NAME",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "busEndTm",
+    "fieldName": "BUS_END_TM",
+    "table": "TB_PROD",
+    "type": "LocalTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "busStartTm",
+    "fieldName": "BUS_START_TM",
+    "table": "TB_PROD",
+    "type": "LocalTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "ccyInvstCde",
+    "fieldName": "CCY_INVST_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "ccyProdMktPrcCde",
+    "fieldName": "CCY_PROD_MKT_PRC_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "chrgCatCde",
+    "fieldName": "CHRG_CAT_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "cntlAdvcInd",
+    "fieldName": "CNTL_ADVC_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "cptlGurntProdInd",
+    "fieldName": "CPTL_GURNT_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "ctryProdTradeCde[*]",
+    "fieldName": "CTRY_PROD_TRADE_1_CDE,CTRY_PROD_TRADE_2_CDE,CTRY_PROD_TRADE_3_CDE,CTRY_PROD_TRADE_4_CDE,CTRY_PROD_TRADE_5_CDE,",
+    "table": "TB_PROD",
+    "type": "[String]",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "ctryRecCde",
+    "fieldName": "CTRY_REC_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "dcmlPlaceTradeUnitNum",
+    "fieldName": "DCML_PLACE_TRADE_UNIT_NUM",
+    "table": "TB_PROD",
+    "type": "Long",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "dispComProdSrchInd",
+    "fieldName": "DISP_COM_PROD_SRCH_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "divrNum",
+    "fieldName": "DIVR_NUM",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "dmyProdSubtpRecInd",
+    "fieldName": "DMY_PROD_SUBTP_REC_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "educGoalInd",
+    "fieldName": "EDUC_GOAL_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "eqtyUndlInd",
+    "fieldName": "EQTY_UNDL_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "forgnProdInd",
+    "fieldName": "FORGN_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "geoRiskInd",
+    "fieldName": "GEO_RISK_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "grpMembrRecCde",
+    "fieldName": "GRP_MEMBR_REC_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "grwthCharProdInd",
+    "fieldName": "GRWTH_CHAR_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "incmCharProdInd",
+    "fieldName": "INCM_CHAR_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "introProdCurrPrdInd",
+    "fieldName": "INTRO_PROD_CURR_PRD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "invstImigProdInd",
+    "fieldName": "INVST_IMIG_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "invstInitMaxAmt",
+    "fieldName": "INVST_INIT_MAX_AMT",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "invstInitMinAmt",
+    "fieldName": "INVST_INIT_MIN_AMT",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "islmProdInd",
+    "fieldName": "ISLM_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "liveInRtireGoalInd",
+    "fieldName": "LIVE_IN_RTIRE_GOAL_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "loanProdOdMrgnPct",
+    "fieldName": "LOAN_PROD_OD_MRGN_PCT",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "mktInvstCde",
+    "fieldName": "MKT_INVST_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "mngSolnInd",
+    "fieldName": "MNG_SOLN_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "mrkToMktInd",
+    "fieldName": "MRK_TO_MKT_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "noScribFeeProdInd",
+    "fieldName": "NO_SCRIB_FEE_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "planForRtireGoalInd",
+    "fieldName": "PLAN_FOR_RTIRE_GOAL_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "pldgLimitAssocAcctInd",
+    "fieldName": "PLDG_LIMIT_ASSOC_ACCT_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prcEffDt",
+    "fieldName": "PRC_EFF_DT",
+    "table": "TB_PROD",
+    "type": "Date",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prcInpDt",
+    "fieldName": "PRC_INP_DT",
+    "table": "TB_PROD",
+    "type": "Date",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prdDervRvsEffDt",
+    "fieldName": "PRD_DERV_RVS_EFF_DT",
+    "table": "TB_PROD",
+    "type": "Date",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prdInvstTnorNum",
+    "fieldName": "PRD_INVST_TNOR_NUM",
+    "table": "TB_PROD",
+    "type": "Long",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prdProdCde",
+    "fieldName": "PRD_PROD_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prdProdNum",
+    "fieldName": "PRD_PROD_NUM",
+    "table": "TB_PROD",
+    "type": "Long",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prdRtrnAvgNum",
+    "fieldName": "PRD_RTRN_AVG_NUM",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "priceHistDelvrDtTm",
+    "fieldName": "PRICE_HIST_DELVR_DT_TM",
+    "table": "TB_PROD",
+    "type": "DateTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "priceHistSrceRdyStatCde",
+    "fieldName": "PRICE_HIST_SRCE_RDY_STAT_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodAltPrimNum",
+    "fieldName": "PROD_ALT_PRIM_NUM",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodBidPrcAmt",
+    "fieldName": "PROD_BID_PRC_AMT",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodCde",
+    "fieldName": "PROD_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodCmntText",
+    "fieldName": "PROD_CMNT_TEXT",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodDervtCde",
+    "fieldName": "PROD_DERVT_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodDervtRvsCde",
+    "fieldName": "PROD_DERVT_RVS_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodDesc",
+    "fieldName": "PROD_DESC",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodId",
+    "fieldName": "PROD_ID",
+    "table": "TB_PROD",
+    "type": "Long",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_PROD_ALT_ID",
+    "type": "DateTime",
+    "parent": "altId[*]"
+  },
+  {
+    "attrName": "prodInvstObjText",
+    "fieldName": "PROD_INVST_OBJ_TEXT",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodInvstTypeCde",
+    "fieldName": "PROD_INVST_TYPE_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodIssueCrosReferDt",
+    "fieldName": "PROD_ISSUE_CROS_REFER_DT",
+    "table": "TB_PROD",
+    "type": "Date",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodLnchDt",
+    "fieldName": "PROD_LNCH_DT",
+    "table": "TB_PROD",
+    "type": "Date",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodLocCde",
+    "fieldName": "PROD_LOC_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodLqdyInd",
+    "fieldName": "PROD_LQDY_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodMktPrcAmt",
+    "fieldName": "PROD_MKT_PRC_AMT",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "divYieldPct",
+    "fieldName": "DIV_YIELD_PCT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "prodMktPricePrevAmt",
+    "fieldName": "PROD_MKT_PRICE_PREV_AMT",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodMturDt",
+    "fieldName": "PROD_MTUR_DT",
+    "table": "TB_PROD",
+    "type": "Date",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodName",
+    "fieldName": "PROD_NAME",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodNarrText",
+    "fieldName": "PROD_NARR_TEXT",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodNavPrcAmt",
+    "fieldName": "PROD_NAV_PRC_AMT",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodOffrChanlUpdtDtTm",
+    "fieldName": "PROD_OFFR_CHANL_UPDT_DT_TM",
+    "table": "TB_PROD",
+    "type": "DateTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodOffrPrcAmt",
+    "fieldName": "PROD_OFFR_PRC_AMT",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodOwnCde",
+    "fieldName": "PROD_OWN_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodPllDesc",
+    "fieldName": "PROD_PLL_DESC",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodPllName",
+    "fieldName": "PROD_PLL_NAME",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodPrcUpdtDtTm",
+    "fieldName": "PROD_PRC_UPDT_DT_TM",
+    "table": "TB_PROD",
+    "type": "DateTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodShrtName",
+    "fieldName": "PROD_SHRT_NAME",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodShrtPllName",
+    "fieldName": "PROD_SHRT_PLL_NAME",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodShrtSllName",
+    "fieldName": "PROD_SHRT_SLL_NAME",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodSllDesc",
+    "fieldName": "PROD_SLL_DESC",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodSllName",
+    "fieldName": "PROD_SLL_NAME",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodId",
+    "fieldName": "PROD_ID",
+    "table": "TB_PROD_ALT_ID",
+    "type": "Long",
+    "parent": "altId[*]"
+  },
+  {
+    "attrName": "prodStatCde",
+    "fieldName": "PROD_STAT_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodStatUpdtDtTm",
+    "fieldName": "PROD_STAT_UPDT_DT_TM",
+    "table": "TB_PROD",
+    "type": "DateTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodSubtpCde",
+    "fieldName": "PROD_SUBTP_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodTaxFreeWrapActStaCde",
+    "fieldName": "PROD_TAX_FREE_WRAP_ACT_STA_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodTopPerfmRankNum",
+    "fieldName": "PROD_TOP_PERFM_RANK_NUM",
+    "table": "TB_PROD",
+    "type": "Long",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodTopSellRankNum",
+    "fieldName": "PROD_TOP_SELL_RANK_NUM",
+    "table": "TB_PROD",
+    "type": "Long",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodTopYieldRankNum",
+    "fieldName": "PROD_TOP_YIELD_RANK_NUM",
+    "table": "TB_PROD",
+    "type": "Long",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodType",
+    "fieldName": "PROD_TYPE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodTypeCde",
+    "fieldName": "PROD_TYPE_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "protcGoalInd",
+    "fieldName": "PROTC_GOAL_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prtyEducCde",
+    "fieldName": "PRTY_EDUC_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prtyLiveInRtireCde",
+    "fieldName": "PRTY_LIVE_IN_RTIRE_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prtyPlnForRtireCde",
+    "fieldName": "PRTY_PLN_FOR_RTIRE_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prtyProdSrchRsultNum",
+    "fieldName": "PRTY_PROD_SRCH_RSULT_NUM",
+    "table": "TB_PROD",
+    "type": "Long",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prtyProtcCde",
+    "fieldName": "PRTY_PROTC_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prtyWlthAccumGoalCde",
+    "fieldName": "PRTY_WLTH_ACCUM_GOAL_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "qtyUnitProdCde",
+    "fieldName": "QTY_UNIT_PROD_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "rcmndProdDecsnCde",
+    "fieldName": "RCMND_PROD_DECSN_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_PROD",
+    "type": "DateTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "recOnlnUpdtDtTm",
+    "fieldName": "REC_ONLN_UPDT_DT_TM",
+    "table": "TB_PROD",
+    "type": "DateTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "recStgcFinPlnUpdtDtTm",
+    "fieldName": "REC_STGC_FIN_PLN_UPDT_DT_TM",
+    "table": "TB_PROD",
+    "type": "DateTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_PROD",
+    "type": "DateTime",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "restrInvstrProdInd",
+    "fieldName": "RESTR_INVSTR_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "riskLvlCde",
+    "fieldName": "RISK_LVL_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "rtrnVoltlAvgPct",
+    "fieldName": "RTRN_VOLTL_AVG_PCT",
+    "table": "TB_PROD",
+    "type": "Float",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "rvrseEnqProdInd",
+    "fieldName": "RVRSE_ENQ_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "sectInvstCde",
+    "fieldName": "SECT_INVST_CDE",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "suptRcblCashProdInd",
+    "fieldName": "SUPT_RCBL_CASH_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "suptRcblScripProdInd",
+    "fieldName": "SUPT_RCBL_SCRIP_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "termRemainDayCnt",
+    "fieldName": "TERM_REMAIN_DAY_CNT",
+    "table": "TB_PROD",
+    "type": "Long",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "topPerfmProdInd",
+    "fieldName": "TOP_PERFM_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "topSellProdInd",
+    "fieldName": "TOP_SELL_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "trdFirstDt",
+    "fieldName": "TRD_FIRST_DT",
+    "table": "TB_PROD",
+    "type": "Date",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "wlthAccumGoalInd",
+    "fieldName": "WLTH_ACCUM_GOAL_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "fieldGroupCde",
+    "fieldName": "FIELD_GROUP_CDE",
+    "table": "TB_PROD_FIELD_GROUP_CTOFF",
+    "type": "String",
+    "parent": "fieldGroupCtoff[*]"
+  },
+  {
+    "attrName": "yieldEnhnProdInd",
+    "fieldName": "YIELD_ENHN_PROD_IND",
+    "table": "TB_PROD",
+    "type": "String",
+    "parent": "[ROOT]"
+  },
+  {
+    "attrName": "prodAltNum",
+    "fieldName": "PROD_ALT_NUM",
+    "table": "TB_PROD_ALT_ID",
+    "type": "String",
+    "parent": "altId[*]"
+  },
+  {
+    "attrName": "prodCdeAltClassCde",
+    "fieldName": "PROD_CDE_ALT_CLASS_CDE",
+    "table": "TB_PROD_ALT_ID",
+    "type": "String",
+    "parent": "altId[*]"
+  },
+  {
+    "attrName": "prodTypeCde",
+    "fieldName": "PROD_TYPE_CDE",
+    "table": "TB_PROD_ALT_ID",
+    "type": "String",
+    "parent": "altId[*]"
+  },
+  {
+    "attrName": "asetVoltlClassCde",
+    "fieldName": "ASET_VOLTL_CLASS_CDE",
+    "table": "TB_PROD_ASET_VOLTL_CLASS",
+    "type": "String",
+    "parent": "asetVoltlClass[*]"
+  },
+  {
+    "attrName": "asetVoltlClassWghtPct",
+    "fieldName": "ASET_VOLTL_CLASS_WGHT_PCT",
+    "table": "TB_PROD_ASET_VOLTL_CLASS",
+    "type": "Float",
+    "parent": "asetVoltlClass[*]"
+  },
+  {
+    "attrName": "fieldGroupCtoffDtTm",
+    "fieldName": "FIELD_GROUP_CTOFF_DT_TM",
+    "table": "TB_PROD_FIELD_GROUP_CTOFF",
+    "type": "DateTime",
+    "parent": "fieldGroupCtoff[*]"
+  },
+  {
+    "attrName": "listProdCde",
+    "fieldName": "LIST_PROD_CDE",
+    "table": "TB_PROD_LIST_PROD",
+    "type": "String",
+    "parent": "listProd[*]"
+  },
+  {
+    "attrName": "listProdType",
+    "fieldName": "LIST_PROD_TYPE",
+    "table": "TB_PROD_LIST_PROD",
+    "type": "String",
+    "parent": "listProd[*]"
+  },
+  {
+    "attrName": "prodEffSlstDt",
+    "fieldName": "PROD_EFF_SLST_DT",
+    "table": "TB_PROD_LIST_PROD",
+    "type": "Date",
+    "parent": "listProd[*]"
+  },
+  {
+    "attrName": "prodNarrPllText",
+    "fieldName": "PROD_NARR_PLL_TEXT",
+    "table": "TB_PROD_NARR",
+    "type": "String",
+    "parent": "narr"
+  },
+  {
+    "attrName": "prodNarrSllText",
+    "fieldName": "PROD_NARR_SLL_TEXT",
+    "table": "TB_PROD_NARR",
+    "type": "String",
+    "parent": "narr"
+  },
+  {
+    "attrName": "prcVarMinEffDt",
+    "fieldName": "PRC_VAR_MIN_EFF_DT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Date",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "ccyProdTradeCde",
+    "fieldName": "CCY_PROD_TRADE_CDE",
+    "table": "TB_PROD_TRADE_CCY",
+    "type": "String",
+    "parent": "tradeCcy[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_PROD_TRADE_CCY",
+    "type": "DateTime",
+    "parent": "tradeCcy[*]"
+  },
+  {
+    "attrName": "prodInvstObjPllText",
+    "fieldName": "PROD_INVST_OBJ_PLL_TEXT",
+    "table": "TB_PROD_TRNSL",
+    "type": "String",
+    "parent": "trnsl"
+  },
+  {
+    "attrName": "prodInvstObjSllText",
+    "fieldName": "PROD_INVST_OBJ_SLL_TEXT",
+    "table": "TB_PROD_TRNSL",
+    "type": "String",
+    "parent": "trnsl"
+  },
+  {
+    "attrName": "asetUndlCde",
+    "fieldName": "ASET_UNDL_CDE",
+    "table": "TB_PROD_UNDL_ASET",
+    "type": "String",
+    "parent": "undlAset[*]"
+  },
+  {
+    "attrName": "seqNum",
+    "fieldName": "SEQ_NUM",
+    "table": "TB_PROD_UNDL_ASET",
+    "type": "Long",
+    "parent": "undlAset[*]"
+  },
+  {
+    "attrName": "dscntMaxPct",
+    "fieldName": "DSCNT_MAX_PCT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "allwProdLendInd",
+    "fieldName": "ALLW_PROD_LEND_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "bodLotProdInd",
+    "fieldName": "BOD_LOT_PROD_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "ctryProdRegisCde",
+    "fieldName": "CTRY_PROD_REGIS_CDE",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "divPct",
+    "fieldName": "DIV_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "earnPerShareAnnlAmt",
+    "fieldName": "EARN_PER_SHARE_ANNL_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "exclLimitCalcInd",
+    "fieldName": "EXCL_LIMIT_CALC_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "invstMipIncrmMinAmt",
+    "fieldName": "INVST_MIP_INCRM_MIN_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "DateTime",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "invstMipMinAmt",
+    "fieldName": "INVST_MIP_MIN_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "loanBdgtProdIpoAmt",
+    "fieldName": "LOAN_BDGT_PROD_IPO_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "loanProdIpoTtlAmt",
+    "fieldName": "LOAN_PROD_IPO_TTL_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "loanProdMrgnTrdPct",
+    "fieldName": "LOAN_PROD_MRGN_TRD_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "methCalcScripChrgCde",
+    "fieldName": "METH_CALC_SCRIP_CHRG_CDE",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "mktProcLastCde",
+    "fieldName": "MKT_PROC_LAST_CDE",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "mktProdTrdCde",
+    "fieldName": "MKT_PROD_TRD_CDE",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "mktSegExchgCde",
+    "fieldName": "MKT_SEG_EXCHG_CDE",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "mrgnPrcAuctnTrdPct",
+    "fieldName": "MRGN_PRC_AUCTN_TRD_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "mrgnSecOdPct",
+    "fieldName": "MRGN_SEC_OD_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "mrgnTrdInd",
+    "fieldName": "MRGN_TRD_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "poolProdInd",
+    "fieldName": "POOL_PROD_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prcEarnRate",
+    "fieldName": "PRC_EARN_RATE",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prcVarCde",
+    "fieldName": "PRC_VAR_CDE",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prcVarMinAmt",
+    "fieldName": "PRC_VAR_MIN_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodAuctnTrdExpirDt",
+    "fieldName": "PROD_AUCTN_TRD_EXPIR_DT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Date",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodBodLotQtyCnt",
+    "fieldName": "PROD_BOD_LOT_QTY_CNT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodBuyMaxQtyCnt",
+    "fieldName": "PROD_BUY_MAX_QTY_CNT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Long",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodExerPrcAmt",
+    "fieldName": "PROD_EXER_PRC_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodIssQtyTtlCnt",
+    "fieldName": "PROD_ISS_QTY_TTL_CNT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Long",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodMaxForgnInvstrTtlPct",
+    "fieldName": "PROD_MAX_FORGN_INVSTR_TTL_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodMaxIndvForgnInvstrPct",
+    "fieldName": "PROD_MAX_INDV_FORGN_INVSTR_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodMaxIndvOwnrPct",
+    "fieldName": "PROD_MAX_INDV_OWNR_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_STRUC_INVST_DEPST_INTRM_RTN",
+    "type": "DateTime",
+    "parent": "strucInvstDepst.intrmRtn[*]"
+  },
+  {
+    "attrName": "prodMktStatChngLaDt",
+    "fieldName": "PROD_MKT_STAT_CHNG_LA_DT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Date",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodOpenPrcAmt",
+    "fieldName": "PROD_OPEN_PRC_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodPrc52WeekMaxAmt",
+    "fieldName": "PROD_PRC_52_WEEK_MAX_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodPrc52WeekMinAmt",
+    "fieldName": "PROD_PRC_52_WEEK_MIN_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodPrcChngAmt",
+    "fieldName": "PROD_PRC_CHNG_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodPrcChngPct",
+    "fieldName": "PROD_PRC_CHNG_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodSellMaxQtyCnt",
+    "fieldName": "PROD_SELL_MAX_QTY_CNT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Long",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_STRUC_INVST_DEPST_INTRM_RTN",
+    "type": "DateTime",
+    "parent": "strucInvstDepst.intrmRtn[*]"
+  },
+  {
+    "attrName": "prodTdyHighPrcAmt",
+    "fieldName": "PROD_TDY_HIGH_PRC_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodTdyLowPrcAmt",
+    "fieldName": "PROD_TDY_LOW_PRC_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "prodTrnvrAmt",
+    "fieldName": "PROD_TRNVR_AMT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "psblProdBorwInd",
+    "fieldName": "PSBL_PROD_BORW_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "scripOnlyProdInd",
+    "fieldName": "SCRIP_ONLY_PROD_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "shareTrdCnt",
+    "fieldName": "SHARE_TRD_CNT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Long",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "sprdStopLossMaxCnt",
+    "fieldName": "SPRD_STOP_LOSS_MAX_CNT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Long",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "sprdStopLossMinCnt",
+    "fieldName": "SPRD_STOP_LOSS_MIN_CNT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Long",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "stopLossMaxPct",
+    "fieldName": "STOP_LOSS_MAX_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "stopLossMinPct",
+    "fieldName": "STOP_LOSS_MIN_PCT",
+    "table": "TB_STOCK_INSTM",
+    "type": "Float",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "suptAllIn1OrdInd",
+    "fieldName": "SUPT_ALL_IN_1_ORD_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "suptAtmcTrdInd",
+    "fieldName": "SUPT_ATMC_TRD_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "suptAuctnTrdInd",
+    "fieldName": "SUPT_AUCTN_TRD_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "suptMipInd",
+    "fieldName": "SUPT_MIP_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "suptNetSetlInd",
+    "fieldName": "SUPT_NET_SETL_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "suptProdSpltInd",
+    "fieldName": "SUPT_PROD_SPLT_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "suptStopLossOrdInd",
+    "fieldName": "SUPT_STOP_LOSS_ORD_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "suptWinWinOrdInd",
+    "fieldName": "SUPT_WIN_WIN_ORD_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "trdLimitInd",
+    "fieldName": "TRD_LIMIT_IND",
+    "table": "TB_STOCK_INSTM",
+    "type": "String",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "allowEarlyRdmInd",
+    "fieldName": "ALLOW_EARLY_RDM_IND",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "bonusIntCalcTypeCde",
+    "fieldName": "BONUS_INT_CALC_TYPE_CDE",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "rtrnIntrmPct",
+    "fieldName": "RTRN_INTRM_PCT",
+    "table": "TB_STRUC_INVST_DEPST_INTRM_RTN",
+    "type": "Float",
+    "parent": "strucInvstDepst.intrmRtn[*]"
+  },
+  {
+    "attrName": "bonusIntDtTypeCde",
+    "fieldName": "BONUS_INT_DT_TYPE_CDE",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "ccyLinkDepstCde",
+    "fieldName": "CCY_LINK_DEPST_CDE",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "cptlProtcPct",
+    "fieldName": "CPTL_PROTC_PCT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Float",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "custSellQtaNum",
+    "fieldName": "CUST_SELL_QTA_NUM",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Long",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "lnchProdInd",
+    "fieldName": "LNCH_PROD_IND",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "mktEndDt",
+    "fieldName": "MKT_END_DT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Date",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "mktStartDt",
+    "fieldName": "MKT_START_DT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Date",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "offerTypeCde",
+    "fieldName": "OFFER_TYPE_CDE",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "prcEarlyRdmPct",
+    "fieldName": "PRC_EARLY_RDM_PCT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Float",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "prodConvCde",
+    "fieldName": "PROD_CONV_CDE",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "prodExtnlCde",
+    "fieldName": "PROD_EXTNL_CDE",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "prodExtnlTypeCde",
+    "fieldName": "PROD_EXTNL_TYPE_CDE",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "rdmEarlyDalwText",
+    "fieldName": "RDM_EARLY_DALW_TEXT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "rdmEarlyIndAmt",
+    "fieldName": "RDM_EARLY_IND_AMT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Float",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "rtrnIntrmPaidNextDt",
+    "fieldName": "RTRN_INTRM_PAID_NEXT_DT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Date",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "rtrnIntrmPaidPrevDt",
+    "fieldName": "RTRN_INTRM_PAID_PREV_DT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Date",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "rtrnIntrmPrevPct",
+    "fieldName": "RTRN_INTRM_PREV_PCT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Float",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "rtrvProdExtnlInd",
+    "fieldName": "RTRV_PROD_EXTNL_IND",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "ruleQtaAltmtCde",
+    "fieldName": "RULE_QTA_ALTMT_CDE",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "String",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "yieldAnnlMinPct",
+    "fieldName": "YIELD_ANNL_MIN_PCT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Float",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "yieldAnnlPotenPct",
+    "fieldName": "YIELD_ANNL_POTEN_PCT",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Float",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "rtrnIntrmPaidDt",
+    "fieldName": "RTRN_INTRM_PAID_DT",
+    "table": "TB_STRUC_INVST_DEPST_INTRM_RTN",
+    "type": "Date",
+    "parent": "strucInvstDepst.intrmRtn[*]"
+  },
+  {
+    "attrName": "amcmInd",
+    "fieldName": "AMCM_IND",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "autoRenewFundInd",
+    "fieldName": "AUTO_RENEW_FUND_IND",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "autoSweepFundInd",
+    "fieldName": "AUTO_SWEEP_FUND_IND",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "chrgFundSwPct",
+    "fieldName": "CHRG_FUND_SW_PCT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "chrgInitSalesPct",
+    "fieldName": "CHRG_INIT_SALES_PCT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "closeEndFundInd",
+    "fieldName": "CLOSE_END_FUND_IND",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "dealNextDt",
+    "fieldName": "DEAL_NEXT_DT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Date",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "divDclrDt",
+    "fieldName": "DIV_DCLR_DT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Date",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "divPymtDt",
+    "fieldName": "DIV_PYMT_DT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Date",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundAmt",
+    "fieldName": "FUND_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundClassCde",
+    "fieldName": "FUND_CLASS_CDE",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundHouseCde",
+    "fieldName": "FUND_HOUSE_CDE",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundMipRtainMinAmt",
+    "fieldName": "FUND_MIP_RTAIN_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundRtainMinAmt",
+    "fieldName": "FUND_RTAIN_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundSwInMinAmt",
+    "fieldName": "FUND_SW_IN_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundSwOutMaxAmt",
+    "fieldName": "FUND_SW_OUT_MAX_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundSwOutMinAmt",
+    "fieldName": "FUND_SW_OUT_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundSwOutRtainMinAmt",
+    "fieldName": "FUND_SW_OUT_RTAIN_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundValnTm",
+    "fieldName": "FUND_VALN_TM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "LocalTime",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "hldayFundNextDt",
+    "fieldName": "HLDAY_FUND_NEXT_DT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Date",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "incmHandlOptCde",
+    "fieldName": "INCM_HANDL_OPT_CDE",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "insuLinkUtTrstInd",
+    "fieldName": "INSU_LINK_UT_TRST_IND",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "invstIncrmMinAmt",
+    "fieldName": "INVST_INCRM_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "invstMipIncrmMinAmt",
+    "fieldName": "INVST_MIP_INCRM_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "invstMipMinAmt",
+    "fieldName": "INVST_MIP_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "offerEndDtTm",
+    "fieldName": "OFFER_END_DT_TM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "LocalDateTime",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "offerStartDtTm",
+    "fieldName": "OFFER_START_DT_TM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "LocalDateTime",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "payCashDivInd",
+    "fieldName": "PAY_CASH_DIV_IND",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "prodShoreLocCde",
+    "fieldName": "PROD_SHORE_LOC_CDE",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "prodTrmtDt",
+    "fieldName": "PROD_TRMT_DT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Date",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "rdmCtoffNextDtTm",
+    "fieldName": "RDM_CTOFF_NEXT_DT_TM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "LocalDateTime",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "rdmMinAmt",
+    "fieldName": "RDM_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "rdmMipMinAmt",
+    "fieldName": "RDM_MIP_MIN_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "rtrnGurntPct",
+    "fieldName": "RTRN_GURNT_PCT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "schemChrgCde",
+    "fieldName": "SCHEM_CHRG_CDE",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "scribCtoffNextDtTm",
+    "fieldName": "SCRIB_CTOFF_NEXT_DT_TM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "LocalDateTime",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "spclFundInd",
+    "fieldName": "SPCL_FUND_IND",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "suptMipInd",
+    "fieldName": "SUPT_MIP_IND",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "String",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "tranMaxAmt",
+    "fieldName": "TRAN_MAX_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "utMipRdmMinNum",
+    "fieldName": "UT_MIP_RDM_MIN_NUM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Long",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "utMipRtainMinNum",
+    "fieldName": "UT_MIP_RTAIN_MIN_NUM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Long",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "deltaPct",
+    "fieldName": "DELTA_PCT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "utPrcProdLnchAmt",
+    "fieldName": "UT_PRC_PROD_LNCH_AMT",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Float",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "utRdmMinNum",
+    "fieldName": "UT_RDM_MIN_NUM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Long",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "utRtainMinNum",
+    "fieldName": "UT_RTAIN_MIN_NUM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Long",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "utSwOutRtainMinNum",
+    "fieldName": "UT_SW_OUT_RTAIN_MIN_NUM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Long",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "fundUnswCde",
+    "fieldName": "FUND_UNSW_CDE",
+    "table": "TB_UT_TRST_INSTM_SW",
+    "type": "String",
+    "parent": "utTrstInstm.sw[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_UT_TRST_INSTM_SW",
+    "type": "DateTime",
+    "parent": "utTrstInstm.sw[*]"
+  },
+  {
+    "attrName": "ccyUndlInstmCde",
+    "fieldName": "CCY_UNDL_INSTM_CDE",
+    "table": "TB_WARR_INSTM",
+    "type": "String",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_PROD_ALT_ID",
+    "type": "DateTime",
+    "parent": "altId[*]"
+  },
+  {
+    "attrName": "entlRate",
+    "fieldName": "ENTL_RATE",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "gearEffRate",
+    "fieldName": "GEAR_EFF_RATE",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "instmUndlCde",
+    "fieldName": "INSTM_UNDL_CDE",
+    "table": "TB_WARR_INSTM",
+    "type": "String",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "instmUndlMktPrcAmt",
+    "fieldName": "INSTM_UNDL_MKT_PRC_AMT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "isrCde",
+    "fieldName": "ISR_CDE",
+    "table": "TB_WARR_INSTM",
+    "type": "String",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "moneyPct",
+    "fieldName": "MONEY_PCT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "moneyTypeCde",
+    "fieldName": "MONEY_TYPE_CDE",
+    "table": "TB_WARR_INSTM",
+    "type": "String",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "premPct",
+    "fieldName": "PREM_PCT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodBodLotQtyCnt",
+    "fieldName": "PROD_BOD_LOT_QTY_CNT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodClosePrcAmt",
+    "fieldName": "PROD_CLOSE_PRC_AMT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodPrc52WeekMaxAmt",
+    "fieldName": "PROD_PRC_52_WEEK_MAX_AMT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodPrc52WeekMinAmt",
+    "fieldName": "PROD_PRC_52_WEEK_MIN_AMT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodPrcChngAmt",
+    "fieldName": "PROD_PRC_CHNG_AMT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodPrcChngPct",
+    "fieldName": "PROD_PRC_CHNG_PCT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodStrkPrcAmt",
+    "fieldName": "PROD_STRK_PRC_AMT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodTdyHighPrcAmt",
+    "fieldName": "PROD_TDY_HIGH_PRC_AMT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodTdyLowPrcAmt",
+    "fieldName": "PROD_TDY_LOW_PRC_AMT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "prodTrnvrAmt",
+    "fieldName": "PROD_TRNVR_AMT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "shareTrdCnt",
+    "fieldName": "SHARE_TRD_CNT",
+    "table": "TB_WARR_INSTM",
+    "type": "Long",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "voltlImplyPct",
+    "fieldName": "VOLTL_IMPLY_PCT",
+    "table": "TB_WARR_INSTM",
+    "type": "Float",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "warrTypeCde",
+    "fieldName": "WARR_TYPE_CDE",
+    "table": "TB_WARR_INSTM",
+    "type": "String",
+    "parent": "warrInstm"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_TRADE_ELIG",
+    "type": "DateTime",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "PROD_TRADE_ELIG",
+    "type": "DateTime",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "DateTime",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "DEBT_INSTM_YIELD_HIST",
+    "type": "DateTime",
+    "parent": "debtInstm.yieldHist[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_DEBT_INSTM_CRED_RTNG",
+    "type": "DateTime",
+    "parent": "debtInstm.credRtng[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_DEBT_INSTM_CRED_RTNG",
+    "type": "DateTime",
+    "parent": "debtInstm.credRtng[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_RESTR_CUST_GROUP",
+    "type": "DateTime",
+    "parent": "restrCustGroup[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "PROD_RESTR_CUST_GROUP",
+    "type": "DateTime",
+    "parent": "restrCustGroup[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "DateTime",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_FIN_DOC",
+    "type": "DateTime",
+    "parent": "finDoc[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "PROD_FIN_DOC",
+    "type": "DateTime",
+    "parent": "finDoc[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_PROD_LIST_PROD",
+    "type": "DateTime",
+    "parent": "listProd[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_PROD_LIST_PROD",
+    "type": "DateTime",
+    "parent": "listProd[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_PROD_RELN",
+    "type": "DateTime",
+    "parent": "prodReln[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "PROD_PROD_RELN",
+    "type": "DateTime",
+    "parent": "prodReln[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_RESTR_CUST_CTRY",
+    "type": "DateTime",
+    "parent": "restrCustCtry[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "PROD_RESTR_CUST_CTRY",
+    "type": "DateTime",
+    "parent": "restrCustCtry[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_STAF_LIC_CHECK",
+    "type": "DateTime",
+    "parent": "stafLicCheck[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "PROD_STAF_LIC_CHECK",
+    "type": "DateTime",
+    "parent": "stafLicCheck[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "PROD_PRC_CMPAR",
+    "type": "DateTime",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "PROD_PRC_CMPAR",
+    "type": "DateTime",
+    "parent": "prcCmpar[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_ASET_GEO_LOC_ALLOC",
+    "type": "DateTime",
+    "parent": "asetGeoLocAlloc[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_ASET_GEO_LOC_ALLOC",
+    "type": "DateTime",
+    "parent": "asetGeoLocAlloc[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_ASET_SIC_ALLOC",
+    "type": "DateTime",
+    "parent": "asetSicAlloc[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_ASET_SIC_ALLOC",
+    "type": "DateTime",
+    "parent": "asetSicAlloc[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_PROD_ASET_VOLTL_CLASS",
+    "type": "DateTime",
+    "parent": "asetVoltlClass[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_PROD_ASET_VOLTL_CLASS",
+    "type": "DateTime",
+    "parent": "asetVoltlClass[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_MPF_INSTM",
+    "type": "DateTime",
+    "parent": "mpfInstm[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_PROD_UNDL_ASET",
+    "type": "DateTime",
+    "parent": "undlAset[*]"
+  },
+  {
+    "attrName": "prodIdEqtyLinkInvst",
+    "fieldName": "PROD_ID_EQTY_LINK_INVST",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Long",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "prodIdStrucInvstDepst",
+    "fieldName": "PROD_ID_STRUC_INVST_DEPST",
+    "table": "TB_STRUC_INVST_DEPST",
+    "type": "Long",
+    "parent": "strucInvstDepst"
+  },
+  {
+    "attrName": "prodIdUtTrstInstm",
+    "fieldName": "PROD_ID_UT_TRST_INSTM",
+    "table": "TB_UT_TRST_INSTM",
+    "type": "Long",
+    "parent": "utTrstInstm"
+  },
+  {
+    "attrName": "prodIdDebtInstm",
+    "fieldName": "PROD_ID_DEBT_INSTM",
+    "table": "TB_DEBT_INSTM",
+    "type": "Long",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "prodIdStockInstm",
+    "fieldName": "PROD_ID_STOCK_INSTM",
+    "table": "TB_STOCK_INSTM",
+    "type": "Long",
+    "parent": "stockInstm"
+  },
+  {
+    "attrName": "ctryRecCde",
+    "fieldName": "CTRY_REC_CDE",
+    "table": "TB_PROD_ALT_ID",
+    "type": "String",
+    "parent": "altId[*]"
+  },
+  {
+    "attrName": "grpMembrRecCde",
+    "fieldName": "GRP_MEMBR_REC_CDE",
+    "table": "TB_PROD_ALT_ID",
+    "type": "String",
+    "parent": "altId[*]"
+  },
+  {
+    "attrName": "prodFlrPrcAmt",
+    "fieldName": "PROD_FLR_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodDownOutBarPrcAmt",
+    "fieldName": "PROD_DOWN_OUT_BAR_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodBarPrcAmt",
+    "fieldName": "PROD_BAR_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodKnockInTrigPrcAmt",
+    "fieldName": "PROD_KNOCK_IN_TRIG_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodEarlCallTrigPrcAmt",
+    "fieldName": "PROD_EARL_CALL_TRIG_PRC_AMT ",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodExpiClosePrcAmt",
+    "fieldName": "PROD_EXPI_CLOSE_PRC_AMT",
+    "table": "TB_EQTY_LINK_INVST_UNDL_STOCK",
+    "type": "Float",
+    "parent": "eqtyLinkInvst.undlStock[*]"
+  },
+  {
+    "attrName": "prodId",
+    "fieldName": "PROD_ID",
+    "table": "MAT_DT_SEQS",
+    "type": "Long",
+    "parent": "matDtSeqs"
+  },
+  {
+    "attrName": "matDt",
+    "fieldName": "MAT_DT",
+    "table": "MAT_DT_SEQS",
+    "type": "Date",
+    "parent": "matDtSeqs"
+  },
+  {
+    "attrName": "seqNum",
+    "fieldName": "SEQ_NUM",
+    "table": "MAT_DT_SEQS",
+    "type": "Long",
+    "parent": "matDtSeqs"
+  },
+  {
+    "attrName": "verNum",
+    "fieldName": "VER_NUM",
+    "table": "MAT_DT_SEQS",
+    "type": "Long",
+    "parent": "matDtSeqs"
+  },
+  {
+    "attrName": "prodGbmBidPrcAmt",
+    "fieldName": "PROD_GBM_BID_PRC_AMT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "prodGbmOffrPrcAmt",
+    "fieldName": "PROD_GBM_OFFR_PRC_AMT",
+    "table": "TB_DEBT_INSTM",
+    "type": "Float",
+    "parent": "debtInstm"
+  },
+  {
+    "attrName": "chanlCde",
+    "fieldName": "CHANL_CDE",
+    "table": "TB_CHANL_ATTR",
+    "type": "String",
+    "parent": "chanlAttr[*]"
+  },
+  {
+    "attrName": "fieldCde",
+    "fieldName": "FIELD_CDE",
+    "table": "TB_CHANL_ATTR",
+    "type": "String",
+    "parent": "chanlAttr[*]"
+  },
+  {
+    "attrName": "fieldCharValueText",
+    "fieldName": "FIELD_CHAR_VALUE_TEXT",
+    "table": "TB_CHANL_ATTR",
+    "type": "String",
+    "parent": "chanlAttr[*]"
+  },
+  {
+    "attrName": "recCreatDtTm",
+    "fieldName": "REC_CREAT_DT_TM",
+    "table": "TB_CHANL_ATTR",
+    "type": "DateTime",
+    "parent": "chanlAttr[*]"
+  },
+  {
+    "attrName": "recUpdtDtTm",
+    "fieldName": "REC_UPDT_DT_TM",
+    "table": "TB_CHANL_ATTR",
+    "type": "DateTime",
+    "parent": "chanlAttr[*]"
+  },
+  {
+    "attrName": "potentCoupnFrPct",
+    "fieldName": "VER_NUM",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Float",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "potentCoupnToPct",
+    "fieldName": "VER_NUM",
+    "table": "TB_EQTY_LINK_INVST",
+    "type": "Float",
+    "parent": "eqtyLinkInvst"
+  },
+  {
+    "attrName": "cuegCri01",
+    "fieldName": "CUEG_CRI_01",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri02",
+    "fieldName": "CUEG_CRI_02",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri03",
+    "fieldName": "CUEG_CRI_03",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri04",
+    "fieldName": "CUEG_CRI_04",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri05",
+    "fieldName": "CUEG_CRI_05",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri06",
+    "fieldName": "CUEG_CRI_06",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri07",
+    "fieldName": "CUEG_CRI_07",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri08",
+    "fieldName": "CUEG_CRI_08",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri09",
+    "fieldName": "CUEG_CRI_09",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri10",
+    "fieldName": "CUEG_CRI_10",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri11",
+    "fieldName": "CUEG_CRI_11",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri12",
+    "fieldName": "CUEG_CRI_12",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri13",
+    "fieldName": "CUEG_CRI_13",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri14",
+    "fieldName": "CUEG_CRI_14",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri15",
+    "fieldName": "CUEG_CRI_15",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri16",
+    "fieldName": "CUEG_CRI_16",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri17",
+    "fieldName": "CUEG_CRI_17",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri18",
+    "fieldName": "CUEG_CRI_18",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri19",
+    "fieldName": "CUEG_CRI_19",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  },
+  {
+    "attrName": "cuegCri20",
+    "fieldName": "CUEG_CRI_20",
+    "table": "TB_prod_user_defin_field",
+    "type": "String",
+    "parent": "tradeElig"
+  }
+]

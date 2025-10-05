@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+		
+	<bean id="wpcProductDetailByKeysEnquiryServiceImplDelegate" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
+		<property name="serviceInterface" value="com.hhhh.wmd.wpc.webservice.proddetailbykeysenq.service.impl.WpcProductDetailByKeysEnquiryServiceImplDelegate" />
+		<property name="wsdlDocumentUrl" value="classpath:system/fund/wsdl/WpcProductDetailByKeysEnquiryService.wsdl" />
+		<property name="endpointAddress" value="${wpcWebService.conn.wpcProductDetailByKeysEnquiry.urlPath}" />
+		<property name="namespaceUri" value="http://impl.service.proddetailbykeysenq.webservice.wpc.wmd.hhhh.com/" />
+		<property name="serviceName" value="WpcProductDetailByKeysEnquiryService" />
+		<property name="portName" value="WpcProductDetailByKeysEnquiryServicePort" />
+		<property name="customProperties" ref="customProperties" />
+		<property name="handlerResolver" ref="httpHeaderHandler" />
+	</bean>
+	
+	<bean id="httpHeaderHandler" class="com.hhhh.group.secwealth.mktdata.fund.webservice.handler.HttpHeaderHandler">
+		<property name="inbound" value="${webService.inbound.log}" />
+	</bean>
+	
+	<bean id="productKeyListWithEligibilityCheckImplDelegate" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
+		<property name="serviceInterface" value="com.hhhh.wmd.wpc.webservice.prodkeylistwitheligcheck.service.impl.ProductKeyListWithEligibilityCheckImplDelegate" />
+		<property name="wsdlDocumentUrl" value="classpath:system/fund/wsdl/ProductKeyListWithEligibilityCheckImplService.wsdl" />
+		<property name="endpointAddress" value="${wpcWebService.conn.ProductKeyListWithEligibilityCheck.urlPath}" />
+		<property name="namespaceUri" value="http://impl.service.prodkeylistwitheligcheck.webservice.wpc.wmd.hhhh.com/" />
+		<property name="serviceName" value="ProductKeyListWithEligibilityCheckImplService" />
+		<property name="portName" value="ProductKeyListWithEligibilityCheckImplPort" />
+		<property name="customProperties" ref="customProperties" />
+		<property name="handlerResolver" ref="httpHeaderHandler" />
+	</bean>
+
+	<util:map id="customProperties">
+		<entry key="com.sun.xml.internal.ws.request.timeout">
+			<value type="java.lang.Integer">${wpcWebService.conn.timeout}</value>
+		</entry>
+		<entry key="com.sun.xml.internal.ws.connect.timeout">
+			<value type="java.lang.Integer">${wpcWebService.conn.timeout}</value>
+		</entry>
+	</util:map> 
+</beans> 

@@ -1,0 +1,37 @@
+HSBC Fund Screener Debug Log
+Generated: 20250906_102907
+Total Log Entries: 8
+================================================================================
+
+Entry #01:
+{'timestamp': '2025-09-06T10:30:13.230963', 'step': '步骤2', 'action': '找到下拉框', 'details': {'selector': '#dropdown-riskLevel', 'element_type': 'A标签'}}
+------------------------------------------------------------
+
+Entry #02:
+{'timestamp': '2025-09-06T10:30:13.367050', 'step': '步骤2', 'action': '点击下拉框', 'details': {'selector': '#dropdown-riskLevel', 'success': True}}
+------------------------------------------------------------
+
+Entry #03:
+{'timestamp': '2025-09-06T10:30:14.402804', 'step': '步骤2', 'action': '成功选择选项', 'details': {'selector': 'li:has-text("Speculative - 5")', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #04:
+{'timestamp': '2025-09-06T10:30:14.913491', 'step': '步骤3', 'action': '找到搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'element_type': 'A标签', 'success': True}}
+------------------------------------------------------------
+
+Entry #05:
+{'timestamp': '2025-09-06T10:30:15.242291', 'step': '步骤3', 'action': '成功点击搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #06:
+{'timestamp': '2025-09-06T10:30:20.364905', 'step': '步骤4', 'action': '成功点击Fund profile标签', 'details': {'selector': 'button:has-text("Fund profile"), a:has-text("Fund profile"), [data-testid*="fund-profile"], [data-testid*="Fund-profile"]', 'success': True}}
+------------------------------------------------------------
+
+Entry #07:
+{'timestamp': '2025-09-06T10:30:22.371459', 'step': '步骤4', 'action': 'Fund profile页面切换状态不明', 'details': {'url': 'https://investments3.personal-banking.hsbc.com.hk/public/utb/en-gb/fundScreenerResult', 'content_found': False, 'warning': True}}
+------------------------------------------------------------
+
+Entry #08:
+{'timestamp': '2025-09-06T10:30:22.371486', 'step': '步骤5', 'action': '使用默认显示数量', 'details': {'action': 'skip_display_adjustment', 'reason': '使用页面默认显示数量', 'success': True}}
+------------------------------------------------------------
+

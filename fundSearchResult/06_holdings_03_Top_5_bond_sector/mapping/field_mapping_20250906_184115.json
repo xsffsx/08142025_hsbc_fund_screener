@@ -1,0 +1,60 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "AB - AMERICAN INCOME PORTFOLIO (CLASS AT-NZDH-MDIST CASH)",
+    "data_type": "string",
+    "example": "AB - AMERICAN INCOME PORTFOLIO (CLASS AT-NZDH-MDIST CASH)"
+  },
+  "1st": {
+    "frontend_name": "1st",
+    "frontend_description": "第一大债券行业配置，包含债券行业名称和权重百分比",
+    "api_path": "holdings.bondSectors.globalBondSectors[name=GVT]",
+    "api_value": "Government",
+    "api_value_2": "78.81%",
+    "data_type": "string",
+    "example": "Government",
+    "example_2": "78.81%"
+  },
+  "2nd": {
+    "frontend_name": "2nd",
+    "frontend_description": "第二大债券行业配置，包含债券行业名称和权重百分比",
+    "api_path": "holdings.bondSectors.globalBondSectors[name=CORP]",
+    "api_value": "Corporate",
+    "api_value_2": "53.91%",
+    "data_type": "string",
+    "example": "Corporate",
+    "example_2": "53.91%"
+  },
+  "3rd": {
+    "frontend_name": "3rd",
+    "frontend_description": "第三大债券行业配置，包含债券行业名称和权重百分比",
+    "api_path": "holdings.bondSectors.globalBondSectors[name=SECZ]",
+    "api_value": "Securitized",
+    "api_value_2": "25.96%",
+    "data_type": "string",
+    "example": "Securitized",
+    "example_2": "25.96%"
+  },
+  "4th": {
+    "frontend_name": "4th",
+    "frontend_description": "第四大债券行业配置，包含债券行业名称和权重百分比",
+    "api_path": "holdings.bondSectors.globalBondSectors[name=MNCPL]",
+    "api_value": "Municipal",
+    "api_value_2": "0.09%",
+    "data_type": "string",
+    "example": "Municipal",
+    "example_2": "0.09%"
+  },
+  "5th": {
+    "frontend_name": "5th",
+    "frontend_description": "第五大债券行业配置，包含债券行业名称和权重百分比",
+    "api_path": "N/A",
+    "api_value": "",
+    "api_value_2": "",
+    "data_type": "string",
+    "example": "N/A",
+    "example_2": "N/A"
+  }
+}

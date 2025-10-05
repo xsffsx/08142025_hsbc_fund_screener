@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.hhhh.group.secwealth.mktdata.api.equity</groupId>
+    <artifactId>wmds-equity-hase-mds</artifactId>
+    <version>1.0.0-HASE_STMA-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>wmds-sonar</name>
+
+    <properties>
+        <springframework.boot.version>1.5.17.RELEASE</springframework.boot.version>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+    </properties>
+
+    <modules>
+<!--        <module>../wmds-prototype</module>-->
+<!--        <module>../wmds-equity-common</module>-->
+<!--        <module>../wmds-equity-quotes</module>-->
+<!--        <module>../wmds-equity-chart</module>-->
+<!--        <module>../wmds-equity-index-quotes</module>-->
+        <module>../wmds-equity-news</module>
+<!--        <module>../wmds-equity-top-mover</module>-->
+<!--        <module>../wmds-equity</module>-->
+        <!--        <module>../wmds-predictive-search</module>-->
+    </modules>
+
+</project>

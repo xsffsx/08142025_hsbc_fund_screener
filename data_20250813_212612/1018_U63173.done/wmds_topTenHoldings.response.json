@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63173",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:45:07.430687",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63173%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "0ef4d577-ce94-415b-9499-1e427365b060:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "6MG9sxUPf-FCZ2FgCNWT_aZPQ8tFGs0Mai83QFF46cSWkHvzifVDqQ==",
+        "x-hsbc-request-correlation-id": "5004a0e7-126f-4492-af07-483dfbd1f33e",
+        "date": "Wed, 13 Aug 2025 13:45:06 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 b929fe286e51dadbb2e36f1de4ceb802.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "467",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Fidelity ILF - USD A Acc\",\"weighting\":7.03531,\"currency\":\"GBP\",\"marketValue\":7179545},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"DCC PLC\",\"weighting\":3.39332,\"currency\":\"GBP\",\"marketValue\":3462882},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"NatWest Group PLC\",\"weighting\":3.35928,\"currency\":\"GBP\",\"marketValue\":3428144},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"British American Tobacco PLC\",\"weighting\":3.3203,\"currency\":\"GBP\",\"marketValue\":3388372},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Standard Chartered PLC\",\"weighting\":3.18516,\"currency\":\"GBP\",\"marketValue\":3250463},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Direct Line Insurance Group PLC\",\"weighting\":2.99529,\"currency\":\"GBP\",\"marketValue\":3056698},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Imperial Brands PLC\",\"weighting\":2.89301,\"currency\":\"GBP\",\"marketValue\":2952320},{\"market\":\"FR\",\"productType\":\"SF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CFD on TotalEnergies SE\",\"weighting\":2.78052,\"currency\":\"GBP\",\"marketValue\":2837519},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AstraZeneca PLC\",\"weighting\":2.29155,\"currency\":\"GBP\",\"marketValue\":2338530},{\"market\":\"GB\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"SSE PLC\",\"weighting\":2.24101,\"currency\":\"GBP\",\"marketValue\":2286956}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

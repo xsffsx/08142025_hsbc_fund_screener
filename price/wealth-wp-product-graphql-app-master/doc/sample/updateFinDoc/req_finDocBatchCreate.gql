@@ -1,0 +1,42 @@
+mutation finDocBatchCreate($finDoc: [FinDocAmendmentInput!]!) {
+    finDocBatchCreate(finDoc: $finDoc, allowPartial: true) {
+        createdFinDocs {
+            rsrcItemIdFinDoc
+            ctryRecCde
+            grpMembrRecCde
+            docFinCatCde
+            docFinCde
+            docStatCde
+            docServrStatCde
+            docFinTypeCde
+            langFinDocCde
+            urlFileServrText
+            formtDocCde
+            docSzNum
+            docRecvName
+            fileDocName
+        }
+        invalidFinDocs {
+            errors {
+                code
+                jsonPath
+                message
+            }
+            finDoc {
+                ctryRecCde
+                grpMembrRecCde
+                docFinCatCde
+                docFinCde
+                docStatCde
+                docServrStatCde
+                docFinTypeCde
+                langFinDocCde
+                urlFileServrText
+                formtDocCde
+                docSzNum
+                docRecvName
+                fileDocName
+            }
+        }
+    }
+}

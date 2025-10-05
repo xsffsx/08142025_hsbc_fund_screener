@@ -1,0 +1,15 @@
+query  amendmentByFilter($filter: JSON!, $sort: JSON, $limit: Int = 0, $skip: Int = 0) {
+  amendmentByFilter(filter: $filter, sort: $sort, limit: $limit, skip: $skip) {
+    _id
+    ctryRecCde
+    grpMembrRecCde
+    recStatCde
+    actionCde
+    docType
+    docId
+    doc
+    docBase
+    recCreatDtTm
+    recUpdtDtTm
+  }
+}

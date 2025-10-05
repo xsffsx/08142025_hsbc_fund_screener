@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63432",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:59:30.663315",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63432%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e8ae8ac7-b6bd-4e89-9202-f61adaa0f0a5:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "BbNfS96Urjh867cDDpHPStbs5XD4EPfbJ7L_lvlH_aZI4BDm6gJJ8A==",
+        "x-hsbc-request-correlation-id": "d43b0ab3-f4db-4f97-92cd-7377de35d589",
+        "date": "Wed, 13 Aug 2025 13:59:28 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 eeb64902174f0e1f0d97e045fce78e24.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1251",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63432\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"EF\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":68.64,\"currency\":\"HKD\",\"companyName\":\"AB - EUROPEAN INCOME PORTFOLIO (CLASS AA-HKD HEDGED-MDIST CASH)\",\"securityDescription\":null,\"changeAmount\":-0.11,\"changePercent\":-0.16,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":6.14236,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0001358A\",\"tradableCurrency\":\"HKD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":4.68327},{\"year\":2023,\"annualCalendarYearReturn\":12.36897},{\"year\":2022,\"annualCalendarYearReturn\":-12.78433},{\"year\":2021,\"annualCalendarYearReturn\":0.22511},{\"year\":2020,\"annualCalendarYearReturn\":6.52609}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":2.07023,\"dailyPerformanceNAV\":1.98109},{\"period\":\"1M\",\"trailingTotalReturn\":0.37262,\"dailyPerformanceNAV\":0.37258},{\"period\":\"3M\",\"trailingTotalReturn\":1.33846,\"dailyPerformanceNAV\":1.24996},{\"period\":\"6M\",\"trailingTotalReturn\":1.6309,\"dailyPerformanceNAV\":1.46935},{\"period\":\"1Y\",\"trailingTotalReturn\":4.43766,\"dailyPerformanceNAV\":4.06354},{\"period\":\"3Y\",\"trailingTotalReturn\":4.91868,\"dailyPerformanceNAV\":4.60159},{\"period\":\"5Y\",\"trailingTotalReturn\":1.99384,\"dailyPerformanceNAV\":1.8334},{\"period\":\"10Y\",\"trailingTotalReturn\":2.92815,\"dailyPerformanceNAV\":2.9478}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2024-08-26\"},\"entityUpdatedTime\":\"2025-08-13T21:59:28.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63432\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N3432\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63432\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1069347893\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001358A\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050785894\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50785894\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

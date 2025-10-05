@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">true</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Price Engineer" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">30</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">3600</stringProp>
+        <stringProp name="ThreadGroup.delay">5</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+          <stringProp name="ForeachController.inputVal">account</stringProp>
+          <stringProp name="ForeachController.returnVal">account</stringProp>
+          <boolProp name="ForeachController.useSeparator">true</boolProp>
+          <stringProp name="ForeachController.startIndex">1</stringProp>
+          <stringProp name="ForeachController.endIndex">5</stringProp>
+        </ForeachController>
+        <hashTree>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="account_1" elementType="Argument">
+                <stringProp name="Argument.name">account_1</stringProp>
+                <stringProp name="Argument.value">HK20004994888201A</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="account_2" elementType="Argument">
+                <stringProp name="Argument.name">account_2</stringProp>
+                <stringProp name="Argument.value">HK39503144688801</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="account_3" elementType="Argument">
+                <stringProp name="Argument.name">account_3</stringProp>
+                <stringProp name="Argument.value">HK39504761688801</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="account_4" elementType="Argument">
+                <stringProp name="Argument.name">account_4</stringProp>
+                <stringProp name="Argument.value">HK39504715288801</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="account_5" elementType="Argument">
+                <stringProp name="Argument.name">account_5</stringProp>
+                <stringProp name="Argument.value">HK26724633888801</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="X-hhhh-Saml3" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-Saml3</stringProp>
+                <stringProp name="Header.value">&lt;saml:Assertion xmlns:saml=&apos;http://www.hhhh.com/saas/assertion&apos; xmlns:ds=&apos;http://www.w3.org/2000/09/xmldsig#&apos; xmlns:xsi=&apos;http://www.w3.org/2001/XMLSchema-instance&apos; ID=&apos;id_aa48cf60-cbc8-4e54-b83d-191a2abbb236&apos; IssueInstant=&apos;2020-11-05T03:48:18.775Z&apos; Version=&apos;3.0&apos;&gt;&lt;saml:Issuer&gt;https://www.hhhh.com/rbwm/dtp&lt;/saml:Issuer&gt;&lt;ds:Signature&gt;&lt;ds:SignedInfo&gt;&lt;ds:CanonicalizationMethod Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;/&gt;&lt;ds:SignatureMethod Algorithm=&apos;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256&apos;/&gt;&lt;ds:Reference URI=&apos;#id_aa48cf60-cbc8-4e54-b83d-191a2abbb236&apos;&gt;&lt;ds:Transforms&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2000/09/xmldsig#enveloped-signature&apos;/&gt;&lt;ds:Transform Algorithm=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos;&gt;&lt;ds:InclusiveNamespaces xmlns:ds=&apos;http://www.w3.org/2001/10/xml-exc-c14n#&apos; PrefixList=&apos;#default saml ds xs xsi&apos;/&gt;&lt;/ds:Transform&gt;&lt;/ds:Transforms&gt;&lt;ds:DigestMethod Algorithm=&apos;http://www.w3.org/2001/04/xmlenc#sha256&apos;/&gt;&lt;ds:DigestValue&gt;A39WlZzz1AHVdalKFNoV1km1XHsWLBib39JfiH7jE5E=&lt;/ds:DigestValue&gt;&lt;/ds:Reference&gt;&lt;/ds:SignedInfo&gt;&lt;ds:SignatureValue&gt;iYKuRXgB1X18udfL/imOL32WepxUTpCfhdg5uLLcv7Zl1AqCTzapMexAHKzAKDBXX5DWfRvCRcCunZDeeTyjbpZisDqr+jqQZ4lNrTSUlTiMf7xloRPWZRkflcEkRDXXwfwcTBlSTjOa8+dAFKhxDE7vqvmFHwr9Ade7dJ5ZEm8ysN6l08DVCyoqPI/dEV3fqKiLGaYX641wIEWIyOT41jBlTiP+Be3Qwx241J/fxFAbtzyKBOVsRMHj44SK7UztRCBPaOH8IF3KLtEsnUthFd4Rk2l+mBgy7Ky9sWl+8vnMsiBwelJLjSvsyXtGJVdatbTK/ZMctiR1GUki4GTHjA==&lt;/ds:SignatureValue&gt;&lt;/ds:Signature&gt;&lt;saml:Subject&gt;&lt;saml:NameID&gt;HK26713043388801A&lt;/saml:NameID&gt;&lt;/saml:Subject&gt;&lt;saml:Conditions NotBefore=&apos;2020-11-05T03:48:17.775Z&apos; NotOnOrAfter=&apos;2020-11-05T03:49:18.775Z&apos;/&gt;&lt;saml:AttributeStatement&gt;&lt;saml:Attribute Name=&apos;GUID&apos;&gt;&lt;saml:AttributeValue&gt;b8c70d40-b412-11e2-b7aa-000006010303&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;CAM&apos;&gt;&lt;saml:AttributeValue&gt;30&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;saml:Attribute Name=&apos;KeyAlias&apos;&gt;&lt;saml:AttributeValue&gt;E2E_TRUST_SAAS_EU01_PPROD_ALIAS&lt;/saml:AttributeValue&gt;&lt;/saml:Attribute&gt;&lt;/saml:AttributeStatement&gt;&lt;/saml:Assertion&gt;</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-Locale" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-Locale</stringProp>
+                <stringProp name="Header.value">en</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-Chnl-CountryCode" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-Chnl-CountryCode</stringProp>
+                <stringProp name="Header.value">HK</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-Channel-Id" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-Channel-Id</stringProp>
+                <stringProp name="Header.value">MOBILE</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-Chnl-Group-Member" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-Chnl-Group-Member</stringProp>
+                <stringProp name="Header.value">HASE</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-User-Id" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-User-Id</stringProp>
+                <stringProp name="Header.value">${account}</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-CAM-Level" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-CAM-Level</stringProp>
+                <stringProp name="Header.value">30</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-Src-Device-Id" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-Src-Device-Id</stringProp>
+                <stringProp name="Header.value">1234</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-Session-Correlation-Id" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-Session-Correlation-Id</stringProp>
+                <stringProp name="Header.value">abc1234</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-Src-UserAgent" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-Src-UserAgent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-Request-Correlation-Id" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-Request-Correlation-Id</stringProp>
+                <stringProp name="Header.value">1345</stringProp>
+              </elementProp>
+              <elementProp name="X-hhhh-IP-Id" elementType="Header">
+                <stringProp name="Header.name">X-hhhh-IP-Id</stringProp>
+                <stringProp name="Header.value">dgryth</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="customer-preferences-tps-control" enabled="true">
+            <intProp name="ThroughputController.style">1</intProp>
+            <boolProp name="ThroughputController.perThread">false</boolProp>
+            <intProp name="ThroughputController.maxThroughput">1</intProp>
+            <FloatProperty>
+              <name>ThroughputController.percentThroughput</name>
+              <value>5.66</value>
+              <savedValue>0.0</savedValue>
+            </FloatProperty>
+          </ThroughputController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="customer-preferences" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="parameter" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.value">{&quot;TOP_TRADER&quot;: [{&quot;customerType&quot;: &quot;I&quot;}]}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">parameter</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">cag.sit.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">api/customer-preferences</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+          </hashTree>
+          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="promotion-info-tps-control" enabled="true">
+            <intProp name="ThroughputController.style">1</intProp>
+            <boolProp name="ThroughputController.perThread">false</boolProp>
+            <intProp name="ThroughputController.maxThroughput">1</intProp>
+            <FloatProperty>
+              <name>ThroughputController.percentThroughput</name>
+              <value>13.9</value>
+              <savedValue>0.0</savedValue>
+            </FloatProperty>
+          </ThroughputController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="promotion-info" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="promotionCode" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.value">TOP_TRADER</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">promotionCode</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">cag.sit.wealth-platform-hase.ape1.dev.aws.cloud.hhhh</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="HTTPSampler.path">/api/promotion-info</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

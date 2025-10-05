@@ -1,0 +1,43 @@
+Migrate data from Document DB to Postgresql DB for Cognos report export.
+
+Tables:
+1, CDE_DESC_VALUE
+2, TB_PROD
+3, TB_PROD_USER_DEFIN_EXT_FIELD
+4, TB_DEBT_INSTM
+5, TB_EQTY_LINK_INVST
+6, PROD_FORM_REQMT
+7, PROD_RESTR_CUST_CTRY
+8, TB_PROD_ALT_ID
+9, TB_EQTY_LINK_INVST_UNDL_STOCK
+10,LOG_EQTY_LINK_INVST
+11,PROD_OVRID_FIELD
+
+
+View
+1, PROD
+2, PROD_USER_DEFIN_EXT_FIELD
+3, PROD_ALT_ID
+4, EQTY_LINK_INVST_UNDL_STOCK
+5, V_COG_CMB_ELI_CALLED
+6, V_COG_CMB_ELI_MTUR
+7, V_COG_CMB_ELI_MTUR_EVENT
+8, V_COG_CMB_ELI_MTUR_EXCP
+9, V_COG_CMB_FI_ATTR
+10,V_COG_CMB_FI_MTUR
+11,V_COG_CMB_FI_MTUR_EVENT
+12,V_COG_CMB_FI_MTUR_EXCP
+13,V_COG_CMB_FI_PROD_RESTRICTION
+14,V_COG_ELI_KNOCK_IN_PROD
+15,V_COG_ELI_MTUR
+16,V_COG_ELI_NARR_PROD
+17,V_COG_ELI_RISK_LVL_CHNG
+
+Run in local:
+Program argument:  ctryRecCde=HK grpMembrRecCde=HBAP isFullSycn=false
+
+Run in aws:
+Command: /appvol/product-spring-batch/bin/HKHBAP/cron/wpc_cognos_tables_migrate_job.sh HK HBAP false
+
+Detail page:
+https://wpb-confluence.systems.example.com/display/WWS/Cognos+Tables+Migrate

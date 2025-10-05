@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63355",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:47:36.052325",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63355%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "d37fc283-a7e2-4117-84de-67b731b706cb:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "l4iDZY1O5X66jgsXCO9eGvZlICFGnZVXj2JTlP1tBdUoyFznSaHunA==",
+        "x-hsbc-request-correlation-id": "4535f888-7d36-49d4-a938-0dc46dc920f7",
+        "date": "Wed, 13 Aug 2025 13:47:35 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "31",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a7a7ee092ee4b4df82064022cbdb7e94.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "413",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF - GLOBAL EQUITY SUSTAINABLE HEALTHCARE (CLASS AC-USD-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AC-USD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63183\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GESHU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63183\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2324357040\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MAHJ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050550193\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50550193\"}]},{\"productName\":\"HSBC GIF - GLOBAL EQUITY SUSTAINABLE HEALTHCARE (CLASS AC-HKD-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AC-HKD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63184\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GESHH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63184\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2324359764\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MAIC\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050550192\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50550192\"}]},{\"productName\":\"HSBC GIF - GLOBAL EQUITY SUSTAINABLE HEALTHCARE (CLASS ACO-GBPH-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS ACO-GBPH-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63354\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GESHG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63354\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2324358105\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MAHS\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050704133\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50704133\"}]},{\"productName\":\"HSBC GIF - GLOBAL EQUITY SUSTAINABLE HEALTHCARE (CLASS ACO-EURH-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS ACO-EURH-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63353\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GESHE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63353\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2324358014\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MAHR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050704132\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50704132\"}]},{\"productName\":\"HSBC GIF - GLOBAL EQUITY SUSTAINABLE HEALTHCARE (CLASS ACO-AUDH-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS ACO-AUDH-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63352\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GESHA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63352\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU2324359848\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001MAHK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050704131\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50704131\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

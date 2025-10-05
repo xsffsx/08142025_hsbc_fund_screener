@@ -1,0 +1,23 @@
+mutation referenceDataBatchUpdate($filters: JSON!, $operations: [OperationInput!]!) {
+  referenceDataBatchUpdate(filter: $filters, operations: $operations) {
+    matchCount
+    matchReferenceData {
+      cdvTypeCde
+      cdvCde
+    }
+    updatedReferenceData {
+      cdvTypeCde
+      cdvCde
+    }
+    invalidReferenceData {
+      referData {
+        cdvTypeCde
+        cdvCde
+      }
+      errors {
+        code
+        message
+      }
+    }
+  }
+}

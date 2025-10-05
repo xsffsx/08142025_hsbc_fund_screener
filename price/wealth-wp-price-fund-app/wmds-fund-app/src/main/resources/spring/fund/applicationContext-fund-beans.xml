@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+		
+	<util:properties id="wpcCfgProperty" location="classpath:system/fund/WpcApiClientconfig.properties" />
+	
+	<!-- 
+	    key value: Locale
+		value pattern: [NarrativeLanguageId,NarrativeLanguageName]
+	-->
+	<util:map id="multiLanguageForInvestmentStrategyMap">
+		<entry key="DEFAULT">
+			<util:map>
+				<entry key="zh_CN" value="ZH,Chinese Simplified" />
+				<entry key="zh_HK" value="ZH,Chinese Traditional" />
+				<entry key="zh_TW" value="ZH,Chinese Traditional" />
+			</util:map>
+		</entry>
+		<entry key="HK_HBAP">
+			<util:map>
+				<entry key="zh_CN" value="ZH,Chinese Simplified|ZH,Chinese Traditional" />
+				<entry key="zh_HK" value="ZH,Chinese Traditional" />
+			</util:map>
+		</entry>
+		<entry key="TW_hhhh ">
+			<util:map>
+				<entry key="zh_CN" value="ZH,Chinese Simplified|ZH,Chinese Traditional" />
+				<entry key="zh_TW" value="ZH,Chinese Traditional" />
+			</util:map>
+		</entry>
+	</util:map>
+	
+	<util:map id="bestFitIndexCalendarYearMap">
+		<entry key="CN_hhhh" value="UT,LCUT:MRF" />
+		<entry key="CN_GLCM" value="ALL" />
+		<entry key="HK_HBAP" value="ALL" />
+		<entry key="TW_hhhh" value="ALL" />
+	</util:map>
+	
+	<util:map id="fieldNeeddataPointNewapiMap">
+		<entry key="CN_hhhh" value="UT,LCUT" />
+		<entry key="CN_GLCM" value="ALL" />
+	</util:map>
+	
+	<util:map id="topTenHoldingDataPointNewapiMap">
+		<entry key="CN_hhhh" value="1,UT,LCUT" />
+		<entry key="CN_GLCM" value="ALL" />
+	</util:map>
+	
+	<util:map id="fundSearchCriteria">
+		<entry key="allMinMaxCriteriaKeys" value="MER,BETA,STDDVIAT1Y,STDDVIAT3Y,STDDVIAT,STDDVIAT10Y,ALPH,SHPRATIO1Y,SHPRATIO3Y,SHPRATIO,SHPRATIO10Y,RSQR,MEAN,DLYCHNG,D1RTRN,M1RTRN,M3RTRN,M6RTRN,YTDRTRN,Y1RTRN,Y3RTRN,Y5RTRN,Y10RTRN,DIVYLD,AUM,ACQ,EXPR,MAGP,CISP,AMFP" />
+		<entry key="allListCriteriaKeys" value="FAM,CAT,RISK,CCY,DF,Y1QTL,Y3QTL,Y5QTL,Y10QTL,ACQN,CATLV1,INVSTRG,AMCM,PSC,PCDI,GBAA,GNRA,SIFC,SRLN,ESG" />
+	</util:map>
+	
+	<bean id="mstarConnManager"
+		class="com.hhhh.group.secwealth.mktdata.common.svc.httpclient.HttpConnectionManager"
+		init-method="init">
+		<property name="maxTotalConn" value="${conn.maxTotalConn}" />
+		<property name="maxRouteConn" value="${conn.maxRouteConn}" />
+		<property name="connectTimeout" value="${conn.connectTimeout}" />
+		<property name="readTimeout" value="${conn.readTimeout}" />
+		<property name="proxyHost" value="${conn.proxyHost}" />
+		<property name="proxyPort" value="${conn.proxyPort}" />
+		<property name="retryCount" value="${conn.retryCount}" />
+		<property name="sendMethod" value="${mstar.conn.sendMethod}" />
+		<property name="enableGzip" value="${conn.enableGzip}" />
+		<property name="needProxy" value="${mstar.conn.needProxy}" />
+		<property name="marketdataAdaptorUrl" value="${marketdata.adaptor.url}" />
+	</bean>
+	
+	<bean id="securityFilterAutoConfiguration" 
+		class="com.hhhh.group.secwealth.mktdata.common.filter.e2etrust.SecurityFilterAutoConfiguration"
+		init-method="init">
+	</bean>
+	
+	<util:map id="orderByFieldsMap">
+		<entry key="DEFAULT">
+			<util:map>
+				<entry key="categoryName" value="utProd.categorySequencenNum,utProd.categoryName" />
+				<entry key="familyName" value="utProd.familySequencenNum,utProd.familyName" />
+				<entry key="categoryLevel0Name" value="utProd.categoryLevel0SequencenNum,utProd.categoryLevel0Name" />
+				<entry key="categoryLevel1Name" value="utProd.categoryLevel1SequencenNum,utProd.categoryLevel1Name" />
+				<entry key="investmentRegionName" value="utProd.investmentRegionSequencenNum,utProd.investmentRegionName" />
+				<entry key="riskLvlCde" value="utProd.riskLvlCde" />
+				<entry key="payCashDivInd" value="utProd.payCashDivInd" />
+				<entry key="gbaAcctTrdb" value="utProd.gbaAcctTrdb" />
+				<entry key="gnrAcctTrdb" value="utProd.gnrAcctTrdb" />
+				<entry key="siFundCatCde" value="utProd.siFundCatCde" />
+				<entry key="currency" value="utProd.currency" />
+				<entry key="volumeNAV" value="dayEndNAV" />
+				<entry key="dayEndNAV" value="dayEndNAV" />
+				<entry key="changePercentageNAV" value="marketPrice" />
+				<entry key="assetsUnderManagement" value="assetsUnderManagement" />
+				<entry key="totalNetAsset" value="totalNetAsset" />
+				<entry key="ratingOverall" value="ratingOverall" />
+				<entry key="mer" value="mer" />
+				<entry key="yield1Yr" value="yield1Yr" />
+				<entry key="shortLstRPQLvlNum" value="utProd.shortLstRPQLvlNum" />
+				<entry key="esgInd" value="utProd.esgInd" />
+				<entry key="inceptionDate" value="inceptionDate" />
+				<entry key="turnoverRatio" value="turnoverRatio" />
+				<entry key="stdDev3Yr" value="stdDev3Yr" />
+				<entry key="equityStyle" value="equityStyle" />
+				
+				<entry key="morningstarRating" value="ratingOverall" />
+				<entry key="taxAdjustedRating" value="taxAdjustedRating" />
+				<entry key="averageCreditQuality" value="averageCreditQuality" />
+				<entry key="rank1Yr" value="rank1Yr" />
+
+				<entry key="return1Mth" value="return1mth" />
+				<entry key="return3Mth" value="return3mth" />
+				<entry key="return6Mth" value="return6mth" />
+				<entry key="return1Yr" value="return1yr" />
+				<entry key="return3Yr" value="return3yr" />
+				<entry key="return5Yr" value="return5yr" />
+				<entry key="return10Yr" value="return10yr" />
+				<entry key="returnSinceInception" value="returnSinceInception" />
+				
+				<entry key="returnYTD" value="returnYTD" />
+				<entry key="return1yearago" value="year1" />
+				<entry key="return2yearago" value="year2" />
+				<entry key="return3yearago" value="year3" />
+				<entry key="return4yearago" value="year4" />
+				<entry key="return5yearago" value="year5" />
+				
+				<entry key="year1beta" value="beta1" />
+				<entry key="year1stdDev" value="stdDev1" />
+				<entry key="year1alpha" value="alpha1" />
+				<entry key="year1sharpeRatio" value="sharpeRatio1" />
+				<entry key="year1rSquared" value="rSquared1" />
+				
+				<entry key="year3beta" value="beta3" />
+				<entry key="year3stdDev" value="stdDev3Yr" />
+				<entry key="year3alpha" value="alpha3" />
+				<entry key="year3sharpeRatio" value="sharpeRatio3" />
+				<entry key="year3rSquared" value="rSquared3" />
+				
+				<entry key="year5beta" value="beta5" />
+				<entry key="year5stdDev" value="stdDev5" />
+				<entry key="year5alpha" value="alpha5" />
+				<entry key="year5sharpeRatio" value="sharpeRatio5" />
+				<entry key="year5rSquared" value="rSquared5" />
+				
+				<entry key="year10beta" value="beta10" />
+				<entry key="year10stdDev" value="stdDev10" />
+				<entry key="year10alpha" value="alpha10" />
+				<entry key="year10sharpeRatio" value="sharpeRatio10" />
+				<entry key="year10rSquared" value="rSquared10" />
+				
+				<entry key="minInitInvst" value="minInitInvst" />
+				<entry key="minSubqInvst" value="minSubqInvst" />
+				<entry key="hhhhMinInitInvst" value="hhhhMinInitInvst" />
+				<entry key="hhhhMinSubqInvst" value="hhhhMinSubqInvst" />
+				<entry key="minInitRRSPInvst" value="minimumIRA" />
+				<entry key="loadType" value="ClassType" /> 
+				<entry key="rrspeligibility" value="rrspEligibility" />
+				
+				<entry key="OCF" value="annualReportOngoingCharge" />
+				<entry key="AMF" value="actualManagementFee" />
+
+				<entry key="expenseRatio" value="expenseRatio" />
+				<entry key="marginRatio" value="loanProdOdMrgnPct" />
+				<entry key="initialCharge" value="chrgInitSalesPct" />
+				<entry key="annualManagementFee" value="annMgmtFeePct" />
+				<entry key="amcmIndicator" value="amcmAuthorizeIndicator" />
+				<entry key="prodStatCde" value="prodStatCde" />
+				<entry key="nextDealDate" value="nextDealDate" />
+				
+				<entry key="rank1Yr" value="rank1Yr" />
+				<entry key="rank3Yr" value="rank3Yr" />
+				<entry key="rank5Yr" value="rank5Yr" />
+				<entry key="rank10Yr" value="rank10Yr" />
+				<entry key="topPerformersIndicator" value="utProd.return1yr" />
+				<entry key="allowBuy" value="allowBuyProdInd	" />
+				<entry key="allowSell" value="allowSellProdInd" />
+				<entry key="allowSwInProdInd" value="allowSwInProdInd" />
+				<entry key="allowSwOutProdInd" value="allowSwOutProdInd" />
+				<entry key="allowSellMipProdInd" value="allowSellMipProdInd" />
+				
+				<entry key="distributionYield" value="yield1Yr" />
+				<entry key="distributionFrequency" value="utProd.distributionFrequencyNum,utProd.distributionFrequency" />
+				<entry key="averageCreditQualityName" value="utProd.averageCreditQualityNum,utProd.averageCreditQualityName" />
+				<entry key="Bond" value="utAlloc.holdingAllocWeightNet, utAlloc.utHoldingAllocId.performanceId"/>
+				<entry key="Cash" value="utAlloc.holdingAllocWeightNet, utAlloc.utHoldingAllocId.performanceId"/>
+				<entry key="Other" value="utAlloc.holdingAllocWeightNet, utAlloc.utHoldingAllocId.performanceId"/>
+				<entry key="Preferred" value="utAlloc.holdingAllocWeightNet, utAlloc.utHoldingAllocId.performanceId"/>
+				<entry key="Stock" value="utAlloc.holdingAllocWeightNet, utAlloc.utHoldingAllocId.performanceId"/>
+				
+				<!-- hhhh_NEW_FUND/hhhh_BEST_SELLER sorting -->
+				<entry key="prodLaunchDate" value="utProd.prodLaunchDate"/>
+				<entry key="prodTopSellRankNum" value="utProd.prodTopSellRankNum"/>
+			</util:map>
+		</entry>
+		<entry key="HK_HBAP">
+			<util:map>
+				<entry key="return1Mth" value="return1mthDaily" />
+				<entry key="return3Mth" value="return3mthDaily" />
+				<entry key="return6Mth" value="return6mthDaily" />
+				<entry key="return1Yr" value="return1yrDaily" />
+				<entry key="return3Yr" value="return3yrDaily" />
+				<entry key="return5Yr" value="return5yrDaily" />
+				<entry key="return10Yr" value="return10yrDaily" />
+				<entry key="returnYTD" value="returnytdDaily" />
+				<entry key="returnSinceInception" value="returnSinceInceptionDaily" />
+			</util:map>
+		</entry>
+		<entry key="TW_hhhh">
+			<util:map>
+				<entry key="return1Mth" value="return1mthDaily" />
+				<entry key="return3Mth" value="return3mthDaily" />
+				<entry key="return6Mth" value="return6mthDaily" />
+				<entry key="return1Yr" value="return1yrDaily" />
+				<entry key="return3Yr" value="return3yrDaily" />
+				<entry key="return5Yr" value="return5yrDaily" />
+				<entry key="return10Yr" value="return10yrDaily" />
+				<entry key="returnYTD" value="returnytdDaily" />
+				<entry key="returnSinceInception" value="returnSinceInceptionDaily" />
+			</util:map>
+		</entry>
+	</util:map>
+	
+	<bean id="fundCriteriaKeyMapper" class="com.hhhh.group.secwealth.mktdata.fund.criteria.FundCriteriaKeyMapper">
+		<constructor-arg>
+			<util:map>
+				<entry key="DEFAULT">
+					<util:map>
+						<entry key="CTRY" value="utProd.market" />
+						<entry key="FAM" value="utProd.familyCode" />
+						<entry key="CAT" value="utProd.categoryCode" />
+						<entry key="PST" value="utProd.productSubTypeCode" />
+						<entry key="PCDI" value="utProd.payCashDivInd" />
+						<entry key="CATLV1" value="utProd.categoryLevel1Code" />
+						<entry key="GBAA" value="utProd.gbaAcctTrdb" />
+						<entry key="GNRA" value="utProd.gnrAcctTrdb" />
+						<entry key="SRLN" value="utProd.shortLstRPQLvlNum" />
+						<entry key="ESG" value="utProd.esgInd" />
+						<entry key="allowTradeProdInd" value="utProd.allowTradeProdInd" />
+						<entry key="prodTaxFreeWrapActStaCde" value="utProd.prodTaxFreeWrapActStaCde" />
+						<entry key="MER" value="mer" />
+						<entry key="TE" value="trackingError1Yr" />
+						<entry key="ES" value="equityStyle" />
+						<entry key="FIS" value="fixIncomestyle" />
+						<entry key="TNA" value="totalNetAsset" />
+						<entry key="AUM" value="assetsUnderManagement" />
+						<entry key="MSR" value="ratingOverall" />
+						<entry key="BETA" value="beta5" />
+						<entry key="STDDVIAT1Y" value="stdDev1" />
+						<entry key="STDDVIAT3Y" value="stdDev3Yr" />
+						<entry key="STDDVIAT" value="stdDev5" />
+						<entry key="STDDVIAT10Y" value="stdDev10" />
+						<entry key="ALPH" value="alpha5" />
+						<entry key="SHPRATIO1Y" value="sharpeRatio1" />
+						<entry key="SHPRATIO3Y" value="sharpeRatio3" />
+						<entry key="SHPRATIO" value="sharpeRatio5" />
+						<entry key="SHPRATIO10Y" value="sharpeRatio10" />
+						<entry key="RSQR" value="rSquared5" />
+						<entry key="MEAN" value="mean5Yr" />
+						<entry key="MSRR" value="risk3Yr" />
+						<entry key="DLYCHNG" value="return1day " />
+						
+						<entry key="D1RTRN" value="return1day" />
+						<entry key="M1RTRN" value="return1mth" />
+						<entry key="M3RTRN" value="return3mth" />
+						<entry key="M6RTRN" value="return6mth" />
+						
+						<entry key="YTDRTRN" value="returnYTD" />
+						
+						<entry key="Y1RTRN" value="return1yr" />
+						<entry key="Y3RTRN" value="return3yr" />
+						<entry key="Y5RTRN" value="return5yr" />
+						<entry key="Y10RTRN" value="return10yr" />
+						
+						<entry key="Y1QTL" value="rank1Yr" />
+						<entry key="Y3QTL" value="rank3Yr" />
+						<entry key="Y5QTL" value="rank5Yr" />
+						<entry key="Y10QTL" value="rank10Yr" />
+						<entry key="DIVYLD" value="yield1Yr" />
+						<entry key="DF" value="distributionFrequency" />
+						<entry key="MII" value="hhhhMinInitInvst" />
+						<entry key="MIRI" value="minimumIRA" />
+						<entry key="LT" value="" />
+						<entry key="RISK" value="utProd.riskLvlCde" />
+						<entry key="SIFC" value="utProd.siFundCategoryCode" />
+						<entry key="CCY" value="utProd.currency" />
+						
+						<entry key="OCF" value="annualReportOngoingCharge" />
+						<entry key="AMF" value="actualManagementFee" />
+						
+						<entry key="ACQ" value="averageCreditQuality" />
+						<entry key="ACQN" value="averageCreditQualityName" />
+						
+						<entry key="EXPR" value="expenseRatio" />
+						<entry key="MAGP" value="loanProdOdMrgnPct" />
+						<entry key="CISP" value="chrgInitSalesPct" />
+						<entry key="AMFP" value="annMgmtFeePct" />
+						<entry key="INVSTRG" value="investmentRegionCode" />
+						<entry key="hhhh_TOP5_PERFORMERS" value="" />
+						<entry key="hhhh_BEST_SELLER" value="" />
+						<entry key="hhhh_NEW_FUND" value="" />
+						<entry key="hhhh_FUND_OF_QUARTER" value="" />
+						<entry key="AMCM" value="amcmAuthorizeIndicator" />
+						<entry key="PSC" value="prodStatCde" />
+						<entry key="NDD" value="nextDealDate" />
+						<entry key="PFI" value="piFundInd" />
+						<entry key="DAI" value="deAuthFundInd" />
+					</util:map>
+				</entry>
+				<entry key="HK_HBAP">
+					<util:map>
+						<entry key="M1RTRN" value="return1mthDaily" />
+						<entry key="M3RTRN" value="return3mthDaily" />
+						<entry key="M6RTRN" value="return6mthDaily" />
+						<entry key="YTDRTRN" value="returnytdDaily" />
+						<entry key="Y1RTRN" value="return1yrDaily" />
+						<entry key="Y3RTRN" value="return3yrDaily" />
+						<entry key="Y5RTRN" value="return5yrDaily" />
+						<entry key="Y10RTRN" value="return10yrDaily" />
+					</util:map>
+				</entry>
+				<entry key="TW_hhhh">
+					<util:map>
+						<entry key="M1RTRN" value="return1mthDaily" />
+						<entry key="M3RTRN" value="return3mthDaily" />
+						<entry key="M6RTRN" value="return6mthDaily" />
+						<entry key="YTDRTRN" value="returnytdDaily" />
+						<entry key="Y1RTRN" value="return1yrDaily" />
+						<entry key="Y3RTRN" value="return3yrDaily" />
+						<entry key="Y5RTRN" value="return5yrDaily" />
+						<entry key="Y10RTRN" value="return10yrDaily" />
+					</util:map>
+				</entry>
+				<entry key="CA">
+					<util:map>
+						<entry key="LT" value="shareClassType" />
+					</util:map>
+				</entry>
+			</util:map>
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>CTRY</value>
+				<value>FAM</value>
+				<value>CAT</value>
+				<value>DF</value>
+				<value>PST</value>
+				<value>allowTradeProdInd</value>
+				<value>prodTaxFreeWrapActStaCde</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<util:map id="criteriaValueMap">
+	<!-- Distribution frequency -->
+		<!--Remove this only for AMH_UTB
+		<entry key="DF">
+			<util:map>
+				<entry key="A$" value="Annually" />
+				<entry key="a$" value="Semi-Annually" />
+				<entry key="B$" value="Bi-Monthly" />
+				<entry key="M$" value="Monthly" />
+				<entry key="m$" value="Semi-Monthly" />
+				<entry key="N$" value="None" />
+				<entry key="Q$" value="Quarterly" />
+				<entry key="W$" value="Weekly" />
+				<entry key="D$" value="Daily" />
+			</util:map>
+		</entry>
+		-->
+		<!-- Load type  -->
+		<entry key="LT">
+			<util:map>
+				<entry key="1" value="Deferred Sales Charge"/>
+				<entry key="2" value="Deferred Sales Charge on Market Value"/>
+				<entry key="3" value="Front-end Charge"/>
+				<entry key="4" value="Redemption Charge"/>
+				<entry key="5" value="Group Sales Charge"/>
+				<entry key="6" value="Volume Sales Charge"/>
+				<entry key="7" value="No Sales or Redemp Charge"/>
+				<entry key="8" value="Low Sales Charge"/>
+				<entry key="9" value="Deferred Charge on Original Amount"/>
+				<entry key="10" value="Short Redemption Schedule"/>
+				<entry key="11" value="Formula One"/>			
+			</util:map>
+		</entry>
+		<!-- ETF type  -->
+		<entry key="ET">
+			<util:map>
+				<entry key="SE" value="Standard"/><!-- SE - Standard ETFs  -->
+				<entry key="LE" value="LeveragedFund"/><!-- LE - Leveraged ETFs  -->
+				<entry key="INVERS_E" value="InverseFund"/><!-- INVERS_E - Inverse ETFs  -->
+				<entry key="INDEX_E" value="IndexFund"/><!-- INDEX_E - Index ETFs  -->
+			</util:map>
+		</entry>
+	</util:map>
+	
+	<!-- fundSearchResult switchout case -->
+	<util:map id="switchOutCaseMap">
+	    <entry key="DEFAULT_SWITCHOUT" value="DEFAULT_DB"/>
+	    <!-- <entry key="TW_hhhh_SWITCHOUT" value="PREDSRCH"/>  -->
+		<entry key="GB_HBEU_SWITCHOUT" value="GB_HBEU_DB"/>
+		<entry key="SG_hhhh_SWITCHOUT" value="PREDSRCH"/>
+		<entry key="SG_HBSP_SWITCHOUT" value="PREDSRCH"/>
+		<entry key="CN_hhhh_SWITCHOUT" value="PREDSRCH"/>
+		<entry key="CN_GLCM_SWITCHOUT" value="PREDSRCH"/>
+	</util:map>
+	
+	<!--  NEW_FUND/BEST_SELLER/TOP5_PERFORMERS case -->
+	<util:map id="newFundBestSellerMap">
+	    <entry key="DEFAULT_NEW_FUND" value="WEBSERVICE"/>
+		<entry key="HK_HBAP_NEW_FUND" value="DB"/>
+		<entry key="TW_hhhh_NEW_FUND" value="DB"/>
+		<entry key="DEFAULT_BEST_SELLER" value="WEBSERVICE"/>
+		<entry key="HK_HBAP_BEST_SELLER" value="DB"/>
+		<entry key="HK_HBAP_RETIREMENT_FUND" value="DB"/>
+		<entry key="TW_hhhh_BEST_SELLER" value="DB"/>
+		<entry key="DEFAULT_FUND_OF_QUARTER" value="DB"/>
+		<entry key="DEFAULT_TOP5_PERFORMERS" value="DB"/>
+	</util:map>
+	
+	<!--  NEW_FUND/BEST_SELLER/TOP5_PERFORMERS case -->
+	<util:map id="newFundBestSellerCaseMap">
+	    <entry key="NEW_FUND" value="quickview.newfunds"/>
+	    <entry key="BEST_SELLER" value="quickview.bestsellers"/>
+	    <entry key="RETIREMENT_FUND" value="quickview.retirementfunds"/>
+	    <entry key="FUND_OF_QUARTER" value="quickview.fundofquarter"/>
+	     <entry key="TOP5_PERFORMERS" value="quickview.top5performance"/>
+	</util:map>
+	
+	<util:map id="categoryOverviewOrderMap">
+	    <entry key="DEFAULT" value="category"/>
+		<entry key="TW_HBSC" value="return1yr"/>
+	</util:map>
+	
+	<util:map id="holdingAllocationMap">
+	    <entry key="ASSETALLOC" value="ASET_ALLOC"/>
+		<entry key="STOCKSECTORS" value="STOCK_SEC"/>
+		<entry key="EQUITYREGIONAL" value="STOCK_GEO"/>
+		<entry key="BONDSECTORS" value="BOND_SEC"/>
+		<entry key="BONDREGIONAL" value="BOND_GEO"/>
+	</util:map>
+	
+</beans>

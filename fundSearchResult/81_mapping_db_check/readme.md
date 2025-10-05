@@ -1,0 +1,1 @@
+docker run --rm -e PGPASSWORD=hsbc_pass postgres:13 psql -h host.docker.internal -p 5433 -U hsbc_user -d price -c

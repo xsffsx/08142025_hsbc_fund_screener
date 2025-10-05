@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dummy.wpb.product</groupId>
+    <artifactId>product-batch-package-assembly</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+    <name>product-batch-package-assembly</name>
+    <packaging>pom</packaging>
+    <description>Zip product batch files into a package</description>
+
+    <!-- List of job modules -->
+    <modules>
+        <module>../build-batch-jar/</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>package-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <finalName>product-batch-package</finalName>
+                            <attach>true</attach>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <descriptors>
+                                <descriptor>assembly.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.dummy:8081/nexus/repository/maven-dummy-internal-prod_n3p/</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.dummy:8081/nexus/repository/maven-dummy-internal-snapshots_n3p/</url>
+            <layout>default</layout>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

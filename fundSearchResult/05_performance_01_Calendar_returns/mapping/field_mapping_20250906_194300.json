@@ -1,0 +1,58 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "AB - AMERICAN INCOME PORTFOLIO (CLASS AT-NZDH-MDIST CASH)",
+    "data_type": "string",
+    "example": "AB - AMERICAN INCOME PORTFOLIO (CLASS AT-NZDH-MDIST CASH)"
+  },
+  "YTD": {
+    "frontend_name": "YTD",
+    "frontend_description": "年初至今收益率",
+    "api_path": "performance.calendarReturns.returnYTD",
+    "api_value": 5.72371,
+    "data_type": "percentage",
+    "example": "5.72%"
+  },
+  "2024": {
+    "frontend_name": "2024",
+    "frontend_description": "2024年收益率",
+    "api_path": "performance.calendarReturns.year[yearName=1].yearValue",
+    "api_value": 2.40799,
+    "data_type": "percentage",
+    "example": "2.41%"
+  },
+  "2023": {
+    "frontend_name": "2023",
+    "frontend_description": "2023年收益率",
+    "api_path": "performance.calendarReturns.year[yearName=2].yearValue",
+    "api_value": 7.80235,
+    "data_type": "percentage",
+    "example": "7.80%"
+  },
+  "2022": {
+    "frontend_name": "2022",
+    "frontend_description": "2022年收益率",
+    "api_path": "performance.calendarReturns.year[yearName=3].yearValue",
+    "api_value": -13.79101,
+    "data_type": "percentage",
+    "example": "-13.79%"
+  },
+  "2021": {
+    "frontend_name": "2021",
+    "frontend_description": "2021年收益率",
+    "api_path": "performance.calendarReturns.year[yearName=4].yearValue",
+    "api_value": -0.39503,
+    "data_type": "percentage",
+    "example": "-0.40%"
+  },
+  "2020": {
+    "frontend_name": "2020",
+    "frontend_description": "2020年收益率",
+    "api_path": "performance.calendarReturns.year[yearName=5].yearValue",
+    "api_value": 3.00414,
+    "data_type": "percentage",
+    "example": "3.00%"
+  }
+}

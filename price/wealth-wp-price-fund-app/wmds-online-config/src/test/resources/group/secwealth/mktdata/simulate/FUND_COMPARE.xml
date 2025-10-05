@@ -1,0 +1,97 @@
+<com.hhhh.group.secwealth.mktdata.srbp.svc.beans.FundCompareSvcResponse>
+	<product>
+		<com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareProduct>
+			<header>
+				<name>hhhh Equity Inv</name>
+				<currency>CAD</currency>
+				<outer-class reference="../.." />
+			</header>
+			<summary>
+				<categoryName>Canadian Equity</categoryName>
+				<assetsUnderManagement>270700778</assetsUnderManagement>
+				<totalNetAsset>270700778</totalNetAsset>
+				<ratingOverall>3</ratingOverall>
+				<mer>2.000</mer>
+				<yield1Yr>0.03143</yield1Yr>
+				<outer-class reference="../.." />
+			</summary>
+			<profile>
+				<inceptionDate>19890106</inceptionDate>
+				<turnoverRatio>6.03</turnoverRatio>
+				<stdDev3Yr>10.309</stdDev3Yr>
+				<equityStylebox>3</equityStylebox>
+				<outer-class reference="../.." />
+			</profile>
+			<rating>
+				<morningstarRating>3</morningstarRating>
+				<rank1Yr>62</rank1Yr>
+				<outer-class reference="../.." />
+			</rating>
+			<performance>
+				<annualizedReturns>
+					<return1Mth>0.25</return1Mth>
+					<return3Mth>0.25</return3Mth>
+					<return6Mth>0.25</return6Mth>
+					<return1Yr>0.25</return1Yr>
+					<return3Yr>0.25</return3Yr>
+					<return5Yr>0.25</return5Yr>
+					<return10Yr>0.25</return10Yr>
+					<returnSinceInception>6.50488</returnSinceInception>
+				</annualizedReturns>
+				<calendarReturns>
+					<returnYTD>5.40387</returnYTD>
+					<year1>-3.65</year1>
+					<year2>2.235</year2>
+					<year3>2.235</year3>
+					<year4>2.235</year4>
+					<year5>2.235</year5>
+				</calendarReturns>
+				<outer-class reference="../.." />
+			</performance>
+			<risk>
+				<com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareRisk>
+					<yearRisk>
+						<year>1</year>
+						<beta>0.90</beta>
+						<stdDev>7.534</stdDev>
+						<alpha>3.26</alpha>
+						<sharpeRatio>1.599</sharpeRatio>
+						<rSquared>93.61</rSquared>
+						<outer-class reference="../.." />
+					</yearRisk>
+				</com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareRisk>
+				<com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareRisk>
+					<yearRisk>
+						<year>3</year>
+						<beta>0.95</beta>
+						<stdDev>10.309</stdDev>
+						<alpha>-0.41</alpha>
+						<sharpeRatio>0.352</sharpeRatio>
+						<rSquared>93.60</rSquared>
+						<outer-class reference="../.." />
+					</yearRisk>
+				</com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareRisk>
+				<com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareRisk>
+					<yearRisk>
+						<year>10</year>
+						<beta>0.90</beta>
+						<stdDev>12.917</stdDev>
+						<alpha>-1.77</alpha>
+						<sharpeRatio>0.356</sharpeRatio>
+						<rSquared>95.52</rSquared>
+						<outer-class />
+					</yearRisk>
+				</com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareRisk>
+				<com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareRisk
+					reference="../com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareRisk[3]/yearRisk/outer-class" />
+			</risk>
+			<purchaseInfo>
+				<minimumInitial>500</minimumInitial>
+				<minimumSubsequent>50</minimumSubsequent>
+				<minimumIRA>50</minimumIRA>
+				<rrsp>true</rrsp>
+				<outer-class reference="../.." />
+			</purchaseInfo>
+		</com.hhhh.group.secwealth.mktdata.srbp.svc.model.FundCompareProduct>
+	</product>
+</com.hhhh.group.secwealth.mktdata.srbp.svc.beans.FundCompareSvcResponse>

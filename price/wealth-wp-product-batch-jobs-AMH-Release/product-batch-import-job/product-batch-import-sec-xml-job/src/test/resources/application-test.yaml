@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  batch:
+    job:
+      enabled: false
+batch:
+  graphQLUrl: "http://localhost:8080/graphql"
+  format:
+    not-allow: AMHGSOPS.AS.SEC~JP

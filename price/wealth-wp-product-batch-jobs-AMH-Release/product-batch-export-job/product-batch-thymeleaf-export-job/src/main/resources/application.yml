@@ -1,0 +1,26 @@
+# DB profile (DEV)
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  batch:
+    initialize-schema: always
+  main:
+    web-application-type: none
+  data:
+    mongodb:
+      host: "docdb.wealth-platform-sgh.sit.aws.cloud.dummy"
+      port: 27017
+      database: WPC_SG_DEV
+      username: wpdocdbadmin
+      password:
+      enable-replica: false
+
+batch:
+  graphQLUrl:
+  outgoing:
+    path: C:\\dev
+  timeZone: Asia/Singapore
+  chunk-size: 1000

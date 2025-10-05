@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61136",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:47.397086",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61136%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c9f82dcc-55fb-409e-be7c-97510d96fae1:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "apX6tCTTdlklfTfHPzGvw06PfXAuCIBoAg9oGiNu8yUAf3UDpPvZMQ==",
+        "x-hsbc-request-correlation-id": "7cc019ef-331d-404b-be86-66dac3587bef",
+        "date": "Wed, 13 Aug 2025 13:38:47 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 754c238f7da696f103a9cabfcaa5576c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "430",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes\",\"weighting\":5.21193,\"currency\":\"USD\",\"marketValue\":70570984},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes\",\"weighting\":4.82844,\"currency\":\"USD\",\"marketValue\":65378320},{\"market\":\"US\",\"productType\":\"NC\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association\",\"weighting\":2.91035,\"currency\":\"USD\",\"marketValue\":39406940},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes\",\"weighting\":2.08607,\"currency\":\"USD\",\"marketValue\":28245952},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes\",\"weighting\":1.88776,\"currency\":\"USD\",\"marketValue\":25560734},{\"market\":\"US\",\"productType\":\"NR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"FEDERAL HOME LN MTG CORP MULTICLASS MTG PARTN CTFS GTD\",\"weighting\":1.86883,\"currency\":\"USD\",\"marketValue\":25304466},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes\",\"weighting\":1.86208,\"currency\":\"USD\",\"marketValue\":25213078},{\"market\":\"US\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United States Treasury Notes\",\"weighting\":1.82592,\"currency\":\"USD\",\"marketValue\":24723461},{\"market\":\"US\",\"productType\":\"NR\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"FEDERAL HOME LN MTG CORP MULTICLASS MTG PARTN CTFS GTD\",\"weighting\":1.77199,\"currency\":\"USD\",\"marketValue\":23993224},{\"market\":\"US\",\"productType\":\"NC\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Federal National Mortgage Association\",\"weighting\":1.76517,\"currency\":\"USD\",\"marketValue\":23900921}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

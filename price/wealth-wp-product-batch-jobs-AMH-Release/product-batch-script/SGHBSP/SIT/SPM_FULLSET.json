@@ -1,0 +1,152 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "BI",
+  "path": "/appvol/product-spring-batch-sit/data/outgoing/SGHBSP/BI/",
+  "tasks": [
+    {
+      "files": [
+        {
+          "name": "ELI XML",
+          "templateName": "/xml/33/ELI.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_ELI_${date:yyyyMMddHHmmss}_{sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "ELI",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "REFDATA XML",
+          "templateName": "/xml/REFDATA.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_REFDATA_${date:yyyyMMddHHmmss}_{sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {}
+    },
+    {
+      "files": [
+        {
+          "name": "DPS XML",
+          "templateName": "/xml/33/DPS.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_DPS_${date:yyyyMMddHHmmss}_{sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "DPS",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "ALT XML",
+          "templateName": "/xml/33/ALT.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_ALT_${date:yyyyMMddHHmmss}_{sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "ALT",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "SN XML",
+          "templateName": "/xml/33/SN.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_SN_${date:yyyyMMddHHmmss}_{sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SN",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "BOND XML",
+          "templateName": "/xml/33/BOND.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_BOND_${date:yyyyMMddHHmmss}_{sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "BOND",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      },
+      "deltaKey": ""
+    },
+    {
+      "files": [
+        {
+          "name": "UT XML",
+          "templateName": "/xml/33/UT.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_UT_${date:yyyyMMddHHmmss}_{sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "UT",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "SID XML",
+          "templateName": "/xml/33/SID.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_SID_${date:yyyyMMddHHmmss}_{sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SID",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "INS XML",
+          "templateName": "/xml/33/INS.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_INS_${date:yyyyMMddHHmmss}_{sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "INS",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    }
+  ],
+  "ack": {
+    "generate": true
+  },
+  "timeZone": "Asia/Singapore"
+}

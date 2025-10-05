@@ -1,0 +1,15 @@
+query productPriceHistoryByFilter($filter:JSON!){
+    productPriceHistoryByFilter(filter:$filter,limit:0) {
+        prodId
+        pdcyPrcCde
+        prcEffDt
+        prcInpDt
+        ccyProdMktPrcCde
+        prodBidPrcAmt
+        prodOffrPrcAmt
+        prodMktPrcAmt
+        prodNavPrcAmt
+        recCreatDtTm
+        recUpdtDtTm
+    }
+}

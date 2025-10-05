@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<configuration>
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d %-5p [%c] [%thread] PCFOrg=${logging.cf.org} PCFSpace=${logging.cf.space} AppName=${logging.app} SubProject=${logging.project.equity} Version=${logging.version} %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="stdout" />
+	</root>
+</configuration>

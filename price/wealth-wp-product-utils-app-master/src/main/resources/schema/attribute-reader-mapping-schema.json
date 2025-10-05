@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "product configuration package information schema",
+  "description": "for config-package-info.yaml validation",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "pattern": {
+        "description": "name pattern in regex for the request attribute name",
+        "type": "string"
+      },
+      "className": {
+        "description": "reader class name, this class must exist",
+        "type": "string"
+      },
+      "prodTypeCdes": {
+        "description": "attribute product type",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "attributes": {
+        "description": "json path of the attributes needs for the reader to proceed",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "params": {
+        "type": "object"
+      }
+    },
+    "required": [
+      "pattern",
+      "className",
+      "prodTypeCdes",
+      "attributes"
+    ],
+    "additionalProperties": false
+  }
+}

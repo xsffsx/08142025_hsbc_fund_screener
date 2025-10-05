@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63269",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:57:42.280170",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63269%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "9c46cadb-4383-4955-99a5-d25cb7a256d4:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "nDTLwbsuaMTkMqhQOIoyYPxGiGWdHwtS4x48ITaA0Cbd2k-C0Npv-A==",
+        "x-hsbc-request-correlation-id": "c2ea7279-8d31-42c8-925d-23d3e81872e4",
+        "date": "Wed, 13 Aug 2025 13:57:40 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "69",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 59b0eb2f33939f549a18868a652690fe.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "453",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HCIT- HSBC GLOBAL DIVERSIFIED REAL RETURN FUND (AMFLX-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFLX-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63265\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GDAFU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63265\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000886025\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001PVWI\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050625686\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50625686\"}]},{\"productName\":\"HCIT-HSBC GLOBAL DIVERSIFIED REAL RETURN FUND (AMFLXO-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFLXO-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63271\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GDAFR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63271\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000886082\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001PVWN\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050625685\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50625685\"}]},{\"productName\":\"HCIT -HSBC GLOBAL DIVERSIFIED REAL RETURN FUND (AMFLX-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFLX-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63266\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GDAFH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63266\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000886033\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001PVWJ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050625684\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50625684\"}]},{\"productName\":\"HCIT- HSBC GLOBAL DIVERSIFIED REAL RETURN FUND (AMFLXO-GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFLXO-GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63270\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GDAFG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63270\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000886074\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001PVWM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050625683\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50625683\"}]},{\"productName\":\"HCIT-HSBC GLOBAL DIVERSIFIED REAL RETURN FUND (AMFLXO-CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFLXO-CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63268\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GDAFC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63268\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000886058\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001PVWL\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050625681\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50625681\"}]},{\"productName\":\"HCIT- HSBC GLOBAL DIVERSIFIED REAL RETURN FUND (AMFLXO-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AMFLXO-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63267\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GDAFA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63267\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000886041\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001PVWK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050625680\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50625680\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

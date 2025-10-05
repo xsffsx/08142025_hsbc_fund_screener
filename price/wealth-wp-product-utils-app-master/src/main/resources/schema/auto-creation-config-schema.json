@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "product PW2 auto create UT config schema",
+  "description": "for auto-creation-config-*.yaml validation",
+  "type": "object",
+  "properties": {
+    "supportProductTypes": {
+      "description": "specify which product type can be auto created",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "productDefaultValues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "prodTypeCde": {
+            "description": "product type code, eg, UT, OPTS",
+            "type": "string"
+          },
+          "defaultValues": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "prodTypeCde",
+          "defaultValues"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

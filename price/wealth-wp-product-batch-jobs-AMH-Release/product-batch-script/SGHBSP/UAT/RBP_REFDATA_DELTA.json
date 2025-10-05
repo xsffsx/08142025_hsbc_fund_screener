@@ -1,0 +1,33 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "RBP",
+  "path": "/appvol/product-spring-batch/data/outgoing/SGHBSP/RBP/",
+  "tasks": [
+    {
+      "files": [
+        {
+          "name": "REFDATA XML",
+          "templateName": "/xml/REFDATA.xml",
+          "sequenceKey": "RBP_REFDATA_SEQ",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_RBP_ReferenceData_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "reference_data",
+      "filter": {
+        "cdvTypeCde": {
+          "$in": [
+            "FH",
+            "PRODSUBTP",
+            "CHARGCATCDEPER"
+          ]
+        }
+      },
+      "deltaKey": "EGRESS.RBP.REFDATA.LAST.SUCCESSFUL.DT.TM"
+    }
+  ],
+  "ack": {
+    "generate": true
+  },
+  "timeZone": "Asia/Singapore"
+}

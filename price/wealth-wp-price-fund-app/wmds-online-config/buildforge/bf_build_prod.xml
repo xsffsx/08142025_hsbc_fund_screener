@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build xsi:schemaLocation="http://www.hhhh.com bf_schema.xsd"
+	xmlns="http://www.hhhh.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<project>
+		<name>SRBP 3.0 Team</name>
+		<owner>MKD Development Team</owner>
+		<contact></contact>
+		<environment>
+			<library />
+		</environment>
+		<steps>
+			<linux-unix>
+
+				<!-- PROD_CN_hhhh -->
+				<step description="Compile"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P PROD_CN_hhhh" />
+
+				<step description="Nexus 81 - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P PROD_CN_hhhh" />
+
+<!-- 				SKM_SGH_UTB -->
+<!-- 				<step description="Compile SKM_SGH_UTB" -->
+<!-- 					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300" -->
+<!-- 					id="1" threadable="N" onfail="H" failnotify="1" -->
+<!-- 					command="${MVNRUN} clean install -P SKM_SGH_UTB" /> -->
+
+<!-- 				<step description="Deploy SKM_SGH_UTB - wmds-online-config" -->
+<!-- 					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300" -->
+<!-- 					id="6" threadable="N" onfail="C" -->
+<!-- 					command="${MVNRUN} clean deploy -P SKM_SGH_UTB" /> -->
+
+<!-- 				TKO_SGH_UTB -->
+<!-- 				<step description="Compile TKO_SGH_UTB" -->
+<!-- 					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300" -->
+<!-- 					id="1" threadable="N" onfail="H" failnotify="1" -->
+<!-- 					command="${MVNRUN} clean install -P TKO_SGH_UTB" /> -->
+
+<!-- 				<step description="Deploy TKO_SGH_UTB - wmds-online-config" -->
+<!-- 					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300" -->
+<!-- 					id="6" threadable="N" onfail="C" -->
+<!-- 					command="${MVNRUN} clean deploy -P TKO_SGH_UTB" /> -->
+					
+				<!-- SKM_AMH_UTB -->
+				<step description="Compile"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P SKM_AMH_UTB" />
+
+				<step description="Nexus 81 - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P SKM_AMH_UTB" />
+					
+				<!-- TKO_AMH_UTB -->
+				<step description="Compile"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P TKO_AMH_UTB" />
+
+				<step description="Nexus 81 - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P TKO_AMH_UTB" />
+
+			</linux-unix>
+		</steps>
+	</project>
+</build> 

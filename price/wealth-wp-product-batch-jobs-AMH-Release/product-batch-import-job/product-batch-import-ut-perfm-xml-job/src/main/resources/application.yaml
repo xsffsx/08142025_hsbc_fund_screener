@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+batch:
+  graphQLUrl: "https://product-graphql-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+  #  graphQLUrl: "https://batch-controller.wealth-platform-amh.dev.aws.cloud.dummy/api/product-graphql/graphql"
+  file:
+    pattern: ^{ctryRecCde}_{grpMembrRecCde}_{systemCde}_Performance-UT_(\d{14})\.[Xx][Mm][Ll]$
+  size: 50
+
+system-update-config:
+  - systemCde: "AMHCUTAS"
+    config:
+      - collection: product
+        updateAttrs:
+          - "perfmCalcDt"
+          - "perfmYrToDtPct"
+          - "perfm6MoPct"
+          - "perfm1YrPct"
+          - "perfm3YrPct"
+          - "perfm5YrPct"
+          - "perfmSinceLnchPct"
+          - "recUpdtDtTm"
+          - "perfmSinceLnchPct"
+  - systemCde: "MS"
+    config:
+      - collection: product
+        updateAttrs:
+          - "perfm1MoPct"
+          - "perfm3MoPct"

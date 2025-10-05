@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product",
+  "description": "A product from the catalog",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for a product",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Name of the product",
+      "type": "string"
+    },
+    "price": {
+      "description": "Price of the product",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "dimension": {
+      "type": "object",
+      "description": "I'm dimension",
+      "$ref": "#/definitions/dimensionType"
+    }
+  },
+  "required": ["id", "name", "price"],
+  "definitions": {
+    "dimensionType": {
+      "description": "dimension of the product",
+      "type": "object",
+      "properties": {
+        "length": {
+          "type": "integer"
+        },
+        "width": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

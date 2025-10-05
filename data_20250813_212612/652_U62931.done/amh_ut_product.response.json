@@ -1,0 +1,48 @@
+{
+  "api_name": "amh_ut_product",
+  "product_code": "U62931",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:40.715469",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-utb-tp-public-shp-api-hk-hbap-prod-proxy/v0/amh/ut/product?body=%7B%22productIds%22%3A%5B%7B%22productTypeCode%22%3A%22UT%22%2C%22productAlternativeNumber%22%3A%22U62931%22%2C%22productAlternativeClassificationCode%22%3A%22M%22%2C%22countryProductTradableCode%22%3A%22HK%22%7D%5D%2C%22attrName%22%3A%5B%22riskLvlCde%22%2C%22ccyInvstCde%22%2C%22invstInitMinAmt%22%2C%22fundRtainMinAmt%22%2C%22rdmMinAmt%22%2C%22fundHouseCde%22%2C%22fundCatCde%22%2C%22ccyProdCde%22%2C%22prodName%22%2C%22topSellProdInd%22%2C%22ccyProdTradeCde%22%2C%22utRdmMinNum%22%2C%22utRtainMinNum%22%2C%22allowBuyProdInd%22%2C%22allowSellProdInd%22%2C%22allowSellMipProdInd%22%2C%22allowSwOutProdInd%22%2C%22prodStatCde%22%2C%22ccyProdMktPrcCde%22%2C%22prodNavPrcAmt%22%2C%22prodBidPrcAmt%22%2C%22prcEffDt%22%2C%22deAuthFundInd%22%2C%22piFundInd%22%2C%22setlLeadTmScrib%22%2C%22setlLeadTmRdm%22%2C%22restrOnlScribInd%22%2C%22dcmlPlaceTradeUnitNum%22%2C%22invstMipMinAmt%22%2C%22invstMipIncrmMinAmt%22%2C%22gbaAcctTrdb%22%2C%22esgInd%22%2C%22finDocURL_FACTSHEET%22%2C%22finDocURL_PROSPECTUS%22%2C%22finDocURL_ANULRPT%22%2C%22finDocURL_INTRMRPT%22%2C%22restrOnlScribInd%22%2C%22fundSwInMinAmt%22%2C%22fundSwOutMinAmt%22%2C%22fundSwOutRtainMinAmt%22%2C%22utSwOutRtainMinNum%22%2C%22siFundInd%22%5D%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "6088ad92-0eb6-96aa-abb0-30d0f4ffe2c5:-:-:-",
+        "ratelimit-remaining": "4",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "5",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Ic1NFXeYThCGpav_Eg1gOJ0diXqKT93mrrDSpw2pMu2YtNTlk9dR0Q==",
+        "x-hsbc-request-correlation-id": "a2d66ac1-2070-4fcb-b513-443e42ad9c2a",
+        "date": "Wed, 13 Aug 2025 13:33:40 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, SAMEORIGIN",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src, default-src",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\", no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0256",
+        "x-envoy-upstream-service-time": "136",
+        "x-ratelimit-remaining-second": "4",
+        "pragma": "no-cache",
+        "ratelimit-limit": "5",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 bc32ef126215821e67e47cb1213e8dac.cloudfront.net (CloudFront)",
+        "access-control-allow-origin": "domain",
+        "x-xss-protection": "1; mode= block",
+        "content-language": "en-US",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"payload\":[{\"productAlternativeNumber\":\"U62931\",\"attributeMap\":{\"allowSellProdInd\":\"Y\",\"prodBidPrcAmt\":\"\",\"prcEffDt\":\"2025-08-13\",\"piFundInd\":\"\",\"utRdmMinNum\":\"\",\"fundSwOutMinAmt\":\"1000\",\"fundCatCde\":\"\",\"fundSwInMinAmt\":\"1000\",\"minMipAmountCurrency\":\"HKD\",\"topSellProdInd\":\"N\",\"ccyProdTradeCde\":[\"HKD\",\"USD\"],\"gbaAcctTrdb\":\"N\",\"finDocURL_INTRMRPT\":\"https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_ir_hsbca002_en.pdf\",\"finDocURL_FACTSHEET\":\"https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_fs_u62931_en.pdf\",\"prodStatCde\":\"A\",\"ccyInvstCde\":\"USD\",\"utSwOutRtainMinNum\":\"0\",\"productDocumentSid\":\"\",\"allowSellMipProdInd\":\"N\",\"siFundInd\":\"N\",\"fundCatDesc\":null,\"dcmlPlaceTradeUnitNum\":\"4\",\"productPerformanceId\":\"0P0001F1OK\",\"riskLvlCde\":\"1\",\"prodName\":\"HSBC Global Money Funds - US Dollar (Class C-ACC)\",\"prodNavPrcAmt\":\"1.1773\",\"utRtainMinNum\":\"0\",\"restrOnlScribInd\":\"\",\"fundHouseName\":\"HSBC Global Asset Management  (Hong Kong) Limited\",\"fundHouseCde\":\"HSBCA\",\"rdmMinAmt\":\"1000\",\"ccyProdCde\":\"USD\",\"invstMipIncrmMinAmt\":\"0\",\"deAuthFundInd\":\"\",\"finDocURL_PROSPECTUS\":\"https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_pr_hsbca007_en.pdf\",\"fundSwOutRtainMinAmt\":\"1000\",\"setlLeadTmScrib\":\"0\",\"invstMipMinAmt\":\"1000\",\"fundRtainMinAmt\":\"1000\",\"allowBuyProdInd\":\"N\",\"ccyProdMktPrcCde\":\"USD\",\"setlLeadTmRdm\":\"1\",\"allowSwOutProdInd\":\"Y\",\"finDocURL_ANULRPT\":\"https://www.hfi.hsbc.com.hk/data/hk/invest/unit/ut_ar_hsbca002_en.pdf\",\"esgInd\":\"\",\"invstInitMinAmt\":\"1000\"}}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

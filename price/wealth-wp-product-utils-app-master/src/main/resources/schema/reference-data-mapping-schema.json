@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "product WPS product reference data config schema",
+  "description": "for reference-data-mapping.yaml validation",
+  "type": "object",
+  "properties": {
+    "refData": {
+      "description": "Mapping of product fields and corresponding cdvcde",
+      "type": "object",
+      "items": {}
+    },
+    "parntRefData": {
+      "description": "Mapping of cdvCde and corresponding cdvParntCde",
+      "type": "object",
+      "items": {}
+    }
+  },
+  "required": ["refData", "parntRefData"],
+  "additionalProperties": false
+}

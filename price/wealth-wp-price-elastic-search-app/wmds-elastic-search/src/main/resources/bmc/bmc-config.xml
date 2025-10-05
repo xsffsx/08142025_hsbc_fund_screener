@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bmcEntitys>
+<bmcEntitys>
+	<!-- BMC file path -->
+	<bmcFilePath>/appvol/WLP85/{instanceName}/applog/patrol/keepalive/</bmcFilePath>
+	<!-- If generate BMC files -->
+	<printFiles>false</printFiles>
+	<!-- Get the bmcEntity by prefix + countryCode + groupMember -->
+	<bmcEntity prefix="Default" countryCode="" groupMember="">
+		<!-- In <exTimeDurationThrownPastSec> seconds, <exNumThrownPastSec> errors occurred, trigger <exCdeThrownPastSec> and <exMgsThrownPastSec> alert -->
+		<exTimeDurationThrownPastSec>300</exTimeDurationThrownPastSec>
+		<exNumThrownPastSec>100</exNumThrownPastSec>
+		<exCdeThrownPastSec>MDSECOUNT001Z</exCdeThrownPastSec>
+		<exMgsThrownPastSec>In 5 minutes, MDS Equity application threw 100 exceptions. Please investigate during working hours.</exMgsThrownPastSec>
+		<!-- When the error is accumulated to <exNumExceedLimit>, trigger <exCdeExceedLimit> and <exMgsExceedLimit> -->
+		<exNumExceedLimit>200</exNumExceedLimit>
+		<exCdeExceedLimit>MDSECOUNT002Z</exCdeExceedLimit>
+		<exMgsExceedLimit>After throwing this exception last time, MDS Equity application has accumulated a total of 200 exceptions. Please investigate during working hours.</exMgsExceedLimit>
+
+		<!-- equity common bmc error code -->
+		<exceptionCounter exceptionName="" key="InvalidRequest">
+			<timeDuration></timeDuration>
+			<maxNum>-1</maxNum>
+			<bmcExCde>MDSEQTY40001Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request isn't in JSON format. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="InputParameterInvalid">
+			<timeDuration></timeDuration>
+			<maxNum>-1</maxNum>
+			<bmcExCde>MDSEQTY40002Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request with incorrect or unsupported parameters. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="SupportSite">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEQTY40003Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request with unsupport site. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="NotEmpty">
+			<timeDuration></timeDuration>
+			<maxNum>-1</maxNum>
+			<bmcExCde>MDSEQTY40004Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request parameter should not be empty. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="NotNull">
+			<timeDuration></timeDuration>
+			<maxNum>-1</maxNum>
+			<bmcExCde>MDSEQTY40004Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request parameter should not be null. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="Size">
+			<timeDuration></timeDuration>
+			<maxNum>-1</maxNum>
+			<bmcExCde>MDSEQTY40005Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request with over size constraint patameter. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="RegEx">
+			<timeDuration></timeDuration>
+			<maxNum>-1</maxNum>
+			<bmcExCde>MDSEQTY40006Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request parameter can't satisfy the regular expression as defined. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="NoAvailableServiceMatched">
+			<timeDuration></timeDuration>
+			<maxNum>-1</maxNum>
+			<bmcExCde>MDSEQTY99998Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request unsupport service as defined. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="Undefined">
+			<timeDuration></timeDuration>
+			<maxNum>20</maxNum>
+			<bmcExCde>MDSEQTY99999E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter undefined exception. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<!-- equity common bmc error code -->
+
+		<!-- perdsrch bmc error code -->
+		<exceptionCounter exceptionName="" key="IndexDataNotExists">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEPS300001E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter index data not exist errors. Usually because current request sitekey has no index data. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="SftpConnectErr">
+			<timeDuration></timeDuration>
+			<maxNum>5</maxNum>
+			<bmcExCde>MDSEPS300002E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter volumeService SFTP Connect Failed exception. Usually because bad network or config is wrong.Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="VolumeServiceErr">
+			<timeDuration></timeDuration>
+			<maxNum>5</maxNum>
+			<bmcExCde>MDSEPS300003E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter VolumeService connect sftp or download failed exception. Usually because cannot connect sftp server or copy WPC files failed. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="FileVerifyErr">
+			<timeDuration></timeDuration>
+			<maxNum>5</maxNum>
+			<bmcExCde>MDSEPS300004E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter file data Verify Error exception. Usually because the WPC files Verify failed.Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="CopyToLocalErr">
+			<timeDuration></timeDuration>
+			<maxNum>5</maxNum>
+			<bmcExCde>MDSEPS300005E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter Wpc file copy to local error. Usually because disk is full or sftp connect failed. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="LoadWpcFileErr">
+			<timeDuration></timeDuration>
+			<maxNum>5</maxNum>
+			<bmcExCde>MDSEPS300006E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter load WPC files failed for 5 times. Usually because cannot download wpc files when app starts up. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="DataParsingErr">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEPS300007E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter data parsing errors. Usually because cannot wpc files lack symbol/productName value. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="DataUnavailable">
+			<timeDuration></timeDuration>
+			<maxNum>5</maxNum>
+			<bmcExCde>MDSEPS300008E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter data unavailable errors. Usually because cannot load data from wpc files. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="VolumeServiceConfigErr">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEPS300009E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter Volume Service Config  errors. Usually because volume service config  missed some properties. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="SFTPConfigError">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEPS300010E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter SFTP config errors. Usually because sftp config  missed some properties. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<!-- perdsrch bmc error code -->
+	</bmcEntity>
+</bmcEntitys>

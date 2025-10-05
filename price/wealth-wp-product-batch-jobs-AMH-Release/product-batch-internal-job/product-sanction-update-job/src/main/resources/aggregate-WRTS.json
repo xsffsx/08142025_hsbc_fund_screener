@@ -1,0 +1,91 @@
+[
+  {
+    "$match": {
+      "ctryRecCde": "%ctryRecCde%",
+      "grpMembrRecCde": "%grpMembrRecCde%",
+      "prodStatCde": {"$in": ["A", "C", "P", "S", "T"]},
+      "prodTypeCde": "WRTS",
+      "stockInstm.undlStock": {"$exists": true}
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "prodId": 1,
+      "prodAltPrimNum": 1,
+      "sanctionBuyList": 1,
+      "sanctionSellList": 1,
+      "undlProdId": "$stockInstm.undlStock.prodIdUndlInstm"
+    }
+  },
+  {
+    "$lookup": {
+      "from": "product",
+      "localField": "undlProdId",
+      "foreignField": "prodId",
+      "as": "undlProd"
+    }
+  },
+  {
+    "$unwind": "$undlProd"
+  },
+  {
+    "$match": {
+      "undlProd.prodStatCde": {"$in": ["A", "C", "P", "S", "T"]}
+    }
+  },
+  {
+    "$unwind": {
+      "path": "$undlProd.sanctionBuyList",
+      "preserveNullAndEmptyArrays": true
+    }
+  },
+  {
+    "$unwind": {
+      "path": "$undlProd.sanctionSellList",
+      "preserveNullAndEmptyArrays": true
+    }
+  },
+  {
+    "$group": {
+      "_id": "$prodId",
+      "prodAltPrimNum": {"$first": "$prodAltPrimNum"},
+      "sanctionBuyList": {"$first": {"$ifNull": ["$sanctionBuyList", []]}},
+      "sanctionSellList": {"$first": {"$ifNull": ["$sanctionSellList", []]}},
+      "undl_sanctionBuyList": {
+        "$addToSet": {
+          "$cond": {
+            "if": {"$ne": ["$undlProd.sanctionBuyList", null]},
+            "then": "$undlProd.sanctionBuyList",
+            "else": "$unset"
+          }
+        }
+      },
+      "undl_sanctionSellList": {
+        "$addToSet": {
+          "$cond": {
+            "if": {"$ne": ["$undlProd.sanctionSellList", null]},
+            "then": "$undlProd.sanctionSellList",
+            "else": "$unset"
+          }
+        }
+      }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "prodId": "$_id",
+      "prodAltPrimNum": 1,
+      "undl_sanctionBuyList": 1,
+      "undl_sanctionSellList": 1,
+      "sameBuyList": {"$setEquals": ["$sanctionBuyList", "$undl_sanctionBuyList"]},
+      "sameSellList": {"$setEquals": ["$sanctionSellList", "$undl_sanctionSellList"]}
+    }
+  },
+  {
+    "$match": {
+      "$or": [{"sameBuyList": false}, {"sameSellList": false}]
+    }
+  }
+]

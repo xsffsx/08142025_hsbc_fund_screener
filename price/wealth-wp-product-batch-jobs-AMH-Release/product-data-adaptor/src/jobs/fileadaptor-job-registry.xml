@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<import resource="classpath:/jobs/common.xml" />
+	<import resource="classpath:/jobs/csvJob.xml" />
+	<import resource="classpath:/jobs/csvJob4MultiWriter.xml" />
+	<import resource="classpath:/jobs/txtJob.xml" />
+	<import resource="classpath:/jobs/txtJob4MultiWriter.xml" />
+	<import resource="classpath:/jobs/xml-MultiReader2csvJob.xml" />
+	<import resource="classpath:/jobs/xmlJob.xml" />
+	<import resource="classpath:/jobs/xmlJob4MultiWriter.xml" />
+	<import resource="classpath:/jobs/excel-MultiExcel2SingleXmlJob.xml" />
+	<import resource="classpath:/jobs/wpc-batch-persistence.xml" />
+	<import resource="classpath:/jobs/wpc-batch-placeholder.xml" />
+	<import resource="classpath:/jobs/fixedLengthJob4MultiWriter.xml" />
+	<!--TODO Move DB related jobs out of adaptor <import resource="classpath:/jobs/fixedLengthJob4MultiWriter.xml" /> -->
+	<import resource="classpath:/jobs/excel4MultiWriterJob.xml" />
+	<import resource="classpath:/jobs/excelMSUtMultiWriterJob.xml" />
+	<import resource="classpath:/jobs/special_chinese_character.xml" />
+	
+
+</beans>	

@@ -1,0 +1,588 @@
+app:
+  mock:
+    enable: false
+  site:
+    support: HK_HASE
+  quotes-response-tris-fields:
+    DEFAULT:
+      DEFAULT:
+        DEFAULT:
+          - nominalPrice
+          - currency
+          - changeAmount
+          - changePercent
+          - asOfDateTime
+          - bidPrice
+          - bidSize
+          - askPrice
+          - askSize
+          - bidSpread
+          - askSpread
+          - openPrice
+          - previousClosePrice
+          - dayLowPrice
+          - dayHighPrice
+          - yearLowPrice
+          - yearHighPrice
+          - volume
+          - boardLotSize
+          - marketCap
+          - peRatio
+          - eps
+          - turnover
+          - dividend
+          - dividendYield
+          - exchangeCode
+          - bidAskQueues
+  quotes-response-labci-fields:
+    DEFAULT:
+      DEFAULT:
+        DEFAULT:
+          - nominalPrice
+          - currency
+          - changeAmount
+          - offCloseSubChangeAmount
+          - changePercent
+          - offCloseSubChangePercent
+          - asOfDateTime
+          - bidPrice
+          - bidSize
+          - askPrice
+          - askSize
+          - bidSpread
+          - askSpread
+          - openPrice
+          - previousClosePrice
+          - dayLowPrice
+          - dayHighPrice
+          - yearLowPrice
+          - yearHighPrice
+          - volume
+          - boardLotSize
+          - marketCap
+          - peRatio
+          - eps
+          - turnover
+          - dividend
+          - dividendYield
+          - exchangeCode
+          - bidAskQueues
+          #          - quoteRic
+          - quoteName
+          - quoteOffClose
+          #          - quoteAvgVolume
+          #          - quoteBeta
+          #          - quoteExDividendDate
+          #          - quoteStatus
+          #          - quoteMarketClosedIndicator
+          - quoteNominalPriceType
+          #          - quoteSector
+          #          - quoteIndustry
+          #          - quoteLastTradeTick
+          #          - quoteLastUpdatedDate
+          #          - quoteVMA50D
+          - localName
+          - riskAlert
+          - sharesOutstanding
+          - iep
+          - iev
+          - upperTradingLimit
+          - lowerTradingLimit
+          - financialStatus
+          - tradingStatus
+          - executionPrice1
+          - executionPrice2
+          - executionPrice3
+          - executionPrice4
+          - executionPrice5
+          - quantity1
+          - quantity2
+          - quantity3
+          - quantity4
+          - quantity5
+          - lastExecutionTime
+          - marketStatus
+  news-response-tris-fields:
+    DEFAULT:
+      DEFAULT:
+        DETAIL:
+          - id
+          - headline
+          - content
+          - asOfDateTime
+        HEADLINE:
+          - id
+          - headline
+          - brief
+          - asOfDateTime
+  quotes-response-top-mover-fields:
+    DEFAULT:
+      DEFAULT:
+        DEFAULT:
+          #          - quoteRic
+          - quoteName
+          - nominalPrice
+          - currency
+          - changeAmount
+          - offCloseSubChangeAmount
+          - changePercent
+          - offCloseSubChangePercent
+          - volume
+          - turnover
+          - asOfDateTime
+          - openPrice
+          - recordtype
+          - timeOfUpdate
+          - derivativeSymbol
+          - underlyStockRic
+          - localName
+          - mnemonic
+          - exchangeCode
+          - previousClosePrice
+          - quoteOffClose
+  exchange-timezone-mapper:
+    DEFAULT: GMT+8
+    HKEX : Asia/Hong_Kong
+    SHAS: GMT+8
+    SZAS: GMT+8
+  same-sector-parameter:
+    service: sameSectorStock
+    sort-by: Volume
+    sort-order: desc
+    number: 10
+  mappingRule: '{SEC.SHAS:[{chainCode: 2,ric: .AVa.SS,chainType: VOL},{chainCode: 3,ric: .PGa.SS,chainType: GAINPCT},{chainCode: 4,ric: .PLa.SS,chainType: LOSEPCT}],SEC.SZSE:[{chainCode: 2,ric: .AVa.SZ,chainType: VOL},{chainCode: 3,ric: .PGa.SZ,chainType: GAINPCT},{chainCode: 4,ric: .PLa.SZ,chainType: LOSEPCT}]}'
+
+etnet:
+  service:
+    DEFAULT:
+      realtime: IDN_RDF
+      delay: dIDN_RDF
+  token-timezone:
+    DEFAULT: GMT
+  response-status:
+    code-key: stsCode
+    text-key: stsTxt
+    correct-status: '0'
+
+tris:
+  service:
+    DEFAULT:
+      realtime: IDN_RDF
+      delay: dIDN_RDF
+  token-app-code:
+    DEFAULT: HASE_STMA
+  token-timezone:
+    DEFAULT: GMT
+  field-mapper:
+    DEFAULT:
+      DEFAULT:
+        DEFAULT:
+          nominalPrice: TRDPRC_1,ADJUST_CLS
+          currency: CURRENCY
+          changeAmount: NETCHNG_1
+          changePercent: PCTCHNG
+          asOfDateTime: TRADE_DATE,TRDTIM_1
+          bidPrice: BID
+          bidSize: BIDSIZE
+          askPrice: ASK
+          askSize: ASKSIZE
+          bidSpread: UPPER_SPRD
+          askSpread: LOWER_SPRD
+          openPrice: OPEN_PRC
+          previousClosePrice: HST_CLOSE
+          dayLowPrice: LOW_1
+          dayHighPrice: HIGH_1
+          yearLowPrice: YRLOW
+          yearHighPrice: YRHIGH
+          volume: ACVOL_1
+          boardLotSize: LOT_SIZE_A
+          marketCap: DSS_MKT_CAP
+          peRatio: PERATIO
+          eps: EARNINGS
+          turnover: TURNOVER
+          dividend: DIVIDEND
+          dividendYield: YIELD
+          exchangeCode: RDN_EXCHD2
+          bidAskQueues: BEST_BID1,BEST_BSIZ1,NO_BIDMMKR1,BEST_ASK1,BEST_ASIZ1,NO_ASKMMKR1,BEST_BID2,BEST_BSIZ2,NO_BIDMMKR2,BEST_ASK2,BEST_ASIZ2,NO_ASKMMKR2,BEST_BID3,BEST_BSIZ3,NO_BIDMMKR3,BEST_ASK3,BEST_ASIZ3,NO_ASKMMKR3,BEST_BID4,BEST_BSIZ4,NO_BIDMMKR4,BEST_ASK4,BEST_ASIZ4,NO_ASKMMKR4,BEST_BID5,BEST_BSIZ5,NO_BIDMMKR5,BEST_ASK5,BEST_ASIZ5,NO_ASKMMKR5
+        HKEX:
+          nominalPrice: OFF_CLOSE,TRDPRC_1,ADJUST_CLS
+          changeAmount: OFF_CLOSE,ADJUST_CLS,NETCHNG_1
+          changePercent: OFF_CLOSE,ADJUST_CLS,PCTCHNG
+          yearLowPrice: 52WK_LOW
+          yearHighPrice: 52WK_HIGH
+          marketCap: MKT_CAP
+        NAQ:
+          nominalPrice: OFF_CLOSE,TRDPRC_1,ADJUST_CLS
+          changeAmount: OFF_CLOSE,ADJUST_CLS,NETCHNG_1
+          changePercent: OFF_CLOSE,ADJUST_CLS,PCTCHNG
+        DETAIL:
+          id: GUID
+          headline: NEWSHDLN
+          content: STORY_TEXT
+          asOfDateTime: NEWS_LT
+        HEADLINE:
+          id: GUID
+          headline: NEWSHDLN
+          brief: HDLN_TES
+          asOfDateTime: NEWS_LT
+  response-status:
+    code-key: stsCode
+    text-key: stsTxt
+    correct-status: '0'
+  same-sector-response-status:
+    key: responseCode,reasonCode
+    correct-status: 0,000
+    warn-status: 1,000
+
+labci:
+  service:
+    DEFAULT:
+      realtime: IDN_RDF
+      delay: dIDN_RDF
+  token-app-code:
+    DEFAULT: MDSBE
+  token-timezone:
+    DEFAULT: GMT
+  suspend-flag-config: HK|SUS:SDL
+  field-mapper:
+    DEFAULT:
+      DEFAULT:
+        DEFAULT:
+          nominalPrice: TRDPRC_1,ADJUST_CLS,OFF_CLOSE
+          currency: CURRENCY
+          changeAmount: NETCHNG_1
+          offCloseSubChangeAmount: OFF_CLOSE,ADJUST_CLS
+          changePercent: PCTCHNG
+          offCloseSubChangePercent: OFF_CLOSE,ADJUST_CLS
+          asOfDateTime: TRADE_DATE,TRDTIM_1
+          bidPrice: BID
+          bidSize: BIDSIZE
+          askPrice: ASK
+          askSize: ASKSIZE
+          bidSpread: UPPER_SPRD
+          askSpread: LOWER_SPRD
+          openPrice: OPEN_PRC
+          previousClosePrice: ADJUST_CLS,HST_CLOSE
+          dayLowPrice: LOW_1
+          dayHighPrice: HIGH_1
+          yearLowPrice: YRLOW,LIFE_LOW,52WK_LOW
+          yearHighPrice: YRHIGH,LIFE_HIGH,52WK_HIGH
+          volume: ACVOL_1
+          boardLotSize: LOT_SIZE,LOT_SIZE_A,DSS_LOT_SIZE
+          marketCap: GEN_VAL4,MKT_CAP,DSS_MKT_CAP
+          peRatio: PERATIO
+          eps: EARNINGS
+          turnover: TURNOVER
+          dividend: DIVIDEND
+          dividendYield: YIELD
+          exchangeCode: RDN_EXCHID,RDN_EXCHD2
+          #          quoteRic: _item
+          quoteName: DSPLY_NAME
+          quoteOffClose: OFF_CLOSE
+          #          quoteAvgVolume: DSS_AVG_VOLUME_90DAYS
+          #          quoteBeta: DSS_BETA
+          #          quoteExDividendDate: EXDIVDATE
+          #          quoteStatus: PRC_QL_CD
+          #          quoteMarketClosedIndicator: LONGLINK1,OFF_CLOSE
+          quoteNominalPriceType: PRC_QL_CD
+          #          quoteSector: DSS_TRBC_ECONOMIC_SECTOR_DESC
+          #          quoteIndustry: DSS_TRBC_INDUSTRY_DESC
+          #          quoteLastTradeTick: PRCTCK_1,LST_PRCTCK
+          #          quoteLastUpdatedDate: TRADE_DATE
+          #          quoteVMA50D: VMA_50D
+          riskAlert: PRC_QL3,EXCH_ANN
+          sharesOutstanding: DSS_OUT_SHARES
+          iep: IEP_VOLUME
+          iev: IEP_PRICE
+          upperTradingLimit: UPLIMIT
+          lowerTradingLimit: LOLIMIT
+          #          ,BEST_BID6,BEST_BSIZ6,NO_BIDMMKR6,BEST_ASK6,BEST_ASIZ6,NO_ASKMMKR6,BEST_BID7,BEST_BSIZ7,NO_BIDMKR7,BEST_ASK7,BEST_ASIZ7,NO_ASKMKR7,BEST_BID8,BEST_BSIZ8,NO_BIDMKR8,BEST_ASK8,BEST_ASIZ8,NO_ASKMKR8,BEST_BID9,BEST_BSIZ9,NO_BIDMKR9,BEST_ASK9,BEST_ASIZ9,NO_ASKMKR9,BEST_BID10,BEST_BSIZ10,NO_BIDMKR10,BEST_ASK10,BEST_ASIZ10,NO_ASKMKR10
+          bidAskQueues: BEST_BID1,BEST_BSIZ1,NO_BIDMMKR,BEST_ASK1,BEST_ASIZ1,NO_ASKMMKR,BEST_BID2,BEST_BSIZ2,NO_BIDMKR2,BEST_ASK2,BEST_ASIZ2,NO_ASKMKR2,BEST_BID3,BEST_BSIZ3,NO_BIDMKR3,BEST_ASK3,BEST_ASIZ3,NO_ASKMKR3,BEST_BID4,BEST_BSIZ4,NO_BIDMKR4,BEST_ASK4,BEST_ASIZ4,NO_ASKMKR4,BEST_BID5,BEST_BSIZ5,NO_BIDMKR5,BEST_ASK5,BEST_ASIZ5,NO_ASKMKR5
+          recordtype: RECORDTYPE
+          timeOfUpdate: TRADE_DATE,TIMACT
+          derivativeSymbol: OFFCL_CODE
+          underlyStockRic: STOCK_RIC
+          localName: DSPLY_NMLL
+          mnemonic: MNEMONIC
+          financialStatus: FIN_STATUS
+          tradingStatus: TRD_STATUS
+          executionPrice1: TRDPRC_1
+          executionPrice2: TRDPRC_2
+          executionPrice3: TRDPRC_3
+          executionPrice4: TRDPRC_4
+          executionPrice5: TRDPRC_5
+          quantity1: TRDVOL_1
+          quantity2: TRDVOL_2
+          quantity3: TRDVOL_3
+          quantity4: TRDVOL_4
+          quantity5: TRDVOL_5
+          lastExecutionTime: SALTIM_MS
+          marketStatus: INST_PHASE
+  response-status:
+    code-key: stsCode
+    text-key: stsTxt
+    correct-status: '000'
+  exchangeMapping:
+    DEFAULT: SHAS
+    SHAS: SHAS
+    SZAS: SZAS
+    SHH: SHAS
+    SSE: SHAS
+    SZSE: SZAS
+    SZSE_ChiNext: SZAS
+    SZSE_SME: SZAS
+    SHZ: SZAS
+    SHS: SHS
+    NYSE: NYSE
+    NASDAQ: NDAQ
+    NASD: NASD
+    AMEX: AMEX
+    NYSE Arca: NYARC
+    PINK: PINK
+    OTCBB: OTCBB
+
+dispatcher:
+  service-api:
+    QUOTES:
+      request-parameters:
+        - market
+      rules:
+        market: CN|HK|US
+      end-point:
+        CN: labciQuoteService
+        HK: midfsQuoteService
+        US: quotesUSCachingServerService
+    QUOTES_CMB:
+      request-parameters:
+        - market
+      rules:
+        market: US
+      end-point:
+        US: quotesUSCachingServer4CmbService
+    TopMover:
+      request-parameters:
+        - market
+      rules:
+        market: CN|HK|US
+      end-point:
+        CN: labciTopmoverService
+        HK: midfsTopmoverService
+        US: labciProtalTopmoverService
+    TopMover4Cmb:
+      request-parameters:
+        - market
+      rules:
+        market: US
+      end-point:
+        US: labciProtalTopmover4CmbService
+    Indices:
+      request-parameters:
+        - market
+      rules:
+        market: CN|HK|US
+      end-point:
+        CN: labciIndicesService
+        HK: etnetIndicesService
+        US: labciProtalIndicesService
+    Indices4Cmb:
+      request-parameters:
+        - market
+      rules:
+        market: US
+      end-point:
+        US: labciProtalIndices4CmbService
+    NEWS_HEADLINES:
+      request-parameters:
+        - market
+      rules:
+        market: HK|US
+      end-point:
+        HK: etnetNewsHeadlinesService
+        US: labciNewsHeadlinesService
+    NEWS_HEADLINES_CMB:
+      request-parameters:
+        - market
+      rules:
+        market: US
+      end-point:
+        US: labciNewsHeadlines4CmbService
+    NEWS_DETAIL:
+      request-parameters:
+        - market
+      rules:
+        market: HK|US
+      end-point:
+        HK: etnetNewsDetailService
+        US: labciNewsDetailService
+    NEWS_DETAIL_CMB:
+      request-parameters:
+        - market
+      rules:
+        market: US
+      end-point:
+        US: labciNewsDetail4CmbService
+    EQUITY_CHART:
+      request-parameters: market
+      rules:
+        market: CN|HK|US
+        DEFAULT: DEFAULT
+      end-point:
+        HK: etnetChartService
+        CN: labciChartService
+        US: LabciChartHaseUSService
+        DEFAULT: chartService
+    EQUITY_CHART_CMB:
+      request-parameters: market
+      rules:
+        market: US
+      end-point:
+        US: labciChartHaseUS4CmbService
+    LISTED_IPO:
+      request-parameters:
+        - market
+      rules:
+        market: HK
+      end-point:
+        HK: listedIPOService
+    CURRENT_IPO:
+      request-parameters:
+        - market
+      rules:
+        market: HK
+      end-point:
+        HK: currentIPOService
+
+service:
+  quotes:
+    Labci:
+      injectEnabled: true
+    usEquity:
+      injectEnabled: true
+  newsHeadlines:
+    Tris:
+      injectEnabled: true
+    Etnet:
+      injectEnabled: true
+    Labci:
+      injectEnabled: true
+  newsDetail:
+    Tris:
+      injectEnabled: true
+    Etnet:
+      injectEnabled: true
+    Labci:
+      injectEnabled: true
+  chart:
+    Etnet:
+      injectEnabled: true
+    Labci:
+      injectEnabled: true
+  labci:
+    TokenService:
+      injectEnabled: true
+  properties:
+    Etnet:
+      injectEnabled: true
+  hase:
+    HealthCheck:
+      injectEnabled: true
+
+entitlement:
+  enable: true
+  interceptor-url: "/wealth/api/v1/market-data/**"
+  service-url-mapping:
+    "/equity/quotes": EQTY_QUOTES
+    "/index/quotes": EQTY_INDEX_QUOTES
+    "/equity/quotes/top-mover": EQTY_TOP_MOVER
+    "/equity/charts/performance": EQTY_CHARTS_PERFORMANCE
+    "/news/equity/detail": EQTY_NEWS
+    "/news/equity/headlines": EQTY_NEWS
+  service-api:
+    EQTY_QUOTES:
+      checklist: countryCode, groupMember, appCode
+      white-list-rules:
+        countryCode_groupMember: HK_HASE
+        appCode:
+          - STMA
+          - STB
+          - PIB
+          - WD
+          - UOE
+          - CMB
+    EQTY_INDEX_QUOTES:
+      checklist: countryCode, groupMember, appCode
+      white-list-rules:
+        countryCode_groupMember: HK_HASE
+        appCode:
+          - STMA
+          - STB
+          - PIB
+          - WD
+          - UOE
+          - CMB
+    EQTY_TOP_MOVER:
+      checklist: countryCode, groupMember, appCode
+      white-list-rules:
+        countryCode_groupMember: HK_HASE
+        appCode:
+          - STMA
+          - STB
+          - PIB
+          - WD
+          - UOE
+          - CMB
+    EQTY_CHARTS_PERFORMANCE:
+      checklist: countryCode, groupMember, appCode
+      white-list-rules:
+        countryCode_groupMember: HK_HASE
+        appCode:
+          - STMA
+          - STB
+          - PIB
+          - WD
+          - UOE
+          - CMB
+    EQTY_NEWS:
+      checklist: countryCode, groupMember, appCode
+      white-list-rules:
+        countryCode_groupMember: HK_HASE
+        appCode:
+          - STMA
+          - STB
+          - PIB
+          - WD
+          - UOE
+          - CMB
+validator:
+  regex:
+    header:
+      channelId: OHI|OHB|OHM
+      locale: zh_CN|zh_HK|en
+      appCode: STMA|STB|PIB|WD|UOE|CMB
+    quotesRequest:
+      productKey:
+        prodCdeAltClassCde: M
+      market: HK|CN|US
+    sameSectorRequest:
+      prodCdeAltClassCde: M
+      productType: SEC|WRTS
+      market: HK|CN|US
+      sortBy: Volume
+      sortOrder: desc
+    topmoverRequest:
+      productType: SEC|WRTS
+      market: HK|CN|US
+    ipoRequest:
+      market: HK
+
+#server:
+#  context-path: /wmds-equity-hase-stma-war
+name:
+  id:
+    enable: false
+    disableEncryptor: true
+    staff-channel:
+      - OHB
+    customer-channel:
+      - OHI
+      - OHM

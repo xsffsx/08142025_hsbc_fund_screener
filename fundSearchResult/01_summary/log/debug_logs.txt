@@ -1,0 +1,29 @@
+HSBC Fund Screener Debug Log
+Generated: 20250906_095633
+Total Log Entries: 6
+================================================================================
+
+Entry #01:
+{'timestamp': '2025-09-06T09:57:36.741396', 'step': '步骤2', 'action': '找到下拉框', 'details': {'selector': '#dropdown-riskLevel', 'element_type': 'A标签'}}
+------------------------------------------------------------
+
+Entry #02:
+{'timestamp': '2025-09-06T09:57:36.769115', 'step': '步骤2', 'action': '点击下拉框', 'details': {'selector': '#dropdown-riskLevel', 'success': True}}
+------------------------------------------------------------
+
+Entry #03:
+{'timestamp': '2025-09-06T09:57:37.797966', 'step': '步骤2', 'action': '成功选择选项', 'details': {'selector': 'li:has-text("Speculative - 5")', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #04:
+{'timestamp': '2025-09-06T09:57:38.306672', 'step': '步骤3', 'action': '找到搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'element_type': 'A标签', 'success': True}}
+------------------------------------------------------------
+
+Entry #05:
+{'timestamp': '2025-09-06T09:57:38.642841', 'step': '步骤3', 'action': '成功点击搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #06:
+{'timestamp': '2025-09-06T09:57:41.644492', 'step': '步骤4', 'action': '使用默认显示数量', 'details': {'action': 'skip_display_adjustment', 'reason': '使用页面默认显示数量', 'success': True}}
+------------------------------------------------------------
+

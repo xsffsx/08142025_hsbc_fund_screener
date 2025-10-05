@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63143",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:40:55.661198",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63143%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b03d44d4-880d-4473-9b9a-61abf7686fef:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "nqg7Huvbx2QR0PDdIMMXO2_9D7Ot1zeJV-CrfHCu_ac7ENDcT_5bKA==",
+        "x-hsbc-request-correlation-id": "02662531-f4a4-45b7-a751-9eafb59f7566",
+        "date": "Wed, 13 Aug 2025 13:40:55 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e3f076a17c429654547283cc3accab70.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "570",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sp Group Treasury Pte Ser Reg-S 4.625%\",\"weighting\":1.54813,\"currency\":\"USD\",\"marketValue\":1157984},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Meituan Reg-S 0% Convertible\",\"weighting\":1.27108,\"currency\":\"USD\",\"marketValue\":950750},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Korea Development Bank (Reg) 5.375% 23oct2026\",\"weighting\":1.08303,\"currency\":\"USD\",\"marketValue\":810094},{\"market\":\"SG\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"BOC Aviation (USA) Corp. 5.25%\",\"weighting\":1.08151,\"currency\":\"USD\",\"marketValue\":808956},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bayfront Infra Mgmt Ltd Reg-S 4.257%\",\"weighting\":1.06716,\"currency\":\"USD\",\"marketValue\":798226},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Smic Sg Holdings Pte Ltd Ser Emtn Reg-S 5.375%\",\"weighting\":1.03018,\"currency\":\"USD\",\"marketValue\":770563},{\"market\":\"PH\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Philippine National Bank 4.85%\",\"weighting\":1.02502,\"currency\":\"USD\",\"marketValue\":766700},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Oversea–chinese Banking Co Ser Gmtn Reg-S Var\",\"weighting\":1.0114,\"currency\":\"USD\",\"marketValue\":756514},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bank Negara Indonesia Ser Emtn Reg-S 5.28%\",\"weighting\":0.93289,\"currency\":\"USD\",\"marketValue\":697793},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alibaba Group Holding Ltd. 5.25%\",\"weighting\":0.91686,\"currency\":\"USD\",\"marketValue\":685803}],\"lastUpdatedDate\":\"2024-12-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

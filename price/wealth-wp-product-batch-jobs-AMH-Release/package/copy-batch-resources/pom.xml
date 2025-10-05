@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dummy.wpb.product</groupId>
+    <artifactId>product-batch-copy-batch-jars</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+    <name>product-batch-copy-batch-resources</name>
+    <packaging>pom</packaging>
+    <description>Copy product batch resources</description>
+
+    <!-- List of job modules -->
+    <modules>
+        <module>../../</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot.version>2.4.1</spring.boot.version>
+        <spring.version>5.3.5</spring.version>
+        <spring.cloud.version>3.0.0</spring.cloud.version>
+        <spring-cloud-aws.version>2.2.5.RELEASE</spring-cloud-aws.version>
+        <spring-cloud-stream.version>3.1.2</spring-cloud-stream.version>
+        <jackson.version>2.11.0</jackson.version>
+        <junit-jupiter.version>5.5.2</junit-jupiter.version>
+        <junit-platform-runner.version>1.5.2</junit-platform-runner.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-batch-resources</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <property name="root" value="${basedir}/../../" />
+                                <property name="target.batch.lib" value="${basedir}/../output/lib/" />
+                                <property name="target.batch.cron" value="${basedir}/../output/cron/" />
+                                <property name="target.batch.config" value="${basedir}/../output/config/" />
+
+                                <!-- Delete target folder if exists -->
+                                <delete dir="${target.batch.lib}" />
+                                <delete dir="${target.batch.cron}" />
+                                <delete dir="${target.batch.config}" />
+
+                                <!-- Copy jars -->
+                                <echo message="Copy jars from target folder to package folder" />
+                                <copy todir="${target.batch.lib}" overwrite="true" flatten="true">
+                                    <fileset dir="${root}">
+                                        <include name="**/target/*.jar" />
+                                    </fileset>
+                                    <fileset dir="${root}">
+                                        <include name="**/**/target/*.jar" />
+                                    </fileset>
+                                </copy>
+                                <!-- Copy batch scripts and param files -->
+                                <echo message="Copy batch scripts and param files for ${entity} ${env}" />
+                                <copy todir="${target.batch.cron}" overwrite="true">
+                                    <fileset dir="${root}/product-batch-script/common/" />
+                                    <fileset dir="${root}/product-batch-script/${entity}/param" />
+                                    <fileset dir="${root}/product-batch-script/${entity}/${env}" />
+                                </copy>
+                                <!-- Copy spring app configuration files -->
+                                <echo message="Copy spring app configuration files for ${entity} ${env}" />
+                                <copy todir="${target.batch.config}" overwrite="true">
+                                    <fileset dir="${root}/product-batch-config/${entity}/common" />
+                                    <fileset dir="${root}/product-batch-config/${entity}/common/pdf" />
+                                    <fileset dir="${root}/product-batch-config/${entity}/${env}" />
+                                </copy>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.dummy:8081/nexus/repository/maven-dummy-internal-prod_n3p/</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.dummy:8081/nexus/repository/maven-dummy-internal-snapshots_n3p/</url>
+            <layout>default</layout>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

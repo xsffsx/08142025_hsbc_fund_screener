@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:cst="http://castor.exolab.org/">
+	<description>error response defined</description>
+	<class cst:name="com.hhhh.group.secwealth.mktdata.common.exception.ErrResponseHolder">
+		<map-to cst:xml="errResponses" />
+		<field cst:name="errResponses" collection="map">
+			<bind-xml name="errResponse">
+				<class name="org.exolab.castor.mapping.MapItem">
+					<field name="key" type="java.lang.String">
+						<bind-xml name="key" node="attribute" />
+					</field>
+					<field name="value" type="com.hhhh.group.secwealth.mktdata.common.exception.ErrResponse" />
+				</class>
+			</bind-xml>
+		</field>
+	</class>
+
+	<class cst:name="com.hhhh.group.secwealth.mktdata.common.exception.ErrResponse">
+		<map-to cst:xml="entity" />
+		<field cst:name="responseCode" cst:type="java.lang.String">
+			<bind-xml name="responseCode" node="element" />
+		</field>
+		<field cst:name="reasonCode" cst:type="java.lang.String">
+			<bind-xml name="reasonCode" node="element" />
+		</field>
+		<field cst:name="text" cst:type="java.lang.String">
+			<bind-xml name="text" node="element" />
+		</field>
+	</class>
+</mapping>
+    

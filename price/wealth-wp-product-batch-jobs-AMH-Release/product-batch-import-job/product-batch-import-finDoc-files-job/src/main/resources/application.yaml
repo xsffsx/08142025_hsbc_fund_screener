@@ -1,0 +1,145 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+  data:
+    mongodb:
+      host: "amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: 27017
+      database: WPC_AMH_DEV
+      username: WPCHKGLUA9_APPUSER
+      password: "{cipher}aa279e18a8d106e2860aec459ecc538ec0bda1dec541b663b9d367ec31b3711e5ad3af8461293ea3d7ae96f5d6f73510"
+      enable-replica: false
+  main:
+    web-application-type: none
+batch:
+  graphQLUrl: "https://product-graphql-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+  
+CHMOD:
+  Script: "C:/workspace/wealth-wp-product-batch-jobs/product-batch-script/common/chmod.sh"
+
+finDoc:
+  ftp: "C:/dev/smart/findoc/"
+  doc:
+    src: "C:/dev/smart/findoc/req/incoming"
+    chk: "C:/dev/smart/findoc/req/chk"
+  pdf:
+    rej: "C:/dev/smart/findoc/pdf/rej"
+    aprv: "C:/dev/smart/findoc/pdf/aprv"
+    chk: "C:/dev/smart/findoc/pdf/chk"
+  reject:
+    ENS:  "C:/dev/smart/ENS/"
+  http:
+    pdf: ""
+  sysPath: ""
+  uplFilePattern: ^HFIE.*||^SPOMS.*
+document:
+  type:
+    ADDENDUM: ad
+    ANULRPT: ar
+    APPENDIX: ap
+    BASEDISCL: bd
+    BD: bd
+    BOND-DOC1: bond-doc1
+    BOND-DOC2: bond-doc2
+    BOND-DOC3: bond-doc3
+    BOND-DOC4: bond-doc4
+    BOND-TERMS-BUY: bond-terms-buy
+    BOND-TERMS-SELL: bond-terms-sell
+    BOND-FS: bond-fs
+    DPS-DOC1: dps-doc1
+    DPS-DOC2: dps-doc2
+    DPS-DOC3: dps-doc3
+    DPS-DOC4: dps-doc4
+    DPS-DOC5: dps-doc5
+    DPS-DOC6: dps-doc6
+    DPS-DOC7: dps-doc7
+    DPS-DOC8: dps-doc8
+    DPS-DOC9: dps-doc9
+    DPS-TC: dps-tc
+    EI-SID-TC: ei-sid-tc
+    ELI-DOC1: eli-doc1
+    ELI-DOC2: eli-doc2
+    ELI-DOC3: eli-doc3
+    ELI-DOC4: eli-doc4
+    ELI-DOC5: eli-doc5
+    ELI-DOC6: eli-doc6
+    EQ-SID-TC: eq-sid-tc
+    FACTSHEET: fs
+    FX-SID-TC: fx-sid-tc
+    G-DOC1: g-doc1
+    G-DOC2: g-doc2
+    G-DOC3: g-doc3
+    G-DOC4: g-doc4
+    G-DOC5: g-doc5
+    G-DOC6: g-doc6
+    G-DOC7: g-doc7
+    G-DOC8: g-doc8
+    G-DOC9: g-doc9
+    INFOMEMO: im
+    INTRMFST: ifst
+    INTRMRPT: ir
+    IR-SID-TC: ir-sid-tc
+    IS-PROSPECTUS: is-pr
+    MARGIN-FS: mr-fs
+    MKTCMNT: mc
+    MKTINSIGHT: mi
+    OC: oc
+    PR-PROSPECTUS: pp
+    OD1: od1
+    OD2: od2
+    OD3: od3
+    OD4: od4
+    OD5: od5
+    PRCSUPPL: ps
+    PRODBOOKLET: pb
+    PRODDETAILS: pd
+    PROSPECTUS: pr
+    SD: sd
+    SEC-DOC1: sec-doc1
+    SEC-DOC2: sec-doc2
+    SEC-DOC3: sec-doc3
+    SEC-DOC4: sec-doc4
+    SEC-DOC5: sec-doc5
+    SEC-DOC6: sec-doc6
+    SEC-FS: sec-fs
+    SHORTLIST: sl
+    SID-DOC1: sid-doc1
+    SID-DOC2: sid-doc2
+    SID-DOC3: sid-doc3
+    SID-DOC4: sid-doc4
+    SID-DOC5: sid-doc5
+    SID-DOC6: sid-doc6
+    SID-DOC7: sid-doc7
+    SID-DOC8: sid-doc8
+    SID-DOC9: sid-doc9
+    SID-TC: sid-tc
+    SMIP-FS: smip-fs
+    TERMSHEET: ts
+    TERMSHEETS: ts
+    TMD-TC: tmd-tc
+    USERDEF: ud
+    UT-DOC1: ut-doc1
+    UT-DOC2: ut-doc2
+    UT-DOC3: ut-doc3
+    UT-DOC4: ut-doc4
+    UT-DOC5: ut-doc5
+    UT-DOC6: ut-doc6
+    UT-DOC7: ut-doc7
+    UT-DOC8: ut-doc8
+    UT-DOC9: ut-doc9
+    UT-FS: ut-fs
+    UTMIP-FS: utmip-fs
+    UTPS-FS: utps-fs
+    WRTS-DOC1: wrts-doc1
+    WRTS-DOC2: wrts-doc2
+    WRTS-DOC3: wrts-doc3
+    WRTS-DOC4: wrts-doc4
+    WRTS-DOC5: wrts-doc5
+    WRTS-DOC6: wrts-doc6
+    KRS-CNY: krscny

@@ -1,0 +1,251 @@
+elastic:
+  address: "localhost:9243"
+  dirConfig:
+    windows:
+     dataDir: C:/temp/data
+     esHomeDir: C:/elastic/elastic-kibana/src/main/resources
+     logDir: C:/temp/elasticsearch/logs
+     httpEnabled: true
+     port: 9243
+
+    linux:
+     dataDir: /dev/shm/elasticsearch/data
+     esHomeDir: /dev/shm/elasticsearch/bin
+     logDir: /dev/shm/elasticsearch/logs
+     httpEnabled: true
+     port: 9243
+
+schedule:
+  cron: "0 0/15 * ? * 1-7"
+
+datasource:
+  default-name: labciAmhUS
+  jdbc:
+    enabled: true
+  multiple-sources:
+    labciAmhCN:
+      name: oracle-equity-amh-stockconnect
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=amh-dev-wporcl01.wealth-platform-amh.dev.aws.cloud.hhhh)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=UAMHWP01)(FAILOVER_MODE=(TYPE=SELECT)(METHOD=BASIC))))
+      username: MDSHKEQCNUA1_APPUSER
+      password: MDSHKEQCNUA1_APPUSER.123
+      maximum-pool-size: 20
+    labciAmhUS:
+      name: oracle-equity-amh-frisco
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=amh-dev-wporcl01.wealth-platform-amh.dev.aws.cloud.hhhh)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=UAMHWP01)(FAILOVER_MODE=(TYPE=SELECT)(METHOD=BASIC))))
+      username: MDSHKEQUSUA1_APPUSER
+      password: MDSHKEQUSUA1_APPUSER.123
+      maximum-pool-size: 20
+
+app:
+ supportSites:
+  - Default
+  - HK_HBAP
+
+ site:
+  support: HK_HBAP,HK_hhhh
+
+ localeMapping:
+    - CN.en_US:0
+    - CN.zh_CN:1
+    - HK.en:0
+    - HK.en_US:0
+    - HK.zh_HK:1
+    - HK.zh_CN:2
+    - HK.zh:2
+    - GB.en_GB:0
+
+predsrch-priority:
+ sortingField:
+  DEFAULT:
+    first:
+      field: symbol
+      operator: exact
+      sequence: marketWeight,productTypeWeight,symbol
+    second:
+      field: productNameAnalyzed
+      operator: exact
+      sequence: marketWeight,productTypeWeight,productName
+    third:
+      field: symbol
+      operator: contains
+      sequence: marketWeight,productTypeWeight,symbol
+    fourth:
+      field: symbol
+      operator: starts with
+      sequence: marketWeight,productTypeWeight,symbol
+    fifth:
+      field: productNameAnalyzed
+      operator: starts with
+      sequence: marketWeight,productTypeWeight,productName
+    sixth:
+      field: productNameAnalyzed
+      operator: contains
+      sequence: marketWeight,productTypeWeight,productName
+  UT:
+    first:
+      field: symbol
+      operator: exact
+      sequence: productTypeWeight,countryTradableCodeWeight,productName
+    second:
+      field: productNameAnalyzed
+      operator: exact
+      sequence: productTypeWeight,countryTradableCodeWeight,symbol
+    third:
+      field: symbol
+      operator: starts with
+      sequence: productTypeWeight,countryTradableCodeWeight,symbol,productName
+    fourth:
+      field: productNameAnalyzed
+      operator: starts with
+      sequence: productTypeWeight,countryTradableCodeWeight,productName,symbol
+    fifth:
+      field: symbol
+      operator: contains
+      sequence: productTypeWeight,countryTradableCodeWeight,symbol,productName
+    sixth:
+      field: productNameAnalyzed
+      operator: contains
+      sequence: productTypeWeight,countryTradableCodeWeight,productName,symbol
+ predsrchSortingOrdersBySite:
+   Default:
+     productTypeSortingOrder: SEC,ETF,UT,INDEX,BOND
+     productSubTypeSortingOrder: SEC,ORD|DRC|PRF|UNT|EIW|RTS|BBS|OTC|ETD|ETN|CPR:PAR:CON:FLT:FRB:LIB
+     countryTradableCodeSortingOrder: CA,US,HK,GB,FR,DE
+     marketSortingOrder: CA,US,HK,GB,FR,DE
+   HKHBAP:
+     productTypeSortingOrder: SEC,WRTS,UT
+     productSubTypeSortingOrder: SEC,LEQU|FEQU|ETF;WRTS,LWTS|LCBB
+     countryTradableCodeSortingOrder: HK,CN
+     marketSortingOrder: HK,NA,CN
+
+site-feature:
+ fundSwitch:
+  DEFAULT:
+   switchOutFund: switchableGroups
+   unSwitchOutFund: unSwitchableList
+
+predsrch:
+ siteLoadInterfaceRule:
+ siteConvertRule: hk_hhhh:hk_hbap
+ #filePath: /appvol/vcap/app/wlp/usr/servers/defaultServer/predictive_search/
+ filePath: /appvol/product/data/outgoing/HKHBAP/WMDS/MD5/
+ sourcePath: /appvol/vcap/app/wlp/usr/servers/defaultServer/md5/
+# sourcePath: /appvol/wpc/data/outgoing/HKHBAP/WMDS/MD5/
+ rejectPath: /appvol/vcap/app/wlp/usr/servers/defaultServer/reject_path/
+ dataTypeBySite: HK_HBAP:SEC-CN,SEC-HK,SEC-US,WRTS-HK,UT
+ constantFilePath:
+ indexLoadFromConstantsSideList:
+ expiredTime: 26
+ mappingFile: /predsrch/productEntity-mapping.xml
+ productEntityPath: /predsrch/product-description.xml
+ skipErrRecord:  false
+ maxBackupDay: 0
+ housekeep: true
+ esSetting: /mapping/setting.json
+ esMapping: /mapping/mapping.json
+ esIndexType: customizedesindexforproduct
+ enableRetry: true # Define if enable to retry parse xml files from WPC, default true
+ retryTimes: 3 # Define the retry times when fail to parse xml from WPC, default 3
+ searchType: #below is unused/useless
+  - productName|productNameAnalyzed:
+  - productShortName|productShortName_analyzed:
+  - symbol|symbol_analyzed:*
+  - productType|productType_analyzed:
+  - productCode|productCode_analyzed:*
+
+vendor:
+  venderProdCdeAltClassCdeMap:
+   Default: T
+   MSTAR: O
+
+
+volumeService:
+ retryTime:
+
+
+validator:
+  basePath: /validation/
+  xssValidator: xssValidator.dict
+  regex:
+    header:
+      channelId: OHI|OHB|MOBILE|OHCC
+      locale: en|en_US|zh_HK|zh_CN|zh|en_GB
+      appCode: WD|WealthX|STB|SP|STMA|STMA2.0|HKPWS|STBPWS|GCM|SRBP|PAS|STMAPWS|STBS|CMB|PB|RBP
+
+aws:
+  sftp:
+    port: 10022
+
+volume:
+ site:
+   DEFAULT: #load data type by site eg: UT,SEC
+     #volumeService:
+     dataType: SEC,WRTS-HK,UT
+     enabled: false #Define if use the volumeService to download WPC files
+     user: wpcsftu1
+     host: was-ns-amh-1-v2-wpcbatch.hk.hhhh
+     remoteFileDir: /hhhh/rbpwpcbc/data/outgoing/HKHBAP/WMDS/MD5/
+     remoteFilePath: sftp://wpcsftu1@was-ns-amh-1-v2-wpcbatch.hk.hhhh/hhhh/rbpwpcbc/data/outgoing/HKHBAP/WMDS/MD5/
+     privateKeyId: id_dsa
+     privateKeyPath: /predsrch/volumeServicePrivateKey/id_dsa_hbap
+     isVerify: false #Define if use the md5 value to verify WPC files
+
+#TODO
+connection:
+  NON_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 7000
+    enableProxy: false
+    proxyHostname:
+    proxyPort:
+    retryCount: 3
+    enableGzip: true
+  NON_PROD_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: intpxy6.hk.hhhh
+    proxyPort: 18084
+    retryCount: 3
+    enableGzip: false
+  HK_PRD_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: apxy1.hk.hhhh
+    proxyPort: 18084
+    retryCount: 3
+    enableGzip: false
+  GR_PROD_PROXY:
+    maxTotal: 1000
+    maxPerRoute: 1000
+    connectTimeout: 5000
+    socketTimeout: 30000
+    enableProxy: false
+    proxyHostname:
+    proxyPort:
+    retryCount: 3
+    enableGzip: false
+
+httpclient:
+  defaultHttpClientName: NON_PROXY
+
+#TODO
+labci:
+  proxy_name: NON_PROD_PROXY
+  token-keystore:
+    DEFAULT:
+      keystore-file-path: '/keystore/labci/protal/labci_protal_keystore.dat'
+      keystore-password-file-path: '/keystore/labci/protal/labci_protal_keystore_password.dat'
+  query-url: https://mkdlcu.qualityassurance.ebanking.hhhh.com.hk/move/query
+
+logging:
+  config: classpath:logback-spring-aws.xml

@@ -1,0 +1,173 @@
+### Environment configuration starts ###
+# Please update env config on https://alm-github.systems.uk.dummy/GPBW-Technology/wealth-wp-configuration.git 
+
+# DB profile
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
+  data:
+    mongodb:
+      host: #"docdb.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: #27017
+      database: #WPC_AMH_DEV
+      username: #wpdocdbadmin
+      # To prevent system properties override issue in different env, please do not commit encrypted passwords here.
+      password: #"{cipher}02fab32f253d49687b86c47d43efc627815f23b80aa6e0ca5d9e31a93e56f363202bb0d123ee0e119c024dba760fc412"
+      enable-replica: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    url: #jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: #ocushkd_appuser
+    password: #"{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: #org.postgresql.Driver
+  mvc:
+    async:
+      request-timeout: -1
+  main:
+    allow-circular-references: true
+
+#    url: jdbc:hsqldb:mem:testdb
+#    username:
+#    password:
+#    driver-class-name: org.hsqldb.jdbcDriver
+
+# Smart properties
+product:
+  supportEntities:
+#    - ctryRecCde: HK
+#      grpMembrRecCde: HBAP
+  request-log:
+    keep-days: 3
+  housekeeping:
+    batchSize: 10000
+  batch-job-log:
+    keep-days: 30
+  document-revision:
+    keep-days: 30
+  msg-process-log:
+    keep-days: 7
+  graphql:
+    default-limit: 10
+    enable-console-request-log: true
+    enable-console-data-log: false
+    enable-db-request-log: true
+    enable-db-data-log: false
+  ldap:
+    security:
+      principal: #CN=Infodir-HBAP-WPC,OU=Service Accounts,DC=InfoDir,DC=PROD,DC=dummy
+      credentials: #"{cipher}6536db44a87c3a76ab8f0d8ce3ae9ac04d0089fde8422fc4f3665101b15b8143"
+    provider:
+      url: #ldap://aa-lds-test.hk.dummy:3269/
+    base: #OU=dummyPeople,DC=InfoDir,DC=Dev,DC=dummy
+  testing-enabled: #false
+  role-mapping:
+    viewer:
+      - CN=BR_GB_HBEU_ENQ,OU=BUSSINESS_ROLES,OU=HTSE,OU=EU,OU=ROLES,OU=GROUPS,DC=INFODIR,DC=PROD,DC=dummy
+      #- any   # for test purpose, assign this role to 'any' staff
+    approver:
+      - CN=BR_GB_HBEU_APP,OU=BUSSINESS_ROLES,OU=HTSE,OU=EU,OU=ROLES,OU=GROUPS,DC=INFODIR,DC=PROD,DC=dummy
+      #- any
+      #- 43591421    # for test purpose, assign this role to a staff id
+    editor:
+      - CN=BR_GB_HBEU_MNT,OU=BUSSINESS_ROLES,OU=HTSE,OU=EU,OU=ROLES,OU=GROUPS,DC=INFODIR,DC=PROD,DC=dummy
+      #- any
+  report:
+    path: #/appvol/product/data/report
+  log:
+    path: #/appvol/product/data/logs/batch
+  finDoc:
+    path: #/appvol/product/data/FinDoc/pdf/chk
+    reject:
+      ENS: #/appvol/product-spring-batch/data/outgoing/HKHBAP/ENS/
+  chmod:
+    script: #/appvol/product-spring-batch/bin/HKHBAP/cron/chmod.sh
+  # to control the underlying setting
+  underlying:
+#    - prodTypeCde: ELI
+#      path: eqtyLinkInvst.undlStock
+#      allow-types:
+#        - SEC
+#        - ELI
+#        - INDEX
+#        - FX
+#        - IR
+  token:  #  Token settings, used for ui
+    key-alias:  "dummy smart plus ca"
+    timeout: 24h # token timeout
+# batch file path
+batch:
+  ingress:
+    path: #/appvol/product/data/incoming/batch/
+  findoc-ingress:
+    path: #/appvol/wpc/data/incoming/findoc/
+  start-ingress:
+    path: #/appvol/product/data/incoming/ms/
+
+### Environment configuration ends ###
+
+
+### Common configuration starts ###
+# Spring boot actuator endpoint properties
+management.endpoints:
+  shutdown:
+    enabled: true
+  health:
+    show-details: always
+  web:
+    exposure:
+      base-path: /monitor
+      include: "*"
+
+# Graphql properties
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+    cors:
+      allowed-origins: "*"
+
+# Graphiql UI properties
+graphiql:
+  mapping: /graphiql
+  endpoint:
+    graphql: /graphql
+    #subscriptions: /subscriptions
+  static:
+    basePath: /
+  enabled: true
+  pageTitle: product Playground
+  cdn:
+    enabled: false
+    version: 0.11.11
+  props:
+    resources:
+      query: query.graphql
+      defaultQuery: defaultQuery.graphql
+      variables: variables.graphql
+    variables:
+      editorTheme: "solarized light"
+  headers:
+    Authorization: "Bearer <your-token>"
+
+# Server properties
+server:
+  shutdown: graceful
+  max-http-header-size: 512000
+  tomcat:
+    threads:
+      max: 400
+    accept-count: 200
+    connection-timeout: 180000
+
+# Logging properties
+logging:
+  level:
+    com.dummy.wmd.wpc.graphql.validator: info
+### Common configuration ends ###

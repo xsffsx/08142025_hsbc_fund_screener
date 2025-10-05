@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62736",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:04:40.083898",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62736%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "abc36308-5239-461c-9cf1-5a6229907452:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ILO63bE0iES538DbpdS5hnG9W4Ero8H4NX_ZdiGguTIDOh4H62LzSw==",
+        "x-hsbc-request-correlation-id": "2b5c2f44-dbb8-42bf-88ff-feb0c6f15631",
+        "date": "Wed, 13 Aug 2025 14:04:40 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 db987b94354bedc3a16788229c0e652c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1260",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62736\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"SS\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":44.72,\"currency\":\"EUR\",\"companyName\":\"JPM Europe Dynamic Technologies A (Adist Unit) - EUR\",\"securityDescription\":null,\"changeAmount\":-0.59,\"changePercent\":-1.30214,\"bidPrice\":44.5,\"bidPriceDate\":\"2025-08-12\",\"bidSize\":null,\"askPrice\":46.96,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0.02177,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00000RSW\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Annually\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"SPEC\",\"categoryLevel1Name\":\"Specialties\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":2.6455},{\"year\":2023,\"annualCalendarYearReturn\":17.17212},{\"year\":2022,\"annualCalendarYearReturn\":-28.39775},{\"year\":2021,\"annualCalendarYearReturn\":32.68534},{\"year\":2020,\"annualCalendarYearReturn\":25.93159}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":0.30574,\"dailyPerformanceNAV\":-2.33675},{\"period\":\"1M\",\"trailingTotalReturn\":-3.73087,\"dailyPerformanceNAV\":-7.10428},{\"period\":\"3M\",\"trailingTotalReturn\":6.5167,\"dailyPerformanceNAV\":-3.8693},{\"period\":\"6M\",\"trailingTotalReturn\":-5.37701,\"dailyPerformanceNAV\":-10.11055},{\"period\":\"1Y\",\"trailingTotalReturn\":-1.20333,\"dailyPerformanceNAV\":1.45198},{\"period\":\"3Y\",\"trailingTotalReturn\":1.79836,\"dailyPerformanceNAV\":0.81169},{\"period\":\"5Y\",\"trailingTotalReturn\":6.70031,\"dailyPerformanceNAV\":5.5667},{\"period\":\"10Y\",\"trailingTotalReturn\":9.82763,\"dailyPerformanceNAV\":9.8969}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2016-05-27\"},\"entityUpdatedTime\":\"2025-08-13T22:04:39.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62736\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2736\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62736\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0104030142\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000RSW\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050003866\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50003866\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

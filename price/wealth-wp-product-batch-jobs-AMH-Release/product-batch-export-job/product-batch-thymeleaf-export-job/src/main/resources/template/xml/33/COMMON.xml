@@ -1,0 +1,196 @@
+<root xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <th:block th:fragment="prodKeySeg">
+        <prodKeySeg>
+            <ctryRecCde th:text="${product.get('ctryRecCde')}"/>
+            <grpMembrRecCde th:text="${product.get('grpMembrRecCde')}"/>
+            <prodTypeCde th:text="${product.get('prodTypeCde')}"/>
+            <prodCde th:text="${product.get('prodCde')}"/>
+        </prodKeySeg>
+    </th:block>
+    <th:block th:fragment="prodAltNumSeg">
+        <prodAltNumSeg>
+            <prodCdeAltClassCde product:notNull="${alt.prodCdeAltClassCde}"/>
+            <prodAltNum product:notNull="${alt.prodAltNum}"/>
+        </prodAltNumSeg>
+    </th:block>
+    <th:block th:fragment="prodInfoSeg">
+        <prodInfoSeg>
+            <prodSubtpCde product:notNull="${product.get('prodSubtpCde')}"/>
+            <prodName th:text="${product.get('prodName')}"/>
+            <prodPllName product:notNull="${product.get('prodPllName')}"/>
+            <prodSllName product:notNull="${product.get('prodSllName')}"/>
+            <prodShrtName th:text="${product.get('prodShrtName')}"/>
+            <prodShrtPllName product:notNull="${product.get('prodShrtPllName')}"/>
+            <prodShrtSllName product:notNull="${product.get('prodShrtSllName')}"/>
+            <prodDesc product:notNull="${product.get('prodDesc')}"/>
+            <prodPllDesc product:notNull="${product.get('prodPllDesc')}"/>
+            <prodSllDesc product:notNull="${product.get('prodSllDesc')}"/>
+            <bchmkName product:notNull="${product.get('bchmkName')}"/>
+            <bchmkPllName product:notNull="${product.get('bchmkPllName')}"/>
+            <bchmkSllName product:notNull="${product.get('bchmkSllName')}"/>
+            <asetClassCde product:notNull="${product.get('asetClassCde')}"/>
+            <prodStatCde th:text="${product.get('prodStatCde')}"/>
+            <ccyProdCde th:text="${product.get('ccyProdCde')}"/>
+            <riskLvlCde product:notNull="${product.get('riskLvlCde')}"/>
+            <prdProdCde product:notNull="${product.get('prdProdCde')}"/>
+            <prdProdNum th:text="${#objects.nullSafe(product.get('prdProdNum'), 0)}"/>
+            <termRemainDayCnt th:text="${#objects.nullSafe(product.get('termRemainDayCnt'), 0)}"/>
+            <prodLnchDt product:notNull="${#dates.format(product.get('prodLnchDt'), 'yyyy-MM-dd')}"/>
+            <prodMturDt product:notNull="${#dates.format(product.get('prodMturDt'), 'yyyy-MM-dd')}"/>
+            <mktInvstCde product:notNull="${product.get('mktInvstCde')}"/>
+            <sectInvstCde product:notNull="${product.get('sectInvstCde')}"/>
+            <allowBuyProdInd th:text="${product.get('allowBuyProdInd')}"/>
+            <allowSellProdInd th:text="${product.get('allowSellProdInd')}"/>
+            <allowBuyUtProdInd th:text="${product.get('allowBuyUtProdInd')}"/>
+            <allowBuyAmtProdInd th:text="${product.get('allowBuyAmtProdInd')}"/>
+            <allowSellUtProdInd th:text="${product.get('allowSellUtProdInd')}"/>
+            <allowSellAmtProdInd th:text="${product.get('allowSellAmtProdInd')}"/>
+            <allowSellMipProdInd th:text="${product.get('allowSellMipProdInd')}"/>
+            <allowSellMipUtProdInd th:text="${product.get('allowSellMipUtProdInd')}"/>
+            <allowSellMipAmtProdInd th:text="${product.get('allowSellMipAmtProdInd')}"/>
+            <allowSwInProdInd th:text="${product.get('allowSwInProdInd')}"/>
+            <allowSwInUtProdInd th:text="${product.get('allowSwInUtProdInd')}"/>
+            <allowSwInAmtProdInd th:text="${product.get('allowSwInAmtProdInd')}"/>
+            <allowSwOutProdInd th:text="${product.get('allowSwOutProdInd')}"/>
+            <allowSwOutUtProdInd th:text="${product.get('allowSwOutUtProdInd')}"/>
+            <allowSwOutAmtProdInd th:text="${product.get('allowSwOutAmtProdInd')}"/>
+            <incmCharProdInd product:notNull="${product.get('incmCharProdInd')}"/>
+            <cptlGurntProdInd product:notNull="${product.get('cptlGurntProdInd')}"/>
+            <yieldEnhnProdInd product:notNull="${product.get('yieldEnhnProdInd')}"/>
+            <grwthCharProdInd product:notNull="${product.get('grwthCharProdInd')}"/>
+            <prtyProdSrchRsultNum th:text="${#objects.nullSafe(product.get('prtyProdSrchRsultNum'), 0)}"/>
+            <availMktInfoInd product:notNull="${product.get('availMktInfoInd')}"/>
+            <prdRtrnAvgNum product:notNull="${#doubles.stripTrailingZeros(product.get('prdRtrnAvgNum'))}"/>
+            <rtrnVoltlAvgPct product:notNull="${#doubles.stripTrailingZeros(product.get('rtrnVoltlAvgPct'))}"/>
+            <dmyProdSubtpRecInd product:notNull="${product.get('dmyProdSubtpRecInd')}"/>
+            <dispComProdSrchInd product:notNull="${product.get('dispComProdSrchInd')}"/>
+            <divrNum product:notNull="${#doubles.stripTrailingZeros(product.get('divrNum'))}"/>
+            <mrkToMktInd product:notNull="${product.get('mrkToMktInd')}"/>
+            <ctryProdTrade1Cde th:if="${product.ctryProdTradeCde != null and product.ctryProdTradeCde.size() > 0}"
+                               th:text="${product.ctryProdTradeCde[0]}"/>
+            <ctryProdTrade2Cde th:if="${product.ctryProdTradeCde != null and product.ctryProdTradeCde.size() > 1}"
+                               th:text="${product.ctryProdTradeCde[1]}"/>
+            <ctryProdTrade3Cde th:if="${product.ctryProdTradeCde != null and product.ctryProdTradeCde.size() > 2}"
+                               th:text="${product.ctryProdTradeCde[2]}"/>
+            <ctryProdTrade4Cde th:if="${product.ctryProdTradeCde != null and product.ctryProdTradeCde.size() > 3}"
+                               th:text="${product.ctryProdTradeCde[3]}"/>
+            <ctryProdTrade5Cde th:if="${product.ctryProdTradeCde != null and product.ctryProdTradeCde.size() > 4}"
+                               th:text="${product.ctryProdTradeCde[4]}"/>
+            <busStartTm
+                    product:notNull="${product.get('busStartTm') != null ? #timeZones.format(product.busStartTm, 'HH:mm') : null}"/>
+            <busEndTm
+                    product:notNull="${product.get('busEndTm') != null ? #timeZones.format(product.busEndTm, 'HH:mm') : null}"/>
+            <introProdCurrPrdInd product:notNull="${product.get('introProdCurrPrdInd')}"/>
+            <prodTopSellRankNum th:text="${#objects.nullSafe(product.get('prodTopSellRankNum'), 0)}"/>
+            <prodTopPerfmRankNum th:text="${#objects.nullSafe(product.get('prodTopPerfmRankNum'), 0)}"/>
+            <prodTopYieldRankNum th:text="${#objects.nullSafe(product.get('prodTopYieldRankNum'), 0)}"/>
+            <prodIssueCrosReferDt product:notNull="${#dates.format(product.get('prodIssueCrosReferDt'), 'yyyy-MM-dd')}"/>
+            <ccyInvstCde product:notNull="${product.get('ccyInvstCde')}"/>
+            <qtyTypeCde th:text="${product.get('qtyUnitProdCde')}"/>
+            <prodLocCde product:notNull="${product.get('prodLocCde')}"/>
+            <prodTaxFreeWrapActStaCde product:notNull="${product.get('prodTaxFreeWrapActStaCde')}"/>
+            <trdFirstDt product:notNull="${#dates.format(product.get('trdFirstDt'), 'yyyy-MM-dd')}"/>
+            <suptRcblCashProdInd th:text="${product.get('suptRcblCashProdInd')}"/>
+            <suptRcblScripProdInd th:text="${product.get('suptRcblScripProdInd')}"/>
+            <loanProdOdMrgnPct product:notNull="${#doubles.stripTrailingZeros(product.get('loanProdOdMrgnPct'))}"/>
+            <dcmlPlaceTradeUnitNum th:text="${#objects.nullSafe(product.get('dcmlPlaceTradeUnitNum'), 0)}"/>
+            <pldgLimitAssocAcctInd th:text="${product.get('pldgLimitAssocAcctInd')}"/>
+            <prodOwnCde product:notNull="${product.get('prodOwnCde')}"/>
+            <forgnProdInd product:notNull="${product.get('forgnProdInd')}"/>
+            <asetCatExtnlCde product:notNull="${product.get('asetCatExtnlCde')}"/>
+            <chrgCatCde product:notNull="${product.get('chrgCatCde')}"/>
+            <aumChrgProdInd th:text="${product.get('asetUnderMgmtChrgProdInd')}"/>
+            <invstImigProdInd product:notNull="${product.get('invstImigProdInd')}"/>
+            <restrInvstrProdInd product:notNull="${product.get('restrInvstrProdInd')}"/>
+            <prodInvstObjText product:notNull="${product.get('prodInvstObjText')}"/>
+            <prodInvstObjPllText
+                    product:notNull="${product.containsKey('trnsl') ? product.trnsl.prodInvstObjPllText : null}"/>
+            <prodInvstObjSllText
+                    product:notNull="${product.containsKey('trnsl') ? product.trnsl.prodInvstObjSllText : null}"/>
+            <invstInitMinAmt product:notNull="${#doubles.stripTrailingZeros(product.get('invstInitMinAmt'))}"/>
+            <noScribFeeProdInd product:notNull="${product.get('noScribFeeProdInd')}"/>
+            <topSellProdInd product:notNull="${product.get('topSellProdInd')}"/>
+            <topPerfmProdInd product:notNull="${product.get('topPerfmProdInd')}"/>
+            <invstInitMaxAmt product:notNull="${#doubles.stripTrailingZeros(product.get('invstInitMaxAmt'))}"/>
+            <rcmndProdDecsnCde product:notNull="${product.get('rcmndProdDecsnCde')}"/>
+            <asetText product:notNull="${product.get('asetText')}"/>
+            <prodDervtCde product:notNull="${product.get('prodDervtCde')}"/>
+            <eqtyUndlInd product:notNull="${product.get('eqtyUndlInd')}"/>
+            <wlthAccumGoalInd product:notNull="${product.get('wlthAccumGoalInd')}"/>
+            <prtyWlthAccumGoalCde product:notNull="${product.get('prtyWlthAccumGoalCde')}"/>
+            <planForRtireGoalInd product:notNull="${product.get('planForRtireGoalInd')}"/>
+            <prtyPlnForRtireCde product:notNull="${product.get('prtyPlnForRtireCde')}"/>
+            <educGoalInd product:notNull="${product.get('educGoalInd')}"/>
+            <prtyEducCde product:notNull="${product.get('prtyEducCde')}"/>
+            <liveInRtireGoalInd product:notNull="${product.get('liveInRtireGoalInd')}"/>
+            <prtyLiveInRtireCde product:notNull="${product.get('prtyLiveInRtireCde')}"/>
+            <protcGoalInd product:notNull="${product.get('protcGoalInd')}"/>
+            <prtyProtcCde product:notNull="${product.get('prtyProtcCde')}"/>
+            <mngSolnInd product:notNull="${product.get('mngSolnInd')}"/>
+            <prdInvstTnorNum th:text="${#objects.nullSafe(product.get('prdInvstTnorNum'), 0)}"/>
+            <geoRiskInd product:notNull="${product.get('geoRiskInd')}"/>
+            <prodLqdyInd product:notNull="${product.get('prodLqdyInd')}"/>
+            <rvrseEnqProdInd product:notNull="${product.get('rvrseEnqProdInd')}"/>
+            <prodInvstTypeCde product:notNull="${product.get('prodInvstTypeCde')}"/>
+            <islmProdInd product:notNull="${product.get('islmProdInd')}"/>
+            <cntlAdvcInd product:notNull="${product.get('cntlAdvcInd')}"/>
+            <asetVoltlClassMajrPrntCde product:notNull="${product.get('asetVoltlClassMajrPrntCde')}"/>
+            <prodTradeCcySeg th:each="tradeCcy : ${product.get('tradeCcy')}">
+                <ccyProdTradeCde product:notNull="${tradeCcy.ccyProdTradeCde}"/>
+            </prodTradeCcySeg>
+            <prodAsetUndlSeg th:each="asetUndl : ${product.get('undlAset') }">
+                <asetUndlCdeSeqNum product:notNull="${asetUndl.seqNum}"/>
+                <asetUndlCde product:notNull="${asetUndl.asetUndlCde}"/>
+            </prodAsetUndlSeg>
+            <prodListSeg th:each="lsp : ${product.get('listProd')}">
+                <prodListTypeCde product:notNull="${lsp.listProdType}"/>
+                <prodListCde product:notNull="${lsp.listProdCde}"/>
+                <prodEffSlstDt product:notNull="${#dates.format(lsp.prodEffSlstDt, 'yyyy-MM-dd')}"/>
+            </prodListSeg>
+            <prodUserDefSeg product:udfEach="udf : ${#udfMapping.get(product, 'udf')}">
+                <fieldTypeCde th:text="${udf.fieldTypeCde}"/>
+                <fieldCde th:text="${udf.fieldCde}"/>
+                <fieldValueText th:text="${udf.value}"/>
+            </prodUserDefSeg>
+            <prodUserDefExtSeg product:udfEach="ext : ${#udfMapping.get(product, 'ext', 'extEg', 'extOp')}">
+                <fieldCde th:text="${ext.fieldCde}"/>
+                <fieldValue th:text="${ext.value}"/>
+            </prodUserDefExtSeg>
+            <prodUserDefExtSeg th:if="${product.get('prodTypeCde') == 'UT'}">
+                <fieldCde th:text="allowTradeProdInd"/>
+                <fieldValue th:text="${product.get('allowBuyProdInd') == 'Y' 
+                    || product.get('allowSellProdInd') == 'Y' 
+                    || product.get('allowSwInProdInd') == 'Y' 
+                    || product.get('allowSwOutProdInd') == 'Y' 
+                    || product.get('allowSellMipProdInd') == 'Y' ? 'Y' : 'N'}"/>
+            </prodUserDefExtSeg>
+            <resChanSeg th:if="${product.get('oferChanl') != null}">
+                <resChannelDtl th:each="res : ${product.get('oferChanl')}">
+                    <resChannelCde product:notNull="${res.chanlComnCde}"/>
+                </resChannelDtl>
+            </resChanSeg>
+            <prodAsetVoltlClassSeg th:each="asetVol : ${product.get('asetVoltlClass')}">
+                <asetVoltlClassCde product:notNull="${asetVol.asetVoltlClassCde}"/>
+                <asetVoltlClassWghtPct product:notNull="${#doubles.stripTrailingZeros(asetVol.asetVoltlClassWghtPct)}"/>
+            </prodAsetVoltlClassSeg>
+            <asetSicAllocSeg th:each="asetSic : ${product.get('asetSicAlloc')}">
+                <sicCde product:notNull="${asetSic.sicCde}"/>
+                <asetAllocWghtPct product:notNull="${#doubles.stripTrailingZeros(asetSic.asetAllocWghtPct)}"/>
+            </asetSicAllocSeg>
+            <asetGeoLocAllocSeg th:each="asetGeo : ${product.get('asetGeoLocAlloc')}">
+                <geoLocCde product:notNull="${asetGeo.geoLocCde}"/>
+                <asetAllocWghtPct product:notNull="${#doubles.stripTrailingZeros(asetGeo.asetAllocWghtPct)}"/>
+            </asetGeoLocAllocSeg>
+        </prodInfoSeg>
+    </th:block>
+    <th:block th:fragment="recDtTmSeg">
+        <recDtTmSeg>
+            <recCreatDtTm th:text="${#timeZones.format(product.recCreatDtTm, 'yyyy-MM-dd HH:mm:ss')}"/>
+            <recUpdtDtTm th:text="${#timeZones.format(product.recUpdtDtTm, 'yyyy-MM-dd HH:mm:ss')}"/>
+            <prodPrcUpdtDtTm product:notNull="${#timeZones.format(product.get('prodPrcUpdtDtTm'), 'yyyy-MM-dd HH:mm:ss')}"/>
+            <recOnlnUpdtDtTm product:notNull="${#timeZones.format(product.get('recOnlnUpdtDtTm'), 'yyyy-MM-dd HH:mm:ss')}"/>
+            <prodStatUpdtDtTm product:notNull="${#timeZones.format(product.get('prodStatUpdtDtTm'), 'yyyy-MM-dd HH:mm:ss')}"/>
+            <timeZone product:notNull="${#timeZones.get()}"/>
+        </recDtTmSeg>
+    </th:block>
+</root>

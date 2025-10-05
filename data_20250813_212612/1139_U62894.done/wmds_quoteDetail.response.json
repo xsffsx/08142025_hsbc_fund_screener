@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62894",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:49:44.672215",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62894%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "9ac3624e-276d-4dd5-b7dc-464fd6662bb0:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "RqQBKR470vERz5TI2bxyo75KmzyHXvDBkQJ1JeQFeKqIGaoZ4_xzGQ==",
+        "x-hsbc-request-correlation-id": "ac235ebb-15ee-4259-998c-9aae2d69a171",
+        "date": "Wed, 13 Aug 2025 13:49:44 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 900141041f08038f9452e4f1a092ecd2.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1254",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62894\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"HA\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":4.2547,\"currency\":\"GBP\",\"companyName\":\"Allianz Dynamic Asian High Yield Bond (Class AMg-GBP-H2-MD-C)\",\"securityDescription\":null,\"changeAmount\":0.0028,\"changePercent\":0.06585,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":6.41159,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00016TDZ\",\"tradableCurrency\":\"GBP\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":12.8539},{\"year\":2023,\"annualCalendarYearReturn\":-0.65846},{\"year\":2022,\"annualCalendarYearReturn\":-24.56748},{\"year\":2021,\"annualCalendarYearReturn\":-19.70915},{\"year\":2020,\"annualCalendarYearReturn\":0.04366}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":5.55075,\"dailyPerformanceNAV\":6.13196},{\"period\":\"1M\",\"trailingTotalReturn\":1.46983,\"dailyPerformanceNAV\":1.61914},{\"period\":\"3M\",\"trailingTotalReturn\":4.66602,\"dailyPerformanceNAV\":4.64215},{\"period\":\"6M\",\"trailingTotalReturn\":5.49282,\"dailyPerformanceNAV\":5.0535},{\"period\":\"1Y\",\"trailingTotalReturn\":9.0844,\"dailyPerformanceNAV\":9.9267},{\"period\":\"3Y\",\"trailingTotalReturn\":7.31623,\"dailyPerformanceNAV\":7.17044},{\"period\":\"5Y\",\"trailingTotalReturn\":-5.61816,\"dailyPerformanceNAV\":-5.76869},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2018-08-01\"},\"entityUpdatedTime\":\"2025-08-13T21:49:44.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62894\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"R2894\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62894\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1282650313\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016TDZ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050093599\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50093599\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

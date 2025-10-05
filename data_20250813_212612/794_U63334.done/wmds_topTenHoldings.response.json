@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63334",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:27:39.042451",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63334%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "549a8825-d556-4be0-8f8d-2c4c38190a89:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "12",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ort0RsIzDcMDYWLnyyKu7iSXFQugTHmrdA-yzC9ilM-YjpRT0Xs8NQ==",
+        "x-hsbc-request-correlation-id": "345e4878-29f0-4a53-bcc0-7a0e81f9ac63",
+        "date": "Wed, 13 Aug 2025 13:27:38 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "12",
+        "x-envoy-upstream-service-time": "30",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2ccc45379edfa6388c7c37eacad97ec0.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "436",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Gilead Sciences Inc\",\"weighting\":7.36422,\"currency\":\"USD\",\"marketValue\":100242630},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vertex Pharmaceuticals Inc\",\"weighting\":6.50706,\"currency\":\"USD\",\"marketValue\":88574758},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Amgen Inc\",\"weighting\":5.79388,\"currency\":\"USD\",\"marketValue\":78866950},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"argenx SE ADR\",\"weighting\":4.39833,\"currency\":\"USD\",\"marketValue\":59870524},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Regeneron Pharmaceuticals Inc\",\"weighting\":4.33295,\"currency\":\"USD\",\"marketValue\":58980590},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Insmed Inc\",\"weighting\":4.10848,\"currency\":\"USD\",\"marketValue\":55925064},{\"market\":\"DK\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ascendis Pharma AS ADR\",\"weighting\":3.83237,\"currency\":\"USD\",\"marketValue\":52166592},{\"market\":\"NL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Merus NV\",\"weighting\":3.8131,\"currency\":\"USD\",\"marketValue\":51904339},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Jazz Pharmaceuticals PLC\",\"weighting\":3.7374,\"currency\":\"USD\",\"marketValue\":50873940},{\"market\":\"US\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Alnylam Pharmaceuticals Inc\",\"weighting\":3.68055,\"currency\":\"USD\",\"marketValue\":50100031}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

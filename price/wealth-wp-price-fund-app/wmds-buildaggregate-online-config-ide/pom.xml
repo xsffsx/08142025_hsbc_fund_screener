@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<name>wmds-buildaggregate-online-config-ide</name>
+	<description></description>
+
+	<groupId>com.hhhh.group.secwealth.mktdata</groupId>
+	<artifactId>wmds-buildaggregate-online-config-ide</artifactId>
+	<version>${project.version}</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+		<project.version>1.0.0-SNAPSHOT</project.version>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>releaseVersion</id>
+			<properties>
+				<project.version>1.0.0-RELEASE-${timestamp}</project.version>
+			</properties>
+		</profile>
+	</profiles>
+
+	<distributionManagement>
+		<repository>
+			<id>dsnexus</id>
+			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/releases
+			</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>dsnexus-snapshots</id>
+			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/snapshots
+			</url>
+			<layout>default</layout>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<modules>
+		<module>../wmds-parent</module>
+
+		<module>../wmds-online-config</module>
+
+		<module>../wmds-pcf/amh_utb_pom.xml</module>
+
+	</modules>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+					<execution>
+						<id>copy-server-resources</id>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>./target/pivotal-config</outputDirectory>
+							<resources>
+								<resource>
+									<directory>../wmds-pcf/target/pivotal</directory>
+								           <includes>
+								                <include> **/*.yml</include>
+								                <include> **/config/</include>
+								                <include> **/.profile</include>
+								                <include> **/jvm.options</include>
+								                <include> **/server.xml</include>
+								            </includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61044",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:44.420663",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61044%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "0722c583-f9fc-48e4-b7a1-b9549b3a4846:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "w3ciIdKGU7aAtaRGCG355wTpzoElrqLU8j6km1QPIjgHaTrcqhJ_7g==",
+        "x-hsbc-request-correlation-id": "d9f39377-d154-4728-a9d7-9f077b27a0ce",
+        "date": "Wed, 13 Aug 2025 13:29:44 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 202cb43062765e2670eca987cfe03f88.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "493",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"DBS Group Holdings Ltd\",\"weighting\":10.00132,\"currency\":\"USD\",\"marketValue\":83065407},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sea Ltd ADR\",\"weighting\":9.78507,\"currency\":\"USD\",\"marketValue\":81269317},{\"market\":\"ID\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PT Bank Central Asia Tbk\",\"weighting\":7.17131,\"currency\":\"USD\",\"marketValue\":59560860},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Oversea-Chinese Banking Corp Ltd\",\"weighting\":6.00096,\"currency\":\"USD\",\"marketValue\":49840608},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United Overseas Bank Ltd\",\"weighting\":4.86012,\"currency\":\"USD\",\"marketValue\":40365480},{\"market\":\"MY\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Public Bank Bhd\",\"weighting\":4.72617,\"currency\":\"USD\",\"marketValue\":39252911},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Singapore Telecommunications Ltd\",\"weighting\":3.88754,\"currency\":\"USD\",\"marketValue\":32287735},{\"market\":\"ID\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PT Bank Mandiri (Persero) Tbk\",\"weighting\":3.24167,\"currency\":\"USD\",\"marketValue\":26923506},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CP All PCL\",\"weighting\":2.78201,\"currency\":\"USD\",\"marketValue\":23105788},{\"market\":\"MY\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CIMB Group Holdings Bhd\",\"weighting\":2.44449,\"currency\":\"USD\",\"marketValue\":20302563}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

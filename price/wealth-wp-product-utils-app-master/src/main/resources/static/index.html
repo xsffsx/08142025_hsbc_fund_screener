@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>SMART Plus Utils App</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@3"></script>
+</head>
+
+<body v-bind:style="{cursor: selectedCursor}">
+    <noscript>
+        <h2>Sorry! Your browser doesn't support Javascript</h2>
+    </noscript>
+
+    <div id="app">
+        <!-- Navigation -->
+        <div class="app-bar">
+            <div class="header">
+                <h3>SMART Plus Utils App</h3>
+            </div>
+            <div class="navigation">
+                <router-link to="/">Dashboard</router-link>
+                <router-link to="/file-check">File Management</router-link>
+                <router-link to="/health-check">Health Check</router-link>
+                <router-link to="/compare-product">Compare Product</router-link>
+            </div>
+            <div class="secret-box" id="secretBox" v-if="showSecretBox">
+                <p class="secret-title">Secret Key</p>
+                <p class="secret-tips">Used for Dashboard and FileManagement pages</p>
+                <input id="secret-key" type="password" class="input" required v-model="secretKey" />
+                <br />
+            </div>
+        </div>
+        <div class="app-context">
+            <!-- Route View -->
+            <router-view :secret-key="secretKey"></router-view>
+        </div>
+
+        <div class="logo">
+            <img src="images/dummy-logo.svg" width="100">
+        </div>
+
+
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
+    <script type="module">
+        import Home from "./components/home.js";
+        import FileCheck from "./components/fileCheck.js"
+        import CompareProduct from "./components/compareProduct.js"
+
+        Vue.use(VueRouter);
+
+        const HealthCheck = {
+            template: `<iframe
+                src="healthCheck.html"
+                width="100%"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>`
+        }
+
+        // Define routes
+        const routes = [
+            { path: '/', component: Home, props: true },
+            { path: '/file-check', component: FileCheck, props: true },
+            { path: '/health-check', component: HealthCheck },
+            { path: '/compare-product', component: CompareProduct }
+        ];
+
+        // Create Vue Router instance
+        const router = new VueRouter({
+            routes,
+            linkActiveClass: 'active-link'
+        });
+
+        const vm = new Vue({
+            el: '#app',
+            router,
+            data: {
+                secretKey: '',
+                selectedCursor: 'default',
+                showSecretBox: true
+            },
+            watch: {
+                '$route.path'(newPath) {
+                    if (newPath === '/health-check' || newPath === '/compare-product') {
+                        this.showSecretBox = false;
+                    } else {
+                        this.showSecretBox = true;
+                    }
+                }
+            }
+        })
+
+        axios.defaults.validateStatus = function (status) {
+            if (status >= 200 && status < 300) {
+                document.getElementById("secretBox").style.display = "none";
+
+            } else {
+                document.getElementById("secretBox").style.display = "block";
+            }
+            return (status >= 200 && status < 300) || status === 401;
+        }
+
+        axios.interceptors.request.use(function (config) {
+            config.headers["x-dummy-secret-key"] = vm.$data.secretKey;
+            return config;
+        }, function (error) {
+            document.getElementById("secretBox").style.display = "block";
+            return Promise.reject(error);
+        })
+
+    </script>
+
+</body>

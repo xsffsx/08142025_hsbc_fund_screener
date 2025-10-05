@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: "jdbc:oracle:thin:dummy@example.com:1521:UAMHWP01"
+    username: WPCHKGLUA9
+    password: WPCHKGLUA9.123
+  data:
+    mongodb:
+      port: 27017
+#      host: localhost
+#      database: WPC_UK
+
+      host: amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy
+      database: WPC_AMH_DEV
+      username: WPCHKGLUA9_APPUSER
+      password: <PASSWORD>
+#      password: "{cipher}6f5472fb2340bcfdafb0435724d6fb29a98bff0fbc9e18bf89ccc848c3772b22813f1a12d096926033cfccaa2b7a28c9"
+
+product:
+  sync:
+    interval: 60   # 60 seconds by default
+    auto-watch: true
+    multiple-thread-write: false  # when apply changes to MongoDB with multiple thread or not
+
+  product-rest-adapter:
+    url: https://product-rest-adapter-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+  product-soap-adapter:
+    url: https://product-soap-adapter-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+  product-dp-file-egress:
+    url: https://product-dp-file-egress-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+  product-dp-file-ingress:
+    url: https://product-dp-file-ingress-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+  product-graphql:
+    url: https://product-graphql-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy
+
+server:
+  port: 8088

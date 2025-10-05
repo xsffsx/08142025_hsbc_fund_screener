@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dummy.wpb.product</groupId>
+    <artifactId>product-batch-build-batch-jars</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+    <name>product-batch-build-batch-jars</name>
+    <packaging>pom</packaging>
+    <description>Build product batch jars</description>
+
+    <!-- List of job modules -->
+    <modules>
+        <module>../../</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot.version>2.4.1</spring.boot.version>
+        <spring.version>5.3.5</spring.version>
+        <spring.cloud.version>3.0.0</spring.cloud.version>
+        <spring-cloud-aws.version>2.2.5.RELEASE</spring-cloud-aws.version>
+        <spring-cloud-stream.version>3.1.2</spring-cloud-stream.version>
+        <jackson.version>2.11.0</jackson.version>
+        <junit-jupiter.version>5.5.2</junit-jupiter.version>
+        <junit-platform-runner.version>1.5.2</junit-platform-runner.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-batch-resources</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <property name="root" value="${basedir}/../../" />
+                                <property name="target.batch.lib" value="${basedir}/../output/lib/" />
+
+                                <!-- Delete target folder if exists -->
+                                <delete dir="${target.batch.lib}" />
+
+                                <!-- Copy jars -->
+                                <echo message="Copy jars from target folder to package folder" />
+                                <copy todir="${target.batch.lib}" overwrite="true" flatten="true">
+                                    <fileset dir="${root}">
+                                        <include name="**/target/*.jar" />
+                                    </fileset>
+                                    <fileset dir="${root}">
+                                        <include name="**/**/target/*.jar" />
+                                    </fileset>
+                                </copy>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.dummy:8081/nexus/repository/maven-dummy-internal-prod_n3p/</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.dummy:8081/nexus/repository/maven-dummy-internal-snapshots_n3p/</url>
+            <layout>default</layout>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

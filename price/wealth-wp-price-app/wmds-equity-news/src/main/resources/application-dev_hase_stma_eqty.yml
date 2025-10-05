@@ -1,0 +1,148 @@
+##########
+spring:
+  datasource: 
+    name: oracle-equity-hase-stma
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@xu01-scan.p2g.netd.hk.hhhh:2000/mkd01uo1.hk.hhhh
+    username: MKD01SA1_APPUSER
+    password: MKD01SA1_APPUSER.123
+  profiles:
+    include: hase_stma_api_support
+
+##########
+name: 
+  id: 
+    enable: false
+
+#name:
+#  id:
+#    enable: true
+#    staff-channel:
+#      - OHCC
+#      - OHB
+#    customer-channel:
+#      - MOB
+#      - OHI
+#    encryptor-url: http://mds-asp1-tw-equity-sit.apps.cf.skm-drn-01.cloud.hk.hhhh/wmds-encryptor-war/wealth/api/v1/market-data/encryptor
+#    decryptor-url: http://mds-asp1-tw-equity-sit.apps.cf.skm-drn-01.cloud.hk.hhhh/wmds-encryptor-war/wealth/api/v1/market-data/decryptor
+
+connection:
+  NON_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: false
+    proxyHostname:
+    proxyPort:
+    retryCount: 3
+    enableGzip: true
+  ETNET_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: intpxy6.hk.hhhh
+    proxyPort: 8080
+    retryCount: 10
+    enableGzip: false
+  HK_PRD_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: apxy1.hk.hhhh
+    proxyPort: 18084
+    retryCount: 10
+    enableGzip: false
+
+httpclient:
+  defaultHttpClientName: NON_PROXY
+  etNetHttpClientName: ETNET_PROXY
+
+com:
+  hhhh:
+    wmd:
+      itt:
+        security:
+          filter:
+            url-patterns: /wealth/api/v1/market-data/*
+            digital:
+              enable: true
+              verify-date: false
+              saml3-certificates:
+              - certificate-source: ldap
+                ldap:
+                  provider: ldap://tkeudp2datdir00-2.hk.hhhh:1389/uid=SAAS_EU01_PPROD.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=uk,dc=hhhh,dc=com
+                  username: uid=SAAS_EU01_PPROD.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=uk,dc=hhhh,dc=com
+                  password: e2eEU01k
+                  timeout: 1000
+
+healthcheck:
+  predictive-search-health-check-url: https://mds-hase-stma-predictive-search-dev.apps.cf.skm-drn-01.cloud.hk.hhhh/healthcheck/probing
+  header:
+    channelId: OHI
+    countryCode: CN,HK
+    groupMember: HASE
+  service: IDN_RDF
+  item:
+    - 1037.HK
+    - GOOG.O
+  filter:
+    - TRADE_DATE
+    - TRDPRC_1
+    - TURNOVER
+
+cache:
+  distribute:
+    enabled: true
+    uri: https://distributed-cache-system-hk-hase-v1-mct.apps.cf.skm-drn-01.cloud.hk.hhhh/cache/
+
+multi-predsrch: 
+  url: https://mds-hase-stma-predictive-search-dev.apps.cf.skm-drn-01.cloud.hk.hhhh/wealth/api/v1/market-data/product/multi-predictive-search
+  body-prefix: param=
+  request-params:
+    assetClasses: ALL
+    searchFields: symbol
+    sortingFields: symbol
+    isPreciseSrch: true
+
+etnet:
+  proxy_name: ETNET_PROXY
+  headersForEtnetAuth:
+    Authorization: Basic aHMxMXVzZXI6aHNldDEyMzQ=
+  get-token-url: https://hsp2gp1.etnet.com.hk/HSAPI/Auth/GetToken
+  validate-token-url: https://hsp2gp2uat.etnet.com.hk/HSAPI/Auth/ValidateToken
+  chart-data-url: https://hsp2gp2uat.etnet.com.hk/HSAPI/GetData/RawChart
+  news-headlines-url: https://hsp2gp2uat.etnet.com.hk/HSAPI/GetData/NewsHeadline
+  news-detail-url: https://hsp2gp2uat.etnet.com.hk/HSAPI/GetData/NewsContent
+  quote-url: https://hsp2gp2uat.etnet.com.hk/HSAPI/GetData/Quote
+  indices-url: https://hsp2gp2uat.etnet.com.hk/HSAPI/GetData/IndicesQuote
+  topmovers-url: https://hsp2gp2uat.etnet.com.hk/HSAPI/GetData/TopMovers
+
+tris:
+  closure:
+    DEFAULT: app_tris_rbwm_stockconnect_sat
+  token-keystore:
+    DEFAULT:
+      keystore-file-path: '/keystore/tris/sit_sgh_utb/tris_keystore.dat'
+      keystore-password-file-path: '/keystore/tris/sit_sgh_utb/tris_password.dat'
+      initialisation-vector: 12,34,56,78,90,87,65,43
+  url: http://hktrisu11.hk.hhhh:30000/ids-rest/json/quote
+  news-headlines-url: http://hktrisu11.hk.hhhh:30000/tris/news/headline
+  news-detail-url: http://hktrisu11.hk.hhhh:30000/tris/news/story
+  same-sector-url: http://hktrisu11.hk.hhhh:30000/srbp/getSameSectorStocks
+
+labci:
+  token-keystore:
+    DEFAULT:
+      keystore-file-path: '/keystore/labci/labci_iframe_keystore.dat'
+      keystore-password-file-path: '/keystore/labci/labci_iframe_keystore_password.dat'
+      initialisation-vector: 30,65,55,22,07,44,26,68
+  url: https://qualityassurance-caching-hase-mds.hk.hhhh:30001/servlet/Watchlist
+  midfs-bmp-url: http://hkw00105382.hk.hhhh:32000/stock/bmpquote
+  midfs-list-url: http://hkw00105382.hk.hhhh:32000/stock/quotelist
+  midfs-detail-url: http://hkw00105382.hk.hhhh:32000/stock/quotedetail
+  chart-data-url: https://mkdlcu.qualityassurance.ebanking.hhhh.com.hk/hase/chart/data

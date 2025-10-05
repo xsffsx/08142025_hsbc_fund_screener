@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- although reload is not much useful normal deployment in PCF as cannot
+	deploy file only it is still useful in local debug or patching by PCF SSH -->
+<configuration>
+
+	<!-- https://github.com/spring-projects/spring-boot/blob/2.1.x/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/logback/base.xml -->
+	<property name="LOG_FILE" value="/appvol/product/data/logs/webservice/product-graphql.log" />
+	<property name="LOG_FILE_MAX_SIZE" value="5MB" />
+	<property name="LOG_FILE_MAX_HISTORY" value="3" />
+	<property name="ROLLING_FILE_NAME_PATTERN" value="${LOG_FILE}.%d{yyyy-MM-dd}.%i.log" />
+
+	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+	<include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+
+	<logger name="com.dummy.wmd" level="DEBUG" />
+	<logger name="com.dummy.wpb" level="DEBUG" />
+	
+	<appender name="ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<encoder>
+			<pattern>${FILE_LOG_PATTERN}</pattern>
+		</encoder>
+		<file>${LOG_FILE}</file>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>${ROLLING_FILE_NAME_PATTERN}</fileNamePattern>
+			<maxFileSize>${LOG_FILE_MAX_SIZE}</maxFileSize>
+			<maxHistory>${LOG_FILE_MAX_HISTORY}</maxHistory>
+		</rollingPolicy>
+	</appender>
+	
+	<root level="INFO">
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="ROLLING_FILE" />
+	</root>
+
+</configuration>

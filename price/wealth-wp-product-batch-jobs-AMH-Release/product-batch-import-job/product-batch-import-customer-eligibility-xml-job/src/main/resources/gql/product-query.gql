@@ -1,0 +1,60 @@
+query productByFilter($filter: JSON!) {
+  productByFilter(filter: $filter, limit: 0) {
+    ctryRecCde
+    grpMembrRecCde
+    prodId
+    prodAltPrimNum
+    prodTypeCde
+    altId {
+      prodAltNum
+      prodCdeAltClassCde
+      prodTypeCde
+      recCreatDtTm
+      recUpdtDtTm
+    }
+    tradeElig {
+      actionLowRpqScrText
+      ageAllowTrdMaxNum
+      ageAllowTrdMinNum
+      operTypeCde
+      ovridCorsCtryChkInd
+      ovridCuspCatEligInd
+      ovridInvstHldgChkInd
+      ovridMaxAgeRestrInd
+      ovridMinAgeRestrInd
+      ovridNatlChkInd
+      ovridReqCmplRpqInd
+      ovridPlaceCtryChkInd
+      ovridReqFormInd
+      ovridRestrFisclCtryChkInd
+      ovridResCtryChkInd
+      ovridRpqVlidPrdInd
+      prdVlidRpqCde
+      prdVlidRpqNum
+      reqCmplRpqInd
+      reqInvstHldgChkInd
+      ovridBusCtryChkInd
+      ovridPriCtryChkInd
+      recCreatDtTm
+      recUpdtDtTm
+    }
+    restrCustCtry {
+      rowid
+      ctryIsoCde
+      restrCde
+      restrCtryTypeCde
+      recCreatDtTm
+      recUpdtDtTm
+    }
+    restrCustGroup {
+      rowid
+      custProdCatCde
+      eligCuspCatInd
+    }
+    formReqmt {
+      rowid
+      formReqCde
+      recCreatDtTm
+    }
+  }
+}

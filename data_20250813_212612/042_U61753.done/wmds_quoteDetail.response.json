@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U61753",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:36:06.533698",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61753%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "346a8322-9c6b-4579-9056-d10e21261f01:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "T7bycXharIYMBOQXtYg8qG8JVDUnt1Y3ZjRpgBlMiepEKUHm2TWXhQ==",
+        "x-hsbc-request-correlation-id": "7c9bcc7c-2919-4355-a270-8c0d8758ea07",
+        "date": "Wed, 13 Aug 2025 13:36:05 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 ac1b0b590fa34d8efd3e06ea595821ac.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1253",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U61753\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"DC\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":49.65,\"currency\":\"USD\",\"companyName\":\"JPMORGAN CHINA PIONEER A-SHARE (ACC) - USD \",\"securityDescription\":null,\"changeAmount\":0.42,\"changePercent\":0.85314,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00006BU3\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDIM\",\"categoryLevel1Name\":\"Equity Developing Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":4.56247},{\"year\":2023,\"annualCalendarYearReturn\":-24.28698},{\"year\":2022,\"annualCalendarYearReturn\":-28.67071},{\"year\":2021,\"annualCalendarYearReturn\":-4.82261},{\"year\":2020,\"annualCalendarYearReturn\":70.00613}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":8.27926,\"dailyPerformanceNAV\":11.09868},{\"period\":\"1M\",\"trailingTotalReturn\":5.37892,\"dailyPerformanceNAV\":5.34691},{\"period\":\"3M\",\"trailingTotalReturn\":11.08815,\"dailyPerformanceNAV\":9.82084},{\"period\":\"6M\",\"trailingTotalReturn\":8.44913,\"dailyPerformanceNAV\":9.60265},{\"period\":\"1Y\",\"trailingTotalReturn\":21.33902,\"dailyPerformanceNAV\":28.12903},{\"period\":\"3Y\",\"trailingTotalReturn\":-7.35293,\"dailyPerformanceNAV\":-6.50956},{\"period\":\"5Y\",\"trailingTotalReturn\":-5.86108,\"dailyPerformanceNAV\":-5.00431},{\"period\":\"10Y\",\"trailingTotalReturn\":3.02484,\"dailyPerformanceNAV\":3.16433}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2006-06-19\"},\"entityUpdatedTime\":\"2025-08-13T21:36:05.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61753\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J1753\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61753\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000055621\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006BU3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047830\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047830\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

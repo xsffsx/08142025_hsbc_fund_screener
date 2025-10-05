@@ -1,0 +1,5 @@
+<html lang="en" th:remove="tag">
+<th:block th:each="product : ${documents}" th:if="${product.get('prices')?.size() > 0}">
+dummy_DATA,[(${product.get('prodAltNumT')})],6
+</th:block>
+</html>

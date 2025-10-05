@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The sitekey was composed of countryCode,groupMember -->
+<regionEntity siteKey="Default">
+
+	<!--  <serviceEntity serviceID="PREDSRCH">
+		<entity>
+			<ruleSet type="mandatory" fields="keyword|assetClasses|searchFields|sortingFields"/>
+			<ruleSet type="mandatoryList" fields="filterCriterias:criteriaKey,operator" />
+			<ruleSet type="xssSecurity" fields="keyword|assetClass|searchFields|locale|sortingFields|topNum" />
+			<ruleSet type="fieldLengthLimit" fields="0:keyword:100" />
+			<ruleSet type="atLeastOneExist" fields="keyword|filterCriterias" />
+			<serviceName>predictiveSearchService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.predsrch.pres.beans.PredSrchRequest</requestClassName>
+		</entity>
+	</serviceEntity>-->
+
+	<serviceEntity serviceID="QUOTEDETAIL">
+		<entity>
+			<ruleSet type="mandatory" fields="market|prodAltNum|prodCdeAltClassCde|productType|delay" />
+			<ruleSet type="xssSecurity" fields="locale|delay|tradeDay|tradeHours|market|productType|prodCdeAltClassCde|prodAltNum|freeQuote|requestType|entityTimezone" />
+		    <ruleSet type="mandatoryWithAssociateFieldsValidator" fields="prodCdeAltClassCde|M" associateFields="market" />
+			<!-- put userType and eid to parameter Map -->
+			<!-- <ruleSet type="getUserInfo" fields="true,customerId|OHI|OHM|CUST,staffId|OHCC|OHB|OHBR|STFF" /> -->
+			<ruleSet type="enumValue" fields="delay|true,false" />
+			<!--Enhance to support AOC has no BidAskQuotes-->
+			<!-- <ruleSet type="getBidAskQuotes" fields="CN_hhhh" /> -->
+			<serviceName>quoteDetailService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.quote.beans.request.QuoteDetailRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+
+	<serviceEntity serviceID="QUOTELIST">
+		<entity>
+			<ruleSet type="mandatory" fields="delay|market|productKeys" />
+			<ruleSet type="mandatoryList" fields="productKeys:prodCdeAltClassCde,prodAltNum,productType" />
+			<ruleSet type="xssSecurity" fields="locale|delay|tradeDay|tradeHours|entityTimezone|productKeys|freeQuote|requestType" />
+			<ruleSet type="enumValue" fields="delay|true,false" />
+			<!-- <ruleSet type="setQuoteMeterMarket" fields="CN" /> -->
+			<!-- <ruleSet type="getUserInfo" fields="true,customerId|OHI|OHM|CUST,staffId|OHCC|OHB|OHBR|STFF" /> -->
+			<serviceName>quoteListService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.quote.beans.request.QuoteListRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="QUOTEPERFORMANCE">
+		<entity>
+			<ruleSet type="mandatory" fields="market|productType|prodCdeAltClassCde|prodAltNum" />
+			<ruleSet type="xssSecurity" fields="market|productType|prodCdeAltClassCde|prodAltNum|locale" />
+			<serviceName>quotePerformanceService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.QuotePerformanceRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="QUOTEHOLDINGS">
+		<entity>
+			<ruleSet type="mandatory" fields="market|productType|prodCdeAltClassCde|prodAltNum" />
+			<ruleSet type="xssSecurity" fields="market|productType|prodCdeAltClassCde|prodAltNum|locale" />
+			<serviceName>quoteHoldingsService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.QuoteHoldingsRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="TOPTENHOLDINGS">
+		<entity>
+			<ruleSet type="mandatory" fields="prodAltNum|prodCdeAltClassCde|productType|market" />
+			<ruleSet type="xssSecurity" fields="market|productType|prodCdeAltClassCde|prodAltNum|locale" />
+			<serviceName>topTenHoldingsService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.TopTenHoldingsRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDTOPANDBOTTOMCATEGORYCHART">
+		<entity>
+			<ruleSet type="mandatory" fields="market|marketPeriod" />
+			<ruleSet type="xssSecurity" fields="locale|market|categoryCode|marketPeriod" />
+			<!-- <ruleSet type="cacheHandler" fields="countryCode|groupMember|locale|market|categoryCode|marketPeriod" /> -->
+			<serviceName>fundTopAndBottomCatChartService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.TopAndBottmCatChartRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDTOPANDBOTTOMCATEGORY">
+		<entity>
+			<ruleSet type="mandatory" fields="market|assetAllocation|timeScale" />
+			<ruleSet type="xssSecurity" fields="locale|market|assetAllocation|timeScale" />
+			<ruleSet type="enumValue" fields="timeScale|1D,5D,1M,1Y,3Y,5Y,10Y" />
+			<!-- <ruleSet type="cacheHandler" fields="countryCode|groupMember|locale|market|assetAllocation|timeScale" /> -->
+			<serviceName>fundTopAndBottomCategoryService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.TopAndBottmMufCatRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDQUOTESUMMARY">
+		<entity>
+			<ruleSet type="mandatory" fields="market|productType|prodCdeAltClassCde|prodAltNum" />
+			<ruleSet type="xssSecurity" fields="locale|market|productType|prodCdeAltClassCde|prodAltNum" />
+			<serviceName>fundQuoteSummaryService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.FundQuoteSummaryRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDHOLDINGSDIVERSIFICATION">
+		<entity>
+			<ruleSet type="mandatory" fields="productKeys" />
+			<ruleSet type="mandatoryList" fields="productKeys:prodCdeAltClassCde,prodAltNum,market,productType" />
+			<ruleSet type="xssSecurity" fields="locale|productKeys" />
+			<serviceName>fundHoldingsDiversifiService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.FundHoldingsDiversifiRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="TRAILINGRETURNCHART">
+		<entity>
+			<ruleSet type="mandatory" fields="market|productType|prodCdeAltClassCde|prodAltNum|trailingReturnsPeriod" />
+			<ruleSet type="xssSecurity" fields="locale|market|productType|prodCdeAltClassCde|prodAltNum|trailingReturnsPeriod" />
+			<serviceName>trailingReturnChartService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.TrailingReturnChartRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDQUICKVIEW">
+		<entity>		
+			<ruleSet type="mandatory" fields="productType|criterias" />
+			<ruleSet type="mandatoryList" fields="criterias:criteriaKey,operator" />
+			<ruleSet type="xssSecurity" fields="productType|criterias|locale" />
+			<!-- <ruleSet type="cacheHandler" fields="countryCode|groupMember|productType|criteria|locale" /> -->
+			<serviceName>fundQuickViewService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.QuickViewRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDSEARCHCRITERIA">
+		<entity>
+			<ruleSet type="mandatory" fields="productType|minMaxCriteriaKeys|listCriteriaKeys" />
+			<ruleSet type="mandatoryList" fields="predefinedCriterias:criteriaKey,operator" />
+			<ruleSet type="xssSecurity" fields="productType|predefinedCriterias|minMaxCriteriaKeys|listCriteriaKeys" />
+			<ruleSet type="atLeastOneExist" fields="minMaxCriteriaKeys|listCriteriaKeys" />
+			<ruleSet type="enumValue" fields="productType|SEC,UT,ETF,BOND,QDII-UT" />
+			<!-- <ruleSet type="cacheHandler" fields="countryCode|groupMember|productType|locale|predefinedCriteria|minMaxCriteriaKey|listCriteriaKey" /> -->
+			<serviceName>fundSearchCriteriaService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.FundSearchCriteriaRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDSEARCHRESULT">
+		<entity>
+		    <ruleSet type="mandatory" fields="productType|returnOnlyNumberOfMatches" />
+		    <ruleSet type="mandatoryList" fields="detailedCriterias:criteriaKey,operator|productKeys:prodCdeAltClassCde,prodAltNum,market,productType" />
+			<ruleSet type="xssSecurity" fields="productType|detailedCriterias|rangeCriteria|sortBy|sortOrder|numberOfRecords|startDetail|endDetail|currencyCode|returnOnlyNumberOfMatches|returnOnlyhhhhFunds" />
+			<!-- <ruleSet type="cacheHandler" fields="countryCode|groupMember|locale|productType|detailedCriteria|rangeCriteria|sortBy|sortOrder|numberOfRecords|startDetail|endDetail|currencyCode|entityTimezone|productKeys|returnOnlyNumberOfMatches|returnOnlyhhhhFunds" /> -->
+			<serviceName>fundSearchResultService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.FundSearchResultRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDCOMPARE">
+		<entity>
+			<ruleSet type="mandatory" fields="productKeys" />
+		    <ruleSet type="mandatoryList" fields="productKeys:prodCdeAltClassCde,prodAltNum,market,productType" />
+			<ruleSet type="xssSecurity" fields="locale|productKeys" />
+			<serviceName>fundCompareService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.FundCompareRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="REDEMPTIONFEES">
+		<entity>
+			<ruleSet type="mandatory" fields="market|productType|prodCdeAltClassCde|prodAltNum" />
+			<ruleSet type="xssSecurity" fields="locale|market|productType|prodCdeAltClassCde|prodAltNum" />
+			<serviceName>redemptionFeesService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.RedemptionFeesRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+
+	<serviceEntity serviceID="ASSETALLOCATION">
+		<entity>
+			<ruleSet type="mandatory" fields="market|productType|prodCdeAltClassCde|prodAltNum" />
+			<ruleSet type="xssSecurity" fields="market|productType|prodCdeAltClassCde|prodAltNum|locale" />
+			<serviceName>assetAllocationService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.AssetAllocationRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+    
+    <serviceEntity serviceID="ADVANCECHART">
+		<entity>
+			<ruleSet type="mandatory" fields="productKeys|timeZone|dataType" />
+		    <ruleSet type="mandatoryList" fields="productKeys:prodCdeAltClassCde,prodAltNum,market,productType" />
+			<ruleSet type="xssSecurity" fields="market|productType|prodCdeAltClassCde|prodAltNum|locale" />
+			<serviceName>advanceChartService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.AdvanceChartRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+
+	<serviceEntity serviceID="ADVANCECHARTV2">
+		<entity>
+			<ruleSet type="mandatory" fields="productKeys|timeZone|dataType" />
+			<ruleSet type="mandatoryList" fields="productKeys:prodCdeAltClassCde,prodAltNum,market,productType" />
+			<ruleSet type="xssSecurity" fields="market|productType|prodCdeAltClassCde|prodAltNum|locale" />
+			<serviceName>advanceChartV2Service</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.AdvanceChartRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+    
+	<serviceEntity serviceID="RETURNINDEXCHART">
+		<entity>
+			<ruleSet type="mandatory" fields="market|productType|prodCdeAltClassCde|prodAltNum|timeZone" />
+			<ruleSet type="xssSecurity" fields="locale|market|productType|prodCdeAltClassCde|prodAltNum|timeZone|startTime|endTime|period" />
+			<serviceName>returnIndexChartService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.ReturnIndexChartRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="OTHERFUNDCLASSES">
+		<entity>
+			<ruleSet type="mandatory" fields="market|prodAltNum|prodCdeAltClassCde|productType" />
+			<ruleSet type="xssSecurity" fields="locale|market|productType|prodCdeAltClassCde|prodAltNum" />
+			<serviceName>otherFundClassesService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.OtherFundClassesRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="CATEGORYOVERVIEW">
+		<entity>
+			<ruleSet type="mandatory" fields="productType" />
+			<serviceName>categoryOverviewService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.CategoryOverviewRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="HOLDINGALLOCATION">
+		<entity>
+			<ruleSet type="mandatory" fields="market|productType|prodCdeAltClassCde|prodAltNum" />
+			<ruleSet type="xssSecurity" fields="locale|market|productType|prodCdeAltClassCde|prodAltNum" />
+			<serviceName>holdingAllocationService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.HoldingAllocationRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDLIST">
+		<entity>
+			<ruleSet type="mandatory" fields="productKeys" />
+			<ruleSet type="mandatoryList" fields="productKeys:prodCdeAltClassCde,prodAltNum,market,productType" />
+			<ruleSet type="xssSecurity" fields="locale|productKeys" />
+			<serviceName>fundListService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.FundListRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="PERFORMANCERETURN">
+		<entity>
+			<ruleSet type="mandatory" fields="productKeys|currency|indicate" />
+		    <ruleSet type="mandatoryList" fields="productKeys:prodCdeAltClassCde,prodAltNum,market,productType" />
+			<ruleSet type="xssSecurity" fields="locale|productKeys|currency" />
+			<ruleSet type="enumValue" fields="indicate|symbol,index" />
+			<serviceName>performanceReturnService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.PerformanceReturnRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+	
+	<serviceEntity serviceID="FUNDCOMPAREINDEX">
+		<entity>
+			<ruleSet type="mandatory" fields="productType" />
+			<serviceName>fundCompareIndexService</serviceName>
+			<requestClassName>com.hhhh.group.secwealth.mktdata.fund.beans.request.FundCompareIndexRequest</requestClassName>
+		</entity>
+	</serviceEntity>
+
+</regionEntity>

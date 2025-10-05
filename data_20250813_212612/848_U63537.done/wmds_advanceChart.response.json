@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_advanceChart",
+  "product_code": "U63537",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:42:54.301258",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/advanceChart?body=%7B%22productKeys%22%3A%5B%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63537%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D%5D%2C%22timeZone%22%3A%22Asia%2FHong_Kong%22%2C%22startDate%22%3A%222022-08-13%22%2C%22endDate%22%3A%222025-08-13%22%2C%22currency%22%3A%22HKD%22%2C%22dataType%22%3A%5B%22navPrice%22%5D%2C%22frequency%22%3A%22daily%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e4cb0624-427d-487b-b93a-37ee4785120e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "mIEFWtNNLyDYtmpvcBOP0r9otTn9KrCY-hl-sGnh07WEIJwmokbSeQ==",
+        "x-hsbc-request-correlation-id": "4e260241-cf34-43ce-b04e-495190523bbc",
+        "date": "Wed, 13 Aug 2025 13:42:54 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "26",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 c0c0b3c6204d00f5a7203f9861b731ae.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "820",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"result\":[{\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63537\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"S3537\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63537\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0001122099\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UX8N\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000139338\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000139338\"}],\"data\":[{\"date\":\"2025-04-07\",\"cumulativeReturn\":null,\"navPrice\":100},{\"date\":\"2025-04-08\",\"cumulativeReturn\":null,\"navPrice\":100.16},{\"date\":\"2025-04-09\",\"cumulativeReturn\":null,\"navPrice\":99.28},{\"date\":\"2025-04-10\",\"cumulativeReturn\":null,\"navPrice\":101.45},{\"date\":\"2025-04-11\",\"cumulativeReturn\":null,\"navPrice\":101.08},{\"date\":\"2025-04-14\",\"cumulativeReturn\":null,\"navPrice\":102.14},{\"date\":\"2025-04-15\",\"cumulativeReturn\":null,\"navPrice\":102.54},{\"date\":\"2025-04-16\",\"cumulativeReturn\":null,\"navPrice\":102.62},{\"date\":\"2025-04-17\",\"cumulativeReturn\":null,\"navPrice\":102.41},{\"date\":\"2025-04-22\",\"cumulativeReturn\":null,\"navPrice\":102.1},{\"date\":\"2025-04-23\",\"cumulativeReturn\":null,\"navPrice\":102.73},{\"date\":\"2025-04-24\",\"cumulativeReturn\":null,\"navPrice\":102.73},{\"date\":\"2025-04-25\",\"cumulativeReturn\":null,\"navPrice\":103.24},{\"date\":\"2025-04-28\",\"cumulativeReturn\":null,\"navPrice\":103.55},{\"date\":\"2025-04-29\",\"cumulativeReturn\":null,\"navPrice\":103.73},{\"date\":\"2025-04-30\",\"cumulativeReturn\":null,\"navPrice\":103.91},{\"date\":\"2025-05-02\",\"cumulativeReturn\":null,\"navPrice\":104.39},{\"date\":\"2025-05-06\",\"cumulativeReturn\":null,\"navPrice\":104.25},{\"date\":\"2025-05-07\",\"cumulativeReturn\":null,\"navPrice\":104.37},{\"date\":\"2025-05-08\",\"cumulativeReturn\":null,\"navPrice\":104.71},{\"date\":\"2025-05-09\",\"cumulativeReturn\":null,\"navPrice\":104.78},{\"date\":\"2025-05-12\",\"cumulativeReturn\":null,\"navPrice\":105.21},{\"date\":\"2025-05-13\",\"cumulativeReturn\":null,\"navPrice\":105.71},{\"date\":\"2025-05-14\",\"cumulativeReturn\":null,\"navPrice\":106.01},{\"date\":\"2025-05-15\",\"cumulativeReturn\":null,\"navPrice\":106.25},{\"date\":\"2025-05-16\",\"cumulativeReturn\":null,\"navPrice\":106.67},{\"date\":\"2025-05-19\",\"cumulativeReturn\":null,\"navPrice\":106.83},{\"date\":\"2025-05-20\",\"cumulativeReturn\":null,\"navPrice\":107.09},{\"date\":\"2025-05-21\",\"cumulativeReturn\":null,\"navPrice\":106.9},{\"date\":\"2025-05-22\",\"cumulativeReturn\":null,\"navPrice\":106.37},{\"date\":\"2025-05-23\",\"cumulativeReturn\":null,\"navPrice\":106.19},{\"date\":\"2025-05-27\",\"cumulativeReturn\":null,\"navPrice\":107},{\"date\":\"2025-05-28\",\"cumulativeReturn\":null,\"navPrice\":107.16},{\"date\":\"2025-05-29\",\"cumulativeReturn\":null,\"navPrice\":106.86},{\"date\":\"2025-05-30\",\"cumulativeReturn\":null,\"navPrice\":106.88},{\"date\":\"2025-06-02\",\"cumulativeReturn\":null,\"navPrice\":106.84},{\"date\":\"2025-06-03\",\"cumulativeReturn\":null,\"navPrice\":107.08},{\"date\":\"2025-06-04\",\"cumulativeReturn\":null,\"navPrice\":107.57},{\"date\":\"2025-06-05\",\"cumulativeReturn\":null,\"navPrice\":107.56},{\"date\":\"2025-06-06\",\"cumulativeReturn\":null,\"navPrice\":107.43},{\"date\":\"2025-06-09\",\"cumulativeReturn\":null,\"navPrice\":107.68},{\"date\":\"2025-06-10\",\"cumulativeReturn\":null,\"navPrice\":107.76},{\"date\":\"2025-06-11\",\"cumulativeReturn\":null,\"navPrice\":107.93},{\"date\":\"2025-06-12\",\"cumulativeReturn\":null,\"navPrice\":108.01},{\"date\":\"2025-06-13\",\"cumulativeReturn\":null,\"navPrice\":107.62},{\"date\":\"2025-06-16\",\"cumulativeReturn\":null,\"navPrice\":107.7},{\"date\":\"2025-06-17\",\"cumulativeReturn\":null,\"navPrice\":107.7},{\"date\":\"2025-06-18\",\"cumulativeReturn\":null,\"navPrice\":107.7},{\"date\":\"2025-06-19\",\"cumulativeReturn\":null,\"navPrice\":107.31},{\"date\":\"2025-06-20\",\"cumulativeReturn\":null,\"navPrice\":107.54},{\"date\":\"2025-06-23\",\"cumulativeReturn\":null,\"navPrice\":107.62},{\"date\":\"2025-06-24\",\"cumulativeReturn\":null,\"navPrice\":108.57},{\"date\":\"2025-06-25\",\"cumulativeReturn\":null,\"navPrice\":108.88},{\"date\":\"2025-06-26\",\"cumulativeReturn\":null,\"navPrice\":109.04},{\"date\":\"2025-06-27\",\"cumulativeReturn\":null,\"navPrice\":109.51},{\"date\":\"2025-06-30\",\"cumulativeReturn\":null,\"navPrice\":109.9},{\"date\":\"2025-07-02\",\"cumulativeReturn\":null,\"navPrice\":109.19},{\"date\":\"2025-07-03\",\"cumulativeReturn\":null,\"navPrice\":109.51},{\"date\":\"2025-07-04\",\"cumulativeReturn\":null,\"navPrice\":109.43},{\"date\":\"2025-07-07\",\"cumulativeReturn\":null,\"navPrice\":109.27},{\"date\":\"2025-07-08\",\"cumulativeReturn\":null,\"navPrice\":109.04},{\"date\":\"2025-07-09\",\"cumulativeReturn\":null,\"navPrice\":109.27},{\"date\":\"2025-07-10\",\"cumulativeReturn\":null,\"navPrice\":109.51},{\"date\":\"2025-07-11\",\"cumulativeReturn\":null,\"navPrice\":109.27},{\"date\":\"2025-07-14\",\"cumulativeReturn\":null,\"navPrice\":109.12},{\"date\":\"2025-07-15\",\"cumulativeReturn\":null,\"navPrice\":109.19},{\"date\":\"2025-07-16\",\"cumulativeReturn\":null,\"navPrice\":108.88},{\"date\":\"2025-07-17\",\"cumulativeReturn\":null,\"navPrice\":109.17},{\"date\":\"2025-07-18\",\"cumulativeReturn\":null,\"navPrice\":109.48},{\"date\":\"2025-07-21\",\"cumulativeReturn\":null,\"navPrice\":109.9},{\"date\":\"2025-07-22\",\"cumulativeReturn\":null,\"navPrice\":109.9},{\"date\":\"2025-07-23\",\"cumulativeReturn\":null,\"navPrice\":110.06},{\"date\":\"2025-07-24\",\"cumulativeReturn\":null,\"navPrice\":110.37},{\"date\":\"2025-07-25\",\"cumulativeReturn\":null,\"navPrice\":110.37},{\"date\":\"2025-07-28\",\"cumulativeReturn\":null,\"navPrice\":110.45},{\"date\":\"2025-07-29\",\"cumulativeReturn\":null,\"navPrice\":110.45},{\"date\":\"2025-07-30\",\"cumulativeReturn\":null,\"navPrice\":110.29},{\"date\":\"2025-07-31\",\"cumulativeReturn\":null,\"navPrice\":109.82},{\"date\":\"2025-08-01\",\"cumulativeReturn\":null,\"navPrice\":109.27},{\"date\":\"2025-08-04\",\"cumulativeReturn\":null,\"navPrice\":109.43},{\"date\":\"2025-08-05\",\"cumulativeReturn\":null,\"navPrice\":109.82},{\"date\":\"2025-08-06\",\"cumulativeReturn\":null,\"navPrice\":109.74},{\"date\":\"2025-08-07\",\"cumulativeReturn\":null,\"navPrice\":110.13},{\"date\":\"2025-08-08\",\"cumulativeReturn\":null,\"navPrice\":110.06},{\"date\":\"2025-08-11\",\"cumulativeReturn\":null,\"navPrice\":110.21},{\"date\":\"2025-08-12\",\"cumulativeReturn\":null,\"navPrice\":110.29}],\"productName\":\"SCHRODER FLEXI TOTAL RETURN FUND (CLASS R-HKD-MD-C)\",\"indexName\":null,\"currency\":\"HKD\",\"frequency\":\"daily\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

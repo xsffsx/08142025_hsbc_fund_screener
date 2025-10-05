@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: admin
+      username:
+      password:
+      enable-replica: false
+
+# data type: 1-Year,2-Month,5-Day
+batch:
+  bond:
+    newly-intro:
+      max-num: 5
+      launchDate:
+        type: 2
+        count: -3
+    newly-prod:
+      max-num: 20
+      issueDate:
+        type: 2
+        count: -6
+    highest-yield:
+      max-num: 3
+    top-performance:
+      max-num: 3
+      closingDate:
+        type: 2
+        count: -1
+      endDate:
+        type: 5
+        count: -40

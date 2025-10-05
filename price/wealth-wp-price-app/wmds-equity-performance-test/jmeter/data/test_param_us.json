@@ -1,0 +1,11 @@
+{
+  "QUOTE_LIST_PARAM": {"market":"US","productKeys":[{"productType":"ALL","prodCdeAltClassCde":"M","prodAltNum":"PLTR"},{"productType":"ALL","prodCdeAltClassCde":"M","prodAltNum":"ASML"},{"productType":"ALL","prodCdeAltClassCde":"M","prodAltNum":"AAPL"},{"productType":"ALL","prodCdeAltClassCde":"M","prodAltNum":"GOOGL"},{"productType":"ALL","prodCdeAltClassCde":"M","prodAltNum":"TSM"},{"productType":"ALL","prodCdeAltClassCde":"M","prodAltNum":"SONY"},{"productType":"ALL","prodCdeAltClassCde":"M","prodAltNum":"MSFT"},{"productType":"ALL","prodAltNum":"GME","prodCdeAltClassCde":"M"},{"productType":"ALL","prodAltNum":"MRNA","prodCdeAltClassCde":"M"},{"productType":"ALL","prodAltNum":"JD","prodCdeAltClassCde":"M"}],"delay":false,"requestType":"10"},
+  "QUOTE_DETAIL_PARAM": {"productKeys":[{"productType":"SEC","prodCdeAltClassCde":"M","prodAltNum":"IBM"}],"market":"US","delay":true,"requestType":"0"},
+  "PREDICTIVE_SEARCH_PARAM": {"market": "US","assetClasses": ["SEC","WRTS"],"keyword": "IBM"},
+  "NEWS_HEADLINE_PARAM": {"pageId":1,"recordsPerPage":10,"category":"all","market":"US"},
+  "NEWS_CONTENT_PARAM": {"market":"US","id":"urn:newsml:reuters.com:20220906104420:nL4N30D25L","translate":true},
+  "INDEX_DETAIL_PARAM": {"market":"US","symbol":[".DJI"]},
+  "INDEX_LIST_PARAM": {"market":"US","symbol":[".DJI",".IXIC"]},
+  "TOP_MOVER_PARAM": {"boardType":"MAIN","delay":false,"exchangeCode":"NYSE","market":"US","moverType":"VOL","productType":"SEC","topNum":3},
+  "CHART_DATA_PARAM": {"market": "US","filters": ["DATE","OPEN","HIGH","LOW","CLOSE","VOLUME"],"productType": "INDEX","delay": true,"symbol": [".DJI"],"period":0 ,"intCnt": 5,"intType": "MINUTE"}
+}

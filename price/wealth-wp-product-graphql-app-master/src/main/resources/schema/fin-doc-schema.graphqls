@@ -1,0 +1,99 @@
+type FinDoc {
+    _id: String
+    ctryRecCde: String
+    grpMembrRecCde:String
+    rsrcItemIdFinDoc: Long!
+    docFinTypeCde: String
+    docFinCatCde: String
+    docFinCde: String
+    langFinDocCde: String
+    docStatCde: String
+    formtDocCde: String
+    docSzNum: Long
+    docRecvName: String
+    docDesc: String
+    reqUrgntProcInd: String
+    emailAddrRplyText: String
+    reqAproveInd: String
+    docServrStatCde: String
+    urlFileServrText: String
+    fileDocName: String
+    reqArchInd: String
+    docArchStatCde: String
+    fileArchRqstName: String
+    urlArchSysText: String
+    docArchSerNum: String
+    urlLclSysText: String
+    docAproveDtTm: DateTime
+    docRleasStartDtTm: DateTime
+    docRleasEndDtTm: DateTime
+    docArchStartDtTm: DateTime
+    docArchEndDtTm: DateTime
+    docEffDtTm: DateTime
+    docExpirDt: DateTime
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+}
+
+input FinDocAmendmentInput {
+    ctryRecCde: String
+    grpMembrRecCde:String
+    rsrcItemIdFinDoc: Long
+    docFinTypeCde: String
+    docFinCatCde: String
+    docFinCde: String
+    langFinDocCde: String
+    docStatCde: String
+    formtDocCde: String
+    docSzNum: Long
+    docRecvName: String
+    docDesc: String
+    reqUrgntProcInd: String
+    emailAddrRplyText: String
+    reqAproveInd: String
+    docServrStatCde: String
+    urlFileServrText: String
+    fileDocName: String
+    reqArchInd: String
+    docArchStatCde: String
+    fileArchRqstName: String
+    urlArchSysText: String
+    docArchSerNum: String
+    urlLclSysText: String
+    docAproveDtTm: DateTime
+    docRleasStartDtTm: DateTime
+    docRleasEndDtTm: DateTime
+    docArchStartDtTm: DateTime
+    docArchEndDtTm: DateTime
+    docEffDtTm: DateTime
+    docExpirDt: DateTime
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+}
+
+# Result of fin doc creation
+type FinDocBatchCreateResultType {
+    # fin doc that being created
+    createdFinDocs: [FinDoc!]
+    # invalid fin doc
+    invalidFinDocs: [FinDocValidationResultType!]
+}
+
+# Result of fin doc update
+type FinDocBatchUpdateResultType {
+    # fin doc count that match the filter criteria
+    matchCount: Long!
+    # all fin doc that match the filter criteria
+    matchFinDocs: [FinDoc!]
+    # fin doc that being mutated
+    updatedFinDocs: [FinDoc!]
+    # invalid fin doc
+    invalidFinDocs: [FinDocValidationResultType!]
+}
+
+type FinDocValidationResultType {
+    # Fin doc which is going to be created or updated
+    finDoc: FinDoc!
+    # Errors in validation
+    errors: [Error!]!
+}

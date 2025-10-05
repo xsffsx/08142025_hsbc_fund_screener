@@ -1,0 +1,38 @@
+management.endpoints:
+  shutdown:
+    enabled: true
+  health:
+    show-details: always
+  web:
+    exposure:
+      base-path: /monitor
+      include: "*"
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
+  datasource:
+    url: "jdbc:oracle:thin:dummy@example.com:2001:UHKWPCA1"
+    username: WPCHKGLUA9
+    password: "{cipher}08ecd25c138bd1ec7a94adf0df87a9f5c00727cd4f0ffe7872ca886e093fc764"
+  data:
+    mongodb:
+      host: "wealthaspdevdocdb01.cluster-ckpahocxumvt.ap-southeast-1.docdb.amazonaws.com"
+      port: 20017
+      database: WPC_AMH_DEV
+      username: WPCGLHKPA6_APPUSER
+      password: "{cipher}d5aeae64a10f9b3f246a03b905a11380df119d21419b896f9826e61ad79d364cd82175163f1a09084ac38166228c8298"
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+product:
+  sync:
+    interval: 60   # 60 seconds by default
+    keep-data-sync-log-days: 7  # housekeeping data_sync_log out of the setting days
+    auto-watch: true  # start watch thread automatically
+
+#wpc:
+#  sync:
+#    clean-event: true

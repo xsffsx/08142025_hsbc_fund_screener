@@ -1,0 +1,42 @@
+# DB profile
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: 
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+
+batch:
+  graphQLUrl: https://product-graphql-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql
+
+logging:
+  level:
+    com.dummy.wpb.product: DEBUG
+    com.dummy.wpb.product.service.GraphQLService: INFO
+
+server:
+  port: 9288
+
+# product tokenized gold product info
+product:
+  tokenized-gold:
+    # Replace currency code XAU with XGT in FlexRate response
+    replace-currency:
+      target: "XAU"
+      replacement: "XGT"
+    products:
+    - prodId: 32188
+      ctryRecCde: "HK"
+      grpMembrRecCde: "HBAP"
+      prodTypeCde: "DAC" # Digital Assets & Currencies
+      prodSubtpCde: "TG" # Tokenized Gold
+      currencyPairs: "HKDXAU;XAUHKD"
+
+# FlexRate API info
+flexrate:
+  url: "https://flexrateint.systems.example.com/api/mvp/v1/marketRate"
+  account: "smartlocalamhdev"
+  authorization: "Basic c21hcnRsb2NhbGFtaGRldjp3ZWFsdGhpdHdwY2hzYmMxMjM0NTY="

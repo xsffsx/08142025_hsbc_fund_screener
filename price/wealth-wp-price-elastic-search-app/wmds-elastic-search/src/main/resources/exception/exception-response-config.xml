@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE exResponseEntitys>
+<exResponseEntitys>
+	<!-- FE>MDS common error -->
+	<exResponseEntity key="XssSecurity">
+		<entity>
+			<reasonCode>MDSEQTY40000</reasonCode>
+			<status>400</status>
+			<text>Request parameters unsafed</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="InvalidRequest">
+		<entity>
+			<reasonCode>MDSEQTY40001</reasonCode>
+			<status>400</status>
+			<text>Request not in standard JSON format</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="InputParameterInvalid">
+		<entity>
+			<reasonCode>MDSEQTY40002</reasonCode>
+			<status>400</status>
+			<text>Input parameters invalid</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="SupportSite">
+		<entity>
+			<reasonCode>MDSEQTY40003</reasonCode>
+			<status>400</status>
+			<text>Unsupported sites</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="NotEmpty">
+		<entity>
+			<reasonCode>MDSEQTY40004</reasonCode>
+			<status>400</status>
+			<text>Request parameter is mandatory and can't be empty</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="NotNull">
+		<entity>
+			<reasonCode>MDSEQTY40004</reasonCode>
+			<status>400</status>
+			<text>Request parameter is mandatory and can't be empty</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="Size">
+		<entity>
+			<reasonCode>MDSEQTY40005</reasonCode>
+			<status>400</status>
+			<text>Request over size constraint</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="RegEx">
+		<entity>
+			<reasonCode>MDSEQTY40006</reasonCode>
+			<status>400</status>
+			<text>Request parameters not match the rules</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="NoAvailableServiceMatched">
+		<entity>
+			<reasonCode>MDSEQTY99998</reasonCode>
+			<status>400</status>
+			<text>No available service matched this request</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="Undefined">
+		<entity>
+			<reasonCode>MDSEQTY99999</reasonCode>
+			<status>500</status>
+			<text>Internal undefined error</text>
+		</entity>
+	</exResponseEntity>
+	<!-- FE>MDS common error -->
+
+	<!-- service:predsrch error -->
+	<exResponseEntity key="IndexDataNotExists">
+		<entity>
+			<reasonCode>MDSEPS300001</reasonCode>
+			<status>500</status>
+			<text>Product data not exist for requested sitekey</text>
+		</entity>
+	</exResponseEntity>
+	<!-- service:predsrch error -->
+</exResponseEntitys>

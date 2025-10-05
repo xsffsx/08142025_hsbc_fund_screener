@@ -1,0 +1,177 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "MKD",
+  "path": "/appvol/product-spring-batch/data/outgoing/SGHBSP/MKD/",
+  "tasks": [
+    {
+      "files": [
+        {
+          "name": "UT XML",
+          "templateName": "/xml/33/UT.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_MKD_UT_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "UT",
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S",
+            "C",
+            "T"
+          ]
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "BOND XML",
+          "templateName": "/xml/33/BOND.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_MKD_BOND_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "BOND",
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S",
+            "C",
+            "T"
+          ]
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "SN XML",
+          "templateName": "/xml/33/SN.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_MKD_SN_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SN",
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S",
+            "C",
+            "T"
+          ]
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "SID XML",
+          "templateName": "/xml/33/SID.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_MKD_SID_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SID",
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S",
+            "C",
+            "T"
+          ]
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "DPS XML",
+          "templateName": "/xml/33/DPS.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_MKD_DPS_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "DPS",
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S",
+            "C",
+            "T"
+          ]
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "SEC XML",
+          "templateName": "/xml/33/SEC.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_MKD_SEC_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SEC",
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S",
+            "C",
+            "T"
+          ]
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "ALT XML",
+          "templateName": "/xml/33/ALT.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_MKD_ALT_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "ALT",
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S",
+            "C",
+            "T"
+          ]
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "REFDATA XML",
+          "templateName": "/xml/REFDATA.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_MKD_ReferenceData_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "reference_data",
+      "filter": {
+        "cdvTypeCde": {
+          "$in": [
+            "ASETVOLCLSCDE",
+            "IVSTMKT"
+          ]
+        }
+      }
+    }
+  ],
+  "ack": {
+    "generate": true
+  },
+  "timeZone": "Asia/Singapore"
+}

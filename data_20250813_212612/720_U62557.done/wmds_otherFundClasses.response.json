@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62557",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:43:42.216850",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62557%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "a46596f7-e126-4ebf-a3f0-e0b6caf218b4:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "t7Tfm5lgjCcm2b6uOx9oIoT7ARmM9cEZMi51YbEAoiZv_PMevQPM0Q==",
+        "x-hsbc-request-correlation-id": "ec9cbae4-8974-4b79-a6bc-ce22af3655c3",
+        "date": "Wed, 13 Aug 2025 13:43:42 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "39",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 ac1b0b590fa34d8efd3e06ea595821ac.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "557",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC ASIAN BOND FUND (CLASS AM2-USD-MDIST UNIT)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST UNIT\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U39895\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HABF\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U39895\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349529\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BFG8\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047424\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047424\"}]},{\"productName\":\"HSBC IFT - HSBC Asian Bond Fund (AM3-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62984\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HAARM\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62984\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349776\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BIN5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050447763\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50447763\"}]},{\"productName\":\"HSBC ASIAN BOND FUND (CLASS AM2-HKD-MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM-HKD-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62459\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HAAMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62459\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349511\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BFG7\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047015\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047015\"}]},{\"productName\":\"HSBC IFT - HSBC ASIAN BOND FUND (AM3H-GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3H-GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63327\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HAAGB\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63327\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349792\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RGIY\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050689174\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50689174\"}]},{\"productName\":\"HSBC ASIAN BOND FUND (CLASS AM3-AUDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM-AUD-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62558\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HAAAU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62558\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349537\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BFG9\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047720\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047720\"}]},{\"productName\":\"HSBC IFT - HSBC ASIAN BOND FUND (AM3H-CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3H-CADH-MD-C\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63326\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HAACA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63326\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349784\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001RGIX\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050689173\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50689173\"}]},{\"productName\":\"HSBC ASIAN BOND FUND (CLASS AM2-USD-MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43118\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"H3118\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43118\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000349529\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001BFG8\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046777\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046777\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+spring:
+  application:
+    name: mds-elastic-search
+  cloud:
+    config:
+      fail-fast: true
+      enabled: false
+      discovery:
+        enabled: false
+eureka:
+  client:
+    enabled: false
+---
+spring.profiles: pcf
+spring:
+  application:
+    name: mds-elastic-search
+  cloud:
+    config:
+      enabled: false
+      fail-fast: true
+      discovery:
+        enabled: false
+eureka:
+  client:
+    enabled: false     
+---
+spring.profiles: ikp
+spring:
+  application:
+    name: mds-elastic-search
+  cloud:
+    config:
+      enabled: false
+      fail-fast: true
+      discovery: 
+        enabled: true
+        service-id: configServer
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: ${DISCOVERY_SERVER_ADDRESS}
+  instance:
+    hostname: ${HOSTNAME}
+    instanceId: ${spring.application.name}:${random.uuid}
+    prefer-ip-address: true
+info: 
+  app.name: ${spring.application.name}
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+---
+spring.profiles: aws
+spring:
+  application:
+    name: mds-elastic-search
+  cloud:
+    config:
+      enabled: false
+      fail-fast: true
+      discovery: 
+        enabled: true
+        service-id: configServer
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: ${DISCOVERY_SERVER_ADDRESS}
+  instance:
+    hostname: ${HOSTNAME}
+    instanceId: ${spring.application.name}:${random.uuid}
+    prefer-ip-address: true
+    status-page-url-path: /actuator/info
+    health-check-url-path: /actuator/health
+info: 
+  app.name: ${spring.application.name}
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+---
+spring.profiles: aws-cs
+spring:
+  application:
+    name: mds-elastic-search
+  cloud:
+    config:
+      enabled: true
+      fail-fast: true
+      discovery: 
+        enabled: true
+        service-id: configServer
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: ${DISCOVERY_SERVER_ADDRESS}
+  instance:
+    hostname: ${HOSTNAME}
+    instanceId: ${spring.application.name}:${random.uuid}
+    prefer-ip-address: true
+    status-page-url-path: /actuator/info
+    health-check-url-path: /actuator/health
+info: 
+  app.name: ${spring.application.name}
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+ 

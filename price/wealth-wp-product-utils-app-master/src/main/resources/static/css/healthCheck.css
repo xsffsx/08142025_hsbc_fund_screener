@@ -1,0 +1,331 @@
+body {
+  background-color: #f0eeee;
+  font-size: 16px;
+
+}
+
+.container_graph {
+  position: relative;
+  margin-top: 10px;
+  padding: 0 20px;
+  min-width: 980px;
+}
+
+
+.div_graph {
+  outline: none;
+  z-index: 3;
+  border-radius: 10px;
+  width: 70%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0 2px 1px,
+    rgba(0, 0, 0, 0.09) 0 4px 2px,
+    rgba(0, 0, 0, 0.09) 0 8px 4px,
+    rgba(0, 0, 0, 0.09) 0 16px 8px;
+}
+
+
+.div_graph svg {
+  z-index: 99;
+}
+
+/* .div_graph::before {
+  position: absolute;
+  content: "";
+  width: 400%;
+  height: 200%;
+  background: #9ab592;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform-origin: left top;
+  animation: rotation 7s linear infinite;
+} */
+
+.div_graph::after {
+  position: absolute;
+  content: "";
+  inset: 4px;
+  background: #fff;
+  z-index: 2;
+  border-radius: inherit;
+}
+
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.div_list {
+  width: 28%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  height: 370px;
+}
+
+.div_list .div_list_items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.div_list .div_list_items .div_list_item {
+  position: relative;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.div_list .div_list_items .div_list_item::before {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  height: 5px;
+  z-index: 2;
+}
+
+.div_list .div_list_items .div_list_item::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  bottom: -10px;
+  left: 0;
+  height: 5px;
+  background-color: #bebebe;
+  z-index: 1;
+}
+
+.graph_btn {
+  cursor: pointer;
+  position: fixed;
+  top: 5%;
+  left: 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+  height: 30px;
+  width: 130px;
+  color: #fff;
+  z-index: 99;
+  border: none;
+  background: linear-gradient(-135deg,
+      transparent 22px,
+      #db2a2a 22px 100%) top right,
+    linear-gradient(-45deg,
+      transparent 22px,
+      #db2a2a 22px 100%) bottom right;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.graph_box>div {
+  position: relative;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column
+}
+
+#graph_box .graph_contain_left {
+  background-color: #fff;
+  width: 43%;
+  float: left;
+}
+
+#graph_box .graph_contain_rigth {
+  width: 55%;
+  float: right;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#graph_box .graph_contain_rigth .graph_box_info .graph_box_line {
+  /* display: flex; */
+  width: 100%;
+}
+
+.graph_contain_title {
+  font-weight: bold;
+  color: #fff;
+  background-color: #db2a2a;
+  /* background: linear-gradient(90deg,
+      #fba0a2 10%,
+      #db2a2a 100%); */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0 2px 1px,
+    rgba(0, 0, 0, 0.09) 0 4px 2px,
+    rgba(0, 0, 0, 0.09) 0 8px 4px,
+    rgba(0, 0, 0, 0.09) 0 16px 8px;
+}
+
+.graph_box_title {
+  position: relative;
+  font-size: 15px;
+  height: 30px;
+  line-height: 30px;
+  width: 180px;
+  color: #000;
+  z-index: 2;
+  border: none;
+  background: linear-gradient(135deg,
+      transparent 23px,
+      #db2a2a 23px,
+      #f4c5c6 100%) top right,
+    linear-gradient(45deg,
+      transparent 23px,
+      #db2a2a 23px,
+      #f4c5c6 100%) bottom right;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  margin: 10px;
+  color: #fff;
+  padding-left: 30px;
+  float: right;
+  text-align: center;
+}
+
+.graph_box_info {
+  margin: 10px;
+  flex: 1;
+}
+
+.graph_box_info_line {
+  display: flex;
+}
+
+.graph_box_params {
+  padding: 0 10px;
+}
+
+.graph_box_params .graph_box_param {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.graph_box_params .graph_box_param span {
+  margin-right: 10px;
+}
+
+.graph_box_params .graph_box_param input {
+  font-size: 14px;
+  padding: 8px;
+  margin: 5px 0;
+  border: 2px solid rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+}
+
+.graph_box_params .graph_box_param input:hover {
+  border-color: #9ab592;
+}
+
+.graph_box_request {
+  flex: 1;
+  word-wrap: break-word;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.graph_box_pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #f8f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+  color: #9ab592;
+  font-weight: bold
+}
+
+.graph_box_info .graph_box_response {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+
+}
+
+.graph_box_sub {
+  position: relative;
+  z-index: 1;
+}
+
+.graph_box_sub::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: #ed101b;
+  left: -10px;
+  top: 0;
+  z-index: 3;
+}
+
+.container_loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lading_circle {
+  width: 12px;
+  height: 12px;
+  background-color: #db2a2a;
+  border-radius: 50%;
+  display: inline-block;
+  animation-fill-mode: both;
+  margin: 0 2px;
+  animation: action 1.5s infinite ease-in-out
+}
+
+.lading_circle1 {
+  animation-delay: -0.3s;
+}
+
+.lading_circle2 {
+  animation-delay: -0.1s;
+}
+
+@keyframes action {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(0)
+  }
+
+  80% {
+    transform: scale(0)
+  }
+
+  40% {
+    transform: scale(1.0)
+  }
+}

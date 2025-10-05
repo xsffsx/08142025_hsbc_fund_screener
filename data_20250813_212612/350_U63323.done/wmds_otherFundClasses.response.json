@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63323",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:06:03.578177",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63323%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b412ec36-98cc-4ca4-b4bf-25ee57b51856:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "2hvPneSj9Ba6XbSCYMZcRAdkvmwWVH5-eQyFf7TqqqLZymYpgwO94Q==",
+        "x-hsbc-request-correlation-id": "c3c564c2-cdc9-49ac-b938-75c3f7b4a953",
+        "date": "Wed, 13 Aug 2025 14:06:02 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "33",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 43b4a9a8792e30ac49642ef84dd35fc8.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "598",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JPM ASIA PACIFIC INCOME - A (MDIST CASH) - HKD\",\"productShortName\":null,\"fundShreClsName\":\"HKD MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62536\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2536\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62536\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0784638990\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WAWN\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047676\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047676\"}]},{\"productName\":\"JPM ASIA PACIFIC INCOME - A (MDIST CASH) - USD\",\"productShortName\":null,\"fundShreClsName\":\"USD MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62535\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2535\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62535\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0784639295\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WAWO\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047675\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047675\"}]},{\"productName\":\"JPM Asia Pacific Income A (IRC-MD-C) - CADH\",\"productShortName\":null,\"fundShreClsName\":\"IRC-MD-C – CADH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62876\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2876\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62876\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0969353316\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZOZ3\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050081631\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50081631\"}]},{\"productName\":\"JPM Asia Pacific Income A (IRC-MD-C) - AUDH\",\"productShortName\":null,\"fundShreClsName\":\"IRC-MD-C – AUDH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62875\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2875\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62875\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0969268043\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000ZOZ2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050081630\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50081630\"}]},{\"productName\":\"JPM ASIA PACIFIC INCOME - A (DIST UNIT)- USD\",\"productShortName\":null,\"fundShreClsName\":\"ADIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U85126\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JFPIT\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U85126\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0117844026\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000LN2\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000048168\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000048168\"}]},{\"productName\":\"JPM Asia Pacific Income A (IRC-MD-C) - NZDH\",\"productShortName\":null,\"fundShreClsName\":\"IRC-MD-C – NZDH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62879\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2879\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62879\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0987225728\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00010F6J\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050081634\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50081634\"}]},{\"productName\":\"JPM Asia Pacific Income A (IRC-MD-C) - GBPH\",\"productShortName\":null,\"fundShreClsName\":\"IRC-MD-C – GBPH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62878\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2878\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62878\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0987225645\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00010F6I\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050081633\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50081633\"}]},{\"productName\":\"JPM Asia Pacific Income A (IRC-MD-C) - EURH\",\"productShortName\":null,\"fundShreClsName\":\"IRC-MD-C – EURH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62877\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2877\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62877\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0987225561\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00010F6H\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050081632\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50081632\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

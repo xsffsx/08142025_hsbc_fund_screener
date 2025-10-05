@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build
+    xsi:schemaLocation="http://www.dummy.com bf_schema.xsd"
+    xmlns="http://www.dummy.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <project>
+        <name>mavensimplex</name>
+        <owner>WPC Development Team </owner>
+        <contact>BillTu</contact>
+        <environment>
+            <library />
+        </environment>
+       <steps>
+            <linux-unix>
+            	<!-- Compile, one by one, stop on failure -->
+            	 <!-- dir is pom.xml location -->
+                                
+                 <!-- HASE UAT -->
+                 <step
+                    description="Build HASEUAT Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                    
+                    timeout="900"
+                    id="1"
+                    threadable="N"
+                    onfail="H"
+                    command="${MVNRUN} -X -e antrun:run -PHASEUAT -Dmaven.test.skip=true" /> 					
+				 <step
+                    description="ZIP HASEUAT Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} package -PHASEUAT -Dmaven.test.skip=true" />   
+                 <step
+                    description="Deploy HASEUAT Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                         
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} deploy -Dmaven.test.skip=true -PHASEUAT --no-snapshot-updates" />
+                    
+                 <!-- HASE PROD -->
+         		  <step
+                    description="Build HASEPROD Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                    
+                    timeout="900"
+                    id="1"
+                    threadable="N"
+                    onfail="H"
+                    command="${MVNRUN} -X -e antrun:run -PHASEPROD -Dmaven.test.skip=true" /> 					
+				 <step
+                    description="ZIP HASEPROD Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} package -PHASEPROD -Dmaven.test.skip=true" />   
+                 <step
+                    description="Deploy HASEPROD Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                         
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} deploy -Dmaven.test.skip=true -PHASEPROD --no-snapshot-updates" /> 
+            </linux-unix>            
+        </steps>        
+    </project>
+</build>

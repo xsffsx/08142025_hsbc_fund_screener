@@ -1,0 +1,36 @@
+FROM python:3.9-slim
+
+# 安装系统依赖
+RUN apt-get update && apt-get install -y \
+    gcc \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# 复制依赖文件
+COPY scripts/requirements_api.txt .
+
+# 安装 Python 依赖
+RUN pip install --no-cache-dir -r requirements_api.txt
+
+# 复制应用代码
+COPY scripts/api_server.py .
+COPY scripts/hsbc_nl2sql_mvp.py .
+COPY scripts/static ./static
+
+# 创建日志目录
+RUN mkdir -p /app/logs
+
+# 暴露端口
+EXPOSE 8080
+
+# 环境变量
+ENV HSBC_DB_URI=postgresql://hsbc_user:hsbc_pass@postgresql:5432/hsbc_fund
+ENV LMSTUDIO_BASE_URL=http://host.docker.internal:1234/v1
+ENV LMSTUDIO_MODEL=qwen/qwen3-30b-a3b-2507
+ENV OPENAI_API_KEY=lm-studio
+ENV AGENT_TIMEOUT=60
+
+# 启动命令
+CMD ["python", "-m", "uvicorn", "api_server:app", "--host", "0.0.0.0", "--port", "8080"]

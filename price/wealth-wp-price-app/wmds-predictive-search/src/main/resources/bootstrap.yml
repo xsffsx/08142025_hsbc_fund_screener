@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: mds-hase-pred-search
+  cloud:
+    config:
+      enabled: false
+      discovery:
+        enabled: false
+eureka:
+  client:
+    enabled: false
+---
+# For 'haseuat' profile, the application runs in standalone mode (at local) connects to neither discovery server nor config server
+# 'server' profile connects to the discovery server and config server deployed in the same environment with this application
+
+spring:
+  cloud:
+    config:
+      name: ${spring.application.name}
+      fail-fast: true
+      enabled: true
+      discovery:
+        enabled: true
+        service-id: configServer
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: ${DISCOVERY_SERVER_ADDRESS}
+  instance:
+    hostname: ${HOSTNAME}
+    prefer-ip-address: true
+    instanceId:  ${spring.application.name}:${eureka.instance.hostname}:${random.uuid}
+cloud:
+  aws:
+    stack:
+      auto: false
+encrypt:
+  key: ${ENCRYPT_KEY}

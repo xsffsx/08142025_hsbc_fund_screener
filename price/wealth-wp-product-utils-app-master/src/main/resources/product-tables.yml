@@ -1,0 +1,422 @@
+# importMasterTable();
+- table: TB_PROD
+  importMethod: importMasterTable
+  prodIdField: PROD_ID
+  toCollection: product
+  keyFields:
+    - PROD_ID
+
+# importPriceHistoryTable();  specially handled
+#- table: PROD_PRC_HIST
+#  importMethod: importPriceHistoryTable
+#  prodIdField: PROD_ID
+#  toCollection: product-price-history
+
+# importAsObject("PROD_TRADE_ELIG", "PROD_ID", CodeUtils.toCamelCase("TRADE_ELIG"));
+- table: PROD_TRADE_ELIG
+  importMethod: importAsObject
+  prodIdField: PROD_ID
+  toAttribute: TRADE_ELIG
+  toCollection: product
+  businessName: Trade Eligibility
+  businessDefinition: Product trade eligibility
+
+# importAsObject("TB_PROD_NARR", "PROD_ID", CodeUtils.toCamelCase("NARR"));
+- table: TB_PROD_NARR
+  importMethod: importAsObject
+  prodIdField: PROD_ID
+  toAttribute: NARR
+  toCollection: product
+  businessName: Narrative
+  businessDefinition: Product narrative
+
+# importAsObject("TB_CCY_OPT_LINK_DEPST", "PROD_ID_CCY_OPT_LINK_DEPST", CodeUtils.toCamelCase("CCY_OPT_LINK_DEPST"));
+- table: TB_CCY_OPT_LINK_DEPST
+  importMethod: importAsObject
+  prodIdField: PROD_ID_CCY_OPT_LINK_DEPST
+  toAttribute: CCY_OPT_LINK_DEPST
+  toCollection: product
+  businessName: Currency Option Linked Deposit
+  businessDefinition: Currency Option Linked Deposit
+
+# importAsObjectList("TB_MPF_INSTM", "PROD_ID", CodeUtils.toCamelCase("MPF_INSTM"));
+- table: TB_MPF_INSTM
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: MPF_INSTM
+  toCollection: product
+  businessName: Mandatory Provident Fund
+  businessDefinition: Mandatory Provident Fund Instrument
+  keyFields:
+    - PROD_MPF_CDE
+    - FUND_MPF_CDE
+
+# importAsObject("TB_DEBT_INSTM", "PROD_ID_DEBT_INSTM", CodeUtils.toCamelCase("DEBT_INSTM"));
+- table: TB_DEBT_INSTM
+  importMethod: importAsObject
+  prodIdField: PROD_ID_DEBT_INSTM
+  toCollection: product
+  toAttribute: DEBT_INSTM
+  businessName: Debt Instrument
+  businessDefinition: Debt Instrument
+
+# importAsObjectList("DEBT_INSTM_YIELD_HIST", "PROD_ID_DEBT_INSTM", CodeUtils.toCamelCase("DEBT_INSTM.YIELD_HIST"));
+- table: DEBT_INSTM_YIELD_HIST
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID_DEBT_INSTM
+  toAttribute: DEBT_INSTM.YIELD_HIST
+  toCollection: product
+  businessName: Yield History
+  businessDefinition: Debt Instrument Yield History
+  keyFields:
+    - YIELD_TYPE_CDE
+    - YIELD_EFF_DT
+
+# importAsObjectList("TB_DEBT_INSTM_CRED_RTNG", "PROD_ID_DEBT_INSTM", CodeUtils.toCamelCase("DEBT_INSTM.CRED_RTNG"));
+- table: TB_DEBT_INSTM_CRED_RTNG
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID_DEBT_INSTM
+  toAttribute: DEBT_INSTM.CRED_RTNG
+  toCollection: product
+  businessName: Credit Rating
+  businessDefinition: Debt Instrument Credit Rating
+  keyFields:
+    - CREDIT_RTNG_AGCY_CDE
+
+# importAsObjectList("PROD_RESTR_CUST_GROUP", "PROD_ID", CodeUtils.toCamelCase("RESTR_CUST_GROUP"));
+- table: PROD_RESTR_CUST_GROUP
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: RESTR_CUST_GROUP
+  toCollection: product
+  businessName: Restict customer group
+  businessDefinition: Restict customer group
+  keyFields:
+    - CUST_PROD_CAT_CDE
+
+# importAsObject("TB_DEBT_INSTM_TRNSL", "PROD_ID_DEBT_INSTM", CodeUtils.toCamelCase("DEBT_INSTM.TRNSL"));
+- table: TB_DEBT_INSTM_TRNSL
+  importMethod: importAsObject
+  prodIdField: PROD_ID_DEBT_INSTM
+  toAttribute: DEBT_INSTM.TRNSL
+  toCollection: product
+  businessName: Translation
+  businessDefinition: Debt Instrument Translation
+
+# importAsObject("TB_EQTY_LINK_INVST", "PROD_ID_EQTY_LINK_INVST", CodeUtils.toCamelCase("EQTY_LINK_INVST"));
+- table: TB_EQTY_LINK_INVST
+  importMethod: importAsObject
+  prodIdField: PROD_ID_EQTY_LINK_INVST
+  toAttribute: EQTY_LINK_INVST
+  toCollection: product
+  businessName: Equity Linked Investment
+  businessDefinition: Equity Linked Investment
+
+# importAsObjectList("TB_EQTY_LINK_INVST_UNDL_STOCK", "PROD_ID_EQTY_LINK_INVST", CodeUtils.toCamelCase("EQTY_LINK_INVST.UNDL_STOCK"));
+- table: TB_EQTY_LINK_INVST_UNDL_STOCK
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID_EQTY_LINK_INVST
+  toAttribute: EQTY_LINK_INVST.UNDL_STOCK
+  toCollection: product
+  businessName: Equity Linked Investment Underlying Stock
+  businessDefinition: Equity Linked Investment Underlying Stock
+  keyFields:
+    - INSTM_UNDL_CDE
+
+# importAsObject("TB_STOCK_INSTM", "PROD_ID_STOCK_INSTM", CodeUtils.toCamelCase("STOCK_INSTM"));
+- table: TB_STOCK_INSTM
+  importMethod: importAsObject
+  prodIdField: PROD_ID_STOCK_INSTM
+  toAttribute: STOCK_INSTM
+  toCollection: product
+  businessName: Stock Instrument
+  businessDefinition: Stock Instrument
+
+# importAsObject("TB_STRUC_INVST_DEPST", "PROD_ID_STRUC_INVST_DEPST", CodeUtils.toCamelCase("STRUC_INVST_DEPST"));
+- table: TB_STRUC_INVST_DEPST
+  importMethod: importAsObject
+  prodIdField: PROD_ID_STRUC_INVST_DEPST
+  toAttribute: STRUC_INVST_DEPST
+  toCollection: product
+  businessName: Structured Investment Deposit
+  businessDefinition: Structured Investment Deposit
+
+# importAsObjectList("TB_STRUC_INVST_DEPST_INTRM_RTN", "PROD_ID_STRUC_INVST_DEPST", CodeUtils.toCamelCase("STRUC_INVST_DEPST.INTRM_RTN"));
+- table: TB_STRUC_INVST_DEPST_INTRM_RTN
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID_STRUC_INVST_DEPST
+  toAttribute: STRUC_INVST_DEPST.INTRM_RTN
+  toCollection: product
+  businessName: Return Interim
+  businessDefinition: Structured Investment Deposit Return Interim
+  keyFields:
+    - RTRN_INTRM_PAID_DT
+
+# importAsObject("TB_UT_TRST_INSTM", "PROD_ID_UT_TRST_INSTM", CodeUtils.toCamelCase("UT_TRST_INSTM"));
+- table: TB_UT_TRST_INSTM
+  importMethod: importAsObject
+  prodIdField: PROD_ID_UT_TRST_INSTM
+  toAttribute: UT_TRST_INSTM
+  toCollection: product
+  businessName: Unit Trust instrument
+  businessDefinition: Unit Trust instrument
+
+# importAsStringList("TB_UT_TRST_INSTM_SW", "PROD_ID_UT_TRST_INSTM", "FUND_UNSW_CDE", CodeUtils.toCamelCase("UT_TRST_INSTM.SW"));
+- table: TB_UT_TRST_INSTM_SW
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID_UT_TRST_INSTM
+  toAttribute: UT_TRST_INSTM.SW
+  toCollection: product
+  businessName: Fund Unswitchable Code
+  businessDefinition: Denotes the code that identify a fund which cannot be switched to.
+  keyFields:
+    - FUND_UNSW_CDE
+
+# importAsObject("TB_WARR_INSTM", "PROD_ID_WARR_INSTM", CodeUtils.toCamelCase("WARR_INSTM"));
+- table: TB_WARR_INSTM
+  importMethod: importAsObject
+  prodIdField: PROD_ID_WARR_INSTM
+  toAttribute: WARR_INSTM
+  toCollection: product
+  businessName: Warrant Instrument
+  businessDefinition: Warrant Instrument
+
+# importAsObjectList("TB_PROD_ALT_ID", "PROD_ID", CodeUtils.toCamelCase("ALT_ID"));
+- table: TB_PROD_ALT_ID
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: ALT_ID
+  toCollection: product
+  businessName: Product Alternative Identification
+  businessDefinition: Product Alternative Identification
+  keyFields:
+    - PROD_CDE_ALT_CLASS_CDE
+
+# importAsObjectList("PROD_FIN_DOC", "PROD_ID", CodeUtils.toCamelCase("FIN_DOC"));
+- table: PROD_FIN_DOC
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: FIN_DOC
+  toCollection: product
+  businessName: Financial Doc
+  businessDefinition: Financial Document
+  keyFields:
+    - DOC_FIN_TYPE_CDE
+    - LANG_FIN_DOC_CDE
+    - FIN_DOC_CUST_CLASS_CDE
+
+# importAsObjectList("TB_PROD_LIST_PROD", "PROD_ID", CodeUtils.toCamelCase("LIST_PROD"));
+- table: TB_PROD_LIST_PROD
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: LIST_PROD
+  toCollection: product
+  businessName: Product List Product
+  businessDefinition: Product List Product
+  keyFields:
+    - LIST_PROD_CDE
+    - LIST_PROD_TYPE
+
+# importAsStringList("PROD_OFER_CHANL", "PROD_ID", "CHANL_COMN_CDE", CodeUtils.toCamelCase("OFER_CHANL"));
+- table: PROD_OFER_CHANL
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: OFER_CHANL
+  toCollection: product
+  businessName: Product Offer Channel
+  businessDefinition: Channel Communication Code. Describes the different delivery and communications mechanisms through which products and services are made available to a customer and by which the Financial Institution and customers communicate with each other.
+  keyFields:
+    - CHANL_COMN_CDE
+
+# importAsObjectList("PROD_PERFM", "PROD_ID", CodeUtils.toCamelCase("PERFM"));
+- table: PROD_PERFM
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: PERFM
+  toCollection: product
+  businessName: Product Performance
+  businessDefinition: Product Performance
+  keyFields:
+    - PERFM_TYPE_CDE
+
+# importAsObjectList("PROD_PROD_RELN", "PROD_ID", CodeUtils.toCamelCase("PROD_RELN"));
+- table: PROD_PROD_RELN
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: PROD_RELN
+  toCollection: product
+  businessName: Product Product Relationship
+  businessDefinition: Product Product Relationship
+  keyFields:
+    - PROD_ID_REL
+    - PROD_PROD_RELN_CDE
+
+# importAsObjectList("PROD_RESTR_CUST_CTRY", "PROD_ID", CodeUtils.toCamelCase("RESTR_CUST_CTRY"));
+- table: PROD_RESTR_CUST_CTRY
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: RESTR_CUST_CTRY
+  toCollection: product
+  businessName: Product Restricted Customer Country
+  businessDefinition: Product Restricted Customer Country
+  keyFields:
+    - CTRY_ISO_CDE
+    - RESTR_CTRY_TYPE_CDE
+
+# importAsObjectList("PROD_STAF_LIC_CHECK", "PROD_ID", CodeUtils.toCamelCase("STAF_LIC_CHECK"));
+- table: PROD_STAF_LIC_CHECK
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: STAF_LIC_CHECK
+  toCollection: product
+  businessName: Staff Eligibility
+  businessDefinition: Staff Eligibility
+  keyFields:
+    - EMPLOY_POSN_CDE
+
+# importAsStringList("TB_PROD_TRADE_CCY", "PROD_ID", "CCY_PROD_TRADE_CDE", CodeUtils.toCamelCase("TRADE_CCY"));
+- table: TB_PROD_TRADE_CCY
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: TRADE_CCY
+  toCollection: product
+  businessName: Product Tradable Currency
+  businessDefinition: Currency Product Tradable Code. The currency that the product is allowed to be traded with, in ISO format.
+  keyFields:
+    - CCY_PROD_TRADE_CDE
+
+# importAsObjectList("TB_PROD_UNDL_ASET", "PROD_ID", CodeUtils.toCamelCase("UNDL_ASET"));
+- table: TB_PROD_UNDL_ASET
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: UNDL_ASET
+  toCollection: product
+  businessName: Product Underlying Asset
+  businessDefinition: Product Underlying Asset
+  keyFields:
+    - SEQ_NUM
+
+# importAsStringList("PROD_FORM_REQMT", "PROD_ID", "FORM_REQ_CDE" ,CodeUtils.toCamelCase("FORM_REQMT"));
+- table: PROD_FORM_REQMT
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: FORM_REQMT
+  toCollection: product
+  businessName: Product Required Form
+  businessDefinition: Form Required Code. Denotes which form is required to be completed by the customer. E.g. W8 / W9 forms - W-8BEN, W-8ECI, W-8EXP, W-8IMY, W-9
+  keyFields:
+    - FORM_REQ_CDE
+
+# importAsStringList("PROD_OVRID_FIELD", "PROD_ID", "FIELD_CDE" ,CodeUtils.toCamelCase("OVRID_FIELD"));
+- table: PROD_OVRID_FIELD
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: OVRID_FIELD
+  toCollection: product
+  businessName: Override Field
+  businessDefinition: WPC internal usage
+  keyFields:
+    - FIELD_CDE
+
+# importAsObjectList("PROD_PRC_CMPAR", "PROD_ID", CodeUtils.toCamelCase("PRC_CMPAR"));
+- table: PROD_PRC_CMPAR
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: PRC_CMPAR
+  toCollection: product
+  businessName: Product Price Compare?
+  businessDefinition: Product Price Compare?
+  keyFields:
+    - PROD_PRC_TYPE_CDE
+    - RPT_PROD_PRC_TYPE_CDE
+
+# importAsObjectList("TB_ASET_GEO_LOC_ALLOC", "PROD_ID", CodeUtils.toCamelCase("ASET_GEO_LOC_ALLOC"));
+- table: TB_ASET_GEO_LOC_ALLOC
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: ASET_GEO_LOC_ALLOC
+  toCollection: product
+  businessName: Asset Geographic Location Allocation
+  businessDefinition: Asset Geographic Location Allocation
+  keyFields:
+    - GEO_LOC_CDE
+
+# importAsObjectList("TB_ASET_SIC_ALLOC", "PROD_ID", CodeUtils.toCamelCase("ASET_SIC_ALLOC"));
+- table: TB_ASET_SIC_ALLOC
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: ASET_SIC_ALLOC
+  toCollection: product
+  businessName: Asset Standard Industry Classification Allocation
+  businessDefinition: Asset Standard Industry Classification Allocation
+  keyFields:
+    - SIC_CDE
+
+# importAsObjectList("TB_PROD_ASET_VOLTL_CLASS", "PROD_ID", CodeUtils.toCamelCase("ASET_VOLTL_CLASS"));
+- table: TB_PROD_ASET_VOLTL_CLASS
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: ASET_VOLTL_CLASS
+  toCollection: product
+  businessName: Product Asset Volatility Class
+  businessDefinition: Product Asset Volatility Class
+  keyFields:
+    - ASET_VOLTL_CLASS_CDE
+
+# importAsObjectList("TB_PROD_FIELD_GROUP_CTOFF", "PROD_ID", CodeUtils.toCamelCase("FIELD_GROUP_CTOFF"));
+- table: TB_PROD_FIELD_GROUP_CTOFF
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: FIELD_GROUP_CTOFF
+  toCollection: product
+  businessName: Product Field Group Cut Off?
+  businessDefinition: Product Field Group Cut Off?
+  keyFields:
+    - FIELD_GROUP_CDE
+
+# importAsObject("TB_PROD_TRNSL", "PROD_ID", CodeUtils.toCamelCase("TRNSL"));
+- table: TB_PROD_TRNSL
+  importMethod: importAsObject
+  prodIdField: PROD_ID
+  toAttribute: TRNSL
+  toCollection: product
+  businessName: Product Translation
+  businessDefinition: Product Translation
+
+# importExtensionFields("TB_PROD_USER_DEFIN_EXT_FIELD", "PROD_ID", CodeUtils.toCamelCase("EXT"));
+- table: TB_PROD_USER_DEFIN_EXT_FIELD
+  importMethod: importExtensionFields
+  prodIdField: PROD_ID
+  toAttribute: EXT
+  toCollection: product
+
+# importExtensionFields("TB_PROD_USER_DEFIN_EG_EXT_FIEL", "PROD_ID", CodeUtils.toCamelCase("EXT_EG"));
+- table: TB_PROD_USER_DEFIN_EG_EXT_FIEL
+  importMethod: importExtensionFields
+  prodIdField: PROD_ID
+  toAttribute: EXT_EG
+  toCollection: product
+
+# importExtensionFields("TB_PROD_USER_DEFIN_OP_EXT_FIEL", "PROD_ID", CodeUtils.toCamelCase("EXT_OP"));
+- table: TB_PROD_USER_DEFIN_OP_EXT_FIEL
+  importMethod: importExtensionFields
+  prodIdField: PROD_ID
+  toAttribute: EXT_OP
+  toCollection: product
+
+- table: TB_PROD_USER_DEFIN_FIELD
+  importMethod: importUserDefinedFields
+  prodIdField: PROD_ID
+  toAttribute: UDF
+  toCollection: product
+
+- table: TB_CHANL_ATTR
+  importMethod: importAsObjectList
+  prodIdField: PROD_ID
+  toAttribute: CHANL_ATTR
+  toCollection: product
+  businessName: TB_CHANL_ATTR
+  businessDefinition: TB_CHANL_ATTR
+  keyFields:
+    - CHANL_CDE
+    - FIELD_CDE

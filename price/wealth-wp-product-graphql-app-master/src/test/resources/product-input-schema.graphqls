@@ -1,0 +1,1451 @@
+input ProductInput {
+    # Internal doc id
+    _id: Long
+    # Revision Number
+    revision: Long
+    # Created By
+    createdBy: String
+    # Last Updated By
+    lastUpdatedBy: String
+    # Last Sync Date Time
+    lastSyncTime: DateTime
+    # Financial Doc
+    finDoc: [FinDocInput]
+    # Product Required Form
+    formReqmt: [FormReqmtInput]
+    # Product Offer Channel
+    oferChanl: [OferChanlInput]
+    # Override Field
+    ovridField: [OvridFieldInput]
+    # Price Performance
+    performance: PerformanceInput
+    # Benchmark Performance
+    benchmark: BenchmarkInput
+    # Product Price Compare?
+    prcCmpar: [PrcCmparInput]
+    # Product Product Relationship
+    prodReln: [ProdRelnInput]
+    # Product Restricted Customer Country
+    restrCustCtry: [RestrCustCtryInput]
+    # Product Restricted Customer Group
+    restrCustGroup: [RestrCustGroupInput]
+    # Staff Eligibility
+    stafLicCheck: [StafLicCheckInput]
+    # Trade Eligibility
+    tradeElig: TradeEligInput
+    # Asset Geographic Location Allocation
+    asetGeoLocAlloc: [AsetGeoLocAllocInput]
+    # Asset Standard Industry Classification Allocation
+    asetSicAlloc: [AsetSicAllocInput]
+    # Currency Option Linked Deposit
+    ccyOptLinkDepst: CcyOptLinkDepstInput
+    # Debt Instrument
+    debtInstm: DebtInstmInput
+    # Equity Linked Investment
+    eqtyLinkInvst: EqtyLinkInvstInput
+    # MPF
+    mpfInstm: [MpfInstmInput]
+    # Allow Buy Amount Product Indicator
+    allowBuyAmtProdInd: String
+    # Allow Buy Product Indicator
+    allowBuyProdInd: String
+    # Allow Buy Unit Product Indicator
+    allowBuyUtProdInd: String
+    # Allow Sell Amount Product Indicator
+    allowSellAmtProdInd: String
+    # Asset Under Management Chargeable Product Indicator
+    asetUnderMgmtChrgProdInd: String
+    # Allow Sell Monthly Investment Program Amount Product Indicator
+    allowSellMipAmtProdInd: String
+    # Allow Sell Monthly Investment Program Product Indicator
+    allowSellMipProdInd: String
+    # Allow Sell Monthly Investment Program Unit Product Indicator
+    allowSellMipUtProdInd: String
+    # Allow Sell Product Indicator
+    allowSellProdInd: String
+    # Allow Sell Unit Product Indicator
+    allowSellUtProdInd: String
+    # Allow Switch In Amount Product Indicator
+    allowSwInAmtProdInd: String
+    # Allow Switch In Product Indicator
+    allowSwInProdInd: String
+    # Allow Switch In Unit Product Indicator
+    allowSwInUtProdInd: String
+    # Allow Switch Out Amount Product Indicator
+    allowSwOutAmtProdInd: String
+    # Loan Product Overdraft Margin Percent
+    loanProdOdMrgnPct: Float
+    # Allow Switch Out Product Indicator
+    allowSwOutProdInd: String
+    # Allow Switch Out Unit Product Indicator
+    allowSwOutUtProdInd: String
+    # Asset Category External Code
+    asetCatExtnlCde: String
+    # Asset Classification Code
+    asetClassCde: String
+    # Asset Text
+    asetText: String
+    # Period Return Average Number
+    prdRtrnAvgNum: Float
+    # Asset Volatility Class Major Parent Code
+    asetVoltlClassMajrPrntCde: String
+    # Available Market Information Indicator
+    availMktInfoInd: String
+    # Benchmark Name
+    bchmkName: String
+    # Benchmark Primary Local Language Name
+    bchmkPllName: String
+    # Benchmark Secondary Local Language Name
+    bchmkSllName: String
+    # Business End Time
+    busEndTm: DateTime
+    # Business Start Time
+    busStartTm: DateTime
+    # Currency Investment Code
+    ccyInvstCde: String
+    # Currency Product Code
+    ccyProdCde: String
+    # Currency Product Market Price Code
+    ccyProdMktPrcCde: String
+    # Charge Category Code
+    chrgCatCde: String
+    # Control Advice Indicator
+    cntlAdvcInd: String
+    # Capital Guaranteed Product Indicator
+    cptlGurntProdInd: String
+    # Country Product Tradable Code 1
+    ctryProdTradeCde: [String]
+    # Country Record Code
+    ctryRecCde: String
+    # Decimal Place Trade Unit Number
+    dcmlPlaceTradeUnitNum: Long
+    # Display Common Product Search Indicator
+    dispComProdSrchInd: String
+    # Divisor Number
+    divrNum: Float
+    # Dummy Product Subtype Record Indicator
+    dmyProdSubtpRecInd: String
+    # Education Goal indicator
+    educGoalInd: String
+    # Equity Underlying Indicator
+    eqtyUndlInd: String
+    # Foreign Product Indicator
+    forgnProdInd: String
+    # Geographical Risk Indicator
+    geoRiskInd: String
+    # Group Member Record Code
+    grpMembrRecCde: String
+    # Growth Characteristic Product Indicator
+    grwthCharProdInd: String
+    # Income Characteristic Product Indicator
+    incmCharProdInd: String
+    # Introduce Product Current Period Indicator
+    introProdCurrPrdInd: String
+    # Investment Immigration Product Indicator
+    invstImigProdInd: String
+    # Investment Initial Maximum Amount
+    invstInitMaxAmt: Float
+    # Investment Initial Minimum Amount
+    invstInitMinAmt: Float
+    # Islamic Product Indicator
+    islmProdInd: String
+    # Live In Retirement Goal indicator
+    liveInRtireGoalInd: String
+    # Market Investment Code
+    mktInvstCde: String
+    # Manage Solution Indicator
+    mngSolnInd: String
+    # Mark To Market Indicator
+    mrkToMktInd: String
+    # No Subscription Fee Product Indicator
+    noScribFeeProdInd: String
+    # Plan For Retirement Goal Indicator
+    planForRtireGoalInd: String
+    # Price History Delivered Date Time
+    priceHistDelvrDtTm: DateTime
+    # Pledge Limit Associate Account Indicator
+    pldgLimitAssocAcctInd: String
+    # Price Effective Date
+    prcEffDt: Date
+    # Price Input Date
+    prcInpDt: Date
+    # Product Derivative Revised Effective Date
+    prdDervRvsEffDt: Date
+    # Period Investment Tenor Number
+    prdInvstTnorNum: Long
+    # Period Product Code
+    prdProdCde: String
+    # Period Product Number
+    prdProdNum: Long
+    # Price History Source Ready Status Code
+    priceHistSrceRdyStatCde: String
+    # Product Alternative Primary Number
+    prodAltPrimNum: String
+    # Product Bid Price Amount
+    prodBidPrcAmt: Float
+    # Product Code
+    prodCde: String
+    # Product Comment Text
+    prodCmntText: String
+    # Product Derivative Code
+    prodDervtCde: String
+    # Product Derivative Revised Code
+    prodDervtRvsCde: String
+    # Product Description
+    prodDesc: String
+    # Product Identifier
+    prodId: Long
+    # Product Investment Objective Text
+    prodInvstObjText: String
+    # Product Investment Type Code
+    prodInvstTypeCde: String
+    # Product Issue Cross Reference Date
+    prodIssueCrosReferDt: Date
+    # Product Launch Date
+    prodLnchDt: Date
+    # Product Location Code
+    prodLocCde: String
+    # Product Liquidity Indicator
+    prodLqdyInd: String
+    # Product Market Price Amount
+    prodMktPrcAmt: Float
+    # Product Market Price Previous Amount
+    prodMktPricePrevAmt: Float
+    # Product Maturity Date
+    prodMturDt: Date
+    # Product Name
+    prodName: String
+    # Product Narrative Text
+    prodNarrText: String
+    # Product Net Asset Value Price Amount
+    prodNavPrcAmt: Float
+    # Product Offer Channel Update Date Time
+    prodOffrChanlUpdtDtTm: DateTime
+    # Product Offer Price Amount
+    prodOffrPrcAmt: Float
+    # Product Ownership Code
+    prodOwnCde: String
+    # Product Primary Local Language Description
+    prodPllDesc: String
+    # Product Primary Local Language Name
+    prodPllName: String
+    # Product Price Update Date Time
+    prodPrcUpdtDtTm: DateTime
+    # Product Short Name
+    prodShrtName: String
+    # Product Short Primary Local Language Name
+    prodShrtPllName: String
+    # Product Short Secondary Local Language Name
+    prodShrtSllName: String
+    # Product Secondary Local Language Description
+    prodSllDesc: String
+    # Product Secondary Local Language Name
+    prodSllName: String
+    # Product Status Code
+    prodStatCde: String
+    # Product Status Update Date Time
+    prodStatUpdtDtTm: DateTime
+    # Product Subtype Code
+    prodSubtpCde: String
+    # Product Tax Free Wrapper Account Status Code
+    prodTaxFreeWrapActStaCde: String
+    # Product Top Performance Rank Number
+    prodTopPerfmRankNum: Long
+    # Product Top Sell Rank Number
+    prodTopSellRankNum: Long
+    # Product Top Yield Rank Number
+    prodTopYieldRankNum: Long
+    # Product Type
+    prodType: String
+    # Product Type Code
+    prodTypeCde: String
+    # Protection Goal Indicator
+    protcGoalInd: String
+    # Priority Education Code
+    prtyEducCde: String
+    # Priority Live In Retirement Code
+    prtyLiveInRtireCde: String
+    # Priority Plan For Retirement Code
+    prtyPlnForRtireCde: String
+    # Priority Product Search Result Number
+    prtyProdSrchRsultNum: Long
+    # Priority Protection Code
+    prtyProtcCde: String
+    # Priority Wealth Accumulation Goal Code
+    prtyWlthAccumGoalCde: String
+    # Quantity Unit Product Code
+    qtyUnitProdCde: String
+    # Recommended Product Decision Code
+    rcmndProdDecsnCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Online Update Date Time
+    recOnlnUpdtDtTm: DateTime
+    # recStgcFinPlnUpdtDtTm
+    recStgcFinPlnUpdtDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+    # Restricted Investor Product Indicator
+    restrInvstrProdInd: String
+    # Risk Level Code
+    riskLvlCde: String
+    # Return Volatility Average Percent
+    rtrnVoltlAvgPct: Float
+    # Reverse Enquiry Product Indicator
+    rvrseEnqProdInd: String
+    # Sector Investment Code
+    sectInvstCde: String
+    # Support Receivable Cash Product Indicator
+    suptRcblCashProdInd: String
+    # Support Receivable Scrip Product Indicator
+    suptRcblScripProdInd: String
+    # Term Remaining Day Count
+    termRemainDayCnt: Long
+    # Top Performance Product Indicator
+    topPerfmProdInd: String
+    # Top Sell Product Indicator
+    topSellProdInd: String
+    # Trade First Date
+    trdFirstDt: Date
+    # Wealth Accumulation Goal Indicator
+    wlthAccumGoalInd: String
+    # Yield Enhancement Product Indicator
+    yieldEnhnProdInd: String
+    # Product Alternative Identification
+    altId: [AltIdInput]
+    # Product Asset Volatility Class
+    asetVoltlClass: [AsetVoltlClassInput]
+    # Product Field Group Cut Off?
+    fieldGroupCtoff: [FieldGroupCtoffInput]
+    # Product List Product
+    listProd: [ListProdInput]
+    # Narrative
+    narr: NarrInput
+    # Product Tradable Currency
+    tradeCcy: [TradeCcyInput]
+    # Product Translation
+    trnsl: TrnslInput
+    # Product Underlying Asset
+    undlAset: [UndlAsetInput]
+    # Stock Instrument
+    stockInstm: StockInstmInput
+    # Structured Investment Deposit
+    strucInvstDepst: StrucInvstDepstInput
+    # Unit Trust instrument
+    utTrstInstm: UtTrstInstmInput
+    # Warrant Instrument
+    warrInstm: WarrInstmInput
+    # Insurance Sub-category
+    insSubCat: String
+    # Manual Override Asset Class Indicator
+    manOverAssClaInd: String
+    # Settlement Lead Time for Subscription
+    setlLeadTmScrib: Long
+    # Settlement Lead Time for Redemption
+    setlLeadTmRdm: Long
+    # GIC Fund indicator
+    gicFundIndicator: String
+    # Premier Recommended Indicator
+    premRecomInd: String
+}
+
+input FinDocInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Document Financial Type Code
+    docFinTypeCde: String
+    # Document Financial Content Hash Code
+    finDocConHashCde: String
+    # Document Financial Customer Class Code
+    finDocCustClassCde: String
+    # Language Financial Document Code
+    langFinDocCde: String
+    # Resource Item Identifier Financial Document
+    rsrcItemIdFinDoc: Long
+    # Uniform Resource Locator Document Text
+    urlDocText: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input FormReqmtInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Form Required Code
+    formReqCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+}
+
+input OferChanlInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Channel Communication Code
+    chanlComnCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+}
+
+input OvridFieldInput {
+    # Override Field
+    fieldCde: String
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+}
+
+input PerformanceInput {
+    # Performance 1 Month Percent
+    perfm1MoPct: Float
+    # Performance 1 Year Amount
+    perfm1YrAmt: Float
+    # Variance Benchmark 1 Year Percent
+    perfm1YrPct: Float
+    # Performance 3 Month Percent
+    perfm3MoPct: Float
+    # Performance 3 Year Amount
+    perfm3YrAmt: Float
+    # Performance 3 Year Percent
+    perfm3YrPct: Float
+    # Variance Benchmark 5 Year Percent
+    perfm5YrPct: Float
+    # Performance 6 Month Amount
+    perfm6MoAmt: Float
+    # Performance 6 Month Percent
+    perfm6MoPct: Float
+    # Performance Calculate Date
+    perfmCalcDt: Date
+    # Performance Extended 1 Year Percent
+    perfmExt1YrPct: Float
+    # Performance Since Launch Percent
+    perfmSinceLnchPct: Float
+    # Performance Type Code
+    perfmTypeCde: String
+    # Performance Year To Date Amount
+    perfmYrToDtAmt: Float
+    # Variance Benchmark Year To Date Percent
+    perfmYrToDtPct: Float
+    # Return Volatility 1 Year Percent
+    rtrnVoltl1YrPct: Float
+    # Return Volatility 3 Year Percent
+    rtrnVoltl3YrPct: Float
+    # Return Volatility Extended 1 Year Percent
+    rtrnVoltlExt1YrPct: Float
+    # Return Volatility Extended 3 Year Percent
+    rtrnVoltlExt3YrPct: Float
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input BenchmarkInput {
+    # Performance 1 Month Percent
+    perfm1MoPct: Float
+    # Performance 1 Year Amount
+    perfm1YrAmt: Float
+    # Variance Benchmark 1 Year Percent
+    perfm1YrPct: Float
+    # Performance 3 Month Percent
+    perfm3MoPct: Float
+    # Performance 3 Year Amount
+    perfm3YrAmt: Float
+    # Performance 3 Year Percent
+    perfm3YrPct: Float
+    # Variance Benchmark 5 Year Percent
+    perfm5YrPct: Float
+    # Performance 6 Month Amount
+    perfm6MoAmt: Float
+    # Performance 6 Month Percent
+    perfm6MoPct: Float
+    # Performance Calculate Date
+    perfmCalcDt: Date
+    # Performance Extended 1 Year Percent
+    perfmExt1YrPct: Float
+    # Performance Since Launch Percent
+    perfmSinceLnchPct: Float
+    # Performance Type Code
+    perfmTypeCde: String
+    # Performance Year To Date Amount
+    perfmYrToDtAmt: Float
+    # Variance Benchmark Year To Date Percent
+    perfmYrToDtPct: Float
+    # Return Volatility 1 Year Percent
+    rtrnVoltl1YrPct: Float
+    # Return Volatility 3 Year Percent
+    rtrnVoltl3YrPct: Float
+    # Return Volatility Extended 1 Year Percent
+    rtrnVoltlExt1YrPct: Float
+    # Return Volatility Extended 3 Year Percent
+    rtrnVoltlExt3YrPct: Float
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input PrcCmparInput {
+    # Product Price Deviation Percent
+    prodPrcDviatPct: Float
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Limit Price Deviation Percent
+    limitPrcDviatPct: Float
+    # Price Checking Internal Count
+    prcChkngIntrnCnt: Long
+    # Price Effective Date
+    prcEffDt: Date
+    # Price Effective External Date
+    prcEffExtnlDt: Date
+    # Product Alternative Primary Number
+    prodAltPrimNum: String
+    # Product Bid Price Amount
+    prodBidPrcAmt: Float
+    # Product Bid Price External Amount
+    prodBidPrcExtnlAmt: Float
+    # Product Market Price Amount
+    prodMktPrcAmt: Float
+    # Product Market Price External Amount
+    prodMktPrcExtnlAmt: Float
+    # Product Net Asset Value Price Amount
+    prodNavPrcAmt: Float
+    # Product Net Asset Value Price External Amount
+    prodNavPrcExtnlAmt: Float
+    # Product Offer Price Amount
+    prodOffrPrcAmt: Float
+    # Product Offer Price External Amount
+    prodOffrPrcExtnlAmt: Float
+    # Product Price Type Code
+    prodPrcTypeCde: String
+    # Product Type Code
+    prodTypeCde: String
+    # Report Price Checking Date Time
+    rptPrcChkngDtTm: DateTime
+    # Report Product Price Type Code
+    rptProdPrcTypeCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input ProdRelnInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Product Identifier Related
+    prodIdRel: Long
+    # Product Product Relationship Code
+    prodProdRelnCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input RestrCustCtryInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Country ISO Code
+    ctryIsoCde: String
+    # Restriction Code
+    restrCde: String
+    # Restriction Country Type Code
+    restrCtryTypeCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input RestrCustGroupInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Customer Product Category Code
+    custProdCatCde: String
+    # Eligible Customer Product Category Indicator
+    eligCuspCatInd: String
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+}
+
+input StafLicCheckInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Cutoff Employee Eligibility Check Indicator
+    ctoffEmplyEligChkInd: String
+    # Employment Position Code
+    employPosnCde: String
+    # Employee Eligibility Check Cutoff Date
+    emplyEligCtoffDt: Date
+    # Formula Employee Eligibility Text
+    frmlaEmplyEligText: String
+    # Formula Employee Eligibility Before Cutoff Text
+    frmlaEmpEligBfrCtoffText: String
+    # Override Employee Eligibility Check Indicator
+    ovridEmplyEligChkInd: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input TradeEligInput {
+    # Action Low Risk Profiling Questionnaire Score Text
+    actionLowRpqScrText: String
+    # Age Allow Trade Maximum Number
+    ageAllowTrdMaxNum: Long
+    # Age Allow Trade Minimum Number
+    ageAllowTrdMinNum: Long
+    # Operation Type Code
+    operTypeCde: String
+    # Override Correspondence Country Check Indicator
+    ovridCorsCtryChkInd: String
+    # Override Customer Product Category Eligibility Indicator
+    ovridCuspCatEligInd: String
+    # Override Investment Holding Check Indicator
+    ovridInvstHldgChkInd: String
+    # Override Maximum Age Restriction Indicator
+    ovridMaxAgeRestrInd: String
+    # Override Minimum Age Restriction Indicator
+    ovridMinAgeRestrInd: String
+    # Override Nationality Check Indicator
+    ovridNatlChkInd: String
+    # Override Require Complete Risk Profiling Questionnaire Indicator
+    ovridReqCmplRpqInd: String
+    # Override Require Form Indicator
+    ovridReqFormInd: String
+    # Customer Eligibility
+    ovridRestrFisclCtryChkInd: String
+    # Override Residence Country Check Indicator
+    ovridResCtryChkInd: String
+    # Override Risk Profiling Questionnaire Valid Period Indicator
+    ovridRpqVlidPrdInd: String
+    # Period Valid Risk Profiling Questionnaire Code
+    prdVlidRpqCde: String
+    # Period Valid Risk Profiling Questionnaire Number
+    prdVlidRpqNum: Long
+    # Require Complete Risk Profiling Questionnaire Indicator
+    reqCmplRpqInd: String
+    # Require Investment Holding Check Indicator
+    reqInvstHldgChkInd: String
+    # Override Place Country Check Indicator
+    ovridPlaceCtryChkInd: String
+    # Override Business Country Check Indicator
+    ovridBusCtryChkInd: String
+    # Override Primary Country Check Indicator
+    ovridPriCtryChkInd: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input AsetGeoLocAllocInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Asset Allocation Weight Percent
+    asetAllocWghtPct: Float
+    # Geographic Location Code
+    geoLocCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input AsetSicAllocInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Asset Allocation Weight Percent
+    asetAllocWghtPct: Float
+    # Standard Industry Classification Code
+    sicCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input CcyOptLinkDepstInput {
+    # Currency From Code
+    ccyFromCde: String
+    # Currency Link Deposit Code
+    ccyLinkDepstCde: String
+    # Currency To Code
+    ccyToCde: String
+    # Deposit Plus Type Code
+    depstPlusTypeCde: String
+    # Exchange Break Even Rate
+    exchgBreakEvenRate: Float
+    # Exchange Initial Rate
+    exchgInitRate: Float
+    # Exchange Rate Fix Date
+    exchgRateFixDt: Date
+    # Exchange Spot Rate
+    exchgSpotRate: Float
+    # Exchange Trigger Rate
+    exchgTrigRate: Float
+    # Factor Conversion Rate
+    factrConvRate: Float
+    # Interest Rate
+    intRate: Float
+    # Knock Type Code
+    knockTypeCde: String
+    # Observation End Date
+    obsrvEndDt: Date
+    # Observation Start Date
+    obsrvStartDt: Date
+    # Product External Code
+    prodExtnlCde: String
+    # Product External Suffix Number
+    prodExtnlSuffNum: String
+    # Return Option Code
+    rtnOptCde: String
+    # Tailored Made Deposit Indicator
+    tailrMadeDepstInd: String
+}
+
+input DebtInstmInput {
+    # Yield History
+    yieldHist: [DebtInstmYieldHistInput]
+    # Coupon Current Start Date
+    coupnCurrStartDt: Date
+    # Bond Callable Next Date
+    bondCallNextDt: Date
+    # Bond Closing Date
+    bondCloseDt: Date
+    # Bond Float Spread Rate
+    bondFltSprdRate: Float
+    # Bond Settlement Date
+    bondSetlDt: Date
+    # Bond Status Code
+    bondStatCde: String
+    # Coupon Annual Rate
+    coupnAnnlRate: Float
+    # Coupon Annual Text
+    coupnAnnlText: String
+    # Coupon Extendable Instrument Rate
+    coupnExtInstmRate: Float
+    # Coupon Previous Rate
+    coupnPrevRate: Float
+    # Coupon Previous Start Date
+    coupnPrevStartDt: Date
+    # Coupon Type
+    coupnType: String
+    # Capital Tier Text
+    cptlTierText: String
+    # Country Bond Issue Code
+    ctryBondIssueCde: String
+    # Discount Margin Bank Buy Percent
+    dscntMrgnBbuyPct: Float
+    # Discount Margin Bank Sell Percent
+    dscntMrgnBselPct: Float
+    # Flexible Maturity Option Indicator
+    flexMatOptInd: String
+    # Guarantor Name
+    grntrName: String
+    # Index Float Rate Name
+    indexFltRateName: String
+    # Interest Accrue Day Count
+    intAccrDayCnt: Float
+    # Interest Basis Calculation Text
+    intBasisCalcText: String
+    # Interest Indicative Accrue Amount
+    intIndAccrAmt: Float
+    # Investment Increment Minimum Amount
+    invstIncrmMinAmt: Float
+    # Investment Increment Sold Amount
+    invstIncrmSoldAmt: Float
+    # Investment Sold Least Amount
+    invstSoldLestAmt: Float
+    # Issuer Bond Name
+    isrBondName: String
+    # Issuer Description
+    isrDesc: String
+    # Issue Number
+    issueNum: String
+    # Maturity Extended Date
+    mturExtDt: Date
+    # Periodicity Coupon Payment Code
+    pdcyCoupnPymtCde: String
+    # Price Bond Receive Date Time
+    prcBondRecvDtTm: DateTime
+    # Product Board Lot Quantity Count
+    prodBodLotQtyCnt: Float
+    # Product Closing Bid Price Amount
+    prodCloseBidPrcAmt: Float
+    # Product Closing Offer Price Amount
+    prodCloseOffrPrcAmt: Float
+    # Product Issue Date
+    prodIssDt: Date
+    # Payment Coupon Next Date
+    pymtCoupnNextDt: Date
+    # Share Bid Count
+    shrBidCnt: Float
+    # Share Offer Count
+    shrOffrCnt: Float
+    # Seniority Type Code
+    srTypeCde: String
+    # Subordinated Debt Indicator
+    subDebtInd: String
+    # Yield Bid Closing Percent (%)
+    yieldBidClosePct: Float
+    # Yield Bid Percent (%)
+    yieldBidPct: Float
+    # Yield Date
+    yieldDt: Date
+    # Yield Effective Date
+    yieldEffDt: Date
+    # Yield Offer Closing Percent (%)
+    yieldOfferClosePct: Float
+    # Yield Offer Percent (%)
+    yieldOfferPct: Float
+    # Yield Offer Text
+    yieldOfferText: String
+    # Yield To Call Bid Percent (%)
+    yieldToCallBidPct: Float
+    # Yield To Call Offer Percent (%)
+    yieldToCallOfferPct: Float
+    # Yield To Maturity Bid Percent (%)
+    yieldToMturBidPct: Float
+    # Yield To Maturity Offer Text
+    yieldToMturOfferText: String
+    # Credit Rating
+    credRtng: [DebtInstmCredRtngInput]
+    # Translation
+    trnsl: DebtInstmTrnslInput
+}
+
+input DebtInstmYieldHistInput {
+    # Yield Bid Closing Percent
+    yieldBidClosePct: Float
+    # Yield Bid Percent
+    yieldBidPct: Float
+    # Yield Date
+    yieldDt: Date
+    # Yield Effective Date
+    yieldEffDt: Date
+    # Yield Offer Closing Percent
+    yieldOfferClosePct: Float
+    # Yield Offer Percent
+    yieldOfferPct: Float
+    # Yield To Call Bid Percent
+    yieldToCallBidPct: Float
+    # Yield To Call Offer Percent
+    yieldToCallOfferPct: Float
+    # yieldToMturBidPct
+    yieldToMturBidPct: Float
+    # Yield To Maturity Offer Text
+    yieldToMturOfferText: String
+    # Yield Type Code
+    yieldTypeCde: String
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+}
+
+input DebtInstmCredRtngInput {
+    # Credit Rating Agency Code
+    creditRtngAgcyCde: String
+    # Credit Rating Code
+    creditRtngCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input DebtInstmTrnslInput {
+    # Issuer Primary Local Language Description
+    isrPllDesc: String
+    # Issuer Secondary Local Language Description
+    isrSllDesc: String
+}
+
+input EqtyLinkInvstInput {
+    # Equity Linked Investment Underlying Stock
+    undlStock: [EqtyLinkInvstUndlStockInput]
+    # Customer Sell Quota Count
+    custSellQtaCnt: Long
+    # Denomination Amount
+    denAmt: Float
+    # Discount Buy Percent
+    dscntBuyPct: Float
+    # Discount Sell Percent
+    dscntSellPct: Float
+    # Equity Linked Investment Type Code
+    eqtyLinkInvstTypeCde: String
+    # Launch Product Indicator
+    lnchProdInd: String
+    # Offer Type Code
+    offerTypeCde: String
+    # Periodicity Call Code
+    pdcyCallCde: String
+    # Periodicity Knock In Code
+    pdcyKnockInCde: String
+    # Product External Category Code
+    prodExtnlCatCde: String
+    # Product External Code
+    prodExtnlCde: String
+    # Product External Type Code
+    prodExtnlTypeCde: String
+    # Payment Date
+    pymtDt: Date
+    # Retrieve Product External Indicator
+    rtrvProdExtnlInd: String
+    # Rule Quota Allotment Code
+    ruleQtaAltmtCde: String
+    # Settlement Date
+    setlDt: Date
+    # Support All Or Nothing Indicator
+    suptAonInd: String
+    # Trade Date
+    trdDt: Date
+    # Trading Minimum Amount
+    trdMinAmt: Float
+    # Valuation Date
+    valnDt: Date
+    # Yield To Maturity Percent
+    yieldToMturPct: Float
+}
+
+input EqtyLinkInvstUndlStockInput {
+    # Currency Instrument Underlying Price Code
+    crncyInstmUndlPriceCde: String
+    # Instrument Entitle Count
+    instmEntlCnt: Float
+    # Instrument Underlying Code
+    instmUndlCde: String
+    # Instrument Underlying Text
+    instmUndlText: String
+    # Product Break Even Call Price Amount
+    prodBreakEvenCallPrcAmt: Float
+    # Product Break Even Lower Price Amount
+    prodBreakEvenLowPrcAmt: Float
+    # Product Break Even Price Amount
+    prodBreakEvenPrcAmt: Float
+    # Product Break Even Put Price Amount
+    prodBreakEvenPutPrcAmt: Float
+    # Product Break Even Upper Price Amount
+    prodBreakEvenUpprPrcAmt: Float
+    # Product Closing Call Price Amount
+    prodCloseCallPrcAmt: Float
+    # Product Closing Lower Price Amount
+    prodCloseLowPrcAmt: Float
+    # Product Closing Price Amount
+    prodClosePrcAmt: Float
+    # Product Closing Put Price Amount
+    prodClosePutPrcAmt: Float
+    # Product Closing Upper Price Amount
+    prodCloseUpprPrcAmt: Float
+    # Product Exercise Price Amount
+    prodExerPrcAmt: Float
+    # prodIdUndlInstm
+    prodIdUndlInstm: Long
+    # Product Knock In Price Amount
+    prodKnockInPriceAmt: Float
+    # Product Knock In Price Initial Percent
+    prodKnockInPriceInitPct: Float
+    # Product Strike Call Price Amount
+    prodStrkCallPrcAmt: Float
+    # Product Strike Call Price Initial Percent
+    prodStrkCallPriceInitPct: Float
+    # Product Strike Price Amount
+    prodStrkPrcAmt: Float
+    # Product Strike Price Initial Percent
+    prodStrkPriceInitPct: Float
+    # Product Strike Put Price Amount
+    prodStrkPutPrcAmt: Float
+    # Spread Count
+    sprdCnt: Long
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input MpfInstmInput {
+    # perfm6MoPct
+    perfm6MoPct: Float
+    # perfmCumPct
+    perfmCumPct: Float
+    # perfmSinceLnchPct
+    perfmSinceLnchPct: Float
+    # pfrmEffDt
+    pfrmEffDt: Date
+    # pfrmUpdtDt
+    pfrmUpdtDt: Date
+    # prcEffDt
+    prcEffDt: Date
+    # Internal rowid for maintain purpose
+    rowid: String
+    # bidPrcAmt
+    bidPrcAmt: Float
+    # bidPrcCcy
+    bidPrcCcy: String
+    # bidPrcDp
+    bidPrcDp: Long
+    # disIndc
+    disIndc: String
+    # fundMpfCde
+    fundMpfCde: String
+    # offerPrcAmt
+    offerPrcAmt: Float
+    # offerPrcCcy
+    offerPrcCcy: String
+    # offerPrcDp
+    offerPrcDp: Long
+    # perfm1MoPct
+    perfm1MoPct: Float
+    # perfm1YrPct
+    perfm1YrPct: Float
+    # perfm3YrPct
+    perfm3YrPct: Float
+    # perfm5YrPct
+    perfm5YrPct: Float
+    # prodMpfCde
+    prodMpfCde: String
+    # rmk
+    rmk: String
+    # seqNum
+    seqNum: Long
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input AltIdInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Product Alternative Number
+    prodAltNum: String
+    # Product Code Alternative Classification Code
+    prodCdeAltClassCde: String
+    # Product Alternative ID
+    prodTypeCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input AsetVoltlClassInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Asset Volatility Class Code
+    asetVoltlClassCde: String
+    # Asset Volatility Class Weighting Percent
+    asetVoltlClassWghtPct: Float
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input FieldGroupCtoffInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # fieldGroupCde
+    fieldGroupCde: String
+    # fieldGroupCtoffDtTm
+    fieldGroupCtoffDtTm: DateTime
+}
+
+input ListProdInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # List Product Code
+    listProdCde: String
+    # List Product Type
+    listProdType: String
+    # Product Effective Shortlist Date
+    prodEffSlstDt: Date
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input NarrInput {
+    # Product Narrative Primary Local Language Text
+    prodNarrPllText: String
+    # Product Narrative Secondary Local Language Text
+    prodNarrSllText: String
+}
+
+input TradeCcyInput {
+    # Currency Product Tradable Code
+    ccyProdTradeCde: String
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+}
+
+input TrnslInput {
+    # Product Investment Objective Primary Local Language Text
+    prodInvstObjPllText: String
+    # Product Investment Objective Secondary Local Language Text
+    prodInvstObjSllText: String
+}
+
+input UndlAsetInput {
+    # Internal rowid for maintain purpose
+    rowid: String
+    # Asset underlying Code
+    asetUndlCde: String
+    # Sequence Number
+    seqNum: Long
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+}
+
+input StockInstmInput {
+    # Dividend Percent
+    divPct: Float
+    # Loan Product Margin Trading Percent
+    loanProdMrgnTrdPct: Float
+    # Allow Product Lending Indicator
+    allwProdLendInd: String
+    # Board Lot Product Indicator
+    bodLotProdInd: String
+    # Country Product Registered Code
+    ctryProdRegisCde: String
+    # Earnings Per Share Annual Amount
+    earnPerShareAnnlAmt: Float
+    # Exclude Limit Calculation Indicator
+    exclLimitCalcInd: String
+    # Investment Monthly Investment Program Increment Minimum Amount
+    invstMipIncrmMinAmt: Float
+    # Investment Monthly Investment Program Minimum Amount
+    invstMipMinAmt: Float
+    # Loan Budget Product Initial Public Offer Amount
+    loanBdgtProdIpoAmt: Float
+    # Loan Product Initial Public Offer Total Amount
+    loanProdIpoTtlAmt: Float
+    # Method Calculation Scrip Charge Code
+    methCalcScripChrgCde: String
+    # Market Process Last Code
+    mktProcLastCde: String
+    # Market Product Trading Code
+    mktProdTrdCde: String
+    # Market Segment Exchange Code
+    mktSegExchgCde: String
+    # Margin Price Auction Trading Percent
+    mrgnPrcAuctnTrdPct: Float
+    # Margin Secured Overdraft Percent
+    mrgnSecOdPct: Float
+    # Margin Trade Indicator
+    mrgnTrdInd: String
+    # Pool Product Indicator
+    poolProdInd: String
+    # Price Earnings Rate
+    prcEarnRate: Float
+    # Price Variance Code
+    prcVarCde: String
+    # Price Variance Minimum Amount
+    prcVarMinAmt: Float
+    # Price Variance Minimum Effective Date
+    prcVarMinEffDt: Date
+    # Product Auction Trading Expiry Date
+    prodAuctnTrdExpirDt: Date
+    # Product Board Lot Quantity Count
+    prodBodLotQtyCnt: Float
+    # Product Buy Maximum Quantity Count
+    prodBuyMaxQtyCnt: Long
+    # Product Exercise Price Amount
+    prodExerPrcAmt: Float
+    # Product Issue Quantity Total Count
+    prodIssQtyTtlCnt: Long
+    # Product Maximum Foreign Investor Total Percent
+    prodMaxForgnInvstrTtlPct: Float
+    # Product Maximum Individual Foreign Investor Percent
+    prodMaxIndvForgnInvstrPct: Float
+    # Product Maximum Individual Owner Percent
+    prodMaxIndvOwnrPct: Float
+    # Product Market Status Change Last Date
+    prodMktStatChngLaDt: Date
+    # Product Opening Price Amount
+    prodOpenPrcAmt: Float
+    # Product Price 52 Week Maximum Amount
+    prodPrc52WeekMaxAmt: Float
+    # Product Price 52 Week Minimum Amount
+    prodPrc52WeekMinAmt: Float
+    # Product Price Change Amount
+    prodPrcChngAmt: Float
+    # Product Price Change Percent
+    prodPrcChngPct: Float
+    # Product Sell Maximum Quantity Count
+    prodSellMaxQtyCnt: Long
+    # Product Today Highest Price Amount
+    prodTdyHighPrcAmt: Float
+    # Product Today Lowest Price Amount
+    prodTdyLowPrcAmt: Float
+    # Product Turnover Amount
+    prodTrnvrAmt: Float
+    # Possible Product Borrow Indicator
+    psblProdBorwInd: String
+    # Scrip Only Product Indicator
+    scripOnlyProdInd: String
+    # Share Trade Count
+    shareTrdCnt: Long
+    # Spread Stop Loss Maximum Count
+    sprdStopLossMaxCnt: Long
+    # Spread Stop Loss Minimum Count
+    sprdStopLossMinCnt: Long
+    # Stop Loss Maximum Percent
+    stopLossMaxPct: Float
+    # Stop Loss Minimum Percent
+    stopLossMinPct: Float
+    # Support All In One Order Indicator
+    suptAllIn1OrdInd: String
+    # Support Automatic Trade Indicator
+    suptAtmcTrdInd: String
+    # Support Auction Trading Indicator
+    suptAuctnTrdInd: String
+    # Support Monthly Investment Program Indicator
+    suptMipInd: String
+    # Support Net Settlement Indicator
+    suptNetSetlInd: String
+    # Support Product Split Indicator
+    suptProdSpltInd: String
+    # Support Stop Loss Order Indicator
+    suptStopLossOrdInd: String
+    # Support Win Win Order Indicator
+    suptWinWinOrdInd: String
+    # Trading Limit Indicator
+    trdLimitInd: String
+    # Auction Limit Trading Indicator
+    allowAtAucLmtInd: String
+}
+
+input StrucInvstDepstInput {
+    # Offer Type Code
+    offerTypeCde: String
+    # Allow Early Redemption Indicator
+    allowEarlyRdmInd: String
+    # Bonus Interest Calculate Type Code
+    bonusIntCalcTypeCde: String
+    # Bonus Interest Date Type Code
+    bonusIntDtTypeCde: String
+    # Price Early Redemption Percent
+    prcEarlyRdmPct: Float
+    # Currency Link Deposit Code
+    ccyLinkDepstCde: String
+    # Capital Protection Percent
+    cptlProtcPct: Float
+    # Customer Sell Quota Number
+    custSellQtaNum: Long
+    # Launch Product Indicator
+    lnchProdInd: String
+    # Marketing End Date
+    mktEndDt: Date
+    # Marketing Start Date
+    mktStartDt: Date
+    # Return Interim Previous Percent
+    rtrnIntrmPrevPct: Float
+    # Product Conversion Code
+    prodConvCde: String
+    # Product External Code
+    prodExtnlCde: String
+    # Product External Type Code
+    prodExtnlTypeCde: String
+    # Redemption Early Disallow Text
+    rdmEarlyDalwText: String
+    # Redemption Early Indicative Amount
+    rdmEarlyIndAmt: Float
+    # Return Interim Paid Next Date
+    rtrnIntrmPaidNextDt: Date
+    # Return Interim Paid Previous Date
+    rtrnIntrmPaidPrevDt: Date
+    # Retrieve Product External Indicator
+    rtrvProdExtnlInd: String
+    # Rule Quota Allotment Code
+    ruleQtaAltmtCde: String
+    # Yield Annual Minimum Percent
+    yieldAnnlMinPct: Float
+    # Yield Annual Potential Percent
+    yieldAnnlPotenPct: Float
+    # Return Interim
+    intrmRtn: [StrucInvstDepstIntrmRtnInput]
+}
+
+input StrucInvstDepstIntrmRtnInput {
+    # Return Interim Paid Date
+    rtrnIntrmPaidDt: Date
+    # Return Interim Percent
+    rtrnIntrmPct: Float
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+    # Record Update Date Time
+    recUpdtDtTm: DateTime
+}
+
+input UtTrstInstmInput {
+    # Dividend Yield Percent
+    divYieldPct: Float
+    # Dividend Payment Date
+    divPymtDt: Date
+    # Amcm Indicator
+    amcmInd: String
+    # Auto Renewable Fund Indicator
+    autoRenewFundInd: String
+    # Auto Sweep Fund Indicator
+    autoSweepFundInd: String
+    # Charge Fund Switch Percent
+    chrgFundSwPct: Float
+    # Charge Initial Sales Percent
+    chrgInitSalesPct: Float
+    # Closed End Fund Indicator
+    closeEndFundInd: String
+    # Deal Next Date
+    dealNextDt: Date
+    # Dividend Declaration Date
+    divDclrDt: Date
+    # Discount Maximum Percent
+    dscntMaxPct: Float
+    # Fund Amount
+    fundAmt: Float
+    # Fund Class Code
+    fundClassCde: String
+    # Fund House Code
+    fundHouseCde: String
+    # Fund Monthly Investment Program Retain Minimum Amount
+    fundMipRtainMinAmt: Float
+    # Fund Retain Minimum Amount
+    fundRtainMinAmt: Float
+    # Fund Switch In Minimum Amount
+    fundSwInMinAmt: Float
+    # Fund Switch Out Maximum Amount
+    fundSwOutMaxAmt: Float
+    # Fund Switch Out Minimum Amount
+    fundSwOutMinAmt: Float
+    # Fund Switch Out Retain Minimum Amount
+    fundSwOutRtainMinAmt: Float
+    # Fund Valuation Time
+    fundValnTm: DateTime
+    # Holiday Fund Next Date
+    hldayFundNextDt: Date
+    # Income Handle Option Code
+    incmHandlOptCde: String
+    # Insurance Linked Unit Trust Indicator
+    insuLinkUtTrstInd: String
+    # Investment Increment Minimum Amount
+    invstIncrmMinAmt: Float
+    # Investment Monthly Investment Program Increment Minimum Amount
+    invstMipIncrmMinAmt: Float
+    # Investment Monthly Investment Program Minimum Amount
+    invstMipMinAmt: Float
+    # Offer End Date Time
+    offerEndDtTm: DateTime
+    # Offer Start Date Time
+    offerStartDtTm: DateTime
+    # Pay Cash Dividend Indicator
+    payCashDivInd: String
+    # Product Shore Location Code
+    prodShoreLocCde: String
+    # Product Terminate Date
+    prodTrmtDt: Date
+    # Redemption Cutoff Next Date Time
+    rdmCtoffNextDtTm: DateTime
+    # Redemption Minimum Amount
+    rdmMinAmt: Float
+    # Redemption Monthly Investment Program Minimum Amount
+    rdmMipMinAmt: Float
+    # Return Guarantee Percent
+    rtrnGurntPct: Float
+    # Scheme Charge Code
+    schemChrgCde: String
+    # Subscription Cutoff Next Date Time
+    scribCtoffNextDtTm: DateTime
+    # Special Fund Indicator
+    spclFundInd: String
+    # Support Monthly Investment Program Indicator
+    suptMipInd: String
+    # Transaction Maximum Amount
+    tranMaxAmt: Float
+    # Unit Monthly Investment Program Redemption Minimum Number
+    utMipRdmMinNum: Long
+    # Unit Monthly Investment Program Retain Minimum Number
+    utMipRtainMinNum: Long
+    # Unit Price Product Launch Amount
+    utPrcProdLnchAmt: Float
+    # Unit Redemption Minimum Number
+    utRdmMinNum: Long
+    # Unit Retain Minimum Number
+    utRtainMinNum: Long
+    # Unit Switch Out Retain Minimum Number
+    utSwOutRtainMinNum: Long
+    # Fund Unswitchable Code
+    sw: [SwInput]
+    # Restricted Fund Indicator
+    rstFundInd: String
+    # Fund Category
+    fundCatCde: String
+    # Guaranteed Fund Indicator
+    gteFundInd: String
+    # Execution only Minimum Investment Amount
+    exoMIPMinAmt: Float
+}
+
+input SwInput {
+    # Fund Unswitchable Code
+    fundUnswCde: String
+    # Record Create Date Time
+    recCreatDtTm: DateTime
+}
+
+input WarrInstmInput {
+    # Instrument Underlying Market Price Amount
+    instmUndlMktPrcAmt: Float
+    # Issuer Code
+    isrCde: String
+    # Currency Underlying Instrument Code
+    ccyUndlInstmCde: String
+    # Delta Percent
+    deltaPct: Float
+    # Entitlement Rate
+    entlRate: Float
+    # Gearing Effective Rate
+    gearEffRate: Float
+    # Instrument Underlying Code
+    instmUndlCde: String
+    # Moneyness Percent
+    moneyPct: Float
+    # Moneyness Type Code
+    moneyTypeCde: String
+    # Premium Percent
+    premPct: Float
+    # Product Board Lot Quantity Count
+    prodBodLotQtyCnt: Float
+    # Product Closing Price Amount
+    prodClosePrcAmt: Float
+    # Product Price 52 Week Maximum Amount
+    prodPrc52WeekMaxAmt: Float
+    # Product Price 52 Week Minimum Amount
+    prodPrc52WeekMinAmt: Float
+    # Product Price Change Amount
+    prodPrcChngAmt: Float
+    # Product Price Change Percent
+    prodPrcChngPct: Float
+    # Product Strike Price Amount
+    prodStrkPrcAmt: Float
+    # Product Today Highest Price Amount
+    prodTdyHighPrcAmt: Float
+    # Product Today Lowest Price Amount
+    prodTdyLowPrcAmt: Float
+    # Product Turnover Amount
+    prodTrnvrAmt: Float
+    # Share Trade Count
+    shareTrdCnt: Long
+    # Volatility Implied Percent
+    voltlImplyPct: Float
+    # Warrant Type Code
+    warrTypeCde: String
+}
+

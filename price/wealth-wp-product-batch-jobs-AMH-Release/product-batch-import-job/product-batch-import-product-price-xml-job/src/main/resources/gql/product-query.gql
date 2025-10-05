@@ -1,0 +1,63 @@
+query productByFilter($filter: JSON!) {
+    productByFilter(filter: $filter, limit: 0) {
+        ctryRecCde
+        grpMembrRecCde
+        prodId
+        prodTypeCde
+        prodSubtpCde
+        prodCde
+        prodAltPrimNum
+        prcEffDt
+        ccyProdMktPrcCde
+        prodBidPrcAmt
+        prodOffrPrcAmt
+        prodNavPrcAmt
+        prodMktPrcAmt
+        prcInpDt
+        priceHistSrceRdyStatCde
+        altId {
+            prodAltNum
+            prodCdeAltClassCde
+            prodTypeCde
+            recCreatDtTm
+            recUpdtDtTm
+        }
+        stockInstm {
+            prodPrcChngPct
+            prodPrcChngAmt
+            prodOpenPrcAmt
+            prodTdyHighPrcAmt
+            prodTdyLowPrcAmt
+            shareTrdCnt
+            prodTrnvrAmt
+        }
+        eqtyLinkInvst{
+            dscntSellPct
+        }
+        debtInstm {
+            isAlgoInd
+        }
+        prcCmpar {
+            limitPrcDviatPct
+            prcChkngIntrnCnt
+            prcEffDt
+            prcEffExtnlDt
+            prodAltPrimNum
+            prodBidPrcAmt
+            prodBidPrcExtnlAmt
+            prodMktPrcAmt
+            prodMktPrcExtnlAmt
+            prodNavPrcAmt
+            prodNavPrcExtnlAmt
+            prodOffrPrcAmt
+            prodOffrPrcExtnlAmt
+            prodPrcDviatPct
+            prodPrcTypeCde
+            prodTypeCde
+            rptPrcChkngDtTm
+            rptProdPrcTypeCde
+            recCreatDtTm
+            recUpdtDtTm
+        }
+    }
+}

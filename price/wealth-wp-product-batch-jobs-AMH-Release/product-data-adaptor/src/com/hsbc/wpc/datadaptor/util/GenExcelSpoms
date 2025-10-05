@@ -1,0 +1,397 @@
+/*
+ * ***************************************************************
+ * Copyright.  dummy Holdings plc 2005 ALL RIGHTS RESERVED.
+ *
+ * This software is only to be used for the purpose for which it
+ * has been provided.  No part of it is to be reproduced,
+ * disassembled, transmitted, stored in a retrieval system or
+ * translated in any human or computer language in any way or
+ * for any other purposes whatsoever without the prior written
+ * consent of dummy Holdings plc.
+ * ***************************************************************
+ *
+ * Class Name		HFIBondBatchUploadService
+ *
+ * Creation Date	Jan 13, 2006
+ *
+ * Amendment History   (In chronological sequence):
+ *
+ *    Amendment Date	Jan 13, 2006
+ *    CMM/PPCR No.		
+ *    Programmer		35021438
+ *    Description		This class combines the specified worksheets from the input workbooks into one. The column location for each field
+ * 						is determined dynamically by matching the value in title row with the predefined set of column name.
+ */
+package com.dummy.wpc.datadaptor.util;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFDataFormat;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+import com.dummy.wpc.common.exception.ParseException;
+import com.dummy.wpc.common.exception.WPCBaseException;
+import com.dummy.wpc.common.tng.TNGMessage;
+import com.dummy.wpc.datadaptor.constant.Const;
+
+
+public class HFIGenExcel  implements GenExcel{
+
+    private static final Logger LOGGER = Logger.getLogger(HFIGenExcel.class);
+    
+    private final String END_STR = "end";
+    private final String PFS_FILE = "bond_pfs";
+    private final String HKGOV_FILE = "bond_hkgov";
+    private final String RETAIL_FILE = "bond_retail";
+    /* column title */
+    private final String ISSUER = "issuer";
+    private final String BID_YIELD_TO_MAT = "bid yield to maturity";
+    private final String OFFER_YIELD_TO_MAT = "offer yield to maturity";
+    private final String ISS_DT = "issuedate";
+    private final String MAT_DT = "maturity";
+    private final String EXT_MAT_DT = "extended maturity date";
+    private final String COUPN_ANNL_PCT = "coupon";
+    private final String EXT_COUPN_ANNL_PCT = "extended coupon rate";
+    private final String PAY_NEXT_COUPN_DT_2 = "nextcoupondate";
+    /* maximum number of consecutive blank lines allowed */
+    private final int BLANK_LINE_COUNT = 3;
+    /* index for distinguish each input file */
+    private final int PFS = 0;
+    private final int HKGOV = 1;
+    private final int RETAIL = 2;
+    /* index of the sheet needs to be processed */
+    private final int RETAIL_SHEET_IDX = 1;
+    private final int HKGOV_SHEET_IDX = 0;
+    /* row position which contains the column title for each field */
+    private final int RETAIL_COL_NAME_ROW = 5;
+    private final int COL_NAME_ROW = 6;
+    /* number of new fields */
+    
+    public HSSFWorkbook generate(List input,String specialTitleConfigFileName) throws ParseException, WPCBaseException {
+        BufferedReader reader = null;
+        try {
+            HSSFWorkbook outWb = new HSSFWorkbook();
+            HSSFSheet inSheet = null;
+            String filename = null;
+            String sheetName = "";
+            
+            System.out.println("Generating Excel file....");          
+            Map specialTitleMap = ExcelHelper.getSpecialTitleMap(specialTitleConfigFileName);
+            for (int i = 0; i < input.size(); i++) {
+                File file = (File) input.get(i);
+                InputStream fin = new FileInputStream(file);
+                HSSFWorkbook inWb = new HSSFWorkbook(fin);          
+
+                HSSFCellStyle dateStyle = outWb.createCellStyle();                
+                dateStyle.setDataFormat(HSSFDataFormat.getBuiltinFormat("d-mmm-yy"));
+
+                filename = StringUtils.lowerCase(file.getName());
+                
+                if (filename.startsWith(HKGOV_FILE)) {
+                    System.out.println("******************HKGOV******************");
+                    inSheet = inWb.getSheetAt(HKGOV_SHEET_IDX);  
+                    sheetName = inWb.getSheetName(HKGOV_SHEET_IDX);
+                    if (StringUtils.contains(sheetName, "Sheet")) {
+                        sheetName = "BOND";
+                    }
+                    HSSFSheet sheet = outWb.createSheet(sheetName);
+                    processSheet(specialTitleMap,inSheet, sheet, sheetName, HKGOV, dateStyle, HKGOV_FILE);
+                } else if (filename.startsWith(PFS_FILE)) {
+                    System.out.println("******************PFS******************");
+                    for (int j = 0; j < 3; j++) {
+                        inSheet = inWb.getSheetAt(j);
+                        sheetName = inWb.getSheetName(j);
+                        if (StringUtils.contains(sheetName, "Sheet")) {
+                            sheetName = "BOND";
+                        }
+                        HSSFSheet sheet = outWb.createSheet(sheetName);
+                        processSheet(specialTitleMap,inSheet, sheet, sheetName, PFS, dateStyle, PFS_FILE);
+                    }
+                } else if (filename.startsWith(RETAIL_FILE)) {
+                    System.out.println("******************RETAIL******************");
+                    inSheet = inWb.getSheetAt(RETAIL_SHEET_IDX);
+                    sheetName = inWb.getSheetName(RETAIL_SHEET_IDX);
+                    if (StringUtils.contains(sheetName, "Sheet")) {
+                        sheetName = "BOND";
+                    }
+                    HSSFSheet sheet = outWb.createSheet(sheetName);
+                    processSheet(specialTitleMap,inSheet, sheet, sheetName, RETAIL, dateStyle, RETAIL_FILE);
+                } else {
+                    System.out.println("Invalid input file");
+                }
+            }
+            return outWb;
+         } catch (ParseException pe) {
+         	pe.printStackTrace();
+             throw new ParseException(this.getClass(), "process", pe.getMessage());
+         }catch (Exception e) {
+         	e.printStackTrace();
+            throw new WPCBaseException(this.getClass(), "process", e.getMessage());                    
+        }finally {
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+            } catch (IOException e) {
+                LOGGER.error("error occured when gen excel.");
+            }
+        }
+    }                 
+    
+    private void processSheet(Map specialTitleMap,HSSFSheet in, HSSFSheet out, String sheetName, int type, HSSFCellStyle style, String fileTyp) throws ParseException {
+
+        HSSFRow inRow = null;
+        HSSFRow row = null;
+        HSSFCell inCell = null; // Issuer cell
+        HSSFCell cell = null; // Bid Price cell
+        HSSFCell extIssuerCell = null;
+        HSSFCell extBidPriceCell = null;
+        HSSFCell extBidYieldCell = null;
+        HSSFCell extOfferYieldCell = null;
+        HSSFCell extMatDtCell = null;
+        HSSFCell extCoupnCell = null;
+        boolean endNotFound = true;
+        boolean extRow = false;
+        boolean isDate = false;
+        Map titleMap = new HashMap();
+        short numOfCell = 0;
+        Short index = null;
+        int inIndex = 0; // input row index         
+        int outIndex = 0; // output row index
+        int lineCount = 0;       
+        
+        short issuerIdx = 0;
+        short matDtIdx = 0;
+        short coupnAnnlPctIdx = 0;
+        short issDtIdx = 0;
+        
+        short payNextCoupnDtIdx = 0;       
+        
+        /* retrieve row from input sheet */
+        if (type == RETAIL) {
+            inRow = in.getRow(RETAIL_COL_NAME_ROW);
+        } else {
+            inRow = in.getRow(COL_NAME_ROW);
+        }       
+        
+        /* get the column index for each field */
+        if (inRow != null) {
+            numOfCell = inRow.getLastCellNum();
+            titleMap = ExcelHelper.processTitleRow(inRow,specialTitleMap);
+        }
+
+	    issuerIdx = getIndex(titleMap, ISSUER);
+        matDtIdx = getIndex(titleMap, MAT_DT);
+        coupnAnnlPctIdx = getIndex(titleMap, COUPN_ANNL_PCT);
+        issDtIdx = getIndex(titleMap, ISS_DT);
+        payNextCoupnDtIdx = getIndex(titleMap, PAY_NEXT_COUPN_DT_2);
+
+        if (issuerIdx >= Short.MAX_VALUE || 
+            matDtIdx >= Short.MAX_VALUE ||
+            coupnAnnlPctIdx >= Short.MAX_VALUE ||
+            issDtIdx >= Short.MAX_VALUE ||
+            payNextCoupnDtIdx >= Short.MAX_VALUE) {
+            throw new ParseException(this.getClass(), "processSheet", "Compulsory column(s) is/are missing from upload file");
+        }
+        
+	    inRow = in.getRow(inIndex);	    
+	    if (inRow != null) {
+	        inCell = inRow.getCell(issuerIdx);
+	        endNotFound = isEndNotFound(inCell, lineCount, fileTyp);
+	    } else { 
+	        inCell = null;
+	        cell = null;
+	    }
+	    
+        while (endNotFound) {
+            if (isRowValid(inCell, cell)) {
+                lineCount = 0;
+                              
+                if (!isCellEmpty(inCell)) {
+                    HSSFRow outRow = out.createRow((short)outIndex);
+                    short i = 0;
+                    short j = 1;                    
+                    while (i <= numOfCell) {
+                        if (inCell != null) {
+                            HSSFCell resCell = outRow.createCell(i);                        
+                            if (inCell.getCellType() == HSSFCell.CELL_TYPE_NUMERIC) {
+                                resCell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+                                resCell.setCellValue(inCell.getNumericCellValue());
+                            } else if (inCell.getCellType() == HSSFCell.CELL_TYPE_STRING) {
+                                resCell.setCellType(HSSFCell.CELL_TYPE_STRING);
+                                resCell.setCellValue(inCell.getStringCellValue());
+                            } else if (inCell.getCellType() == HSSFCell.CELL_TYPE_ERROR) {                                                               
+                                resCell.setCellType(HSSFCell.CELL_TYPE_ERROR);                                
+                                resCell.setCellErrorValue(inCell.getErrorCellValue());
+                            }
+                            if (isDate) {
+                                resCell.setCellStyle(style);
+                            }
+                        } else {
+                            outRow.createCell(i);
+                        }
+
+                        if (inRow != null) {
+                            inCell = inRow.getCell(j);
+                            /* if the cell contains date value then set the format to preferred style */
+                            if ((j == issDtIdx) || (j == matDtIdx) || (j == payNextCoupnDtIdx)) {
+                                isDate = true;
+                            } else {
+                                isDate = false;
+                            }
+                        }
+                        j++;                   
+                        i++;
+                    }
+                    i--; // go back one column to the left
+                    
+                    /* verify if next row is in fact an extended row */
+                    row = in.getRow(inIndex + 1);
+                    if (row != null) {
+                        extIssuerCell = row.getCell(issuerIdx);
+        	            extMatDtCell = row.getCell(matDtIdx);
+        	            extCoupnCell = row.getCell(coupnAnnlPctIdx);
+                    }                
+                    extRow = isExtRow(extIssuerCell, extBidPriceCell); 
+
+                    /* add new columns */
+                    HSSFCell issuerCell = outRow.getCell(issuerIdx);
+                    createNewCol(outRow, issuerCell, extBidYieldCell, style, BID_YIELD_TO_MAT, i, extRow, false);
+                    i++;
+                    createNewCol(outRow, issuerCell, extOfferYieldCell, style, OFFER_YIELD_TO_MAT, i, extRow, false);
+                    i++;
+                    createNewCol(outRow, issuerCell, extMatDtCell, style, EXT_MAT_DT, i, extRow, true);
+                    i++;
+                    createNewCol(outRow, issuerCell, extCoupnCell, style, EXT_COUPN_ANNL_PCT, i, extRow, false);
+                    
+                    outIndex++;
+                    /* create a row for product type code using sheet name */
+                    if (inIndex == 0) {
+                        outRow = out.createRow((short)outIndex);
+                        outRow.createCell((short)0).setCellValue(sheetName);
+                        outIndex++;
+                    }
+                }
+            } else {
+                lineCount++;
+            }
+            
+            inIndex++;
+            inRow = in.getRow(inIndex);
+            if (inRow != null) {
+    	        inCell = inRow.getCell(issuerIdx);
+            } else {
+                inCell = null;
+                cell = null;
+            }    
+            endNotFound = isEndNotFound(inCell, lineCount, fileTyp);
+        }        
+    }
+    
+    private void createNewCol(HSSFRow row,
+        HSSFCell issuerCell, 
+        HSSFCell cell,
+        HSSFCellStyle style,
+        String title, 
+        short index,
+        boolean isExtRow, 
+        boolean isDate) {
+    
+        String issuer = "";
+        
+        if (issuerCell != null) {
+            issuer = issuerCell.getStringCellValue().toLowerCase().trim();
+        }
+        
+        if (issuer.equals(ISSUER)) {
+            row.createCell(index).setCellValue(title);
+        } else if (isExtRow) { // set the value of the field
+            if (cell != null) {
+                if (cell.getCellType() == HSSFCell.CELL_TYPE_NUMERIC) {
+                    HSSFCell resCell = row.createCell(index);
+                    resCell.setCellValue(cell.getNumericCellValue());
+                    if (isDate) {
+                        resCell.setCellStyle(style);
+                    }
+                } else if (cell.getCellType() == HSSFCell.CELL_TYPE_STRING) {
+                    row.createCell(index).setCellValue(cell.getStringCellValue());
+                } else if (cell.getCellType() == HSSFCell.CELL_TYPE_ERROR) {
+                    row.createCell(index).setCellErrorValue(cell.getErrorCellValue());
+                } else {
+                    row.createCell(index);
+                }
+            }
+        } else {
+            row.createCell(index);
+        }
+    }
+    
+    private boolean isCellEmpty(HSSFCell cell) {        
+        if ((cell == null) || 
+            (cell.getCellType() == HSSFCell.CELL_TYPE_BLANK) || 
+            (cell.getCellType() == HSSFCell.CELL_TYPE_STRING && cell.getStringCellValue().length() == 0)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    private boolean isExtRow(HSSFCell cell1, HSSFCell cell2) {
+        if (((cell1 == null) || 
+            (cell1.getCellType() == HSSFCell.CELL_TYPE_BLANK) ||            
+            (cell1.getCellType() == HSSFCell.CELL_TYPE_STRING && cell1.getStringCellValue().length() == 0)) &&
+            ((cell2 != null) && 
+                ((cell2.getCellType() != HSSFCell.CELL_TYPE_BLANK) || 
+                (cell2.getCellType() == HSSFCell.CELL_TYPE_STRING && cell2.getStringCellValue().length() > 0)))) {
+            return true;
+        } else {
+            return false;
+        }        
+    }
+    
+    private boolean isRowValid(HSSFCell cell1, HSSFCell cell2) {        
+        if (((cell1 == null) || 
+            (cell1.getCellType() == HSSFCell.CELL_TYPE_BLANK) || 
+            (cell1.getCellType() == HSSFCell.CELL_TYPE_STRING && cell1.getStringCellValue().length() == 0)) &&
+            ((cell2 == null) || 
+                (cell2.getCellType() == HSSFCell.CELL_TYPE_BLANK) || 
+                (cell2.getCellType() == HSSFCell.CELL_TYPE_STRING && cell2.getStringCellValue().length() == 0))) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+        
+    private boolean isEndNotFound(HSSFCell cell, int lineCount, String type) {
+        boolean flag = true;
+        if (((cell != null) && (cell.getStringCellValue().toLowerCase().trim().equals(END_STR))) || (lineCount >= BLANK_LINE_COUNT)){
+        	  if(lineCount >= BLANK_LINE_COUNT){
+        	  	TNGMessage.logTNGMsgExInfo(Const.ERROR_CDE, Const.ERROR, "BOND Upload Service (" + type + ") ", "Missing 'end' in the input file.");
+        	  }
+                flag = false;
+        }	                    
+        return flag;
+    }
+    
+    private short getIndex(Map map, String field) {        
+        Short index = (Short) map.get(field);
+        if (index != null) {
+            return index.shortValue();
+        } else {
+            return Short.MAX_VALUE;
+        }        
+    }
+}

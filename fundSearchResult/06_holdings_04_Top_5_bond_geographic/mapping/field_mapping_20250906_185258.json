@@ -1,0 +1,60 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "AB - AMERICAN INCOME PORTFOLIO (CLASS AT-NZDH-MDIST CASH)",
+    "data_type": "string",
+    "example": "AB - AMERICAN INCOME PORTFOLIO (CLASS AT-NZDH-MDIST CASH)"
+  },
+  "1st": {
+    "frontend_name": "1st",
+    "frontend_description": "第一大债券地理区域配置，包含债券地理区域名称和权重百分比",
+    "api_path": "holdings.bondRegional.bondRegionalExposures[name=US]",
+    "api_value": "United States",
+    "api_value_2": "126.48%",
+    "data_type": "string",
+    "example": "United States",
+    "example_2": "126.48%"
+  },
+  "2nd": {
+    "frontend_name": "2nd",
+    "frontend_description": "第二大债券地理区域配置，包含债券地理区域名称和权重百分比",
+    "api_path": "holdings.bondRegional.bondRegionalExposures[name=LA]",
+    "api_value": "Latin America",
+    "api_value_2": "9.97%",
+    "data_type": "string",
+    "example": "Latin America",
+    "example_2": "9.97%"
+  },
+  "3rd": {
+    "frontend_name": "3rd",
+    "frontend_description": "第三大债券地理区域配置，包含债券地理区域名称和权重百分比",
+    "api_path": "holdings.bondRegional.bondRegionalExposures[name=UK]",
+    "api_value": "United Kingdom",
+    "api_value_2": "5.00%",
+    "data_type": "string",
+    "example": "United Kingdom",
+    "example_2": "5.00%"
+  },
+  "4th": {
+    "frontend_name": "4th",
+    "frontend_description": "第四大债券地理区域配置，包含债券地理区域名称和权重百分比",
+    "api_path": "holdings.bondRegional.bondRegionalExposures[name=EZ]",
+    "api_value": "Eurozone",
+    "api_value_2": "4.60%",
+    "data_type": "string",
+    "example": "Eurozone",
+    "example_2": "4.60%"
+  },
+  "5th": {
+    "frontend_name": "5th",
+    "frontend_description": "第五大债券地理区域配置，包含债券地理区域名称和权重百分比",
+    "api_path": "holdings.bondRegional.bondRegionalExposures[name=AE]",
+    "api_value": "Asia - Emerging",
+    "api_value_2": "3.09%",
+    "data_type": "string",
+    "example": "Asia - Emerging",
+    "example_2": "3.09%"
+  }
+}

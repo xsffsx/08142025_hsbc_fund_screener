@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapping>
+<mapping xmlns:cst="http://castor.exolab.org/">
+	<class cst:name="com.hhhh.group.secwealth.mktdata.starter.validation.entity.ValidationEntitys">
+		<map-to cst:xml="validationEntitys" />
+		<field cst:name="validationEntityList"
+			cst:type="com.hhhh.group.secwealth.mktdata.starter.validation.entity.ValidationEntity"
+			collection="collection">
+			<bind-xml name="validationEntity" node="element" />
+		</field>
+	</class>
+
+	<class cst:name="com.hhhh.group.secwealth.mktdata.starter.validation.entity.ValidationEntity">
+		<field cst:name="countryCode" cst:type="java.lang.String">
+			<bind-xml name="countryCode" node="attribute" />
+		</field>
+		<field cst:name="groupMember" cst:type="java.lang.String">
+			<bind-xml name="groupMember" node="attribute" />
+		</field>
+		<field cst:name="groups" cst:type="java.lang.String" collection="collection">
+			<bind-xml name="group" node="element" />
+		</field>
+	</class>
+</mapping>

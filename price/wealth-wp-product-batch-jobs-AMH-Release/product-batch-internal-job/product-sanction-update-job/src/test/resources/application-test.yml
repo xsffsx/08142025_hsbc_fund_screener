@@ -1,0 +1,12 @@
+spring:
+  batch:
+    job:
+      enabled: false
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+
+batch:
+  supported-product-type-codes: ELI, WRTS

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62595",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:42:27.025709",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62595%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "92bc0aa7-d551-452b-9597-5bbdf5829584:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "xYxQbigqv7n7qy7z4gWM5CV750RvlcahPMrHNmnqkn6iAKpd9G7HWg==",
+        "x-hsbc-request-correlation-id": "3ed32237-3a8e-4b5d-93cf-c98826e052bd",
+        "date": "Wed, 13 Aug 2025 13:42:26 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "34",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 8d361c7914c206daa79bc4dcf73475e4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "515",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF-GLOBAL EQUITY VOLATILITY FOCUSED (CLASS AM3O-SGDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM-SGDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62597\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HLVMS\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62597\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066053197\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013BCM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049930\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049930\"}]},{\"productName\":\"HSBC GIF Global Equity Volatility Focused (AM3O-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3O-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62900\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HLVMR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62900\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1068381190\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013BCL\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050101022\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50101022\"}]},{\"productName\":\"HSBC GIF - GLOBAL EQUITY VOLATILITY FOCUSED (CLASS AM2-HKD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM-HKD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62592\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HLVMH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62592\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066051811\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013BCK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049929\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049929\"}]},{\"productName\":\"HSBC GIF-GLOBAL EQUITY VOLATILITY FOCUSED (CLASS AM3O-EURH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM-EURH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62596\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HLVME\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62596\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066052892\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013BCI\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049928\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049928\"}]},{\"productName\":\"HSBC GIF-GLOBAL EQUITY VOLATILITY FOCUSED (CLASS AM3O-AUDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM-AUDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62594\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HLVMA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62594\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066052546\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013BCG\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049926\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049926\"}]},{\"productName\":\"HSBC GIF - GLOBAL EQUITY VOLATILITY FOCUSED (CLASS AM2-USD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM-USD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62593\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HLVMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62593\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066051498\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013BCF\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049931\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049931\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

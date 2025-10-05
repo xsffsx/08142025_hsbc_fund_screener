@@ -1,0 +1,25 @@
+# DB profile
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: admin
+      username: 
+      password: 
+      enable-replica: false
+  batch:
+    job:
+      enabled: false
+  task:
+    execution:
+      pool:
+        core-size: 1
+
+batch:
+  graphQLUrl: http://localhost:8080/graphql

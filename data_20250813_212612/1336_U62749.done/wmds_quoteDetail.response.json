@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62749",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:32:17.201950",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62749%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e8287e8d-67b7-46b7-a600-deddcf238921:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "bHs71jjIh2ut4zgC1XQC0R6KYNtqcFPC-0-AIuAd__7ywBsDw76wkA==",
+        "x-hsbc-request-correlation-id": "a38620c8-81e2-47a5-a3c1-557dbf040013",
+        "date": "Wed, 13 Aug 2025 13:32:16 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a5fd5d737f647cccf737a7861eb637b4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1253",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62749\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"SD\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":10.5,\"currency\":\"CAD\",\"companyName\":\"AB FCP I-SHORT DURATION BOND PORTFOLIO (AA - CAD HEDGED - MDIST CASH)\",\"securityDescription\":null,\"changeAmount\":0.01,\"changePercent\":0.09533,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":3.1979,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"2\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P000136WA\",\"tradableCurrency\":\"CAD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"FI\",\"categoryLevel1Name\":\"Fixed Income\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":2.65899},{\"year\":2023,\"annualCalendarYearReturn\":4.01402},{\"year\":2022,\"annualCalendarYearReturn\":-3.7544},{\"year\":2021,\"annualCalendarYearReturn\":-0.88395},{\"year\":2020,\"annualCalendarYearReturn\":0.68057}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":1.39134,\"dailyPerformanceNAV\":1.77907},{\"period\":\"1M\",\"trailingTotalReturn\":-0.23501,\"dailyPerformanceNAV\":0.33743},{\"period\":\"3M\",\"trailingTotalReturn\":0.05571,\"dailyPerformanceNAV\":0.7253},{\"period\":\"6M\",\"trailingTotalReturn\":1.02476,\"dailyPerformanceNAV\":1.50767},{\"period\":\"1Y\",\"trailingTotalReturn\":2.3449,\"dailyPerformanceNAV\":2.44496},{\"period\":\"3Y\",\"trailingTotalReturn\":2.25167,\"dailyPerformanceNAV\":2.47621},{\"period\":\"5Y\",\"trailingTotalReturn\":0.69543,\"dailyPerformanceNAV\":0.75561},{\"period\":\"10Y\",\"trailingTotalReturn\":0.48923,\"dailyPerformanceNAV\":0.52759}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2016-09-19\"},\"entityUpdatedTime\":\"2025-08-13T21:32:16.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62749\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"N2749\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62749\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1069346903\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000136WA\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050004445\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50004445\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

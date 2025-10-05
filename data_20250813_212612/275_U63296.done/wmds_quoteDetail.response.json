@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U63296",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:44:47.735713",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63296%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b009fb4e-309b-4d64-922b-c4462d944388:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "MMiLv6zR1iMqMSF9unvYXoHvdjjGBgC2qUTCDm3V_j2WkGBSlp2jAA==",
+        "x-hsbc-request-correlation-id": "d06a085d-d2fa-42f2-ad1f-c555eb9a402a",
+        "date": "Wed, 13 Aug 2025 13:44:46 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 2e4090c5117f92dd57a3a8b0cbf9daa4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1239",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U63296\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"GB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":394.54,\"currency\":\"USD\",\"companyName\":\"PICTET - SECURITY (P-USD-ACC)\",\"securityDescription\":null,\"changeAmount\":-2.45,\"changePercent\":-0.61714,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00006X58\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":\"N\",\"deAuthFundInd\":\"N\",\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":12.45596},{\"year\":2023,\"annualCalendarYearReturn\":20.83333},{\"year\":2022,\"annualCalendarYearReturn\":-33.43023},{\"year\":2021,\"annualCalendarYearReturn\":21.05217},{\"year\":2020,\"annualCalendarYearReturn\":22.23019}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":9.91939,\"dailyPerformanceNAV\":5.65866},{\"period\":\"1M\",\"trailingTotalReturn\":0.79071,\"dailyPerformanceNAV\":-2.25691},{\"period\":\"3M\",\"trailingTotalReturn\":15.23021,\"dailyPerformanceNAV\":2.68596},{\"period\":\"6M\",\"trailingTotalReturn\":3.96667,\"dailyPerformanceNAV\":-0.17458},{\"period\":\"1Y\",\"trailingTotalReturn\":14.51649,\"dailyPerformanceNAV\":12.25105},{\"period\":\"3Y\",\"trailingTotalReturn\":9.55269,\"dailyPerformanceNAV\":7.19251},{\"period\":\"5Y\",\"trailingTotalReturn\":6.61267,\"dailyPerformanceNAV\":5.57748},{\"period\":\"10Y\",\"trailingTotalReturn\":7.84601,\"dailyPerformanceNAV\":7.56584}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2023-03-20\"},\"entityUpdatedTime\":\"2025-08-13T21:44:46.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63296\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"PT296\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63296\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0256846139\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006X58\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050647611\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50647611\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

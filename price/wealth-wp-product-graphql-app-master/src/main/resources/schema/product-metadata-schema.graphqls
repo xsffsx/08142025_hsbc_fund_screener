@@ -1,0 +1,30 @@
+type ProductMetadata {
+    _id: String!
+    fieldTypeName: String
+    parent: String
+    jsonPath: String!
+    attrName: String!
+    businessName: String!
+    businessDefinition: String!
+    graphQLType: String!
+    prodType: [String]
+    entity: [String]
+    validation: [ProductValidation]
+    calculatedBy: String
+}
+
+type ProductValidation {
+    given: String
+    rules: JSON
+}
+
+input ProductMetadataInput {
+    _id: String
+    parent: String
+    jsonPath: String!
+    attrName: String!
+    businessName: String!
+    businessDefinition: String!
+    graphQLType: String!
+}
+

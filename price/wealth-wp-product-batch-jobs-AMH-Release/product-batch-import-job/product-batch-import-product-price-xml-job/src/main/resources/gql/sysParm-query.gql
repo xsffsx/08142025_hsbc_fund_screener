@@ -1,0 +1,10 @@
+query sysParmByFilter($filter:JSON!){
+    sysParmByFilter(filter:$filter,limit:0) {
+        ctryRecCde
+        grpMembrRecCde
+        parmCde
+        parmValueText
+        recCreatDtTm
+        recUpdtDtTm
+    }
+}

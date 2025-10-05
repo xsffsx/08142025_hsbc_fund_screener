@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build xsi:schemaLocation="http://www.hhhh.com bf_schema.xsd"
+	xmlns="http://www.hhhh.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<project>
+		<name>SRBP 3.0 Team</name>
+		<owner>MKD Development Team</owner>
+		<contact></contact>
+		<environment>
+			<library />
+		</environment>
+		<steps>
+			<linux-unix>
+
+                <!-- Compile  wmds-buildaggregate-online-ide -->
+				<step description="Compile"
+					dir="${BASE_DIR}${SWITCH}wmds-buildaggregate-online-ide" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -Dmaven.test.skip=true" />
+
+				<step description="Nexus 81 - wmds-buildaggregate-online-ide"
+					dir="${BASE_DIR}${SWITCH}wmds-buildaggregate-online-ide" timeout="300"
+					id="6" threadable="N" onfail="C" command="${MVNRUN} clean deploy" />
+
+			</linux-unix>
+		</steps>
+	</project>
+</build> 

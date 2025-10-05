@@ -1,0 +1,381 @@
+{
+  "jobs": [
+    {
+      "collectionName": "reference_data",
+      "entityConfigConfiguration": {
+        "countryCode": "HK",
+        "groupMember": "HBAP"
+      },
+      "criterias": [
+        {
+          "fieldName": "grpMembrRecCde",
+          "operator": "eq",
+          "fieldValue": "HBAP",
+          "fieldType": "String"
+        }
+      ],
+      "files": [
+        {
+          "collectionName": null,
+          "system": "SRBP",
+          "name": "ReferenceData",
+          "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_%NAME%_%yyyyMMddHHmmss%_%SEQ%.xml",
+          "suffix": null,
+          "properties": null,
+          "criterias": null
+        }
+      ],
+      "ack": {
+        "system": "SRBP",
+        "name": "ReferenceData",
+        "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_REFDATA_%yyyyMMddHHmm%_%SEQ%.out"
+      },
+      "onSuccessUpdateAttributes": null
+    },
+    {
+      "collectionName": "product",
+      "entityConfigConfiguration": {
+        "countryCode": "HK",
+        "groupMember": "HBAP"
+      },
+      "criterias": [
+        {
+          "fieldName": "prodTypeCde",
+          "operator": "in",
+          "fieldValue": "UT",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "dmyProdSubtpRecInd",
+          "operator": "nin",
+          "fieldValue": "Y",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "prcEffDt",
+          "operator": "nin",
+          "fieldValue": "null",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "ccyProdMktPrcCde",
+          "operator": "nin",
+          "fieldValue": "null",
+          "fieldType": "String"
+        }
+      ],
+      "files": [
+        {
+          "system": "SRBP",
+          "name": "Price",
+          "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_%NAME%-UT_%yyyyMMddHHmmss%_%SEQ%.xml"
+        }
+      ]
+    },
+    {
+      "collectionName": "product",
+      "entityConfigConfiguration": {
+        "countryCode": "HK",
+        "groupMember": "HBAP"
+      },
+      "criterias": [
+        {
+          "fieldName": "prodTypeCde",
+          "operator": "in",
+          "fieldValue": "UT",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "dmyProdSubtpRecInd",
+          "operator": "nin",
+          "fieldValue": "Y",
+          "fieldType": "String"
+        }
+      ],
+      "files": [
+        {
+          "system": "SRBP",
+          "name": "UT",
+          "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_%NAME%_%yyyyMMddHHmmss%_%SEQ%.xml",
+          "properties": {
+            "version": "50"
+          }
+        }
+      ],
+      "ack": {
+        "system": "SRBP",
+        "name": "UT",
+        "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_UT_%yyyyMMddHHmm%_%SEQ%.out"
+      }
+    },
+    {
+      "collectionName": "product",
+      "entityConfigConfiguration": {
+        "countryCode": "HK",
+        "groupMember": "HBAP"
+      },
+      "criterias": [
+        {
+          "fieldName": "prodTypeCde",
+          "operator": "in",
+          "fieldValue": "UT",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "tradeElig",
+          "operator": "nin",
+          "fieldValue": "null",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "Document",
+          "operator": "parse",
+          "fieldValue": "{$or:[{\"formReqmt\":{\"$ne\":null}},{\"restrCustGroup\":{\"$ne\":null}},{\"restrCustCtry\":{\"$ne\":null}},{\"tradeElig\":{\"$ne\":null}}]}",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "dmyProdSubtpRecInd",
+          "operator": "nin",
+          "fieldValue": "Y",
+          "fieldType": "String"
+        }
+      ],
+      "files": [
+        {
+          "system": "SRBP",
+          "name": "TradingEligibility",
+          "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_%NAME%-UT_%yyyyMMddHHmmss%_%SEQ%.xml"
+        }
+      ]
+    },
+    {
+      "collectionName": "product",
+      "entityConfigConfiguration": {
+        "countryCode": "HK",
+        "groupMember": "HBAP"
+      },
+      "criterias": [
+        {
+          "fieldName": "prodTypeCde",
+          "operator": "in",
+          "fieldValue": "BOND",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "dmyProdSubtpRecInd",
+          "operator": "nin",
+          "fieldValue": "Y",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "prodStatCde",
+          "operator": "nin",
+          "fieldValue": "E,D",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "prcEffDt",
+          "operator": "nin",
+          "fieldValue": "null",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "ccyProdMktPrcCde",
+          "operator": "nin",
+          "fieldValue": "null",
+          "fieldType": "String"
+        }
+      ],
+      "files": [
+        {
+          "system": "SRBP",
+          "name": "Price",
+          "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_%NAME%-BOND_%yyyyMMddHHmmss%_%SEQ%.xml"
+        }
+      ]
+    },
+    {
+      "collectionName": "product",
+      "entityConfigConfiguration": {
+        "countryCode": "HK",
+        "groupMember": "HBAP"
+      },
+      "criterias": [
+        {
+          "fieldName": "prodTypeCde",
+          "operator": "in",
+          "fieldValue": "BOND",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "dmyProdSubtpRecInd",
+          "operator": "nin",
+          "fieldValue": "Y",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "prodStatCde",
+          "operator": "nin",
+          "fieldValue": "E,D",
+          "fieldType": "List"
+        }
+      ],
+      "files": [
+        {
+          "system": "SRBP",
+          "name": "BOND",
+          "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_%NAME%_%yyyyMMddHHmmss%_%SEQ%.xml",
+          "properties": {
+            "version": "50"
+          }
+        }
+      ],
+      "ack": {
+        "system": "SRBP",
+        "name": "BOND",
+        "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_BOND_%yyyyMMddHHmm%_%SEQ%.out"
+      }
+    },
+    {
+      "collectionName": "product",
+      "entityConfigConfiguration": {
+        "countryCode": "HK",
+        "groupMember": "HBAP"
+      },
+      "criterias": [
+        {
+          "fieldName": "prodTypeCde",
+          "operator": "in",
+          "fieldValue": "BOND",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "prodStatCde",
+          "operator": "nin",
+          "fieldValue": "E,D",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "tradeElig",
+          "operator": "nin",
+          "fieldValue": "null",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "Document",
+          "operator": "parse",
+          "fieldValue": "{$or:[{\"formReqmt\":{\"$ne\":null}},{\"restrCustGroup\":{\"$ne\":null}},{\"restrCustCtry\":{\"$ne\":null}},{\"tradeElig\":{\"$ne\":null}}]}",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "dmyProdSubtpRecInd",
+          "operator": "nin",
+          "fieldValue": "Y",
+          "fieldType": "String"
+        }
+      ],
+      "files": [
+        {
+          "system": "SRBP",
+          "name": "TradingEligibility",
+          "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_%NAME%-BOND_%yyyyMMddHHmmss%_%SEQ%.xml"
+        }
+      ]
+    },
+    {
+      "collectionName": "product",
+      "entityConfigConfiguration": {
+        "countryCode": "HK",
+        "groupMember": "HBAP"
+      },
+      "criterias": [
+        {
+          "fieldName": "prodTypeCde",
+          "operator": "in",
+          "fieldValue": "ELI",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "prodStatCde",
+          "operator": "nin",
+          "fieldValue": "E",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "dmyProdSubtpRecInd",
+          "operator": "nin",
+          "fieldValue": "Y",
+          "fieldType": "String"
+        }
+      ],
+      "files": [
+        {
+          "system": "SRBP",
+          "name": "ELI",
+          "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_%NAME%_%yyyyMMddHHmmss%_%SEQ%.xml",
+          "properties": {
+            "version": "50"
+          },
+          "excludeAttributes": [
+            "eliInstrumentSegment.eliUnderlyingStockSegments[*].prodIdUndlInstm",
+            "eliInstrumentSegment.eliUnderlyingStockSegments[*].prodInitSpotPriceAmt",
+            "eliInstrumentSegment.eliUnderlyingStockSegments[*].prodFloorPriceAmt",
+            "eliInstrumentSegment.eliUnderlyingStockSegments[*].prodBarrierPriceAmt",
+            "eliInstrumentSegment.nartTxtBoxSegment"
+          ]
+        }
+      ],
+      "ack": {
+        "system": "SRBP",
+        "name": "ELI",
+        "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_ELI_%yyyyMMddHHmm%_%SEQ%.out"
+      }
+    },
+    {
+      "collectionName": "product",
+      "entityConfigConfiguration": {
+        "countryCode": "HK",
+        "groupMember": "HBAP"
+      },
+      "criterias": [
+        {
+          "fieldName": "prodTypeCde",
+          "operator": "in",
+          "fieldValue": "ELI",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "prodStatCde",
+          "operator": "nin",
+          "fieldValue": "E",
+          "fieldType": "List"
+        },
+        {
+          "fieldName": "tradeElig",
+          "operator": "nin",
+          "fieldValue": "null",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "Document",
+          "operator": "parse",
+          "fieldValue": "{$or:[{\"formReqmt\":{\"$ne\":null}},{\"restrCustGroup\":{\"$ne\":null}},{\"restrCustCtry\":{\"$ne\":null}},{\"tradeElig\":{\"$ne\":null}}]}",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "dmyProdSubtpRecInd",
+          "operator": "nin",
+          "fieldValue": "Y",
+          "fieldType": "String"
+        }
+      ],
+      "files": [
+        {
+          "system": "SRBP",
+          "name": "TradingEligibility",
+          "filename": "/appvol/product/data/outgoing/HKHBAP/SRBP/%COUNTRY_CODE%_%GROUP_MEMBER%_%SYSTEM%_%NAME%-ELI_%yyyyMMddHHmmss%_%SEQ%.xml"
+        }
+      ]
+    }
+  ]
+}

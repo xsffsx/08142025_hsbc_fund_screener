@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+This XML holds the datasource, sessionFactory and JDBC Template related information.
+Please contact RTPConfig component owner for any changes required in this file.
+ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:decry="http://www.dummy.com/schema/esf-data-crypto-1.0.0"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	http://www.springframework.org/schema/jee  http://www.springframework.org/schema/jee/spring-jee-2.0.xsd
+	http://www.dummy.com/schema/esf-data-crypto-1.0.0 http://www.dummy.com/schema/esf-data-crypto-1.0.0/data-crypto-config.xsd"
+	xmlns:spring="http://www.springframework.org/schema/beans">	
+
+	<!-- WPC DB Configuration -->
+	<!--TODO Move DB related jobs out of adaptor -->
+	<bean id="wpcMongoDatabase" class="com.dummy.wpc.dataSource.WPCMongoDatabase" init-method="init">
+
+		<property name="mongoUrl" value="${WPCDB.url}" />
+		<property name="mongoDatabase" value="${WPCDB.database}" />
+		<property name="mongoUsername" value="${WPCDB.username}" />
+		<property name="mongoPassword" value="${WPCDB.password}" />
+	</bean>
+
+</beans>

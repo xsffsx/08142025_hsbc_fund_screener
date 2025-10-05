@@ -1,0 +1,62 @@
+com:
+  hhhh:
+    wmd:
+      itt:
+        security:
+          filter:
+            url-patterns: /wealth/api/v1/market-data/*
+            digital:
+              enable: false
+              verify-date: false
+              saml3-certificates:
+              - certificate-source: ldap
+                ldap:
+                  provider: ldap://tkeudp2datdir00-2.hk.hhhh:1389/uid=SAAS_EU01_PPROD.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=uk,dc=hhhh,dc=com
+                  username: uid=SAAS_EU01_PPROD.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=uk,dc=hhhh,dc=com
+                  password: ENC(1DVvxDq19ZQdYGIZ9gSSPOMn7BAwlbaS)
+                  timeout: 1000
+
+jasypt:
+  encryptor:
+    password: HaSe?StMaUS7RTQ,TwPnO+ct4fbt6c-TEZQw3T8q.5OSN0k=
+
+connection:
+  NON_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: false
+    proxyHostname:
+    proxyPort:
+    retryCount: 3
+    enableGzip: true
+  NON_PROD_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: wealth-shared-service-proxy.wealth-platform-hase.dev.aws.cloud.hhhh
+    proxyPort: 3128
+    retryCount: 3
+    enableGzip: false
+  HK_PRD_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: apxy1.hk.hhhh
+    proxyPort: 18084
+    retryCount: 3
+    enableGzip: false
+
+labci:
+  proxy_name: NON_PROD_PROXY
+  token-keystore:
+    DEFAULT:
+      keystore-file-path: '/keystore/labci/labci_iframe_keystore.dat'
+      keystore-password-file-path: '/keystore/labci/labci_iframe_keystore_password.dat'
+      initialisation-vector: 30,65,55,22,07,44,26,68
+  query-url: https://mkdlcu.qualityassurance.ebanking.hhhh.com.hk/hase-moveapi/query

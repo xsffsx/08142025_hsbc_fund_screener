@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62643",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:56:05.619293",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62643%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "ce1194b2-6831-44e5-a5ed-47ffc231663d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "as9civpIq8z5AhS5OfoUfMC-q8bnSUpS9d1Xx_poseXNnGeNor-9jg==",
+        "x-hsbc-request-correlation-id": "c166cc18-a7bd-48af-a42b-cb3e63261e16",
+        "date": "Wed, 13 Aug 2025 13:56:04 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "82",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 fda8cdb1c5d1bc3e2d4cabe818dc8c5e.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "548",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"DBS Group Holdings Ltd\",\"weighting\":9.88879,\"currency\":\"USD\",\"marketValue\":113111310},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sea Ltd ADR\",\"weighting\":9.59365,\"currency\":\"USD\",\"marketValue\":109735321},{\"market\":\"ID\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PT Bank Central Asia Tbk\",\"weighting\":7.87715,\"currency\":\"USD\",\"marketValue\":90101412},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United Overseas Bank Ltd\",\"weighting\":6.58964,\"currency\":\"USD\",\"marketValue\":75374498},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Oversea-Chinese Banking Corp Ltd\",\"weighting\":4.13016,\"currency\":\"USD\",\"marketValue\":47242143},{\"market\":\"ID\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PT Bank Mandiri (Persero) Tbk\",\"weighting\":3.09758,\"currency\":\"USD\",\"marketValue\":35431189},{\"market\":\"SG\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CapitaLand Integrated Commercial Trust\",\"weighting\":2.9261,\"currency\":\"USD\",\"marketValue\":33469741},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Singapore Telecommunications Ltd\",\"weighting\":2.92387,\"currency\":\"USD\",\"marketValue\":33444244},{\"market\":\"ID\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PT Bank Rakyat Indonesia (Persero) Tbk Registered Shs Series -B-\",\"weighting\":2.86913,\"currency\":\"USD\",\"marketValue\":32818028},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bangkok Dusit Medical Services PCL\",\"weighting\":2.52228,\"currency\":\"USD\",\"marketValue\":28850659}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

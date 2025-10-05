@@ -1,0 +1,50 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "UBS (Lux) Key Selection SICAV-China Allocation Opportunity(P-HKD-MD-C)",
+    "data_type": "string",
+    "example": "BlackRock World Gold Fund (Class A2)"
+  },
+  "Morningstar rating": {
+    "frontend_name": "Morningstar rating",
+    "frontend_description": "晨星评级",
+    "api_path": "rating.morningstarRating",
+    "api_value": "2",
+    "data_type": "string",
+    "example": "★★★★★"
+  },
+  "Average credit quality": {
+    "frontend_name": "Average credit quality",
+    "frontend_description": "平均信用质量",
+    "api_path": "rating.averageCreditQualityName",
+    "api_value": "B",
+    "data_type": "string",
+    "example": "B"
+  },
+  "1 year quartile ranking": {
+    "frontend_name": "1 year quartile ranking",
+    "frontend_description": "1年四分位排名",
+    "api_path": "rating.rank1Yr",
+    "api_value": 2,
+    "data_type": "number",
+    "example": "4th"
+  },
+  "3 year quartile ranking": {
+    "frontend_name": "3 year quartile ranking",
+    "frontend_description": "3年四分位排名",
+    "api_path": "rating.rank3Yr",
+    "api_value": 2,
+    "data_type": "number",
+    "example": "3rd"
+  },
+  "5 year quartile ranking": {
+    "frontend_name": "5 year quartile ranking",
+    "frontend_description": "5年四分位排名",
+    "api_path": "rating.rank5Yr",
+    "api_value": 4,
+    "data_type": "number",
+    "example": "4th"
+  }
+}

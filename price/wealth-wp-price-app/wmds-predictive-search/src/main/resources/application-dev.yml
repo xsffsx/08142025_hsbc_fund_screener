@@ -1,0 +1,21 @@
+com:
+  hhhh:
+    wmd:
+      itt:
+        security:
+          filter:
+            url-patterns: /wealth/api/v1/market-data/*
+            digital:
+              enable: true
+              verify-date: false
+              saml3-certificates:
+              - certificate-source: ldap
+                ldap:
+                  provider: ldap://tkeudp2datdir00-2.hk.hhhh:1389/uid=SAAS_EU01_PPROD.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=uk,dc=hhhh,dc=com
+                  username: uid=SAAS_EU01_PPROD.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=uk,dc=hhhh,dc=com
+                  password: ENC(1DVvxDq19ZQdYGIZ9gSSPOMn7BAwlbaS)
+                  timeout: 1000
+
+jasypt:
+  encryptor:
+    password: HaSe?StMaUS7RTQ,TwPnO+ct4fbt6c-TEZQw3T8q.5OSN0k=

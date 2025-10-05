@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<configuration>
+	<logger name="com.hhhh.group.secwealth.mktdata.starter.http_message_logger.interceptor.HttpResponseMessageAdvice" level="OFF"/>
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} Thread:%thread Severity:%-5level TraceId:%X{X-B3-TraceId:-} [MDS-SEARCH] Logger:%logger{36} Event:%msg%n</pattern>
+		</encoder>
+<!--		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">-->
+<!--			<evaluator> &lt;!&ndash; defaults to type ch.qos.logback.classic.boolex.JaninoEventEvaluator &ndash;&gt;-->
+<!--				<expression>return message.contains("discoveryClient");</expression>-->
+<!--			</evaluator>-->
+<!--			<OnMismatch>NEUTRAL</OnMismatch>-->
+<!--			<OnMatch>DENY</OnMatch>-->
+<!--		</filter>-->
+	</appender>
+
+	<root level="INFO">
+		<appender-ref ref="stdout" />
+	</root>
+</configuration>

@@ -1,0 +1,26 @@
+{
+  "_id" : "TB_PROD.ASET_CLASS_CDE",
+  "code" : "16,17,18",
+  "table" : "TB_PROD",
+  "fieldName" : "ASET_CLASS_CDE",
+  "fieldScale" : 0,
+  "fieldPrecision" : 15,
+  "fieldType" : 12,
+  "fieldTypeName" : "VARCHAR2",
+  "fieldNullable" : 1,
+  "attrName" : "asetClassCde",
+  "jsonPath" : "asetClassCde",
+  "parent" : "[ROOT]",
+  "instrument" : "ALL",
+  "classification" : "WID - WPC Internal logic to determine the field",
+  "mandatory" : "O",
+  "dataUsage" : "WPC internal logic",
+  "logicalEntityName" : "Product Asset Classification",
+  "sampleData" : "SEC = Securities for Stock and Warrant ^ DEP = Deposit for SID and DPS ^ INS = Insurance for Life Insurance and Non-Life Insurance",
+  "businessName" : "Asset Classification Code",
+  "businessDefinition" : "Denotes the asset classification 1 of the product. E.g. Securities, Deposit, Insurance.",
+  "graphQLType" : "String",
+  "calculatedBy" : {
+    "className" : "com.dummy.wmd.wpc.graphql.calc.AsetClassCdeFieldCalculator"
+  }
+}

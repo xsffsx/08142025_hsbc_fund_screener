@@ -1,0 +1,49 @@
+spring:
+  profiles:
+    active: amh_aws_sit
+  aop:
+    proxy-target-class: false
+
+management:
+##below 2 config item can't work, why?
+#  security:
+#    enabled: false
+#  context-path: /actuator
+  info:
+    git:
+      mode: simple
+  endpoint:
+    health:
+      show-details: always
+
+logbook:
+  exclude:
+  - /configuration/ui
+  - /configuration/security
+  - /v2/api-docs
+  - /swagger-resources
+  - /swagger-ui.html
+  write:
+    level: INFO
+
+#suppress ConfigClusterResolver massive logs
+logging:
+  level:
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: WARN
+
+swagger:
+  enable: false
+  resource-path-config:
+    path:
+      handler: swagger-ui.html
+      locations: classpath:/META-INF/resources/
+    resource:
+      handler: /webjars/**
+      locations: classpath:/META-INF/resources/webjars/
+  title: Elastic Search Api Documentation
+  description:
+  terms-of-service-url: http://
+  version: 1.0
+  bean-value: elastic-search
+  group-name: elastic-search
+  scan-package-path: com.hhhh.group.secwealth.mktdata.elastic.controller

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Product remodel config schema",
+  "description": "for product-remodel.yaml validation",
+  "type": "object",
+  "properties": {
+
+    "copy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "from",
+          "to"
+        ],
+        "additionalProperties": false
+      }
+    },
+
+    "delete": {
+      "description": "copy from to to",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62663",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:07:58.295841",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62663%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c99467d6-746b-4d2e-b682-de13787df87a:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "gB1e6RN_QK70s3mYX6y4RrWNu9CN5WYyByIkSiRWWiOrdYco8oXsFw==",
+        "x-hsbc-request-correlation-id": "3c8c1256-0f97-4460-8c36-89e093989835",
+        "date": "Wed, 13 Aug 2025 14:07:56 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "42",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a7a7ee092ee4b4df82064022cbdb7e94.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "502",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JPMorgan Asia Equity Dividend (GBPH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"GBPH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62664\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2664\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62664\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000151859\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YZU8\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051429\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051429\"}]},{\"productName\":\"JPMorgan Asia Equity Dividend (SGDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"SGDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62662\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2662\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62662\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000151883\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YZUB\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051427\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051427\"}]},{\"productName\":\"JPMorgan Asia Equity Dividend (CADH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CADH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62661\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2661\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62661\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000151834\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YZU6\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051426\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051426\"}]},{\"productName\":\"JPMorgan Asia Equity Dividend (NZDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"NZDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62660\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2660\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62660\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000151875\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YZUA\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051425\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051425\"}]},{\"productName\":\"JPMorgan Asia Equity Dividend (AUDH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AUDH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62659\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2659\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62659\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000151826\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YZU5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051424\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051424\"}]},{\"productName\":\"JPMorgan Asia Equity Dividend (RMBH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"RMBH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62658\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2658\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62658\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000188034\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00012EA5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051423\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051423\"}]},{\"productName\":\"JPMorgan Asia Equity Dividend (HKD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"HKD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62657\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2657\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62657\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000151867\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YZU9\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051422\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051422\"}]},{\"productName\":\"JPMorgan Asia Equity Dividend (USD-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"USD-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62656\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2656\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62656\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000151891\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000YZUC\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051421\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051421\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

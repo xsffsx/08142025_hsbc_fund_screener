@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <name>wmds-buildaggregate-online-ide</name>
+    <description></description>
+
+    <groupId>com.hhhh.group.secwealth.mktdata</groupId>
+    <artifactId>wmds-buildaggregate-online-ide</artifactId>
+    <version>${project.version}</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+        <project.version>1.0.0-SNAPSHOT</project.version>
+
+        <sonar.issue.ignore.multicriteria>e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11</sonar.issue.ignore.multicriteria>
+        <!-- Define and throw a dedicated exception instead of using a generic one. -->
+        <sonar.issue.ignore.multicriteria.e1.ruleKey>java:S112</sonar.issue.ignore.multicriteria.e1.ruleKey>
+        <sonar.issue.ignore.multicriteria.e1.resourceKey>**/*</sonar.issue.ignore.multicriteria.e1.resourceKey>
+        <!-- Remove usage of generic wildcard type. -->
+        <sonar.issue.ignore.multicriteria.e2.ruleKey>java:S1452</sonar.issue.ignore.multicriteria.e2.ruleKey>
+        <sonar.issue.ignore.multicriteria.e2.resourceKey>**/*</sonar.issue.ignore.multicriteria.e2.resourceKey>
+        <!-- Annotate this member with "@Autowired", "@Resource", "@Inject", or "@Value", or remove it. -->
+        <sonar.issue.ignore.multicriteria.e3.ruleKey>java:S3749</sonar.issue.ignore.multicriteria.e3.ruleKey>
+        <sonar.issue.ignore.multicriteria.e3.resourceKey>**/*</sonar.issue.ignore.multicriteria.e3.resourceKey>
+        <!-- Make this field final.. -->
+        <sonar.issue.ignore.multicriteria.e4.ruleKey>java:S1165</sonar.issue.ignore.multicriteria.e4.ruleKey>
+        <sonar.issue.ignore.multicriteria.e4.resourceKey>**/*</sonar.issue.ignore.multicriteria.e4.resourceKey>
+        <!-- Rename this field to match the regular expression '^[a-z][a-zA-Z0-9]*$'. -->
+        <sonar.issue.ignore.multicriteria.e5.ruleKey>java:S116</sonar.issue.ignore.multicriteria.e5.ruleKey>
+        <sonar.issue.ignore.multicriteria.e5.resourceKey>**/*</sonar.issue.ignore.multicriteria.e5.resourceKey>
+        <!-- Rename field. -->
+        <sonar.issue.ignore.multicriteria.e6.ruleKey>java:S1700</sonar.issue.ignore.multicriteria.e6.ruleKey>
+        <sonar.issue.ignore.multicriteria.e6.resourceKey>**/*</sonar.issue.ignore.multicriteria.e6.resourceKey>
+        <!-- Define a constant instead of duplicating this literal. -->
+        <sonar.issue.ignore.multicriteria.e7.ruleKey>java:S1192</sonar.issue.ignore.multicriteria.e7.ruleKey>
+        <sonar.issue.ignore.multicriteria.e7.resourceKey>**/*</sonar.issue.ignore.multicriteria.e7.resourceKey>
+        <!-- Rename this method name to match the regular expression. -->
+        <sonar.issue.ignore.multicriteria.e8.ruleKey>java:S100</sonar.issue.ignore.multicriteria.e8.ruleKey>
+        <sonar.issue.ignore.multicriteria.e8.resourceKey>**/*</sonar.issue.ignore.multicriteria.e8.resourceKey>
+        <!-- Rename method "getDoubles" to prevent any misunderstanding/clash with method. -->
+        <sonar.issue.ignore.multicriteria.e9.ruleKey>java:S1845</sonar.issue.ignore.multicriteria.e9.ruleKey>
+        <sonar.issue.ignore.multicriteria.e9.resourceKey>**/*</sonar.issue.ignore.multicriteria.e9.resourceKey>
+        <!-- Enable server certificate validation on this SSL/TLS connection. -->
+        <sonar.issue.ignore.multicriteria.e10.ruleKey>java:S4830</sonar.issue.ignore.multicriteria.e10.ruleKey>
+        <sonar.issue.ignore.multicriteria.e10.resourceKey>**/*</sonar.issue.ignore.multicriteria.e10.resourceKey>
+        <!-- XML parsers should not be vulnerable to XXE attacks. -->
+        <sonar.issue.ignore.multicriteria.e11.ruleKey>java:S2755</sonar.issue.ignore.multicriteria.e11.ruleKey>
+        <sonar.issue.ignore.multicriteria.e11.resourceKey>**/*</sonar.issue.ignore.multicriteria.e11.resourceKey>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>HASE_STMA_EQTY</id>
+            <modules>
+                <module>../cache-distribute-handler-spring-boot-starter</module>
+                <module>../parent-spring-boot-starter</module>
+                <module>../wmds-parent</module>
+                <module>../wmds-prototype</module>
+                <module>../wmds-entitlement</module>
+                <module>../wmds-equity-common</module>
+                <module>../wmds-equity-quotes</module>
+                <module>../wmds-equity-news</module>
+                <module>../wmds-equity-chart</module>
+                <module>../wmds-equity-top-mover</module>
+                <module>../wmds-equity-index-quotes</module>
+                <module>../wmds-equity</module>
+            </modules>
+        </profile>
+    </profiles>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-prod_n3p/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-snapshots_n3p/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+
+</project>

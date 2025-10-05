@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE exResponseEntitys>
+<exResponseEntitys>
+	<!-- 400 -->
+	<exResponseEntity key="InvalidRequest">
+		<entity>
+			<reasonCode>MDSEQTY40001</reasonCode>
+			<status>400</status>
+			<text>Request parameter is not standard JSON format</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="SupportSite">
+		<entity>
+			<reasonCode>MDSEQTY40002</reasonCode>
+			<status>400</status>
+			<text>Unsupported Site</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="NotEmpty">
+		<entity>
+			<reasonCode>MDSEQTY40003</reasonCode>
+			<status>400</status>
+			<text>Request parameter is mandatory and can't be empty</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="NotNull">
+		<entity>
+			<reasonCode>MDSEQTY40003</reasonCode>
+			<status>400</status>
+			<text>Request parameter is mandatory and can't be empty</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="RegEx">
+		<entity>
+			<reasonCode>MDSEQTY40004</reasonCode>
+			<status>400</status>
+			<text>Request parameter don't match the rules</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="Min">
+		<entity>
+			<reasonCode>MDSEQTY40005</reasonCode>
+			<status>400</status>
+			<text>Request parameter violate minimum constraint</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="NoAvailableServiceMatched">
+		<entity>
+			<reasonCode>MDSEQTY40006</reasonCode>
+			<status>400</status>
+			<text>No available service matched this request</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="NoDocumentIsAvailable">
+		<entity>
+			<reasonCode>MDSEQTY40007</reasonCode>
+			<status>400</status>
+			<text>No document is available</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="NoAuthorizedAccess">
+		<entity>
+			<reasonCode>MDSEQTY40008</reasonCode>
+			<status>400</status>
+			<text>No authorized access to this service</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="InputParameterInvalid">
+		<entity>
+			<reasonCode>MDSEPS00003</reasonCode>
+			<status>400</status>
+			<text>Input Parameter Invalid</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="HeaderFunctionIdInvalid">
+		<entity>
+			<reasonCode>MDSEQTY40011</reasonCode>
+			<status>400</status>
+			<text>Header FunctionId don't match the rules or can't be empty</text>
+		</entity>
+	</exResponseEntity>
+	<!-- 500 -->
+	<exResponseEntity key="Undefined">
+		<entity>
+			<reasonCode>MDSEQTY50001</reasonCode>
+			<status>400</status>
+			<text>Internal Error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="AuthenticationEncryptionFailed">
+		<entity>
+			<reasonCode>MDSEQTY50002</reasonCode>
+			<status>400</status>
+			<text>Internal Error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="AuthenticationDecryptionFailed">
+		<entity>
+			<reasonCode>MDSEQTY50003</reasonCode>
+			<status>400</status>
+			<text>Internal Error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="DBUnknownError">
+		<entity>
+			<reasonCode>MDSEDB00003</reasonCode>
+			<status>500</status>
+			<text>DB Unknown Error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="DBDataUnavailable">
+		<entity>
+			<reasonCode>MDSEQTY50005</reasonCode>
+			<status>500</status>
+			<text>DB Data Unavailable</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="IllegalConfiguration">
+		<entity>
+			<reasonCode>MDSEQTY50011</reasonCode>
+			<status>500</status>
+			<text>Internal Error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="AppIllegalConfiguration">
+		<entity>
+			<reasonCode>MDSEQTY50012</reasonCode>
+			<status>500</status>
+			<text>Internal Error</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="PredSrchIllegalConfiguration">
+		<entity>
+			<reasonCode>MDSEPS00001</reasonCode>
+			<status>500</status>
+			<text>Internal Error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="IllegalInitialization">
+		<entity>
+			<reasonCode>MDSEQTY50021</reasonCode>
+			<status>500</status>
+			<text>Internal Error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="AuthenticationIllegalInitialization">
+		<entity>
+			<reasonCode>MDSEQTY50022</reasonCode>
+			<status>500</status>
+			<text>Internal Error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="DBPersistFailed">
+		<entity>
+			<reasonCode>MDSEDB00002</reasonCode>
+			<status>500</status>
+			<text>DB Persist Failed</text>
+		</entity>
+	</exResponseEntity>
+	<!-- 504 -->
+	<exResponseEntity key="AccessVendorError">
+		<entity>
+			<reasonCode>MDSEQTY50401</reasonCode>
+			<status>500</status>
+			<text>Access vendor encounter error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="AccessPredSrchError">
+		<entity>
+			<reasonCode>MDSEPS00002</reasonCode>
+			<status>500</status>
+			<text>Can't access PredSrch service</text>
+		</entity>
+	</exResponseEntity>
+
+	<!-- 502 -->
+	<exResponseEntity key="InvalidResponse">
+		<entity>
+			<reasonCode>MDSEQTY50201</reasonCode>
+			<status>400</status>
+			<text>Vendor invalid response</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="PredSrchInvalidResponse">
+		<entity>
+			<reasonCode>MDSEPS00004</reasonCode>
+			<status>400</status>
+			<text>PredSrch invalid response</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="PredSrchEmptyResponse">
+		<entity>
+			<reasonCode>MDSEPS00005</reasonCode>
+			<status>400</status>
+			<text>PredSrch empty response</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="CacheNoEIDFound">
+		<entity>
+			<reasonCode>MDSERBP00001</reasonCode>
+			<status>500</status>
+			<text>No eID found from rbp cache</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="CacheBadRequest">
+		<entity>
+			<reasonCode>MDSERBP00002</reasonCode>
+			<status>500</status>
+			<text>Cache Distribute Bad Request</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="CacheUncachedRecord">
+		<entity>
+			<reasonCode>MDSERBP00003</reasonCode>
+			<status>500</status>
+			<text>Cache Distribute don't contains the key you sent</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="CacheInvalidHttpStatus">
+		<entity>
+			<reasonCode>MDSERBP00004</reasonCode>
+			<status>500</status>
+			<text>Get response from the Cache Distribute encounter error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="QuoteDetailOnlySupportOneProdAltNum">
+		<entity>
+			<reasonCode>MDSERBP00005</reasonCode>
+			<status>400</status>
+			<text>Quote Detail Only Support One ProdAltNum</text>
+		</entity>
+	</exResponseEntity>
+
+	<!-- etnet error -->
+	<exResponseEntity key="EtnetIllegalConfiguration">
+		<entity>
+			<reasonCode>MDSEETN00001</reasonCode>
+			<status>500</status>
+			<text>Etnet Illegal configuration</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="AccessEtnetError">
+		<entity>
+			<reasonCode>MDSEETN00002</reasonCode>
+			<status>500</status>
+			<text>Can't access Etnet service</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="EtnetInvalidResponse">
+		<entity>
+			<reasonCode>MDSEETN00003</reasonCode>
+			<status>400</status>
+			<text>Etnet invalid response</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="EtnetAuthenticationFail">
+		<entity>
+			<reasonCode>MDSEETN00004</reasonCode>
+			<status>500</status>
+			<text>ETNet authentication failed.</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="EtnetInvalidToken">
+		<entity>
+			<reasonCode>MDSEETN00005</reasonCode>
+			<status>500</status>
+			<text>ETNet request invalid token.</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="EtnetServerError">
+		<entity>
+			<reasonCode>MDSEETN00006</reasonCode>
+			<status>500</status>
+			<text>ETNet server error.</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="EtnetInvalidParam">
+		<entity>
+			<reasonCode>MDSEETN00007</reasonCode>
+			<status>400</status>
+			<text>ETNet Invalid param.</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="EtnetUndefinedError">
+		<entity>
+			<reasonCode>MDSEETN00099</reasonCode>
+			<status>400</status>
+			<text>Etnet undefined error.</text>
+		</entity>
+	</exResponseEntity>
+	<!-- etnet error -->
+
+	<!-- labci error -->
+	<exResponseEntity key="LabciIllegalConfiguration">
+		<entity>
+			<reasonCode>MDSELBC00001</reasonCode>
+			<status>500</status>
+			<text>Labci Illegal configuration</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="AccessLabciError">
+		<entity>
+			<reasonCode>MDSELBC00002</reasonCode>
+			<status>500</status>
+			<text>Can't access Labci service</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="LabciInvalidResponse">
+		<entity>
+			<reasonCode>MDSELBC00003</reasonCode>
+			<status>400</status>
+			<text>Labci invalid response</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="LabciServerError">
+		<entity>
+			<reasonCode>MDSELBC00004</reasonCode>
+			<status>500</status>
+			<text>Labci Internal server error.</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="LabciStockNotFound">
+		<entity>
+			<reasonCode>MDSELBC00005</reasonCode>
+			<status>400</status>
+			<text>Labci Stock not found.</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="LabciInvalidRequest">
+		<entity>
+			<reasonCode>MDSELBC00006</reasonCode>
+			<status>400</status>
+			<text>Labci Invalid request received.</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="LabciPortalInvalidToken">
+		<entity>
+			<reasonCode>MDSELBC00007</reasonCode>
+			<status>500</status>
+			<text>Labci Invalid Portal token received.</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="LabciPortalInvalidRequest">
+		<entity>
+			<reasonCode>MDSELBC00008</reasonCode>
+			<status>400</status>
+			<text>Labci Invalid Portal request received.</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="LabciUndefinedError">
+		<entity>
+			<reasonCode>MDSELBC00099</reasonCode>
+			<status>400</status>
+			<text>Labci undefined error.</text>
+		</entity>
+	</exResponseEntity>
+	<!-- labci error -->
+
+	<!-- tris error -->
+	<exResponseEntity key="TrisIllegalConfiguration">
+		<entity>
+			<reasonCode>MDSETRIS00001</reasonCode>
+			<status>500</status>
+			<text>Internal Error</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="AccessTrisError">
+		<entity>
+			<reasonCode>MDSETRIS00002</reasonCode>
+			<status>500</status>
+			<text>Can't access Tris service</text>
+		</entity>
+	</exResponseEntity>
+
+
+	<exResponseEntity key="TrisInvaildToken">
+		<entity>
+			<reasonCode>MDSETRIS00003</reasonCode>
+			<status>500</status>
+			<text>Tris Invaild token.</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="TrisPermissDenied">
+		<entity>
+			<reasonCode>MDSETRIS00004</reasonCode>
+			<status>400</status>
+			<text>Tris Failed to verify.</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="TrisInvaildRequest">
+		<entity>
+			<reasonCode>MDSETRIS00005</reasonCode>
+			<status>400</status>
+			<text>Tris: Invalid input.</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="TrisInvalidResponse">
+		<entity>
+			<reasonCode>MDSETRIS00006</reasonCode>
+			<status>400</status>
+			<text>Tris invalid response</text>
+		</entity>
+	</exResponseEntity>
+
+	<exResponseEntity key="TrisUndefinedError">
+		<entity>
+			<reasonCode>MDSETRIS00099</reasonCode>
+			<status>400</status>
+			<text>Tris undefined error.</text>
+		</entity>
+	</exResponseEntity>
+	<!-- tris error -->
+
+	<!-- midfs error -->
+	<exResponseEntity key="MidfsIllegalConfiguration">
+		<entity>
+			<reasonCode>MDSEMID00001</reasonCode>
+			<status>500</status>
+			<text>Midfs Illegal configuration</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="AccessMidfsError">
+		<entity>
+			<reasonCode>MDSEMID00002</reasonCode>
+			<status>500</status>
+			<text>Can't access Midfs service</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="MidfsInvalidResponse">
+		<entity>
+			<reasonCode>MDSEMID00003</reasonCode>
+			<status>400</status>
+			<text>Midfs invalid response</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="MidfsRequestProdAltNumMoreThan20">
+		<entity>
+			<reasonCode>MDSEMID00004</reasonCode>
+			<status>400</status>
+			<text>BMP Quotes Request ProdAltNum more than 20</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="MidfsInvalidRequest">
+		<entity>
+			<reasonCode>MDSEMID00005</reasonCode>
+			<status>400</status>
+			<text>Midfs Invalid request received.</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="MidfsServerError">
+		<entity>
+			<reasonCode>MDSEMID00006</reasonCode>
+			<status>500</status>
+			<text>Midfs Internal server error.</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="MidfsStockNotFound">
+		<entity>
+			<reasonCode>MDSEMID00007</reasonCode>
+			<status>400</status>
+			<text>Midfs Stock not found.</text>
+		</entity>
+	</exResponseEntity>
+	<exResponseEntity key="MidfsUndefinedError">
+		<entity>
+			<reasonCode>MDSEMID00099</reasonCode>
+			<status>400</status>
+			<text>Midfs undefined error.</text>
+		</entity>
+	</exResponseEntity>
+	<!-- midfs error -->
+	
+	<exResponseEntity key="DBActionFail">
+		<entity>
+			<reasonCode>MDSEDB00001</reasonCode>
+			<status>500</status>
+			<text>DB Action Fail.</text>
+		</entity>
+	</exResponseEntity>
+</exResponseEntitys>

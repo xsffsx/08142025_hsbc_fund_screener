@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # PostgreSQL (with pgvector extension) for HSBC Fund Screener
+  postgresql:
+    image: pgvector/pgvector:pg16
+    container_name: postgresql-hsbc-fund-screener
+    restart: unless-stopped
+
+    # Use 5433 on host to avoid conflicts with any existing 5432 mapping
+    ports:
+      - "5433:5432"
+
+    environment:
+      - POSTGRES_DB=hsbc_fund
+      - POSTGRES_USER=hsbc_user
+      - POSTGRES_PASSWORD=hsbc_pass
+      - PGDATA=/var/lib/postgresql/data/pgdata
+
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+
+    deploy:
+      resources:
+        limits:
+          memory: 1.5G
+          cpus: '0.8'
+        reservations:
+          memory: 512M
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hsbc_user -d hsbc_fund"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+    networks:
+      - hsbc-fund-network
+
+volumes:
+  postgresql_data:
+    driver: local
+
+networks:
+  hsbc-fund-network:
+    driver: bridge
+    name: hsbc-fund-screener-network
+

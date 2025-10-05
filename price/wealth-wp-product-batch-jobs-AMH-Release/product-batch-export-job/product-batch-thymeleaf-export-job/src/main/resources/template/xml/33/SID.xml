@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sidLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <sid th:each="product : ${documents}">
+        <th:block th:insert="~{COMMON::prodKeySeg}"/>
+        <th:block th:each="alt : ${product.get('altId')}" th:insert="~{COMMON::prodAltNumSeg}"/>
+        <th:block th:insert="~{COMMON::prodInfoSeg}"/>
+        <sidSeg th:with="sid=${product.get('strucInvstDepst')}">
+            <prodExtnlCde product:notNull="${sid.get('prodExtnlCde')}"/>
+            <prodExtnlTypeCde product:notNull="${sid.get('prodExtnlTypeCde')}"/>
+            <prodConvCde product:notNull="${sid.get('prodConvCde')}"/>
+            <rtrnIntrmPrevPct product:notNull="${#doubles.stripTrailingZeros(sid.get('rtrnIntrmPrevPct'))}"/>
+            <rtrnIntrmPaidPrevDt product:notNull="${#dates.format(sid.get('rtrnIntrmPaidPrevDt'), 'yyyy-MM-dd')}"/>
+            <rtrnIntrmPaidNextDt product:notNull="${#dates.format(sid.get('rtrnIntrmPaidNextDt'), 'yyyy-MM-dd')}"/>
+            <ccyLinkDepstCde product:notNull="${sid.get('ccyLinkDepstCde')}"/>
+            <mktStartDt product:notNull="${#dates.format(sid.get('mktStartDt'), 'yyyy-MM-dd')}"/>
+            <mktEndDt product:notNull="${#dates.format(sid.get('mktEndDt'), 'yyyy-MM-dd')}"/>
+            <yieldAnnlMinPct product:notNull="${#doubles.stripTrailingZeros(sid.get('yieldAnnlMinPct'))}"/>
+            <yieldAnnlPotenPct product:notNull="${#doubles.stripTrailingZeros(sid.get('yieldAnnlPotenPct'))}"/>
+            <allowEarlyRdmInd product:notNull="${sid.get('allowEarlyRdmInd')}"/>
+            <rdmEarlyDalwText product:notNull="${sid.get('rdmEarlyDalwText')}"/>
+            <rdmEarlyIndAmt product:notNull="${#doubles.stripTrailingZeros(sid.get('rdmEarlyIndAmt'))}"/>
+            <offerTypeCde product:notNull="${sid.get('offerTypeCde')}"/>
+            <custSellQtaNum product:notNull="${#objects.nullSafe(sid.get('custSellQtaNum'), 0)}"/>
+            <ruleQtaAltmtCde product:notNull="${sid.get('ruleQtaAltmtCde')}"/>
+            <bonusIntCalcTypeCde product:notNull="${sid.get('bonusIntCalcTypeCde')}"/>
+            <bonusIntDtTypeCde product:notNull="${sid.get('bonusIntDtTypeCde')}"/>
+            <cptlProtcPct product:notNull="${#doubles.stripTrailingZeros(sid.get('cptlProtcPct'))}"/>
+            <lnchProdInd product:notNull="${sid.get('lnchProdInd')}"/>
+            <rtrvProdExtnlInd product:notNull="${sid.get('rtrvProdExtnlInd')}"/>
+            <sidRtrnSeg th:each="intrmRtn : ${sid.get('intrmRtn')}">
+                <rtrnIntrmPaidDt product:notNull="${#dates.format(intrmRtn.get('rtrnIntrmPaidDt'), 'yyyy-MM-dd')}"/>
+                <rtrnIntrmPct product:notNull="${#doubles.stripTrailingZeros(intrmRtn.get('rtrnIntrmPct'))}"/>
+            </sidRtrnSeg>
+        </sidSeg>
+        <th:block th:insert="~{COMMON::recDtTmSeg}"/>
+    </sid>
+</sidLst>

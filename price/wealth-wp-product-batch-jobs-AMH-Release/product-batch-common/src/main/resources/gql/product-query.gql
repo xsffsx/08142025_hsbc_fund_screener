@@ -1,0 +1,5 @@
+query productByFilter ($filter: JSON!) {
+  productByFilter(filter: $filter, limit: 0) {
+    ${productFields}
+  }
+}

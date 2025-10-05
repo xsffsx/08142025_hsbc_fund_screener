@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Mongodb collection config",
+  "description": "for mongodb-collection-config.yaml validation",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "collection": {
+        "description": "collection name",
+        "type": "string"
+      },
+      "indexes": {
+        "description": "index configuration",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "description": "index key",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "name": {
+              "description": "index name",
+              "type": "string"
+            },
+            "order": {
+              "description": "index order",
+              "type": "integer",
+              "enum": [
+                1,
+                -1
+              ]
+            },
+            "sparse": {
+              "type": "boolean"
+            },
+            "unique": {
+              "type": "boolean"
+            },
+            "partialFilterExpression": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "key",
+            "name",
+            "order"
+          ]
+        },
+        "additionalProperties": true
+      }
+    },
+    "required": [
+      "collection",
+      "indexes"
+    ],
+    "additionalProperties": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62679",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:58.185073",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62679%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "6448f671-344d-4e86-85a6-167d541af447:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "3CMK7zbOexYd4_xitKMCtTgerVrRNPA0Q8bXE9y9j-MXGuX5ru8lNg==",
+        "x-hsbc-request-correlation-id": "07187760-b167-45c1-ad5c-581625286241",
+        "date": "Wed, 13 Aug 2025 13:29:58 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "16",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 8b4b0c13ccb29eaa324d0f091402d986.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1268",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62679\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"ME\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":1.845,\"currency\":\"CNY\",\"companyName\":\"MRF-HSBC Jintrust Large Cap Eq Sec Investment  FD(Class H DIST CASH)\",\"securityDescription\":null,\"changeAmount\":0.008,\"changePercent\":0.43549,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P000176T7\",\"tradableCurrency\":\"CNY\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MRF\",\"categoryLevel1Name\":\"Mutual Recognition of Funds\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":10.15719},{\"year\":2023,\"annualCalendarYearReturn\":-2.9406},{\"year\":2022,\"annualCalendarYearReturn\":-28.28821},{\"year\":2021,\"annualCalendarYearReturn\":-1.53768},{\"year\":2020,\"annualCalendarYearReturn\":42.4795}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":9.47677,\"dailyPerformanceNAV\":12.51372},{\"period\":\"1M\",\"trailingTotalReturn\":6.21228,\"dailyPerformanceNAV\":5.79128},{\"period\":\"3M\",\"trailingTotalReturn\":9.22366,\"dailyPerformanceNAV\":9.80182},{\"period\":\"6M\",\"trailingTotalReturn\":7.613,\"dailyPerformanceNAV\":8.42099},{\"period\":\"1Y\",\"trailingTotalReturn\":19.68798,\"dailyPerformanceNAV\":27.8232},{\"period\":\"3Y\",\"trailingTotalReturn\":0.32519,\"dailyPerformanceNAV\":0.48341},{\"period\":\"5Y\",\"trailingTotalReturn\":-0.14862,\"dailyPerformanceNAV\":0.4605},{\"period\":\"10Y\",\"trailingTotalReturn\":null,\"dailyPerformanceNAV\":null}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2015-12-29\"},\"entityUpdatedTime\":\"2025-08-13T21:29:58.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62679\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HJTLC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62679\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"CNE1000023Y2\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000176T7\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050002964\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50002964\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

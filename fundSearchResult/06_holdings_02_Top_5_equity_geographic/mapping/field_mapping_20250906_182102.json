@@ -1,0 +1,60 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "BlackRock World Gold Fund (Class A2)",
+    "data_type": "string",
+    "example": "BlackRock World Gold Fund (Class A2)"
+  },
+  "1st": {
+    "frontend_name": "1st",
+    "frontend_description": "第一大股票地理区域配置，包含地理区域名称和权重百分比",
+    "api_path": "holdings.equityRegional.regionalExposures[name=CA]",
+    "api_value": "Canada",
+    "api_value_2": "67.45%",
+    "data_type": "string",
+    "example": "Canada",
+    "example_2": "67.45%"
+  },
+  "2nd": {
+    "frontend_name": "2nd",
+    "frontend_description": "第二大股票地理区域配置，包含地理区域名称和权重百分比",
+    "api_path": "holdings.equityRegional.regionalExposures[name=US]",
+    "api_value": "United States",
+    "api_value_2": "8.95%",
+    "data_type": "string",
+    "example": "United States",
+    "example_2": "8.95%"
+  },
+  "3rd": {
+    "frontend_name": "3rd",
+    "frontend_description": "第三大股票地理区域配置，包含地理区域名称和权重百分比",
+    "api_path": "holdings.equityRegional.regionalExposures[name=AU]",
+    "api_value": "Australasia",
+    "api_value_2": "7.93%",
+    "data_type": "string",
+    "example": "Australasia",
+    "example_2": "7.93%"
+  },
+  "4th": {
+    "frontend_name": "4th",
+    "frontend_description": "第四大股票地理区域配置，包含地理区域名称和权重百分比",
+    "api_path": "holdings.equityRegional.regionalExposures[name=UK]",
+    "api_value": "United Kingdom",
+    "api_value_2": "6.12%",
+    "data_type": "string",
+    "example": "United Kingdom",
+    "example_2": "6.12%"
+  },
+  "5th": {
+    "frontend_name": "5th",
+    "frontend_description": "第五大股票地理区域配置，包含地理区域名称和权重百分比",
+    "api_path": "holdings.equityRegional.regionalExposures[name=AFRICA]",
+    "api_value": "Africa",
+    "api_value_2": "5.18%",
+    "data_type": "string",
+    "example": "Africa",
+    "example_2": "5.18%"
+  }
+}

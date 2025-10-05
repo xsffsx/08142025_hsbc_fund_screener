@@ -1,0 +1,17 @@
+# Customer Eligibility Input
+input ProductCustomerEligibilityInput {
+    _id: Long!
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    prodName: String
+    prodTypeCde: String
+    prodSubtpCde: String
+    prodAltPrimNum: String
+    tradeElig: TradeEligInput
+    restrCustGroup: [RestrCustGroupInput]
+    restrCustCtry: [RestrCustCtryInput]
+    formReqmt: [FormReqmtInput]
+    lastUpdatedBy: String
+    revision: Long
+}
+

@@ -1,0 +1,15 @@
+# noinspection GraphQLUnresolvedReference
+query productByFilter($filter: JSON!, $sort: JSON, $limit: Int, $skip: Int = 0, $projection: Boolean = true) {
+    productByFilter(filter: $filter, sort: $sort, limit: $limit, skip: $skip, projection: $projection) {
+        ctryRecCde
+        grpMembrRecCde
+        prodId
+        prodTypeCde
+        prodAltPrimNum
+        prodStatCde
+        prodName
+        prodMturDt
+        prodLnchDt
+        termRemainDayCnt
+    }
+}

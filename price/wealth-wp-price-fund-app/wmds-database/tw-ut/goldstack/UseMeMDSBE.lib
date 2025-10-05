@@ -1,0 +1,1337 @@
+### ************************************************************************************************************
+### * 
+### * Script Name: UseMeMDSBE.lib
+### * Author:      Jayshil Patel
+### * Generated:   5Jul 2016
+### * Purpose:     Library of standard common routines.
+### * 
+### ************************************************************************************************************
+### * 
+### * History     
+### * Date       Version  Modifier Modification
+### * 4Apr 2009  1.0      JPatel   Initial Version with common subroutines
+### *                               [DBExist, DBUserExist, DBTsExist, TagExist,FileExist].
+### * 
+### * 19Apr 2009 1.1      JPatel   New subroutines [LockAccess, DBInventory] added.  
+### *                              A new comment section is added depicting the description of  
+### *                              standard parameters used in this library.
+### * 
+### * 27Apr 2009 1.2      JPatel   New subroutine [ValueExist] added.
+### * 
+### * 29Apr 2009 1.3      JPatel   New subroutine [OSProcExist] added.
+### * 
+### * 11May 2009 1.4      JPatel   New subroutine [CheckAccess] added.
+### * 
+### * 19Jan 2010 1.5      JPatel   Change added to remove a bug caused by SUPERSTACK|Enter password: PROMPTs 
+### *                              during sqlplus start thru glogin.sql.
+### * 
+### * 2Feb  2010 1.6      JPatel   New subroutine [OSMountExist] added.
+### * 
+### * 20Mar 2010 1.7      JPatel   New subroutines [ASMDGExist, DataStoreExist] added.
+### *                              DBInventory enhanced to DBSrvInfo.
+### * 
+### * 8Apr  2010 1.8      JPatel   New subroutine [ DBThingExist ] added to check existence of 
+### *                              various database things. This new subroutine replaces
+### *                              other subroutines [ DBExist, DBUserExist, DBTsExist ]
+### *                              with dedicated purposes.
+### * 
+### * 11May 2010 1.9      JPatel   New subroutine [DirAccess] added.
+### * 
+### * 26May 2010 1.10     JPatel   1. Subroutine [ DBThingExist ] evolved to include additional
+### *                                 the database thing DATABASE PARAMETER.
+### *                              2. New XA related subbroutines [ IsXA, DoXA ] added.
+### * 
+### * 28Jun 2010 1.11     JPatel   1. Added a new subroutine [ Deduce_SID ]
+### *                                 to deduce ORACLE_SID based on DB_NAME. 
+### *                              2. Added Usage instructions on improper use of any subroutine.
+### *
+### * 21Sep 2010 1.12     CBoot    Subroutine [ DataStoreExist ] evolved to return outcome of calls
+### *                              from [ ASMDGExist,DirAccess ] to initial calling script
+### * 
+### *                     JPatel   Subroutine [ DirAccess ] fixed for a bug on return status.
+### *                              Old subroutine [ OSMountExist ] is retired.
+### *
+### * 15Nov 2010 1.13     JPatel   Added a new subroutine [ TNSExist ] to validate a TNS alias.
+### *
+### * 17Nov 2010 1.14     JPatel   Added a new subroutine [ AccessDB ]
+### *                              to verify a db access thru a user/pwd/tns config.
+### * 
+### * 22Jan 2011 1.15     JPatel   New subroutine [GetVerPath] added.
+### * 
+### * 06May 2011 1.16     JPatel   New subroutine [PreReqSet] added.
+### * 
+### * 12May 2011 1.17     CBoot    1. New subroutine [GetPasswd] added.
+### *                              2. Goldstack Verify function moved into goldstack_verify_function.sql
+### *                              3. New subroutine [SetGSComp] added.
+### *                              4. Added package check to DBThingExist.
+### * 
+### * 02Jun 2011 1.18     JPatel   Enhanced GetVerPath to prevent repeat Version numbers.
+### * 
+### * 10Jun 2011 1.19     JPatel   Enhanced GetVerPath to prevent wrong status of target version's
+### *                              availability in the existing package.
+### * 
+### * 10Nov 2011 1.20     JPatel   Enhanced GetVerPath to prevent wrong From-To version path in certain cases.
+### * 
+### * 17Nov 2011 1.21     JPatel   Enhanced GetVerPath due to unavailability of Create_Schema*.sql or Upgrade_Schema*.sql.
+### * 
+### * 13Jan 2012 1.22     JPatel   Enhanced GetVerPath to allow multiple independent versions.
+### * 22May 2012 1.23     HMKwok   Increase SrvInfo output to pagesize 5000
+### * 22May 2012 1.24     HMKwok   Enhanced GetVerPath to only check Create_Schema*.sql if FromVer is null
+### * 10Jul 2012 1.25     PeterL   Revised Deduce_SID function
+### * 19Feb 2013 1.26     HMKwok   Removal of DBExist checking for XA funcitons
+### * 28Nob 2013 1.27     PeterL   1. Enhance SetGSComp to accept application user with pure digital name.
+### *                              2. Rewrite GetVerPath to support complex version branch.
+### *                              3. Revise DataStoreExist to check the existence/ownership/permission of datafile directory 
+### *                                 in case filesystem.
+### *                              4. Enhance DBThingExist to include DB component checking
+### *
+### * 05Nov 2014 1.28     PeterL   1. Update function GetVerPath to support Solaris DB server.
+### *                              2. Create function CutFromToVerStr to replace sed, as it has different behavior on Solaris.
+### *
+### * 17Nov 2014 1.29     PeterL   1. Update goldstack_schema_profile and goldstack_user_profile to align to ISR standard.
+### *
+### * 09May 2016 1.30     PeterL   1. Reformat output for DBSrvInfo in 12C database.
+### * 
+### * 16May 2016 1.31     PeterL   1. Replace GOLDSTACK_SCHEMA_PROFILE and GOLDSTACK_USER_PROFILE with STANDARD_16_NORES and DOS_16_NORES per new standard.
+### *                              2. No longer create goldstack_verify_function as PASSWD_COMPLEXITY_16 will be used for STANDARD_16_NORES and DOS_16_NORES.
+### *                              3. New subroutine [TagCheck] added.
+### *                              4. Update [PreReqSet] to have second parameter SCHEMA_NAME.
+### *                              5. GRANT CREATE MATERIALIZED VIEW TO GOLDSTACK_SCHEMA_ROLE.
+### *
+### * 28Jun 2016 1.32     PeterL   1. Create new subroutine IsEmptyUser.
+### *                              2. Create new subroutine DBSrvInfoSum as performance fix to DBSrvInfo.
+### ************************************************************************************************************
+ 
+### ************************************************************************************************************
+### Standard parameters used in this library of subroutines:
+### -------------------------------------------------------
+###  1. CHECK_DB - Name of the database to check.
+###  2. CHECK_WHAT - Type of the database thing (user,role,tablespace) to check.
+###  3. CHECK_THING - Name of the database thing to check.
+###  4. TAGID - Tag Identifier of the tag to be checked, used in conjunction with TAG.
+###  5. TAG - Tag target for the subroutine call, used in conjunction with TAGID.
+###  6. CHECKFILE_TYPE - Type of the file to be checked, used in conjunction with CHECKFILE.
+###  7. CHECKFILE - Name of the file to check, used in conjunction with CHECKFILE_TYPE
+###  8. CHECK_VAR - Variable holding value to check.
+###  9. CHECK_MSG - Message displayed while checking varible contents.
+### 10. CHECK_VAL - List of values (csv format) to check variable content against.
+### 11. TEMPn - Temporary variables used to hold temporary values.
+### 12. CHECK_MNT - Name of OS mount point to check.
+### 13. CHECK_DIR - Name of OS directory to check.
+### 14. CHECK_DG - Name of ASM disk group to check.
+###
+### ************************************************************************************************************
+#define LINE_MAX 4096 
+## BEGIN function Deduce_SID -  Deduce ORACLE_SID based on input DB_NAME.
+function Deduce_SID
+{
+ 
+# Usage: Deduce_SID <DB-name>
+# returns non-zero on failure and 0 on success.
+ 
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "1" ] && (echo "Improper usage !!, Usage: Deduce_SID <DB-name>") && return 1
+
+CHECK_DB=${1}
+CHECK_SID=''
+ 
+CHECK_SID=$(ps -fu oracle | grep ora_smon_ | grep -v grep | awk '{ print substr($NF,10)" " }' | grep "^${CHECK_DB}[0-9] " | awk '{print $1}')
+CHECK_SID=${CHECK_SID:-$(ps -fu oracle | grep ora_smon_ | grep -v grep | awk '{ print substr($NF,10)" " }' | grep "^${CHECK_DB} " | awk '{print $1}')}
+ 
+[ "${CHECK_SID}" = "" ] && return 1
+echo ${CHECK_SID}
+return 0
+
+}
+## END function Deduce_SID -  Deduce ORACLE_SID based on input DB_NAME.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function DBExist - To verify existence of a database.
+function DBExist
+{
+
+# Usage: DBExist <DB-name>
+# returns non-zero on failure and 0 on success.
+ 
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "1" ] && (echo "Improper usage !!, Usage: DBExist <DB-name>") && return 1
+
+CHECK_DB=${1}
+export CHECK_DB
+
+if [ ! -s ${ORACLE_BASE}/admin/${CHECK_DB} ]; 
+then
+    echo "INFO: Database ${CHECK_DB} does not exist !"
+    return 1;
+else
+    echo "INFO: Database ${CHECK_DB} does exist #"
+    return 0;
+fi
+
+}
+## END function DBExist - To verify existence of a database.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function DBThingExist - To verify existence of various things in a database.
+function DBThingExist
+{
+ 
+# Usage: DBThingExist <DBThing-type>,<DBThing-name>,<DB-name>
+# returns non-zero on failure and 0 on success.
+ 
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "3" ] && (echo "Improper usage !!, Usage: DBThingExist <DBThing-type>,<DBThing-name>,<DB-name>") && return 1
+
+CHECK_WHAT=$(echo ${1} | awk -F"," '{print $1}' | tr '[a-z]' '[A-Z]')
+CHECK_THING=$(echo ${1} | awk -F"," '{print $2}' | tr '[a-z]' '[A-Z]')
+CHECK_DB=$(echo ${1} | awk -F"," '{print $3}')
+
+ORACLE_SID=$(Deduce_SID ${CHECK_DB})
+export CHECK_WHAT CHECK_THING CHECK_DB ORACLE_SID
+ 
+## -----(DBExist ${CHECK_DB}) && return 0
+
+case "${CHECK_WHAT}" in
+  PARAMETER)  C1=$(echo ${CHECK_THING} | awk -F":" '{print $1}');
+              C2=$(echo ${CHECK_THING} | awk -F":" '{print $2}');
+              case "${C2}" in
+                   SET?)
+              CHECK_QUERY="SELECT 1 FROM GV\$PARAMETER WHERE LOWER(NAME)=LOWER('${C1}') AND DISPLAY_VALUE IS NOT NULL";
+                        ;;
+                      *)
+              CHECK_QUERY="SELECT 1 FROM GV\$PARAMETER WHERE LOWER(NAME)=LOWER('${C1}') GROUP BY LOWER(NAME) HAVING MIN(DISPLAY_VALUE)=MAX(DISPLAY_VALUE) AND MIN(LOWER(DISPLAY_VALUE))=LOWER('${C2}')";
+                        ;;
+              esac
+           ;;
+  PACKAGE)  CHECK_QUERY="SELECT NAME FROM DBA_SOURCE WHERE NAME='${CHECK_THING}' AND TYPE='PACKAGE'";
+           ;;
+  PROFILE)  CHECK_QUERY="SELECT PROFILE FROM DBA_PROFILES WHERE PROFILE='${CHECK_THING}'";
+           ;;
+  ROLE)  CHECK_QUERY="SELECT ROLE FROM DBA_ROLES WHERE ROLE='${CHECK_THING}'";
+           ;;
+  TABLESPACE)  CHECK_QUERY="SELECT TABLESPACE_NAME FROM DBA_TABLESPACES WHERE TABLESPACE_NAME='${CHECK_THING}'";
+           ;;
+  USER)  CHECK_QUERY="SELECT USERNAME FROM DBA_USERS WHERE USERNAME='${CHECK_THING}'";
+           ;;
+  COMPONENT) CHECK_QUERY="SELECT COMP_ID FROM DBA_REGISTRY WHERE COMP_ID='${CHECK_THING}'";
+           ;;
+  *)   ( echo "INFO: UNKNOWN ${CHECK_WHAT} thing to check !!" ) && return 1
+           ;;
+esac
+
+Temp1=`
+{
+sqlplus -s <<!
+SYS AS SYSDBA
+ 
+SET FEED OFF
+${CHECK_QUERY};
+!
+} | egrep -v '^#|SUPERSTACK|Enter password:' `
+
+if [ "${Temp1}" != "" ];
+then
+   [ "${CHECK_WHAT}" = "PARAMETER" ] \
+   && (echo "INFO: ${CHECK_WHAT} ${C1} $( [ "${C2}" = "SET?" ] && (echo "is set") || (echo "is set to ${C2}")) in ${CHECK_DB} database #") \
+   || (echo "INFO: ${CHECK_WHAT} ${CHECK_THING} does exist in ${CHECK_DB} database #")
+   return 0;
+else
+   [ "${CHECK_WHAT}" = "PARAMETER" ] \
+   && (echo "INFO: ${CHECK_WHAT} ${C1} $( [ "${C2}" = "SET?" ] && (echo "is not set") || (echo "is not set to ${C2}")) in ${CHECK_DB} database !") \
+   || (echo "INFO: ${CHECK_WHAT} ${CHECK_THING} does not exist in ${CHECK_DB} database !")
+   return 1;
+fi
+ 
+}
+## END function DBThingExist - To verify existence of various things in a database.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function TagExist - To verify existence of a tagId related tag in the comments in a schema in a database.
+function TagExist
+{
+
+# Usage: TagExist <Tag-type>,<Tag-name>,<DB-schema>,<DB-name>
+# returns non-zero on failure and 0 on success.
+   
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "4" ] \
+&& (echo "Improper usage !!, Usage: TagExist <Tag-type>,<Tag-name>,<DB-schema>,<DB-name>") && return 1
+
+TAGID=`echo ${1} | awk -F"," '{print $1}'`
+TAG=`echo ${1} | awk -F"," '{print $2}'`
+CHECK_DBUSER=`echo ${1} | awk -F"," '{print $3}'`
+CHECK_DB=`echo ${1} | awk -F"," '{print $4}'`
+ORACLE_SID=$(Deduce_SID ${CHECK_DB})
+
+export TAGID TAG CHECK_DBUSER CHECK_DB ORACLE_SID
+
+Temp1=`
+{
+sqlplus -s <<!
+SYS AS SYSDBA
+ 
+SET FEED OFF
+SELECT DISTINCT 'Yes' FROM DBA_TAB_COMMENTS 
+ WHERE OWNER=UPPER('${CHECK_DBUSER}') 
+   AND NVL(COMMENTS, ' wewe ') LIKE '%[ ${TAGID}:%${TAG}%:${TAGID} ]%';
+!
+} | egrep -v '^#|SUPERSTACK|Enter password:' `
+if [ "${Temp1}" != "" ];
+then
+   echo "INFO: ${TAG} ${TAGID} tag does exist in ${CHECK_DBUSER} schema in ${CHECK_DB} database #"
+   return 0;
+else
+   echo "INFO: ${TAG} ${TAGID} tag does not exist in ${CHECK_DBUSER} schema in ${CHECK_DB} database !"
+   return 1;
+fi
+
+}
+## END function TagExist - To verify existence of a tagId related tag in the comments in a schema in a database.
+## ---------------------------------------------------------------------------------------------
+
+
+## BEGIN function TagCheck - To validate related tag in the comments in a schema in a database.
+function TagCheck
+{
+
+# Usage: TagExist <Tag-type>,<Tag-name>,<DB-schema>,<DB-name>
+# returns non-zero on failure and 0 on success.
+
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "4" ] \
+&& (echo "Improper usage !!, Usage: TagCheck <Tag-type>,<Tag-name>,<DB-schema>,<DB-name>") && return 1
+
+TAGID=`echo ${1} | awk -F"," '{print $1}'`
+TAG=`echo ${1} | awk -F"," '{print $2}'`
+CHECK_DBUSER=`echo ${1} | awk -F"," '{print $3}'`
+CHECK_DB=`echo ${1} | awk -F"," '{print $4}'`
+ORACLE_SID=$(Deduce_SID ${CHECK_DB})
+
+export TAGID TAG CHECK_DBUSER CHECK_DB ORACLE_SID
+
+TAG_LENGTH_LIMIT=2000
+Temp1=`
+{
+sqlplus -s <<!
+SYS AS SYSDBA
+SET FEED OFF HEAD OFF
+SELECT DECODE(SIGN(MAX(LENGTH(COMMENTS) - ${TAG_LENGTH_LIMIT})), 1, 'YES', 0, 'YES', -1, 'NO' ) FROM DBA_TAB_COMMENTS
+  WHERE OWNER='${CHECK_DBUSER}'
+    AND NVL(COMMENTS, ' wewe ') LIKE '%[ ${TAGID}:%${TAG}%:${TAGID} ]%';
+
+!
+} | egrep -v '^#|SUPERSTACK|Enter password:' | sed s/[[:space:]]//g | sed "/^$/d" `
+
+if [ "${Temp1}" == "NO" ];
+then
+   echo "INFO: ${TAG} ${TAGID} tag length does NOT EXCEED #"
+   return 0;
+else
+   echo "WARN: ${TAG} ${TAGID} tag length EXCEED, Archive_GS_VerTag.sh will be run automatically!"
+   return 1;
+fi
+
+
+}
+## END function TagCheck - To validate related tag in the comments in a schema in a database.
+## ---------------------------------------------------------------------------------------------
+
+
+## BEGIN function FileExist - To verify existence of a file.
+function FileExist
+{
+
+# Usage: FileExist <File-name>,<File-type>
+# returns non-zero on failure and 0 on success.
+   
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] \
+&& (echo "Improper usage !!, Usage: FileExist <File-name>,<File-type>") && return 1
+
+CHECKFILE=`echo ${1} | awk -F"," '{print $1}'`
+CHECKFILE_TYPE=`echo ${1} | awk -F"," '{print $2}'`
+
+export CHECKFILE_TYPE CHECKFILE
+
+if [ ! -f ${CHECKFILE} ];
+then
+   echo "INFO: ${CHECKFILE_TYPE} ${CHECKFILE} file does not exist !"
+   return 1;
+else
+   echo "INFO: ${CHECKFILE_TYPE} ${CHECKFILE} file does exist #"
+   return 0;
+fi
+
+}
+## END function FileExist - To verify existence of a file.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function CheckAccess - To Check if a schema is being accessed in a database.
+function CheckAccess
+{
+
+# Usage: CheckAccess <DB-schema>,<DB-name>
+# returns non-zero on failure and 0 on success.
+   
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] \
+&& (echo "Improper usage !!, Usage: CheckAccess <DB-schema>,<DB-name>") && return 1
+
+CHECK_DBSCHEMA=`echo ${1} | awk -F"," '{print $1}' | tr '[a-z]' '[A-Z]'`
+CHECK_DB=`echo ${1} | awk -F"," '{print $2}'`
+ORACLE_SID=$(Deduce_SID ${CHECK_DB})
+
+export CHECK_DBSCHEMA CHECK_DB ORACLE_SID
+
+Temp1=`
+{
+sqlplus -s <<! 
+SYS AS SYSDBA
+ 
+SET FEED OFF PAGES 0
+SELECT DISTINCT USERNAME FROM GV\\$SESSION
+ WHERE USERNAME IN 
+       ( SELECT '${CHECK_DBSCHEMA}' GRANTEE FROM DUAL
+          UNION ALL
+         SELECT DISTINCT grantee FROM dba_tab_privs WHERE owner = '${CHECK_DBSCHEMA}' 
+          UNION ALL
+         SELECT DISTINCT grantee FROM dba_role_privs 
+          WHERE granted_role IN (SELECT DISTINCT grantee FROM dba_tab_privs WHERE owner = '${CHECK_DBSCHEMA}')
+            AND grantee NOT IN ('SYS'));
+!
+} | egrep -v '^#|SUPERSTACK|Enter password:' `
+if [ "${Temp1}" != "" ];
+then
+   echo "INFO: There are live sessions from database user(s) [$(echo ${Temp1} | sed -e 's/ /,/g')]"
+   echo "INFO: with access to ${CHECK_DBSCHEMA} schema in the ${CHECK_DB} database !"
+   return 1;
+else
+   echo "INFO: There are NO live sessions from database users with access to ${CHECK_DBSCHEMA} schema in the ${CHECK_DB} database #"
+   return 0;
+fi
+
+}
+## END function CheckAccess - To Check if a schema is being accessed in a database.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function LockAccess - To Lock access to a schema in a database.
+function LockAccess
+{
+
+# Usage: LockAccess <DB-schema>,<DB-name>
+# returns non-zero on failure and 0 on success.
+   
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] \
+&& (echo "Improper usage !!, Usage: LockAccess <DB-schema>,<DB-name>") && return 1
+
+CHECK_DBSCHEMA=`echo ${1} | awk -F"," '{print $1}' | tr '[a-z]' '[A-Z]'`
+CHECK_DB=`echo ${1} | awk -F"," '{print $2}'`
+ORACLE_SID=$(Deduce_SID ${CHECK_DB})
+
+export CHECK_DBSCHEMA CHECK_DB ORACLE_SID
+
+Temp1=`
+{
+sqlplus -s <<! 
+SYS AS SYSDBA
+ 
+SET FEED OFF PAGES 0
+SELECT DISTINCT USERNAME FROM GV\\$SESSION
+ WHERE USERNAME IN 
+       ( SELECT '${CHECK_DBSCHEMA}' GRANTEE FROM DUAL
+          UNION ALL
+         SELECT DISTINCT grantee FROM dba_tab_privs WHERE owner = '${CHECK_DBSCHEMA}' 
+          UNION ALL
+         SELECT DISTINCT grantee FROM dba_role_privs 
+          WHERE granted_role IN (SELECT DISTINCT grantee FROM dba_tab_privs WHERE owner = '${CHECK_DBSCHEMA}')
+            AND grantee NOT IN ('SYS'));
+!
+} | egrep -v '^#|SUPERSTACK|Enter password:' `
+if [ "${Temp1}" != "" ];
+then
+   echo "INFO: There are live sessions from database user(s) [$(echo ${Temp1} | sed -e 's/ /,/g')]"
+   echo "INFO: with access to ${CHECK_DBSCHEMA} schema in the ${CHECK_DB} database !"
+   return 1;
+else
+   echo "INFO: There are NO live sessions from database users with access to ${CHECK_DBSCHEMA} schema in the ${CHECK_DB} database #"
+   echo "INFO: The database users with access to ${CHECK_DBSCHEMA} schema will now be locked in the ${CHECK_DB} database #"
+sqlplus -s <<!
+SYS AS SYSDBA
+
+SET SERVEROUTPUT ON
+BEGIN
+
+ FOR APPUSERS IN 
+        ( SELECT DISTINCT grantee FROM dba_tab_privs WHERE owner = '${CHECK_DBSCHEMA}' 
+          UNION ALL
+          SELECT DISTINCT grantee FROM dba_role_privs 
+           WHERE granted_role IN (SELECT DISTINCT grantee FROM dba_tab_privs WHERE owner = '${CHECK_DBSCHEMA}')
+             AND grantee NOT IN ('SYS'))
+ LOOP
+
+ BEGIN
+   EXECUTE IMMEDIATE 'ALTER USER '||APPUSERS.GRANTEE||' ACCOUNT LOCK';
+   DBMS_OUTPUT.PUT_LINE(APPUSERS.GRANTEE||' account is now locked #');
+ EXCEPTION
+   WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE(APPUSERS.GRANTEE||' account could not be locked !');
+ END;
+
+ END LOOP;
+
+END;
+/
+
+!
+   echo "INFO: The database users with access to ${CHECK_DBSCHEMA} schema are now locked in the ${CHECK_DB} database #"
+   return 0;
+fi
+
+}
+## END function LockAccess - To Lock access to a schema in a database.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function DBSrvInfo - To Report database service and version information of a schema in a database.
+function DBSrvInfo
+{
+ 
+# Usage: DBSrvInfo <DB-schema>,<DB-name>
+# returns non-zero on failure and 0 on success.
+   
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] \
+&& (echo "Improper usage !!, Usage: DBSrvInfo <DB-schema>,<DB-name>") && return 1
+
+CHECK_DBSCHEMA=`echo ${1} | awk -F"," '{print $1}' | tr '[a-z]' '[A-Z]'`
+CHECK_DB=`echo ${1} | awk -F"," '{print $2}'`
+ORACLE_SID=$(Deduce_SID ${CHECK_DB})
+
+export CHECK_DBSCHEMA CHECK_DB ORACLE_SID
+ 
+echo "Database service information for ${CHECK_DBSCHEMA} schema in ${CHECK_DB} database begin."
+echo "===================================================================================="
+sqlplus -s <<!
+SYS AS SYSDBA
+ 
+SET FEED OFF PAGES 0 LINES 3000
+SELECT 'Database Service/Create date: '||SUBSTR(COMM1,INSTR(COMM1,'{',+1,1),INSTR(COMM1,'}',-1,1)-INSTR(COMM1,'{',+1,1)+1),
+       'Version/Provision date: '||SUBSTR(COMM2,INSTR(COMM2,'{',+1,1),INSTR(COMM2,'}',-1,1)-INSTR(COMM2,'{',+1,1)+1) 
+  FROM ( SELECT DISTINCT SUBSTR(COMMENTS,INSTR(COMMENTS,'DBSvc:'),INSTR(COMMENTS,':DBSvc')-INSTR(COMMENTS,'DBSvc:')+1) COMM1,
+                SUBSTR(COMMENTS,INSTR(COMMENTS,'DBVer:'),INSTR(COMMENTS,':DBVer')-INSTR(COMMENTS,'DBVer:')+1) COMM2 
+           FROM DBA_TAB_COMMENTS WHERE OWNER=UPPER('${CHECK_DBSCHEMA}') AND TRIM(COMMENTS) IS NOT NULL 
+          ORDER BY LENGTH(COMM2) DESC)
+ WHERE ROWNUM < 2
+;
+
+SET PAGES 5000 lines 130
+SELECT TABLESPACE_NAME,SEGMENT_TYPE,COUNT(*),SUM(BYTES)
+  FROM DBA_SEGMENTS WHERE OWNER like '%'||'${CHECK_DBSCHEMA}'
+ GROUP BY TABLESPACE_NAME,SEGMENT_TYPE
+ ORDER BY TABLESPACE_NAME,SEGMENT_TYPE
+;
+
+COL OWNER FOR A25
+SELECT OWNER, OBJECT_TYPE, STATUS, COUNT(*) 
+  FROM DBA_OBJECTS WHERE OWNER like '%'||'${CHECK_DBSCHEMA}' 
+ GROUP BY OWNER, OBJECT_TYPE, STATUS
+ ORDER BY OWNER, OBJECT_TYPE, STATUS
+;
+
+!
+
+echo "===================================================================================="
+echo "Database service information for ${CHECK_DBSCHEMA} schema in ${CHECK_DB} database end."
+ 
+return 0;
+ 
+}
+## END function DBSrvInfo - To Report database service and version information of a schema in a database.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function DBSrvInfoSum - To Report database service and version information of a schema in a database.
+function DBSrvInfoSum
+{
+
+# Usage: DBSrvInfo <DB-schema>,<DB-name>
+# returns non-zero on failure and 0 on success.
+  
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] \
+&& (echo "Improper usage !!, Usage: DBSrvInfo <DB-schema>,<DB-name>") && return 1
+
+CHECK_DBSCHEMA=`echo ${1} | awk -F"," '{print $1}' | tr '[a-z]' '[A-Z]'`
+CHECK_DB=`echo ${1} | awk -F"," '{print $2}'`
+ORACLE_SID=$(Deduce_SID ${CHECK_DB})
+
+export CHECK_DBSCHEMA CHECK_DB ORACLE_SID
+
+echo "Database service information for ${CHECK_DBSCHEMA} schema in ${CHECK_DB} database begin."
+echo "===================================================================================="
+sqlplus -s <<!
+SYS AS SYSDBA
+
+SET FEED OFF PAGES 0 LINES 3000
+SELECT 'Database Service/Create date: '||SUBSTR(COMM1,INSTR(COMM1,'{',+1,1),INSTR(COMM1,'}',-1,1)-INSTR(COMM1,'{',+1,1)+1),
+       'Version/Provision date: '||SUBSTR(COMM2,INSTR(COMM2,'{',+1,1),INSTR(COMM2,'}',-1,1)-INSTR(COMM2,'{',+1,1)+1)
+  FROM ( SELECT DISTINCT SUBSTR(COMMENTS,INSTR(COMMENTS,'DBSvc:'),INSTR(COMMENTS,':DBSvc')-INSTR(COMMENTS,'DBSvc:')+1) COMM1,
+                SUBSTR(COMMENTS,INSTR(COMMENTS,'DBVer:'),INSTR(COMMENTS,':DBVer')-INSTR(COMMENTS,'DBVer:')+1) COMM2
+           FROM DBA_TAB_COMMENTS WHERE OWNER=UPPER('${CHECK_DBSCHEMA}') AND TRIM(COMMENTS) IS NOT NULL
+          ORDER BY LENGTH(COMM2) DESC)
+ WHERE ROWNUM < 2
+;
+
+SET PAGES 5000 lines 130
+SELECT TABLESPACE_NAME,SEGMENT_TYPE,COUNT(*),SUM(BYTES)
+  FROM DBA_SEGMENTS WHERE OWNER like '%'||'${CHECK_DBSCHEMA}'
+ GROUP BY TABLESPACE_NAME,SEGMENT_TYPE
+ ORDER BY TABLESPACE_NAME,SEGMENT_TYPE
+;
+
+COL OWNER FOR A25
+SELECT OWNER, OBJECT_TYPE, STATUS, COUNT(*)
+  FROM DBA_OBJECTS WHERE OWNER like '%'||'${CHECK_DBSCHEMA}'
+ GROUP BY OWNER, OBJECT_TYPE, STATUS
+ ORDER BY OWNER, OBJECT_TYPE, STATUS
+;
+
+COL TABLE_NAME FOR A30
+SELECT C.TABLE_NAME, C.COLUMNS, C.CONSTRAINTS, C.TRIGGERS, T5.INDEXES FROM
+(    
+    SELECT B.TABLE_NAME, B.COLUMNS, B.CONSTRAINTS, T4.TRIGGERS FROM
+        (
+            SELECT A.TABLE_NAME, A.COLUMNS, T3.CONSTRAINTS FROM 
+            (SELECT T1.TABLE_NAME, T2.COLUMNS
+              FROM ( SELECT TABLE_NAME FROM DBA_TABLES WHERE OWNER='${CHECK_DBSCHEMA}' ) T1,
+                   ( SELECT TABLE_NAME, COUNT(*) COLUMNS FROM DBA_TAB_COLUMNS WHERE OWNER='${CHECK_DBSCHEMA}' GROUP BY TABLE_NAME ) T2
+            WHERE T1.TABLE_NAME=T2.TABLE_NAME(+) 
+            ) A,
+        ( SELECT TABLE_NAME, COUNT(*) CONSTRAINTS FROM DBA_CONSTRAINTS WHERE OWNER='${CHECK_DBSCHEMA}' GROUP BY TABLE_NAME ) T3
+        WHERE A.TABLE_NAME=T3.TABLE_NAME(+)
+        ) B,
+    ( SELECT TABLE_NAME, COUNT(*) TRIGGERS FROM DBA_TRIGGERS WHERE TABLE_OWNER='${CHECK_DBSCHEMA}' GROUP BY TABLE_NAME ) T4
+    WHERE B.TABLE_NAME=T4.TABLE_NAME(+)
+) C,
+( SELECT TABLE_NAME, COUNT(*) INDEXES FROM DBA_INDEXES WHERE TABLE_OWNER='${CHECK_DBSCHEMA}' GROUP BY TABLE_NAME ) T5
+WHERE C.TABLE_NAME=T5.TABLE_NAME(+);
+
+!
+
+echo "===================================================================================="
+echo "Database service information for ${CHECK_DBSCHEMA} schema in ${CHECK_DB} database end."
+
+return 0;
+
+}
+## END function DBSrvInfoSum - To Report database service and version information of a schema in a database.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function ValueExist - To verify value against a list of values (csv format)
+function ValueExist
+{
+ 
+# Usage: ValueExist <Check-variable>,<Check-message> <CSV list of values>
+# returns non-zero on failure and 0 on success.
+   
+( [ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] || [ "$2" = "" ] )\
+&& (echo "Improper usage !!, Usage: ValueExist <Check-variable>,<Check-message> <CSV list of values>") && return 1
+
+CHECK_VAR=$(echo ${1} | awk -F"," '{print $1}')
+CHECK_MSG=$(echo ${1} | awk -F"," '{print $2}')
+ 
+export CHECK_VAR CHECK_MSG
+ 
+for CHECK_VAL in `echo ${2} | sed -e 's/,/ /g'`
+do
+ 
+ if [ "${CHECK_VAR}" == "${CHECK_VAL}" ];
+ then
+   echo "INFO: ${CHECK_MSG}${CHECK_VAR} exist in ${2} #"
+   return 0;
+ fi
+ 
+done
+ 
+echo "INFO: ${CHECK_MSG}${CHECK_VAR} does not exist in ${2} #"
+return 1;
+ 
+}
+## END function ValueExist - To verify value against a list of values (csv format)
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function OSProcExist - To verify existence of an OS process
+function OSProcExist
+{
+ 
+# Usage: OSProcExist <Check-procname>,<Check-procmsg>
+# returns non-zero on failure and 0 on success.
+   
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] \
+&& (echo "Improper usage !!, Usage: OSProcExist <Check-procname>,<Check-procmsg>") && return 1
+
+CHECK_VAR=$(echo ${1} | awk -F"," '{print $1}')
+CHECK_MSG=$(echo ${1} | awk -F"," '{print $2}')
+ 
+export CHECK_VAR CHECK_MSG
+
+[ "`ps -ef | grep ${CHECK_VAR} | grep -v grep`" == "" ]  \
+&& ( echo "INFO: ${CHECK_MSG} is not running !"; return 1 )  \
+|| ( echo "INFO: ${CHECK_MSG} is running #"; return 0 )
+
+}
+## END function OSProcExist - To verify existence of an OS process
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function DirAccess - To verify accessability to a directory
+function DirAccess
+{
+ 
+# Usage: DirAccess <Check-dirname>
+# returns non-zero on failure and 0 on success.
+   
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "1" ] \
+&& (echo "Improper usage !!, Usage: DirAccess <Check-dirname>") && return 1
+
+CHECK_DIR=${1}
+export CHECK_DIR
+ 
+! [ -w ${CHECK_DIR} ] \
+&& ( echo "INFO: OS Directory ${CHECK_DIR} is inaccessible !"; ) && return 1
+
+echo "INFO: OS Directory ${CHECK_DIR} is accessible #"
+return 0
+
+}
+## END function DirAccess - To verify accessability to a directory
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function ASMDGExist - To verify existence of an ASM diskgroup.
+function ASMDGExist
+{
+ 
+# Usage: ASMDGExist <DG-name>
+# returns non-zero on failure and 0 on success.
+   
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "1" ] \
+&& (echo "Improper usage !!, Usage: ASMDGExist <DG-name>") && return 1
+
+DG_NAME=$(echo ${1} | sed -e 's/^+//g')
+ORACLE_SID=$(grep ^+ASM /etc/oratab | awk -F":" '{print $1}')
+ORACLE_HOME=$(grep ^+ASM /etc/oratab | awk -F":" '{print $2}')
+ 
+export DG_NAME ORACLE_SID ORACLE_HOME
+ 
+Temp1=`
+{
+sqlplus -s <<!
+SYS AS SYSDBA
+ 
+SET FEED OFF
+SELECT NAME FROM V\\$ASM_DISKGROUP WHERE NAME=UPPER('${DG_NAME}');
+!
+} | egrep -v '^#|SUPERSTACK|Enter password:' `
+
+[ "${Temp1}" = "" ] \
+&& ( echo "INFO: ASM Diskgroup ${DG_NAME} does not exist !" ; ) && return 1
+
+echo "INFO: ASM Diskgroup ${DG_NAME} does exist #"
+return 0
+
+}
+## END function ASMDGExist - To verify existence of an ASM diskgroup.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function DataStoreExist - To verify existence of DataStore e.g. an OS mountpoint or ASM diskgroup.
+function DataStoreExist
+{
+ 
+# Usage: DataStoreExist <DB-store>
+# returns non-zero on failure and 0 on success.
+   
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "1" ] \
+&& (echo "Improper usage !!, Usage: DataStoreExist <DG-name>") && return 1
+
+CHECK_DATASTORE=${1}
+CHECK_DSIND=$(echo ${1} | cut -c1)
+export CHECK_DATASTORE CHECK_DSIND
+
+[ "${CHECK_DSIND}" != "/" ] && [ "${CHECK_DSIND}" != "+" ] \
+&& ( echo "INFO: ${CHECK_DATASTORE} does not have correct prefix '/' or '+' for respectively OS-mountpoint or ASM-diskgroup !!" ) \
+&& return 1
+
+[ "${CHECK_DSIND}" == "+" ] && (! (ASMDGExist "${CHECK_DATASTORE}")) && return 1
+
+if [ "${CHECK_DSIND}" == "/" ]; then
+[ -d ${CHECK_DATASTORE} ] \
+&& [ $(ls -ld ${CHECK_DATASTORE} | awk '{print $1}' | cut -c1-4) == "drwx" ] \
+&& [ $(ls -ld ${CHECK_DATASTORE} | awk '{print $3}') == "oracle" ] \
+&& echo "INFO: Directory ${CHECK_DATASTORE} is valid "  \
+&& return 0 || echo "Directory ${CHECK_DATASTORE} shoule be existed and owned by oracle with rwx permission to keep datafiles. " && return 1
+fi
+
+}
+## END function DataStoreExist - To verify existence of DataStore e.g. an OS mountpoint or ASM diskgroup.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function IsXA - To verify if database is enabled for XA transactions.
+function IsXA
+{
+
+# Usage: IsXA <DB-name>
+# returns non-zero on failure and 0 on success.
+ 
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "1" ] && (echo "Improper usage !!, Usage: IsXA <DB-name>") && return 1
+
+CHECK_DB=${1}
+ORACLE_SID=$(Deduce_SID ${CHECK_DB})
+
+export CHECK_DB ORACLE_SID 
+
+#! (DBExist ${CHECK_DB}) && return 1
+! (OSProcExist "ora_smon_${ORACLE_SID},Oracle database instance ${ORACLE_SID}") && return 1
+
+Temp1=`
+{
+sqlplus -s <<!
+SYS AS SYSDBA
+ 
+SET FEED OFF
+select distinct 1 from dba_source where name='JAVA_XA' and owner='SYS';
+!
+} | egrep -v '^#|SUPERSTACK|Enter password:' `
+ 
+[ "${Temp1}" != "" ] && (echo "INFO: Database ${CHECK_DB} is enabled for XA transactions #") && return 0
+
+(echo "INFO: Database ${CHECK_DB} is not enabled for XA transactions !") && return 1
+
+}
+## END function IsXA - To verify if database is enabled for XA transactions.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function DoXA - To enable or disable the database for XA transactions.
+## ---------------------------------------------------------------------------------------------
+
+function DoXA
+{
+
+# Usage: DoXA <XA-action>,<DB-name>
+# returns non-zero on failure and 0 on success.
+ 
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] && (echo "Improper usage !!, Usage: DoXA <XA-action>,<DB-name>") && return 1
+
+ACT=$(echo ${1} | awk -F"," '{ print $1 }' | tr '[a-z]' '[A-Z]')
+CHECK_DB=$(echo ${1} | awk -F"," '{ print $2 }')
+ORACLE_SID=$(Deduce_SID ${CHECK_DB})
+
+export ACT CHECK_DB ORACLE_SID
+
+! (ValueExist "${ACT},Action indicator:" "ENABLE,DISABLE") && return 1
+#! (DBExist ${CHECK_DB}) && return 1
+! (OSProcExist "ora_smon_${ORACLE_SID},Oracle database instance ${ORACLE_SID}") && return 1
+
+[ "${ACT}" == "ENABLE" ] && (! (IsXA "${CHECK_DB}") ) \
+&& (echo "INFO: Database ${CHECK_DB} will now be enabled for XA transactions ...") \
+&&
+(
+sqlplus <<!
+sys as sysdba
+ 
+startup;
+ 
+@?/javavm/install/initjvm.sql
+@?/xdk/admin/initxml.sql
+@?/xdk/admin/xmlja.sql
+@?/rdbms/admin/catjava.sql
+@?/javavm/install/initxa.sql
+ 
+@?/rdbms/admin/utlrp.sql;
+ 
+!
+) && (echo "INFO: Database ${CHECK_DB} is now enabled for XA transactions ...")
+
+[ "${ACT}" == "DISABLE" ] && (IsXA "${CHECK_DB}") \
+&& (echo "INFO: Database ${CHECK_DB} will now be disbled for XA transactions ...") \
+&&
+(
+
+sqlplus <<!
+sys as sysdba
+ 
+startup;
+ 
+@?/rdbms/admin/rmaqjms.sql 
+@?/rdbms/admin/rmcdc.sql 
+@?/xdk/admin/rmxml.sql 
+@?/javavm/install/rmjvm.sql 
+truncate table java\$jvm\$status; 
+select * from obj\$ where obj#=0 and type#=0; 
+delete from obj\$ where obj#=0 and type#=0; 
+commit; 
+
+shutdown immediate 
+ 
+exit 
+!
+ 
+sqlplus <<!
+sys as sysdba
+startup
+!
+
+) && (echo "INFO: Database ${CHECK_DB} is now disabled for XA transactions ...")
+
+return 0;
+}
+
+## END function DoXA - To enable or disable the database for XA transactions.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function GetVerPath - To get available version path for target version in package.
+## ---------------------------------------------------------------------------------------------
+function GetNextVer
+{
+# Usage: GetNextVer <DBSer> <CurVer>
+# returns next version string
+
+DBSer=${1}
+CurVer=${2}
+set -A NextVers $(ls -1 Upgrade_Schema_${DBSer}*.sql 2>/dev/null | cut -d"." -f1 | awk -F"_" '{print "<"$4">"$5}' | sort -u | grep "<${CurVer}>" | cut -d">" -f2)
+
+echo "Next versions to $CurVer:${NextVers[*]}"
+
+}  
+
+
+function CutFromToVerStr
+{
+# Usage: CutFromToVerStr <Version Path> <FromVersion> <ToVersion>
+# returns the FromToVersion string
+# e.g.  CutFromToVerStr 1-0-0>2-0-0>3-0-0>4-0-0>5-0-0 2-0-0 4-0-0
+#           returns string 2-0-0>3-0-0>4-0-0
+# if <FromVersion>="firstVersion", it make the firstVersion as <FromVersion>
+# This function was introduced for the compatible in Solaris
+
+VersPath=${1}
+FromVers=${2}
+ToVers=${3}
+
+set -A verArray $(echo "$VersPath" | sed -e "s/>/\ /g")
+
+v_return=""
+add_flag="no"
+for my_tmp in ${verArray[*]}
+do
+     if [ $FromVers == $my_tmp -o $FromVers == "firstVersion" ];then
+         add_flag="yes"
+     fi
+
+     if [ $add_flag == "yes" ];then
+         v_return=$v_return">"$my_tmp
+     fi
+
+     if [ $my_tmp == $ToVers ];then
+         break;
+     fi
+done
+
+if [ $ToVers != $(echo $v_return | sed "s/.*>//g") ];then
+     echo "Error: <ToVersion> $ToVers was not found in Version Path: $VersPath"
+     exit 1
+fi
+
+# remove the first ">"
+echo $(echo $v_return | sed "s/^>/ /g")
+
+}
+
+
+function GetVerPath
+{
+
+# Usage: GetVerPath <DBSer>[ <ToVer>][ <FromVer>]
+# returns non-zero on failure and 0 on success.
+
+[ "${1}" = "" ] \
+&& (echo "Improper usage !!, Usage: GetVerPath <DBSer>[ <ToVer>][ <FromVer>]") && return 1
+
+DBSer=${1}
+FromVer=${3}
+ToVer=${2}
+
+#--- Generate all version path begin
+# Get a initial version list then put into version path array
+set -A verPathArray $(ls -1 Create_Schema_${DBSer}*.sql | cut -d"." -f1 | sed -e "s/${DBSer}//g" | cut -d"_" -f3 | sort -u)
+
+# Let the version path grow until stop. After that all possible path will be stored in verPathArray
+# verPathGrowCnt=0 means the version path does not grow
+verPathGrowCnt=1
+while [ $verPathGrowCnt -gt 0 ]
+do 
+    verPathGrowCnt=0
+
+    my_i=-1
+    for my_tmp in ${verPathArray[*]}
+    do
+        let "my_i = my_i + 1"
+        # Get the version path tail then find next version
+        pathTail=$(echo "${verPathArray[$my_i]}" | awk -F">" '{print $NF}')
+        nextVer=$(GetNextVer $DBSer $pathTail | grep "^Next versions to" | cut -d":" -f2)
+
+        # How many branchs of next version
+        nextVerCnt=$(echo $nextVer | awk -F" " '{print NF}')
+        (( verPathGrowCnt=$verPathGrowCnt+$nextVerCnt ))
+
+        ### [ $nextVerCnt -eq 0 ] && echo "Version Path:${verPathArray[$my_i]}"
+
+        # If there are branchs then add them to verPathArray as new path, else add next version to current path tail.
+        while [ $nextVerCnt -gt 1 ]
+        do
+                set -A verPathArray ${verPathArray[*]} "${verPathArray[$my_i]}>$(echo ${nextVer} | cut -d" " -f$nextVerCnt)"
+                ((nextVerCnt=$nextVerCnt-1))
+        done
+
+        [ $nextVerCnt -eq 1 ] && verPathArray[$my_i]="${verPathArray[$my_i]}>$(echo ${nextVer} | cut -d" " -f$nextVerCnt)"
+
+    done
+
+done
+
+# Give out the version path list if only DBService was gave
+if [ ${ToVer}suffix = ""suffix -a ${FromVer}suffix = ""suffix ];then
+    for verPath in ${verPathArray[*]}
+    do
+        echo "Version Path:$verPath"
+    done
+    return 0
+fi
+#--- Generate all version path end
+
+#--- Compute From-To Version Path begin
+[ ${ToVer}suffix = ""suffix ] && return 0
+
+# The number of availabe path be found
+found=0
+# if there are multiple path available then choose the shortest one
+FromToPath=""
+shortestSteps=99999
+
+my_j=-1
+for mytmp in ${verPathArray[*]}
+do
+    let "my_j = my_j + 1"
+
+    # if available path found, calculate the steps and choose the shortest one
+    if [ ${FromVer}suffix = ""suffix ];then
+        if [ $(echo "${verPathArray[$my_j]}" | grep "$ToVer" | wc -l) -gt 0 ];then
+            ((found=$found+1))
+
+            ## tmpFromToPath=$(echo "${verPathArray[$my_j]}" | sed "s/\(.*${ToVer}\)\(>\|$\).*/\1/g")
+            tmpFromToPath=$(CutFromToVerStr ${verPathArray[$my_j]} "firstVersion" ${ToVer})
+
+            steps=$(echo "${tmpFromToPath}" |awk -F">" '{print NF}')
+
+            [ $steps -lt $shortestSteps ] && shortestSteps=$steps && FromToPath=$tmpFromToPath
+
+         fi
+    else
+        if [ $(echo "${verPathArray[$my_j]}" | grep "$ToVer" | grep "$FromVer" | wc -l) -gt 0 ];then
+            ((found=$found+1))
+
+            ## tmpFromToPath=$(echo "${verPathArray[$my_j]}" | sed "s/.*\(${FromVer}>.*${ToVer}\)\(>\|$\).*/\1/g")
+            tmpFromToPath=$(CutFromToVerStr ${verPathArray[$my_j]} ${FromVer} ${ToVer})
+
+            steps=$(echo "${tmpFromToPath}" |awk -F">" '{print NF}')
+
+            [ $steps -lt $shortestSteps ] && shortestSteps=$steps && FromToPath=$tmpFromToPath
+
+         fi
+    fi
+
+done
+
+
+if [ $found -ge 1 ];then
+    if [ ${FromVer}suffix != ""suffix ];then
+        echo "Version Path is available from ${FromVer} to ${ToVer} "
+    else
+        echo "Version Path is available to ${ToVer} "
+    fi
+    echo "INFO: From to version path: $FromToPath" && return 0
+else
+    if [ ${FromVer}suffix != ""suffix ];then
+        echo "Version Path is NOT available from ${FromVer} to ${ToVer} "
+        return 1
+    else
+        echo "Version Path is NOT available to ${ToVer} "
+        return 1
+    fi
+fi
+#--- Calculate From-To Version Path end
+
+}
+
+## END function GetVerPath - To get available version path for target version in package.
+
+## BEGIN function PreReqSet - Check and Set the GOLDSTACK database specific things in target database
+function PreReqSet
+{
+# Usage: PreReqSet <DB-name> <DB-schema>
+# returns non-zero on failure and 0 on success.
+ 
+DB_NAME=${1}
+ORACLE_SID=$(Deduce_SID ${DB_NAME})
+SCHEMA_NAME=$( echo ${2} | tr [a-z] [A-Z] )
+
+# 1. Goldstack specific Password Verify_function
+echo "INFO: Please make sure necessary password verify function PASSWD_COMPLEXITY_16 was created in database."
+echo "INFO: Please make sure necessary profile STANDARD_16_NORES and DOS_16_NORES were created in database."
+
+
+# 2. Goldstack specific database Profile
+## STANDARD_16_NORES profile is for schema
+! (DBThingExist "PROFILE,STANDARD_16_NORES,${DB_NAME}") \
+&& (echo "FAIL: Necessary STANDARD_16_NORES database profile does not exist in database, please create it first ...") \
+&& return 1
+
+## DOS_16_NORES is for application user
+! (DBThingExist "PROFILE,DOS_16_NORES,${DB_NAME}") \
+&& (echo "FAIL: Necessary DOS_16_NORES database profile does not exist in database, please create it first ...") \
+&& return 1
+
+# 3. Goldstack specific database roles
+
+! (DBThingExist "ROLE,GOLDSTACK_SCHEMA_ROLE,${DB_NAME}") \
+&& (echo "INFO: Necessary GOLDSTACK_SCHEMA_ROLE database role will be created ...") \
+&& (
+sqlplus  <<!
+sys as sysdba
+CREATE ROLE GOLDSTACK_SCHEMA_ROLE;
+!
+)
+
+sqlplus  <<!
+sys as sysdba
+GRANT CREATE JOB TO GOLDSTACK_SCHEMA_ROLE; 
+GRANT CREATE PROCEDURE TO GOLDSTACK_SCHEMA_ROLE;
+GRANT CREATE SEQUENCE TO GOLDSTACK_SCHEMA_ROLE;
+GRANT CREATE SYNONYM TO GOLDSTACK_SCHEMA_ROLE;
+GRANT CREATE SESSION TO GOLDSTACK_SCHEMA_ROLE;
+GRANT CREATE TABLE TO GOLDSTACK_SCHEMA_ROLE;
+GRANT CREATE TRIGGER TO GOLDSTACK_SCHEMA_ROLE;
+GRANT CREATE VIEW TO GOLDSTACK_SCHEMA_ROLE;
+GRANT CREATE MATERIALIZED VIEW TO GOLDSTACK_SCHEMA_ROLE;
+GRANT CREATE TYPE TO GOLDSTACK_SCHEMA_ROLE;
+GRANT CREATE CLUSTER TO GOLDSTACK_SCHEMA_ROLE;
+!
+
+! (DBThingExist "ROLE,GOLDSTACK_USER_ROLE,${DB_NAME}") \
+&& (echo "INFO: Necessary GOLDSTACK_USER_ROLE database role will be created ...") \
+&& (
+sqlplus  <<!
+sys as sysdba
+CREATE ROLE GOLDSTACK_USER_ROLE;
+!
+)
+
+## 
+(DBThingExist "USER,${SCHEMA_NAME},${DB_NAME}") \
+&& (
+sqlplus  <<!
+sys as sysdba
+GRANT CREATE TABLE TO ${SCHEMA_NAME};
+!
+)
+
+sqlplus  <<!
+sys as sysdba
+GRANT CREATE SESSION TO GOLDSTACK_USER_ROLE;
+!
+
+return 0
+
+}
+## END function PreReqSet - Check and Set the GOLDSTACK database specific things in target database
+## ---------------------------------------------------------------------------------------------
+
+##  BEGIN function GetPasswd - Get new GOLDSTACK database specific password
+function GetPasswd
+{
+# Usage: GetPasswd <DB-schema,DB-name>
+# returns non-zero on failure and 0 on success.
+ 
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] && (echo "Improper usage !!, Usage: GetPasswd <DB-schema,DB-name>") && return 1
+
+EOwner=$(echo ${1} | awk -F"," '{ print $1 }')
+DB_NAME=$(echo ${1} | awk -F"," '{ print $2 }')
+ORACLE_SID=$(Deduce_SID ${DB_NAME})
+
+
+EOwner=${1}
+Temp1=`
+{
+sqlplus -s <<!
+sys as sysdba
+DEFINE EPasswd='no_value'
+set verify off head off
+ 
+SELECT (
+SELECT RPAD (upper(SUBSTR('$EOwner',1,1)) || lower(SUBSTR('$EOwner',2)) || '.123', 8, '0')
+FROM DUAL
+WHERE LENGTH (upper(SUBSTR('$EOwner',1,1)) || lower(SUBSTR('$EOwner',2)) || '.123') < 8
+UNION ALL
+SELECT upper(SUBSTR('$EOwner',1,1)) || lower(SUBSTR('$EOwner',2)) || '.123'
+FROM DUAL
+WHERE LENGTH (upper(SUBSTR('$EOwner',1,1)) || lower(SUBSTR('$EOwner',2)) || '.123') >= 8
+) EPasswd
+FROM DUAL;
+!
+ 
+} | egrep -v '^#|SUPERSTACK|Enter password:' `
+ 
+echo $Temp1
+}
+## END function GetPasswd - Get new GOLDSTACK database specific password
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function SetGSComp - Retrospectively set the GOLDSTACK database components
+function SetGSComp
+{
+
+SET_WHAT=$(echo ${1} | awk -F"," '{print $1}' | tr '[a-z]' '[A-Z]')
+SET_THING=$(echo ${1} | awk -F"," '{print $2}' | tr '[a-z]' '[A-Z]')
+
+case "${SET_THING}" in
+  STANDARD_16_NORES)  SET_DDL="ALTER USER \"${SET_WHAT}\" profile STANDARD_16_NORES;"
+           ;;
+  DOS_16_NORES)  SET_DDL="ALTER USER \"${SET_WHAT}\" profile DOS_16_NORES;"
+           ;;
+  *)   ( echo "INFO: UNKNOWN ${SET_WHAT} thing to set !!" ) && return 1
+           ;;
+esac
+
+sqlplus -s<<! >/dev/null 2>&1
+sys as sysdba
+whenever sqlerror exit 1
+set feed off
+${SET_DDL}
+!
+
+if [ $? -eq 0 ];
+then
+   echo "INFO: ${SET_WHAT} has had ${SET_THING} set #"
+   return 0;
+else
+   echo "INFO: Setting ${SET_THING} with ${SET_WHAT} was unsuccessful #"
+   return 1;
+fi
+
+}
+## END function SetGSComp - Retrospectively set the GOLDSTACK database components
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function TNSExist - To validate a TNS alias.
+function TNSExist
+{
+ 
+# Usage: TNSExist <TNS-name>,<TNS-info>
+# returns non-zero on failure and 0 on success.
+ 
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "2" ] && (echo "Improper usage !!, Usage: TNSExist <TNS-name>,<TNS-info>") && return 1
+ 
+TNS_NAME=$(echo ${1} | awk -F"," '{print $1}')
+TNS_INFO=$(echo ${1} | awk -F"," '{print $2}')
+export TNS_NAME TNS_INFO
+ 
+if (tnsping ${TNS_NAME} 1>/dev/null 2>/dev/null)
+then
+    echo "${TNS_INFO} ${TNS_NAME} is valid #"
+    return 0;
+else
+    echo "${TNS_INFO} ${TNS_NAME} is not valid !"
+    return 1;
+fi
+}
+## END function TNSExist - To validate a TNS alias.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function AccessDB - To verify a db access thru a user/pwd/tns config.
+function AccessDB
+{
+ 
+# Usage: AccessDB <DB-user,DB-pwd,TNS-name>
+# returns non-zero on failure and 0 on success.
+ 
+[ "$(echo ${1} | awk -F"," '{print NF}')" != "3" ] \
+&& (echo "Improper usage !!, Usage: AccessDB <DB-user,DB-pwd,TNS-name>") && return 1
+ 
+DBUSER_NAME=$(echo ${1} | cut -d"," -f1)
+DBUSER_PWD=$(echo ${1} | cut -d"," -f2)
+TNS_NAME=$(echo ${1} | cut -d"," -f3)
+ 
+Temp1=`
+{
+sqlplus -s <<!
+${DBUSER_NAME}/"${DBUSER_PWD}"@${TNS_NAME}
+ 
+SET FEED OFF PAGES 0
+SELECT '${DBUSER_NAME}' from dual;
+!
+} | egrep -v '^#|SUPERSTACK' `
+ 
+[ "$(echo ${Temp1} | grep ${DBUSER_NAME})" = "" ] \
+&& ( echo "${DBUSER_NAME} is not accessible on ${TNS_NAME} !" ) && return 1
+ 
+echo "${DBUSER_NAME} is accessible on ${TNS_NAME} #"
+return 0
+ 
+}
+## END function AccessDB - To verify a db access thru a user/pwd/tns config.
+## ---------------------------------------------------------------------------------------------
+
+## BEGIN function IsEmptyUser - To verify user is empty.
+function IsEmptyUser
+{
+# Usage: IsEmptyUser <DB-user,DB-name>
+# returns 0 on empty and non-zero on non-empty.
+
+DBUSER_NAME=$(echo ${1} | cut -d"," -f1)
+DB_NAME=$(echo ${1} | cut -d"," -f2)
+ORACLE_SID=$(Deduce_SID ${DB_NAME})
+
+export ORACLE_SID
+
+Temp1=`
+{
+sqlplus -s <<!
+SYS AS SYSDBA
+set verify off head off feedback off
+
+SET SERVEROUTPUT ON
+DECLARE
+        RECORD  NUMBER(10);
+        RECORDS NUMBER(10);
+BEGIN
+        RECORD  := 0;
+        RECORDS := 0;
+        SELECT COUNT(1) INTO RECORD FROM USER_ROLE_PRIVS WHERE USERNAME ='${DBUSER_NAME}';
+            RECORDS := RECORD + RECORDS;
+        SELECT COUNT(1) INTO RECORD FROM DBA_SYS_PRIVS WHERE GRANTEE='${DBUSER_NAME}' AND PRIVILEGE <> 'CREATE TABLE';
+                    RECORDS := RECORD + RECORDS;
+        SELECT COUNT(1) INTO RECORD FROM DBA_TAB_PRIVS WHERE GRANTEE='${DBUSER_NAME}';
+                    RECORDS := RECORD + RECORDS;
+        SELECT COUNT(1) INTO RECORD FROM DBA_OBJECTS WHERE OWNER='${DBUSER_NAME}';
+                    RECORDS := RECORD + RECORDS;
+        DBMS_OUTPUT.PUT_LINE(RECORDS);
+END;
+/
+
+!
+} | egrep -v '^#|SUPERSTACK|Enter password:' `
+
+
+if [ ${Temp1} -gt 0 ];
+then
+   echo "INFO: USER ${DBUSER_NAME} is NOT empty. Additional objects or privileges found !"
+   return 1;
+else
+   echo "INFO: USER ${DBUSER_NAME} is empty before fresh provision #"
+   return 0;
+fi
+
+
+}
+## END function IsEmptyUser - To verify user is empty.
+## ---------------------------------------------------------------------------------------------
+
+
+

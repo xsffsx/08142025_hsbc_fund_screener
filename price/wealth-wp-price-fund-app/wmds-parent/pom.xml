@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <name>wmds-parent</name>
+    <description>HBAP Market Data Parent POM</description>
+
+    <groupId>com.hhhh.group.secwealth.mktdata</groupId>
+    <artifactId>wmds-parent-amh</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <compileSource>1.8</compileSource>
+        <testCompileSource>1.8</testCompileSource>
+        <targetJdk>1.8</targetJdk>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+        <project.version>1.0.0-SNAPSHOT</project.version>
+        <sonar.coverage.exclusions>
+            **/dto/**,
+            **/dao/pojo/**,
+            **/filter/**,
+            **/validator/**,
+            **/http_client_manager/**,
+            **/configuration/**,
+            **/util/**,
+            **/crypto/**,
+            **/webservice/**,
+            **/mktdata/fund/dao/common/FundCommonDao.java,
+            **/mktdata/fund/beans/mstar/quotesummary/newapi/DataSet.java,
+            **/common/svc/**,
+            **/mktdata/fund/AbstractMstarService.java
+        </sonar.coverage.exclusions>
+        <sonar.cpd.exclusions>
+            **/dao/pojo/**,
+            **/beans/**,
+            **/common/**
+        </sonar.cpd.exclusions>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>releaseVersion</id>
+            <properties>
+                <project.version>1.0.0-RELEASE-${timestamp}</project.version>
+            </properties>
+        </profile>
+    </profiles>
+
+	<dependencyManagement>
+		<dependencies>
+	        <dependency>
+	            <groupId>com.hhhh.wealth</groupId>
+	            <artifactId>wealth-feature-toggles-starter</artifactId>
+	            <version>3.0.0</version>
+	        </dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+    <build>
+        <pluginManagement>
+        <plugins>
+            <!-- JDK5 compiler support -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <compilerVersion>1.8</compilerVersion>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.2</version>
+                    <configuration>
+     <!--                   <includes>
+                            <includes>com/**/*Test.java</includes>
+                        </includes> -->
+                        <testFailureIgnore>true</testFailureIgnore>
+                    </configuration>
+                </plugin>
+               <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <configuration>
+                    <destFile>${project.build.directory}/target/jacoco.exec</destFile>
+                    <dataFile>${project.build.directory}/target/jacoco.exec</dataFile>
+               <excludes>
+                   <exclude>**/controller/**</exclude>
+                <!--   <exclude>**/criteria/**</exclude> -->
+                   <exclude>**/webservice/**</exclude>
+                   <exclude>**/util/**</exclude>
+                   <exclude>**/constants/**</exclude>
+                   <exclude>**/svc/**</exclude>
+               </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>prepare-unit-test-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <!-- prepare agent for measuring integration tests -->
+                    <execution>
+                        <id>prepare-integration-tests</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <phase>pre-integration-test</phase>
+                        <configuration>
+                            <propertyName>itCoverageAgent</propertyName>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>jacoco-site</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>prepare-it-test-agent</id>
+                        <configuration>
+                            <propertyName>jacoco.agent.argLine</propertyName>
+                            <append>true</append>
+                        </configuration>
+                        <goals>
+                            <goal>prepare-agent-integration</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jacoco-site-it</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report-integration</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report-aggregate</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report-aggregate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.hhhh.wealth</groupId>
+                <artifactId>wealth-swagger-maven-plugin</artifactId>
+                <version>1.0.3</version>
+                <configuration>
+                    <pluginConfiguration>
+                        <uploadSchemasConfiguration>
+                            <isUploadToGitRepository>${isUploadToGitRepository}</isUploadToGitRepository>
+                            <gitRepositoryUrl>
+                                https://alm-github.systems.uk.hhhh/RBWM-Wealth-Engineering-IT/wealth-wp-api-reference-schemas.git
+                            </gitRepositoryUrl>
+                            <userName>${gitUserName}</userName>
+                            <passWord>${gitPassWord}</passWord>
+                        </uploadSchemasConfiguration>
+                        <locations>
+                            <location>com.hhhh.group.secwealth.mktdata.common.controller</location>
+                        </locations>
+                        <serviceLine>RBWM WEALTH MANAGEMENT IT</serviceLine>
+                        <teamName>market data Service</teamName>
+                        <teamEmailAddress>mdscore@noexternalmail.hhhh.com</teamEmailAddress>
+                        <assetName>wealth-wp-price-ut-hk</assetName>
+                        <GBGF>RBWM</GBGF>
+                        <title>MDS UT API DOC</title>
+                        <purpose>To consolidate the experience for customers in uploading and downloading and viewing
+                            documents.
+                            To provide a holistic experience that serve the whole document related experience.
+                        </purpose>
+                        <documentation>mds Common API DOC</documentation>
+                        <security>End to End Trust Token (SAML/SAML3) based authentication and authorization.</security>
+                    </pluginConfiguration>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+
+            <!--		  <plugin>-->
+            <!--				<groupId>org.apache.maven.plugins</groupId>-->
+            <!--				<artifactId>maven-surefire-plugin</artifactId>-->
+            <!--				<version>2.4.2</version>-->
+            <!--				<configuration>-->
+            <!--					<skipTests>true</skipTests>-->
+            <!--				</configuration>-->
+            <!--			</plugin>-->
+        </plugins>
+        </pluginManagement>
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>
+                        ${settings.localRepository}/com/hhhh/esf/com.hhhh.es.checkstyle.fragment.maven/${es-checkstyle-version}/com.hhhh.es.checkstyle.fragment.maven-${es-checkstyle-version}-es-checks.xml
+                    </configLocation>
+                    <packageNamesLocation>
+                        ${settings.localRepository}/com/hhhh/esf/com.hhhh.es.checkstyle.fragment.maven/${es-checkstyle-version}/com.hhhh.es.checkstyle.fragment.maven-${es-checkstyle-version}-checkstyle_packages.xml
+                    </packageNamesLocation>
+                    <headerLocation>
+                        ${settings.localRepository}/com/hhhh/esf/com.hhhh.es.checkstyle.fragment.maven/${es-checkstyle-version}/com.hhhh.es.checkstyle.fragment.maven-${es-checkstyle-version}-LICENSE.txt
+                    </headerLocation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <!--	<distributionManagement>-->
+    <!--		<repository>-->
+    <!--			<id>dsnexus</id>-->
+    <!--			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/releases</url>-->
+    <!--			<layout>default</layout>-->
+    <!--		</repository>-->
+    <!--		<snapshotRepository>-->
+    <!--			<id>dsnexus-snapshots</id>-->
+    <!--			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/snapshots</url>-->
+    <!--			<layout>default</layout>-->
+    <!--			<uniqueVersion>false</uniqueVersion>-->
+    <!--		</snapshotRepository>-->
+    <!--	</distributionManagement>-->
+
+    <distributionManagement>
+        <repository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-prod_n3p/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus306</id>
+            <url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-snapshots_n3p/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <modules>
+        <module>../wmds-common</module>
+        <module>../wmds-online-config</module>
+        <module>../wmds-fund</module>
+        <module>../wmds-quote</module>
+        <module>../wmds-fund-app</module>
+    </modules>
+</project>

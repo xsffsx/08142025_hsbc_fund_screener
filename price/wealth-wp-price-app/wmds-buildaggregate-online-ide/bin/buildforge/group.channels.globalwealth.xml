@@ -1,0 +1,31 @@
+<settings>
+    <servers>
+        <server>
+            <id>mavencentral</id>
+            <!-- check with build forge team in future -->
+            <username>bldfge</username>
+            <password>{/6zE/P8cqXAH1A4yjyj2TgXfIEMvtWj4Y/NmXlJ+OAY=}</password>
+        </server>
+    </servers>
+    <!-- this settings will be used by build forge and it will merged with global settings -->
+    <profiles>
+        <profile>
+            <id>rbp-custom-profile</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>mavencentral</id>
+                    <url>https://dsnexus.uk.hibm.hhhh:8081/nexus/service/local/repositories/mavencentral/content/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+</settings>

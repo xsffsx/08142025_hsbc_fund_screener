@@ -1,0 +1,110 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "TRIS",
+  "path": "/appvol/product-spring-batch-sit/data/outgoing/SGHBSP/TRIS/",
+  "version": 30,
+  "tasks": [
+    {
+      "files": [
+        {
+          "name": "UT XML",
+          "templateName": "/xml/30/UT.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_TRIS_UT_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "UT",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$ne": "D"
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "PRODPRC XML",
+          "templateName": "/xml/PRODPRC.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_${systemCde}_Price-UT_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "UT",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$ne": "D"
+        },
+        "prcEffDt": {
+          "$ne": null
+        },
+        "ccyProdMktPrcCde": {
+          "$ne": null
+        },
+        "$or": [
+          {
+            "prodBidPrcAmt": {
+              "$ne": null
+            }
+          },
+          {
+            "prodOffrPrcAmt": {
+              "$ne": null
+            }
+          },
+          {
+            "prodNavPrcAmt": {
+              "$ne": null
+            }
+          },
+          {
+            "prodMktPrcAmt": {
+              "$ne": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "Product Peformance UT XML",
+          "templateName": "/xml/PRODPERFM.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_${systemCde}_Performance-UT_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "UT",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$ne": "D"
+        },
+        "$or": [
+          {
+            "performance": {
+              "$ne": null
+            }
+          },
+          {
+            "benchmark": {
+              "$ne": null
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "ack": {
+    "generate": true
+  },
+  "timeZone": "Asia/Singapore"
+}

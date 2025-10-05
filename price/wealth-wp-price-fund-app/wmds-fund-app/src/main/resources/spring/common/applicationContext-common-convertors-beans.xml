@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+						http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+                        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<bean class="com.hhhh.group.secwealth.mktdata.common.convertor.ConvertorUtil">
+		<property name="convertors">
+			<map>
+				<entry key="dateToStringConvertor_Date">
+					<ref bean="dateToStringConvertor_Date" />
+				</entry>
+				<entry key="dateToStringConvertor_DateTime">
+					<ref bean="dateToStringConvertor_DateTime" />
+				</entry>
+				<entry key="stringToDateConvertor_TRKD">
+					<ref bean="stringToDateConvertor_TRKD" />
+				</entry>
+				<entry key="stringToDateConvertor_MSTAR">
+					<ref bean="stringToDateConvertor_MSTAR" />
+				</entry>
+				<entry key="stringToDateConvertor">
+					<ref bean="stringToDateConvertor" />
+				</entry>
+				<entry key="stringToBooleanConvertor">
+					<ref bean="stringToBooleanConvertor" />
+				</entry>
+				<entry key="booleanToStringConvertor">
+					<ref bean="booleanToStringConvertor" />
+				</entry>
+				<entry key="searchCriteriaFieldMappingConvertor_TRKD">
+					<ref bean="searchCriteriaFieldMappingConvertor_TRKD" />
+				</entry>
+				<entry key="searchResultFieldMappingConvertor_TRKD">
+					<ref bean="searchResultFieldMappingConvertor_TRKD" />
+				</entry>
+				<entry key="marketCodeMappingConvertor_TRKD">
+					<ref bean="marketCodeMappingConvertor_TRKD" />
+				</entry>
+				<entry key="quotesFieldMappingConvertor_TRKD">
+					<ref bean="quotesFieldMappingConvertor_TRKD" />
+				</entry>
+				<entry key="performOverMutiTimeConvertor_MSTAR">
+					<ref bean="performOverMutiTimeConvertor_MSTAR" />
+				</entry>
+				<entry key="operatorConvertor">
+					<ref bean="operatorConvertor" />
+				</entry>
+				<entry key="rangeOperatorConvertor">
+					<ref bean="rangeOperatorConvertor" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="dateToStringConvertor_Date"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.DateToStringConvertor">
+		<property name="dateFormat" value="${FE.format.Date}" />
+	</bean>
+
+	<bean id="dateToStringConvertor_DateTime"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.DateToStringConvertor">
+		<property name="dateFormat" value="${FE.format.DateTime}" />
+	</bean>
+
+	<bean id="stringToDateConvertor_TRKD"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringToDateConvertor">
+		<property name="dateFormat" value="${trkd.format.DateTime}" />
+	</bean>
+
+	<bean id="stringToDateConvertor_MSTAR"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringToDateConvertor">
+		<property name="dateFormat" value="${mstar.format.date}" />
+	</bean>
+
+	<!-- convert performOverMutiTime item name from productType -->
+	<bean id="performOverMutiTimeConvertor_MSTAR"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringMappingConvertor">
+		<property name="stringMap">
+			<map>
+				<entry key="UT" value="FUND" />
+				<entry key="QDII-UT" value="FUND" />
+				<entry key="ETF" value="ETF" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="stringToDateConvertor"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringToDateConvertor">
+		<property name="dateFormat" value="${FE.format.DateTime}" />
+	</bean>
+
+	<bean id="stringToBooleanConvertor"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringToBooleanConvertor">
+		<property name="convertMap">
+			<map>
+				<entry key="Y" value="true" />
+				<entry key="N" value="false" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="booleanToStringConvertor"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.BooleanToStringConvertor">
+		<property name="convertMap">
+			<map>
+				<entry key="true" value="Y" />
+				<entry key="false" value="N" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="operatorConvertor"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringMappingConvertor">
+		<property name="stringMap">
+			<map>
+				<entry key="gt" value="&gt;" />
+				<entry key="ge" value="&gt;=" />
+				<entry key="lt" value="&lt;" />
+				<entry key="le" value="&lt;=" />
+				<entry key="eq" value="=" />
+				<entry key="in" value="in" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="rangeOperatorConvertor"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringMappingConvertor">
+		<property name="stringMap">
+			<map>
+				<entry key="[" value="&gt;=" />
+				<entry key="(" value="&gt;" />
+				<entry key="]" value="&lt;=" />
+				<entry key=")" value="&lt;" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- now for AOC, below fields use tradable currency key: countryCode+groupMember+productType 
+		affect fields: 1. Investment Minimum Initial Amount 2.Investment Increment 
+		Minimum Amount 3.Minimum MIP Regular Investment Amount -->
+	<util:list id="tradableCurrencyProdUsingMap">
+		<value>CN_hhhh_QDII-UT</value>
+	</util:list>
+
+	<util:map id="searchMinMaxCriteriaFieldMap_TRKD">
+		<entry key="buyRecommendations" value="{#BuyRec_C}" />
+		<entry key="holdRecommendations" value="{#HoldRec_C}" />
+		<entry key="outperformRecommendations" value="{#OutPRec_C}" />
+		<entry key="sellRecommendations" value="{#SellRec_C}" />
+		<entry key="underperformRecommendations" value="{#UndPRec_C}" />
+		<entry key="ratingHold"
+			value="({#HoldRec_C}/({#BuyRec_C}+{#HoldRec_C}+{#SellRec_C}))*100" />
+		<entry key="ratingOutperformOrBuy"
+			value="({#BuyRec_C}/({#BuyRec_C}+{#HoldRec_C}+{#SellRec_C}))*100" />
+		<entry key="consensusRecommendation" value="{ConsRec_C}" />
+		<entry key="marketCapitalization" value="{MktCap}" />
+		<entry key="sharesOutstanding" value="{TotComSO_UA}" />
+		<entry key="dividendYield" value="{YIELD}" />
+		<entry key="effectiveTaxRateTTM" value="({CashTaxP_RA}/{EBITDATTM})*100" />
+		<entry key="averageEpsSurpriseLast4Quarters" value="{HEPSRD%_Q1}" />
+		<entry key="epsSurpriseLastQuarter" value="{HEPS%_Q1}" />
+		<entry key="epsDilExclAnnual" value="{DilEPSExcl_UA}" />
+		<entry key="epsDilExclQuarterly" value="{DilEPSExcl_UPQ}" />
+		<entry key="epsLastQuarter" value="{HEPSM_Q1MU}" />
+		<entry key="fy1ConsensusEstimate" value="{FY1EPS_CMU}" />
+		<entry key="fy1ConsensusEstimateMedian" value="{FY1EPS_CDU}" />
+		<entry key="fy1ConsensusEstimateStandardDeviation" value="{FY1EPSMajSD_CU}" />
+		<entry key="fy2ConsensusEstimate" value="{FY2EPS_CMU}" />
+		<entry key="fy2ConsensusEstimateMedian" value="{FY2EPS_CDU}" />
+		<entry key="lastReportedFiscalQuarter" value="{DateQTREnd}" />
+		<entry key="fy1AnalystsNumber" value="{FY1EPSMaj#An_C}" />
+		<entry key="fy2AnalystsNumber" value="{FY2EPSMaj#An_C}" />
+		<entry key="q1AnalystsNumber" value="{Q1EPSM#An}" />
+		<entry key="q2AnalystsNumber" value="{Q2EPSM#An}" />
+		<entry key="q1ConsensusEstimate" value="{Q1EPSM_CMU}" />
+		<entry key="q1ConsensusEstimateStandardDeviation" value="{Q1EPSMSD_CU}" />
+		<entry key="q2ConsensusEstimate" value="{Q2EPSM_CMU}" />
+		<entry key="q2ConsensusEstimateStandardDeviation" value="{Q2EPSMSD_CU}" />
+		<entry key="eps1QuarterAgo" value="{HEPSM_Q1MU}" />
+		<entry key="eps2QuarterAgo" value="{HEPSM_Q2MU}" />
+		<entry key="standardDeviationOfConsensusF1" value="({FY1EPSMajSD_CL}/{FY1EPSMaj_CML})*100" />
+		<entry key="standardDeviationOfConsensusQ1" value="({Q1EPSMSD_CU}/{Q1EPSM_CMU})*100" />
+		<entry key="standardDeviationOfConsensusQ2" value="({Q2EPSMSD_CU}/{Q2EPSM_CMU})*100" />
+		<entry key="cashFlowPerShare" value="{CashFlPSTTM}" />
+		<entry key="currentRatio" value="{CurRatioQ}" />
+		<entry key="debtRatio" value="{TotD_RA}/{ToTA_RA}" />
+		<entry key="debtCapital" value="{CLD_RA}" />
+		<entry key="debtEquityQuarterly" value="{DbtTot2EqPYQ}" />
+		<entry key="payoutRatioTTM" value="{PayRatioTTM}" />
+		<entry key="quickRatio" value="{QuickRatioQ}" />
+		<entry key="ratioOfQ1DivQ0" value="({Q1EPSM_CMU}/{HEPSMact_Q1U})*100" />
+		<entry key="assetGrowth5Years" value="((({ToTA_UA}-{ToTA_UPY5})/{ToTA_UPY5})*100)/5" />
+		<entry key="profitGrowth5Years"
+			value="((({NetIncSL_RA}-{NetIncSL_RPY5})/{NetIncSL_RPY5})*100)/5" />
+		<entry key="revenueGrowth5Years" value="((({Rev_RA}-{Rev_RPY5})/{Rev_RPY5})*100)/5" />
+		<entry key="capitalSpendingGrowth5Years" value="((({CapEx_UA}-{CapEx_UPY5})/{CapEx_UPY5})*100)/5" />
+		<entry key="dividendGrowth3Years" value="{Div3YCGr%}" />
+		<entry key="epsGrowth5Years" value="{EPS5YCGr%}" />
+		<entry key="epsGrowthTTM" value="{EPS%ChgTTM}" />
+		<entry key="historicalSalesGrowth5Years" value="{Sales5YCGr%}" />
+		<entry key="longTermGrowthConsensusEstimate" value="{LTG_CM}" />
+		<entry key="yyEPSGrowthLastQ" value="{EPS%ChgPYQ}" />
+		<entry key="yySalesGrowthLastQ" value="{Sales%ChgPYQ}" />
+		<entry key="yySalesGrowthTTM" value="{Sales%ChgTTM}" />
+		<entry key="averageVolume10Day" value="{Vol10DAvg}" />
+		<entry key="beta" value="{BETA}| " />
+		<entry key="price" value="{Price}| " />
+		<entry key="priceChange13Week" value="{Pr13W%Chg}" />
+		<entry key="priceChange26Week" value="{Pr26W%Chg}" />
+		<entry key="priceChange4Week" value="{Pr4W%Chg}" />
+		<entry key="priceChange52week" value="{Pr52W%Chg}" />
+		<entry key="priceChangeYTD" value="{PrYTD%Chg}" />
+		<entry key="price52WeekHigh" value="{PriceH}" />
+		<entry key="price52WeekLow" value="{PriceL}" />
+		<entry key="annualRevenue5YearsAgo" value="{Rev_UPY5}" />
+		<entry key="annualRevenueLastYear" value="{Rev_UA}" />
+		<entry key="annualSales" value="{TotRev_UA}" />
+		<entry key="netIncome5YearsAgo" value="{IncaftTax_UPY5}" />
+		<entry key="netIncomeLastYear" value="{IncaftTax_UA}" />
+		<entry key="netProfitMargin" value="{NPMgn%TTM}" />
+		<entry key="operatingMarginTTM" value="{OpMgn%TTM}" />
+		<entry key="returnOnAssetsQuarterly" value="{ROA%Q}" />
+		<entry key="returnOnAssetsTTM" value="{ROA%TTM}" />
+		<entry key="returnOnEquityAnnual" value="{ROE%A}" />
+		<entry key="returnOnEquityTTM" value="{ROE%TTM}" />
+		<entry key="returnOnInvestmentTTM" value="{ROI%TTM}" />
+		<entry key="totalAssets5YearsAgo" value="{ToTA_UPY5}" />
+		<entry key="totalAssetsLastYear" value="{ToTA_UA}" />
+		<entry key="totalLiabilitiesLastYear" value="{TotLiab_UA}" />
+		<entry key="bookValuePerShare" value="{BVPSQ}" />
+		<entry key="normalizedPriceEarnings" value="{PENormalA}" />
+		<entry key="pegRatioNextYear"
+			value="({FY2PPM_CML}/{FY2EPSMaj_CML})-({FY1EPSMaj_CML}/{FY1EPSMaj_CML})" />
+		<entry key="priceBook" value="{Pr2BookPQ}" />
+		<entry key="priceCashFlowTTM" value="{Pr2CashFlTTM}" />
+		<entry key="priceEarningsPriorTTM" value="{PENormalA}" />
+		<entry key="priceEarningsTTM" value="{PEExclXorTTM}" />
+		<entry key="priceSalesTTM" value="{Pr2SalesTTM}" />
+	</util:map>
+
+	<util:map id="searchCriteriaFieldMap_TRKD">
+		<entry key="exchangeCountryCode" value="{ExchangeCountryCode}| " />
+		<entry key="buyRecommendations" value="{#BuyRec_C}" />
+		<entry key="holdRecommendations" value="{#HoldRec_C}" />
+		<entry key="outperformRecommendations" value="{#OutPRec_C}" />
+		<entry key="sellRecommendations" value="{#SellRec_C}" />
+		<entry key="underperformRecommendations" value="{#UndPRec_C}" />
+		<entry key="ratingHold"
+			value="({#HoldRec_C}/({#BuyRec_C}+{#HoldRec_C}+{#SellRec_C}))*100" />
+		<entry key="ratingOutperformOrBuy"
+			value="({#BuyRec_C}/({#BuyRec_C}+{#HoldRec_C}+{#SellRec_C}))*100" />
+		<entry key="consensusRecommendation" value="{ConsRec_C}" />
+		<entry key="exchange" value="{Exchange}| " />
+		<entry key="industry" value="{TRBCIndCode}" />
+		<entry key="marketCapitalization" value="{MktCap}" />
+		<entry key="sector" value="{TRBCEconSectCode}" />
+		<entry key="sharesOutstanding" value="{TotComSO_UA}" />
+		<entry key="dividendYield" value="{YIELD}" />
+		<entry key="effectiveTaxRateTTM" value="({CashTaxP_RA}/{EBITDATTM})*100" />
+		<entry key="averageEpsSurpriseLast4Quarters" value="{HEPSRD%_Q1}" />
+		<entry key="epsSurpriseLastQuarter" value="{HEPS%_Q1}" />
+		<entry key="epsDilExclAnnual" value="{DilEPSExcl_UA}" />
+		<entry key="epsDilExclQuarterly" value="{DilEPSExcl_UPQ}" />
+		<entry key="epsLastQuarter" value="{HEPSM_Q1MU}" />
+		<entry key="fy1ConsensusEstimate" value="{FY1EPS_CMU}" />
+		<entry key="fy1ConsensusEstimateMedian" value="{FY1EPS_CDU}" />
+		<entry key="fy1ConsensusEstimateStandardDeviation" value="{FY1EPSMajSD_CU}" />
+		<entry key="fy2ConsensusEstimate" value="{FY2EPS_CMU}" />
+		<entry key="fy2ConsensusEstimateMedian" value="{FY2EPS_CDU}" />
+		<entry key="lastReportedFiscalQuarter" value="{DateQTREnd}" />
+		<entry key="fy1AnalystsNumber" value="{FY1EPSMaj#An_C}" />
+		<entry key="fy2AnalystsNumber" value="{FY2EPSMaj#An_C}" />
+		<entry key="q1AnalystsNumber" value="{Q1EPSM#An}" />
+		<entry key="q2AnalystsNumber" value="{Q2EPSM#An}" />
+		<entry key="q1ConsensusEstimate" value="{Q1EPSM_CMU}" />
+		<entry key="q1ConsensusEstimateStandardDeviation" value="{Q1EPSMSD_CU}" />
+		<entry key="q2ConsensusEstimate" value="{Q2EPSM_CMU}" />
+		<entry key="q2ConsensusEstimateStandardDeviation" value="{Q2EPSMSD_CU}" />
+		<entry key="eps1QuarterAgo" value="{HEPSM_Q1MU}" />
+		<entry key="eps2QuarterAgo" value="{HEPSM_Q2MU}" />
+		<entry key="standardDeviationOfConsensusF1" value="({FY1EPSMajSD_CL}/{FY1EPSMaj_CML})*100" />
+		<entry key="standardDeviationOfConsensusQ1" value="({Q1EPSMSD_CU}/{Q1EPSM_CMU})*100" />
+		<entry key="standardDeviationOfConsensusQ2" value="({Q2EPSMSD_CU}/{Q2EPSM_CMU})*100" />
+		<entry key="cashFlowPerShare" value="{CashFlPSTTM}" />
+		<entry key="currentRatio" value="{CurRatioQ}" />
+		<entry key="debtRatio" value="{TotD_RA}/{ToTA_RA}" />
+		<entry key="debtCapital" value="{CLD_RA}" />
+		<entry key="debtEquityQuarterly" value="{DbtTot2EqPYQ}" />
+		<entry key="payoutRatioTTM" value="{PayRatioTTM}" />
+		<entry key="quickRatio" value="{QuickRatioQ}" />
+		<entry key="ratioOfQ1DivQ0" value="({Q1EPSM_CMU}/{HEPSMact_Q1U})*100" />
+		<entry key="assetGrowth5Years" value="((({ToTA_UA}-{ToTA_UPY5})/{ToTA_UPY5})*100)/5" />
+		<entry key="profitGrowth5Years"
+			value="((({NetIncSL_RA}-{NetIncSL_RPY5})/{NetIncSL_RPY5})*100)/5" />
+		<entry key="revenueGrowth5Years" value="((({Rev_RA}-{Rev_RPY5})/{Rev_RPY5})*100)/5" />
+		<entry key="capitalSpendingGrowth5Years" value="((({CapEx_UA}-{CapEx_UPY5})/{CapEx_UPY5})*100)/5" />
+		<entry key="dividendGrowth3Years" value="{Div3YCGr%}" />
+		<entry key="epsGrowth5Years" value="{EPS5YCGr%}" />
+		<entry key="epsGrowthTTM" value="{EPS%ChgTTM}" />
+		<entry key="historicalSalesGrowth5Years" value="{Sales5YCGr%}" />
+		<entry key="longTermGrowthConsensusEstimate" value="{LTG_CM}" />
+		<entry key="yyEPSGrowthLastQ" value="{EPS%ChgPYQ}" />
+		<entry key="yySalesGrowthLastQ" value="{Sales%ChgPYQ}" />
+		<entry key="yySalesGrowthTTM" value="{Sales%ChgTTM}" />
+		<entry key="averageVolume10Day" value="{Vol10DAvg}" />
+		<entry key="beta" value="{BETA}| " />
+		<entry key="price" value="{Price}| " />
+		<entry key="priceChange13Week" value="{Pr13W%Chg}" />
+		<entry key="priceChange26Week" value="{Pr26W%Chg}" />
+		<entry key="priceChange4Week" value="{Pr4W%Chg}" />
+		<entry key="priceChange52week" value="{Pr52W%Chg}" />
+		<entry key="priceChangeYTD" value="{PrYTD%Chg}" />
+		<entry key="price52WeekHigh" value="{PriceH}" />
+		<entry key="price52WeekLow" value="{PriceL}" />
+		<entry key="annualRevenue5YearsAgo" value="{Rev_UPY5}" />
+		<entry key="annualRevenueLastYear" value="{Rev_UA}" />
+		<entry key="annualSales" value="{TotRev_UA}" />
+		<entry key="netIncome5YearsAgo" value="{IncaftTax_UPY5}" />
+		<entry key="netIncomeLastYear" value="{IncaftTax_UA}" />
+		<entry key="netProfitMargin" value="{NPMgn%TTM}" />
+		<entry key="operatingMarginTTM" value="{OpMgn%TTM}" />
+		<entry key="returnOnAssetsQuarterly" value="{ROA%Q}" />
+		<entry key="returnOnAssetsTTM" value="{ROA%TTM}" />
+		<entry key="returnOnEquityAnnual" value="{ROE%A}" />
+		<entry key="returnOnEquityTTM" value="{ROE%TTM}" />
+		<entry key="returnOnInvestmentTTM" value="{ROI%TTM}" />
+		<entry key="totalAssets5YearsAgo" value="{ToTA_UPY5}" />
+		<entry key="totalAssetsLastYear" value="{ToTA_UA}" />
+		<entry key="totalLiabilitiesLastYear" value="{TotLiab_UA}" />
+		<entry key="bookValuePerShare" value="{BVPSQ}" />
+		<entry key="normalizedPriceEarnings" value="{PENormalA}" />
+		<entry key="pegRatioNextYear"
+			value="({FY2PPM_CML}/{FY2EPSMaj_CML})-({FY1EPSMaj_CML}/{FY1EPSMaj_CML})" />
+		<entry key="priceBook" value="{Pr2BookPQ}" />
+		<entry key="priceCashFlowTTM" value="{Pr2CashFlTTM}" />
+		<entry key="priceEarningsPriorTTM" value="{PENormalA}" />
+		<entry key="priceEarningsTTM" value="{PEExclXorTTM}" />
+		<entry key="priceSalesTTM" value="{Pr2SalesTTM}" />
+	</util:map>
+
+	<bean id="searchCriteriaFieldMappingConvertor_TRKD"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringMappingConvertor">
+		<property name="stringMap" ref="searchCriteriaFieldMap_TRKD" />
+	</bean>
+
+	<util:map id="searchResultFieldMap_TRKD">
+		<entry key="ric" value="{RIC}| " />
+		<entry key="ticker" value="{Ticker}| " />
+		<entry key="exchangeCountryCode" value="{ExchangeCountryCode}| " />
+		<entry key="priceChangePCT" value="{Pr1D%Chg}" />
+		<entry key="price" value="{Price}| " />
+		<entry key="averageVolume" value="{Vol10DAvg}" />
+		<entry key="shortName" value="{Name}" />
+	</util:map>
+
+	<bean id="searchResultFieldMappingConvertor_TRKD"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringMappingConvertor">
+		<property name="stringMap" ref="searchResultFieldMap_TRKD" />
+	</bean>
+
+	<bean id="quotesFieldMappingConvertor_TRKD"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringMappingConvertor">
+		<property name="stringMap">
+			<map>
+				<!-- <entry key="priceChange" value="NETCHNG_1" /> -->
+				<entry key="volume" value="CF_VOLUME" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="marketCodeMappingConvertor_TRKD"
+		class="com.hhhh.group.secwealth.mktdata.common.convertor.StringMappingConvertor">
+		<property name="stringMap" ref="marketCodeMap_TRKD" />
+	</bean>
+	<util:map id="marketCodeMap_TRKD">
+		<entry key="USA" value="US" />
+		<entry key="CAN" value="CA" />
+		<entry key="SIN" value="SG" />
+		<entry key="HKG" value="HK" />
+		<entry key="CHN" value="CN" />
+	</util:map>
+	
+	
+	<bean id="venderProdCdeAltClassCdeMap" class="java.util.HashMap">
+		<constructor-arg>
+			<map>
+				<entry key="Default" value="T" />
+				<entry key="MSTAR" value="O" />
+			</map>
+		</constructor-arg>
+	</bean>
+	
+</beans>

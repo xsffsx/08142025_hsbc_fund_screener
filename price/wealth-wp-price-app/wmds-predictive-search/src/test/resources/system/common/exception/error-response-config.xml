@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errResponses>
+	<!-- Undefined error -->
+	<errResponse key="Undefined">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSECM99</reasonCode>
+			<text>Unexected error occur</text>
+		</entity>
+	</errResponse>
+	<!-- Validation Exception -->
+	<!-- <errResponse key="SomeInputParameterInvalid">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEVD99</reasonCode>
+			<text>Some Input Parameter Invalid</text>
+		</entity>
+	</errResponse>
+	<errResponse key="RequestHeaderInvalid">
+		<entity>
+			<reasonCode>MDSEVD01</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="AmountInvalid">
+		<entity>
+			<reasonCode>MDSEVD02</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="AtLeastOneExistInvalid">
+		<entity>
+			<reasonCode>MDSEVD03</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="CoexistFieldsInvalid">
+		<entity>
+			<reasonCode>MDSEVD04</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="EnumInvalid">
+		<entity>
+			<reasonCode>MDSEVD05</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="EqualsInvalid">
+		<entity>
+			<reasonCode>MDSEVD06</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="FieldLengthInvalid">
+		<entity>
+			<reasonCode>MDSEVD07</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="GetUserInfoInvalid">
+		<entity>
+			<reasonCode>MDSEVD08</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="IntegerInvalid">
+		<entity>
+			<reasonCode>MDSEVD09</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="MandatoryFieldsInvalid">
+		<entity>
+			<reasonCode>MDSEVD10</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="MandatoryListFieldsInvalid">
+		<entity>
+			<reasonCode>MDSEVD11</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="MandatoryWithAssociateFieldsInvalid">
+		<entity>
+			<reasonCode>MDSEVD12</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="NumberInvalid">
+		<entity>
+			<reasonCode>MDSEVD13</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="XssSecurityInvalid">
+		<entity>
+			<reasonCode>MDSEVD14</reasonCode>
+		</entity>
+	</errResponse>
+	<errResponse key="SearchCriteriaInvalid">
+		<entity>
+			<reasonCode>MDSEVD15</reasonCode>
+		</entity>
+	</errResponse> -->
+	<!-- Validation Exception -->
+
+	<!-- System Exception -->
+	<errResponse key="SystemError">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSESY99</reasonCode>
+			<text>An unknown system error has occurred</text>
+		</entity>
+	</errResponse>
+	<!-- <errResponse key="SystemInitError">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSESY01</reasonCode>
+			<text>System initialization error</text>
+		</entity>
+	</errResponse>
+	<errResponse key="DBDataUnavailable">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSESY02</reasonCode>
+			<text>The data is unavailable</text>
+		</entity>
+	</errResponse> -->
+	<!-- System Exception -->
+
+	<!-- Common Exception -->
+	<errResponse key="InputParameterInvalid">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSECM03</reasonCode>
+			<text>The value of F/E parameter is invalid</text>
+		</entity>
+	</errResponse>
+	<errResponse key="XssSecurityErr">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSECM04</reasonCode>
+			<text>The parameters is unsafe</text>
+		</entity>
+	</errResponse>
+	<errResponse key="SiteNotSupport">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSECM05</reasonCode>
+			<text>The site is not support</text>
+		</entity>
+	</errResponse>
+	<errResponse key="ServiceNoAvailable">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSECM08</reasonCode>
+			<text>Service is not support</text>
+		</entity>
+	</errResponse>
+	<!-- Common Exception -->
+
+	<!-- Common Exception Predictive Search Exception -->
+	<!-- <errResponse key="NoRecordFound">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEPS01</reasonCode>
+			<text>No record found</text>
+		</entity>
+	</errResponse>
+	<errResponse key="DataParsingErr">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEPS02</reasonCode>
+			<text>Data parsing error</text>
+		</entity>
+	</errResponse>
+	<errResponse key="DataUnavailable">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEPS03</reasonCode>
+			<text>Data unavailable</text>
+		</entity>
+	</errResponse> -->
+	<errResponse key="QueryStringInvalid">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEPS06</reasonCode>
+			<text>The queried keyword has invalid string</text>
+		</entity>
+	</errResponse>
+	<!-- <errResponse key="VolumeServiceErr">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEPS07</reasonCode>
+			<text>Volume service download wpc files error</text>
+		</entity>
+	</errResponse>
+	<errResponse key="DataVerifyErr">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEPS08</reasonCode>
+			<text>Wpc files verify by MD5 error</text>
+		</entity>
+	</errResponse> -->
+	<!-- Common Exception Predictive Search Exception -->
+
+	<!-- Common Exception Mstar Exception -->
+	<!-- <errResponse key="MstarUndefinedError">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEMS99</reasonCode>
+			<text>MSTAR undefined error</text>
+		</entity>
+	</errResponse>
+	<errResponse key="MstarTimeout">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEMS01</reasonCode>
+			<text>MSTAR connection timeout</text>
+		</entity>
+	</errResponse>
+	<errResponse key="MstarInvalidResponse">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEMS03</reasonCode>
+			<text>MSTAR invalid response</text>
+		</entity>
+	</errResponse>
+	<errResponse key="MstarUnmarshalFail">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEMS04</reasonCode>
+			<text>MSTAR response fail to unmarshal</text>
+		</entity>
+	</errResponse>
+	<errResponse key="MstarNoData">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEMS05</reasonCode>
+			<text>MSTAR no data</text>
+		</entity>
+	</errResponse> -->
+	<!-- Common Exception Mstar Exception -->
+
+	<!-- Common Exception Wpc WebService Exception -->
+	<!-- <errResponse key="WpcWSUndefinedError">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEWS99</reasonCode>
+			<text>Wpc WebService Undefined Error</text>
+		</entity>
+	</errResponse>
+	<errResponse key="WpcWSInvalidRequest">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEWS01</reasonCode>
+			<text>Wpc WebService Invalid Request</text>
+		</entity>
+	</errResponse>
+	<errResponse key="WpcWSInvalidResponse">
+		<entity>
+			<responseCode>2</responseCode>
+			<reasonCode>MDSEWS02</reasonCode>
+			<text>Wpc WebService Invalid Response</text>
+		</entity>
+	</errResponse> -->
+	<!-- Common Exception Wpc WebService Exception -->
+</errResponses>

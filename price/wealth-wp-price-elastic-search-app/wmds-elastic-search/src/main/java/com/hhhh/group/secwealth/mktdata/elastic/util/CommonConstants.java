@@ -1,0 +1,251 @@
+package com.hhhh.group.secwealth.mktdata.elastic.util;
+
+
+public final class CommonConstants {
+
+    private CommonConstants() {}
+
+    /** The Constant ALL. */
+    public static final String ALL = "ALL";
+
+    /** The Constant SYMBOL_SEPARATOR. */
+    public static final String SYMBOL_SEPARATOR = "\\|";
+
+    public static final String SYMBOL_VERTICAL = "|";
+
+    /** The Constant SYMBOL_COMMA. */
+    public static final String SYMBOL_COMMA = ",";
+
+    /** The Constant SYMBOL_DOT. */
+    public static final String SYMBOL_DOT = ".";
+
+    /** The Constant SYMBOL_DOT_SEPARATOR. */
+    public static final String SYMBOL_DOT_SEPARATOR = "\\.";
+
+    /** The Constant SYMBOL_SINGLE_QUOTE. */
+    public static final String SYMBOL_SINGLE_QUOTE = "'";
+
+    /** The Constant SYMBOL_EQUAL. */
+    public static final String SYMBOL_EQUAL = "=";
+
+    /** The Constant SYMBOL_AND. */
+    public static final String SYMBOL_AND = "&";
+
+    /** The Constant SYMBOL_INTERROGATION. */
+    public static final String SYMBOL_INTERROGATION = "?";
+
+    /** The Constant SYMBOL_SLASH. */
+    public static final String SYMBOL_SLASH = "/";
+
+    /** The Constant SYMBOL_LEFT_ANGLE_BRACKETS. */
+    public static final String SYMBOL_LEFT_ANGLE_BRACKETS = "<";
+
+    /** The Constant SYMBOL_RIGHT_ANGLE_BRACKETS. */
+    public static final String SYMBOL_RIGHT_ANGLE_BRACKETS = ">";
+
+    /** The Constant SYMBOL_LEFT_BRACKETS. */
+    public static final String SYMBOL_LEFT_BRACKETS = "[";
+
+    /** The Constant SYMBOL_RIGHT_BRACKETS. */
+    public static final String SYMBOL_RIGHT_BRACKETS = "]";
+
+    /** The Constant SYMBOL_LEFT_BRACKET. */
+    public static final String SYMBOL_LEFT_BRACKET = "(";
+
+    /** The Constant SYMBOL_RIGHT_BRACKET. */
+    public static final String SYMBOL_RIGHT_BRACKET = ")";
+
+    /** The Constant SYMBOL_LEFT_BRACE. */
+    public static final String SYMBOL_LEFT_BRACE = "{";
+
+    /** The Constant SYMBOL_RIGHT_BRACE. */
+    public static final String SYMBOL_RIGHT_BRACE = "}";
+
+    /** The Constant SYMBOL_ENTER. */
+    public static final String SYMBOL_ENTER = "\n";
+
+    /** The Constant EMPTY_STRING. */
+    public static final String EMPTY_STRING = "";
+
+    /** The Constant XML_FILE_EXTENSION. */
+    public static final String XML_FILE_EXTENSION = ".xml";
+
+    /** The Constant MD5_FILE_EXTENSION. */
+    public static final String MD5_FILE_EXTENSION = ".MD5";
+
+    /** The Constant TXT_FILE_EXTENSION. */
+    public static final String TXT_FILE_EXTENSION = ".txt";
+
+    /** The Constant SYMBOL_COLON. */
+    public static final String SYMBOL_SEMICOLON = ";";
+
+    /** The Constant SYMBOL_COLON. */
+    public static final String SYMBOL_COLON = ":";
+
+    /** The Constant JNDI_KEY. */
+    public static final String JNDI_KEY = "jndi";
+
+    /** The Constant CODING_UTF8. */
+    public static final String CODING_UTF8 = "UTF-8";
+    /** line. */
+    public static final String SYMBOL_LINE_CONNECTIVE = "-";
+
+    /** underline. */
+    public static final String SYMBOL_UNDERLINE = "_";
+    /** DELIMITER. */
+    public static final String SYMBOL_DELIMITER = "~~";
+
+    /** The Constant SYMBOL_TOKEN_END. */
+    public static final String SYMBOL_TOKEN_END = "~~null";
+
+    /** The Constant SYMBOL_NULL. */
+    public static final String SYMBOL_NULL = "null";
+
+    /** The Constant HTTP_GET. */
+    public static final String HTTP_GET = "get";
+
+    /** The Constant HTTP_POST. */
+    public static final String HTTP_POST = "post";
+
+    /** The Constant ARGUMENT_INSTANCENAME. */
+    public static final String ARGUMENT_INSTANCENAME = "instanceName";
+
+    /** The Constant HTTP_REQUEST_HEADER_ACCEPTCODING. */
+    public static final String HTTP_REQUEST_HEADER_ACCEPTCODING = "Accept-Encoding";
+
+    /** The Constant HTTP_RESPONSE_HEADER_CONTENTENCODING. */
+    public static final String HTTP_RESPONSE_HEADER_CONTENTENCODING = "Content-Encoding";
+
+    /** The Constant HTTP_ENCODING_TYPE. */
+    public static final String HTTP_ENCODING_TYPE = "gzip";
+
+    /** The Constant STRING_FORMAT_PATTERN. */
+    public static final String STRING_FORMAT_PATTERN = "\t|\r|\n";
+
+    /** The Constant SYMBOL_ASTERISK. */
+    public static final String SYMBOL_ASTERISK = "*";
+
+    /** The Constant SPACE. */
+    public static final String SPACE = " ";
+
+    /** The Constant PATTERN_SPECIAL_CHARACTERS. */
+    public static final String PATTERN_SPECIAL_CHARACTERS = "[^?*]+";
+
+    /** The Constant YES. */
+    public static final String YES = "Y";
+
+    /** The Constant NO. */
+    public static final String NO = "N";
+
+    /** The Constant OUTBOUND_MSG_PREFIX. */
+    public static final String OUTBOUND_MSG_PREFIX = "Outbound message: ";
+
+    /** The Constant INBOUND_MSG_PREFIX. */
+    public static final String INBOUND_MSG_PREFIX = "Inbound message: ";
+
+    /** The Constant QUERY_DATA_FROM_DATABASE. */
+    public static final String QUERY_DATA_FROM_DATABASE = "Query data from Database: ";
+
+    /** The Constant FIRST_LEVEL_SEPARATOR. */
+    public static final String FIRST_LEVEL_SEPARATOR = ",";
+
+    /** The Constant SECOND_LEVEL_SEPARATOR. */
+    public static final String SECOND_LEVEL_SEPARATOR = "\\|";
+
+    /** The Constant THIRD_LEVEL_SEPARATOR. */
+    public static final String THIRD_LEVEL_SEPARATOR = ":";
+
+    /** The Constant ORIGINAL_FIELD_SUFFIX. */
+    public static final String ORIGINAL_FIELD_SUFFIX = "_ORIGINAL";
+
+    public static final String TOKEN_FIELD_SUFFIX = "_token";
+
+    /** Define the common default */
+    public static final String DEFAULT = "Default";
+
+    public static final String ZERO = "0";
+
+    public static final String KEY_L = "L=";
+
+    public static final String POUND_KEY = "#";
+
+    public static final String hhhh_FUND_FAMILY_CODE = "0C00001UXA";
+
+    public static final int hhhh_FUND_INITIAL_RRSP = 500;
+
+    public static final int hhhh_FUND_ADDITIONAL_RRSP = 100;
+
+    public static final int NON_hhhh_FUND_INITIAL_RRSP = 1000;
+
+    public static final int NON_hhhh_FUND_ADDITIONAL_RRSP = 1000;
+
+    /** The Constant SPECIAL_STRING_FILTER_SEPARATOR. */
+    public static final char SPECIAL_STRING_FILTER_SEPARATOR = '\\';
+    // Request HEADER
+    public static final String REQUEST_HEADER_COUNTRYCODE = "x-hhhh-chnl-countrycode";
+    public static final String REQUEST_HEADER_GROUPMEMBER = "x-hhhh-chnl-group-member";
+    public static final String REQUEST_HEADER_CHANNELID = "x-hhhh-channel-id";
+    public static final String REQUEST_HEADER_GBGF = "x-hhhh-gbgf";
+    public static final String REQUEST_HEADER_LOCALE = "x-hhhh-locale";
+    public static final String REQUEST_HEADER_APPCODE = "x-hhhh-app-code";
+    public static final String REQUEST_HEADER_LINEOFBUSINESS = "x-hhhh-line-of-business";
+    // e2eTrust Request HEADER
+    public static final String E2ETRUST_HEADER_WEALTHSAML = "X-hhhh-Wealth-Saml";
+    public static final String E2ETRUST_HEADER_SAML = "X-hhhh-Saml";
+
+    public static final String USERTYPE = "userType";
+    public static final String EID = "eid";
+
+    public static final String DEFAULT_SYSTEMID = "MDSFE";
+
+    public static final String ENTITY_CN = "CN_hhhh";
+    public static final String ENTITY_UK = "GB_HBEU";
+
+    public static final String REQUEST_PARAM_DELAY = "delay";
+    public static final String REQUEST_PARAM_ENTITYTIMEZONE = "entityTimezone";
+    public static final String REQUEST_PARAM_USERTYPE = "userType";
+    public static final String REQUEST_PARAM_USERID = "userId";
+    public static final String REQUEST_PARAM_TRADEDAY = "tradeDay";
+    public static final String REQUEST_PARAM_TRADEHOURS = "tradeHours";
+    public static final String REQUEST_PARAM_MARKET = "market";
+    public static final String REQUEST_PARAM_SKIPAGREEMENTCHECK = "skipAgreementCheck";
+    public static final String REQUEST_PARAM_FREEQUOTE = "freeQuote";
+    public static final String REQUEST_PARAM_REQUESTTYPE = "requestType";
+    public static final String REQUEST_PARAM_ADJUSTEDCUSSEGMENT = "adjustedCusSegment";
+    public static final String REQUEST_PARAM_SIDE = "side";
+    public static final String REQUEST_PARAM_QUANTITY = "quantity";
+    public static final String REQUEST_PARAM_BIDASKQUOTE = "bidAskQuote";
+    public static final String REQUEST_PARAM_CUS_SEGMENT = "adjustedCusSegment";
+    public static final String REQUEST_PARAM_PRODUCT_TYPE = "productType";
+
+    public static final String REQUEST_PARAM_CATEGORY_CODE = "categoryCode";
+    public static final String REQUEST_PARAM_MARKET_PERIOD = "marketPeriod";
+
+    public static final String REQUEST_PARAM_ASSET_ALLOCATION = "assetAllocation";
+    public static final String REQUEST_PARAM_TIME_SCALE = "timeScale";
+    public static final String REQUEST_PARAM_TRAILING_RETURN_PERIOD = "trailingReturnsPeriod";
+
+    // SITE_FEATURE
+    public static final int TRADITIONAL_CHINESE = 1;
+    public static final int SIMPLIFIED_CHINESE = 2;
+    public static final String SALM_TOKEN = "X-hhhh-Saml";
+
+    public static final String YEAR_PERIOD = "Y";
+    public static final String MONTH_PERIOD = "M";
+    public static final String DAY_PERIOD = "D";
+
+    public static final String ASSETCLASSES_UT = "UT";
+    
+    public static final String POPULARITY = "718529718529";
+
+    // product type
+    public static final String SEC = "SEC";
+
+    public static final String Y = "Y";
+    public static final String CMB = "CMB";
+    public static final String CHANNEL_OHI = "OHI";
+    public static final String CHANNEL_OHB = "OHB";
+    public static final String CHANNEL_CMB_I = "CMB_I";
+    public static final String CHANNEL_CMB_B = "CMB_B";
+    public static final String OUT_FILE_EXTENSION = ".out";
+}

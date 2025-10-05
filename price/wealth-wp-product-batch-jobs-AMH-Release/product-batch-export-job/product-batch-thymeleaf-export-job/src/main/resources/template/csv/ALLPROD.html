@@ -1,0 +1,10 @@
+<html lang="en" th:remove="tag">
+<th:block th:if="${isFirst}">
+        HEADERRISHFI_GENERAL_ALL_PRODUCT_SUMMARY_INTERFACE                     [(${#dates.format(startTime,'yyyyMMddHHmmss')})]
+</th:block>
+<th:block th:replace="~{COMMON.html :: export(otherCsvInfos=${null})}">
+    <th:block th:if="${isLast}">
+        TRAILERRISHFI_GENERAL_ALL_PRODUCT_SUMMARY_INTERFACE                     [(${#numbers.formatInteger(count,7)})]
+    </th:block>
+</th:block>
+</html>

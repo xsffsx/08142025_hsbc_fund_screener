@@ -1,0 +1,77 @@
+# MongoDB profile
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
+  data:
+    mongodb:
+      host: "amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: 27017
+      database: WPC_AMH_DEV
+      username: WPCHKGLUA9_APPUSER
+      # To prevent system properties override issue in different env, please do not commit encrypted passwords here.
+      password: #"{cipher}02fab32f253d49687b86c47d43efc627815f23b80aa6e0ca5d9e31a93e56f363202bb0d123ee0e119c024dba760fc412"
+      enable-replica: false
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushku_appuser
+    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+
+# Smart properties
+product:
+  supportEntities:
+    - ctryRecCde: HK
+      grpMembrRecCde: HBAP
+  request-log:
+    keep-days: 3
+  housekeeping:
+    batchSize: 10000
+  batch-job-log:
+    keep-days: 30
+  document-revision:
+    keep-days: 30
+  graphql:
+    default-limit: 10
+    enable-console-request-log: true
+    enable-console-data-log: false
+    enable-db-request-log: true
+    enable-db-data-log: false
+  ldap:
+    security:
+      principal: CN=HBAP-HKGLUEWPCA003,OU=Service Accounts,DC=InfoDir,DC=Dev,DC=dummy
+      credentials: #"{cipher}6536db44a87c3a76ab8f0d8ce3ae9ac04d0089fde8422fc4f3665101b15b8143"
+    provider:
+      url: ldap://aa-lds-test.hk.dummy:3269/
+    base: OU=dummyPeople,DC=InfoDir,DC=Dev,DC=dummy
+  testing-enabled: true
+  role-mapping:
+    viewer:
+      - CN=br_hk_hbap_enq,OU=business_roles,OU=HTSA,OU=AP,OU=Roles,OU=Groups,DC=InfoDir,DC=Dev,DC=dummy
+      #- any   # for test purpose, assign this role to 'any' staff
+    approver:
+      - CN=br_hk_hbap_app,OU=business_roles,OU=HTSA,OU=AP,OU=Roles,OU=Groups,DC=InfoDir,DC=Dev,DC=dummy
+      #- any
+      #- 43591421    # for test purpose, assign this role to a staff id
+    editor:
+      - CN=br_hk_hbap_mnt,OU=business_roles,OU=HTSA,OU=AP,OU=Roles,OU=Groups,DC=InfoDir,DC=Dev,DC=dummy
+      #- any
+  report:
+    path: C:\dev\workspace-product\report
+  log:
+    path: C:\dev\workspace-product\appLogs
+  finDoc:
+    path: C:\dev\workspace-product\findoc\pdf
+    reject:
+      ENS: C:\dev\workspace-product\out\
+  chmod:
+    script: C:/workspace/wealth-wp-product-batch-jobs/product-batch-script/common/chmod.sh
+
+# batch file path
+batch:
+  ingress:
+    path: C:\dev\workspace-product\in\
+  findoc-ingress:
+    path: C:\dev\workspace-product\in\findoc

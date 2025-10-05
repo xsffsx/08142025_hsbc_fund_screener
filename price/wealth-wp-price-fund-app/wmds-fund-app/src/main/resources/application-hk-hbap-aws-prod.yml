@@ -1,0 +1,18 @@
+#dataSourceConfiguration
+spring:
+  datasource:
+    hikari:
+      connection-test-query: SELECT 1 FROM DUAL
+      minimum-idle: 5
+      maximum-pool-size: 10
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = amh-prod-wporcl01.wealth-platform-amh.ape1.prod.aws.cloud.hhhh)(PORT = 2001)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = PAMHWP01) (FAILOVER_MODE=(TYPE = SELECT)(METHOD = BASIC))))
+    username: MDSHKUTPA1_APPUSER
+    password: '{cipher}948022299555f820b2243d85dc92321cfd31910ffcbb0577fa6b3ae1b3471f0e0ad67ba76c89fb9c7e5f840864d633d1'
+
+server: 
+  max-http-header-size: 163840
+
+logging:
+  level:
+    root: info

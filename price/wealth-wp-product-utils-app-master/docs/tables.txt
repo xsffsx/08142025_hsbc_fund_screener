@@ -1,0 +1,101 @@
+# Oracle DB --> MongoDB tables
+TB_PROD
+    PROD_TRADE_ELIG                     --> PROD_TRADE_ELIG
+    TB_PROD_NARR                        --> PROD_NARR
+    TB_CCY_OPT_LINK_DEPST               --> CCY_OPT_LINK_DEPST
+    TB_MPF_INSTM                        --> MPF_INSTM[Object] (used mainly for HK Mandatory Provident Fund)
+    TB_DEBT_INSTM                       --> DEBT_INSTM
+        DEBT_INSTM_YIELD_HIST           --> DEBT_INSTM.YIELD_HIST[Object] (only AMH testing environment have some data for Bond product type, for sending to downstream system to show a price history chart for online bond trading function. )
+        TB_DEBT_INSTM_CRED_RTNG         --> DEBT_INSTM.CRED_RTNG[Object]
+        TB_DEBT_INSTM_TRNSL             --> DEBT_INSTM.TRNSL
+    TB_EQTY_LINK_INVST                  --> EQTY_LINK_INVST
+        TB_EQTY_LINK_INVST_UNDL_STOCK   --> EQTY_LINK_INVST.UNDL_STOCK[Object]
+    TB_STOCK_INSTM                      --> STOCK_INSTM
+    TB_STRUC_INVST_DEPST                --> STRUC_INVST_DEPST
+        TB_STRUC_INVST_DEPST_INTRM_RTN  --> STRUC_INVST_DEPST.INTRM_RTN[Object]
+    TB_UT_TRST_INSTM                    --> UT_TRST_INSTM
+        TB_UT_TRST_INSTM_SW             --> UT_TRST_INSTM.SW[String]
+    TB_WARR_INSTM                       --> WARR_INSTM
+    TB_PROD_ALT_ID                      --> PROD_ALT_ID[Object]
+    PROD_FIN_DOC                        --> PROD_FIN_DOC[Object]
+    TB_PROD_LIST_PROD                   --> PROD_LIST_PROD[Object] ( It use for to identify a product list. Under a particular product list, there are more than one product being ranked in a certain order (E.g. by ascending transaction volume). Each product is assigned with a Rank Number to indicate which position the product belongs to within that product list, all product need existing in TB_PROD table. )
+    PROD_OFER_CHANL                     --> PROD_OFER_CHANL[String]
+    PROD_PERFM                          --> PROD_PERFM[Object]
+    PROD_PROD_RELN                      --> PROD_PROD_RELN[Object] (the data maintained by local business only. )
+    PROD_RESTR_CUST_CTRY                --> PROD_RESTR_CUST_CTRY[Object]
+    PROD_STAF_LIC_CHECK                 --> PROD_STAF_LIC_CHECK[Object]
+    TB_PROD_TRADE_CCY                   --> PROD_TRADE_CCY[String]
+    TB_PROD_UNDL_ASET                   --> PROD_UNDL_ASET[Object]
+    PROD_FORM_REQMT                     --> PROD_FORM_REQMT[String]
+    PROD_OVRID_FIELD                    --> PROD_OVRID_FIELD[String], for what usage?
+    PROD_PRC_CMPAR                      --> PROD_PRC_CMPAR[Object] (use for recording the price compare report, like we have Stale Price Report, Price Except Report etc.)
+    TB_ASET_GEO_LOC_ALLOC               --> ASET_GEO_LOC_ALLOC[Object]
+    TB_ASET_SIC_ALLOC                   --> ASET_SIC_ALLOC[Object]
+    TB_PROD_ASET_VOLTL_CLASS            --> PROD_ASET_VOLTL_CLASS[Object]
+    TB_PROD_FIELD_GROUP_CTOFF           --> PROD_FIELD_GROUP_CTOFF[Object]
+    TB_PROD_TRNSL                       --> PROD_TRNSL
+    PROD_RESTR_CUST_GROUP               --> RESTR_CUST_GROUP
+    TB_CHANL_ATTR                       --> CHANL_ATTR
+    TB_PROD_USER_DEFIN_FIELD            --> UDF
+    TB_PROD_USER_DEFIN_EXT_FIELD        --> EXT
+    TB_PROD_USER_DEFIN_EG_EXT_FIEL      --> EXT_EG
+    TB_PROD_USER_DEFIN_OP_EXT_FIEL      --> EXT_OP
+
+CDE_DESC_VALUE + CDE_DESC_VALUE_CHANL_REL             --> reference_data
+CHANL_COMN_CDE                                        --> chanl_comn_cde
+PROD_TYPE_FIN_DOC + PROD_SUBTP_FIN_DOC                --> prod_type_fin_doc
+PROD_TYPE_FIN_DOC_TYPE_REL                            --> prod_type_fin_doc_type_rel
+PROD_TYPE_STAF_LIC_CHECK + PROD_SUBTP_STAF_LIC_CHECK  --> staff_license_check
+PROD_ATRIB_MAP                                        --> prod_atrib_map
+ASET_VOLTL_CLASS_CHAR                                 --> aset_voltl_class_char
+ASET_VOLTL_CLASS_CORL                                 --> aset_voltl_class_corl
+PROD_PRC_HIST                                         --> prod_prc_hist (use for saving different product types product price history)
+FIN_DOC                                               --> fin_doc
+FIN_DOC_HIST                                          --> fin_doc_hist
+PEND_APROVE_TRAN                                      --> pend_appove_tran
+TB_PROD_TYPE_CHANL_ATTR                               --> prod_type_chanl_attr
+SYS_PARM                                              --> sys_parm
+
+
+# Pending tables
+BATCH_JOB_PARM
+COGNOS_REPORT
+COGNOS_REPORT_HDR
++ CTRY
++ GRP_MEMBR
+DEPST_INT_RATE
+EXCHG_RATE
+EXCHG_RATE_HIST
+FIN_DOC
+FIN_DOC_HIST
+FIN_DOC_PARM
+FIN_DOC_UPLD
+MKT_INFO_DOC
+MKT_INFO_FIN_DOC_RELN
+MKT_INFO_PROD_CLASS_RELN
+MKT_INFO_PROD_RELN
+MKT_INFO_TEXT
++ MSG_PROC_LOG  - message service log
++ SYS_ACTV_LOG  - activity log, audit log
+OPT_ALT_ID
++ PEND_APROVE_TRAN  - pending approval transaction
+PRICE_UPLOAD_ATTACHMENT
+PROD_CLASS
+PROD_DERVT_HANDL_REQMT
+PROD_LOAD_CTRL_STG
+PROD_OPT
+PROD_OPT_STG
+PROD_PRC_STG
+PROD_REPORT_ATTACHMENT
+PROD_TYPE_FIN_DOC_TYPE_REL
+STG_TABLE_LOCK
++ SYS_PARM  --> add to configuration
+SYS_STATS
+TB_CHANL_ATTR (AMH)
+TB_PROD_TYPE_CHANL_ATTR (AMH)
+WPC2_SQLPROF
+
+
+Special handling needed:
+Product creation for UT
+Options in CA

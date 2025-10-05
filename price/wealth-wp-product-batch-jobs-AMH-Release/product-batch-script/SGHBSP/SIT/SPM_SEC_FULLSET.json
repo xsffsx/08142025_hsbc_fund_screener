@@ -1,0 +1,28 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "BI",
+  "path": "/appvol/product-spring-batch-sit/data/outgoing/SGHBSP/BI/",
+  "tasks": [
+    {
+      "files": [
+        {
+          "name": "SEC XML",
+          "templateName": "/xml/33/SEC.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_BI_SEC_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SEC",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    }
+  ],
+  "ack": {
+    "generate": true
+  },
+  "timeZone": "Asia/Singapore"
+}

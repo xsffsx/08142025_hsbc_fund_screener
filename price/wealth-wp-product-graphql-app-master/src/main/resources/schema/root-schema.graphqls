@@ -1,0 +1,534 @@
+scalar Date
+scalar Long
+scalar BigDecimal
+scalar DateTime
+scalar LocalTime
+scalar LocalDateTime
+scalar JSON
+
+type Query {
+    # Query support entities
+    supportEntities: [Entity]
+
+    # Query user information
+    userInfo(ctryRecCde: String!, grpMembrRecCde: String!): UserInfo
+
+    # Query product metadata
+    productMetadata(prodType: String, entity: String): [ProductMetadata]
+
+    # Query product metadata by filter
+    productMetadataByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [ProductMetadata]
+
+    # Query product by product id
+    productById(prodId: Long!): ProductType
+
+    # Query pb product by product id
+    pbProductById(smartIdentifier: String!): PbProductType
+
+    # Query product by filter (in MongoDB query form), with support of sorting and pagination, projection is default on for better performance, but can turn it off when requesting calculated field
+    productByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int, projection: Boolean = true): [ProductType]
+
+    # Query pb product by filter (in MongoDB query form), with support of sorting and pagination, projection is default on for better performance, but can turn it off when requesting calculated field
+    pbProductByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int, projection: Boolean = true): [PbProductType]
+
+    # Query product price history by filter (in MongoDB query form), with support of sorting and pagination
+    productPriceHistoryByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [ProductPriceHistoryType]
+
+    # Query document count by filter, eg. use by pagination
+    documentCountByFilter(docType: DocType!, filter: JSON!): Long
+
+    # Query reference data, with support of sorting and pagination
+    referenceDataByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [ReferenceData]
+
+    # Query product type / sub type level financial documents
+    prodTypeFinDocByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [ProdTypeFinDocType]
+
+    # Query fin_doc
+    finDocByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [FinDoc]
+
+    # Query fin_doc_upld
+    finDocUpldByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [FinDocUpld]
+
+    # Query product type / sub type level staff license check
+    staffLicenseCheckByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [StaffLicenseCheck]
+
+    # Query prod atrib map
+    prodAtribMapByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [ProdAtribMap]
+
+    # Query channel communication code information
+    chanlComnCdeByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [ChanlComnCde]
+
+    # Query Asset Volatility Class Characteristic by filter
+    assetVolatilityClassCharByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [AssetVolatilityClassChar]
+
+    # Query Asset Volatility Class Correlation by filter
+    assetVolatilityClassCorlByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [AssetVolatilityClassCorl]
+
+    # Validate a product
+    productValidate(product: ProductInput!): [Error]
+
+    # Query field selection string for all fields of a given query
+    allFieldsOf(queryName: String!, excludes: [String!]): String
+
+    # Query configuration list by filter
+    configurationByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [Configuration]
+
+    # Query amendments by filter
+    amendmentByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [AmendmentType]
+
+    # Query form upload by filter
+    uploadByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [UploadType]
+
+    # Query request log by filter
+    requestLogByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [RequestLogType]
+
+    # Calculate patch of a document, from leftRevision to the rightRevision
+    documentRevisionPatch(docType: DocType!, docId: Long!, leftRevision: Long!, rightRevision: Long!): [OperationType]
+
+    # Calculate dif of a document, from leftRevision to the rightRevision
+    documentRevisionDiff(docType: DocType!, docId: Long!, leftRevision: Long!, rightRevision: Long!): [DiffType]
+
+    # List reports
+    reportList(ctryRecCde: String!, grpMembrRecCde: String!, reportCode: String, dateFrom: Date, dateTo: Date, sort: JSON, skip: Int = 0, limit: Int): ReportListResult
+
+    # Query dashboard data
+    dashboardData(filter: JSON!): DashboardData!
+
+    # Query Data Processing File Ingress Status
+    dpFileIngressStatus(id: Long, fromTime: DateTime, toTime: DateTime, filename: String, md5: String, statusIn: [String], sort: JSON, skip: Int = 0, limit: Int): FileIngressStatusPage
+
+    # Query Data Processing Record Ingress Status
+    dpDataIngressStatus(fisid: Long, statusIn: [String], sort: JSON, skip: Int = 0, limit: Int): FileIngressRecordPage
+
+
+    # Query ESG data by WPC PROD ID List
+    esgDataByProdIdList(prodIdList: [Long!]!): [EsgDataItem]
+
+
+    graphQLTypeSchema(graphQLType: String!): [Schema]
+
+    # Query prod_type_chanl_attr
+    prodTypeChanlAttrByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [ProdTypeChanlAttrType]
+
+    # Query System Param by filter
+    sysParmByFilter(filter: JSON!, sort: JSON, skip: Int = 0, limit: Int): [SysParamType]
+
+    batchJobStatusByFilter(filter:  JSON!,sort: JSON,skip: Int = 0, limit: Int): BatchJobExecutionPaginationType
+
+    # Query jobExecutionId Step by jobExecution Id
+    executionStepById(jobExecutionId: Long!,sort: JSON): BatchJobExecutionStepPaginationType
+
+    # Query jobExecution Params Step by jobExecution Id
+    executionParamsById(jobExecutionId: Long!): [BatchJobExecutionParamsType]
+
+    # Query default field values
+    defaultFieldConfig(filter: JSON!, docType: DocType!): DefaultConfigType
+}
+
+type Mutation {
+    # Batch create products, 'allowPartial' indicated in case of one or more product are invalid, still allow the valid products be created, allowUpate is for the case that provides the fullset product data, and this operation will replace the old document
+    productBatchCreate(products: [ProductInput!]!, allowPartial: Boolean = true): ProductBatchCreateResultType!
+
+    # Batch update a set of products which filtered by given criteria, 'allowPartial' indicated in case of one or more product are invalid, still allow the valid products be updated
+    productBatchUpdate(filter: JSON!, operations: [OperationInput!]!, allowPartial: Boolean = true): ProductBatchUpdateResultType!
+
+    # product Batch Update by id, has better query performance than productBatchUpdate
+    productBatchUpdateById(updateParams:[ProductBatchUpdateByIdInput]!, allowPartial: Boolean = true): ProductBatchUpdateResultType!
+
+    # Amendment create draft, if submit=true, submit for approval in the same time
+    amendmentCreate(actionCde: AmendmentActionCode!, docType: DocType!, docChanged: JSON!, docBase: JSON, submit: Boolean = false): AmendmentType
+    # Update an amendment draft, if submit=true, submit for approval in the same time
+    amendmentUpdate(amendmentId: Long!, docChanged: JSON!, submit: Boolean = false): AmendmentType
+
+    # Delete an amendment draft
+    amendmentDelete(amendmentId: Long!): AmendmentType
+
+    # Request an amendment to be approved
+    amendmentRequestApproval(amendmentId: Long!, comments: String): AmendmentType
+
+    # Approve/Reject a pending approval amendment
+    amendmentApprove(amendmentId: Long!, approvalAction: ApprovalAction!, comments: String): AmendmentType
+
+    # Request an amendment upload to be approved
+    uploadRequestApproval(ctryRecCde: String!, grpMembrRecCde: String!, uploadType: UploadFileType!, comments: String): UploadType
+
+    # Request an amendment findoc upload to be approved
+    uploadFindocRequest(ctryRecCde: String, grpMembrRecCde: String,uploadType: UploadFindocType!): [FindocUploadResult]
+
+    # Approve/Reject a pending approval amendment upload
+    uploadApprove(uploadId: Long!, approvalAction: ApprovalAction!, comments: String, uploadType:UploadFileType): UploadType
+
+    # Batch create reference data
+    referenceDataBatchCreate(referenceData: [ReferenceDataInput!]!, allowPartial: Boolean = true): ReferDataBatchCreateResultType!
+
+    # Batch update reference data
+    referenceDataBatchUpdate(filter: JSON!, operations: [OperationInput!]!, allowPartial: Boolean = true): ReferDataBatchUpdateResultType!
+
+    # Batch import reference data
+    referenceDataBatchImport(referenceData: [ReferenceDataInput!]!, allowPartial: Boolean = true): ReferDataBatchImportResultType!
+
+    referenceDataBatchDelete(referenceData: [ReferenceDataDeleteInput!]!): ReferenceDataBatchDeleteResult!
+
+    # Batch update sys param
+    sysParamBatchUpdate(sysParams: [SysParamInput!]!): SysParamBatchUpdateResult!
+
+    # Update Asset Volatility Class Characteristic Document
+    assetVolatilityClassCharUpdate(doc: AssetVolatilityClassCharInput!): AssetVolatilityClassChar
+
+    # Update Asset Volatility Class Correlation Document
+    assetVolatilityClassCorlUpdate(doc: AssetVolatilityClassCorlInput!): AssetVolatilityClassCorl
+
+    # Update Staff License Check Document
+    staffLicenseCheckImport(stafLicCheck: [StaffLicenseCheckInput!]!): StaffLicenseCheckBatchImportResultType!
+
+    # Batch create financial document
+    finDocBatchCreate(finDoc: [FinDocAmendmentInput!]!, allowPartial: Boolean = true): FinDocBatchCreateResultType!
+
+    # Batch update financial document
+    finDocBatchUpdate(filter: JSON!, operations: [OperationInput!]!, allowPartial: Boolean = true): FinDocBatchUpdateResultType!
+
+    # Batch import price history
+    productPriceHistoryBatchImport(priceHistory:[ProductPriceHistoryInput!]!, allowPartial: Boolean = true): PriceHistoryBatchImportResultType
+
+    # Setup default config once the record is approved
+    # Currently only used for customer eligibility setup
+    defaultFieldConfigCreate(filter: JSON!, docType: DocType!): AmendmentType
+}
+
+type Entity {
+    # Country code, eg. GB, HK
+    ctryRecCde: String!
+
+    # Group member code, eg. HBEU, dummy
+    grpMembrRecCde: String!
+}
+
+type UserInfo {
+    # Staff id of the user
+    id: String
+
+    # User name
+    name: String
+
+    # User roles viewer / editor / approver
+    roles: [String]
+
+    # Used to verify whether the session has expired
+    sessionToken: String
+}
+
+# Product validation error
+type Error {
+    # jsonPath of the data point
+    jsonPath: String!
+    # Error code
+    code: String!
+    # Descriptive message of the error
+    message: String
+}
+
+type ReferenceData {
+    _id: Long!
+    revision: Long!
+    createdBy: String
+    lastUpdatedBy: String
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    cdvTypeCde: String!
+    cdvCde: String!
+    cdvDesc: String
+    cdvPllDesc: String
+    cdvSllDesc: String
+    cdvDispSeqNum: Long
+    cdvParntTypeCde: String
+    cdvParntCde: String
+    recCmntText: String
+    chanlComnCde: [String!]
+    recCreatDtTm: DateTime!
+    recUpdtDtTm: DateTime!
+
+    # Parent reference data item
+    parent: ReferenceData
+
+    # Children reference data item
+    children: [ReferenceData]
+
+    # Retrieve related amendments, by default return the last change only, sorting is supported
+    amendments(lastOnly: Boolean = true, sort: JSON): [AmendmentType]
+
+    isInUseByProduct(productFilter:JSON!, path: String): Boolean
+}
+
+input ReferenceDataInput {
+    _id: Long
+    revision: Long
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    cdvTypeCde: String!
+    cdvCde: String!
+    cdvDesc: String
+    cdvPllDesc: String
+    cdvSllDesc: String
+    cdvDispSeqNum: Long
+    cdvParntTypeCde: String
+    cdvParntCde: String
+    recCmntText: String
+    chanlComnCde: [String!]
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+    createdBy: String
+    lastUpdatedBy: String
+    lastSyncTime: DateTime
+}
+
+input ReferenceDataDeleteInput {
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    cdvTypeCde: String!
+    cdvCde: String!
+}
+
+input SysParamInput {
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    parmCde: String!
+    parmValueText: String!
+    docFinTypeCde: String
+    docFinCatCde: String
+}
+
+input StaffLicenseCheckInput{
+    _id: Long
+    revision: Long
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    prodTypeCde: String
+    prodSubtpCde: String
+    employPosnCde: String!
+    frmlaEmplyEligText: String
+    ovridEmplyEligChkInd: String
+    ctoffEmplyEligChkInd: String
+    emplyEligCtoffDt: Date
+    frmlaEmpEligBfrCtoffText: String
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+    createdBy: String
+    lastUpdatedBy: String
+}
+
+type Configuration {
+  # Name of the configuration
+  name: String!
+
+  # Description of the configuration
+  description: String
+
+  # Country code + groupMember of the entity which apply this config
+  forEntity: String
+
+  # The configuration object
+  config: JSON!
+
+  # Last update time of the record
+  lastUpdateTime: DateTime
+}
+
+input ReferenceDataCriteria {
+    cdvTypeCde: String
+    cdvCde: String
+    cdvParntTypeCde: String
+    cdvParntCde: String
+}
+
+input ReferenceDataQueryParam {
+    chanlComnCde: String
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    criteriaList: [ReferenceDataCriteria!]
+}
+
+input ChanlRelatedFieldInput {
+    rowid: String
+    chanlCde: String!
+    fieldCde: String!
+    fieldCharValueText: String
+}
+
+input ChanlRelatedFieldsInput {
+    _id: Long!
+    revision: Long!
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    prodName: String!
+    prodTypeCde: String!
+    prodSubtpCde: String!
+    prodAltPrimNum: String!
+    allowBuyProdInd: String!
+    allowSellProdInd: String!
+    allowSwInProdInd: String!
+    allowSwOutProdInd: String!
+    chanlAttr: [ChanlRelatedFieldInput]
+}
+
+type ProductPriceHistoryType {
+    # Internal id
+    _id: String
+
+    # product id
+    prodId: Long
+
+    # Periodicity Price Code
+    pdcyPrcCde: String
+
+    # Price effect date
+    prcEffDt: Date
+
+    # Price Input Date
+    prcInpDt: Date
+
+    # Currency Code
+    ccyProdMktPrcCde: String
+
+    # Product Bid Price Amount
+    prodBidPrcAmt: Float
+
+    # Product Offer Price Amount
+    prodOffrPrcAmt: Float
+
+    # Product Market Price Amount
+    prodMktPrcAmt: Float
+
+    # Product Net Asset Value Price Amount
+    prodNavPrcAmt: BigDecimal
+
+    # Record create date time
+    recCreatDtTm: DateTime
+
+    # Record last update date time
+    recUpdtDtTm: DateTime
+}
+
+# System report document
+type ReportType {
+    # country code
+    ctryRecCde: String!
+    # group member code
+    grpMembrRecCde: String!
+    # report filename
+    filename: String!
+    # file extension
+    ext: String
+    # report code
+    reportCode: String!
+    # report date
+    reportDate: Date
+    # last modified time
+    lastModifiedTime: DateTime
+    # Size in bytes of the report file
+    size: Long
+}
+
+# Pagination supported report list result
+type ReportListResult {
+    total: Int
+    skip: Int
+    limit: Int
+    list: [ReportType]
+}
+
+type DashboardData {
+    # Group products by type
+    groupByProductType: [GroupItem!]
+    # Group products by status, can specify prodTypeCode for product status grouping filtering
+    groupByProductStatus(prodTypeCode: String): [GroupItem!]
+}
+
+type GroupItem {
+    code: String
+    name: String
+    count: Int!
+}
+
+type RequestLogType {
+    _id: ID
+    executionId: String!
+    userId: String
+    operationName: String
+    query: String
+    variables: String
+    requestTime: DateTime!
+    responseTime: DateTime!
+    millisCost: Long!
+    executionResult: JSON
+    hasData: Boolean
+    hasError: Boolean
+}
+
+
+type EsgDataItem {
+    id: String
+    prodId: Long
+    isin: String
+    productClassification: String
+    classificationName: String
+    classificationCode: EsgClassification
+    securityName: String
+    year: Int
+    quarter: Int
+}
+
+enum EsgClassification {
+    # ESG Enhanced
+    EsgEnhanced
+    # Impact
+    Impact
+    # Thematic
+    Thematic
+    # for products has ISIN code matched, but classified as NOTETI
+    NotETI
+    # for products has no ISIN code matched
+    NotAssessed
+}
+
+
+type Schema {
+    name: String
+    typeName: String
+}
+
+type ProdTypeChanlAttrType{
+    # Product Type Code
+    prodTypeCde: String
+
+    # Product Subtype Code
+    prodSubtpCde: String
+
+    #Country Record Code
+    ctryRecCde: String
+
+    #Group Member Record Code
+    grpMembrRecCde: String
+
+    chanlCde: String
+    fieldCde: String
+    fieldCharValueText: String
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+}
+
+type SysParamType{
+    ctryRecCde: String
+    grpMembrRecCde: String
+    parmCde: String
+    parmValueText: String
+    docFinTypeCde: String
+    docFinCatCde: String
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+}
+
+type SysParamKeyType{
+    ctryRecCde: String
+    grpMembrRecCde: String
+    parmCde: String
+}

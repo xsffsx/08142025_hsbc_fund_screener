@@ -1,0 +1,45 @@
+type FileIngressStatusPage {
+    total: Long
+    skip: Int
+    limit: Int
+    list: [FileIngressStatus]
+}
+
+type FileIngressStatus {
+    id: Long!
+    filename: String
+    md5: String
+    allLoaded: Boolean
+    recordCount: Long
+    createTime: DateTime
+    lastUpdateTime: DateTime
+    # Indicate if the ingress file is through WPS excel form upload
+    isExcelUploadForm: Boolean
+    pendingCount: Long
+    finishedCount: Long
+    errorCount: Long
+    skippedCount: Long
+    status: String
+    errorMessage: String
+}
+
+type FileIngressRecordPage {
+    total: Long
+    skip: Int
+    limit: Int
+    list: [FileIngressRecord]
+}
+
+type FileIngressRecord {
+    id: Long!
+    fisid: Long!
+    recordNum: Long
+    payload: String
+    rawData: String
+    status: String
+    sourceSystem: String
+    createTime: DateTime
+    lastUpdateTime: DateTime
+    errorMessage: String
+    rawErrorMessage: String
+}

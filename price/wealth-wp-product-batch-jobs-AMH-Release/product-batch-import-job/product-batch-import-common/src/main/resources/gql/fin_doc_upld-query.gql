@@ -1,0 +1,43 @@
+query  finDocUpldByFilter($filter: JSON!, $sort: JSON, $limit: Int = 0, $skip: Int = 0) {
+  finDocUpldByFilter(filter: $filter, sort: $sort, limit: $limit, skip: $skip) {
+    ctryRecCde
+    grpMembrRecCde
+    docFinTypeCde
+    docFinCatCde
+    docFinCde
+    langFinDocCde
+    recCreatDtTm
+    docStatCde
+    formtDocCde
+    docSzNum
+    docRecvName
+    docDesc
+    reqUrgntProcInd
+    emailAddrRplyText
+    reqAproveInd
+    docServrStatCde
+    urlFileServrText
+    fileDocName
+    reqArchInd
+    docArchStatCde
+    fileArchRqstName
+    urlArchSysText
+    docArchSerNum
+    urlLclSysText
+    docAproveDtTm
+    docRleasStartDtTm
+    docRleasEndDtTm
+    docArchStartDtTm
+    docArchEndDtTm
+    docEffDtTm
+    docExpirDt
+    prodTypeCde
+    prodSubtCde
+    prodCde
+    fileRqstName
+    reasonRejText
+    docSerNum
+    recUpdtDtTm
+    docUpldSeqNum
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- although reload is not much useful normal deployment in PCF as cannot
+	deploy file only it is still useful in local debug or patching by PCF SSH -->
+<configuration scan="true" scanPeriod="30 seconds">
+
+	<!-- https://github.com/spring-projects/spring-boot/blob/2.2.x/spring-boot-project/spring-boot/src/main/resources/org/springframework/boot/logging/logback/base.xml 
+	<property name="LOG_FILE" value="./logs/messages.log" />
+	<property name="LOG_FILE_MAX_SIZE" value="20MB" />
+	<property name="LOG_FILE_MAX_HISTORY" value="7" />
+	<property name="LOG_FILE_TOTAL_SIZE_CAP" value="100MB" />
+	<property name="ROLLING_FILE_NAME_PATTERN" value="${LOG_FILE}_%d{yyyy-MM-dd}.%i.log" />  -->
+
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+
+	<logger name="com.dummy.wmd" level="DEBUG" />
+	<logger name="com.dummy.wpb" level="DEBUG" /> 
+
+</configuration>

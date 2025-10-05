@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43442",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:31:57.408387",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43442%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "142b4f41-c579-416d-8e58-1019a648fa6a:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "16",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Hd77hLJSK-bXNlZ7SJ2vKuRv4n7V1OuS1xx4iaUJEj1tRjOs5PqM4A==",
+        "x-hsbc-request-correlation-id": "a7111510-b0b6-4340-8940-18f68fdaff54",
+        "date": "Wed, 13 Aug 2025 13:31:57 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "16",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 0d77e3c2bc9ecd8af261bb574e3f0214.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "525",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sea Ltd ADR\",\"weighting\":9.09817,\"currency\":\"USD\",\"marketValue\":2701051},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"DBS Group Holdings Ltd\",\"weighting\":8.51239,\"currency\":\"USD\",\"marketValue\":2527146},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Singapore Telecommunications Ltd\",\"weighting\":7.37997,\"currency\":\"USD\",\"marketValue\":2190955},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Oversea-Chinese Banking Corp Ltd\",\"weighting\":7.19053,\"currency\":\"USD\",\"marketValue\":2134713},{\"market\":\"MY\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Grab Holdings Ltd Class A\",\"weighting\":5.10776,\"currency\":\"USD\",\"marketValue\":1516384},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"HSBC US Dollar Liquidity Y\",\"weighting\":4.64465,\"currency\":\"USD\",\"marketValue\":1378896},{\"market\":\"ID\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PT Bank Rakyat Indonesia (Persero) Tbk Registered Shs Series -B-\",\"weighting\":4.2508,\"currency\":\"USD\",\"marketValue\":1261971},{\"market\":\"MY\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CIMB Group Holdings Bhd\",\"weighting\":4.22173,\"currency\":\"USD\",\"marketValue\":1253340},{\"market\":\"ID\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PT Bank Mandiri (Persero) Tbk\",\"weighting\":3.75328,\"currency\":\"USD\",\"marketValue\":1114269},{\"market\":\"SG\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"United Overseas Bank Ltd\",\"weighting\":3.68455,\"currency\":\"USD\",\"marketValue\":1093864}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

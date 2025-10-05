@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62457",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:56.319862",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62457%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "7a20a17b-b5f2-46ad-9b2a-0be0be0939fc:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "vUezeP0U-hNV8lKrhf_r8E8SDF2BJol3RHIKl33zPyPwb6Yg04leOw==",
+        "x-hsbc-request-correlation-id": "b21f0cf4-ecc8-42e9-8fa6-7ba5f080f37e",
+        "date": "Wed, 13 Aug 2025 13:38:55 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "32",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 ac1b0b590fa34d8efd3e06ea595821ac.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "455",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC Asia Pacific ex Japan Equity High Dividend (AM3O-RMBH-MDIST-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM3O-RMBH-MDIST-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62866\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HAPHR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62866\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1791438879\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001CW8L\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050076464\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50076464\"}]},{\"productName\":\"HSBC ASIA PACIFIC EX JAPAN EQUITY HIGH DIVIDEND F (AM2-USD-MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM-USD-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62458\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HAPMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62458\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0630378429\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000TK3Y\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047012\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047012\"}]},{\"productName\":\"HSBC ASIA PACIFIC EX JAPAN EQUITY HIGH DIVIDEND F (AS-USD-SDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-SDIST CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43390\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"H3390\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43390\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0197773673\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001A21\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046866\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046866\"}]},{\"productName\":\"HSBC ASIA PACIFIC EX JAPAN EQUITY HIGH DIVIDEND F (AS-USD-SDIST UNIT)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AD-SDIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U43379\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HAPHA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U43379\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0197773673\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001A21\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046865\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046865\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

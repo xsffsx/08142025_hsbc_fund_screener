@@ -1,0 +1,99 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "RBP",
+  "path": "/appvol/product-spring-batch-sit/data/outgoing/SGHBSP/RBP/",
+  "tasks": [
+    {
+      "files": [
+        {
+          "name": "SEC XML",
+          "templateName": "/xml/33/SEC.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_RBP_SEC_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SEC",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    },
+    {
+      "files": [
+        {
+            "name": "BOND XML",
+          "templateName": "/xml/33/BOND.xml",
+          "fileName": "${ctryRecCde}_${grpMembrRecCde}_RBP_BOND_${date:yyyyMMddHHmmss}_${sequence}.xml"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "BOND",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        }
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "DPS CSV",
+          "templateName": "/csv/DPS.html",
+          "fileName": "SGHBSPtreemap_DPS_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "DPS",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    },
+    {
+      "files": [
+        {
+          "name": "SID CSV",
+          "templateName": "/csv/SID.html",
+          "fileName": "SGHBSPtreemap_SID_${date:yyyyMMddHHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "SID",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "S"
+          ]
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    }
+  ],
+  "ack": {
+    "generate": true,
+    "fileName": "${ctryRecCde}_${grpMembrRecCde}_${systemCde}_${sequence}.out"
+  },
+  "timeZone": "Asia/Singapore"
+}

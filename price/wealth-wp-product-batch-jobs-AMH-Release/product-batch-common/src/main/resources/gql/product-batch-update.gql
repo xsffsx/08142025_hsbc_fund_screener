@@ -1,0 +1,45 @@
+mutation productBatchUpdate($filter: JSON!, $operations: [OperationInput!]!, $allowPartial: Boolean) {
+  productBatchUpdate(filter: $filter, operations: $operations, allowPartial: $allowPartial) {
+    matchCount
+    matchProducts {
+      ctryRecCde
+      grpMembrRecCde
+      prodId
+      prodType
+      prodTypeCde
+      prodSubtpCde
+      prodCde
+      prodAltPrimNum
+      prodName
+    }
+    updatedProducts {
+      ctryRecCde
+      grpMembrRecCde
+      prodId
+      prodType
+      prodTypeCde
+      prodSubtpCde
+      prodCde
+      prodAltPrimNum
+      prodName
+    }
+    invalidProducts {
+      product {
+        ctryRecCde
+        grpMembrRecCde
+        prodId
+        prodType
+        prodTypeCde
+        prodSubtpCde
+        prodCde
+        prodAltPrimNum
+        prodName
+      }
+      errors {
+        jsonPath
+        code
+        message
+      }
+    }
+  }
+}

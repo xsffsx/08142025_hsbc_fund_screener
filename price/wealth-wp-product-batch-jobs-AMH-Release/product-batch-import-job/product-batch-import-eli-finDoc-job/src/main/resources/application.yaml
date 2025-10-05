@@ -1,0 +1,105 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password:
+    #password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+  data:
+    mongodb:
+      host: "amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: 27017
+      database: WPC_AMH_DEV
+      username: WPCHKGLUA9_APPUSER
+      password:
+      #password: "{cipher}aa279e18a8d106e2860aec459ecc538ec0bda1dec541b663b9d367ec31b3711e5ad3af8461293ea3d7ae96f5d6f73510"
+      enable-replica: false
+  main:
+    web-application-type: none
+batch:
+  graphQLUrl: "https://product-graphql-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+
+finDoc:
+  eli:
+    url: "https://hfi-qualityassurance.p2g.netd2.dummy.com.hk/data/hk/invest/eli/"
+
+CMB:
+  DCDC:
+    ELI:
+      PROD_SUB_TP_CDE: "CELI_FIX,CELI_FIX_B,CELI_AIR,CELI_AIR_B,CELI_AW_S,CELI_AW_B"
+  PPR:
+    ELI:
+      PROD_SUB_TP_CDE: "CELI_PPR_B,CELI_PPR_S"
+    PPN:
+      PROD_SUB_TP_CDE: "CPPN_PPR"
+  UPOUT:
+    PPN:
+      PROD_SUB_TP_CDE: "CPPN_UPOUT"
+  STPDN:
+    PPN:
+      PROD_SUB_TP_CDE: "CPPN_STPDN"
+  FCN:
+    PPN:
+      PROD_SUB_TP_CDE: "CPPN_FCN"
+  TWSF:
+    PPN:
+      PROD_SUB_TP_CDE: "CPPN_TWSF"
+
+PDF:
+  basePath: "/appvol/product-spring-batch/bin/HKHBAP/config/pdf/"
+  IMPORTANT_FILE_FOR_DCDC_ELI: "${PDF.basePath}important_cmb_eli_dcdc.pdf"
+  IMPORTANT_FILE_FOR_PPR_ELI: "${PDF.basePath}important_cmb_eli_ppr.pdf"
+  IMPORTANT_FILE_FOR_PPR_PPN_1: "${PDF.basePath}important_cmb_ppn_ppr_1.pdf"
+  IMPORTANT_FILE_FOR_PPR_PPN_2: "${PDF.basePath}important_cmb_ppn_ppr_2.pdf"
+  IMPORTANT_FILE_FOR_PPN_FCN_1: "${PDF.basePath}important_cmb_ppn_fcn_1.pdf"
+  IMPORTANT_FILE_FOR_PPN_FCN_2: "${PDF.basePath}important_cmb_ppn_fcn_2.pdf"
+  IMPORTANT_FILE_FOR_PPN_STPDWN_1: "${PDF.basePath}important_cmb_ppn_stpdwn_1.pdf"
+  IMPORTANT_FILE_FOR_PPN_STPDWN_2: "${PDF.basePath}important_cmb_ppn_stpdwn_2.pdf"
+  IMPORTANT_FILE_FOR_PPN_UPOUT_1: "${PDF.basePath}important_cmb_ppn_upout_1.pdf"
+  IMPORTANT_FILE_FOR_PPN_UPOUT_2: "${PDF.basePath}important_cmb_ppn_upout_2.pdf"
+  IMPORTANT_FILE_FOR_PPN_TWSF_1: "${PDF.basePath}important_cmb_ppn_kos_1.pdf"
+  IMPORTANT_FILE_FOR_PPN_TWSF_2: "${PDF.basePath}important_cmb_ppn_kos_2.pdf"
+  IMPORTANT_FILE_FOR_DCDC: "${PDF.basePath}impotant_dcdc.pdf"
+  IMPORTANT_FILE_FOR_PPR: "${PDF.basePath}impotant_ppr.pdf"
+  IMPORTANT_FILE_FOR_STPDN: "${PDF.basePath}impotant_stpdn.pdf"
+  IMPORTANT_FILE_FOR_UPOUT: "${PDF.basePath}impotant_upout.pdf"
+  IMPORTANT_FILE_FOR_FCN: "${PDF.basePath}impotant_fcn.pdf"
+  IMPORTANT_FILE_FOR_TWSF: "${PDF.basePath}impotant_twsf.pdf"
+  IMPORTANT_FILE_FOR_CFFN: "${PDF.basePath}impotant_cffn.pdf"
+  IMPORTANT_FILE_FOR_DCNFORPP: "${PDF.basePath}impotant_dcnpp.pdf"
+  IMPORTANT_FILE_FOR_DCNFORNPP: "${PDF.basePath}impotant_dcnnpp.pdf"
+  IMPORTANT_FILE_FOR_PNOTE: "${PDF.basePath}impotant_pnote.pdf"
+  IMPORTANT_FILE_FOR_TWAC: "${PDF.basePath}impotant_twac.pdf"
+  IMPORTANT_FILE_FOR_RAN: "${PDF.basePath}impotant_ran.pdf"
+  IMPORTANT_FILE_FOR_STEEPENER: "${PDF.basePath}impotant_steepener.pdf"
+  IMPORTANT_FILE_FOR_UPOUTELI: "${PDF.basePath}impotant_uoeli.pdf"
+  IMPORTANT_FILE_FOR_FCELI: "${PDF.basePath}impotant_fceli.pdf"
+  IMPORTANT_FILE_FOR_INVERSE: "${PDF.basePath}impotant_inverse.pdf"
+  IMPORTANT_FILE_FOR_SBN: "${PDF.basePath}impotant_sbn.pdf"
+  IMPORTANT_FILE_FOR_LINEAR: "${PDF.basePath}impotant_linear.pdf"
+  IMPORTANT_FILE_FOR_FXN: "${PDF.basePath}impotant_fxn.pdf"
+  IMPORTANT_FILE_FOR_FXWCN: "${PDF.basePath}impotant_fxwcn.pdf"
+  IMPORTANT_FILE_FOR_BEN: "${PDF.basePath}impotant_ben.pdf"
+  IMPORTANT_FILE_FOR_BENELI: "${PDF.basePath}impotant_beneli.pdf"
+  IMPORTANT_FILE_FOR_APENDIX1: "${PDF.basePath}impotant_apendix1.pdf"
+  IMPORTANT_FILE_FOR_APENDIX2: "${PDF.basePath}impotant_apendix2.pdf"
+  IMPORTANT_FILE_FOR_APENDIX3: "${PDF.basePath}impotant_apendix3.pdf"
+  IMPORTANT_FILE_FOR_APENDIX4: "${PDF.basePath}impotant_apendix4.pdf"
+  IMPORTANT_FILE_FOR_APENDIX5: "${PDF.basePath}impotant_apendix5.pdf"
+
+
+ISSUER:
+  INFO:
+    UNDL_TYPE_CODE: "IR,FX"
+
+
+Chmod:
+  Script: "chmod 775"
+Chown:
+  Script: "chown wpsftp:wealth-grp"
+ELI:
+  S3:
+    Script: "C:/workspace/IDEA/wealth-wp-product-batch-jobs/product-batch-script/common/wpc_findoc_copy_to_s3.sh"

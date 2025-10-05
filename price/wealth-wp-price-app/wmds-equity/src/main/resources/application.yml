@@ -1,0 +1,88 @@
+spring:
+  datasource:
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 20
+      idle-timeout: 500000
+      max-lifetime: 540000
+      connection-timeout: 60000
+  cache:
+    type: ehcache
+  profiles:
+    active: @environment@
+  jpa:
+    database-platform: "org.hibernate.dialect.Oracle10gDialect"
+#  http:
+#    encoding:
+#      charset: UTF-8
+#      enabled: true
+#      force: true
+#      force-response: true
+
+  service-api: 
+    QUOTES:   
+      request-parameters: 
+      rules: 
+        DEFAULT: DEFAULT
+      end-point: 
+        DEFAULT: tris
+    TopMover:
+      request-parameters: 
+      rules: 
+        DEFAULT: DEFAULT
+      end-point:
+        DEFAULT: trisTopmover
+
+entitlement:
+  enable: true
+  interceptor-url: "/wealth/api/v1/market-data/**"
+  service-url-mapping:
+    "/equity/quotes/same-sector-equity": EQTY_QUOTES
+    "/equity/quotes/top-mover": EQTY_QUOTES
+    "/equity/quotes": EQTY_QUOTES
+    "/quotes": QUOTES
+  service-api:
+    EQTY_QUOTES:
+      checklist: countryCode, groupMember, appCode
+      white-list-rules:
+        countryCode_groupMember: TW_hhhh
+        appCode: SRBP, WD, SRBPBE
+    QUOTES:
+      checklist: appCode
+      white-list-rules:
+        appCode: HCBS-SRBP
+
+
+server:
+  max-http-header-size: 491520
+#  tomcat:
+#    uri-encoding=UTF-8: UTF-8
+#  servlet:
+#    encoding:
+#      force-response: true
+
+#for update actuator url
+management:
+  context-path: /actuator
+  security:
+    enabled: false
+
+endpoints:
+  beans:
+    sensitive: false
+    enabled: true
+    id: springbeans
+
+springdoc:
+  swagger-ui:
+    path: /swagger/hase-mds/
+
+springfox:
+  documentation:
+    swagger:
+      resources:
+        base:
+          path: /swagger/hase-mds/
+      swagger2:
+        base:
+          path: /swagger/hase-mds/

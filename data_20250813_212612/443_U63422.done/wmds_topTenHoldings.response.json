@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U63422",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:45:55.866520",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63422%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "bed1eec6-51cc-4594-a5c7-697419faf066:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "2nb5Xy741Fv419lzvZ_C8G64g9DAnEu8lnas5WJQRX8-c3EYNuIt5A==",
+        "x-hsbc-request-correlation-id": "ca8228ac-0928-4237-b62f-211fa7a136f7",
+        "date": "Wed, 13 Aug 2025 13:45:55 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 1115f9e25c9d03c18355ab052e8e9a5c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "519",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future Sept 25\",\"weighting\":8.99368,\"currency\":\"USD\",\"marketValue\":54505953},{\"market\":null,\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Us 5yr Note (Cbt) Sep25 Xcbt 20250930\",\"weighting\":5.53514,\"currency\":\"USD\",\"marketValue\":-33545531},{\"market\":null,\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Us 5yr Note (Cbt) Sep25 Xcbt 20250930\",\"weighting\":3.84584,\"currency\":\"USD\",\"marketValue\":23307609},{\"market\":null,\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Us Ultra Bond Cbt Sep25 Xcbt 20250919\",\"weighting\":3.42086,\"currency\":\"USD\",\"marketValue\":20732031},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Goldman Sachs Emerging Markets Gs Em Mkt Debt Loc P Iogrmds\",\"weighting\":3.14155,\"currency\":\"USD\",\"marketValue\":19039250},{\"market\":null,\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Goldman Sachs Sicav I Gs E Gs Emrg Mkt Debt Pt Iogmdus\",\"weighting\":3.09322,\"currency\":\"USD\",\"marketValue\":18746342},{\"market\":\"US\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"10 Year Treasury Note Future Sept 25\",\"weighting\":1.82828,\"currency\":\"USD\",\"marketValue\":-11080266},{\"market\":null,\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro-Schatz Fut Sep25 Xeur 20250908\",\"weighting\":1.32729,\"currency\":\"USD\",\"marketValue\":8043985},{\"market\":\"DE\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euro Bobl Future Sept 25\",\"weighting\":1.29728,\"currency\":\"USD\",\"marketValue\":7862156},{\"market\":\"GB\",\"productType\":\"TF\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Long Gilt Future Sept 25\",\"weighting\":0.9881,\"currency\":\"USD\",\"marketValue\":5988322}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

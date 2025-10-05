@@ -1,0 +1,41 @@
+HSBC Fund Screener Debug Log
+Generated: 20250906_152120
+Total Log Entries: 9
+================================================================================
+
+Entry #01:
+{'timestamp': '2025-09-06T15:22:29.672243', 'step': '步骤2', 'action': '找到下拉框', 'details': {'selector': '#dropdown-riskLevel', 'element_type': 'A标签'}}
+------------------------------------------------------------
+
+Entry #02:
+{'timestamp': '2025-09-06T15:22:29.712600', 'step': '步骤2', 'action': '点击下拉框', 'details': {'selector': '#dropdown-riskLevel', 'success': True}}
+------------------------------------------------------------
+
+Entry #03:
+{'timestamp': '2025-09-06T15:22:30.740266', 'step': '步骤2', 'action': '成功选择选项', 'details': {'selector': 'li:has-text("Speculative - 5")', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #04:
+{'timestamp': '2025-09-06T15:22:31.244971', 'step': '步骤3', 'action': '找到搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'element_type': 'A标签', 'success': True}}
+------------------------------------------------------------
+
+Entry #05:
+{'timestamp': '2025-09-06T15:22:31.580326', 'step': '步骤3', 'action': '成功点击搜索按钮', 'details': {'selector': 'a[data-testid="Search"]', 'method': 'direct_click', 'success': True}}
+------------------------------------------------------------
+
+Entry #06:
+{'timestamp': '2025-09-06T15:22:36.698401', 'step': '步骤4', 'action': '成功点击Fees and charges标签', 'details': {'selector': 'button:has-text("Fees and charges"), a:has-text("Fees and charges"), [data-testid*="fees"], [data-testid*="charges"]', 'success': True}}
+------------------------------------------------------------
+
+Entry #07:
+{'timestamp': '2025-09-06T15:22:38.705263', 'step': '步骤4', 'action': 'Fees and charges页面切换状态不明', 'details': {'url': 'https://investments3.personal-banking.hsbc.com.hk/public/utb/en-gb/fundScreenerResult', 'content_found': False, 'warning': True}}
+------------------------------------------------------------
+
+Entry #08:
+{'timestamp': '2025-09-06T15:22:41.737424', 'step': '步骤4.1', 'action': '成功点击Annual management fee列标题', 'details': {'selector': 'th:has-text("Annual management fee"), button:has-text("Annual management fee"), [data-testid*="annual"], [data-testid*="management"], [data-testid*="fee"]', 'success': True}}
+------------------------------------------------------------
+
+Entry #09:
+{'timestamp': '2025-09-06T15:22:44.739224', 'step': '步骤5', 'action': '使用默认显示数量', 'details': {'action': 'skip_display_adjustment', 'reason': '使用页面默认显示数量', 'success': True}}
+------------------------------------------------------------
+

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U61080",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:26:44.416095",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61080%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "8198cbc7-90fe-4e54-a491-da7ec51e5e6b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Rhc2-Ourea86jzwRJsuFDAQAmYu6V9-lPOJD_8Wx79TVzX8YenfZyQ==",
+        "x-hsbc-request-correlation-id": "d4a93ac4-8f4d-4a7a-9c33-f1f03d94fbda",
+        "date": "Wed, 13 Aug 2025 13:26:44 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0431",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "17",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 647107365d932658df4221029c0ad406.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1242",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U61080\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"EB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":223.65,\"currency\":\"USD\",\"companyName\":\"BlackRock European Fund (Class A2-USD)\",\"securityDescription\":null,\"changeAmount\":-0.25,\"changePercent\":-0.11166,\"bidPrice\":223.65,\"bidPriceDate\":\"2025-08-12\",\"bidSize\":null,\"askPrice\":223.65,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000W7OO\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":0.25192},{\"year\":2023,\"annualCalendarYearReturn\":21.90399},{\"year\":2022,\"annualCalendarYearReturn\":-29.05922},{\"year\":2021,\"annualCalendarYearReturn\":19.21976},{\"year\":2020,\"annualCalendarYearReturn\":31.50704}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":14.04615,\"dailyPerformanceNAV\":14.69231},{\"period\":\"1M\",\"trailingTotalReturn\":-2.0481,\"dailyPerformanceNAV\":-1.6534},{\"period\":\"3M\",\"trailingTotalReturn\":8.47234,\"dailyPerformanceNAV\":5.65975},{\"period\":\"6M\",\"trailingTotalReturn\":7.52829,\"dailyPerformanceNAV\":7.97567},{\"period\":\"1Y\",\"trailingTotalReturn\":6.48312,\"dailyPerformanceNAV\":11.27973},{\"period\":\"3Y\",\"trailingTotalReturn\":11.57233,\"dailyPerformanceNAV\":11.38753},{\"period\":\"5Y\",\"trailingTotalReturn\":7.60547,\"dailyPerformanceNAV\":7.13868},{\"period\":\"10Y\",\"trailingTotalReturn\":5.19016,\"dailyPerformanceNAV\":5.4792}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2005-02-28\"},\"entityUpdatedTime\":\"2025-08-13T21:26:44.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61080\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M1080\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61080\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0171280430\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000W7OO\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046969\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046969\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

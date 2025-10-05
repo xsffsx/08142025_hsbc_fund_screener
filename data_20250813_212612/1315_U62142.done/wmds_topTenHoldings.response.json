@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62142",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:51:47.674653",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62142%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "74bf9e8d-9ac0-4f79-895a-28d29a28e8bc:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "I0deLWKiQfBQP_KOXweyfCDH6C5eP2Kxo4EbKK9FXCiytcEV7u7Qig==",
+        "x-hsbc-request-correlation-id": "409567e2-25ed-4319-891b-8084e69306a7",
+        "date": "Wed, 13 Aug 2025 13:51:46 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 bafb3fcfb450000b354db6fbbd3d2828.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "497",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"SA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Al Rajhi Bank\",\"weighting\":8.05231,\"currency\":\"USD\",\"marketValue\":5306603},{\"market\":\"KW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"National Bank of Kuwait SAK\",\"weighting\":7.43781,\"currency\":\"USD\",\"marketValue\":4901636},{\"market\":\"SA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Saudi National Bank\",\"weighting\":6.60259,\"currency\":\"USD\",\"marketValue\":4351214},{\"market\":\"AE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Emirates NBD PJSC\",\"weighting\":5.14906,\"currency\":\"USD\",\"marketValue\":3393315},{\"market\":\"AE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"First Abu Dhabi Bank PJSC\",\"weighting\":5.13209,\"currency\":\"USD\",\"marketValue\":3382126},{\"market\":\"AE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Abu Dhabi Islamic Bank\",\"weighting\":4.07413,\"currency\":\"USD\",\"marketValue\":2684916},{\"market\":\"AE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Emaar Properties PJSC\",\"weighting\":3.69311,\"currency\":\"USD\",\"marketValue\":2433817},{\"market\":\"AE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Spinneys 1961 Holding plc\",\"weighting\":2.63375,\"currency\":\"USD\",\"marketValue\":1735684},{\"market\":\"AE\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Aldar Properties PJSC\",\"weighting\":2.59632,\"currency\":\"USD\",\"marketValue\":1711013},{\"market\":\"SA\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Arabian Internet and Communications Services Co Ordinary Shares\",\"weighting\":2.58453,\"currency\":\"USD\",\"marketValue\":1703246}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

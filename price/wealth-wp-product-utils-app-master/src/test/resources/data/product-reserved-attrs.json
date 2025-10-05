@@ -1,0 +1,15 @@
+{
+  "_id" : "ALL/product-reserved-attrs",
+  "forEntity" : "ALL",
+  "name" : "product-reserved-attrs",
+  "description" : "Product Reserved Attrs",
+  "config" : [
+    "altId[?(@.prodCdeAltClassCde=='Q')]",
+    "stockInstm.vaEtfIndicator",
+    "equityRecommendations",
+    "gac",
+    "volatility"
+  ],
+  "schema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"title\": \"Product Reserved Attrs config schema\",\n  \"description\": \"for product-reserved-attrs.yaml validation\",\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"string\"\n  }\n}",
+  "lastUpdateTime" : ISODate("2023-09-18T09:35:58.017Z")
+}

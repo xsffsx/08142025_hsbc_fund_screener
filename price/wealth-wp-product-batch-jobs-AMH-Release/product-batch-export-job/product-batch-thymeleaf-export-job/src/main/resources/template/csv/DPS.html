@@ -1,0 +1,41 @@
+<html lang="en" th:remove="tag">
+<th:block th:if="${isFirst}">
+        HEADERWPC_IDSTL                     [(${#dates.format(startTime,'yyyyMMddHHmmss')})]
+</th:block>
+<th:block th:with="dpsCsvInfos=${#csvs.parse(
+    'DPS_TYPE_CDE: ccyOptLinkDepst.get(''depstPlusTypeCde'')',
+    'DPS_TYPE_DESC: #refDatas.desc(''DPSTYPE'', ccyOptLinkDepst.get(''depstPlusTypeCde''))',
+    'DPS_TYPE_PLL_DESC: #refDatas.pllDesc(''DPSTYPE'', ccyOptLinkDepst.get(''depstPlusTypeCde''))',
+    'DPS_TYPE_SLL_DESC: #refDatas.sllDesc(''DPSTYPE'', ccyOptLinkDepst.get(''depstPlusTypeCde''))',
+    'TMD_PROD_CDE: ccyOptLinkDepst.get(''prodExtnlCde'')',
+    'PROD_SFX: ccyOptLinkDepst.get(''prodExtnlSuffNum'')',
+    'CRNCY_LINK_CDE: ccyOptLinkDepst.get(''ccyLinkDepstCde'')',
+    'DEPST_MIN_CCY: product.get(''ccyProdCde'')',
+    'DEPST_MIN_AMT: #doubles.stripDeciaml(product.get(''invstInitMinAmt''))',
+    'DEPST_MIN_DP: #doubles.decimalPlace(0)',
+    'TLR_MADE_DPS_IND: ccyOptLinkDepst.get(''tailrMadeDepstInd'')',
+    'KNOCK_TYPE_CDE: ccyOptLinkDepst.get(''knockTypeCde'')',
+    'KNOCK_TYPE_DESC: #refDatas.desc(''GOALPRTY'', ccyOptLinkDepst.get(''knockTypeCde''))',
+    'KNOCK_TYPE_PLL_DESC: #refDatas.pllDesc(''GOALPRTY'', ccyOptLinkDepst.get(''knockTypeCde''))',
+    'KNOCK_TYPE_SLL_DESC: #refDatas.sllDesc(''GOALPRTY'', ccyOptLinkDepst.get(''knockTypeCde''))',
+    'EXCHG_RATE_FIX_DT: #dates.format(ccyOptLinkDepst.get(''exchgRateFixDt''), ''yyyyMMdd'')',
+    'CONV_FACTR_RATE: #doubles.stripDeciaml(ccyOptLinkDepst.get(''factrConvRate''))',
+    'INT_PCT: #doubles.stripTrailingZeros(ccyOptLinkDepst.get(''intRate''))',
+    'EXCHG_SPOT_RATE: #doubles.stripDeciaml(ccyOptLinkDepst.get(''exchgSpotRate''))',
+    'EXCHG_INIT_RATE: #doubles.stripDeciaml(ccyOptLinkDepst.get(''exchgInitRate''))',
+    'EXCHG_BKVN_RATE: #doubles.stripDeciaml(ccyOptLinkDepst.get(''exchgBreakEvenRate''))',
+    'PRD_OBSR_START_DT: #dates.format(ccyOptLinkDepst.get(''obsrvStartDt''), ''yyyyMMdd'')',
+    'PRD_OBSR_END_DT: #dates.format(ccyOptLinkDepst.get(''obsrvEndDt''), ''yyyyMMdd'')',
+    'EXCHG_TRGR_RATE: #doubles.stripDeciaml(ccyOptLinkDepst.get(''exchgTrigRate''))',
+    'OVDFT_SEC_PCT: #doubles.stripDeciaml(ccyOptLinkDepst.get(''loanProdOdMrgnPct''))',
+    'RTRN_OPTN: ccyOptLinkDepst.get(''rtnOptCde'')',
+    'SRC_CRNCY: ccyOptLinkDepst.get(''ccyFromCde'')',
+    'TRG_CRNCY: ccyOptLinkDepst.get(''ccyToCde'')'
+    )}
+">
+    <th:block th:replace="~{COMMON.html :: export (${dpsCsvInfos})}"/>
+    <th:block th:if="${isLast}">
+        TRAILERWPC_IDSTL                    [(${#numbers.formatInteger(count,7)})]
+    </th:block>
+</th:block>
+</html>

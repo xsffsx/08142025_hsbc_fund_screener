@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U61060",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:16.305847",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61060%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b4a5a5ab-7a89-40b2-ad1a-5d321507fe42:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "vBk80XhJ3ucJ8Y0rGyNi5bBlp4lvYb80Cfad2AsFN8EENF1jisUqgQ==",
+        "x-hsbc-request-correlation-id": "49df875f-3f8c-40c1-9704-3410082c5671",
+        "date": "Wed, 13 Aug 2025 13:38:16 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "17",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9ae68eb5525ee3d01638b582aa3a4566.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1253",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U61060\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"SS\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":93.84,\"currency\":\"EUR\",\"companyName\":\"FIDELITY FUNDS - GLOBAL CONSUMER BRANDS FUND (CLASS A)\",\"securityDescription\":null,\"changeAmount\":0.06,\"changePercent\":0.06398,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"4\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00000EDH\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Annually\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"SPEC\",\"categoryLevel1Name\":\"Specialties\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":19.47743},{\"year\":2023,\"annualCalendarYearReturn\":20.32009},{\"year\":2022,\"annualCalendarYearReturn\":-23.69425},{\"year\":2021,\"annualCalendarYearReturn\":16.54594},{\"year\":2020,\"annualCalendarYearReturn\":20.41316}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":-5.30815,\"dailyPerformanceNAV\":-6.71968},{\"period\":\"1M\",\"trailingTotalReturn\":4.1776,\"dailyPerformanceNAV\":0.94664},{\"period\":\"3M\",\"trailingTotalReturn\":12.78712,\"dailyPerformanceNAV\":2.70329},{\"period\":\"6M\",\"trailingTotalReturn\":-10.55399,\"dailyPerformanceNAV\":-10.20096},{\"period\":\"1Y\",\"trailingTotalReturn\":3.62232,\"dailyPerformanceNAV\":6.6606},{\"period\":\"3Y\",\"trailingTotalReturn\":6.959,\"dailyPerformanceNAV\":5.67901},{\"period\":\"5Y\",\"trailingTotalReturn\":7.00286,\"dailyPerformanceNAV\":6.11608},{\"period\":\"10Y\",\"trailingTotalReturn\":7.29507,\"dailyPerformanceNAV\":7.70292}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2005-02-28\"},\"entityUpdatedTime\":\"2025-08-13T21:38:16.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61060\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F1060\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61060\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0114721508\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000EDH\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046949\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046949\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

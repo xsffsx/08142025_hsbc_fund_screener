@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<bean id="servicesHolder" class="java.util.HashMap">
+		<constructor-arg>
+			<map>
+				<entry key="predictiveSearchService" value-ref="predictiveSearchService" />
+				<entry key="multiPredictiveSearchService" value-ref="multiPredictiveSearchService" />
+				<!-- <entry key="quoteDetailService" value-ref="quoteDetailService" />
+				<entry key="quoteListService" value-ref="quoteListService" />
+				<entry key="quotePerformanceService" value-ref="quotePerformanceService" />
+				<entry key="quoteHoldingsService" value-ref="quoteHoldingsService" />
+				<entry key="topTenHoldingsService" value-ref="topTenHoldingsService" />
+				<entry key="fundTopAndBottomCatChartService" value-ref="fundTopAndBottomCatChartService" />
+				<entry key="fundTopAndBottomCategoryService" value-ref="fundTopAndBottomCategoryService" />
+				<entry key="fundQuoteSummaryService" value-ref="fundQuoteSummaryService" />
+				<entry key="fundHoldingsDiversifiService" value-ref="fundHoldingsDiversifiService" />
+				<entry key="trailingReturnChartService" value-ref="trailingReturnChartService" />
+				<entry key="fundQuickViewService" value-ref="fundQuickViewService" />
+				<entry key="fundSearchCriteriaService" value-ref="fundSearchCriteriaService" />
+				<entry key="fundCompareService" value-ref="fundCompareService" />
+				<entry key="fundSearchResultService" value-ref="fundSearchResultService" />
+				<entry key="redemptionFeesService" value-ref="redemptionFeesService" />
+				<entry key="assetAllocationService" value-ref="assetAllocationService" />
+				<entry key="advanceChartService" value-ref="advanceChartService" />
+				<entry key="returnIndexChartService" value-ref="returnIndexChartService" />
+				<entry key="otherFundClassesService" value-ref="otherFundClassesService" />
+				<entry key="categoryOverviewService" value-ref="categoryOverviewService" />
+				<entry key="holdingAllocationService" value-ref="holdingAllocationService" />
+				<entry key="fundListService" value-ref="fundListService" />
+				<entry key="performanceReturnService" value-ref="performanceReturnService" />
+				<entry key="fundCompareIndexService" value-ref="fundCompareIndexService" /> -->
+				<!-- for wpc webservice health check  -->
+				<!-- <entry key="wpcWebServiceDashboard" value-ref="wpcWebServiceDashboard" /> -->
+				<!-- for volumeService health check  -->
+				<entry key="volumeServiceDashboard" value-ref="volumeServiceDashboard" />
+			</map>
+		</constructor-arg>
+	</bean>
+</beans> 

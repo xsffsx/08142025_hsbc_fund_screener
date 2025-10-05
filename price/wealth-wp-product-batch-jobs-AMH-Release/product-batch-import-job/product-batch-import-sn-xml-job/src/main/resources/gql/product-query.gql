@@ -1,0 +1,16 @@
+query productByFilter ($filter: JSON!) {
+  productByFilter(filter: $filter, limit: 0) {
+    prodId
+    ctryRecCde
+    grpMembrRecCde
+    prodTypeCde
+    prodAltPrimNum
+    prodShrtName
+    ctryProdTradeCde
+    altId {
+      prodAltNum
+      prodTypeCde
+      prodCdeAltClassCde
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debtInstmLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <debtInstm th:each="product : ${documents}">
+        <th:block th:insert="~{COMMON::prodKeySeg}"/>
+        <th:block th:each="alt : ${product.get('altId')}" th:insert="~{COMMON::prodAltNumSeg}"/>
+        <th:block th:insert="~{COMMON::prodInfoSeg}"/>
+        <debtInstmSeg th:with="bond=${product.get('debtInstm')}">
+            <isrBndNme product:notNull="${bond.get('isrBondName')}"/>
+            <issueNum product:notNull="${bond.get('issueNum')}"/>
+            <prodIssDt product:notNull="${#dates.format(bond.get('prodIssDt'), 'yyyy-MM-dd')}"/>
+            <pdcyCoupnPymtCd product:notNull="${bond.get('pdcyCoupnPymtCde')}"/>
+            <coupnAnnlRt product:notNull="${bond.get('coupnAnnlRate')}"/>
+            <coupnExtInstmRt product:notNull="${#doubles.stripTrailingZeros(bond.get('coupnExtInstmRate'))}"/>
+            <pymtCoupnNextDt product:notNull="${#dates.format(bond.get('pymtCoupnNextDt'), 'yyyy-MM-dd')}"/>
+            <flexMatOptInd product:notNull="${bond.get('flexMatOptInd')}"/>
+            <IntIndAccrAmt product:notNull="${#doubles.stripTrailingZeros(bond.get('intIndAccrAmt'))}"/>
+            <InvstIncMinAmt product:notNull="${#doubles.stripTrailingZeros(bond.get('invstIncrmMinAmt'))}"/>
+            <prodBodLotQtyCnt product:notNull="${#doubles.stripTrailingZeros(bond.get('prodBodLotQtyCnt'))}"/>
+            <MturExtDt product:notNull="${#dates.format(bond.get('mturExtDt'), 'yyyy-MM-dd')}"/>
+            <SubDebtInd product:notNull="${bond.get('subDebtInd')}"/>
+            <prodExtnlIdNum product:notNull="${bond.get('prodExtnlIdNum')}"/>
+            <bondStatCde product:notNull="${bond.get('bondStatCde')}"/>
+            <ctryBondIssueCde product:notNull="${bond.get('ctryBondIssueCde')}"/>
+            <grntrName product:notNull="${bond.get('grntrName')}"/>
+            <cptlTierText product:notNull="${bond.get('cptlTierText')}"/>
+            <coupnType product:notNull="${bond.get('coupnType')}"/>
+            <coupnPrevRt product:notNull="${#doubles.stripTrailingZeros(bond.get('coupnPrevRate'))}"/>
+            <indexFltRtNme product:notNull="${bond.get('indexFltRateName')}"/>
+            <bondFltSprdRt product:notNull="${#doubles.stripTrailingZeros(bond.get('bondFltSprdRate'))}"/>
+            <coupnCurrStartDt product:notNull="${#dates.format(bond.get('coupnCurrStartDt'), 'yyyy-MM-dd')}"/>
+            <coupnPrevStartDt product:notNull="${#dates.format(bond.get('coupnPrevStartDt'), 'yyyy-MM-dd')}"/>
+            <bondCallNextDt product:notNull="${#dates.format(bond.get('bondCallNextDt'), 'yyyy-MM-dd')}"/>
+            <intBassiCalcText product:notNull="${bond.get('intBasisCalcText')}"/>
+            <intAccrDayCnt product:notNull="${#doubles.stripTrailingZeros(bond.get('intAccrDayCnt'))}"/>
+            <invstSoldLestAmt product:notNull="${#doubles.stripTrailingZeros(bond.get('invstSoldLestAmt'))}"/>
+            <invstIncrmSoldAmt product:notNull="${#doubles.stripTrailingZeros(bond.get('invstIncrmSoldAmt'))}"/>
+            <shrBidCnt product:notNull="${#doubles.stripTrailingZeros(bond.get('shrBidCnt'))}"/>
+            <shrOffrCnt product:notNull="${#doubles.stripTrailingZeros(bond.get('shrOffrCnt'))}"/>
+            <prodClsBidPrcAmt product:notNull="${#doubles.stripTrailingZeros(bond.get('prodClsBidPrcAmt'))}"/>
+            <prodClsOffrPrcAmt product:notNull="${#doubles.stripTrailingZeros(bond.get('prodClsOffrPrcAmt'))}"/>
+            <bondCloseDt product:notNull="${#dates.format(bond.get('bondCloseDt'), 'yyyy-MM-dd')}"/>
+            <bondSetlDt product:notNull="${#dates.format(bond.get('bondSetlDt'), 'yyyy-MM-dd')}"/>
+            <dscntMrgnBselPct product:notNull="${#doubles.stripTrailingZeros(bond.get('dscntMrgnBselPct'))}"/>
+            <dscntMrgnBbuyPct product:notNull="${#doubles.stripTrailingZeros(bond.get('dscntMrgnBbuyPct'))}"/>
+            <prcBondRecvDtTm product:notNull="${#timeZones.format(bond.get('prcBondRecvDtTm'), 'yyyy-MM-dd HH:mm:ss')}"/>
+            <yieldOfferText product:notNull="${bond.get('yieldOfferText')}"/>
+            <coupnAnnlText product:notNull="${bond.get('coupnAnnlText')}"/>
+            <isrDesc product:notNull="${bond.get('isrDesc')}"/>
+            <isrPllDesc product:notNull="${bond.get('trnsl')?.get('isrPllDesc')}"/>
+            <isrSllDesc product:notNull="${bond.get('trnsl')?.get('isrSllDesc')}"/>
+            <srTypeCde product:notNull="${bond.get('srTypeCde')}"/>
+            <creditRtingSeg th:each="credit:${bond.get('credRtng')}">
+                <creditRtingAgcyCde product:notNull="${credit?.get('creditRtngAgcyCde')}"/>
+                <creditRtingCde product:notNull="${credit?.get('creditRtngCde')}"/>
+            </creditRtingSeg>
+            <yieldHistSeg th:each="yieldHist:${bond.get('yieldHist')}">
+                <yieldTypeCde product:notNull="${yieldHist?.get('yieldTypeCde')}"/>
+                <yieldDt th:text="${#dates.format(yieldHist?.get('yieldDt'), 'yyyy-MM-dd')}"/>
+                <yieldEffDt th:text="${#dates.format(yieldHist?.get('yieldEffDt'), 'yyyy-MM-dd')}"/>
+                <yieldBidPct product:notNull="${#doubles.stripTrailingZeros(yieldHist?.get('yieldBidPct'))}"/>
+                <yieldToCallBidPct product:notNull="${#doubles.stripTrailingZeros(yieldHist?.get('yieldToCallBidPct'))}"/>
+                <YieldToMturBidPct product:notNull="${#doubles.stripTrailingZeros(yieldHist?.get('yieldToMturBidPct'))}"/>
+                <yieldBidClosePct product:notNull="${#doubles.stripTrailingZeros(yieldHist?.get('yieldBidClosePct'))}"/>
+                <yieldOfferPct product:notNull="${#doubles.stripTrailingZeros(yieldHist?.get('yieldOfferPct'))}"/>
+                <yieldToCallOfferPct product:notNull="${#doubles.stripTrailingZeros(yieldHist?.get('yieldToCallOfferPct'))}"/>
+                <yieldToMturOfferText product:notNull="${yieldHist?.get('yieldToMturOfferText')}"/>
+                <yieldOfferClosePct product:notNull="${#doubles.stripTrailingZeros(yieldHist?.get('yieldOfferClosePct'))}"/>
+            </yieldHistSeg>
+        </debtInstmSeg>
+        <th:block th:insert="~{COMMON::recDtTmSeg}"/>
+    </debtInstm>
+</debtInstmLst>

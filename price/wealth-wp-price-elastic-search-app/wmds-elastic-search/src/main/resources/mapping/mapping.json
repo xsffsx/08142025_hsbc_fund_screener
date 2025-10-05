@@ -1,0 +1,241 @@
+{
+		"properties": {
+			"allowBuy": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"allowSell": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"allowSellMipProdInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"invstMipCutOffDayofMth": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"invstMipMinAmt": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"invstMipIncrmMinAmt": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"allowSwInProdInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"allowSwOutProdInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"allowTradeProdInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"assetCountries": {
+				"type": "keyword"
+			},
+			"assetSectors": {
+				"type": "keyword"
+			},
+			"bondIssuer": {
+				"type": "keyword"
+			},
+			"chanlAllowBuy": {
+				"type": "keyword"
+			},
+			"chanlAllowSell": {
+				"type": "keyword"
+			},
+			"chanlCde": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"countryTradableCode": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"ctryRecCde": {
+				"type": "keyword"
+			},
+			"deAuthFundInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"exchange": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"fundHouseCde": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"fundUnswithSeg": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"grpMembrRecCde": {
+				"type": "keyword"
+			},
+			"isrBndNme": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"id": {
+				"type": "text",
+				"fields": {
+					"keyword": {
+						"type": "keyword",
+						"ignore_above": 256
+					}
+				}
+			},
+			"key": {
+				"type": "keyword"
+			},
+			"market": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"parentAssetClasses": {
+				"type": "keyword"
+			},
+			"piFundInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"popularity": {
+				"type": "keyword"
+			},
+			"productTypeWeight": {
+				"type": "keyword"
+			},
+			"countryTradableCodeWeight": {
+				"type": "keyword"
+			},
+			"marketWeight": {
+				"type": "keyword"
+			},
+			"prodAltNumSegs": {
+				"properties": {
+					"prodAltNum": {
+						"type": "keyword"
+					},
+					"prodCdeAltClassCde": {
+						"type": "keyword"
+					}
+				}
+			},
+			"prodShoreLocCde": {
+				"type": "keyword"
+			},
+			"prodStatCde": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"prodTaxFreeWrapActStaCde": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"productCcy": {
+				"type": "keyword"
+			},
+			"productCode": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+
+			},
+			"productName": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"productNameAnalyzed": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"productShortName": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"productShrtNameAnalyzed": {
+				"type": "keyword"
+			},
+			"productSubType": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"productType": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"resChannelCde": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"restrOnlScribInd": {
+				"type": "keyword",
+			    "normalizer": "my_normalizer"
+			},
+			"riskLvlCde": {
+				"type": "keyword"
+			},
+			"switchableGroups": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"symbol": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"gbaAcctTrdb": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"gnrAcctTrdb": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"wpbProductInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"cmbProductInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"restrCmbOnlSrchInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"sedol": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"isin": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"symbolLowercase": {
+				"type": "keyword"
+			},
+			"sequence": {
+				"type": "keyword"
+			},
+			"premRecomInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"prodCode": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			},
+			"esgInd": {
+				"type": "keyword",
+				"normalizer": "my_normalizer"
+			}
+		}
+}

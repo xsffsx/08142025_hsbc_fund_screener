@@ -1,0 +1,19 @@
+query referenceDataByFilter($filter: JSON!, $sort: JSON = {}, $skip: Int = 0, $limit: Int = 0) {
+    referenceDataByFilter(filter: $filter, sort: $sort, skip: $skip, limit: $limit) {
+        _id
+        ctryRecCde
+        grpMembrRecCde
+        cdvTypeCde
+        cdvCde
+        cdvDesc
+        cdvPllDesc
+        cdvSllDesc
+        cdvDispSeqNum
+        cdvParntTypeCde
+        cdvParntCde
+        recCmntText
+        chanlComnCde
+        recCreatDtTm
+        recUpdtDtTm
+    }
+}

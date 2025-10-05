@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+#      host: localhost
+      host: wp-rds.wealth-platform-uk.euw1.dev.aws.cloud.dummy
+      port: 27018
+      database: WPC_UK_UAT
+#      uri: mongodb://localhost:27017/
+#      uri: mongodb://hkl20036491.hc.cloud.hk.dummy:5255/
+      username: wpdocdbadmin
+      password: wpdocdbadmin.123
+#      database: WPC_POC
+product:
+  graphql:
+    log-response: false

@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "product compare ignore schema",
+  "description": "for compare-ignore.yaml validation",
+  "type": "object",
+  "properties": {
+    "pw0": {
+      "description": "compare ignore for pw0",
+      "type": "object",
+      "properties": {
+        "tables": {
+          "description": "compare ignore tables",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "fields": {
+          "description": "compare ignore fields",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "pw1": {
+      "description": "compare ignore for pw1",
+      "type": "object",
+      "properties": {
+        "fields": {
+          "description": "compare ignore fields",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "pw2": {
+      "description": "compare ignore for pw2",
+      "type": "object",
+      "properties": {
+        "fields": {
+          "description": "compare ignore fields",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "pg1": {
+      "description": "compare ignore for pg1",
+      "type": "object",
+      "properties": {
+        "fields": {
+          "description": "compare ignore fields",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

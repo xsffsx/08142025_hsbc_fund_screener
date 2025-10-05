@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62539",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:42:26.326485",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62539%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "0e3d39c3-eb8f-4add-aa48-7456e0be5fa0:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "8R_y_l-WYkHpTMUDGKem6vjiVU5VMtSd0BjYbrDvD-97mrbIhJquYg==",
+        "x-hsbc-request-correlation-id": "56d589ae-c043-42f2-9cd5-bd150109e572",
+        "date": "Wed, 13 Aug 2025 13:42:26 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 964b789a78c6aafc90242aa316920ac6.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "432",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF - GLOBAL HIGH INCOME BOND FUND (CLASS AM2-USD-MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM2-USD-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62399\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GHBMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62399\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0524291456\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000P1AK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047073\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047073\"}]},{\"productName\":\"HSBC GIF Global High Income Bond (AM3-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62885\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GHBMR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62885\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1086681993\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P000148K0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050091522\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50091522\"}]},{\"productName\":\"HSBC GIF - GLOBAL HIGH INCOME BOND FUND (CLASS AM2-HKD-MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM2-HKD-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62400\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GHBMH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62400\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0524291456\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000P1AL\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047072\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047072\"}]},{\"productName\":\"HSBC GIF - GLOBAL HIGH INCOME BOND FUND (CLASS AM3-AUDH-MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM3-AUD-MDIST Cash\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62540\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"GHBAU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62540\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0798789102\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000WLCM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047685\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047685\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

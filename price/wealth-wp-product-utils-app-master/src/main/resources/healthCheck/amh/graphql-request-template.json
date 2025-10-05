@@ -1,0 +1,11 @@
+{
+  "operationName": "productsByKey",
+  "query": "query productsByKey($filter: JSON!) {\n  productByFilter(filter: $filter) {\n  prodId\n  prodCde\n  prodTypeCde\n  prodSubtpCde\n  ctryRecCde\n  grpMembrRecCde\n  recCreatDtTm\n  recUpdtDtTm\n  altId {\n  prodCdeAltClassCde\n  prodTypeCde\n  prodAltNum\n}\n}\n}",
+  "variables": {
+    "filter": {
+      "ctryRecCde": "${ctryRecCde}",
+      "grpMembrRecCde": "${grpMembrRecCde}",
+      "prodAltPrimNum": "${prodAltPrimNum}"
+    }
+  }
+}

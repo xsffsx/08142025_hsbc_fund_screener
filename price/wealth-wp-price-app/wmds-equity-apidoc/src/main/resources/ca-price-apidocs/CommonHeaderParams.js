@@ -1,0 +1,22 @@
+/**
+ * @apiDefine CommonHeaderGroup Header Parameters
+ */
+
+/**
+ * @apiDefine CommonHeaderParams
+ * 
+ * @apiHeader (CommonHeaderGroup) {String} X-hhhh-App-Code The application code which identify the application of request.</br> Sample value: "STMA" 
+ * @apiHeader (CommonHeaderGroup) {String{2}} X-hhhh-Chnl-CountryCode The country code of this entity request.</br> Sample value: "CA"
+ * @apiHeader (CommonHeaderGroup) {String{4}} X-hhhh-Chnl-Group-Member The group member code of this entity request.</br> Sample value: "HCSC"
+ * @apiHeader (CommonHeaderGroup) {String{4}} X-hhhh-Channel-Id The channel id which identify the source of request.</br> Sample value: "OHI"
+ * @apiHeader (CommonHeaderGroup) {String} X-hhhh-Locale The locale code of the request. Possible values - en_CA(English).
+ * @apiHeader (CommonHeaderGroup) {String} X-hhhh-Saml The SAML end to end trust token.
+ * @apiHeader (CommonHeaderGroup) {String{30}} X-hhhh-User-Id User Id (SaaS service id / perm id).
+ * @apiHeader (CommonHeaderGroup) {String{2}} X-hhhh-CAM-Level CAM Level - 30/40.
+ * @apiHeader (CommonHeaderGroup) {String} X-hhhh-Src-Device-Id Device ID.
+ * @apiHeader (CommonHeaderGroup) {String} X-hhhh-IP-Id Currently populated as the IP address of the application server which created the SAML-like trust token.
+ * @apiHeader (CommonHeaderGroup) {String} X-hhhh-Src-UserAgent User Agent. Example - "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405".
+ * @apiHeader (CommonHeaderGroup) {String} X-hhhh-Session-Correlation-Id Session Correlation ID.
+ * @apiHeader (CommonHeaderGroup) {String} X-hhhh-Request-Correlation-Id Request Correlation ID.
+ * 
+ */

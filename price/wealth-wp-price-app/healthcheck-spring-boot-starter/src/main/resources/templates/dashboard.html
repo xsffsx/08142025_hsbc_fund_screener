@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<div data-th-marginwidth="10px" th:marginheight="10px">
+    <div style="width:auto; height:auto; float:left; display:inline">
+        <FONT COLOR="#008000">SUCCESS</FONT>
+        for positive status with response time; *
+        <FONT COLOR="#FF0000">FAILURE</FONT>
+        for negative status with response time.
+    </div>
+    <div style="width:auto; height:auto; float:right; display:inline">
+
+        Request: <font th:utext="${requestTimestamp}" style="color: #008000"/>
+        Response: <font th:utext="${resposneTimestamp}" style="color: #008000"/>
+        | Ver. <font th:utext="${version}" style="color: #008000"/>
+
+    </div>
+</div>
+
+<table border="1">
+    <caption>Health Check Dashboard</caption>
+    <tr>
+        <th>name</th>
+        <th>sub name</th>
+        <th>status</th>
+        <th>cost time</th>
+        <th>exception</th>
+    </tr>
+    <tr th:each="status : ${statusList}">
+        <td th:switch="${status.statusCode}">
+            <font th:case="'SUCCESS'" th:utext="${status.name}" style="color: #008000"></font>
+            <font th:case="'FAILURE'" th:utext="${status.name}" style="color: #FF0000"></font>
+        </td>
+        <td th:switch="${status.statusCode}">
+            <font th:case="'SUCCESS'" th:utext="${status.subName}" style="color: #008000"></font>
+            <font th:case="'FAILURE'" th:utext="${status.subName}" style="color: #FF0000"></font>
+        </td>
+        <td th:switch="${status.statusCode}">
+            <font th:case="'SUCCESS'" th:utext="${status.statusCode}" style="color: #008000"></font>
+            <font th:case="'FAILURE'" th:utext="${status.statusCode}" style="color: #FF0000"></font>
+        </td>
+        <td th:switch="${status.statusCode}">
+            <font th:case="'SUCCESS'" th:utext="${status.costTime}" style="color: #008000"></font>
+            <font th:case="'FAILURE'" th:utext="${status.costTime}" style="color: #FF0000"></font>
+        </td>
+        <td th:switch="${status.statusCode}">
+            <font th:case="'SUCCESS'" th:utext="${status.exception}" style="color: #008000"></font>
+            <font th:case="'FAILURE'" th:utext="${status.exception}" style="color: #FF0000"></font>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

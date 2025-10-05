@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<property name="LOG_HOME" value="/home/vcap/" />
+	<property name="APPLICATION_NAME" value="wmds-online" />
+
+	<appender name="debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${LOG_HOME}/logs/${APPLICATION_NAME}_debug.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/logs/${APPLICATION_NAME}_debug.%i.log.zip</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>20</maxIndex>
+		</rollingPolicy>
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>10MB</maxFileSize>
+		</triggeringPolicy>
+		<encoder>
+			<pattern>%thread|%-5level|%d{yyyy-MM-dd HH:mm:ss.SSS}|%logger{0}%msg%n</pattern>
+			<immediateFlush>true</immediateFlush>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<appender name="info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${LOG_HOME}/logs/${APPLICATION_NAME}_info.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/logs/${APPLICATION_NAME}_info.%i.log.zip
+			</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>10</maxIndex>
+		</rollingPolicy>
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>10MB</maxFileSize>
+		</triggeringPolicy>
+		<encoder>
+			<pattern>%thread|%-5level|%d{yyyy-MM-dd HH:mm:ss.SSS}|%logger{0}%msg%n</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<appender name="warn"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${LOG_HOME}/logs/${APPLICATION_NAME}_warn.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/logs/${APPLICATION_NAME}_warn.%i.log.zip</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>10</maxIndex>
+		</rollingPolicy>
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>10MB</maxFileSize>
+		</triggeringPolicy>
+		<encoder>
+			<pattern>%thread|%-5level|%d{yyyy-MM-dd HH:mm:ss.SSS}|%logger{0}%msg%n</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<appender name="error"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${LOG_HOME}/logs/${APPLICATION_NAME}_error.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/logs/${APPLICATION_NAME}_error.%i.log.zip
+			</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>10</maxIndex>
+		</rollingPolicy>
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>10MB</maxFileSize>
+		</triggeringPolicy>
+		<encoder>
+			<pattern>%thread|%-5level|%d{yyyy-MM-dd HH:mm:ss.SSS}|%logger{0}%msg%n</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern> ${instanceName} --> PCFOrg=${logging.cf.org} PCFSpace=${logging.cf.space} AppName=${logging.app} Version=${logging.version} --> %thread|%-5level|%d{yyyy-MM-dd HH:mm:ss.SSS}|%logger{0}%msg%n</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+		</filter>
+	</appender>
+     
+	<logger name="org.quartz" level="ERROR" />
+	
+	<appender name="performence" class="ch.qos.logback.core.FileAppender">
+		<file>${LOG_HOME}/logs/${APPLICATION_NAME}_performence.log</file>
+		<encoder>
+			<pattern>%thread, %-5level, %d{yyyy-MM-dd HH:mm:ss.SSS}, %msg%n</pattern>
+		</encoder>
+	</appender>
+	<logger name="com.hhhh.group.secwealth.mktdata.tools.performence.PerformenceMonitor" level="DEBUG">
+		<appender-ref ref="performence" />
+	</logger>
+
+	<root level="debug">
+		<appender-ref ref="debug" />
+		<appender-ref ref="info" />
+		<appender-ref ref="warn" />
+		<appender-ref ref="error" />
+		<appender-ref ref="stdout" />
+	</root>
+</configuration>

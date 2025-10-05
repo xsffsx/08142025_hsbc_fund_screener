@@ -1,0 +1,135 @@
+##########
+spring:
+  datasource: 
+    name: oracle-equity-hase-stma
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@xu01-scan.p2g.netd.hk.hhhh:2000/mkd01uo1.hk.hhhh
+    username: MKD01OA1_APPUSER
+    password: MKD01OA1_APPUSER.123
+  profiles:
+    include: hase_stma_marketHour,hase_stma_api_support
+
+#datasource:
+#  enabled: true
+#  name: SEC_hhhh
+#  jndi-name: jdbc/MDSdb_twhhhh_01
+#  default-name: SEC_hhhh
+#spring:
+#  profiles:
+#    include: hase_stma_marketHour,hase_stma_api_support
+
+##########
+name: 
+  id: 
+    enable: false
+    
+#name: 
+#  id: 
+#    enable: true    
+#    staff-channel:
+#      - OHCC 
+#      - OHB
+#    customer-channel:
+#      - MOB
+#      - OHI 
+#    encryptor-url: http://mds-asp1-tw-equity-sit.apps.cf.skm-drn-01.cloud.hk.hhhh/wmds-encryptor-war/wealth/api/v1/market-data/encryptor
+#    decryptor-url: http://mds-asp1-tw-equity-sit.apps.cf.skm-drn-01.cloud.hk.hhhh/wmds-encryptor-war/wealth/api/v1/market-data/decryptor
+    
+connection:
+  NON_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: false
+    proxyHostname:
+    proxyPort:
+    retryCount: 3
+    enableGzip: true
+  ETNET_PROXY:
+    maxTotal: 500
+    maxPerRoute: 300
+    connectTimeout: 3000
+    socketTimeout: 5000
+    enableProxy: true
+    proxyHostname: intpxy6.hk.hhhh
+    proxyPort: 18084
+    retryCount: 10
+    enableGzip: false
+
+httpclient:
+  defaultHttpClientName: NON_PROXY
+  etNetHttpClientName: ETNET_PROXY
+
+validator:
+  regex:
+    header:
+      channelId: OHI
+      locale: zh_CN|zh_HK|en
+      appCode: STMA
+    quotesRequest:
+      productKey:
+        prodCdeAltClassCde: M
+        productType: SEC|WRTS
+      market: HK|CN
+    sameSectorRequest:
+      prodCdeAltClassCde: M
+      productType: SEC|WRTS
+      market: HK|CN
+      sortBy: Volume
+      sortOrder: desc
+    topmoverRequest: 
+      productType: SEC|WRTS
+      market: HK|CN
+
+com:
+  hhhh:
+    wmd:
+      itt:
+        security:
+          filter:
+            url-patterns: /wealth/api/v1/market-data/*
+            digital:
+              enable: true
+              verify-date: false
+              saml3-certificates:
+              - certificate-source: ldap
+                ldap:
+                  provider: ldap://tkeudp2datdir00-2.hk.hhhh:1389/uid=SAAS_EU01_PPROD.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=uk,dc=hhhh,dc=com
+                  username: uid=SAAS_EU01_PPROD.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=uk,dc=hhhh,dc=com
+                  password: e2eEU01k
+                  timeout: 1000
+
+healthcheck:
+  predictive-search-health-check-url: https://mds-hase-stma-predictive-search-oat.apps.cf.skm-drn-01.cloud.hk.hhhh/healthcheck/probing
+  header:
+    channelId: OHI
+    countryCode: CN,HK
+    groupMember: HASE
+  service: IDN_RDF
+  item:
+    - 1037.HK
+    - GOOG.O
+  filter:
+    - TRADE_DATE
+    - TRDPRC_1
+    - TURNOVER
+
+cache:
+  distribute:
+    enabled: true
+    uri: https://distributed-cache-system-hk-hase-v1-perf.apps.cf.skm-drn-01.cloud.hk.hhhh/cache/
+    
+multi-predsrch: 
+  url: https://mds-hase-stma-predictive-search-oat.apps.cf.skm-drn-01.cloud.hk.hhhh/wealth/api/v1/market-data/product/multi-predictive-search
+                         devcluster.api.p2g.netd2.hhhh.com.hk/wealth-price-hase-equity-sct-proxy/v1/market-data/product/multi-predictive-search
+  body-prefix: param=
+  request-params:
+    assetClasses: ALL
+    searchFields: symbol
+    sortingFields: symbol
+    isPreciseSrch: true
+
+labci:
+  chart-data-url: https://mkdlcs.qualityassurance.ebanking.hhhh.com.hk/hase/chart/data
+

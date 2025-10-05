@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>base-spring-boot-starter</artifactId>
+	<packaging>jar</packaging>
+	<name>base-spring-boot-starter</name>
+	<description>Contains some common class</description>
+
+	<parent>
+		<groupId>com.hhhh.group.secwealth.mktdata.starter</groupId>
+		<artifactId>parent-spring-boot-starter</artifactId>
+		<version>1.0.0-HASE-RELEASE</version>
+		<relativePath>../parent-spring-boot-starter</relativePath>
+	</parent>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus306</id>
+			<url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-prod_n3p/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus306</id>
+			<url>https://nexus306.systems.uk.hhhh:8081/nexus/repository/maven-hhhh-internal-snapshots_n3p/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>

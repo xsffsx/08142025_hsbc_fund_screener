@@ -1,0 +1,55 @@
+{
+  "checkList": [{
+    "serviceId": "servicea",
+    "url": "/api",
+    "method": "GET",
+    "requestTemplateFile": "servicea-request-template.json",
+    "parameters": [
+      {"key":  "countryCode", "value": "HK", "desc": "Country Code"},
+      {"key":  "groupMember", "value": "HBAP", "desc": "Group Memger"}
+    ],
+    "errorCode": "ERROR_001"
+  }, {
+    "serviceId": "serviceb",
+    "url": "/api",
+    "method": "POST",
+    "dataType": "xml",
+    "requestTemplateFile": "serviceb-request-template.xml",
+    "parameters": [
+      {"key":  "countryCode", "value": "HK", "desc": "Country Code"},
+      {"key":  "groupMember", "value": "HBAP", "desc": "Group Memger"}
+    ],
+    "errorCode": "ERROR_002"
+  },
+    {
+      "serviceId": "servicec",
+      "url": "/api",
+      "method": "GET",
+      "errorCode": "ERROR_003"
+  },
+    {
+      "serviceId": "serviced",
+      "url": "/api",
+      "method": "POST",
+      "dataType": "json",
+      "errorCode": "ERROR_004"
+    }
+  ],
+  "connectionList": [{
+    "source": "root",
+    "target": "servicea"
+  }, {
+    "source": "root",
+    "target": "serviceb"
+  }, {
+    "source": "root",
+    "target": "servicec"
+  }, {
+    "source": "root",
+    "target": "serviced"
+  }, {
+    "source": "serviceb",
+    "target": "serviced"
+  }
+  ]
+}

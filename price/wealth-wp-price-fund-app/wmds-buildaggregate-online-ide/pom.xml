@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<name>wmds-buildaggregate-online-ide</name>
+	<description></description>
+
+	<groupId>com.hhhh.group.secwealth.mktdata</groupId>
+	<artifactId>wmds-buildaggregate-online-ide</artifactId>
+	<version>${project.version}</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+		<project.version>1.0.0-SNAPSHOT</project.version>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>releaseVersion</id>
+			<properties>
+				<project.version>1.0.0-RELEASE-${timestamp}</project.version>
+			</properties>
+		</profile>
+	</profiles>
+
+	<distributionManagement>
+		<repository>
+			<id>dsnexus</id>
+			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/releases
+			</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>dsnexus-snapshots</id>
+			<url>https://dsnexus.uk.hibm.hhhh:8081/nexus/content/repositories/snapshots
+			</url>
+			<layout>default</layout>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<modules>
+		<module>../wmds-parent</module>
+
+		<!-- ONLINE BEGIN -->
+		<!-- common project -->
+		<module>../wmds-common</module>
+		<!-- online function -->
+		<module>../wmds-online-config</module>
+       <!--  <module>../wmds-predsrch</module> -->
+		<module>../wmds-fund</module>
+		<module>../wmds-quote</module>
+		<!-- online war -->
+	<!-- 	<module>../wmds-war</module>-->	
+		<!-- online ear -->
+	<!--  <module>../wmds-online-ear</module>-->	
+		<!-- fx war -->
+<!--		<module>../wmds-fx</module>-->
+<!--		<module>../wmds-fx-config</module>-->
+		<!-- encryptor war -->
+<!--		<module>../wmds-encryptor</module>-->
+		<!-- online tools -->
+		<module>../wmds-tools</module>
+		<!-- ONLINE END -->
+
+<!--		<module>../wmds-pcf</module>-->
+
+		<!-- Spring Boot Jar, for quick start/run project at local -->
+		<module>../wmds-fund-app</module>
+	</modules>
+
+</project>
+

@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62591",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:33:56.461931",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62591%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "63e329ce-56a9-4c70-af53-a0fc1cf08aa1:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "15",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "6Er9kkmzuUzrapPGfQ7Pqh6PzVsX-wrBVV5Y3UKAClBMlQ2PCtrMDQ==",
+        "x-hsbc-request-correlation-id": "ab82ee08-7b8d-4721-a417-e980a3de24d8",
+        "date": "Wed, 13 Aug 2025 13:33:56 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "15",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 5af7e2a3313b9d445377a246e1053f74.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "522",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"FR\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"France (Republic Of) 0%\",\"weighting\":4.30612,\"currency\":\"EUR\",\"marketValue\":29673397},{\"market\":\"GB\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vodafone Group PLC 2.625%\",\"weighting\":3.4293,\"currency\":\"EUR\",\"marketValue\":23631239},{\"market\":\"FR\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"France (Republic Of) 0%\",\"weighting\":3.33642,\"currency\":\"EUR\",\"marketValue\":22991202},{\"market\":\"DK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Danske Bank A/S 1%\",\"weighting\":2.50766,\"currency\":\"EUR\",\"marketValue\":17280208},{\"market\":\"FR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Veolia Environnement S.A. 2.5%\",\"weighting\":2.11323,\"currency\":\"EUR\",\"marketValue\":14562216},{\"market\":\"ES\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Lorca Telecom Bondco S.A.U. 5.75%\",\"weighting\":1.89498,\"currency\":\"EUR\",\"marketValue\":13058266},{\"market\":\"NL\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"ING Groep N.V. 1%\",\"weighting\":1.72973,\"currency\":\"EUR\",\"marketValue\":11919531},{\"market\":\"CH\",\"productType\":\"CT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"UBS Group AG 7.75%\",\"weighting\":1.65134,\"currency\":\"EUR\",\"marketValue\":11379342},{\"market\":\"FR\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Getlink SE 4.125%\",\"weighting\":1.64509,\"currency\":\"EUR\",\"marketValue\":11336301},{\"market\":\"BE\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Euroclear Holding SA/NV 2.625%\",\"weighting\":1.56136,\"currency\":\"EUR\",\"marketValue\":10759323}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

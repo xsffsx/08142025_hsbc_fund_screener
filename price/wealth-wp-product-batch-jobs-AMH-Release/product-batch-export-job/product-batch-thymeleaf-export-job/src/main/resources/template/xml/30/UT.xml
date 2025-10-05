@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utTrstInstmLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <utTrstInstm th:each="product : ${documents}">
+        <th:block th:insert="~{COMMON::prodKeySeg}"/>
+        <th:block th:each="alt : ${product.get('altId')}" th:insert="~{COMMON::prodAltNumSeg}"/>
+        <th:block th:insert="~{COMMON::prodInfoSeg}"/>
+        <utTrstInstmSeg th:with="ut=${product.get('utTrstInstm')}">
+            <amcmInd product:notNull="${ut.get('amcmInd')}"/>
+            <autoSweepFundInd product:notNull="${ut.get('autoSweepFundInd')}"/>
+            <autoRenewFundInd product:notNull="${ut.get('autoRenewFundInd')}"/>
+            <chrgFundSwPct product:notNull="${#doubles.stripTrailingZeros(ut.get('chrgFundSwPct'))}"/>
+            <chrgInitSalesPct product:notNull="${#doubles.stripTrailingZeros(ut.get('chrgInitSalesPct'))}"/>
+            <closeEndFundInd product:notNull="${ut.get('closeEndFundInd')}"/>
+            <dealNextDt product:notNull="${#dates.format(ut.dealNextDt, 'yyyy-MM-dd')}"/>
+            <divDclrDt product:notNull="${#dates.format(ut.divDclrDt, 'yyyy-MM-dd')}"/>
+            <divPymtDt product:notNull="${#dates.format(ut.divPymtDt, 'yyyy-MM-dd')}"/>
+            <dscntMaxPct product:notNull="${#doubles.stripTrailingZeros(ut.get('dscntMaxPct'))}"/>
+            <fundAmt product:notNull="${ut.get('fundAmt')}"/>
+            <fundClassCde th:text="${ut.get('fundClassCde')}"/>
+            <fundHouseCde product:notNull="${ut.get('fundHouseCde')}"/>
+            <fundMipRtainMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('fundMipRtainMinAmt'))}"/>
+            <fundRtainMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('fundRtainMinAmt'))}"/>
+            <fundSwInMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('fundSwInMinAmt'))}"/>
+            <fundSwOutMaxAmt product:notNull="${ut.get('fundSwOutMaxAmt')}"/>
+            <fundSwOutMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('fundSwOutMinAmt'))}"/>
+            <fundSwOutRtainMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('fundSwOutRtainMinAmt'))}"/>
+            <tranMaxAmt product:notNull="${ut.get('tranMaxAmt')}"/>
+            <utSwOutRtainMinNum product:notNull="${ut.get('utSwOutRtainMinNum')}"/>
+            <hldayFundNextDt product:notNull="${#dates.format(ut.hldayFundNextDt, 'yyyy-MM-dd')}"/>
+            <insuLinkUtTrstInd product:notNull="${ut.get('insuLinkUtTrstInd')}"/>
+            <invstIncrmMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('invstIncrmMinAmt'))}"/>
+            <invstMipIncrmMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('invstMipIncrmMinAmt'))}"/>
+            <invstMipMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('invstMipMinAmt'))}"/>
+            <incmHandlOptCde product:notNull="${ut.get('incmHandlOptCde')}"/>
+            <offerEndDtTm product:notNull="${#timeZones.format(ut.offerEndDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+            <offerStartDtTm product:notNull="${#timeZones.format(ut.offerStartDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+            <payCashDivInd product:notNull="${ut.get('payCashDivInd')}"/>
+            <prodTrmtDt product:notNull="${#dates.format(ut.prodTrmtDt, 'yyyy-MM-dd')}"/>
+            <rdmCtoffNextDtTm th:text="${#timeZones.format(ut.rdmCtoffNextDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+            <rdmMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('rdmMinAmt'))}"/>
+            <rdmMipMinAmt product:notNull="${#doubles.stripTrailingZeros(ut.get('rdmMipMinAmt'))}"/>
+            <rtrnGurntPct product:notNull="${ut.get('rtrnGurntPct')}"/>
+            <schemChrgCde product:notNull="${ut.get('schemChrgCde')}"/>
+            <scribCtoffNextDtTm th:text="${#timeZones.format(ut.scribCtoffNextDtTm,'yyyy-MM-dd HH:mm:ss')}"/>
+            <spclFundInd product:notNull="${ut.get('spclFundInd')}"/>
+            <suptMipInd product:notNull="${ut.get('suptMipInd')}"/>
+            <utMipRdmMinNum th:text="${#objects.nullSafe(ut.get('utMipRdmMinNum'), 0)}"/>
+            <utMipRtainMinNum th:text="${#objects.nullSafe(ut.get('utMipRtainMinNum'), 0)}"/>
+            <utPrcProdLnchAmt product:notNull="${ut.get('utPrcProdLnchAmt')}"/>
+            <utRdmMinNum th:text="${#objects.nullSafe(ut.get('utRdmMinNum'), 0)}"/>
+            <utRtainMinNum th:text="${#objects.nullSafe(ut.get('utRtainMinNum'), 0)}"/>
+            <fundValnTm product:notNull="${#timeZones.format(ut.fundValnTm,'HH:mm:ss')}"/>
+            <prodShoreLocCde product:notNull="${ut.get('prodShoreLocCde')}"/>
+            <divYieldPct product:notNull="${ut.get('divYieldPct')}"/>
+            <fundUnswithSeg th:each="unSwith : ${ut.get('sw')}">
+                <fundUnswCde th:text="${unSwith.get('fundUnswCde')}"/>
+            </fundUnswithSeg>
+        </utTrstInstmSeg>
+        <th:block th:insert="~{COMMON::recDtTmSeg}"/>
+    </utTrstInstm>
+</utTrstInstmLst>

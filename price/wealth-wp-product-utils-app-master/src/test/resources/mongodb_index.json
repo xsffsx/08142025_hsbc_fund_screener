@@ -1,0 +1,132 @@
+[
+      {
+        "v": 4,
+        "key": {
+          "prodName": 1
+        },
+        "name": "idx_prodName",
+        "ns": "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "prodTypeCde": 1,
+          "prodCde" : 1,
+          "prodStatCde": 1
+        },
+        "name" : "idx_prodCde",
+        "ns" : "WPC_AMH_DEV.product"
+      },
+      {
+        "v": 4,
+        "key": {
+          "ctryRecCde": 1,
+          "grpMembrRecCde": 1,
+          "prodTypeCde": 1,
+          "prodStatCde": 1
+        },
+        "name": "idx_prodTypeCde",
+        "ns": "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "eqtyLinkInvst.trdDt" : 1
+        },
+        "name" : "idx_eqtyLinkInvst_trdDt",
+        "ns" : "WPC_AMH_DEV.product",
+        "sparse" : true
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "prodReln.prodIdRel" : -1
+        },
+        "name" : "idx_prodReln_prodIdRel",
+        "ns" : "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "fieldGroupCtoff.fieldGroupCtoffDtTm" : 1
+        },
+        "name" : "idx_fieldGroupCtoff_fieldGroupCtoffDtTm",
+        "ns" : "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "prodName" : 1
+        },
+        "name" : "idx_prodName",
+        "ns" : "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "gac.assClasWthTopContrbtn" : -1
+        },
+        "name" : "idx_gac_assClasWthTopContrbtn",
+        "ns" : "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "stockInstm.vaEtfIndicator" : 1
+        },
+        "name" : "idx_stockInstm_vaEtfIndicator",
+        "ns" : "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "eqtyLinkInvst.mktStartDtTm" : 1
+        },
+        "sparse": true,
+        "name" : "idx_eqtyLinkInvst_mktStartDtTm",
+        "ns" : "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "eqtyLinkInvst.mktEndDtTm" : 1,
+          "eqtyLinkInvst.mktStartDtTm": 1
+        },
+        "name" : "idx_eqtyLinkInvst_mktEndDtTm",
+        "ns" : "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "cdvCde" : 1
+        },
+        "name" : "idx_refdata",
+        "ns" : "WPC_AMH_DEV.product"
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "eqtyLinkInvst.mktStartDtTm" : 1
+        },
+        "name" : "idx_partial_test1",
+        "ns" : "WPC_AMH_UAT.product",
+        "partialFilterExpression" : {
+          "prodTypeCde" : {
+            "$eq" : "ELI"
+          }
+        }
+      },
+      {
+        "v" : 4,
+        "key" : {
+          "eqtyLinkInvst.mktStartDtTm" : 1
+        },
+        "name" : "idx_partial_test2",
+        "ns" : "WPC_AMH_UAT.product",
+        "partialFilterExpression" : {
+          "prodTypeCde" : {
+            "$eq" : "ELI"
+          }
+        }
+      }
+]

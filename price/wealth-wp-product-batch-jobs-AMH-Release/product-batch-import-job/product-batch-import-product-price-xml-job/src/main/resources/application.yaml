@@ -1,0 +1,151 @@
+spring:
+  datasource:
+#    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+#    username: ocushkd_appuser
+#    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+#    driver-class-name: org.postgresql.Driver
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+batch:
+  graphQLUrl: "https://product-graphql-debug.uat.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+#  graphQLUrl: "http://localhost:8082/graphql"
+  file:
+    pattern: ^{ctryRecCde}_{grpMembrRecCde}_{systemCde}_Price-(.*)_(\d{14})\.[Xx][Mm][Ll]$
+  size: 50
+  prc:
+    tol:
+      systemCde: "AMHCUTAS"
+    inv:
+      systemCde: "AMHCUTAS"
+  reuters:
+    price:
+      history:
+        count: -5
+
+system-update-config:
+  - systemCde: AMHCUTAS
+    config:
+      - collection: product
+        updateAttrs:
+          - prcEffDt
+          - prcInpDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodNavPrcAmt
+          - prodMktPrcAmt
+          - prodPrcUpdtDtTm
+      - collection: prod_prc_hist
+        updateAttrs:
+          - prcInpDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodNavPrcAmt
+          - prodMktPrcAmt
+  - systemCde: AMHCUTASPH
+    config:
+      - collection: product
+        updateAttrs:
+          - prcEffDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodNavPrcAmt
+          - prodPrcUpdtDtTm
+      - collection: prod_prc_hist
+        updateAttrs:
+          - prcEffDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodNavPrcAmt
+  - systemCde: AMHGSOPS.AS
+    config:
+      - collection: product
+        updateAttrs:
+          - prcEffDt
+          - prcInpDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodMktPrcAmt
+          - stockInstm.prodPrcChngPct
+          - stockInstm.prodPrcChngAmt
+          - stockInstm.prodOpenPrcAmt
+          - stockInstm.prodTdyHighPrcAmt
+          - stockInstm.prodTdyLowPrcAmt
+          - stockInstm.shareTrdCnt
+          - stockInstm.prodTrnvrAmt
+      - collection: prod_prc_hist
+        updateAttrs:
+          - prcInpDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodMktPrcAmt
+  - systemCde: AMHGSOPS.PD
+    config:
+      - collection: product
+        updateAttrs:
+          - prcEffDt
+          - eqtyLinkInvst.dscntSellPct
+  - systemCde: MANL
+    config:
+      - collection: product
+        updateAttrs:
+          - prcEffDt
+          - prcInpDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodMktPrcAmt
+          - prodNavPrcAmt
+          - eqtyLinkInvst.dscntSellPct
+          - eqtyLinkInvst.eliPrcEffDt
+  - systemCde: AMHGSOPS.CP
+    config:
+      - collection: product
+        updateAttrs:
+          - prcEffDt
+          - prcInpDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodMktPrcAmt
+          - prodNavPrcAmt
+          - prodPrcUpdtDtTm
+      - collection: prod_prc_hist
+        updateAttrs:
+          - prcInpDt
+          - prcEffDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodMktPrcAmt
+          - prodNavPrcAmt
+  - systemCde: MDSBE
+    config:
+      - collection: product
+        updateAttrs:
+          - prcEffDt
+          - prcInpDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodMktPrcAmt
+          - debtInstm.prodCloseBidPrcAmt
+          - debtInstm.prodCloseOffrPrcAmt
+          - debtInstm.bondCloseDt
+      - collection: prod_prc_hist
+        updateAttrs:
+          - pdcyPrcCde
+          - prcEffDt
+          - prcInpDt
+          - ccyProdMktPrcCde
+          - prodBidPrcAmt
+          - prodOffrPrcAmt
+          - prodMktPrcAmt
+          - prodNavPrcAmt

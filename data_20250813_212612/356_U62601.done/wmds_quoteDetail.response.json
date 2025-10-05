@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62601",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:58:27.095635",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62601%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "2b47610b-8cbb-4b62-9c68-f688e0ec6028:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "fDRmEsM4vJNTOSo-Qdn1OMjjjbAGrOoTw2QkEMZnxfR6IuWKMGtJGw==",
+        "x-hsbc-request-correlation-id": "87a9ae77-9cea-48ce-93ea-c899fc8f8f00",
+        "date": "Wed, 13 Aug 2025 13:58:26 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 fd8b250e4ee7cd8e5de453d78708baee.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1267",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62601\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"MG\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":11.1977,\"currency\":\"EUR\",\"companyName\":\"HSBC Portfolios - World Selection 3 (AM-EURH-MDIST-CASH)\",\"securityDescription\":null,\"changeAmount\":0.0167,\"changePercent\":0.14936,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":1.22451,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00013EJG\",\"tradableCurrency\":\"EUR\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Monthly\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"MUAS\",\"categoryLevel1Name\":\"Multi Asset\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":7.29815},{\"year\":2023,\"annualCalendarYearReturn\":9.73976},{\"year\":2022,\"annualCalendarYearReturn\":-18.13164},{\"year\":2021,\"annualCalendarYearReturn\":8.16724},{\"year\":2020,\"annualCalendarYearReturn\":5.77817}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":6.21639,\"dailyPerformanceNAV\":7.01438},{\"period\":\"1M\",\"trailingTotalReturn\":0.47869,\"dailyPerformanceNAV\":1.2162},{\"period\":\"3M\",\"trailingTotalReturn\":6.17901,\"dailyPerformanceNAV\":5.26617},{\"period\":\"6M\",\"trailingTotalReturn\":3.69871,\"dailyPerformanceNAV\":4.69667},{\"period\":\"1Y\",\"trailingTotalReturn\":7.56797,\"dailyPerformanceNAV\":9.89784},{\"period\":\"3Y\",\"trailingTotalReturn\":5.65208,\"dailyPerformanceNAV\":5.45442},{\"period\":\"5Y\",\"trailingTotalReturn\":4.02544,\"dailyPerformanceNAV\":3.79989},{\"period\":\"10Y\",\"trailingTotalReturn\":2.74299,\"dailyPerformanceNAV\":2.91699}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2014-06-30\"},\"entityUpdatedTime\":\"2025-08-13T21:58:26.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62601\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"WAME3\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62601\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1066049245\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013EJG\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000049972\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000049972\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

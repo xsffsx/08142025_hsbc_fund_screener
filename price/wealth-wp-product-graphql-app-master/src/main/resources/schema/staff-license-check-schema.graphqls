@@ -1,0 +1,20 @@
+type StaffLicenseCheck {
+    _id: Long
+    revision: Long
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    prodTypeCde: String
+    prodSubtpCde: String
+    employPosnCde: String!
+    frmlaEmplyEligText: String
+    ovridEmplyEligChkInd: String
+    ctoffEmplyEligChkInd: String
+    emplyEligCtoffDt: Date
+    frmlaEmpEligBfrCtoffText: String
+    recCreatDtTm: DateTime!
+    recUpdtDtTm: DateTime!
+    createdBy: String
+    lastUpdatedBy: String
+    # Retrieve related amendments, by default return the last change only, sorting is supported
+    amendments(lastOnly: Boolean = true, sort: JSON): [AmendmentType]
+}

@@ -1,0 +1,308 @@
+{
+  "metadata": [
+    {
+      "_id": "_id",
+      "attrName": "_id",
+      "jsonPath": "_id",
+      "parent": "[ROOT]",
+      "businessName": "Internal doc id",
+      "businessDefinition": "INTERNAL USAGE: Internal doc id which should be the product id",
+      "graphQLType": "Long"
+    },
+    {
+      "_id": "revision",
+      "attrName": "revision",
+      "jsonPath": "revision",
+      "parent": "[ROOT]",
+      "businessName": "Revision Number",
+      "businessDefinition": "INTERNAL USAGE: Internal revision number of the product document",
+      "graphQLType": "Long"
+    },
+    {
+      "_id": "createdBy",
+      "attrName": "createdBy",
+      "jsonPath": "createdBy",
+      "parent": "[ROOT]",
+      "businessName": "Created By",
+      "businessDefinition": "INTERNAL USAGE: The document is created by whom",
+      "graphQLType": "String"
+    },
+    {
+      "_id": "lastUpdatedBy",
+      "attrName": "lastUpdatedBy",
+      "jsonPath": "lastUpdatedBy",
+      "parent": "[ROOT]",
+      "businessName": "Last Updated By",
+      "businessDefinition": "INTERNAL USAGE: The document is last updated by whom",
+      "graphQLType": "String"
+    },
+    {
+      "_id": "lastSyncTime",
+      "attrName": "lastSyncTime",
+      "jsonPath": "lastSyncTime",
+      "parent": "[ROOT]",
+      "businessName": "Last Sync Date Time",
+      "businessDefinition": "INTERNAL USAGE: Last Sync Date Time",
+      "graphQLType": "DateTime"
+    },
+    {
+      "_id": "TB_PROD.PROD_NAME",
+      "code": "7,8,9",
+      "table": "TB_PROD",
+      "fieldName": "PROD_NAME",
+      "fieldScale": 0,
+      "fieldPrecision": 100,
+      "fieldType": 12,
+      "fieldTypeName": "VARCHAR2",
+      "fieldNullable": 1,
+      "attrName": "prodName",
+      "jsonPath": "prodName",
+      "parent": "[ROOT]",
+      "instrument": "ALL",
+      "classification": "SMD",
+      "mandatory": "M",
+      "dataUsage": null,
+      "logicalEntityName": "Product Translation",
+      "sampleData": null,
+      "businessName": "Product Name",
+      "businessDefinition": "Full name of the product, in English.",
+      "graphQLType": "String",
+      "validations": [
+        {
+          "given": "prodId == null or lastUpdatedBy == 'wps'",
+          "rules": {
+            "required": true
+          }
+        },
+        {
+          "rules": {
+            "bytes": {
+              "max": 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_id": "TB_PROD.CTRY_PROD_TRADE_CDE",
+      "table": "TB_PROD",
+      "fieldName": "CTRY_PROD_TRADE_1_CDE,CTRY_PROD_TRADE_2_CDE,CTRY_PROD_TRADE_3_CDE,CTRY_PROD_TRADE_4_CDE,CTRY_PROD_TRADE_5_CDE,",
+      "fieldScale": 0,
+      "fieldPrecision": 2,
+      "fieldType": 1,
+      "fieldTypeName": "CHAR",
+      "fieldNullable": 1,
+      "attrName": "ctryProdTradeCde[*]",
+      "jsonPath": "ctryProdTradeCde[*]",
+      "parent": "[ROOT]",
+      "instrument": "ALL",
+      "classification": "SMD",
+      "mandatory": "M",
+      "dataUsage": null,
+      "logicalEntityName": null,
+      "sampleData": null,
+      "businessName": "Country Product Tradable Code 1",
+      "businessDefinition": "Denotes the country that is tradable for the product.(e.g. HK)",
+      "graphQLType": "[String]",
+      "validations": [
+        {
+          "given": "lastUpdatedBy == 'wps'",
+          "rules": {
+            "required": true
+          }
+        },
+        {
+          "rules": {
+            "referenceData": {
+              "cdvTypeCde": "ISOCTRYCOD"
+            },
+            "size": {
+              "min": 1,
+              "max": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_id": "TB_PROD_USER_DEFIN_EXT_FIELD.cioAsetClass",
+      "attrName": "cioAsetClass[*]",
+      "jsonPath": "cioAsetClass[*]",
+      "parent": "[ROOT]",
+      "businessName": "CIO Asset Class",
+      "businessDefinition": "CIO Asset Class",
+      "graphQLType": "[String]",
+      "validations": [
+        {
+          "rules": {
+            "referenceData": {
+              "cdvTypeCde": "CIOAC"
+            },
+            "unique": true
+          }
+        }
+      ]
+    },
+    {
+      "_id": "TB_PROD.CTRY_REC_CDE",
+      "table": "TB_PROD",
+      "fieldName": "CTRY_REC_CDE",
+      "fieldScale": 0,
+      "fieldPrecision": 2,
+      "fieldType": 1,
+      "fieldTypeName": "CHAR",
+      "fieldNullable": 0,
+      "attrName": "ctryRecCde",
+      "jsonPath": "ctryRecCde",
+      "parent": "[ROOT]",
+      "instrument": "ALL",
+      "classification": "HID",
+      "mandatory": "M",
+      "dataUsage": null,
+      "logicalEntityName": null,
+      "sampleData": "HK = Hong Kong ^ US = United States ^ UK = United Kingdom ^ SG = Singapore",
+      "businessName": "Country Record Code",
+      "businessDefinition": "Denotes the code to identify the country of the record.",
+      "graphQLType": "String",
+      "validations": [
+        {
+          "rules": {
+            "required": true,
+            "length": {
+              "min": 2,
+              "max": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_id": "TB_PROD.PROD_LNCH_DT",
+      "code": "29",
+      "table": "TB_PROD",
+      "fieldName": "PROD_LNCH_DT",
+      "fieldScale": 0,
+      "fieldPrecision": 0,
+      "fieldType": 93,
+      "fieldTypeName": "DATE",
+      "fieldNullable": 1,
+      "attrName": "prodLnchDt",
+      "jsonPath": "prodLnchDt",
+      "parent": "[ROOT]",
+      "instrument": "ALL",
+      "classification": "SMD",
+      "mandatory": "M if not dummy product",
+      "dataUsage": null,
+      "logicalEntityName": "Product",
+      "sampleData": null,
+      "businessName": "Product Launch Date",
+      "businessDefinition": "Denotes the date on which the product launched to the market.",
+      "graphQLType": "Date",
+      "validations": [
+        {
+          "given": "dmyProdSubtpRecInd!='Y' and prodTypeCde != 'SID' and prodId == null",
+          "rules": {
+            "required": true,
+            "range": {
+              "min": "1900-01-01",
+              "max": "2100-12-31"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_id": "TB_PROD.CCY_PROD_MKT_PRC_CDE",
+      "table": "TB_PROD",
+      "fieldName": "CCY_PROD_MKT_PRC_CDE",
+      "fieldScale": 0,
+      "fieldPrecision": 3,
+      "fieldType": 1,
+      "fieldTypeName": "CHAR",
+      "fieldNullable": 1,
+      "attrName": "ccyProdMktPrcCde",
+      "jsonPath": "ccyProdMktPrcCde",
+      "parent": "[ROOT]",
+      "instrument": "ALL",
+      "classification": "DMD",
+      "mandatory": "O",
+      "dataUsage": "Price",
+      "logicalEntityName": null,
+      "sampleData": "AUD = Australian dollar ^ CAD = Canadian dollar ^ EUR = Euro ^ GBP = Pound sterling ^ NZD = New Zealand dollar ^ JPY = Japanese yen ^ CHF = Swiss franc",
+      "businessName": "Currency Product Market Price Code",
+      "businessDefinition": "Denotes the currency code of the product price presented in the market. Usually it is in ISO format. (e.g. USD)",
+      "graphQLType": "String",
+      "validations": [
+        {
+          "given": "ccyProdMktPrcCde==null",
+          "rules": {
+            "spel": {
+              "expression": "prodBidPrcAmt==null and prodOffrPrcAmt==null and prodMktPrcAmt==null and prodNavPrcAmt==null",
+              "message": "If Market Price Currency[Currency Product Market Price Code] is empty, Bid Price[Product Bid Price Amount], Offer Price[Product Offer Price Amount], Closing Price Amount[Product Market Price Amount], NAV Price[Product Net Asset Value Price Amount] must be blank or enter the Market Price Currency[Currency Product Market Price Code]."
+            }
+          }
+        },
+        {
+          "rules": {
+            "referenceData": {
+              "cdvTypeCde": "BASECCY"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_id": "TB_PROD.ALLOW_BUY_PROD_IND",
+      "code": "33",
+      "table": "TB_PROD",
+      "fieldName": "ALLOW_BUY_PROD_IND",
+      "fieldScale": 0,
+      "fieldPrecision": 1,
+      "fieldType": 1,
+      "fieldTypeName": "CHAR",
+      "fieldNullable": 1,
+      "attrName": "allowBuyProdInd",
+      "jsonPath": "allowBuyProdInd",
+      "parent": "[ROOT]",
+      "instrument": "ALL",
+      "classification": "HID",
+      "mandatory": "M",
+      "dataUsage": "Prod Trade Indicator",
+      "logicalEntityName": "Product",
+      "sampleData": null,
+      "businessName": "Allow Buy Product Indicator",
+      "businessDefinition": "Indicates whether the product is allowed to be bought. Y=allow; N=not allow.",
+      "graphQLType": "String",
+      "validations": [
+        {
+          "rules": {
+            "required": true,
+            "enum": [
+              "Y",
+              "N"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_id": "TB_PROD_FIELD_GROUP_CTOFF",
+      "table": "TB_PROD_FIELD_GROUP_CTOFF",
+      "attrName": "fieldGroupCtoff[*]",
+      "jsonPath": "fieldGroupCtoff[*]",
+      "parent": "[ROOT]",
+      "businessName": "Product Field Group Cut Off?",
+      "businessDefinition": "Product Field Group Cut Off?",
+      "graphQLType": "[FieldGroupCtoffType]",
+      "validations": [
+        {
+          "rules": {
+            "unique": [
+              "fieldGroupCde"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

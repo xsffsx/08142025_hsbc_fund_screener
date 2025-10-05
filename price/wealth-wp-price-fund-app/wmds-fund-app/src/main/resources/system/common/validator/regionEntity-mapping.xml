@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:cst="http://castor.exolab.org/">
+	<description>regionEntity</description>
+	<class cst:name="com.hhhh.group.secwealth.mktdata.common.validator.vo.RegionEntity">
+		<map-to cst:xml="regionEntity" />
+		<field cst:name="siteKey" cst:type="string">
+			<bind-xml name="siteKey" node="attribute" />
+		</field>
+		<field cst:name="serviceEntities" collection="map">
+			<bind-xml name="serviceEntity">
+				<class name="org.exolab.castor.mapping.MapItem">
+					<field name="key" type="java.lang.String">
+						<bind-xml name="serviceID" node="attribute" />
+					</field>
+					<field name="value" type="com.hhhh.group.secwealth.mktdata.common.validator.vo.ServiceEntity" />
+				</class>
+			</bind-xml>
+		</field>
+	</class>
+
+	<class cst:name="com.hhhh.group.secwealth.mktdata.common.validator.vo.ServiceEntity">
+		<map-to cst:xml="entity" />
+		<field cst:name="reqParameters" cst:type="string"
+			handler="com.hhhh.group.secwealth.mktdata.common.validator.handler.ParametersHandler">
+			<bind-xml name="parameters" location="reqParameters" node="attribute" />
+		</field>
+		<field cst:name="reqListParameters" cst:type="string"
+			handler="com.hhhh.group.secwealth.mktdata.common.validator.handler.ListParametersHandler">
+			<bind-xml name="parameters" location="reqListParameters"
+				node="attribute" />
+		</field>
+		<field cst:name="validators" cst:type="com.hhhh.group.secwealth.mktdata.common.validator.vo.RuleSet"
+			collection="collection" handler="com.hhhh.group.secwealth.mktdata.common.validator.handler.ValidatorsHandler">
+			<bind-xml name="ruleSet" node="element" />
+		</field>
+		<field cst:name="serviceName" cst:type="string">
+			<bind-xml name="serviceName" node="element" />
+		</field>
+		<field cst:name="requestClassName" cst:type="string">
+			<bind-xml name="requestClassName" node="element" />
+		</field>
+	</class>
+
+	<class cst:name="com.hhhh.group.secwealth.mktdata.common.validator.vo.RuleSet">
+		<field cst:name="type" cst:type="string">
+			<bind-xml name="type" node="attribute" />
+		</field>
+		<field cst:name="fields" cst:type="string">
+			<bind-xml name="fields" node="attribute" />
+		</field>
+		<field cst:name="errorKey" cst:type="string">
+			<bind-xml name="errorKey" node="attribute" />
+		</field>
+		<field cst:name="associateFields" cst:type="string">
+			<bind-xml name="associateFields" node="attribute" />
+		</field>
+	</class>
+
+</mapping>
+    

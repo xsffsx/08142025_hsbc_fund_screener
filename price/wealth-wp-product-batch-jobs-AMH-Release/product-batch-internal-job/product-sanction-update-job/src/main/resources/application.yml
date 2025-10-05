@@ -1,0 +1,26 @@
+# DB profile
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password:
+    driver-class-name: org.postgresql.Driver
+  data:
+    mongodb:
+      host: "amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: 27017
+      database: WPC_AMH_DEV
+      username: WPCHKGLUA9_APPUSER
+      password:
+      enable-replica: false
+
+logging:
+  level:
+    org: ERROR
+    com: ERROR
+    com.dummy.wpb.product: DEBUG
+    com.dummy.wpb.product.service.GraphQLService: INFO
+    org.apache.http.client: ERROR
+
+batch:
+  supported-product-type-codes: ELI, WRTS

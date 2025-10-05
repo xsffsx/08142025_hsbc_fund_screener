@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62884",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:59:14.792326",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62884%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "3d08e2cd-f9b0-4c5e-a2c4-2582d8411e4b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "Kqfk-lr3nWa5pxdcy0AKaPDAwH1qVAprj2xjmoKVD0_wMItH81kOqw==",
+        "x-hsbc-request-correlation-id": "15b2387d-998b-41e4-8f6d-c3cbd1580d27",
+        "date": "Wed, 13 Aug 2025 13:59:13 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "42",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a492a754c99951a31a41d1c031185610.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "403",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC CIT-HSBC CHINA MULTI-ASSET INCOME (AM3O-SGDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3O-SGDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63325\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CMAOS\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63325\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000439668\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001EDG6\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050693489\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50693489\"}]},{\"productName\":\"HSBC COLLECTIVE INVESTMENT TRUST-HSBC CHINA MULTI-ASSET INCOME-AM2USD\",\"productShortName\":null,\"fundShreClsName\":\"AM2-USD\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62650\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CMAMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62650\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000216926\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00014EA1\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051418\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051418\"}]},{\"productName\":\"HSBC COLLECTIVE INVESTMENT TRUST-HSBC CHINA MULTI-ASSET INCOME-AM2RMB\",\"productShortName\":null,\"fundShreClsName\":\"AM2-RMB\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62651\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CMAMR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62651\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000216934\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00014E9Z\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051417\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051417\"}]},{\"productName\":\"HSBC COLLECTIVE INVESTMENT TRUST-HSBC CHINA MULTI-ASSET INCOME-AM2HKD\",\"productShortName\":null,\"fundShreClsName\":\"AM2-HKD\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62649\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"CMAMH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62649\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000216942\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00014EA0\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000051416\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000051416\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

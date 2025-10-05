@@ -1,0 +1,212 @@
+# Document Type
+enum DocType {
+    # Product Document
+    product
+    # Product_pb Document
+    pb_product
+    # Reference Data Document
+    reference_data
+    # Amendment Document
+    amendment
+    # Product Asset Volatility Class Characteristic Document
+    aset_voltl_class_char
+    # Product Asset Volatility Class Correlation Document
+    aset_voltl_class_corl
+    # Channel Communication Code Document
+    chanl_comn_cde
+    # FIN_DOC
+    fin_doc
+    # FIN_DOC_HIST
+    fin_doc_hist
+    # FIN_DOC_UPLD
+    fin_doc_upld
+    # PROD TYPE FIN DOC
+    prod_type_fin_doc
+    # Staff License Check Document
+    staff_license_check
+    # File upload Document
+    file_upload,
+    # Customer Eligibility Document
+    product_customer_eligibility,
+    # Staff Eligibility Document
+    product_staff_eligibility,
+    # Product Relation Document
+    product_prod_relation
+    # Channel Related Fields
+    chanl_related_fileds
+}
+
+enum ApprovalAction {
+    # Approve the document change
+    approved
+    # Reject the document change
+    rejected
+    # Return the document change
+    returned
+}
+
+enum AmendmentStatusCode {
+    # amendment in draft status
+    draft
+    # amendment has been submit, pending for approval
+    pending
+    # amendment has been returned
+    returned
+    # amendment has been rejected
+    rejected
+    # amendment has been approved
+    approved
+    # amendment has been deleted
+    deleted
+}
+
+enum AmendmentActionCode {
+    # add a new document with no _id
+    add
+    # update an exist document with given _id
+    update
+    # delete an exist document with given _id
+    delete
+}
+
+type AmendmentType {
+    _id: Long
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    # Employee number of the amendment creator
+    emplyNum: String
+    # Amendment status
+    recStatCde: AmendmentStatusCode!
+    # Amendment action type
+    actionCde: AmendmentActionCode!
+    # Amended document type
+    docType: DocType!
+    # Document ID of the document being amended, for create case, it should be null.
+    docId: Long
+    # Descriptive information of the changed document
+    summary: String
+
+    # The document amended
+    doc: JSON!
+
+    # The document before amendment, could be null for `add` case
+    docBase: JSON
+
+    # The latest document, could be null for `add` case
+    docLatest: JSON
+
+    # Difference between docBase --> doc
+    diffFromAmendment: [DiffType]
+
+    # Difference between docBase --> docLatest
+    diffFromLatest: [DiffType]
+
+    # If docLatest and the doc amendment has change in the same field, there is a conflict
+#    diffConflict: [DiffType]
+
+    # Request comments
+    requestComment: String
+    # Approval comments
+    approvalComment: String
+    # Staff ID of the approver
+    approvedBy: String
+    # Record creation time
+    recCreatDtTm: DateTime
+    # Record last update time
+    recUpdtDtTm: DateTime
+}
+
+type DiffType {
+    # json path of the data points, eg. $.a.b[1]
+    path: String!
+
+    # left value
+    left: JSON
+
+    # left value
+    right: JSON
+}
+
+enum UploadFileType {
+    # Asset Allocation - Geographic
+    ASETGEOAL
+    # Asset Standard Industry Classification Allocation
+    ASETSICAL
+    # BOND
+    BOND
+    # Insurance
+    INS
+    # Insurance or Structured Notes
+    GENERIC
+    # Manual price for BOND
+    MANLPRCBOND
+    # Manual price for SEC
+    MANLPRCSEC
+    # Product Alternative ID
+    PRODALTID
+    # Product Asset Volatility Class
+    PRODAVC
+    # Product Customer Eligibility Rule
+    CUSTELIG
+    # Reference data
+    REFDATA
+    # Securities
+    SEC
+    # Structured Investment Deposit
+    SID
+    # Unit Trust
+    UT
+    # Asset Volatility Class Characteristic
+    AVCCHAR
+    # Asset Volatility Class Correlation
+    AVCCORL
+    # Financial Document Relationship
+    FINDOC
+    # Equity Linked Investments
+    ELI
+    # Deposit Plus
+    DPS
+    # Warrants
+    WRTS
+    # Insurance Linked UT
+    ILI_UT
+    # Insurance Linked UT
+    MSUT
+    # Morning Star Unit Trust
+    #Rider
+    RIDER
+    #Staff eligibility
+    STAFFELIG
+    #Product Relationship
+    PRODPRODREL
+}
+
+enum UploadFindocType {
+    EXCEL_LIST
+    EXCEL_MAP
+    PDF
+}
+
+type UploadType {
+    _id: Long
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    emplyNum: String!
+    approvedBy: String
+    recStatCde: AmendmentStatusCode!
+    uploadType: UploadFileType!
+    fileName: String!
+    fileMd5: String!
+    requestComment: String
+    approvalComment: String
+    uploadResult: FileIngressStatus
+    logFile: String
+    recCreatDtTm: DateTime
+    recUpdtDtTm: DateTime
+}
+
+type FindocUploadResult {
+    fileName: String
+    reason: String
+    isUpload: Boolean
+}

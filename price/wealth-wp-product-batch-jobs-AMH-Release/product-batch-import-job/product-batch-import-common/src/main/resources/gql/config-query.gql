@@ -1,0 +1,7 @@
+query configurationByFilter($filter: JSON!) {
+    configurationByFilter(filter: $filter) {
+        description
+        forEntity
+        config
+    }
+}

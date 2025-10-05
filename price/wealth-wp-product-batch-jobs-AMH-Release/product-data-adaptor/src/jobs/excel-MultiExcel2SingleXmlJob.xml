@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<import resource="classpath:/jobs/common.xml" />
+
+	<bean id="excel-MultiExcel2SingleXmlJob" parent="simpleJob">
+		<property name="steps">
+			<bean id="read" parent="simpleStep">
+				<property name="allowStartIfComplete" value="true" />
+				<property name="itemReader" ref="excelMultiFileReader" />
+				<property name="itemWriter" ref="xmlDefaultWriter" />
+				<property name="listeners">
+					<list>
+						<ref bean="dataFilePath" />
+						<ref bean="outputFilePath" />
+						<ref bean="initExecutionContext" />
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="excelMultiFileReader" class="com.dummy.wpc.datadaptor.reader.ExcelMultiFileReader">
+	</bean>
+
+	<bean id="xmlDefaultWriter" class="com.dummy.wpc.datadaptor.writer.XMLDefaultWriter">
+		<property name="resource" ref="outputFilePath" />
+		<property name="serializer" ref="tradeMarshallingSerializer" />
+		<property name="overwriteOutput" value="true" />
+	</bean>
+
+</beans>

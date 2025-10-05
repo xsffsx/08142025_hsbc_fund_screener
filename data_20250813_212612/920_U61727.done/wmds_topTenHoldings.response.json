@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61727",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:27:31.542897",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61727%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "c9f53c15-a0e5-42e8-b2bd-7ee821767df9:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "p2VsVX2rKSho1z9Nzb4P0q1DerrNFbBDYPqoPyPGzDglgWJjh_VmSA==",
+        "x-hsbc-request-correlation-id": "3ab64208-ea98-459d-a945-69a056367b2c",
+        "date": "Wed, 13 Aug 2025 13:27:31 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0253",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "29",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 330354be8b854240bf068e6ab0a9a68c.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "529",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"HU\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"OTP Bank PLC\",\"weighting\":8.49061,\"currency\":\"EUR\",\"marketValue\":87351466},{\"market\":\"PL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PKO Bank Polski SA\",\"weighting\":7.03711,\"currency\":\"EUR\",\"marketValue\":72397842},{\"market\":\"GR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Eurobank Ergasias Services And Holdings SA\",\"weighting\":6.27577,\"currency\":\"EUR\",\"marketValue\":64565243},{\"market\":\"GR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"National Bank of Greece SA\",\"weighting\":5.41009,\"currency\":\"EUR\",\"marketValue\":55659084},{\"market\":\"PL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"LPP SA\",\"weighting\":4.55733,\"currency\":\"EUR\",\"marketValue\":46885836},{\"market\":\"GR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Metlen Energy & Metals SA\",\"weighting\":4.15008,\"currency\":\"EUR\",\"marketValue\":42696027},{\"market\":\"PL\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Powszechny Zaklad Ubezpieczen SA\",\"weighting\":3.93247,\"currency\":\"EUR\",\"marketValue\":40457316},{\"market\":\"GR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Piraeus Financial Holdings SA\",\"weighting\":3.46694,\"currency\":\"EUR\",\"marketValue\":35667884},{\"market\":\"TR\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bim Birlesik Magazalar AS\",\"weighting\":3.09643,\"currency\":\"EUR\",\"marketValue\":31856109},{\"market\":\"HU\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Chemical Works of Gedeon Richter PLC\",\"weighting\":2.97501,\"currency\":\"EUR\",\"marketValue\":30606974}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

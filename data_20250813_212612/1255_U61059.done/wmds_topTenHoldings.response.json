@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61059",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:41:51.034673",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61059%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "4c540c80-6b89-4945-98f4-c6e33aeaa878:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "5ASYh2YxCnNhbuk75lLXd8xy9ajE1H6tmlXs144oF3kZeFbyWtl3PQ==",
+        "x-hsbc-request-correlation-id": "9b78404d-2be2-4903-a404-48e27c125d15",
+        "date": "Wed, 13 Aug 2025 13:41:50 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0257",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "27",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 60da66b0b895927a557eca913aeebc9a.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "470",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ptt PCL\",\"weighting\":9.39007,\"currency\":\"USD\",\"marketValue\":10772155},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CP All PCL\",\"weighting\":8.11574,\"currency\":\"USD\",\"marketValue\":9310265},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Advanced Info Service PCL\",\"weighting\":8.10204,\"currency\":\"USD\",\"marketValue\":9294550},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Bangkok Dusit Medical Services PCL\",\"weighting\":6.5618,\"currency\":\"USD\",\"marketValue\":7527600},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Delta Electronics (Thailand) PCL\",\"weighting\":5.53327,\"currency\":\"USD\",\"marketValue\":6347693},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Central Pattana PCL\",\"weighting\":4.65999,\"currency\":\"USD\",\"marketValue\":5345875},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"PTT Exploration & Production PCL\",\"weighting\":4.23174,\"currency\":\"USD\",\"marketValue\":4854596},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Kasikornbank Public Co Ltd\",\"weighting\":3.31965,\"currency\":\"USD\",\"marketValue\":3808259},{\"market\":\"TH\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Krung Thai Bank PCL\",\"weighting\":2.93031,\"currency\":\"USD\",\"marketValue\":3361608},{\"market\":\"TW\",\"productType\":\"E\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Delta Electronics Inc\",\"weighting\":2.1913,\"currency\":\"USD\",\"marketValue\":2513824}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

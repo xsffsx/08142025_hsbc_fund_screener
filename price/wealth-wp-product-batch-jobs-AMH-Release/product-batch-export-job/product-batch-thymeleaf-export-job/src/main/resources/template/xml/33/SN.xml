@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gnrcProdLst xmlns:product="http://www.dummy.wpb.com/product" xmlns:th="http://www.thymeleaf.org">
+    <gnrcProd th:each="product : ${documents}">
+        <th:block th:insert="~{COMMON::prodKeySeg}"/>
+        <th:block th:each="alt : ${product.get('altId')}" th:insert="~{COMMON::prodAltNumSeg}"/>
+        <th:block th:insert="~{COMMON::prodInfoSeg}"/>
+        <th:block th:insert="~{COMMON::recDtTmSeg}"/>
+    </gnrcProd>
+</gnrcProdLst>

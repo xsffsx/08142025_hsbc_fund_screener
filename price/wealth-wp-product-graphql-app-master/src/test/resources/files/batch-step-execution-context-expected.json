@@ -1,0 +1,24 @@
+{
+  "batch.taskletType": "org.springframework.batch.core.step.item.ChunkOrientedTasklet",
+  "utXmlFileReader.read.count": 6,
+  "currentFileName": "HK_HBAP_AMHCUTAS_UT_20221226081122.xml",
+  "StaxEventItemReader.read.count": 8,
+  "batch.stepType": "org.springframework.batch.core.step.tasklet.TaskletStep",
+  "updatedFailedProducts": [
+    {
+      "product": {
+        "ctryRecCde": "HK",
+        "grpMembrRecCde": "HBAP",
+        "prodTypeCde": "UT",
+        "prodAltPrimNum": "U62447"
+      },
+      "errors": [
+        {
+          "jsonPath": "tradeCcy[1].ccyProdTradeCde",
+          "code": "tradeCcy[*].ccyProdTradeCde@referenceData",
+          "message": "Reference data doesn't exist: {cdvTypeCde=BASECCY, cdvCde=USD11}"
+        }
+      ]
+    }
+  ]
+}

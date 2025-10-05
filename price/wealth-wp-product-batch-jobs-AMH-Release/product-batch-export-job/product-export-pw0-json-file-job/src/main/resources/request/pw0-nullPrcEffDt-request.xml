@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Header/>
+    <soap:Body>
+        <ns2:enquireJson xmlns:ns2="http://impl.service.webservice.wpc.wmd.dummy.com/">
+            <arg0>
+                <countryCode>${ctryRecCde}</countryCode>
+                <groupMemberCode>${grpMembrRecCde}</groupMemberCode>
+                <target>
+                    <criterion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:junction">
+                        <criterionList xsi:type="ns2:equalExpression">
+                            <propertyKey>prodTypCde</propertyKey>
+                            <value xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">${prodTypCde}</value>
+                        </criterionList>
+                        <criterionList xsi:type="ns2:isNullExpression">
+                            <propertyKey>prcEffDt</propertyKey>
+                        </criterionList>
+                        <operator>AND</operator>
+                    </criterion>
+                    <targetName>${targetName}</targetName>
+                </target>
+            </arg0>
+        </ns2:enquireJson>
+    </soap:Body>
+</soap:Envelope>

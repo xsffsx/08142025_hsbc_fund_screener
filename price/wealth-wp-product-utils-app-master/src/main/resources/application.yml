@@ -1,0 +1,87 @@
+### Environment configuration starts ###
+# Please update env config on https://alm-github.systems.uk.dummy/RBWM-Wealth-Engineering-IT/wealth-wp-configuration.git 
+# DB profile
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
+  # oralce db profile
+  datasource:
+    url: "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=sgh-sit-wporcl01.wealth-platform-sgh.sit.aws.cloud.dummy)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=ssgwp01)(FAILOVER_MODE=(TYPE=SELECT)(METHOD=BASIC))))"
+    username: WPCSGSA1
+    password:
+  # mongo db profile  
+  data:
+    mongodb:
+      host: "wealthsghdevdocdb01.cluster-cehmooktdpxx.ap-southeast-1.docdb.amazonaws.com"
+      port: 27017
+      database: WPC_SG_DEV
+      username: WPCSGGLUA9_APPUSER
+      enable-replica: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+# Data sync properties
+product:
+  # For auto data sync (delta)
+  sync:
+    lock-timeout: 30  # lock timeout in minutes
+    interval: 60   # 60 seconds by default
+    keep-data-sync-log-days: 7  # housekeeping data_sync_log out of the setting days
+    auto-watch: true  # start watch thread automatically
+    multiple-thread-write: true  # when apply changes to MongoDB with multiple thread or not
+    multiple-thread-load: true # when load data to MongoDB with multiple thread or not
+    clean-auto-created-products: false # product on the fly auto creation function for the UK only, needs to create index at product.createdBy in case turn this on for better performance
+  # For manual data load (full)
+  load:
+    disable: true
+  log:
+    path: C:\Users\xxxxxx\project\wpc\wealth-wp-product-utils-app\src
+
+  http-connect-timeout: 120000
+  http-read-timeout: 120000
+  product-rest-adapter:
+    url: http://product-rest-adapter
+  product-soap-adapter:
+    url: http://product-soap-adapter
+  product-dp-file-egress:
+    url: http://product-dp-file-egress
+  product-dp-file-ingress:
+    url: http://product-dp-file-ingress
+  product-graphql:
+    url: http://product-graphql
+
+
+health-check:
+  folder: "amh"
+  cron: 0 0/15 * ? * 1-6, 0 0/15 5-23 ? * 0 # runs per 15 min, 00:00-23:59 (Mon-Sat), 05:00-23:59 (Sun)
+  timezone: "Asia/Shanghai"
+
+### Environment configuration ends ###
+
+
+### Common configuration starts ###
+# Spring boot actuator endpoint properties
+management.endpoints:
+  shutdown:
+    enabled: true
+  health:
+    show-details: always
+  web:
+    exposure:
+      base-path: /monitor
+      include: "*"
+
+# Multiple thread process
+thread-pool-task-executor-configuration:
+  corePoolSize: 8
+  maxPoolSize: 16
+  keepAliveSeconds: 60
+
+# Server properties
+server:
+  max-http-header-size: 512000 # set max header size to resolve HTTP 400 error
+  shutdown: "graceful"
+
+### Common configuration ends ###

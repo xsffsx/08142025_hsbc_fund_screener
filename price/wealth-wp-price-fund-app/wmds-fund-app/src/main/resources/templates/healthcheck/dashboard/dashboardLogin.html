@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Title</title>
+</head>
+<style type="text/css">
+table.sample1 {
+	border-width: 1px;
+	border-spacing:;
+	border-style: hidden;
+	border-color: #CECECE;
+	border-collapse: collapse;
+	background-color: #EDEDED;
+}
+
+table.sample1 th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: hidden;
+	border-color: white;
+	background-color: #CECECE;
+	-moz-border-radius:;
+}
+
+table.sample1 td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: solid;
+	border-color: white;
+	-moz-border-radius:;
+}
+</style>
+<body>
+	<table width='100%' border='1' cellspacing='1' cellpadding='1'
+		class="sample1">
+		<tr>
+			<th>NOTICE TO USERS</th>
+		</tr>
+		<tr>
+			<td>This is a hhhh BANK plc. owned computer system. All programs
+				and data on this system are the property of, or licesed by hhhh BANK
+				plc. It is for authorised use only. Users (authorised or
+				unauthorised) have no explicit or implicit expectation of privacy.<br></br>
+			<br></br> Any or all uses of this system and all files and data on
+				this system may be intercepted, monitored, recorded, copied,
+				audited, inspected, and disclosed to relevant authorities.<br></br>
+			<br></br> By using this system, the user consents to such
+				interception, monitoring, recording, copying, auditing, inspection,
+				and disclosure at the discretion of hhhh BANK plc. authorised
+				personnel.<br></br>
+			<br></br> Unauthorised or improper use of this system may result in
+				administrative disciplinary action and civil and criminal penalties.
+				By continuing to use this system you indicate your awareness of and
+				consent to these items and conditions of use. LOG OFF IMMEDIATELY if
+				you do not agree to the conditions stated in this warning.
+
+			</td>
+		</tr>
+	</table>
+	<p></p>
+	<h2 th:text="${projectName}"></h2>
+	<form th:action="@{/healthcheck/dashboard}" method="post">
+		<fieldset>
+			<table>
+				<tr>
+					<td><label>User ID: </label></td>
+					<td><input id="userid" name="userid" type="text" size="20"
+						maxlength="20" value="mkddashboard" /></td>
+				</tr>
+				<tr>
+					<td><label>Password: </label></td>
+					<td><input id="password" name="password" type="password"
+						size="20" maxlength="20" value="mkdTest2010Dashboard" /></td>
+				</tr>
+			</table>
+			<br /> <input id="event" name="event" value="submit" type="hidden" />
+			<br />
+			<div class="buttons">
+				<button accesskey="s" onclick="" type="submit" name="submit"
+					value="submit">
+					Submit
+					<kbd>[s]</kbd>
+				</button>
+			</div>
+		</fieldset>
+	</form>
+	<p align="right">
+		<font size="1">Ver. <span th:text="${version}" /></font>
+	</p>
+</body>
+</html>

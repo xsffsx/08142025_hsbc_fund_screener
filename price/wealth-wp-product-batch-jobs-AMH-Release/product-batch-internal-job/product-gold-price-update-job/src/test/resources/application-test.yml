@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  batch:
+    job:
+      enabled: false
+
+batch:
+  graphQLUrl: "http://localhost:8080/graphql"
+
+# product tokenized gold product info
+product:
+  tokenized-gold:
+    # Replace currency code XAU with XGT in FlexRate response
+    replace-currency:
+      target: "XAU"
+      replacement: "XGT"
+    products:
+      - prodId: 32188
+        ctryRecCde: 'HK'
+        grpMembrRecCde: 'HBAP'
+        prodTypeCde: "DAC" # Digital Assets & Currencies
+        prodSubtpCde: "TG" # Tokenized Gold
+        currencyPairs: "HKDXAU;XAUHKD"
+
+# FlexRate API info
+flexrate:
+  url: "https://flexrateint.systems.example.com/api/mvp/v1/marketRate"
+  account: "smartlocalamhdev"
+  authorization: "Basic c21hcnRsb2NhbGFtaGRldjp3ZWFsdGhpdHdwY2hzYmMxMjM0NTY="

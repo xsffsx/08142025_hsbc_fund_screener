@@ -1,0 +1,34 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "RMP",
+  "path": "/appvol/product-spring-batch/data/outgoing/SGHBSP/WPC_IDSTL/",
+  "tasks": [
+    {
+      "files": [
+        {
+          "name": "DPS CSV",
+          "templateName": "/csv/DPS.html",
+          "fileName": "SGHBSPWPC_IDSTLDPSInterface_${date:yyyyMMdd_HHmmss}.csv"
+        }
+      ],
+      "collection": "product",
+      "filter": {
+        "prodTypeCde": "DPS",
+        "dmyProdSubtpRecInd": {
+          "$ne": "Y"
+        },
+        "prodStatCde": {
+          "$nin": [
+            "E","D","P"
+          ]
+        }
+      },
+      "sort": {
+        "prodTypeCde": 1,
+        "prodSubtpCde": 1,
+        "prodName": 1
+      }
+    }
+  ]
+}

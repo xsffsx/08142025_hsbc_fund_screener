@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  batch:
+    job:
+      enabled: false
+
+finDoc:
+  sysPath: "src/test/resources/pdf"
+  archDataDir: "/dummy/arc/app/ftp/incoming/docfile/high"
+  archReqDir: "/dummy/arc/app/ftp/incoming/high"
+  output:
+    path: "src/test/resources/"
+  arc:
+    csv: "src/test/resources/"
+
+ARC_FTP_REQ:
+  Script: "src/test/resources/ARC_ftp_req.sh"
+ARC_FTP:
+  Script: "src/test/resources/ARC_ftp_data.sh"

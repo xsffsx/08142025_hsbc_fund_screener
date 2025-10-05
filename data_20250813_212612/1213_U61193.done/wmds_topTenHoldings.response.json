@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61193",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:08:57.597781",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61193%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "e5f3a5a3-a11e-4c01-9936-47ecf8b20c10:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "ndWWqt9uySlGo_jH23w5A80SFaT2tHR5xTdJlBYs_JsyGR1Gi8h7jA==",
+        "x-hsbc-request-correlation-id": "38038d30-ceb9-4dab-8f37-a8477ab5c3d0",
+        "date": "Wed, 13 Aug 2025 14:08:56 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 cc5461804f39ae1b3956b0f75ed048ce.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "556",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"LU\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Invesco Mlt-Sect Crdt I EUR Acc\",\"weighting\":4.68809,\"currency\":\"USD\",\"marketValue\":6736427},{\"market\":\"US\",\"productType\":\"P\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Aircastle Limited 5.25%\",\"weighting\":1.30139,\"currency\":\"USD\",\"marketValue\":1870001},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"CCO Holdings, LLC/ CCO Holdings Capital Corp. 4.5%\",\"weighting\":1.13068,\"currency\":\"USD\",\"marketValue\":1624709},{\"market\":\"CA\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"New Gold, Inc. 6.875%\",\"weighting\":1.07065,\"currency\":\"USD\",\"marketValue\":1538450},{\"market\":\"IT\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Telecom Italia Capital S.A. 7.721%\",\"weighting\":1.02835,\"currency\":\"USD\",\"marketValue\":1477663},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"EZCORP Inc. 7.375%\",\"weighting\":1.00573,\"currency\":\"USD\",\"marketValue\":1445159},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"AAdvantage Loyalty IP Ltd/ American Airlines Inc 5.75%\",\"weighting\":0.99782,\"currency\":\"USD\",\"marketValue\":1433799},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Jane Street Group LLC / JSG Finance Inc. 6.75%\",\"weighting\":0.99377,\"currency\":\"USD\",\"marketValue\":1427973},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Carnival Corporation 6.125%\",\"weighting\":0.98579,\"currency\":\"USD\",\"marketValue\":1416512},{\"market\":\"SG\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Avation Capital SA 8.25%\",\"weighting\":0.94596,\"currency\":\"USD\",\"marketValue\":1359280}],\"lastUpdatedDate\":\"2025-07-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

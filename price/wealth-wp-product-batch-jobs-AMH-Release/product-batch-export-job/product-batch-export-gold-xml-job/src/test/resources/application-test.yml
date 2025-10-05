@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    username:
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  batch:
+    job:
+      enabled: false
+  data:
+    mongodb:
+      host: "localhost"
+      port: 27017
+      database: admin
+      username:
+      password:
+      enable-replica: false
+
+batch:
+  graphQLUrl: "http://localhost:8080/graphql"
+  outgoing:
+    path: #/appvol/product-spring-batch/data/outgoing/

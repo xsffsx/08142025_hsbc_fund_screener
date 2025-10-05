@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <title>WMDS Probing</title>
+		<meta charset="UTF-8" />
+	</head>
+<body>
+ <td style="white-space: nowrap">
+    <span th:if="${result} == 'success'" class="label label-success" th:text=" 'OK, System time is '+ ${systemTime}"></span>
+    <span th:if="${result} == 'failure'" class="label label-danger" th:text=" 'Failed with '+ ${systemTime}"></span>
+</td>
+		
+</body>
+</html>

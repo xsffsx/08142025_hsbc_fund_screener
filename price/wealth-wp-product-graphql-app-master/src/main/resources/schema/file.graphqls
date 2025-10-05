@@ -1,0 +1,9 @@
+type File {
+    _id: Long
+    md5: String!,
+    length : Long!,
+    chunkSize : Long!,
+    uploadDate : Date!,
+    filename : String!,
+    metadata : Json!
+}

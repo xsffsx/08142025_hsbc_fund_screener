@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U43201",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:36:17.489912",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U43201%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "69f0c5ea-a055-42c2-8ff8-b852bfd1d9ec:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "e6a9y5Dry7AlgKUyGE1e-b1jYnwzXUQ87uaQgan4nctllmPWLPDwNQ==",
+        "x-hsbc-request-correlation-id": "48917cda-fd3f-46da-a79b-fc2e77c120c4",
+        "date": "Wed, 13 Aug 2025 13:36:15 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "25",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 7bbe2b3303fef5a6eb0e74bb6f4bdd04.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "491",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"FR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"France (Republic Of)\",\"weighting\":2.64225,\"currency\":\"EUR\",\"marketValue\":46607683},{\"market\":null,\"productType\":\"SY\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"1Y Rtr 1.800000 28-Apr-2026 1\",\"weighting\":2.13586,\"currency\":\"EUR\",\"marketValue\":37675350},{\"market\":null,\"productType\":\"SY\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"1Y Rtr 1.400000 28-Apr-2026 1\",\"weighting\":2.0517,\"currency\":\"EUR\",\"marketValue\":-36190787},{\"market\":\"ES\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Spain (Kingdom of)\",\"weighting\":1.49623,\"currency\":\"EUR\",\"marketValue\":26392628},{\"market\":\"IE\",\"productType\":\"FO\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Blk Ics Eur As Liq EnvirtlyAwrAgcyAccTo€\",\"weighting\":1.28996,\"currency\":\"EUR\",\"marketValue\":22754093},{\"market\":\"ES\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Spain (Kingdom of)\",\"weighting\":1.23402,\"currency\":\"EUR\",\"marketValue\":21767459},{\"market\":\"IT\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Italy (Republic Of)\",\"weighting\":1.14021,\"currency\":\"EUR\",\"marketValue\":20112625},{\"market\":\"FR\",\"productType\":\"BT\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"France (Republic Of)\",\"weighting\":1.10397,\"currency\":\"EUR\",\"marketValue\":19473298},{\"market\":null,\"productType\":\"BZ\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"European Union\",\"weighting\":1.07946,\"currency\":\"EUR\",\"marketValue\":19041030},{\"market\":\"FR\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Dexia SA\",\"weighting\":1.00348,\"currency\":\"EUR\",\"marketValue\":17700822}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

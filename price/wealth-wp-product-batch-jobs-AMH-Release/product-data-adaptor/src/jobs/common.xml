@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+
+	<bean id="simpleJob" class="org.springframework.batch.core.job.SimpleJob"
+		abstract="true">
+		<property name="jobRepository" ref="jobRepository" />
+		<property name="restartable" value="true" />
+	</bean>
+
+	<bean id="simpleStep"
+		class="org.springframework.batch.core.step.item.SimpleStepFactoryBean"
+		abstract="true">
+		<property name="transactionManager" ref="txManager" />
+		<property name="jobRepository" ref="jobRepository" />
+		<!-- <property name="startLimit" value="100" /> -->
+		<property name="commitInterval" value="100" />
+	</bean>
+
+	 
+	<bean id="tradeMarshallingSerializer"
+		class="org.springframework.batch.item.xml.oxm.MarshallingEventWriterSerializer">
+		<constructor-arg>
+			 <bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller">
+			</bean> 
+		</constructor-arg>
+	</bean>
+
+	<bean id="jobLauncher"
+		class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
+		<property name="jobRepository" ref="jobRepository" />
+	</bean>
+
+	<bean id="jobConfigurationRegistryBeanPostProcessor"
+		class="org.springframework.batch.core.configuration.support.JobRegistryBeanPostProcessor">
+		<property name="jobRegistry" ref="jobRegistry" />
+	</bean>
+
+	<bean id="jobParametersConverter"
+		class="com.dummy.wpc.datadaptor.util.DataAdaptorJobParametersConverter"></bean>
+
+
+	<bean id="jobRunner" class="com.dummy.wpc.datadaptor.util.DataAdaptorJobRunner">
+		<property name="jobLocator" ref="jobRegistry"></property>
+		<property name="jobLauncher" ref="jobLauncher"></property>
+		<property name="jobParametersConverter" ref="jobParametersConverter"></property>
+	</bean>
+
+	<bean id="jobRegistry"
+		class="org.springframework.batch.core.configuration.support.MapJobRegistry" />
+
+	<bean id="jobRepository"
+		class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean"
+		p:transactionManager-ref="txManager" />
+
+	<bean id="txManager"
+		class="org.springframework.batch.support.transaction.ResourcelessTransactionManager">
+	</bean>
+
+	<bean id="initExecutionContext" class="com.dummy.wpc.datadaptor.listener.InitExecutionContext" />
+	 
+	
+
+	<bean id="dataFilePath"
+		class="org.springframework.batch.core.resource.StepExecutionResourceProxy">
+		<property name="filePattern" value="file:%data_file_path%" />
+	</bean>
+	<bean id="outputFilePath"
+		class="org.springframework.batch.core.resource.StepExecutionResourceProxy">
+		<property name="filePattern" value="file:%output_file_path%" />
+	</bean>
+	<!--
+	<bean id="logFilePath"
+		class="org.springframework.batch.core.resource.StepExecutionResourceProxy">
+		<property name="filePattern" value="file:%log_file_path%" />
+	</bean>
+	
+		<bean id="badFilePath"
+		class="org.springframework.batch.core.resource.StepExecutionResourceProxy">
+		<property name="filePattern" value="file:%bad_file_path%" /> </bean>
+	-->
+	<bean id="fieldListConfig"
+		class="org.springframework.batch.core.resource.StepExecutionResourceProxy">
+		<property name="filePattern" value="file:%field_list_config%" />
+	</bean>
+	<bean id="validateRule"
+		class="org.springframework.batch.core.resource.StepExecutionResourceProxy">
+		<property name="filePattern" value="file:%validate_rule%" />
+	</bean>
+
+	<bean id="defaultValidator" class="com.dummy.wpc.datadaptor.validation.SpringValidatorEx">
+		<property name="validator">
+			<bean class="com.dummy.wpc.datadaptor.validation.DefaultValidator">
+				<property name="resource" ref="validateRule" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="defaultHeaderLineProcessor"
+		class="com.dummy.wpc.datadaptor.reader.DefaultHeaderLineProcessor" />
+	<bean id="defaultTrailerLineProcessor"
+		class="com.dummy.wpc.datadaptor.reader.DefaultTrailerLineProcessor" />
+
+</beans>

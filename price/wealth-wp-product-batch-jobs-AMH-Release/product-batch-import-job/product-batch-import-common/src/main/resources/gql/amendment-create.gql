@@ -1,0 +1,5 @@
+mutation amendmentCreate($actionCde: AmendmentActionCode!, $docType: DocType!, $docChanged: JSON!){
+    amendmentCreate(actionCde: $actionCde, docType: $docType, docChanged: $docChanged, submit: true) {
+      _id
+    }
+}

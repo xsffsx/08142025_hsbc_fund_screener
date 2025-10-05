@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "product legacy config schema",
+  "description": "for legacy-config-*.yaml validation",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "key": {
+        "description": "configuration key",
+        "type": "string"
+      },
+      "value": {
+        "description": "configuration value",
+        "type": ["string", "null", "number", "object","array"]
+      },
+      "desc": {
+        "description": "configuration description",
+        "type": "string"
+      }
+    },
+    "required": ["key", "value"],
+    "additionalProperties": false
+  }
+}

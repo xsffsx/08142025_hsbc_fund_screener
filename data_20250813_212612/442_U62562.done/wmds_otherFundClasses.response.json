@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62562",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:42:00.576970",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62562%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "f6129fd7-1bca-47c5-83a8-1690f523886c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "yVgYlSMwzM9j53cCyu-imUqx2iF0TJVLV3XkKwoD3O2TXhreiZiM1w==",
+        "x-hsbc-request-correlation-id": "92004e6f-d069-4176-b07d-2aca50c2741a",
+        "date": "Wed, 13 Aug 2025 13:42:00 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "37",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9c7184b28c57254d98f583f8eea58496.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "550",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC GIF Managed Solution-Asia Focused Conservative(AM2-USD-MDIS-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM2-USD-MDIS-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62794\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HFCMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62794\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0854292561\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016M1C\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050018006\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50018006\"}]},{\"productName\":\"HSBC GIF-Managed Solutions Asia Focused Conservative (AM3O-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"AM3O-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62899\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HFCMR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62899\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1802242039\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001D4Q7\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050101020\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50101020\"}]},{\"productName\":\"HSBC GIF Managed Solution-Asia Focused Conservative(AM2-HKD-MDIS-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"AM2-HKD-MDIS-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62795\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HFCMH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62795\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0854294187\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00016M1H\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050018005\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50018005\"}]},{\"productName\":\"HSBC GIF-Managed Solution-Asia Focused Conservative (Class AC-HKD)\",\"productShortName\":null,\"fundShreClsName\":\"Class AC-HKD\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62561\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HFCCH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62561\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0854294005\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000Y8CP\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047724\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047724\"}]},{\"productName\":\"HSBC GIF-MANAGED SOLUTION-ASIA FOCUSED CONSERVATIVE (CLASS ACO-EURH)\",\"productShortName\":null,\"fundShreClsName\":\"Class AC-EUR\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62560\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HFCCE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62560\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0854295077\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000Y8CR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047723\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047723\"}]},{\"productName\":\"HSBC GIF-MANAGED SOLUTION-ASIA FOCUSED CONSERVATIVE (CLASS ACO-AUDH)\",\"productShortName\":null,\"fundShreClsName\":\"Class AC-AUD\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62559\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HFCCA\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62559\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0854295408\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000Y8CQ\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047722\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047722\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

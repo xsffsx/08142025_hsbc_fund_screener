@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62464",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:38:40.310366",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62464%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "4b9040d8-9bdf-4de2-87da-9e7f6ebe8919:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "mAdAx3Cbte_5Ne8O0zzaz3oCzQ5sd_J0SAFDNXdWmgMl-m2Y8Zb1EQ==",
+        "x-hsbc-request-correlation-id": "48cd8776-07e3-4980-912a-6f9d003e6a3d",
+        "date": "Wed, 13 Aug 2025 13:38:40 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "17",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 60da66b0b895927a557eca913aeebc9a.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1254",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62464\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"SO\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":17.706,\"currency\":\"HKD\",\"companyName\":\"HSBC GIF - Indian Equity (CLASS AD -HKD)\",\"securityDescription\":null,\"changeAmount\":-0.008,\"changePercent\":-0.04516,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"Y\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P0000UT80\",\"tradableCurrency\":\"HKD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":\"Annually\",\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDIM\",\"categoryLevel1Name\":\"Equity Developing Market\",\"allowBuy\":\"Y\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":12.45351},{\"year\":2023,\"annualCalendarYearReturn\":20.32407},{\"year\":2022,\"annualCalendarYearReturn\":-10.64534},{\"year\":2021,\"annualCalendarYearReturn\":28.82139},{\"year\":2020,\"annualCalendarYearReturn\":6.97387}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":1.61382,\"dailyPerformanceNAV\":0.96943},{\"period\":\"1M\",\"trailingTotalReturn\":-3.61856,\"dailyPerformanceNAV\":-2.63404},{\"period\":\"3M\",\"trailingTotalReturn\":2.54949,\"dailyPerformanceNAV\":0.69954},{\"period\":\"6M\",\"trailingTotalReturn\":5.57531,\"dailyPerformanceNAV\":8.4993},{\"period\":\"1Y\",\"trailingTotalReturn\":-3.58727,\"dailyPerformanceNAV\":-0.50573},{\"period\":\"3Y\",\"trailingTotalReturn\":10.87561,\"dailyPerformanceNAV\":9.95807},{\"period\":\"5Y\",\"trailingTotalReturn\":15.24874,\"dailyPerformanceNAV\":14.56605},{\"period\":\"10Y\",\"trailingTotalReturn\":6.92384,\"dailyPerformanceNAV\":7.16646}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2011-06-14\"},\"entityUpdatedTime\":\"2025-08-13T21:38:40.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62464\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"HINDH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62464\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0531971678\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000UT80\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047016\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047016\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

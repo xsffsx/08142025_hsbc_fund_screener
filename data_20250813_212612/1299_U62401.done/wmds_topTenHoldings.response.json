@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62401",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:07:31.441171",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62401%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b2f946c3-f1d3-41dc-bd5d-ba789e93f4a3:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "-jtYF0wl5gh_6kw_zy5l8EBOkz5NIm4tX63ldzVmeHhNquYfH7BlDg==",
+        "x-hsbc-request-correlation-id": "d9f4148f-0bad-4bbb-930d-76638b1845d5",
+        "date": "Wed, 13 Aug 2025 14:07:30 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0254",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "22",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 e3f515cf2b40cd90e36f3532dbd8a5ae.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "546",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"SU\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"JPMorgan Chase Financial Co LLC 3.5%\",\"weighting\":2.5136,\"currency\":\"CNY\",\"marketValue\":5149450},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"China Minsheng Banking Corp. Ltd. Hong Kong Branch 3.08%\",\"weighting\":2.46384,\"currency\":\"CNY\",\"marketValue\":5047500},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sun Hung Kai Properties Ltd. 3.16%\",\"weighting\":2.46059,\"currency\":\"CNY\",\"marketValue\":5040850},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Vertex Capital Investment Ltd. 4%\",\"weighting\":2.46059,\"currency\":\"CNY\",\"marketValue\":5040850},{\"market\":\"US\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Citigroup Inc. 3.5%\",\"weighting\":2.44766,\"currency\":\"CNY\",\"marketValue\":5014350},{\"market\":\"HK\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"The Hong Kong Mortgage Corporation Limited 2.6%\",\"weighting\":1.98322,\"currency\":\"CNY\",\"marketValue\":4062880},{\"market\":\"SG\",\"productType\":\"BD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Temasek Financial (I) Limited 2.75%\",\"weighting\":1.98308,\"currency\":\"CNY\",\"marketValue\":4062600},{\"market\":\"HK\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Sun Hung Kai Properties (Capital Market) Limited 3.2%\",\"weighting\":1.97308,\"currency\":\"CNY\",\"marketValue\":4042120},{\"market\":\"CN\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"New Hope Group Company Limited 3.3%\",\"weighting\":1.95986,\"currency\":\"CNY\",\"marketValue\":4015040},{\"market\":\"CH\",\"productType\":\"B\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Nestle Finance International Limited 2.8%\",\"weighting\":1.95033,\"currency\":\"CNY\",\"marketValue\":3995520}],\"lastUpdatedDate\":\"2025-05-31\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

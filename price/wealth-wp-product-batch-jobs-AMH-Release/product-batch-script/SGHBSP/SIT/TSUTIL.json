@@ -1,0 +1,52 @@
+{
+  "ctryRecCde": "SG",
+  "grpMembrRecCde": "HBSP",
+  "systemCde": "TSUTIL",
+  "path": "/appvol/product-spring-batch-sit/data/outgoing/SGHBSP/TSUTIL/",
+  "version": 33,
+  "tasks": [
+    {
+      "files": [
+        {
+          "name": "TSUTIL ID CSV",
+          "templateName": "/csv/TSUTIL_ID.html",
+          "fileName": "SG_HBSP_TSUTIL_UT_ID_${date:yyyyMMddHHmmss}.csv"
+        },
+        {
+          "name": "TSUTIL PRICE CSV",
+          "templateName": "/csv/TSUTIL_PRC.html",
+          "fileName": "SG_HBSP_TSUTIL_UT_PRC_${date:yyyyMMddHHmmss}.csv",
+          "className": "com.dummy.wpb.product.writer.tsutil.TSUTILCsvFileWriter"
+        }
+      ],
+      "collection": "product",
+      "className": "com.dummy.wpb.product.reader.TSUTILCsvFileReader",
+      "filter": {
+        "prodTypeCde": "UT",
+        "prodStatCde": {
+          "$in": [
+            "A",
+            "C",
+            "S",
+            "E",
+            "T",
+            "P"
+          ]
+        },
+        "priceHistSrceRdyStatCde": {
+          "$in": [
+            "R",
+            "P"
+          ]
+        }
+      },
+      "sort": {
+        "prodId": 1
+      }
+    }
+  ],
+  "ack": {
+    "generate": true,
+    "fileName": "SG_dummy_TSUTIL_UT_${date:yyyyMMddHHmm}.ack"
+  }
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapping>
+<mapping xmlns:cst="http://castor.exolab.org/">
+	<class cst:name="com.hhhh.group.secwealth.mktdata.starter.global_bmc_handler.entity.BMCEntitys">
+		<map-to cst:xml="bmcEntitys" />
+		<field cst:name="bmcEntityList"
+			cst:type="com.hhhh.group.secwealth.mktdata.starter.global_bmc_handler.entity.BMCEntity"
+			collection="collection">
+			<bind-xml name="bmcEntity" node="element" />
+		</field>
+		<field cst:name="bmcFilePath" cst:type="java.lang.String">
+			<bind-xml name="bmcFilePath" node="element" />
+		</field>
+		<field cst:name="printFiles" cst:type="java.lang.String">
+			<bind-xml name="printFiles" node="element" />
+		</field>
+	</class>
+
+	<class cst:name="com.hhhh.group.secwealth.mktdata.starter.global_bmc_handler.entity.BMCEntity">
+		<field cst:name="prefix" cst:type="java.lang.String">
+			<bind-xml name="prefix" node="attribute" />
+		</field>
+		<field cst:name="countryCode" cst:type="java.lang.String">
+			<bind-xml name="countryCode" node="attribute" />
+		</field>
+		<field cst:name="groupMember" cst:type="java.lang.String">
+			<bind-xml name="groupMember" node="attribute" />
+		</field>
+		<field cst:name="exTimeDurationThrownPastSec" cst:type="integer">
+			<bind-xml name="exTimeDurationThrownPastSec" node="element" />
+		</field>
+		<field cst:name="exNumThrownPastSec" cst:type="integer">
+			<bind-xml name="exNumThrownPastSec" node="element" />
+		</field>
+		<field cst:name="exCdeThrownPastSec" cst:type="java.lang.String">
+			<bind-xml name="exCdeThrownPastSec" node="element" />
+		</field>
+		<field cst:name="exMgsThrownPastSec" cst:type="java.lang.String">
+			<bind-xml name="exMgsThrownPastSec" node="element" />
+		</field>
+		<field cst:name="exNumExceedLimit" cst:type="integer">
+			<bind-xml name="exNumExceedLimit" node="element" />
+		</field>
+		<field cst:name="exCdeExceedLimit" cst:type="java.lang.String">
+			<bind-xml name="exCdeExceedLimit" node="element" />
+		</field>
+		<field cst:name="exMgsExceedLimit" cst:type="java.lang.String">
+			<bind-xml name="exMgsExceedLimit" node="element" />
+		</field>
+		<field cst:name="exceptionCounterList" cst:type="com.hhhh.group.secwealth.mktdata.starter.global_bmc_handler.entity.ExceptionCounter"
+			collection="collection">
+			<bind-xml name="exceptionCounter" node="element" />
+		</field>
+	</class>
+
+	<class
+	cst:name="com.hhhh.group.secwealth.mktdata.starter.global_bmc_handler.entity.ExceptionCounter">
+		<field cst:name="exceptionName" cst:type="java.lang.String">
+			<bind-xml name="exceptionName" node="attribute" />
+		</field>
+		<field cst:name="key" cst:type="java.lang.String">
+			<bind-xml name="key" node="attribute" />
+		</field>
+		<field cst:name="timeDuration" cst:type="integer">
+			<bind-xml name="timeDuration" node="element" />
+		</field>
+		<field cst:name="maxNum" cst:type="integer">
+			<bind-xml name="maxNum" node="element" />
+		</field>
+		<field cst:name="bmcExCde" cst:type="java.lang.String">
+			<bind-xml name="bmcExCde" node="element" />
+		</field>
+		<field cst:name="bmcExMsg" cst:type="java.lang.String">
+			<bind-xml name="bmcExMsg" node="element" />
+		</field>
+	</class>
+
+</mapping>
+    

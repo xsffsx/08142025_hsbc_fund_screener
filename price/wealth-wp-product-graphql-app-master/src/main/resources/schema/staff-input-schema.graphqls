@@ -1,0 +1,13 @@
+# Customer Eligibility Input
+input ProductStaffEligibilityInput {
+    _id: Long!
+    ctryRecCde: String!
+    grpMembrRecCde: String!
+    prodName: String
+    prodTypeCde: String
+    prodSubtpCde: String
+    prodAltPrimNum: String
+    revision: Long
+    stafLicCheck: StafLicCheckInput!
+}
+

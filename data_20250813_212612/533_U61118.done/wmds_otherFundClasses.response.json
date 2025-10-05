@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U61118",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:26:58.486696",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61118%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "903593a7-6548-48c2-b791-8bb036302b1e:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "MaGzukqOK-DLIG2mehkXsUVN00h05R6xmxcsY2gEjnomHTuCn8Z1Pg==",
+        "x-hsbc-request-correlation-id": "1f44c1db-adec-4a1f-bb83-4c098fe784c6",
+        "date": "Wed, 13 Aug 2025 13:26:58 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "36",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 5af7e2a3313b9d445377a246e1053f74.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "489",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"BLACKROCK GLOBAL HIGH YIELD BOND FUND (CLASS A3-EUR HEDGED-MDIST CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A3-EUR HEDGED-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61117\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M1117\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61117\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0172401704\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001AZS\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046753\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046753\"}]},{\"productName\":\"BlackRock Global High Yield Bond Fund (Euro - Hedge) (Class A2)\",\"productShortName\":null,\"fundShreClsName\":\"EURO - HEDGE\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61116\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M1116\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61116\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0093504206\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000B1K\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046752\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046752\"}]},{\"productName\":\"BlackRock Global High Yield Bond Fund (Class A3-USD-MDIST Unit)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A3-USD-MDIST UNIT\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61142\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M1142\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61142\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0172401969\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001AZT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046649\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046649\"}]},{\"productName\":\"BlackRock Global High Yield Bond Fund (Class A2-USD)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A2-USD\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61140\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M1140\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61140\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0171284937\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000RX5\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046647\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046647\"}]},{\"productName\":\"BlackRock Global High Yield Bond Fund (Class A3-USD-MDIST Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A3-USD-MDIST CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U61141\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"M1141\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U61141\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0172401969\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00001AZT\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000046648\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000046648\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

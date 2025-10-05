@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62655",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:35:31.535403",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62655%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "cf1fcb58-afde-4480-84f1-10399257e2f7:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "MLxXh1ndYBoFrtNDE-xYptvuzlSeUzHOf4a9VfCHnvT96WoliCePgg==",
+        "x-hsbc-request-correlation-id": "acff2201-dafd-49fd-b2c1-5446e173477f",
+        "date": "Wed, 13 Aug 2025 13:35:31 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "19",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 9c7184b28c57254d98f583f8eea58496.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1249",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "LAX54-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62655\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"EB\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":19.05,\"currency\":\"USD\",\"companyName\":\"INVESCO PAN EUROPEAN EQUITY FUND (CLASS A-USDH-ACC)\",\"securityDescription\":null,\"changeAmount\":0.05,\"changePercent\":0.26316,\"bidPrice\":null,\"bidPriceDate\":null,\"bidSize\":null,\"askPrice\":null,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"3\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00013N1V\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"EDDM\",\"categoryLevel1Name\":\"Equity Developed Market\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":-0.23516},{\"year\":2023,\"annualCalendarYearReturn\":19.11765},{\"year\":2022,\"annualCalendarYearReturn\":-0.13986},{\"year\":2021,\"annualCalendarYearReturn\":25.76957},{\"year\":2020,\"annualCalendarYearReturn\":-8.96717}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":12.55156,\"dailyPerformanceNAV\":12.25692},{\"period\":\"1M\",\"trailingTotalReturn\":1.00476,\"dailyPerformanceNAV\":-0.20953},{\"period\":\"3M\",\"trailingTotalReturn\":7.30337,\"dailyPerformanceNAV\":2.09003},{\"period\":\"6M\",\"trailingTotalReturn\":6.58482,\"dailyPerformanceNAV\":4.49808},{\"period\":\"1Y\",\"trailingTotalReturn\":7.78781,\"dailyPerformanceNAV\":12.45573},{\"period\":\"3Y\",\"trailingTotalReturn\":12.09629,\"dailyPerformanceNAV\":11.05102},{\"period\":\"5Y\",\"trailingTotalReturn\":14.16144,\"dailyPerformanceNAV\":13.04284},{\"period\":\"10Y\",\"trailingTotalReturn\":4.9783,\"dailyPerformanceNAV\":5.22258}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2015-03-09\"},\"entityUpdatedTime\":\"2025-08-13T21:35:31.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62655\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IN655\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62655\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1075211869\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00013N1V\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050000701\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50000701\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

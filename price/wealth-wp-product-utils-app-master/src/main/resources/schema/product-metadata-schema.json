@@ -1,0 +1,321 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Product Metadata",
+  "description": "product metadata definition",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "_id": {
+        "description": "MongoDB internal id",
+        "type": "string"
+      },
+      "code": {
+        "description": "Data point code in the original WPC logical data model",
+        "type": "string"
+      },
+      "table": {
+        "description": "Oracle DB table name",
+        "type": ["string", "null"]
+      },
+      "fieldName": {
+        "description": "Oracle DB column name",
+        "type": ["string", "null"]
+      },
+      "fieldScale": {
+        "description": "Oracle DB field scale",
+        "type": ["integer", "null"]
+      },
+      "fieldPrecision": {
+        "description": "Oracle DB field precision",
+        "type": ["integer", "null"]
+      },
+      "fieldType": {
+        "description": "Oracle DB field type in integer",
+        "type": ["integer", "null"]
+      },
+      "fieldTypeName": {
+        "description": "Oracle DB field type name",
+        "type": ["string", "null"]
+      },
+      "fieldNullable": {
+        "description": "Oracle DB field nullable flag, 0=not nullable, 1=nullable",
+        "type": ["integer", "null"]
+      },
+      "attrName": {
+        "description": "MongoDB attribute name",
+        "type": "string"
+      },
+      "jsonPath": {
+        "description": "MongoDB jsonPath of the attribute in the document tree",
+        "type": "string"
+      },
+      "parent": {
+        "description": "MongoDB parent attribute",
+        "type": "string"
+      },
+      "instrument": {
+        "description": "For instrument types",
+        "type": ["string", "null"]
+      },
+      "classification": {
+        "description": "Classification of the field",
+        "type": ["string", "null"]
+      },
+      "mandatory": {
+        "description": "Is it a mandatory field, O=Optional",
+        "type": ["string", "null"]
+      },
+      "dataUsage": {
+        "description": "Where the data is using",
+        "type": ["string", "null"]
+      },
+      "logicalEntityName": {
+        "description": "Logical entity name",
+        "type": ["string", "null"]
+      },
+      "sampleData": {
+        "description": "Sample data",
+        "type": ["string", "null"]
+      },
+      "businessName": {
+        "description": "Business name of the field",
+        "type": "string"
+      },
+      "businessDefinition": {
+        "description": "Business definition of the field",
+        "type": "string"
+      },
+      "graphQLType": {
+        "description": "GraphQL type of the field",
+        "type": "string"
+      },
+      "calculatedBy": {
+        "description": "Read only field, calculated by SpEL expression",
+        "type": "object",
+        "properties": {
+          "rootObjectPath": {
+            "description": "Root object path, which is the object for SpEL calculation, it should be a relative path, eg. '..' means parent, '../..' means parent's parent",
+            "type": "string"
+          },
+          "expression": {
+            "description": "The SpEL expression to calculate",
+            "type": "string"
+          },
+          "className": {
+            "description": "The calculator java class to calculate the field value",
+            "type": "string"
+          }
+        }
+      },
+      "prodType": {
+        "description": "Product types that using the field",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "entity": {
+        "description": "Entities that using the field",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "validations": {
+        "description": "Conditional validation rules",
+        "type": ["array", "null"],
+        "items": {
+          "type": "object",
+          "properties": {
+            "given": {
+              "description": "Given condition to apply the rules, in SpEL expression",
+              "type": ["string", "null"]
+            },
+            "rules": {
+              "description": "The rules to apply",
+              "type": "object",
+              "minItems": 1,
+              "properties": {
+                "required": {
+                  "description": "Whether the field is required",
+                  "type": "boolean"
+                },
+                "unique": {
+                  "description": "Whether the list has to be unique (for scalar list) or unique by a set of keys (for object list)",
+                  "oneOf": [{
+                    "type": "boolean"
+                  },{
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }]
+                },
+                "enum": {
+                  "description": "Enumeration rule, value has to be one of the listed",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "referenceData": {
+                  "description": "Check existence of the reference data",
+                  "type": "object",
+                  "properties": {
+                    "cdvTypeCde": {
+                      "description": "Reference data type code",
+                      "type": "string"
+                    },
+                    "cdvParntTypeCde": {
+                      "description": "Reference data parent type code",
+                      "type": "string"
+                    },
+                    "cdvParntCde": {
+                      "description": "Reference data parent code",
+                      "type": "string"
+                    }
+                  },
+                  "required": ["cdvTypeCde"],
+                  "additionalProperties": false
+                },
+                "size": {
+                  "description": "List size limitation",
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "description": "Minimum size of the list",
+                      "type": "integer"
+                    },
+                    "max": {
+                      "description": "Maximum size of the list",
+                      "type": "integer"
+                    }
+                  },
+                  "anyOf": [{
+                    "required": ["min"]
+                  },{
+                    "required": ["max"]
+                  },{
+                    "required": ["min","max"]
+                  }],
+                  "additionalProperties": false
+                },
+                "length": {
+                  "description": "Length limitation to a string",
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "description": "Minimum length of the string",
+                      "type": "integer"
+                    },
+                    "max": {
+                      "description": "Maximum length of the string",
+                      "type": "integer"
+                    }
+                  },
+                  "anyOf": [{
+                    "required": ["min"]
+                  },{
+                    "required": ["max"]
+                  },{
+                    "required": ["min","max"]
+                  }],
+                  "additionalProperties": false
+                },
+                "precision": {
+                  "description": "Maximum precision of numeric field",
+                  "type": "integer"
+                },
+                "scale": {
+                  "description": "Maximum scale of numeric field",
+                  "type": "integer"
+                },
+                "bytes": {
+                  "description": "Bytes length limitation to a string",
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "description": "Minimum bytes length of the string",
+                      "type": "integer"
+                    },
+                    "max": {
+                      "description": "Maximum bytes length of the string",
+                      "type": "integer"
+                    }
+                  },
+                  "anyOf": [{
+                    "required": ["min"]
+                  },{
+                    "required": ["max"]
+                  },{
+                    "required": ["min","max"]
+                  }],
+                  "additionalProperties": false
+                },
+                "range": {
+                  "description": "Range limitation of a number or DateTime",
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "description": "Minimum value in string",
+                      "oneOf": [{
+                        "type": "string"
+                      },{
+                        "type": "number"
+                      }]
+                    },
+                    "max": {
+                      "description": "Maximum value in string",
+                      "oneOf": [{
+                        "type": "string"
+                      },{
+                        "type": "number"
+                      }]
+                    },
+                    "minInclusive": {
+                      "description": "Minimum value inclusive, default to true",
+                      "type": "boolean"
+                    },
+                    "maxInclusive": {
+                      "description": "Maximum value inclusive, default to true",
+                      "type": "boolean"
+                    }
+                  },
+                  "anyOf": [{
+                    "required": ["min"]
+                  },{
+                    "required": ["max"]
+                  },{
+                    "required": ["min","max"]
+                  }],
+                  "additionalProperties": false
+                },
+                "spel": {
+                  "description": "Spring Expression Language expression limitation",
+                  "type": "object",
+                  "properties": {
+                    "expression": {
+                      "description": "SpEL expression which results in a boolean",
+                      "type": "string"
+                    },
+                    "message": {
+                      "description": "Error message",
+                      "type": "string"
+                    }
+                  },
+                  "required": ["expression", "message"],
+                  "additionalProperties": false
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": ["rules"]
+        }
+      }
+    },
+    "required": ["_id", "attrName", "jsonPath", "parent", "businessName", "businessDefinition", "graphQLType"],
+    "additionalProperties": false
+  }
+}

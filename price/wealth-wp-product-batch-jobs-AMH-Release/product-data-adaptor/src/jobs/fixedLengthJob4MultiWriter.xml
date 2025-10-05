@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+	<!--TODO Move DB related jobs out of adaptor-->
+	<import resource="classpath*:/jobs/common.xml" />
+	<import resource="classpath*:/jobs/wpc-batch-placeholder.xml" />
+	<import resource="classpath*:/jobs/wpc-batch-persistence.xml" />
+
+	<bean id="fixedLengthJob4MultiWriter" parent="simpleJob">
+		<property name="steps">
+			<bean id="read" parent="simpleStep">
+				<!-- <property name="commitInterval" value="1" /> <property name="startLimit" 
+					value="2" /> -->
+				<property name="allowStartIfComplete" value="true" />
+				<property name="itemReader" ref="fixedLengthDefaultReader" />
+				<property name="itemWriter" ref="compositeIndexedXMLItemWriter" />
+				<property name="listeners">
+					<list>
+						<ref bean="dataFilePath" />
+						<ref bean="outputFilePath" />
+						<ref bean="fieldListConfig" />
+						<ref bean="initExecutionContext" />
+						<ref bean="validateRule" />
+						<!--<ref bean="logFilePath" /> -->
+						<!-- <ref bean="badFilePath" /> -->
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="customEditorConfigurer"
+		class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="org.springframework.batch.item.file.transform.Range[]">
+					<bean
+						class="org.springframework.batch.item.file.transform.RangeArrayPropertyEditor" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="fixedLengthDefaultReader" class="com.dummy.wpc.datadaptor.reader.FixedLengthFileReader">
+		<property name="resource" ref="dataFilePath" />
+
+		<property name="lineTokenizer">
+			<bean class="com.dummy.wpc.datadaptor.token.GSOPSFixedLengthTokenizer">
+
+				<property name="names"
+					value="bqscid,bqmpdt,bqcycd,bqmptm,bqmpsc,bqmptp,bqmkpc,bqpvdt,bqpvcy,bqpvtm,bqpvsc,bqpvtp,bqpvpc,bqbdpr,bqofpr,bqpvbd,bqpvof,bqdlup,bqtlup" />
+
+				<property name="columns"
+					value="1-12,13-17,18-20,21-24,25-26,27-28,29-35,36-40,41-43,44-47,48-49,50-51,52-58,59-65,66-72,73-79,80-86,87-91,92-95" />
+
+				<property name="types"
+					value="EBCDIC,PACKED(8_0),EBCDIC,PACKED(6_0),EBCDIC,EBCDIC,PACKED(13_5),PACKED(8_0),EBCDIC,PACKED(6_0),EBCDIC,EBCDIC,PACKED(13_5),PACKED(13_5),PACKED(13_5),PACKED(13_5),PACKED(13_5),PACKED(8_0),PACKED(6_0)" />
+			</bean>
+		</property>
+
+		<property name="encoding" value="ISO-8859-1" />
+		<property name="lineLength" value="1700" />
+		<property name="realRecordStart" value="129" />
+		<property name="realRecordEnd" value="1629" />
+		<property name="headerLineSuffix" value="HEADER" />
+		<property name="headerLineProcessor" ref="defaultHeaderLineProcessor" />
+		<property name="trailerLineSuffix" value="TRAILER" />
+		<property name="trailerLineProcessor" ref="defaultTrailerLineProcessor" />
+		<property name="validator" ref="defaultValidator" />
+		<property name="fieldSetMapper" ref="GSOPSPriceMapper4MultiWriter" />
+
+		<!-- <property name="recordBean" ref="recordBean" /> -->
+	</bean>
+	
+	<bean id="GSOPSPriceMapper4MultiWriter" class="com.dummy.wpc.datadaptor.mapper.GSOPSPriceMapper4MultiWriter">
+		<property name="prodDao" ref="prodDaoImpl" />
+
+	</bean>
+	
+	<bean id="prodDaoImpl" class="com.dummy.wpc.datadaptor.dao.ProdDAO" init-method="init">
+		<property name="mongoDatabase" ref="wpcMongoDatabase"/>
+	</bean>
+
+	<bean id="compositeIndexedXMLItemWriter"
+		class="com.dummy.wpc.datadaptor.writer.CompositeIndexedXMLItemWriter">
+		
+		<property name="itemWriterClass"
+			value="com.dummy.wpc.datadaptor.writer.XMLDefaultWriter" />
+		<property name="serializer" ref="tradeMarshallingSerializer" />
+		<property name="overwriteOutput" value="true" />
+	</bean>
+</beans>

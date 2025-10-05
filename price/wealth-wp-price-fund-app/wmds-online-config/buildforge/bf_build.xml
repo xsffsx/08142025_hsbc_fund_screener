@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build xsi:schemaLocation="http://www.hhhh.com bf_schema.xsd"
+	xmlns="http://www.hhhh.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<project>
+		<name>SRBP 3.0 Team</name>
+		<owner>MKD Development Team</owner>
+		<contact></contact>
+		<environment>
+			<library />
+		</environment>
+		<steps>
+			<linux-unix>
+
+				<!-- CN_hhhh -->
+				<!-- SIT -->
+				<step description="Compile"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P SIT_CN_hhhh" />
+
+				<step description="Nexus 81 - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P SIT_CN_hhhh" />
+
+				<!-- OAT -->
+				<step description="Compile"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P OAT_CN_hhhh" />
+
+				<step description="Nexus 81 - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P OAT_CN_hhhh" />
+				<!-- CN_hhhh -->
+
+				<!-- GB_HBEU -->
+				<!-- DEV -->
+				<step description="Compile"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P DEV_GB_HBEU" />
+
+				<step description="Nexus 81 - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P DEV_GB_HBEU" />
+
+				<!-- SIT -->
+				<step description="Compile" 
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P SIT_GB_HBEU" />
+
+				<step description="Nexus 81 - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P SIT_GB_HBEU" />
+
+				<!-- UAT -->
+				<step description="Compile UAT_GB_HBEU"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P UAT_GB_HBEU" />
+
+				<step description="Deploy UAT_GB_HBEU - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P UAT_GB_HBEU" />
+				<!-- GB_HBEU -->
+
+				<!-- AMH_UT -->
+				<!-- DEV -->
+				<step description="Compile DEV_AMH_UT"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P DEV_AMH_UT" />
+
+				<step description="Deploy DEV_AMH_UT - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P DEV_AMH_UT" />
+
+				<!-- SIT -->
+				<step description="Compile SIT_AMH_UT"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P SIT_AMH_UT" />
+
+				<step description="Deploy SIT_AMH_UT - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P SIT_AMH_UT" />
+
+				<!-- UAT -->
+				<step description="Compile UAT_AMH_UT" 
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P UAT_AMH_UT" />
+
+				<step description="Deploy UAT_AMH_UT - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C" 
+					command="${MVNRUN} clean deploy -P UAT_AMH_UT" />
+				
+				<!-- PSE -->
+				<step description="Compile PSE_AMH_UTB" 
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P PSE_AMH_UTB" />
+
+				<step description="Deploy PSE_AMH_UTB - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C" 
+					command="${MVNRUN} clean deploy -P PSE_AMH_UTB" />
+				<!-- AMH_UT -->
+
+				<!-- SGH_UTB -->
+				<!-- SIT -->
+				<step description="Compile SIT_SGH_UTB"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P SIT_SGH_UTB" />
+
+				<step description="Deploy SIT_SGH_UTB - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300" 
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P SIT_SGH_UTB" />
+
+				<!-- UAT -->
+				<step description="Compile UAT_SGH_UTB"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P UAT_SGH_UTB" />
+
+				<step description="Deploy UAT_SGH_UTB - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P UAT_SGH_UTB" />
+				<!-- SGH_UTB -->
+				
+				<!-- PLE -->
+				<step description="Compile PLE_SGH_UTB"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P PLE_SGH_UTB" />
+
+				<step description="Deploy PLE_SGH_UTB - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P PLE_SGH_UTB" />
+				<!-- SGH_UTB -->
+	
+				<!-- SIT_IMO_BOND -->
+				<step description="Compile SIT_IMO_BOND"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P SIT_IMO_BOND" />
+
+				<step description="Deploy SIT_IMO_BOND - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300" 
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P SIT_IMO_BOND" />
+					
+				<!-- SIT_TW-UTB -->
+				<step description="Compile SIT_TW_UTB"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P SIT_TW_UTB" />
+
+				<step description="Deploy SIT_TW_UTB - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300" 
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P SIT_TW_UTB" />
+					
+				<!-- UAT_TW-UTB -->
+				<step description="Compile UAT_TW_UTB"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300"
+					id="1" threadable="N" onfail="H" failnotify="1"
+					command="${MVNRUN} clean install -P UAT_TW_UTB" />
+
+				<step description="Deploy UAT_TW_UTB - wmds-online-config"
+					dir="${BASE_DIR}${SWITCH}wmds-online-config" timeout="300" 
+					id="6" threadable="N" onfail="C"
+					command="${MVNRUN} clean deploy -P UAT_TW_UTB" />
+			</linux-unix>
+		</steps>
+	</project>
+</build> 

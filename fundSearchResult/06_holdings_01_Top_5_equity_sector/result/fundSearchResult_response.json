@@ -1,0 +1,5173 @@
+{
+  "responseInfo": {
+    "status": 200,
+    "statusText": "",
+    "timestamp": "2025-09-06T16:25:45.087575",
+    "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/fundSearchResult",
+    "bodyLength": 82286,
+    "description": "HSBC fundSearchResult API Response - 50 records per page with Speculative-5 risk level filter"
+  },
+  "responseHeaders": {
+    "x-request-id": "c4ddb84c-eb0f-45c0-af8b-ac719ecf4ead:-:-:-",
+    "access-control-expose-headers": "x-authtoken",
+    "ratelimit-remaining": "19",
+    "content-encoding": "gzip",
+    "ratelimit-reset": "1",
+    "x-content-type-options": "nosniff",
+    "x-ratelimit-limit-second": "20",
+    "expires": "0",
+    "x-cache": "Miss from cloudfront",
+    "x-amz-cf-id": "pBMmkS4bcflZCoUkVh9cmvcbLjlQHgzwL-pmM0SUN1GE-oWpVIkj3Q==",
+    "x-hsbc-request-correlation-id": "0f61a745-fe13-418d-aa3c-ab199848af22",
+    "date": "Sat, 06 Sep 2025 08:25:45 GMT",
+    "content-type": "application/json;charset=UTF-8",
+    "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding",
+    "x-frame-options": "SAMEORIGIN, DENY",
+    "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+    "content-security-policy": "default-src 'self';",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+    "s": "rproxy_prod_skm_0253",
+    "pragma": "no-cache, no-cache",
+    "x-ratelimit-remaining-second": "19",
+    "x-envoy-upstream-service-time": "135",
+    "ratelimit-limit": "20",
+    "access-control-allow-credentials": "true",
+    "referrer-policy": "no-referrer",
+    "via": "1.1 ff773c46b9656e6740829193cd32d18a.cloudfront.net (CloudFront)",
+    "access-control-allow-origin": "https://investments3.personal-banking.hsbc.com.hk",
+    "content-length": "6497",
+    "x-xss-protection": "1 ; mode=block",
+    "x-amz-cf-pop": "HKG54-P2"
+  },
+  "responseData": {
+    "pagination": {
+      "totalNumberOfRecords": 1430,
+      "numberOfRecords": 10,
+      "startDetail": 1,
+      "endDetail": 10
+    },
+    "products": [
+      {
+        "header": {
+          "name": "AB - AMERICAN INCOME PORTFOLIO (CLASS AT-NZDH-MDIST CASH)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "NZD",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U63320"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N3320"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U63320"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0805981734"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P0000X6L1"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000000050685907"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "50685907"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 10.08,
+          "dayEndNAVCurrencyCode": "NZD",
+          "changeAmountNAV": 0.03,
+          "changePercentageNAV": 0.29851,
+          "asOfDate": "2025-09-04",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 199703486,
+          "totalNetAssetCurrencyCode": "NZD",
+          "ratingOverall": null,
+          "mer": null,
+          "yield1Yr": 5.69552,
+          "switchInMinAmount": 1500,
+          "switchInMinAmountCurrencyCode": "NZD",
+          "annualReportOngoingCharge": 1.32,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "2012-09-28",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 17.436,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": null,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 5.69552,
+          "distributionFrequency": "Monthly",
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2023-07-28",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "N",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": "N",
+          "deAuthFundInd": "N",
+          "payCashDivInd": "Y",
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": "N",
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-15",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": null,
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": null,
+          "rank3Yr": null,
+          "rank5Yr": null,
+          "rank10Yr": null,
+          "ratingDate": null
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": 0.29851,
+            "return1Mth": 0.9145,
+            "return3Mth": 2.88591,
+            "return6Mth": 3.07551,
+            "return1Yr": 3.81461,
+            "return3Yr": 4.66864,
+            "return5Yr": 0.67556,
+            "return10Yr": 2.60963,
+            "returnSinceInception": 3.00202,
+            "inceptionDate": "2012-09-28",
+            "asOfDate": "2025-09-04"
+          },
+          "calendarReturns": {
+            "returnYTD": 5.72371,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": 2.40799
+              },
+              {
+                "yearName": 2,
+                "yearValue": 7.80235
+              },
+              {
+                "yearName": 3,
+                "yearValue": -13.79101
+              },
+              {
+                "yearName": 4,
+                "yearValue": -0.39503
+              },
+              {
+                "yearName": 5,
+                "yearValue": 3.00414
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": null,
+              "stdDev": 13.78,
+              "alpha": null,
+              "sharpeRatio": -0.398,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": null,
+              "stdDev": 17.436,
+              "alpha": null,
+              "sharpeRatio": -0.014,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": null,
+              "stdDev": 16.607,
+              "alpha": null,
+              "sharpeRatio": -0.232,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": null,
+              "stdDev": 15.48,
+              "alpha": null,
+              "sharpeRatio": 0.059,
+              "rSquared": null,
+              "endDate": null
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": null,
+            "notClassifiedIndicator": null,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": null,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": null,
+            "brazil": null,
+            "brazilIndicator": null,
+            "canada": null,
+            "canadaIndicator": null,
+            "chile": null,
+            "chileIndicator": null,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": null,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": null,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": null,
+            "germany": null,
+            "germanyIndicator": null,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": null,
+            "ireland": null,
+            "irelandIndicator": null,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": null,
+            "mexico": null,
+            "mexicoIndicator": null,
+            "netherlands": null,
+            "netherlandsIndicator": null,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": null,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": null,
+            "peru": null,
+            "peruIndicator": null,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": null,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": null,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": null,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": null,
+            "unitedStates": null,
+            "unitedStatesIndicator": null
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 3000,
+          "minInitInvstCurrencyCode": "NZD",
+          "minSubqInvst": 1000,
+          "minSubqInvstCurrencyCode": "NZD",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "NZD",
+          "hsbcMinInitInvst": 1500,
+          "hsbcMinInitInvstCurrencyCode": "NZD",
+          "hsbcMinSubqInvst": 1500,
+          "hsbcMinSubqInvstCurrencyCode": "NZD",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      },
+      {
+        "header": {
+          "name": "AB - AMERICAN INCOME PORTFOLIO (CLASS AT-RMBH-MDIST CASH)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "CNY",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U63321"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N3321"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U63321"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0778786706"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P0000WG8L"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000000050685908"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "50685908"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 71.29,
+          "dayEndNAVCurrencyCode": "CNY",
+          "changeAmountNAV": 0.15,
+          "changePercentageNAV": 0.21085,
+          "asOfDate": "2025-09-04",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 728096256,
+          "totalNetAssetCurrencyCode": "CNY",
+          "ratingOverall": null,
+          "mer": null,
+          "yield1Yr": 3.96035,
+          "switchInMinAmount": 10000,
+          "switchInMinAmountCurrencyCode": "CNY",
+          "annualReportOngoingCharge": 1.32,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "2012-05-18",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 11.612,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": null,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 3.96035,
+          "distributionFrequency": "Monthly",
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2023-07-28",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "N",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": "N",
+          "deAuthFundInd": "N",
+          "payCashDivInd": "Y",
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": "N",
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-15",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": null,
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": null,
+          "rank3Yr": null,
+          "rank5Yr": null,
+          "rank10Yr": null,
+          "ratingDate": null
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": 0.21085,
+            "return1Mth": 0.6596,
+            "return3Mth": 2.33411,
+            "return6Mth": 2.12591,
+            "return1Yr": 1.88182,
+            "return3Yr": 2.50883,
+            "return5Yr": 0.26114,
+            "return10Yr": 3.18117,
+            "returnSinceInception": 3.72984,
+            "inceptionDate": "2012-05-18",
+            "asOfDate": "2025-09-04"
+          },
+          "calendarReturns": {
+            "returnYTD": 4.58682,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": -0.08791
+              },
+              {
+                "yearName": 2,
+                "yearValue": 5.08609
+              },
+              {
+                "yearName": 3,
+                "yearValue": -13.18216
+              },
+              {
+                "yearName": 4,
+                "yearValue": 2.11568
+              },
+              {
+                "yearName": 5,
+                "yearValue": 5.92493
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": null,
+              "stdDev": 7.109,
+              "alpha": null,
+              "sharpeRatio": -0.366,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": null,
+              "stdDev": 11.612,
+              "alpha": null,
+              "sharpeRatio": -0.256,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": null,
+              "stdDev": 10.759,
+              "alpha": null,
+              "sharpeRatio": -0.287,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": null,
+              "stdDev": 9.847,
+              "alpha": null,
+              "sharpeRatio": 0.048,
+              "rSquared": null,
+              "endDate": null
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": null,
+            "notClassifiedIndicator": null,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": null,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": null,
+            "brazil": null,
+            "brazilIndicator": null,
+            "canada": null,
+            "canadaIndicator": null,
+            "chile": null,
+            "chileIndicator": null,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": null,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": null,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": null,
+            "germany": null,
+            "germanyIndicator": null,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": null,
+            "ireland": null,
+            "irelandIndicator": null,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": null,
+            "mexico": null,
+            "mexicoIndicator": null,
+            "netherlands": null,
+            "netherlandsIndicator": null,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": null,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": null,
+            "peru": null,
+            "peruIndicator": null,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": null,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": null,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": null,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": null,
+            "unitedStates": null,
+            "unitedStatesIndicator": null
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 10000,
+          "minInitInvstCurrencyCode": "CNH",
+          "minSubqInvst": 3750,
+          "minSubqInvstCurrencyCode": "CNH",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "CNH",
+          "hsbcMinInitInvst": 10000,
+          "hsbcMinInitInvstCurrencyCode": "CNY",
+          "hsbcMinSubqInvst": 10000,
+          "hsbcMinSubqInvstCurrencyCode": "CNY",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      },
+      {
+        "header": {
+          "name": "AB - American Income Portfolio (Class A2 - USD)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "USD",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U43160"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N3160"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U43160"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0095030564"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P00000M7S"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000001000046782"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "1000046782"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 33.54,
+          "dayEndNAVCurrencyCode": "USD",
+          "changeAmountNAV": 0.14,
+          "changePercentageNAV": 0.41916,
+          "asOfDate": "2025-09-05",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 1693883276,
+          "totalNetAssetCurrencyCode": "USD",
+          "ratingOverall": 2,
+          "mer": null,
+          "yield1Yr": 0,
+          "switchInMinAmount": 1000,
+          "switchInMinAmountCurrencyCode": "USD",
+          "annualReportOngoingCharge": 1.32,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "1998-10-26",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 6.889,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": null,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 0,
+          "distributionFrequency": null,
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2003-10-13",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "Y",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": null,
+          "deAuthFundInd": null,
+          "payCashDivInd": null,
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": null,
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-11",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": "2",
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": 3,
+          "rank3Yr": 2,
+          "rank5Yr": 3,
+          "rank10Yr": 3,
+          "ratingDate": "2025-08-31"
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": 0.41916,
+            "return1Mth": 1.35993,
+            "return3Mth": 3.74265,
+            "return6Mth": 4.35594,
+            "return1Yr": 5.04228,
+            "return3Yr": 5.60254,
+            "return5Yr": 1.28223,
+            "return10Yr": 2.84728,
+            "returnSinceInception": 5.06308,
+            "inceptionDate": "1998-10-26",
+            "asOfDate": "2025-09-05"
+          },
+          "calendarReturns": {
+            "returnYTD": 6.91744,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": 2.81875
+              },
+              {
+                "yearName": 2,
+                "yearValue": 8.30671
+              },
+              {
+                "yearName": 3,
+                "yearValue": -13.08238
+              },
+              {
+                "yearName": 4,
+                "yearValue": -0.36889
+              },
+              {
+                "yearName": 5,
+                "yearValue": 4.66538
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": 0.86,
+              "stdDev": 4.116,
+              "alpha": 1.62,
+              "sharpeRatio": 0.127,
+              "rSquared": 94.14,
+              "endDate": "2025-08-31"
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": 0.97,
+              "stdDev": 6.889,
+              "alpha": 2.24,
+              "sharpeRatio": 0.077,
+              "rSquared": 94.88,
+              "endDate": "2025-08-31"
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": 1.01,
+              "stdDev": 6.709,
+              "alpha": 1.9,
+              "sharpeRatio": -0.264,
+              "rSquared": 87.73,
+              "endDate": "2025-08-31"
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": 1,
+              "stdDev": 6.513,
+              "alpha": 1.09,
+              "sharpeRatio": 0.127,
+              "rSquared": 57.33,
+              "endDate": "2025-08-31"
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": 100,
+            "notClassifiedIndicator": true,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": false,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": false,
+            "brazil": null,
+            "brazilIndicator": false,
+            "canada": null,
+            "canadaIndicator": false,
+            "chile": null,
+            "chileIndicator": false,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": false,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": false,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": false,
+            "germany": null,
+            "germanyIndicator": false,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": false,
+            "ireland": null,
+            "irelandIndicator": false,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": false,
+            "mexico": null,
+            "mexicoIndicator": false,
+            "netherlands": null,
+            "netherlandsIndicator": false,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": false,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": false,
+            "peru": null,
+            "peruIndicator": false,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": false,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": false,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": false,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": false,
+            "unitedStates": null,
+            "unitedStatesIndicator": false
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 2000,
+          "minInitInvstCurrencyCode": "USD",
+          "minSubqInvst": 750,
+          "minSubqInvstCurrencyCode": "USD",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "USD",
+          "hsbcMinInitInvst": 1000,
+          "hsbcMinInitInvstCurrencyCode": "USD",
+          "hsbcMinSubqInvst": 1000,
+          "hsbcMinSubqInvstCurrencyCode": "USD",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      },
+      {
+        "header": {
+          "name": "AB - American Income Portfolio (Class A2-EUR)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "EUR",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U61689"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N1689"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U61689"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0232525203"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P000019TN"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000001000048215"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "1000048215"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 28.62,
+          "dayEndNAVCurrencyCode": "EUR",
+          "changeAmountNAV": -0.04,
+          "changePercentageNAV": -0.13957,
+          "asOfDate": "2025-09-05",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 29384263,
+          "totalNetAssetCurrencyCode": "EUR",
+          "ratingOverall": 2,
+          "mer": null,
+          "yield1Yr": 0,
+          "switchInMinAmount": 850,
+          "switchInMinAmountCurrencyCode": "EUR",
+          "annualReportOngoingCharge": 1.32,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "2001-06-01",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 6.898,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": null,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 0,
+          "distributionFrequency": null,
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2006-02-16",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "Y",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": null,
+          "deAuthFundInd": null,
+          "payCashDivInd": null,
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": null,
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-11",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": "2",
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": 3,
+          "rank3Yr": 2,
+          "rank5Yr": 3,
+          "rank10Yr": 3,
+          "ratingDate": "2025-08-31"
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": -0.13957,
+            "return1Mth": 0.10493,
+            "return3Mth": 1.27389,
+            "return6Mth": -3.89523,
+            "return1Yr": -0.45217,
+            "return3Yr": 0.01165,
+            "return5Yr": 1.48229,
+            "return10Yr": 2.33996,
+            "returnSinceInception": 3.38538,
+            "inceptionDate": "2001-06-01",
+            "asOfDate": "2025-09-05"
+          },
+          "calendarReturns": {
+            "returnYTD": -5.51337,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": 9.58755
+              },
+              {
+                "yearName": 2,
+                "yearValue": 5.05511
+              },
+              {
+                "yearName": 3,
+                "yearValue": -7.55446
+              },
+              {
+                "yearName": 4,
+                "yearValue": 6.87195
+              },
+              {
+                "yearName": 5,
+                "yearValue": -3.8281
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": 0.89,
+              "stdDev": 4.411,
+              "alpha": 1.59,
+              "sharpeRatio": 0.104,
+              "rSquared": 87.86,
+              "endDate": "2025-08-31"
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": 0.96,
+              "stdDev": 6.898,
+              "alpha": 2.22,
+              "sharpeRatio": 0.078,
+              "rSquared": 91.49,
+              "endDate": "2025-08-31"
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": 0.98,
+              "stdDev": 6.772,
+              "alpha": 1.79,
+              "sharpeRatio": -0.267,
+              "rSquared": 82.56,
+              "endDate": "2025-08-31"
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": 0.98,
+              "stdDev": 6.644,
+              "alpha": 1.1,
+              "sharpeRatio": 0.128,
+              "rSquared": 53.27,
+              "endDate": "2025-08-31"
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": 100,
+            "notClassifiedIndicator": true,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": false,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": false,
+            "brazil": null,
+            "brazilIndicator": false,
+            "canada": null,
+            "canadaIndicator": false,
+            "chile": null,
+            "chileIndicator": false,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": false,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": false,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": false,
+            "germany": null,
+            "germanyIndicator": false,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": false,
+            "ireland": null,
+            "irelandIndicator": false,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": false,
+            "mexico": null,
+            "mexicoIndicator": false,
+            "netherlands": null,
+            "netherlandsIndicator": false,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": false,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": false,
+            "peru": null,
+            "peruIndicator": false,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": false,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": false,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": false,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": false,
+            "unitedStates": null,
+            "unitedStatesIndicator": false
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 2000,
+          "minInitInvstCurrencyCode": "EUR",
+          "minSubqInvst": 750,
+          "minSubqInvstCurrencyCode": "EUR",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "EUR",
+          "hsbcMinInitInvst": 850,
+          "hsbcMinInitInvstCurrencyCode": "EUR",
+          "hsbcMinSubqInvst": 850,
+          "hsbcMinSubqInvstCurrencyCode": "EUR",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      },
+      {
+        "header": {
+          "name": "AB - American Income Portfolio (Class AT-AUD Hedged-MDIST Cash)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "AUD",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U62407"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N2407"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U62407"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0511406216"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P0000RWOM"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000001000047166"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "1000047166"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 10.56,
+          "dayEndNAVCurrencyCode": "AUD",
+          "changeAmountNAV": 0.02,
+          "changePercentageNAV": 0.18975,
+          "asOfDate": "2025-09-04",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 1066102312,
+          "totalNetAssetCurrencyCode": "AUD",
+          "ratingOverall": null,
+          "mer": null,
+          "yield1Yr": 5.8433,
+          "switchInMinAmount": 1500,
+          "switchInMinAmountCurrencyCode": "AUD",
+          "annualReportOngoingCharge": 1.32,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "2010-07-28",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 15.702,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": null,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 5.8433,
+          "distributionFrequency": "Monthly",
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2010-10-18",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "Y",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": null,
+          "deAuthFundInd": null,
+          "payCashDivInd": "Y",
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": null,
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-11",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": null,
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": null,
+          "rank3Yr": null,
+          "rank5Yr": null,
+          "rank10Yr": null,
+          "ratingDate": null
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": 0.18975,
+            "return1Mth": 0.83876,
+            "return3Mth": 2.99823,
+            "return6Mth": 3.21351,
+            "return1Yr": 4.06107,
+            "return3Yr": 4.02386,
+            "return5Yr": 0.12565,
+            "return10Yr": 2.14769,
+            "returnSinceInception": 3.8413,
+            "inceptionDate": "2010-07-28",
+            "asOfDate": "2025-09-04"
+          },
+          "calendarReturns": {
+            "returnYTD": 5.98645,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": 1.72138
+              },
+              {
+                "yearName": 2,
+                "yearValue": 6.2887
+              },
+              {
+                "yearName": 3,
+                "yearValue": -14.28096
+              },
+              {
+                "yearName": 4,
+                "yearValue": -0.72074
+              },
+              {
+                "yearName": 5,
+                "yearValue": 2.42308
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": null,
+              "stdDev": 12.623,
+              "alpha": null,
+              "sharpeRatio": -0.249,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": null,
+              "stdDev": 15.702,
+              "alpha": null,
+              "sharpeRatio": -0.092,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": null,
+              "stdDev": 15.246,
+              "alpha": null,
+              "sharpeRatio": -0.285,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": null,
+              "stdDev": 14.675,
+              "alpha": null,
+              "sharpeRatio": 0.017,
+              "rSquared": null,
+              "endDate": null
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": 100,
+            "notClassifiedIndicator": true,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": false,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": false,
+            "brazil": null,
+            "brazilIndicator": false,
+            "canada": null,
+            "canadaIndicator": false,
+            "chile": null,
+            "chileIndicator": false,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": false,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": false,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": false,
+            "germany": null,
+            "germanyIndicator": false,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": false,
+            "ireland": null,
+            "irelandIndicator": false,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": false,
+            "mexico": null,
+            "mexicoIndicator": false,
+            "netherlands": null,
+            "netherlandsIndicator": false,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": false,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": false,
+            "peru": null,
+            "peruIndicator": false,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": false,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": false,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": false,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": false,
+            "unitedStates": null,
+            "unitedStatesIndicator": false
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 2000,
+          "minInitInvstCurrencyCode": "AUD",
+          "minSubqInvst": 750,
+          "minSubqInvstCurrencyCode": "AUD",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "AUD",
+          "hsbcMinInitInvst": 1500,
+          "hsbcMinInitInvstCurrencyCode": "AUD",
+          "hsbcMinSubqInvst": 1500,
+          "hsbcMinSubqInvstCurrencyCode": "AUD",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      },
+      {
+        "header": {
+          "name": "AB - American Income Portfolio (Class AT-CAD H-MDIST Cash)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "CAD",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U62491"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N2491"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U62491"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0592505407"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P0000T1A9"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000001000047601"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "1000047601"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 10.61,
+          "dayEndNAVCurrencyCode": "CAD",
+          "changeAmountNAV": 0.03,
+          "changePercentageNAV": 0.28355,
+          "asOfDate": "2025-09-04",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 359793981,
+          "totalNetAssetCurrencyCode": "CAD",
+          "ratingOverall": null,
+          "mer": null,
+          "yield1Yr": 4.87429,
+          "switchInMinAmount": 1000,
+          "switchInMinAmountCurrencyCode": "CAD",
+          "annualReportOngoingCharge": 1.32,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "2011-04-15",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 12.146,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": null,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 4.87429,
+          "distributionFrequency": "Monthly",
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2012-03-05",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "Y",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": null,
+          "deAuthFundInd": null,
+          "payCashDivInd": "Y",
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": null,
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-15",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": null,
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": null,
+          "rank3Yr": null,
+          "rank5Yr": null,
+          "rank10Yr": null,
+          "ratingDate": null
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": 0.28355,
+            "return1Mth": 0.85335,
+            "return3Mth": 2.6922,
+            "return6Mth": 2.81996,
+            "return1Yr": 3.16438,
+            "return3Yr": 4.36534,
+            "return5Yr": 0.47633,
+            "return10Yr": 2.057,
+            "returnSinceInception": 2.77359,
+            "inceptionDate": "2011-04-15",
+            "asOfDate": "2025-09-04"
+          },
+          "calendarReturns": {
+            "returnYTD": 5.2531,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": 1.94662
+              },
+              {
+                "yearName": 2,
+                "yearValue": 7.47501
+              },
+              {
+                "yearName": 3,
+                "yearValue": -13.55613
+              },
+              {
+                "yearName": 4,
+                "yearValue": -0.53837
+              },
+              {
+                "yearName": 5,
+                "yearValue": 3.36044
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": null,
+              "stdDev": 9.38,
+              "alpha": null,
+              "sharpeRatio": -0.267,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": null,
+              "stdDev": 12.146,
+              "alpha": null,
+              "sharpeRatio": -0.131,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": null,
+              "stdDev": 11.487,
+              "alpha": null,
+              "sharpeRatio": -0.269,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": null,
+              "stdDev": 11.907,
+              "alpha": null,
+              "sharpeRatio": 0.024,
+              "rSquared": null,
+              "endDate": null
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": 100,
+            "notClassifiedIndicator": true,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": false,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": false,
+            "brazil": null,
+            "brazilIndicator": false,
+            "canada": null,
+            "canadaIndicator": false,
+            "chile": null,
+            "chileIndicator": false,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": false,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": false,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": false,
+            "germany": null,
+            "germanyIndicator": false,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": false,
+            "ireland": null,
+            "irelandIndicator": false,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": false,
+            "mexico": null,
+            "mexicoIndicator": false,
+            "netherlands": null,
+            "netherlandsIndicator": false,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": false,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": false,
+            "peru": null,
+            "peruIndicator": false,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": false,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": false,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": false,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": false,
+            "unitedStates": null,
+            "unitedStatesIndicator": false
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 2000,
+          "minInitInvstCurrencyCode": "CAD",
+          "minSubqInvst": 750,
+          "minSubqInvstCurrencyCode": "CAD",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "CAD",
+          "hsbcMinInitInvst": 1000,
+          "hsbcMinInitInvstCurrencyCode": "CAD",
+          "hsbcMinSubqInvst": 1000,
+          "hsbcMinSubqInvstCurrencyCode": "CAD",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      },
+      {
+        "header": {
+          "name": "AB - American Income Portfolio (Class AT-EUR Hedged-MDIST Cash)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "EUR",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U62433"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N2433"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U62433"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0539799634"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P0000Q263"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000001000047252"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "1000047252"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 10.61,
+          "dayEndNAVCurrencyCode": "EUR",
+          "changeAmountNAV": 0.05,
+          "changePercentageNAV": 0.47348,
+          "asOfDate": "2025-09-05",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 119267515,
+          "totalNetAssetCurrencyCode": "EUR",
+          "ratingOverall": null,
+          "mer": null,
+          "yield1Yr": 4.4981,
+          "switchInMinAmount": 850,
+          "switchInMinAmountCurrencyCode": "EUR",
+          "annualReportOngoingCharge": 1.32,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "2010-09-10",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 13.296,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": null,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 4.4981,
+          "distributionFrequency": "Monthly",
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2011-02-14",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "Y",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": null,
+          "deAuthFundInd": null,
+          "payCashDivInd": "Y",
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": null,
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-11",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": null,
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": null,
+          "rank3Yr": null,
+          "rank5Yr": null,
+          "rank10Yr": null,
+          "ratingDate": null
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": 0.18975,
+            "return1Mth": 0.70594,
+            "return3Mth": 2.47006,
+            "return6Mth": 2.44592,
+            "return1Yr": 2.67087,
+            "return3Yr": 3.06377,
+            "return5Yr": -0.71731,
+            "return10Yr": 0.68317,
+            "returnSinceInception": 1.71865,
+            "inceptionDate": "2010-09-10",
+            "asOfDate": "2025-09-05"
+          },
+          "calendarReturns": {
+            "returnYTD": 4.85928,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": 1.07228
+              },
+              {
+                "yearName": 2,
+                "yearValue": 5.74271
+              },
+              {
+                "yearName": 3,
+                "yearValue": -15.37978
+              },
+              {
+                "yearName": 4,
+                "yearValue": -1.23206
+              },
+              {
+                "yearName": 5,
+                "yearValue": 2.38542
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": null,
+              "stdDev": 11.761,
+              "alpha": null,
+              "sharpeRatio": 0.399,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": null,
+              "stdDev": 13.296,
+              "alpha": null,
+              "sharpeRatio": 0.297,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": null,
+              "stdDev": 12.836,
+              "alpha": null,
+              "sharpeRatio": -0.274,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": null,
+              "stdDev": 11.706,
+              "alpha": null,
+              "sharpeRatio": -0.03,
+              "rSquared": null,
+              "endDate": null
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": 100,
+            "notClassifiedIndicator": true,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": false,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": false,
+            "brazil": null,
+            "brazilIndicator": false,
+            "canada": null,
+            "canadaIndicator": false,
+            "chile": null,
+            "chileIndicator": false,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": false,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": false,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": false,
+            "germany": null,
+            "germanyIndicator": false,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": false,
+            "ireland": null,
+            "irelandIndicator": false,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": false,
+            "mexico": null,
+            "mexicoIndicator": false,
+            "netherlands": null,
+            "netherlandsIndicator": false,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": false,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": false,
+            "peru": null,
+            "peruIndicator": false,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": false,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": false,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": false,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": false,
+            "unitedStates": null,
+            "unitedStatesIndicator": false
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 2000,
+          "minInitInvstCurrencyCode": "EUR",
+          "minSubqInvst": 750,
+          "minSubqInvstCurrencyCode": "EUR",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "EUR",
+          "hsbcMinInitInvst": 850,
+          "hsbcMinInitInvstCurrencyCode": "EUR",
+          "hsbcMinSubqInvst": 850,
+          "hsbcMinSubqInvstCurrencyCode": "EUR",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      },
+      {
+        "header": {
+          "name": "AB - American Income Portfolio (Class AT-GBP H-MDIST Cash)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "GBP",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U62492"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N2492"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U62492"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0689625878"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P0000V0RB"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000001000047602"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "1000047602"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 10.45,
+          "dayEndNAVCurrencyCode": "GBP",
+          "changeAmountNAV": 0.03,
+          "changePercentageNAV": 0.28791,
+          "asOfDate": "2025-09-04",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 217554495,
+          "totalNetAssetCurrencyCode": "GBP",
+          "ratingOverall": null,
+          "mer": null,
+          "yield1Yr": 6.16123,
+          "switchInMinAmount": 650,
+          "switchInMinAmountCurrencyCode": "GBP",
+          "annualReportOngoingCharge": 1.33,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "2011-12-20",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 13.515,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": null,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 6.16123,
+          "distributionFrequency": "Monthly",
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2012-03-05",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "Y",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": null,
+          "deAuthFundInd": null,
+          "payCashDivInd": "Y",
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": null,
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-15",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": null,
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": null,
+          "rank3Yr": null,
+          "rank5Yr": null,
+          "rank10Yr": null,
+          "ratingDate": null
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": 0.28791,
+            "return1Mth": 0.89965,
+            "return3Mth": 3.13434,
+            "return6Mth": 3.54284,
+            "return1Yr": 4.57225,
+            "return3Yr": 4.62967,
+            "return5Yr": 0.51245,
+            "return10Yr": 1.74734,
+            "returnSinceInception": 2.28669,
+            "inceptionDate": "2011-12-20",
+            "asOfDate": "2025-09-04"
+          },
+          "calendarReturns": {
+            "returnYTD": 6.35341,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": 2.35438
+              },
+              {
+                "yearName": 2,
+                "yearValue": 7.357
+              },
+              {
+                "yearName": 3,
+                "yearValue": -14.40131
+              },
+              {
+                "yearName": 4,
+                "yearValue": -0.56823
+              },
+              {
+                "yearName": 5,
+                "yearValue": 2.69896
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": null,
+              "stdDev": 11.401,
+              "alpha": null,
+              "sharpeRatio": 0.314,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": null,
+              "stdDev": 13.515,
+              "alpha": null,
+              "sharpeRatio": 0.399,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": null,
+              "stdDev": 13.529,
+              "alpha": null,
+              "sharpeRatio": -0.117,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": null,
+              "stdDev": 12.853,
+              "alpha": null,
+              "sharpeRatio": -0.07,
+              "rSquared": null,
+              "endDate": null
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": 100,
+            "notClassifiedIndicator": true,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": false,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": false,
+            "brazil": null,
+            "brazilIndicator": false,
+            "canada": null,
+            "canadaIndicator": false,
+            "chile": null,
+            "chileIndicator": false,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": false,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": false,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": false,
+            "germany": null,
+            "germanyIndicator": false,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": false,
+            "ireland": null,
+            "irelandIndicator": false,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": false,
+            "mexico": null,
+            "mexicoIndicator": false,
+            "netherlands": null,
+            "netherlandsIndicator": false,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": false,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": false,
+            "peru": null,
+            "peruIndicator": false,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": false,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": false,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": false,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": false,
+            "unitedStates": null,
+            "unitedStatesIndicator": false
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 2000,
+          "minInitInvstCurrencyCode": "GBP",
+          "minSubqInvst": 750,
+          "minSubqInvstCurrencyCode": "GBP",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "GBP",
+          "hsbcMinInitInvst": 650,
+          "hsbcMinInitInvstCurrencyCode": "GBP",
+          "hsbcMinSubqInvst": 650,
+          "hsbcMinSubqInvstCurrencyCode": "GBP",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      },
+      {
+        "header": {
+          "name": "AB - American Income Portfolio (Class AT-HKD-MDIST Cash)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "HKD",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U62381"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N2381"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U62381"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0417103065"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P0000N0AU"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000001000047030"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "1000047030"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 51.03,
+          "dayEndNAVCurrencyCode": "HKD",
+          "changeAmountNAV": 0.19,
+          "changePercentageNAV": 0.37372,
+          "asOfDate": "2025-09-05",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 16616883255,
+          "totalNetAssetCurrencyCode": "HKD",
+          "ratingOverall": 2,
+          "mer": null,
+          "yield1Yr": 6.06986,
+          "switchInMinAmount": 10000,
+          "switchInMinAmountCurrencyCode": "HKD",
+          "annualReportOngoingCharge": 1.32,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "2009-03-09",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 6.908,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": 75,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 6.06986,
+          "distributionFrequency": "Monthly",
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2010-01-18",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "Y",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": null,
+          "deAuthFundInd": null,
+          "payCashDivInd": "Y",
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": null,
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-11",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": "2",
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": 3,
+          "rank3Yr": 2,
+          "rank5Yr": 3,
+          "rank10Yr": 3,
+          "ratingDate": "2025-08-31"
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": 0.23659,
+            "return1Mth": 0.28883,
+            "return3Mth": 2.53366,
+            "return6Mth": 4.09785,
+            "return1Yr": 4.82226,
+            "return3Yr": 5.23558,
+            "return5Yr": 1.34136,
+            "return10Yr": 2.86706,
+            "returnSinceInception": 5.12623,
+            "inceptionDate": "2009-03-09",
+            "asOfDate": "2025-09-05"
+          },
+          "calendarReturns": {
+            "returnYTD": 6.90601,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": 2.27111
+              },
+              {
+                "yearName": 2,
+                "yearValue": 8.36828
+              },
+              {
+                "yearName": 3,
+                "yearValue": -12.99685
+              },
+              {
+                "yearName": 4,
+                "yearValue": 0.27176
+              },
+              {
+                "yearName": 5,
+                "yearValue": 4.12933
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": 0.87,
+              "stdDev": 4.192,
+              "alpha": 1.67,
+              "sharpeRatio": 0.132,
+              "rSquared": 94.35,
+              "endDate": "2025-08-31"
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": 0.98,
+              "stdDev": 6.908,
+              "alpha": 2.25,
+              "sharpeRatio": 0.078,
+              "rSquared": 94.92,
+              "endDate": "2025-08-31"
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": 1.01,
+              "stdDev": 6.723,
+              "alpha": 1.92,
+              "sharpeRatio": -0.263,
+              "rSquared": 87.82,
+              "endDate": "2025-08-31"
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": 1,
+              "stdDev": 6.511,
+              "alpha": 1.09,
+              "sharpeRatio": 0.127,
+              "rSquared": 57.66,
+              "endDate": "2025-08-31"
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": 100,
+            "notClassifiedIndicator": true,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": false,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": false,
+            "brazil": null,
+            "brazilIndicator": false,
+            "canada": null,
+            "canadaIndicator": false,
+            "chile": null,
+            "chileIndicator": false,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": false,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": false,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": false,
+            "germany": null,
+            "germanyIndicator": false,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": false,
+            "ireland": null,
+            "irelandIndicator": false,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": false,
+            "mexico": null,
+            "mexicoIndicator": false,
+            "netherlands": null,
+            "netherlandsIndicator": false,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": false,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": false,
+            "peru": null,
+            "peruIndicator": false,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": false,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": false,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": false,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": false,
+            "unitedStates": null,
+            "unitedStatesIndicator": false
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 15000,
+          "minInitInvstCurrencyCode": "HKD",
+          "minSubqInvst": 5000,
+          "minSubqInvstCurrencyCode": "HKD",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "HKD",
+          "hsbcMinInitInvst": 10000,
+          "hsbcMinInitInvstCurrencyCode": "HKD",
+          "hsbcMinSubqInvst": 10000,
+          "hsbcMinSubqInvstCurrencyCode": "HKD",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      },
+      {
+        "header": {
+          "name": "AB - American Income Portfolio (Class AT-SGD H-MDIST Cash)",
+          "market": "HK",
+          "productType": "UT",
+          "currency": "SGD",
+          "categoryCode": "GO",
+          "categoryName": "Global Fixed Income",
+          "familyCode": "NEWAA",
+          "familyName": "AllianceBernstein Hong Kong Limited",
+          "categoryLevel0Code": "FIUT",
+          "categoryLevel0Name": "Bond funds",
+          "categoryLevel1Code": "FI",
+          "categoryLevel1Name": "Fixed Income",
+          "investmentRegionCode": "GL",
+          "investmentRegionName": "Global",
+          "siFundCatCde": null,
+          "prodAltNumSeg": [
+            {
+              "prodCdeAltClassCde": "P",
+              "prodAltNum": "U62494"
+            },
+            {
+              "prodCdeAltClassCde": "F",
+              "prodAltNum": "N2494"
+            },
+            {
+              "prodCdeAltClassCde": "M",
+              "prodAltNum": "U62494"
+            },
+            {
+              "prodCdeAltClassCde": "I",
+              "prodAltNum": "LU0592505829"
+            },
+            {
+              "prodCdeAltClassCde": "O",
+              "prodAltNum": "0P0000T1AH"
+            },
+            {
+              "prodCdeAltClassCde": "T",
+              "prodAltNum": "000000000000000000001000047605"
+            },
+            {
+              "prodCdeAltClassCde": "W",
+              "prodAltNum": "1000047605"
+            }
+          ]
+        },
+        "summary": {
+          "riskLvlCde": "3",
+          "lastPrice": null,
+          "dayEndNAV": 10.66,
+          "dayEndNAVCurrencyCode": "SGD",
+          "changeAmountNAV": 0.03,
+          "changePercentageNAV": 0.28222,
+          "asOfDate": "2025-09-04",
+          "averageDailyVolume": null,
+          "assetsUnderManagement": 24821565494,
+          "assetsUnderManagementCurrencyCode": "USD",
+          "totalNetAsset": 413802815,
+          "totalNetAssetCurrencyCode": "SGD",
+          "ratingOverall": null,
+          "mer": null,
+          "yield1Yr": 4.42521,
+          "switchInMinAmount": 1500,
+          "switchInMinAmountCurrencyCode": "SGD",
+          "annualReportOngoingCharge": 1.32,
+          "actualManagementFee": 1.1,
+          "endDate": "2025-08-31"
+        },
+        "profile": {
+          "inceptionDate": "2011-04-15",
+          "turnoverRatio": 35.16,
+          "stdDev3Yr": 11.902,
+          "equityStylebox": 7,
+          "expenseRatio": 1.32,
+          "marginRatio": null,
+          "initialCharge": 2,
+          "annualManagementFee": 1.1,
+          "distributionYield": 4.42521,
+          "distributionFrequency": "Monthly",
+          "topPerformersIndicator": null,
+          "prodTopSellRankNum": null,
+          "topSellProdIndex": "N",
+          "prodLaunchDate": "2012-03-07",
+          "fundClassCde": "WIC",
+          "amcmIndicator": "Y",
+          "nextDealDate": "2025-09-05",
+          "prodStatCde": "A",
+          "allowBuy": "Y",
+          "allowSell": "Y",
+          "allowSwInProdInd": "Y",
+          "allowSwOutProdInd": "Y",
+          "allowSellMipProdInd": "Y",
+          "annualReportDate": "2024-08-31",
+          "piFundInd": null,
+          "deAuthFundInd": null,
+          "payCashDivInd": "Y",
+          "undlIndexCde": null,
+          "popularRankNum": null,
+          "esgInd": null,
+          "retireInvstInd": null,
+          "inDealDate": "2025-09-08",
+          "inScribStlDate": "2025-09-09",
+          "inRedempStlDate": "2025-09-15",
+          "gbaAcctTrdb": "N",
+          "gnrAcctTrdb": "Y",
+          "shortListRPQLvlNum": null
+        },
+        "rating": {
+          "morningstarRating": null,
+          "taxAdjustedRating": null,
+          "averageCreditQualityName": "BB",
+          "averageCreditQuality": 12,
+          "averageCreditQualityDate": "2025-06-30",
+          "rank1Yr": null,
+          "rank3Yr": null,
+          "rank5Yr": null,
+          "rank10Yr": null,
+          "ratingDate": null
+        },
+        "performance": {
+          "annualizedReturns": {
+            "return1day": 0.28222,
+            "return1Mth": 0.69959,
+            "return3Mth": 2.47117,
+            "return6Mth": 2.48067,
+            "return1Yr": 2.61128,
+            "return3Yr": 3.60437,
+            "return5Yr": 0.06265,
+            "return10Yr": 1.9895,
+            "returnSinceInception": 2.51688,
+            "inceptionDate": "2011-04-15",
+            "asOfDate": "2025-09-04"
+          },
+          "calendarReturns": {
+            "returnYTD": 4.94032,
+            "year": [
+              {
+                "yearName": 1,
+                "yearValue": 0.87039
+              },
+              {
+                "yearName": 2,
+                "yearValue": 6.48428
+              },
+              {
+                "yearName": 3,
+                "yearValue": -13.51068
+              },
+              {
+                "yearName": 4,
+                "yearValue": -0.35773
+              },
+              {
+                "yearName": 5,
+                "yearValue": 3.84904
+              }
+            ]
+          }
+        },
+        "risk": [
+          {
+            "yearRisk": {
+              "year": 1,
+              "beta": null,
+              "stdDev": 9.381,
+              "alpha": null,
+              "sharpeRatio": 0.032,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 3,
+              "beta": null,
+              "stdDev": 11.902,
+              "alpha": null,
+              "sharpeRatio": 0.17,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 5,
+              "beta": null,
+              "stdDev": 10.916,
+              "alpha": null,
+              "sharpeRatio": -0.124,
+              "rSquared": null,
+              "endDate": null
+            }
+          },
+          {
+            "yearRisk": {
+              "year": 10,
+              "beta": null,
+              "stdDev": 10.215,
+              "alpha": null,
+              "sharpeRatio": 0.126,
+              "rSquared": null,
+              "endDate": null
+            }
+          }
+        ],
+        "holdings": {
+          "sector": {
+            "basicMaterials": null,
+            "basicMaterialsIndicator": null,
+            "communicationServices": null,
+            "communicationServicesIndicator": null,
+            "consumerCyclical": null,
+            "consumerCyclicalIndicator": null,
+            "consumerDefensive": null,
+            "consumerDefensiveIndicator": null,
+            "energy": null,
+            "energyIndicator": null,
+            "excluded": null,
+            "excludedIndicator": null,
+            "financialServices": null,
+            "financialServicesIndicator": null,
+            "healthcare": null,
+            "healthcareIndicator": null,
+            "industrials": null,
+            "industrialsIndicator": null,
+            "notClassified": 100,
+            "notClassifiedIndicator": true,
+            "others": null,
+            "othersIndicator": null,
+            "technology": null,
+            "technologyIndicator": null,
+            "utilities": null,
+            "utilitiesIndicator": null
+          },
+          "geographicRegion": {
+            "australia": null,
+            "australiaIndicator": false,
+            "austria": null,
+            "austriaIndicator": null,
+            "belgium": null,
+            "belgiumIndicator": false,
+            "brazil": null,
+            "brazilIndicator": false,
+            "canada": null,
+            "canadaIndicator": false,
+            "chile": null,
+            "chileIndicator": false,
+            "china": null,
+            "chinaIndicator": null,
+            "colombia": null,
+            "colombiaIndicator": false,
+            "denmark": null,
+            "denmarkIndicator": null,
+            "eMEMEA": null,
+            "eMEMEAIndicator": false,
+            "eurozone": null,
+            "eurozoneIndicator": null,
+            "finland": null,
+            "finlandIndicator": null,
+            "france": null,
+            "franceIndicator": false,
+            "germany": null,
+            "germanyIndicator": false,
+            "greece": null,
+            "greeceIndicator": null,
+            "hongKong": null,
+            "hongKongIndicator": null,
+            "india": null,
+            "indiaIndicator": null,
+            "indonesia": null,
+            "indonesiaIndicator": false,
+            "ireland": null,
+            "irelandIndicator": false,
+            "israel": null,
+            "israelIndicator": null,
+            "italy": null,
+            "italyIndicator": null,
+            "japan": null,
+            "japanIndicator": null,
+            "korea": null,
+            "koreaIndicator": null,
+            "malaysia": null,
+            "malaysiaIndicator": false,
+            "mexico": null,
+            "mexicoIndicator": false,
+            "netherlands": null,
+            "netherlandsIndicator": false,
+            "newZealand": null,
+            "newZealandIndicator": null,
+            "norway": null,
+            "norwayIndicator": false,
+            "notclassified": null,
+            "notclassifiedIndicator": null,
+            "othercountries": null,
+            "othercountriesIndicator": false,
+            "peru": null,
+            "peruIndicator": false,
+            "philippines": null,
+            "philippinesIndicator": null,
+            "portugal": null,
+            "portugalIndicator": null,
+            "singapore": null,
+            "singaporeIndicator": null,
+            "spain": null,
+            "spainIndicator": false,
+            "sweden": null,
+            "swedenIndicator": null,
+            "switzerland": null,
+            "switzerlandIndicator": false,
+            "taiwan": null,
+            "taiwanIndicator": null,
+            "thailand": null,
+            "thailandIndicator": null,
+            "unitedArabEmirates": null,
+            "unitedArabEmiratesIndicator": false,
+            "unitedKingdom": null,
+            "unitedKingdomIndicator": false,
+            "unitedStates": null,
+            "unitedStatesIndicator": false
+          },
+          "topHoldingsList": [
+            {
+              "holdingName": "1",
+              "holdingCompany": "2 Year Treasury Note Future Sept 25",
+              "holdingPercent": 23.04378
+            },
+            {
+              "holdingName": "2",
+              "holdingCompany": "5 Year Treasury Note Future Sept 25",
+              "holdingPercent": 15.70318
+            },
+            {
+              "holdingName": "3",
+              "holdingCompany": "United States Treasury Bonds 6.25%",
+              "holdingPercent": 3.35957
+            },
+            {
+              "holdingName": "4",
+              "holdingCompany": "Federal National Mortgage Association 5.5%",
+              "holdingPercent": 2.00026
+            },
+            {
+              "holdingName": "5",
+              "holdingCompany": "Ultra US Treasury Bond Future Sept 25",
+              "holdingPercent": 1.84692
+            },
+            {
+              "holdingName": "6",
+              "holdingCompany": "Others",
+              "holdingPercent": 54.04629
+            }
+          ],
+          "assetAlloc": {
+            "assetAllocations": [
+              {
+                "name": "Bond",
+                "weighting": 157.45758
+              },
+              {
+                "name": "Cash",
+                "weighting": -58.03438
+              },
+              {
+                "name": "Others",
+                "weighting": 0.03973
+              },
+              {
+                "name": "Preferred",
+                "weighting": 0.73429
+              },
+              {
+                "name": "Stock",
+                "weighting": -0.21008
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "stockSectors": {
+            "globalStockSectors": [
+              {
+                "name": "FS",
+                "weighting": 0.10324
+              },
+              {
+                "name": "ENER",
+                "weighting": 0.0001
+              },
+              {
+                "name": "BM",
+                "weighting": 6e-05
+              },
+              {
+                "name": "TECH",
+                "weighting": 5e-05
+              },
+              {
+                "name": "HC",
+                "weighting": 4e-05
+              },
+              {
+                "name": "Others",
+                "weighting": 99.89651
+              }
+            ],
+            "portfolioDate": "2020-06-30"
+          },
+          "equityRegional": {
+            "regionalExposures": [
+              {
+                "name": "AD",
+                "weighting": 0
+              },
+              {
+                "name": "AE",
+                "weighting": 0
+              },
+              {
+                "name": "AFRICA",
+                "weighting": 0
+              },
+              {
+                "name": "AU",
+                "weighting": 0
+              },
+              {
+                "name": "CA",
+                "weighting": 0
+              },
+              {
+                "name": "Others",
+                "weighting": 100
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondSectors": {
+            "globalBondSectors": [
+              {
+                "name": "GVT",
+                "weighting": 78.81058
+              },
+              {
+                "name": "CORP",
+                "weighting": 53.911
+              },
+              {
+                "name": "SECZ",
+                "weighting": 25.95916
+              },
+              {
+                "name": "MNCPL",
+                "weighting": 0.0892
+              },
+              {
+                "name": "DRVT",
+                "weighting": -0.56417
+              },
+              {
+                "name": "Others",
+                "weighting": -58.20577
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          },
+          "bondRegional": {
+            "bondRegionalExposures": [
+              {
+                "name": "US",
+                "weighting": 126.48379
+              },
+              {
+                "name": "LA",
+                "weighting": 9.97419
+              },
+              {
+                "name": "UK",
+                "weighting": 4.99723
+              },
+              {
+                "name": "EZ",
+                "weighting": 4.5981
+              },
+              {
+                "name": "AE",
+                "weighting": 3.09408
+              },
+              {
+                "name": "Others",
+                "weighting": -49.14739
+              }
+            ],
+            "portfolioDate": "2025-06-30"
+          }
+        },
+        "purchase": {
+          "minInitInvst": 3000,
+          "minInitInvstCurrencyCode": "SGD",
+          "minSubqInvst": 1000,
+          "minSubqInvstCurrencyCode": "SGD",
+          "minInitRRSPInvst": null,
+          "minInitRRSPInvstCurrencyCode": "SGD",
+          "hsbcMinInitInvst": 1500,
+          "hsbcMinInitInvstCurrencyCode": "SGD",
+          "hsbcMinSubqInvst": 1500,
+          "hsbcMinSubqInvstCurrencyCode": "SGD",
+          "loadType": null,
+          "rrspeligibility": null
+        },
+        "swithableGroup": null
+      }
+    ],
+    "entityUpdatedTime": null
+  }
+}

@@ -1,0 +1,4606 @@
+{
+  "_id" : "ALL/table-columns-mapping",
+  "forEntity" : "ALL",
+  "name" : "table-columns-mapping",
+  "description" : "Table column mapping config, for PW0",
+  "config" : [
+    {
+      "sourceTable" : "ASET_GEO_LOC_ALLOC",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "asetGeoLocAlloc",
+      "columns" : [
+        {
+          "logicalKey" : "geoAsetAllocWghtPct",
+          "columnName" : "ASET_ALLOC_WGHT_PCT",
+          "jsonPath" : "asetAllocWghtPct",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "geoLocCde",
+          "columnName" : "GEO_LOC_CDE",
+          "jsonPath" : "geoLocCde",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "asetGeoProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "ASET_SIC_ALLOC",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "asetSicAlloc",
+      "columns" : [
+        {
+          "logicalKey" : "secAsetAllocWghtPct",
+          "columnName" : "ASET_ALLOC_WGHT_PCT",
+          "jsonPath" : "asetAllocWghtPct",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "asetSicProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "sicCde",
+          "columnName" : "SIC_CDE",
+          "jsonPath" : "sicCde",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "CCY_OPT_LINK_DEPST",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID_CCY_OPT_LINK_DEPST",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "ccyOptLinkDepst",
+      "columns" : [
+        {
+          "logicalKey" : "ccyFromCde",
+          "columnName" : "CCY_FROM_CDE",
+          "jsonPath" : "ccyFromCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "dps_ccyLinkDepstCde",
+          "columnName" : "CCY_LINK_DEPST_CDE",
+          "jsonPath" : "ccyLinkDepstCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ccyToCde",
+          "columnName" : "CCY_TO_CDE",
+          "jsonPath" : "ccyToCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "exchgBreakEvenRate",
+          "columnName" : "EXCHG_BREAK_EVEN_RATE",
+          "jsonPath" : "exchgBreakEvenRate",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "factrConvRate",
+          "columnName" : "FACTR_CONV_RATE",
+          "jsonPath" : "factrConvRate",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "intRate",
+          "columnName" : "INT_RATE",
+          "jsonPath" : "intRate",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "ccyDpsProdId",
+          "columnName" : "PROD_ID_CCY_OPT_LINK_DEPST",
+          "jsonPath" : "prodIdCcyOptLinkDepst",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "CDE_DESC_VALUE",
+      "entityLevelSupport" : "Y",
+      "productLevelSupport" : "N",
+      "jsonPath" : "reference_data",
+      "columns" : [
+        {
+          "logicalKey" : "cdvCde",
+          "columnName" : "CDV_CDE",
+          "jsonPath" : "cdvCde",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "cdvDesc",
+          "columnName" : "CDV_DESC",
+          "jsonPath" : "cdvDesc",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "cdvDispSeqNum",
+          "columnName" : "CDV_DISP_SEQ_NUM",
+          "jsonPath" : "cdvDispSeqNum",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "cdvParntCde",
+          "columnName" : "CDV_PARNT_CDE",
+          "jsonPath" : "cdvParntCde",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "cdvParntTypeCde",
+          "columnName" : "CDV_PARNT_TYPE_CDE",
+          "jsonPath" : "cdvParntTypeCde",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "cdvPllDesc",
+          "columnName" : "CDV_PLL_DESC",
+          "jsonPath" : "cdvPllDesc",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "cdvSllDesc",
+          "columnName" : "CDV_SLL_DESC",
+          "jsonPath" : "cdvSllDesc",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "cdvTypeCde",
+          "columnName" : "CDV_TYPE_CDE",
+          "jsonPath" : "cdvTypeCde",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "referenceCountry",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "ctryRecCde",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "referenceGroup",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "grpMembrRecCde",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "recCmntText",
+          "columnName" : "REC_CMNT_TEXT",
+          "jsonPath" : "recCmntText",
+          "interestedGroups" : [
+            "referenceData"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "CHANL_COMN_CDE",
+      "entityLevelSupport" : "Y",
+      "productLevelSupport" : "N",
+      "jsonPath" : "chanl_comn_cde",
+      "columns" : [
+        {
+          "logicalKey" : "chanlComnCde",
+          "columnName" : "CHANL_COMN_CDE",
+          "jsonPath" : "chanlComnCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "chanlCtryCde",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "ctryRecCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "chanlGrpMemberCde",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "grpMembrRecCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "chanlMrkDelRecInd",
+          "columnName" : "MRK_DEL_REC_IND",
+          "jsonPath" : "mrkDelRecInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "DEBT_INSTM",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID_DEBT_INSTM",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "debtInstm",
+      "columns" : [
+        {
+          "logicalKey" : "ctryBondIssueCde",
+          "columnName" : "CTRY_BOND_ISSUE_CDE",
+          "jsonPath" : "ctryBondIssueCde",
+          "interestedGroups" : [
+            "ghssProduct",
+            "blackRockBatch",
+            "gcmBatch",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "bondInvstIncrmMinAmt",
+          "columnName" : "INVST_INCRM_MIN_AMT",
+          "jsonPath" : "invstIncrmMinAmt",
+          "interestedGroups" : [
+            "ghssProduct",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "invstIncrmSoldAmt",
+          "columnName" : "INVST_INCRM_SOLD_AMT",
+          "jsonPath" : "invstIncrmSoldAmt",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "invstSoldLestAmt",
+          "columnName" : "INVST_SOLD_LEST_AMT",
+          "jsonPath" : "invstSoldLestAmt",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "isrBondName",
+          "columnName" : "ISR_BOND_NAME",
+          "jsonPath" : "isrBondName",
+          "interestedGroups" : [
+            "mdsProduct",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "bondBodLotQtyCnt",
+          "columnName" : "PROD_BOD_LOT_QTY_CNT",
+          "jsonPath" : "prodBodLotQtyCnt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "bondProdId",
+          "columnName" : "PROD_ID_DEBT_INSTM",
+          "jsonPath" : "prodIdDebtInstm",
+          "interestedGroups" : [
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodIssDt",
+          "columnName" : "PROD_ISS_DT",
+          "jsonPath" : "prodIssDt",
+          "interestedGroups" : [
+            "ghssProduct",
+            "blackRockBatch",
+            "gcmBatch",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "yieldOfferPct",
+          "columnName" : "YIELD_OFFER_PCT",
+          "jsonPath" : "yieldOfferPct",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "yieldToCallOfferPct",
+          "columnName" : "YIELD_TO_CALL_OFFER_PCT",
+          "jsonPath" : "yieldToCallOfferPct",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "SubDebtInd",
+          "columnName" : "SUB_DEBT_IND",
+          "jsonPath" : "subDebtInd",
+          "interestedGroups" : [
+            "idsbsProductCat",
+            "blackRockBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "coupnAnnlRt",
+          "columnName" : "COUPN_ANNL_RATE",
+          "jsonPath" : "coupnAnnlRate",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "pdcyCoupnPymtCd",
+          "columnName" : "PDCY_COUPN_PYMT_CDE",
+          "jsonPath" : "pdcyCoupnPymtCde",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "coupnType",
+          "columnName" : "COUPN_TYPE",
+          "jsonPath" : "coupnType",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "pymtCoupnNextDt",
+          "columnName" : "PYMT_COUPN_NEXT_DT",
+          "jsonPath" : "pymtCoupnNextDt",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "indexFltRtNme",
+          "columnName" : "INDEX_FLT_RATE_NAME",
+          "jsonPath" : "indexFltRateName",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "bondFltSprdRt",
+          "columnName" : "BOND_FLT_SPRD_RATE",
+          "jsonPath" : "bondFltSprdRate",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "EQTY_LINK_INVST",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID_EQTY_LINK_INVST",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "eqtyLinkInvst",
+      "columns" : [
+        {
+          "logicalKey" : "dscntSellPct",
+          "columnName" : "DSCNT_SELL_PCT",
+          "jsonPath" : "dscntSellPct",
+          "interestedGroups" : [
+            "ghssPrice",
+            "apexaPrice",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "eliProdId",
+          "columnName" : "PROD_ID_EQTY_LINK_INVST",
+          "jsonPath" : "prodIdEqtyLinkInvst",
+          "interestedGroups" : [
+            "ghssPrice",
+            "apexaPrice"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "finalSettlementDate",
+          "columnName" : "SETL_DT",
+          "jsonPath" : "setlDt",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "callFrequency",
+          "columnName" : "PDCY_CALL_CDE",
+          "jsonPath" : "pdcyCallCde",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "knockInFrequency",
+          "columnName" : "PDCY_KNOCK_IN_CDE",
+          "jsonPath" : "pdcyKnockInCde",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodIdEqtyLinkInvst",
+          "columnName" : "PROD_ID_EQTY_LINK_INVST",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "eliLaunchInd",
+          "columnName" : "LNCH_PROD_IND",
+          "jsonPath" : "lnchProdInd",
+          "interestedGroups" : [
+            "blackRockBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "rtrvProdExtnlInd",
+          "columnName" : "RTRV_PROD_EXTNL_IND",
+          "jsonPath" : "rtrvProdExtnlInd",
+          "interestedGroups" : [
+            "blackRockBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "EQTY_LINK_INVST_UNDL_STOCK",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID_EQTY_LINK_INVST",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "eqtyLinkInvst.undlStock",
+      "columns" : [
+        {
+          "logicalKey" : "undlStock_InstmUndlCde",
+          "columnName" : "INSTM_UNDL_CDE",
+          "jsonPath" : "instmUndlCde",
+          "interestedGroups" : [
+            "product",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "undlStock_ProdExerPrcAmt",
+          "columnName" : "PROD_EXER_PRC_AMT",
+          "jsonPath" : "prodExerPrcAmt",
+          "interestedGroups" : [
+            "product",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "eliProdId",
+          "columnName" : "PROD_ID_EQTY_LINK_INVST",
+          "jsonPath" : "prodIdEqtyLinkInvst",
+          "interestedGroups" : [
+            "product",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodKnockInPriceAmt",
+          "columnName" : "PROD_KNOCK_IN_PRICE_AMT",
+          "jsonPath" : "prodKnockInPriceAmt",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodStrkCallPrcAmt",
+          "columnName" : "PROD_STRK_CALL_PRC_AMT",
+          "jsonPath" : "prodStrkCallPrcAmt",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "recCreatDtTm",
+          "columnName" : "REC_CREAT_DT_TM",
+          "jsonPath" : "recCreatDtTm",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "recUpdtDtTm",
+          "columnName" : "REC_UPDT_DT_TM",
+          "jsonPath" : "recUpdtDtTm",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "prodIdUndlInstm",
+          "columnName" : "PROD_ID_UNDL_INSTM",
+          "jsonPath" : "prodIdUndlInstm",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "initialSpotPrice",
+          "columnName" : "PROD_INIT_SPOT_PRICE_AMT",
+          "jsonPath" : "prodInitSpotPriceAmt",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD",
+      "entityLevelSupport" : "Y",
+      "productLevelSupport" : "Y",
+      "columns" : [
+        {
+          "logicalKey" : "allowBuyProdInd",
+          "columnName" : "ALLOW_BUY_PROD_IND",
+          "jsonPath" : "allowBuyProdInd",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "allowSellMipProdInd",
+          "columnName" : "ALLOW_SELL_MIP_PROD_IND",
+          "jsonPath" : "allowSellMipProdInd",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "allowSellProdInd",
+          "columnName" : "ALLOW_SELL_PROD_IND",
+          "jsonPath" : "allowSellProdInd",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "allowSwInProdInd",
+          "columnName" : "ALLOW_SW_IN_PROD_IND",
+          "jsonPath" : "allowSwInProdInd",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "allowSwOutProdInd",
+          "columnName" : "ALLOW_SW_OUT_PROD_IND",
+          "jsonPath" : "allowSwOutProdInd",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "asetClassCde",
+          "columnName" : "ASET_CLASS_CDE",
+          "jsonPath" : "asetClassCde",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "asetVoltlClassMajrPrntCde",
+          "columnName" : "ASET_VOLTL_CLASS_MAJR_PRNT_CDE",
+          "jsonPath" : "asetVoltlClassMajrPrntCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "bchmkName",
+          "columnName" : "BCHMK_NAME",
+          "jsonPath" : "bchmkName",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "busEndTm",
+          "columnName" : "BUS_END_TM",
+          "jsonPath" : "busEndTm",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "busStartTm",
+          "columnName" : "BUS_START_TM",
+          "jsonPath" : "busStartTm",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "ccyInvstCde",
+          "columnName" : "CCY_INVST_CDE",
+          "jsonPath" : "ccyInvstCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ccyProdCde",
+          "columnName" : "CCY_PROD_CDE",
+          "jsonPath" : "ccyProdCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "idsbsProduct",
+            "ghssPrice",
+            "mdsProduct",
+            "rmpProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "apexaPrice",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ccyProdMktPrcCde",
+          "columnName" : "CCY_PROD_MKT_PRC_CDE",
+          "jsonPath" : "ccyProdMktPrcCde",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "apexaPrice",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "cntlAdvcInd",
+          "columnName" : "CNTL_ADVC_IND",
+          "jsonPath" : "cntlAdvcInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "cptlGurntProdInd",
+          "columnName" : "CPTL_GURNT_PROD_IND",
+          "jsonPath" : "cptlGurntProdInd",
+          "interestedGroups" : [
+            "product",
+            "blackRockBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ctryProdTrade1Cde",
+          "columnName" : "CTRY_PROD_TRADE_1_CDE",
+          "jsonPath" : "ctryProdTradeCde[0]",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct",
+            "idsbsProduct",
+            "apexaProduct",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodCtryCde",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "ctryRecCde",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "idsbsProductCat",
+            "rmpProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "apexaPrice",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "dcmlPlaceTradeUnitNum",
+          "columnName" : "DCML_PLACE_TRADE_UNIT_NUM",
+          "jsonPath" : "dcmlPlaceTradeUnitNum",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "divrNum",
+          "columnName" : "DIVR_NUM",
+          "jsonPath" : "divrNum",
+          "interestedGroups" : [
+            "ghssProduct",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "dmyProdSubtpRecInd",
+          "columnName" : "DMY_PROD_SUBTP_REC_IND",
+          "jsonPath" : "dmyProdSubtpRecInd",
+          "interestedGroups" : [
+            "product",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "educGoalInd",
+          "columnName" : "EDUC_GOAL_IND",
+          "jsonPath" : "educGoalInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "eqtyUndlInd",
+          "columnName" : "EQTY_UNDL_IND",
+          "jsonPath" : "eqtyUndlInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "geoRiskInd",
+          "columnName" : "GEO_RISK_IND",
+          "jsonPath" : "geoRiskInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodGrpMemCde",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "grpMembrRecCde",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "idsbsProductCat",
+            "rmpProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "apexaPrice",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "grwthCharProdInd",
+          "columnName" : "GRWTH_CHAR_PROD_IND",
+          "jsonPath" : "grwthCharProdInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "incmCharProdInd",
+          "columnName" : "INCM_CHAR_PROD_IND",
+          "jsonPath" : "incmCharProdInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "introProdCurrPrdInd",
+          "columnName" : "INTRO_PROD_CURR_PRD_IND",
+          "jsonPath" : "introProdCurrPrdInd",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "invstImigProdInd",
+          "columnName" : "INVST_IMIG_PROD_IND",
+          "jsonPath" : "invstImigProdInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "invstInitMaxAmt",
+          "columnName" : "INVST_INIT_MAX_AMT",
+          "jsonPath" : "invstInitMaxAmt",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "invstInitMinAmt",
+          "columnName" : "INVST_INIT_MIN_AMT",
+          "jsonPath" : "invstInitMinAmt",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "islmProdInd",
+          "columnName" : "ISLM_PROD_IND",
+          "jsonPath" : "islmProdInd",
+          "interestedGroups" : [
+            "ghssProduct",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "liveInRtireGoalInd",
+          "columnName" : "LIVE_IN_RTIRE_GOAL_IND",
+          "jsonPath" : "liveInRtireGoalInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "mktInvstCde",
+          "columnName" : "MKT_INVST_CDE",
+          "jsonPath" : "mktInvstCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "mngSolnInd",
+          "columnName" : "MNG_SOLN_IND",
+          "jsonPath" : "mngSolnInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "noScribFeeProdInd",
+          "columnName" : "NO_SCRIB_FEE_PROD_IND",
+          "jsonPath" : "noScribFeeProdInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "planForRtireGoalInd",
+          "columnName" : "PLAN_FOR_RTIRE_GOAL_IND",
+          "jsonPath" : "planForRtireGoalInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prcEffDt",
+          "columnName" : "PRC_EFF_DT",
+          "jsonPath" : "prcEffDt",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "apexaPrice",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "prdProdCde",
+          "columnName" : "PRD_PROD_CDE",
+          "jsonPath" : "prdProdCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prdProdNum",
+          "columnName" : "PRD_PROD_NUM",
+          "jsonPath" : "prdProdNum",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodAltPrimNum",
+          "columnName" : "PROD_ALT_PRIM_NUM",
+          "jsonPath" : "prodAltPrimNum",
+          "interestedGroups" : [
+            "product",
+            "idsbsProduct",
+            "idsbsProductCat",
+            "rmpProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodBidPrcAmt",
+          "columnName" : "PROD_BID_PRC_AMT",
+          "jsonPath" : "prodBidPrcAmt",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "blackRockBatch",
+            "apexaPrice",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodCde",
+          "columnName" : "PROD_CDE",
+          "jsonPath" : "prodCde",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "idsbsProductCat",
+            "rmpProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "apexaPrice",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodDervtCde",
+          "columnName" : "PROD_DERVT_CDE",
+          "jsonPath" : "prodDervtCde",
+          "interestedGroups" : [
+            "product",
+            "idsbsProductCat",
+            "apexaProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "productId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "apexaProduct",
+            "apexaPrice",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodInvstObjText",
+          "columnName" : "PROD_INVST_OBJ_TEXT",
+          "jsonPath" : "prodInvstObjText",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodInvstTypeCde",
+          "columnName" : "PROD_INVST_TYPE_CDE",
+          "jsonPath" : "prodInvstTypeCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodLnchDt",
+          "columnName" : "PROD_LNCH_DT",
+          "jsonPath" : "prodLnchDt",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "apexaProduct",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "prodLocCde",
+          "columnName" : "PROD_LOC_CDE",
+          "jsonPath" : "prodLocCde",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodLqdyInd",
+          "columnName" : "PROD_LQDY_IND",
+          "jsonPath" : "prodLqdyInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodMktPrcAmt",
+          "columnName" : "PROD_MKT_PRC_AMT",
+          "jsonPath" : "prodMktPrcAmt",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaPrice",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodMturDt",
+          "columnName" : "PROD_MTUR_DT",
+          "jsonPath" : "prodMturDt",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "blackRockBatch",
+            "gcmBatch",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "prodName",
+          "columnName" : "PROD_NAME",
+          "jsonPath" : "prodName",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "idsbsProduct",
+            "mdsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodNavPrcAmt",
+          "columnName" : "PROD_NAV_PRC_AMT",
+          "jsonPath" : "prodNavPrcAmt",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "blackRockBatch",
+            "apexaPrice",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodOffrPrcAmt",
+          "columnName" : "PROD_OFFR_PRC_AMT",
+          "jsonPath" : "prodOffrPrcAmt",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "apexaPrice"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodPllName",
+          "columnName" : "PROD_PLL_NAME",
+          "jsonPath" : "prodPllName",
+          "interestedGroups" : [
+            "product",
+            "idsbsProduct",
+            "mdsProduct",
+            "apexaProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodSllName",
+          "columnName" : "PROD_SLL_NAME",
+          "jsonPath" : "prodSllName",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodShrtName",
+          "columnName" : "PROD_SHRT_NAME",
+          "jsonPath" : "prodShrtName",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "idsbsProduct",
+            "mdsProduct",
+            "apexaProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodShrtPllName",
+          "columnName" : "PROD_SHRT_PLL_NAME",
+          "jsonPath" : "prodShrtPllName",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodShrtSllName",
+          "columnName" : "PROD_SHRT_SLL_NAME",
+          "jsonPath" : "prodShrtSllName",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodSllName",
+          "columnName" : "PROD_SLL_NAME",
+          "jsonPath" : "prodSllName",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodStatCde",
+          "columnName" : "PROD_STAT_CDE",
+          "jsonPath" : "prodStatCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "rmpProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodSubtpCde",
+          "columnName" : "PROD_SUBTP_CDE",
+          "jsonPath" : "prodSubtpCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct",
+            "idsbsProduct",
+            "idsbsProductCat",
+            "rmpProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodTaxFreeWrapActStaCde",
+          "columnName" : "PROD_TAX_FREE_WRAP_ACT_STA_CDE",
+          "jsonPath" : "prodTaxFreeWrapActStaCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodTopPerfmRankNum",
+          "columnName" : "PROD_TOP_PERFM_RANK_NUM",
+          "jsonPath" : "prodTopPerfmRankNum",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodTopSellRankNum",
+          "columnName" : "PROD_TOP_SELL_RANK_NUM",
+          "jsonPath" : "prodTopSellRankNum",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodTopYieldRankNum",
+          "columnName" : "PROD_TOP_YIELD_RANK_NUM",
+          "jsonPath" : "prodTopYieldRankNum",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodTypCde",
+          "columnName" : "PROD_TYPE_CDE",
+          "jsonPath" : "prodTypeCde",
+          "interestedGroups" : [
+            "product",
+            "ghssPrice",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "idsbsProductCat",
+            "rmpProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "apexaPrice",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "protcGoalInd",
+          "columnName" : "PROTC_GOAL_IND",
+          "jsonPath" : "protcGoalInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prtyEducCde",
+          "columnName" : "PRTY_EDUC_CDE",
+          "jsonPath" : "prtyEducCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prtyLiveInRtireCde",
+          "columnName" : "PRTY_LIVE_IN_RTIRE_CDE",
+          "jsonPath" : "prtyLiveInRtireCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prtyPlnForRtireCde",
+          "columnName" : "PRTY_PLN_FOR_RTIRE_CDE",
+          "jsonPath" : "prtyPlnForRtireCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prtyProtcCde",
+          "columnName" : "PRTY_PROTC_CDE",
+          "jsonPath" : "prtyProtcCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prtyWlthAccumGoalCde",
+          "columnName" : "PRTY_WLTH_ACCUM_GOAL_CDE",
+          "jsonPath" : "prtyWlthAccumGoalCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "qtyUnitProdCde",
+          "columnName" : "QTY_UNIT_PROD_CDE",
+          "jsonPath" : "qtyUnitProdCde",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "recLastUpdateTime",
+          "columnName" : "REC_UPDT_DT_TM",
+          "jsonPath" : "recUpdtDtTm",
+          "interestedGroups" : [
+            "ghssProduct",
+            "idsbsProduct",
+            "rmpProduct",
+            "apexaProduct"
+          ],
+          "skipUpdateCheckIndicator" : "Y",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "restrInvstrProdInd",
+          "columnName" : "RESTR_INVSTR_PROD_IND",
+          "jsonPath" : "restrInvstrProdInd",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "riskLvlCde",
+          "columnName" : "RISK_LVL_CDE",
+          "jsonPath" : "riskLvlCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "rvrseEnqProdInd",
+          "columnName" : "RVRSE_ENQ_PROD_IND",
+          "jsonPath" : "rvrseEnqProdInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "sectInvstCde",
+          "columnName" : "SECT_INVST_CDE",
+          "jsonPath" : "sectInvstCde",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "topPerfmProdInd",
+          "columnName" : "TOP_PERFM_PROD_IND",
+          "jsonPath" : "topPerfmProdInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "topSellProdInd",
+          "columnName" : "TOP_SELL_PROD_IND",
+          "jsonPath" : "topSellProdInd",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "wlthAccumGoalInd",
+          "columnName" : "WLTH_ACCUM_GOAL_IND",
+          "jsonPath" : "wlthAccumGoalInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "yieldEnhnProdInd",
+          "columnName" : "YIELD_ENHN_PROD_IND",
+          "jsonPath" : "yieldEnhnProdInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "loanProdOdMrgnPct",
+          "columnName" : "LOAN_PROD_OD_MRGN_PCT",
+          "jsonPath" : "loanProdOdMrgnPct",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodStatUpdtDtTm",
+          "columnName" : "PROD_STAT_UPDT_DT_TM",
+          "jsonPath" : "prodStatUpdtDtTm",
+          "interestedGroups" : [
+            "apexaProduct",
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "allowTradProdInd",
+          "columnName" : "ALLOW_TRAD_PROD_IND",
+          "jsonPath" : "allowTradProdInd",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodPrcUpdtDtTm",
+          "columnName" : "PROD_PRC_UPDT_DT_TM",
+          "jsonPath" : "prodPrcUpdtDtTm",
+          "interestedGroups" : [
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "mrkToMktInd",
+          "columnName" : "MRK_TO_MKT_IND",
+          "jsonPath" : "mrkToMktInd",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "issueDate",
+          "columnName" : "PROD_ISSUE_CROS_REFER_DT",
+          "jsonPath" : "prodIssueCrosReferDt",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "termRemainDayCnt",
+          "columnName" : "TERM_REMAIN_DAY_CNT",
+          "jsonPath" : "termRemainDayCnt",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "asetText",
+          "columnName" : "ASET_TEXT",
+          "jsonPath" : "asetText",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_ALT_ID",
+      "entityLevelSupport" : "Y",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "altId",
+      "columns" : [
+        {
+          "logicalKey" : "prodAltCtryCde",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "ctryRecCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodAltGrpMemCde",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "grpMembrRecCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodAltNum",
+          "columnName" : "PROD_ALT_NUM",
+          "jsonPath" : "prodAltNum",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodCdeAltClassCde",
+          "columnName" : "PROD_CDE_ALT_CLASS_CDE",
+          "jsonPath" : "prodCdeAltClassCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodAltProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodAltProdTypeCde",
+          "columnName" : "PROD_TYPE_CDE",
+          "jsonPath" : "prodTypeCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodAltRecCreatDtTm",
+          "columnName" : "REC_CREAT_DT_TM",
+          "jsonPath" : "recCreatDtTm",
+          "interestedGroups" : [
+            "idsbsProduct",
+            "apexaProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "prodAltRecUpdtDtTm",
+          "columnName" : "REC_UPDT_DT_TM",
+          "jsonPath" : "recUpdtDtTm",
+          "interestedGroups" : [
+            "idsbsProduct",
+            "apexaProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_ASET_VOLTL_CLASS",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "asetVoltlClass",
+      "columns" : [
+        {
+          "logicalKey" : "asetVoltlClassCde",
+          "columnName" : "ASET_VOLTL_CLASS_CDE",
+          "jsonPath" : "asetVoltlClassCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "asetVoltlClassWghtPct",
+          "columnName" : "ASET_VOLTL_CLASS_WGHT_PCT",
+          "jsonPath" : "asetVoltlClassWghtPct",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodAsetVoltlProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_FIN_DOC",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "finDoc",
+      "columns" : [
+        {
+          "logicalKey" : "documentFinancialTypeCode",
+          "columnName" : "DOC_FIN_TYPE_CDE",
+          "jsonPath" : "docFinTypeCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "finDocHashCde",
+          "columnName" : "FIN_DOC_CON_HASH_CDE",
+          "jsonPath" : "finDocConHashCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "languageFinancialDocumentCode",
+          "columnName" : "LANG_FIN_DOC_CDE",
+          "jsonPath" : "langFinDocCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodFinDocProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "finDocUrlText",
+          "columnName" : "URL_DOC_TEXT",
+          "jsonPath" : "urlDocText",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_FORM_REQMT",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "formReqmt",
+      "columns" : [
+        {
+          "logicalKey" : "formReqCde",
+          "columnName" : "FORM_REQ_CDE",
+          "jsonPath" : "formReqCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodFormReqmtProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_LIST_PROD",
+      "entityLevelSupport" : "Y",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "listProd",
+      "columns" : [
+        {
+          "logicalKey" : "prodListProdCtry",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "ctryRecCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodListProdGrp",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "grpMembrRecCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "listProdCde",
+          "columnName" : "LIST_PROD_CDE",
+          "jsonPath" : "listProdCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "listProdType",
+          "columnName" : "LIST_PROD_TYPE",
+          "jsonPath" : "listProdType",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodListProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_OFER_CHANL",
+      "entityLevelSupport" : "Y",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "oferChanl",
+      "columns" : [
+        {
+          "logicalKey" : "prodChanlComnCde",
+          "columnName" : "CHANL_COMN_CDE",
+          "jsonPath" : "chanlComnCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodOffrChanlCtry",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "ctryRecCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodOffrChanlGrp",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "grpMembrRecCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodOffrChanlProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_PERFM",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "performance|benchmark",
+      "columns" : [
+        {
+          "logicalKey" : "perfm1MoPct",
+          "columnName" : "PERFM_1MO_PCT",
+          "jsonPath" : "perfm1MoPct",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "perfm1YrPct",
+          "columnName" : "PERFM_1YR_PCT",
+          "jsonPath" : "perfm1YrPct",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "perfm3MoPct",
+          "columnName" : "PERFM_3MO_PCT",
+          "jsonPath" : "perfm3MoPct",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "perfm3YrPct",
+          "columnName" : "PERFM_3YR_PCT",
+          "jsonPath" : "perfm3YrPct",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "perfm5YrPct",
+          "columnName" : "PERFM_5YR_PCT",
+          "jsonPath" : "perfm5YrPct",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "perfm6MoPct",
+          "columnName" : "PERFM_6MO_PCT",
+          "jsonPath" : "perfm6MoPct",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "perfmCalcDt",
+          "columnName" : "PERFM_CALC_DT",
+          "jsonPath" : "perfmCalcDt",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "perfmTypeCde",
+          "columnName" : "PERFM_TYPE_CDE",
+          "jsonPath" : "perfmTypeCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "perfmYrToDtPct",
+          "columnName" : "PERFM_YR_TO_DT_PCT",
+          "jsonPath" : "perfmYrToDtPct",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodPerfmProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_PROD_RELN",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "prodReln",
+      "columns" : []
+    },
+    {
+      "sourceTable" : "PROD_RESTR_CUST_CTRY",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "restrCustCtry",
+      "columns" : [
+        {
+          "logicalKey" : "ctryIsoCde",
+          "columnName" : "CTRY_ISO_CDE",
+          "jsonPath" : "ctryIsoCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodRestrCustCtryProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "restrCde",
+          "columnName" : "RESTR_CDE",
+          "jsonPath" : "restrCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "restrCtryTypeCde",
+          "columnName" : "RESTR_CTRY_TYPE_CDE",
+          "jsonPath" : "restrCtryTypeCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_RESTR_CUST_GROUP",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "restrCustGroup",
+      "columns" : [
+        {
+          "logicalKey" : "custProdCatCde",
+          "columnName" : "CUST_PROD_CAT_CDE",
+          "jsonPath" : "custProdCatCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "eligCuspCatInd",
+          "columnName" : "ELIG_CUSP_CAT_IND",
+          "jsonPath" : "eligCuspCatInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodRestrCustGroupProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_STAF_LIC_CHECK",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "stafLicCheck",
+      "columns" : [
+        {
+          "logicalKey" : "proStafLicChckCtoffEmplyEligChkInd",
+          "columnName" : "CTOFF_EMPLY_ELIG_CHK_IND",
+          "jsonPath" : "ctoffEmplyEligChkInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "proStafLicChckEmployPosnCde",
+          "columnName" : "EMPLOY_POSN_CDE",
+          "jsonPath" : "employPosnCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "proStafLicChckEmplyEligCtoffDt",
+          "columnName" : "EMPLY_ELIG_CTOFF_DT",
+          "jsonPath" : "emplyEligCtoffDt",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "proStafLicChckFrmlaEmpEligBfrCtoffText",
+          "columnName" : "FRMLA_EMP_ELIG_BFR_CTOFF_TEXT",
+          "jsonPath" : "frmlaEmpEligBfrCtoffText",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "proStafLicChckFrmlaEmplyEligText",
+          "columnName" : "FRMLA_EMPLY_ELIG_TEXT",
+          "jsonPath" : "frmlaEmplyEligText",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "proStafLicChckOvridEmplyEligChkInd",
+          "columnName" : "OVRID_EMPLY_ELIG_CHK_IND",
+          "jsonPath" : "ovridEmplyEligChkInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "proStafLicChckProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "proStafLicChckRecCreatDtTm",
+          "columnName" : "REC_CREAT_DT_TM",
+          "jsonPath" : "recCreatDtTm",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "proStafLicChckRecUpdtDtTm",
+          "columnName" : "REC_UPDT_DT_TM",
+          "jsonPath" : "recUpdtDtTm",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_TRADE_CCY",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "tradeCcy",
+      "columns" : [
+        {
+          "logicalKey" : "ccyProdTradeCde",
+          "columnName" : "CCY_PROD_TRADE_CDE",
+          "jsonPath" : "ccyProdTradeCde",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodTradeCcyProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_TRADE_ELIG",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "tradeElig",
+      "columns" : [
+        {
+          "logicalKey" : "ageAllowTrdMaxNum",
+          "columnName" : "AGE_ALLOW_TRD_MAX_NUM",
+          "jsonPath" : "ageAllowTrdMaxNum",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "ageAllowTrdMinNum",
+          "columnName" : "AGE_ALLOW_TRD_MIN_NUM",
+          "jsonPath" : "ageAllowTrdMinNum",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "ovridCorsCtryChkInd",
+          "columnName" : "OVRID_CORS_CTRY_CHK_IND",
+          "jsonPath" : "ovridCorsCtryChkInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ovridCuspCatEligInd",
+          "columnName" : "OVRID_CUSP_CAT_ELIG_IND",
+          "jsonPath" : "ovridCuspCatEligInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ovridInvstHldgChkInd",
+          "columnName" : "OVRID_INVST_HLDG_CHK_IND",
+          "jsonPath" : "ovridInvstHldgChkInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ovridMaxAgeRestrInd",
+          "columnName" : "OVRID_MAX_AGE_RESTR_IND",
+          "jsonPath" : "ovridMaxAgeRestrInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ovridMinAgeRestrInd",
+          "columnName" : "OVRID_MIN_AGE_RESTR_IND",
+          "jsonPath" : "ovridMinAgeRestrInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ovridNatlChkInd",
+          "columnName" : "OVRID_NATL_CHK_IND",
+          "jsonPath" : "ovridNatlChkInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ovridReqCmplRpqInd",
+          "columnName" : "OVRID_REQ_CMPL_RPQ_IND",
+          "jsonPath" : "ovridReqCmplRpqInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ovridReqFormInd",
+          "columnName" : "OVRID_REQ_FORM_IND",
+          "jsonPath" : "ovridReqFormInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "ovridResCtryChkInd",
+          "columnName" : "OVRID_RES_CTRY_CHK_IND",
+          "jsonPath" : "ovridResCtryChkInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodTradeEligProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "requireCompleteRPQIndicator",
+          "columnName" : "REQ_CMPL_RPQ_IND",
+          "jsonPath" : "reqCmplRpqInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "reqInvstHldgChkInd",
+          "columnName" : "REQ_INVST_HLDG_CHK_IND",
+          "jsonPath" : "reqInvstHldgChkInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_TRNSL",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "trnsl",
+      "columns" : [
+        {
+          "logicalKey" : "prodTrnslProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodInvstObjPllText",
+          "columnName" : "PROD_INVST_OBJ_PLL_TEXT",
+          "jsonPath" : "prodInvstObjPllText",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodInvstObjSllText",
+          "columnName" : "PROD_INVST_OBJ_SLL_TEXT",
+          "jsonPath" : "prodInvstObjSllText",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_TYPE_STAF_LIC_CHECK",
+      "entityLevelSupport" : "Y",
+      "productLevelSupport" : "N",
+      "jsonPath" : "staff_license_check",
+      "columns" : [
+        {
+          "logicalKey" : "proTypStafLicChckCtoffEmplyEligChkInd",
+          "columnName" : "CTOFF_EMPLY_ELIG_CHK_IND",
+          "jsonPath" : "ctoffEmplyEligChkInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckCtryCde",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "ctryRecCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckEmployPosnCde",
+          "columnName" : "EMPLOY_POSN_CDE",
+          "jsonPath" : "employPosnCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckEmplyEligCtoffDt",
+          "columnName" : "EMPLY_ELIG_CTOFF_DT",
+          "jsonPath" : "emplyEligCtoffDt",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckFrmlaEmpEligBfrCtoffText",
+          "columnName" : "FRMLA_EMP_ELIG_BFR_CTOFF_TEXT",
+          "jsonPath" : "frmlaEmpEligBfrCtoffText",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckFrmlaEmplyEligText",
+          "columnName" : "FRMLA_EMPLY_ELIG_TEXT",
+          "jsonPath" : "frmlaEmplyEligText",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckGrpMbrCde",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "grpMembrRecCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckOvridEmplyEligChkInd",
+          "columnName" : "OVRID_EMPLY_ELIG_CHK_IND",
+          "jsonPath" : "ovridEmplyEligChkInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckProdTypCde",
+          "columnName" : "PROD_TYPE_CDE",
+          "jsonPath" : "prodTypeCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckRecCreatDtTm",
+          "columnName" : "REC_CREAT_DT_TM",
+          "jsonPath" : "recCreatDtTm",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "proTypStafLicChckRecUpdtDtTm",
+          "columnName" : "REC_UPDT_DT_TM",
+          "jsonPath" : "recUpdtDtTm",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_UNDL_ASET",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "undlAset",
+      "columns" : [
+        {
+          "logicalKey" : "asetUndlCde",
+          "columnName" : "ASET_UNDL_CDE",
+          "jsonPath" : "asetUndlCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodUndlAsetProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "seqNum",
+          "columnName" : "SEQ_NUM",
+          "jsonPath" : "seqNum",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_USER_DEFIN_EXT_FIELD",
+      "entityLevelSupport" : "Y",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "columns" : [
+        {
+          "logicalKey" : "extFieldProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "extFieldProdId",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "extFieldCtry",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "extFieldCtry",
+          "interestedGroups" : [
+            "mdsProduct",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "extFieldGroup",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "extFieldGroup",
+          "interestedGroups" : [
+            "mdsProduct",
+            "ghssProduct",
+            "idsbsProductCat"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "extFieldCharValue",
+          "columnName" : "FIELD_CHAR_VALUE_TEXT",
+          "jsonPath" : "extFieldCharValue",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "extFieldDataType",
+          "columnName" : "FIELD_DATA_TYPE_TEXT",
+          "jsonPath" : "extFieldDataType",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "extFieldDecimalValue",
+          "columnName" : "FIELD_DCML_VALUE_NUM",
+          "jsonPath" : "extFieldDecimalValue",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "extFieldDateValue",
+          "columnName" : "FIELD_DT_VALUE_DT",
+          "jsonPath" : "extFieldDateValue",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "extFieldIntValue",
+          "columnName" : "FIELD_INTG_VALUE_NUM",
+          "jsonPath" : "extFieldIntValue",
+          "interestedGroups" : [
+            "mdsProduct",
+            "ghssProduct",
+            "idsbsProductCat"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "extFieldSeq",
+          "columnName" : "FIELD_SEQ_NUM",
+          "jsonPath" : "extFieldSeq",
+          "interestedGroups" : [
+            "mdsProduct",
+            "ghssProduct",
+            "idsbsProductCat"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "extFieldStringValue",
+          "columnName" : "FIELD_STRNG_VALUE_TEXT",
+          "jsonPath" : "extFieldStringValue",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "extFieldTimestampValue",
+          "columnName" : "FIELD_TS_VALUE_DT_TM",
+          "jsonPath" : "extFieldTimestampValue",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "extFieldProdType",
+          "columnName" : "FIELD_TYPE_CDE",
+          "jsonPath" : "extFieldProdType",
+          "interestedGroups" : [
+            "mdsProduct",
+            "ghssProduct",
+            "idsbsProductCat"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "fundCatCde",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "fundCatCde",
+          "jsonPath" : "utTrstInstm.fundCatCde",
+          "interestedGroups" : [
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "esgInd",
+          "fieldCde" : "esgInd",
+          "columnName" : "FIELD_CDE",
+          "jsonPath" : "esg.esgInd",
+          "interestedGroups" : [
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "gnrAcctTrdb",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "gnrAcctTrdb",
+          "jsonPath" : "gnrAcctTrdb",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "highYieldBondInd",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "highYieldBondInd",
+          "jsonPath" : "highYieldBondInd",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "sodMarginRate",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "sodMarginRate",
+          "jsonPath" : "sodMarginRate",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "switchFundGrpList",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "switchFundGrpList",
+          "jsonPath" : "utTrstInstm.switchFundGrpList[*]",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "priShareClassInd",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "priShareClassInd",
+          "jsonPath" : "utTrstInstm.priShareClassInd",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "annMgmtFeePct",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "annMgmtFeePct",
+          "jsonPath" : "utTrstInstm.annMgmtFeePct",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "gbaAcctTrdb",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "gbaAcctTrdb",
+          "jsonPath" : "gbaAcctTrdb",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "fundShreClsName",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "fundShreClsName",
+          "jsonPath" : "utTrstInstm.fundShreClsName",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "fundShreClsNamePriLang",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "fundShreClsNamePriLang",
+          "jsonPath" : "utTrstInstm.fundShreClsNamePriLang",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "fundShreClsNameSecLang",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "fundShreClsNameSecLang",
+          "jsonPath" : "utTrstInstm.fundShreClsNameSecLang",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "siFundCatCde",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "siFundCatCde",
+          "jsonPath" : "utTrstInstm.siFundCatCde",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "paymentSchedule",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "paymentSchedule",
+          "jsonPath" : "eqtyLinkInvst.paymentSchedule[*]",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "spCoupnPymtCde",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "spCoupnPymtCde",
+          "jsonPath" : "eqtyLinkInvst.spCoupnPymtCde",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "exerPrcPct",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "exerPrcPct",
+          "jsonPath" : "eqtyLinkInvst.exerPrcPct",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "knockInPrcPct",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "knockInPrcPct",
+          "jsonPath" : "eqtyLinkInvst.knockInPrcPct",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "autoCallTrigPrcPct",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "autoCallTrigPrcPct",
+          "jsonPath" : "eqtyLinkInvst.autoCallTrigPrcPct",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "floorLvlPct",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "floorLvlPct",
+          "jsonPath" : "eqtyLinkInvst.floorLvlPct",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "fixCashDivRt",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "fixCashDivRt",
+          "jsonPath" : "eqtyLinkInvst.fixCashDivRt",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "dayOutCashDivRt",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "dayOutCashDivRt",
+          "jsonPath" : "eqtyLinkInvst.dayOutCashDivRt",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "dayInCashDivRt",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "dayInCashDivRt",
+          "jsonPath" : "eqtyLinkInvst.dayInCashDivRt",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "initialSpotRate",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "initialSpotRate",
+          "jsonPath" : "strucInvstDepst.initialSpotRate",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "tradeDt",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "tradeDt",
+          "jsonPath" : "strucInvstDepst.tradeDt",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Date"
+        },
+        {
+          "logicalKey" : "strucInvstDepst.valnDt",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "valnDt",
+          "jsonPath" : "strucInvstDepst.valnDt",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Date"
+        },
+        {
+          "logicalKey" : "targetTrigRate",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "targetTrigRate",
+          "jsonPath" : "strucInvstDepst.targetTrigRate",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "maxRedmpRate",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "maxRedmpRate",
+          "jsonPath" : "strucInvstDepst.maxRedmpRate",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "minRedmpRate",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "minRedmpRate",
+          "jsonPath" : "strucInvstDepst.minRedmpRate",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "execDt",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "execDt",
+          "jsonPath" : "strucInvstDepst.execDt",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Date"
+        },
+        {
+          "logicalKey" : "knockInDate",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "knockInDate",
+          "jsonPath" : "eqtyLinkInvst.knockInDate",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Timestamp",
+          "params" : {
+            "timeZone" : "Asia/Shanghai"
+          }
+        },
+        {
+          "logicalKey" : "knockInStatus",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "knockInStatus",
+          "jsonPath" : "eqtyLinkInvst.knockInStatus",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "undlIndexCde",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "undlIndexCde",
+          "jsonPath" : "utTrstInstm.undlIndexCde",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "undlIndexName",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "undlIndexName",
+          "jsonPath" : "utTrstInstm.undlIndexName",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "undlIndexPllName",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "undlIndexPllName",
+          "jsonPath" : "utTrstInstm.undlIndexPllName",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "undlIndexSllName",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "undlIndexSllName",
+          "jsonPath" : "utTrstInstm.undlIndexSllName",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "popularRankNum",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "popularRankNum",
+          "jsonPath" : "utTrstInstm.popularRankNum",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Integer"
+        },
+        {
+          "logicalKey" : "barrierPrcPct",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "barrierPrcPct",
+          "jsonPath" : "eqtyLinkInvst.barrierPrcPct",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Decimal"
+        },
+        {
+          "logicalKey" : "bondIndusGrp",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "bondIndusGrp",
+          "jsonPath" : "debtInstm.bondIndusGrp",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "prodSubtpCdeCat",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "prodSubtpCdeCat",
+          "jsonPath" : "debtInstm.prodSubtpCdeCat",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "cmplxProdInd",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "cmplxProdInd",
+          "jsonPath" : "cmplxProdInd",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "jadeBondProdInd",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "jadeBondProdInd",
+          "jsonPath" : "debtInstm.jadeBondProdInd",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "newlyIssBondInd",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "newlyIssBondInd",
+          "jsonPath" : "debtInstm.newlyIssBondInd",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "cmbProdInd",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "cmbProdInd",
+          "jsonPath" : "eqtyLinkInvst.cmbProdInd",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "cutofftm",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "cutofftm",
+          "jsonPath" : "strucInvstDepst.cutofftm",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Timestamp"
+        },
+        {
+          "logicalKey" : "appCde",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "appCde",
+          "jsonPath" : "strucInvstDepst.appCde",
+          "interestedGroups" : [
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        },
+        {
+          "logicalKey" : "cmbPIBondInd",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "cmbPIBondInd",
+          "jsonPath" : "debtInstm.cmbPIBondInd",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        },
+        {
+          "logicalKey" : "cmbOnlyInd",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "cmbOnlyInd",
+          "jsonPath" : "debtInstm.cmbOnlyInd",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "Char"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "PROD_USER_DEFIN_FIELD",
+      "entityLevelSupport" : "Y",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "columns" : [
+        {
+          "logicalKey" : "udf14",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "udf14",
+          "jsonPath" : "utTrstInstm.rstFundInd",
+          "interestedGroups" : [
+            "product"
+          ]
+        },
+        {
+          "logicalKey" : "udf15",
+          "columnName" : "FIELD_CDE",
+          "fieldCde" : "udf15",
+          "jsonPath" : "insSubCat",
+          "interestedGroups" : [
+            "product"
+          ]
+        },
+        {
+          "logicalKey" : "prodUserDefinFieldCtry",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "prodUserDefinFieldCtry",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "fieldCde",
+          "columnName" : "FIELD_CDE",
+          "jsonPath" : "fieldCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "fieldTypeCde",
+          "columnName" : "FIELD_TYPE_CDE",
+          "jsonPath" : "fieldTypeCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "fieldValueText",
+          "columnName" : "FIELD_VALUE_TEXT",
+          "jsonPath" : "fieldValueText",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prodUserDefinFieldGroup",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "prodUserDefinFieldGroup",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "prodUserDefinFieldProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodUserDefinFieldProdId",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "STOCK_INSTM",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID_STOCK_INSTM",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "stockInstm",
+      "columns" : [
+        {
+          "logicalKey" : "ctryProdRegisCde",
+          "columnName" : "CTRY_PROD_REGIS_CDE",
+          "jsonPath" : "ctryProdRegisCde",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "secInvstMipIncrmMinAmt",
+          "columnName" : "INVST_MIP_INCRM_MIN_AMT",
+          "jsonPath" : "invstMipIncrmMinAmt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "secInvstMipMinAmt",
+          "columnName" : "INVST_MIP_MIN_AMT",
+          "jsonPath" : "invstMipMinAmt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "mktProdTrdCde",
+          "columnName" : "MKT_PROD_TRD_CDE",
+          "jsonPath" : "mktProdTrdCde",
+          "interestedGroups" : [
+            "ghssProduct",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "poolProdInd",
+          "columnName" : "POOL_PROD_IND",
+          "jsonPath" : "poolProdInd",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "secBodLotQtyCnt",
+          "columnName" : "PROD_BOD_LOT_QTY_CNT",
+          "jsonPath" : "prodBodLotQtyCnt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "secProdId",
+          "columnName" : "PROD_ID_STOCK_INSTM",
+          "jsonPath" : "prodIdStockInstm",
+          "interestedGroups" : [
+            "ghssProduct",
+            "idsbsProduct",
+            "blackRockBatch",
+            "apexaProduct",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodIssQtyTtlCnt",
+          "columnName" : "PROD_ISS_QTY_TTL_CNT",
+          "jsonPath" : "prodIssQtyTtlCnt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodMaxForgnInvstrTtlPct",
+          "columnName" : "PROD_MAX_FORGN_INVSTR_TTL_PCT",
+          "jsonPath" : "prodMaxForgnInvstrTtlPct",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodMaxIndvForgnInvstrPct",
+          "columnName" : "PROD_MAX_INDV_FORGN_INVSTR_PCT",
+          "jsonPath" : "prodMaxIndvForgnInvstrPct",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodMaxIndvOwnrPct",
+          "columnName" : "PROD_MAX_INDV_OWNR_PCT",
+          "jsonPath" : "prodMaxIndvOwnrPct",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "scripOnlyProdInd",
+          "columnName" : "SCRIP_ONLY_PROD_IND",
+          "jsonPath" : "scripOnlyProdInd",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "secSuptMipInd",
+          "columnName" : "SUPT_MIP_IND",
+          "jsonPath" : "suptMipInd",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "suptProdSpltInd",
+          "columnName" : "SUPT_PROD_SPLT_IND",
+          "jsonPath" : "suptProdSpltInd",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "STRUC_INVST_DEPST",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID_STRUC_INVST_DEPST",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "strucInvstDepst",
+      "columns" : [
+        {
+          "logicalKey" : "sid_ccyLinkDepstCde",
+          "columnName" : "CCY_LINK_DEPST_CDE",
+          "jsonPath" : "ccyLinkDepstCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "strucInvstDepstProdId",
+          "columnName" : "PROD_ID_STRUC_INVST_DEPST",
+          "jsonPath" : "prodIdStrucInvstDepst",
+          "interestedGroups" : [
+            "product",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "yieldAnnlMinPct",
+          "columnName" : "YIELD_ANNL_MIN_PCT",
+          "jsonPath" : "yieldAnnlMinPct",
+          "interestedGroups" : [
+            "product",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "yieldAnnlPotenPct",
+          "columnName" : "YIELD_ANNL_POTEN_PCT",
+          "jsonPath" : "yieldAnnlPotenPct",
+          "interestedGroups" : [
+            "product",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodExtnlCde",
+          "columnName" : "PROD_EXTNL_CDE",
+          "jsonPath" : "prodExtnlCde",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "prcEarlyRdmPct",
+          "columnName" : "PRC_EARLY_RDM_PCT",
+          "jsonPath" : "prcEarlyRdmPct",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : ""
+        },
+        {
+          "logicalKey" : "allowEarlyRdmInd",
+          "columnName" : "ALLOW_EARLY_RDM_IND",
+          "jsonPath" : "allowEarlyRdmInd",
+          "interestedGroups" : [
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "sidLaunchInd",
+          "columnName" : "LNCH_PROD_IND",
+          "jsonPath" : "lnchProdInd",
+          "interestedGroups" : [
+            "blackRockBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "UT_TRST_INSTM",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID_UT_TRST_INSTM",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "utTrstInstm",
+      "columns" : [
+        {
+          "logicalKey" : "chrgInitSalesPct",
+          "columnName" : "CHRG_INIT_SALES_PCT",
+          "jsonPath" : "chrgInitSalesPct",
+          "interestedGroups" : [
+            "ghssProduct",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "dscntMaxPct",
+          "columnName" : "DSCNT_MAX_PCT",
+          "jsonPath" : "dscntMaxPct",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "fundClassCde",
+          "columnName" : "FUND_CLASS_CDE",
+          "jsonPath" : "fundClassCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "fundHouseCde",
+          "columnName" : "FUND_HOUSE_CDE",
+          "jsonPath" : "fundHouseCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "fundMipRtainMinAmt",
+          "columnName" : "FUND_MIP_RTAIN_MIN_AMT",
+          "jsonPath" : "fundMipRtainMinAmt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "fundRtainMinAmt",
+          "columnName" : "FUND_RTAIN_MIN_AMT",
+          "jsonPath" : "fundRtainMinAmt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "incmHandlOptCde",
+          "columnName" : "INCM_HANDL_OPT_CDE",
+          "jsonPath" : "incmHandlOptCde",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "insuLinkUtTrstInd",
+          "columnName" : "INSU_LINK_UT_TRST_IND",
+          "jsonPath" : "insuLinkUtTrstInd",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "utInvstIncrmMinAmt",
+          "columnName" : "INVST_INCRM_MIN_AMT",
+          "jsonPath" : "invstIncrmMinAmt",
+          "interestedGroups" : [
+            "ghssProduct",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "utInvstMipIncrmMinAmt",
+          "columnName" : "INVST_MIP_INCRM_MIN_AMT",
+          "jsonPath" : "invstMipIncrmMinAmt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "utInvstMipMinAmt",
+          "columnName" : "INVST_MIP_MIN_AMT",
+          "jsonPath" : "invstMipMinAmt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "offerEndDtTm",
+          "columnName" : "OFFER_END_DT_TM",
+          "jsonPath" : "offerEndDtTm",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "offerStartDtTm",
+          "columnName" : "OFFER_START_DT_TM",
+          "jsonPath" : "offerStartDtTm",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "payCashDivInd",
+          "columnName" : "PAY_CASH_DIV_IND",
+          "jsonPath" : "payCashDivInd",
+          "interestedGroups" : [
+            "ghssProduct",
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "utTrstInstmProdId",
+          "columnName" : "PROD_ID_UT_TRST_INSTM",
+          "jsonPath" : "prodIdUtTrstInstm",
+          "interestedGroups" : [
+            "product",
+            "ghssProduct",
+            "mdsProduct",
+            "idsbsProductCat",
+            "blackRockBatch",
+            "gcmBatch"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "prodShoreLocCde",
+          "columnName" : "PROD_SHORE_LOC_CDE",
+          "jsonPath" : "prodShoreLocCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        },
+        {
+          "logicalKey" : "rdmMinAmt",
+          "columnName" : "RDM_MIN_AMT",
+          "jsonPath" : "rdmMinAmt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "rdmMipMinAmt",
+          "columnName" : "RDM_MIP_MIN_AMT",
+          "jsonPath" : "rdmMipMinAmt",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "schemChrgCde",
+          "columnName" : "SCHEM_CHRG_CDE",
+          "jsonPath" : "schemChrgCde",
+          "interestedGroups" : [
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "spclFundInd",
+          "columnName" : "SPCL_FUND_IND",
+          "jsonPath" : "spclFundInd",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "utSuptMipInd",
+          "columnName" : "SUPT_MIP_IND",
+          "jsonPath" : "suptMipInd",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "utMipRtainMinNum",
+          "columnName" : "UT_MIP_RTAIN_MIN_NUM",
+          "jsonPath" : "utMipRtainMinNum",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "utRtainMinNum",
+          "columnName" : "UT_RTAIN_MIN_NUM",
+          "jsonPath" : "utRtainMinNum",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "chrgFundSwPct",
+          "columnName" : "CHRG_FUND_SW_PCT",
+          "jsonPath" : "chrgFundSwPct",
+          "interestedGroups" : [
+            "ghssProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "amcmInd",
+          "columnName" : "AMCM_IND",
+          "jsonPath" : "amcmInd",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        },
+        {
+          "logicalKey" : "dealNextDt",
+          "columnName" : "DEAL_NEXT_DT",
+          "jsonPath" : "dealNextDt",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "DATE"
+        },
+        {
+          "logicalKey" : "fundSwInMinAmt",
+          "columnName" : "FUND_SW_IN_MIN_AMT",
+          "jsonPath" : "fundSwInMinAmt",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "scribCtoffNextDtTm",
+          "columnName" : "SCRIB_CTOFF_NEXT_DT_TM",
+          "jsonPath" : "scribCtoffNextDtTm",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        },
+        {
+          "logicalKey" : "rdmCtoffNextDtTm",
+          "columnName" : "RDM_CTOFF_NEXT_DT_TM",
+          "jsonPath" : "rdmCtoffNextDtTm",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "TB_MPF_INSTM",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "mpfInstm",
+      "columns" : [
+        {
+          "logicalKey" : "disIndc",
+          "columnName" : "DIS_INDC",
+          "jsonPath" : "disIndc",
+          "interestedGroups" : [
+            "mpfProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "CHAR"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "UT_TRST_INSTM_SW",
+      "entityLevelSupport" : "N",
+      "sourceColumn" : "PROD_ID_UT_TRST_INSTM",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "utTrstInstm.sw",
+      "columns" : [
+        {
+          "logicalKey" : "prodIdUtTrstInstm",
+          "columnName" : "PROD_ID_UT_TRST_INSTM",
+          "jsonPath" : "prodIdUtTrstInstm",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "NUMBER"
+        },
+        {
+          "logicalKey" : "fundUnswCde",
+          "columnName" : "FUND_UNSW_CDE",
+          "jsonPath" : "fundUnswCde",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "VARCHAR2"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "TB_CHANL_ATTR",
+      "entityLevelSupport" : "Y",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "chanlAttr",
+      "columns" : [
+        {
+          "logicalKey" : "chanlProdId",
+          "columnName" : "PROD_ID",
+          "jsonPath" : "prodId",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N"
+        },
+        {
+          "logicalKey" : "chanlCtry",
+          "columnName" : "CTRY_REC_CDE",
+          "jsonPath" : "ctryRecCde",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N"
+        },
+        {
+          "logicalKey" : "chanlGrp",
+          "columnName" : "GRP_MEMBR_REC_CDE",
+          "jsonPath" : "grpMembrRecCde",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N"
+        },
+        {
+          "logicalKey" : "chanlChanlCde",
+          "columnName" : "CHANL_CDE",
+          "jsonPath" : "chanlCde",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N"
+        },
+        {
+          "logicalKey" : "chanlFieldCde",
+          "columnName" : "FIELD_CDE",
+          "jsonPath" : "fieldCde",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N"
+        },
+        {
+          "logicalKey" : "chanlFieldValue",
+          "columnName" : "FIELD_CHAR_VALUE_TEXT",
+          "jsonPath" : "fieldCharValueText",
+          "interestedGroups" : [
+            "mdsProduct"
+          ],
+          "skipUpdateCheckIndicator" : "N"
+        }
+      ]
+    },
+    {
+      "sourceTable" : "ESG",
+      "entityLevelSupport" : "Y",
+      "sourceColumn" : "PROD_ID",
+      "referenceTable" : "PROD",
+      "referenceColumn" : "PROD_ID",
+      "productLevelSupport" : "Y",
+      "jsonPath" : "esg",
+      "columns" : [
+        {
+          "logicalKey" : "esgTheme",
+          "columnName" : "ESG_THEME",
+          "fieldCde" : "esgTheme",
+          "jsonPath" : "esgTheme",
+          "interestedGroups" : [
+            "apexaProduct",
+            "ghssProduct",
+            "mdsProduct",
+            "product"
+          ],
+          "skipUpdateCheckIndicator" : "N",
+          "fieldType" : "String"
+        }
+      ]
+    }
+  ],
+  "schema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"title\": \"PW0 Table Columns Mapping Schema\",\n  \"description\": \"for table-columns-mapping.yaml validation\",\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"sourceTable\": {\n        \"description\": \"the source table name which to be export\",\n        \"type\": \"string\"\n      },\n      \"entityLevelSupport\": {\n        \"description\": \"If the table record has ctryRecCde and grpMembrRecCde field, put Y\",\n        \"type\": \"string\"\n      },\n      \"sourceColumn\": {\n        \"description\": \"The FK column in the source table\",\n        \"type\": \"string\"\n      },\n      \"referenceTable\": {\n        \"description\": \"The master table name\",\n        \"type\": \"string\"\n      },\n      \"referenceColumn\": {\n        \"description\": \"PK of the master table\",\n        \"type\": \"string\"\n      },\n      \"productLevelSupport\": {\n        \"description\": \"In case the table has PROD_ID field, put Y\",\n        \"type\": \"string\"\n      },\n      \"jsonPath\": {\n        \"description\": \"json path of the table in the product document\",\n        \"type\": \"string\"\n      },\n      \"columns\": {\n        \"description\": \"Columns to be exported\",\n        \"type\": \"array\",\n        \"items\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"logicalKey\": {\n              \"description\": \"A logical name of the field, should be unique globally?\",\n              \"type\": \"string\"\n            },\n            \"columnName\": {\n              \"description\": \"Column name in the table\",\n              \"type\": \"string\"\n            },\n            \"jsonPath\": {\n              \"description\": \"json path of the field in the product document, without parent\",\n              \"type\": \"string\"\n            },\n            \"skipUpdateCheckIndicator\": {\n              \"description\": \"Skip update check indicator, Y/N\",\n              \"type\": \"string\"\n            },\n            \"fieldType\": {\n              \"description\": \"Data type of the field\",\n              \"type\": \"string\"\n            },\n            \"interestedGroups\": {\n              \"description\": \"Group names which interested in this field. if a group is not listed, the field won't be exported for the group.\",\n              \"type\": \"array\",\n              \"items\": {\n                \"type\": \"string\"\n              }\n            },\n            \"params\": {\n              \"type\": \"object\"\n            }\n          },\n          \"required\": [\n            \"logicalKey\",\n            \"columnName\",\n            \"jsonPath\",\n            \"interestedGroups\"\n          ]\n        }\n      },\n      \"params\": {\n        \"description\": \"Extra parameters\",\n        \"type\": \"object\"\n      }\n    },\n    \"required\": [\n      \"sourceTable\",\n      \"entityLevelSupport\",\n      \"productLevelSupport\",\n      \"columns\"\n    ],\n    \"additionalProperties\": false\n  }\n}",
+  "lastUpdateTime" : ISODate("2023-08-10T10:30:55.780Z")
+}

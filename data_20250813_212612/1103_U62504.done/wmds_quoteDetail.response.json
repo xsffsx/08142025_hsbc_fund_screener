@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_quoteDetail",
+  "product_code": "U62504",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:31:22.712673",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/quoteDetail?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62504%22%2C%22prodCdeAltClassCde%22%3A%22M%22%2C%22delay%22%3Atrue%2C%22entityTimezone%22%3A%22Asia%2FHong_Kong%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "a1ffa514-b9c7-4b9a-8482-a1503239bb86:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "1qrbEc6m0fa3X20Y7XdTHcxTwr2hexfXtyNd5R6dgRcl6VBeSLEM_w==",
+        "x-hsbc-request-correlation-id": "3b116c01-e6f7-49ca-918d-fb2e412bc7c4",
+        "date": "Wed, 13 Aug 2025 13:31:22 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "18",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 a9f2009d5c1905b42b9c7cd7c9d409f4.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "1253",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"requestType\":null,\"remainingQuote\":null,\"totalQuote\":null,\"indexQuotes\":null,\"bidAskQuotes\":null,\"priceQuote\":{\"productStatus\":null,\"ric\":null,\"symbol\":\"U62504\",\"market\":\"HK\",\"productType\":\"UT\",\"productSubTypeCode\":\"CF\",\"prodCdeAltClassCde\":null,\"quoteIndicator\":true,\"priceQuote\":15.55,\"currency\":\"USD\",\"companyName\":\"JPM GLOBAL NATURAL RESOURCES A (ACCUMULATION-USD)\",\"securityDescription\":null,\"changeAmount\":0.07,\"changePercent\":0.4522,\"bidPrice\":15.47,\"bidPriceDate\":\"2025-08-12\",\"bidSize\":null,\"askPrice\":16.33,\"askSize\":null,\"dayRangeLow\":null,\"dayRangeHigh\":null,\"tradingVolume\":null,\"openPrice\":null,\"yearLowPrice\":null,\"yearHighPrice\":null,\"averageVolume\":null,\"peRatio\":null,\"marketCap\":null,\"sharesOutstanding\":null,\"beta\":null,\"previousClosePrice\":null,\"dividend\":null,\"dividendYield\":0,\"exDividendDate\":null,\"boardLot\":null,\"casEligibleFlag\":null,\"status\":null,\"historyCloseDate\":null,\"turnOver\":null,\"marketClosed\":null,\"nominalPriceType\":null,\"spreadBid\":null,\"spreadAsk\":null,\"eps\":null,\"iep\":null,\"iev\":null,\"turnoverAmount\":null,\"turnoverIncludeAmount\":null,\"quoteSector\":null,\"quoteIndustry\":null,\"quoteExchange\":null,\"quote1MPercChange\":null,\"quote3MPercChange\":null,\"quote6MPercChange\":null,\"quote12MPercChange\":null,\"exchangeTimezone\":null,\"exchangeUpdatedTime\":\"2025-08-12\",\"unsignedAgreementId\":null,\"quoteVMA50D\":null,\"prodShoreLocCde\":null,\"allowSellMipProdInd\":\"N\",\"upperTradingLimit\":null,\"lowerTradingLimit\":null,\"riskAlert\":null,\"riskRating\":null,\"riskLvlCde\":\"5\",\"option\":null,\"bond\":null,\"interestRate\":null,\"commodity\":null,\"performanceId\":\"0P00006PVR\",\"tradableCurrency\":\"USD\",\"agreementSignStatus\":null,\"agreementId\":null,\"inDaylightTime\":null,\"tradeUnits\":null,\"distributionFrequency\":null,\"topPerformersIndicator\":null,\"topSellProdIndex\":\"N\",\"categoryLevel1Code\":\"SPEC\",\"categoryLevel1Name\":\"Specialties\",\"allowBuy\":\"N\",\"allowSell\":\"Y\",\"piFundInd\":null,\"deAuthFundInd\":null,\"calendarReturns\":{\"items\":[{\"year\":2024,\"annualCalendarYearReturn\":-6.81981},{\"year\":2023,\"annualCalendarYearReturn\":1.08853},{\"year\":2022,\"annualCalendarYearReturn\":17.37649},{\"year\":2021,\"annualCalendarYearReturn\":20.90628},{\"year\":2020,\"annualCalendarYearReturn\":1.67539}],\"monthEndDate\":\"2025-07-31\"},\"cumulativeReturns\":{\"items\":[{\"period\":\"YTD\",\"trailingTotalReturn\":15.94761,\"dailyPerformanceNAV\":19.79969},{\"period\":\"1M\",\"trailingTotalReturn\":1.00671,\"dailyPerformanceNAV\":1.96721},{\"period\":\"3M\",\"trailingTotalReturn\":9.45455,\"dailyPerformanceNAV\":9.58421},{\"period\":\"6M\",\"trailingTotalReturn\":9.93426,\"dailyPerformanceNAV\":10.36196},{\"period\":\"1Y\",\"trailingTotalReturn\":5.3184,\"dailyPerformanceNAV\":12.11247},{\"period\":\"3Y\",\"trailingTotalReturn\":6.61172,\"dailyPerformanceNAV\":6.61899},{\"period\":\"5Y\",\"trailingTotalReturn\":12.42386,\"dailyPerformanceNAV\":12.36787},{\"period\":\"10Y\",\"trailingTotalReturn\":8.44538,\"dailyPerformanceNAV\":8.76791}],\"monthEndDate\":\"2025-07-31\",\"dayEndDate\":\"2025-08-12\"},\"launchDate\":\"2012-03-29\"},\"entityUpdatedTime\":\"2025-08-13T21:31:22.000+08:00\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62504\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"J2504\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62504\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0266512127\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00006PVR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047618\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047618\"}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

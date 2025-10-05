@@ -1,0 +1,5 @@
+org.springframework.context.ApplicationListener=\
+  com.dummy.wpb.product.framework.EnvironmentDecryptApplicationInitializer
+
+org.springframework.boot.env.EnvironmentPostProcessor=\
+  com.dummy.wpb.product.framework.ExcludeMongoAutoConfigEnvPostProcessor

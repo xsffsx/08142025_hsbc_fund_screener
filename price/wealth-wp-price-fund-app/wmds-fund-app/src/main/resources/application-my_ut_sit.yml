@@ -1,0 +1,190 @@
+---
+spring: 
+  application: 
+    name: MY_HBMB-FUND-PROVIDER
+
+app: 
+  supportSites: Default,MY_HBMB
+      
+#############properties file convertor to yml ######################  
+#dataSourceConfiguration
+hibernate: 
+  db: 
+    dataSourceConfigMap: 
+      MY_HBMB: 
+        databaseName: ORACLE
+        user: MDSMYTA1_APPUSER
+        password: MDSMYTA1_APPUSER.123
+        url: jdbc:oracle:thin:@(DESCRIPTION_LIST=(LOAD_BALANCE=OFF)(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=hkg3pl0038n3-scan.p2g.netd.hk.hhhh)(PORT=2000))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=dwcs2a.hk.hhhh))))
+
+#dashboard
+dashboardkey: 
+  keystoreFile: /site/my_ut/test/dashboard/dashboard_keystore.dat 
+  passwordKeystoreFile: /site/my_ut/test/dashboard/dashboard_keystore_password.dat
+  nitialisationVector: 12,34,56,78,90,87,65,43
+  version: 1.0.0
+  userid: y/gWLDZIZHL8aiQRugSnNg==
+  password: NQ+rGm2UV3WYv5gHmb0HDGoy4yuP3GEj
+#mstar url
+mstar: 
+  conn: 
+    retryTimes: 1
+    # MorningStar Profile for Access Code Generation 
+    accesscode: 
+      accountCode: hhhh000001
+      accountPassword: fy+7CubC0kU=
+      days: 90d
+    #MorningStar Profile to retrieve Session Id
+    instid: hhhh
+    instuid: hhhh2_USER001
+    email: hhhh2.QSAPIDEF@morningstar.com
+    group: PROF
+    #MorningStar Services URL
+    #Access Code Related
+    url: 
+      accesscodeCreation: https://api.morningstar.com/v2/service/account/CreateAccesscode
+      accesscodeDeletion: https://api.morningstar.com/v2/service/account/DeleteAccesscode
+      accesscodeVerification: https://api.morningstar.com/v2/service/mf/SearchMStarID
+      #Services URL
+      quoteholdings: https://api.morningstar.com/v2/service/mf/j5a71w9eq8byhxr4   
+      fundcompare: https://api.morningstar.com/v2/service/mf/j6nsh3l90d2bs6a6 
+      quoteperformance: https://api.morningstar.com/v2/service/mf/cgwrv4xrtx5bcr67
+      toptenholdings: https://api.morningstar.com/v2/service/mf/zxvpktjnovy1zj77
+      quotesummary: https://api.morningstar.com/v2/service/mf/twewz15u7n1hu0nl
+      redemptionfees: https://api.morningstar.com/v2/service/mf/zzmqvfz1j567bs96
+      mstarnewapi: http://uat.cn.morningstar.com/hhhhcn/Services/WebService.asmx/getOverviewData
+      assetallocation: https://api.morningstar.com/v2/service/mf/AssetAllocationBreakdownRecentPort
+      #Trailing Return Chart Service Related
+      trailingreturnchart: https://api.morningstar.com/service/mf/MonthlyRollingReturns
+      dayenddate: https://api.morningstar.com/v2/service/mf/x362zl1n1uxjluef
+      bestwrostreturn: https://api.morningstar.com/service/mf/BestWorstRollingReturns
+      #returnIndexChart: https://api.morningstar.com/service/mf/DailyReturnIndex
+      returnIndexChart: https://api.morningstar.com/service/mf/MonthReturn
+      fundList: https://api.morningstar.com/v2/service/mf/vlb1ftg01abvbrrx
+      performanceReturn: https://api.morningstar.com/v2/service/mf/gqthkiq8dnspf7cs
+      advanceChartNav: https://eultrcqa.morningstar.com/api/rest.svc/timeseries_price
+      advanceChartGrowth: https://eultrcqa.morningstar.com/api/rest.svc/timeseries_cumulativereturn
+      advanceChartToken: x7gotzru67
+#localeMapping 
+localeMapping: SG.en_US:0,CN.en_US:0,CN.zh_CN:1,CA.en_CA:0,CA.fr_CA:1,CA.zh_CA:2,GB.en_GB:0,HK.en_US:0,HK.zh_HK:1,HK.zh_CN:2 
+#job.start.day.time
+job: 
+  start: 
+    day:
+      time: 10
+#holdingsReturnList
+holdingsReturnList: 5
+#quickview
+quickview: 
+  result: 
+    limit: 10
+  default: 
+    timescale: 1Y
+#top.bottom.category.return.count
+top: 
+  bottom: 
+    category: 
+      return: 
+        count: 5
+#assetAlloc.values
+assetAlloc: 
+  values: Bond,Cash,Other,Preferred,Stock
+#newfunds
+newfunds: 
+  return: 
+    time: 180D
+#Site Locale feature
+siteFeature: 
+  prop: 
+    DEFAULT: 
+      telephoneNo: companyPhone
+      totalReturns: monthly
+      topPerfmList: 5
+      requestHeader: 
+        x-hhhh-channel-id: OHI,OHB,OHCC,MOB
+        x-hhhh-app-code: SRBP,PAS,WD
+      predictiveSearch:
+        switchOutFund: switchableGroup
+        unSwitchOutFund: unSwitchableList
+    MY_HBMB: 
+      timeZone: Asia/Hong_Kong
+      totalReturns: daily
+      currency: USD
+        
+#############predsrch Configuration######################
+multi-predsrch:
+  url: http://mds-asp1-sit.apps.cf.skm-drn-01.cloud.hk.hhhh/wmds-war/wealth/api/v1/market-data/product/predictive-search
+  internal-url: http://mds-asp1-sit.apps.cf.skm-drn-01.cloud.hk.hhhh/wmds-war/wealth/api/v1/market-data/product/internal-search
+  body-prefix: body=
+  request-params:
+    assetClasses: UT
+    searchFields: symbol
+    sortingFields: symbol
+    #isPreciseSrch: true
+
+#############[mstarConnManager]common Beans Configuration######################     
+common:  
+  beans: 
+    maxTotalConn: 400
+    maxRouteConn: 350
+    connectTimeout: 60000
+    readTimeout: 60000
+    proxyHost: intpxy6.hk.hhhh 
+    proxyPort: 18084
+    retryCount: 2 
+    sendMethod: get  
+    enableGzip: true
+    needProxy: true    
+ 
+#############webservice Configuration######################
+wsclient: 
+  beans: 
+    productDetailEndpointAddress: https://wpc-sg-my-sit-test1.apps.cf.skm-drn-01.cloud.hk.hhhh/wpcwebservice/WpcProductDetailByKeysEnquiryService
+    productListEndpointAddress: https://wpc-sg-my-sit-test1.apps.cf.skm-drn-01.cloud.hk.hhhh/wpcwebservice/ProductKeyListWithEligibilityCheckImplService
+    customProperties: 
+      com.sun.xml.internal.ws.request.timeout: 15000
+      com.sun.xml.internal.ws.connect.timeout: 15000
+    inbound: false
+wpcWebService: 
+  conn:  
+    wpcProductDetailByKeysEnquiry: 
+      attributeName: invstInitMinAmt,ccyInvstCde,ccyProdTradeCde,invstIncrmMinAmt,utRtainMinNumm,fundSwInMinAmt,invstMipincrmMinAmt,fundRtainMinAmt,fundSwInMinAmt,prodName,ccyProdCde
+#############e2e validation Configuration######################     
+com:
+  hhhh:
+    wmd:
+      itt:
+        security:
+          filter:
+            url-patterns: /wealth/*
+            digital:
+              enable: false
+              verify-date: true
+              certificates:
+              - certificate-source: ldap
+                ldap:
+                  provider: ldap://tkapdp2datdir00-2.hk.hhhh:1389/uid=SAAS_AP01_BRTB1.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=hk,dc=hhhh,dc=com
+                  username: uid=SAAS_AP01_BRTB1.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=hk,dc=hhhh,dc=com
+                  password: e2eAP01k
+                  timeout: 1000
+                  key-aliases: [E2E_TRUST_SAAS_AP01_BRTB1_ALIAS]
+              saml3-certificates:
+              - certificate-source: ldap
+                ldap:
+                  provider: ldap://tkapdp2datdir00-2.hk.hhhh:1389/uid=SAAS_AP01_BRTB1.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=hk,dc=hhhh,dc=com
+                  username: uid=SAAS_AP01_BRTB1.E2E_TRUST_PublicKey,ou=E2ETrustPublic,ou=GLOBAL_CONFIG,c=hk,dc=hhhh,dc=com
+                  password: e2eAP01k
+                  timeout: 1000
+            opensaml: 
+              validation: 
+                enable: false
+                certificates:
+                - certificate-source: keystore
+                  keystore:
+                    enable: true
+                    key-store-type: JKS
+                    key-store-path: site/my_ut/test/e2etrust/wealth-validation-keystore-asp.jks
+                    key-store-password: password
+                    key-alias: key-sha1-rsa
+                    key-password: password 
+                    

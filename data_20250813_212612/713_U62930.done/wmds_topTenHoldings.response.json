@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U62930",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:51:18.524889",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62930%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "aa95c2c7-bff1-48d3-895b-0b6c0c8dfd8b:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "HZ0v295oLRRh12r6XmtmkiqJT3iSOwwPeH1YBKWoSSjyCdU4nvIrRw==",
+        "x-hsbc-request-correlation-id": "73f84c34-0ed8-4fa5-8bbb-eb21dc3501bc",
+        "date": "Wed, 13 Aug 2025 13:51:17 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=31536000",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp1vl0430",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "24",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 dff94781894736c12dbb6eb4e456a898.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "615",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":null,\"productType\":\"C\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Deposit\",\"weighting\":68.11257,\"currency\":\"HKD\",\"marketValue\":16730000000},{\"market\":\"HK\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hong Kong Special Administrative Region of the People's Republic of China 0\",\"weighting\":4.07108,\"currency\":\"HKD\",\"marketValue\":999949600},{\"market\":\"HK\",\"productType\":\"GS\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Hong Kong Special Administrative Region of the People's Republic of China 0\",\"weighting\":3.25649,\"currency\":\"HKD\",\"marketValue\":799868536},{\"market\":null,\"productType\":\"C\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Current Account\",\"weighting\":3.24512,\"currency\":\"HKD\",\"marketValue\":-797074777},{\"market\":\"NZ\",\"productType\":\"CP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"New Zealand Local Government Funding Agency Ltd 0%\",\"weighting\":2.84584,\"currency\":\"HKD\",\"marketValue\":699003543},{\"market\":\"CN\",\"productType\":\"CD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Industrial & Commercial Bank of China Ltd. Sydney Branch 0%\",\"weighting\":2.03283,\"currency\":\"HKD\",\"marketValue\":499310620},{\"market\":\"KR\",\"productType\":\"CD\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"KB Kookmin Bank 0%\",\"weighting\":2.02832,\"currency\":\"HKD\",\"marketValue\":498201985},{\"market\":\"AU\",\"productType\":\"CP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Tasmanian Public Finance Corporation 0%\",\"weighting\":2.02713,\"currency\":\"HKD\",\"marketValue\":497909590},{\"market\":\"DE\",\"productType\":\"CP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Landeskreditbank Baden-Wuerttemberg Foerderbank 0%\",\"weighting\":2.01926,\"currency\":\"HKD\",\"marketValue\":495977215},{\"market\":\"AU\",\"productType\":\"CP\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Western Australian Treasury Corp. 0%\",\"weighting\":1.41896,\"currency\":\"HKD\",\"marketValue\":348527974}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

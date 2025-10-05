@@ -1,0 +1,22 @@
+# noinspection GraphQLUnresolvedReference
+query finDocByFilter($filter: JSON!, $sort: JSON, $limit: Int, $skip: Int) {
+    finDocByFilter(filter: $filter, sort: $sort, limit: $limit, skip: $skip) {
+        ctryRecCde
+        grpMembrRecCde
+        rsrcItemIdFinDoc
+        fileDocName
+        formtDocCde
+        langFinDocCde
+        urlFileServrText
+        docEffDtTm
+        docFinTypeCde
+        docFinCatCde
+        docFinCde
+        docRecvName
+        docServrStatCde
+        docStatCde
+        docSzNum
+        recCreatDtTm
+        recUpdtDtTm
+    }
+} 

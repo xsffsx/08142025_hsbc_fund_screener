@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63373",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T22:05:26.824244",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63373%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "d3c2f29c-c6e7-4cec-8449-a89e8986d914:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "krCxhooJnGcDmtyTTZIpD8E726T5yARYZVxjhPndoDtEq_gGsWk9mQ==",
+        "x-hsbc-request-correlation-id": "5fad8e7d-4a6f-4ce8-9415-4e0409487804",
+        "date": "Wed, 13 Aug 2025 14:05:26 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0256",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "51",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 bafb3fcfb450000b354db6fbbd3d2828.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "474",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"HSBC CIT - HSBC INDIA MULTI INCOME FUND (CLASS AM3O-EURH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-EURH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63375\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IMIOE\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63375\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000959863\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S4WL\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050727676\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50727676\"}]},{\"productName\":\"HSBC CIT - HSBC INDIA MULTI INCOME FUND (CLASS AM3O-CADH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-CADH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63374\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IMIOC\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63374\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000959855\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S4WK\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050727675\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50727675\"}]},{\"productName\":\"HSBC CIT - HSBC INDIA MULTI INCOME FUND (CLASS AM2-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63371\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IMIMU\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63371\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000959822\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S4WH\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050727673\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50727673\"}]},{\"productName\":\"HSBC CIT - HSBC INDIA MULTI INCOME FUND (CLASS AM2-HKD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM2-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63372\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IMIMH\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63372\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000959830\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S4WI\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050727672\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50727672\"}]},{\"productName\":\"HSBC CIT - HSBC INDIA MULTI INCOME FUND (CLASS AM3O-SGDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-SGDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63378\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IMIOS\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63378\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000959913\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S4WO\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050727679\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50727679\"}]},{\"productName\":\"HSBC CIT - HSBC INDIA MULTI INCOME FUND (CLASS AM3O-RMBH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-RMBH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63377\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IMIOR\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63377\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000959889\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S4WM\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050727678\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50727678\"}]},{\"productName\":\"HSBC CIT - HSBC INDIA MULTI INCOME FUND (CLASS AM3O-GBPH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS AM3O-GBPH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63376\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"IMIOG\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63376\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"HK0000959871\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001S4WN\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050727677\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50727677\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

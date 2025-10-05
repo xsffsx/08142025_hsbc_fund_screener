@@ -1,0 +1,22 @@
+mutation referenceDataBatchCreate($refData: [ReferenceDataInput!]!) {
+  referenceDataBatchCreate(referenceData: $refData) {
+    createdReferenceData {
+      ctryRecCde
+      grpMembrRecCde
+      cdvTypeCde
+      cdvCde
+    }
+    invalidReferenceData {
+      referData {
+        ctryRecCde
+        grpMembrRecCde
+        cdvTypeCde
+        cdvCde
+      }
+      errors {
+        code
+        message
+      }
+    }
+  }
+}

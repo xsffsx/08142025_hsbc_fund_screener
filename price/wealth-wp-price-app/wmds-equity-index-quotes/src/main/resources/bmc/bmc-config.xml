@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bmcEntitys>
+<bmcEntitys>
+	<!-- BMC file path -->
+	<bmcFilePath>/appvol/WLP85/{instanceName}/applog/patrol/keepalive/</bmcFilePath>
+	<!-- If generate BMC files -->
+	<printFiles>false</printFiles>
+	<!-- Get the bmcEntity by prefix + countryCode + groupMember -->
+	<bmcEntity prefix="Default" countryCode="" groupMember="">
+		<!-- In <exTimeDurationThrownPastSec> seconds, <exNumThrownPastSec> errors occurred, trigger <exCdeThrownPastSec> and <exMgsThrownPastSec> alert -->
+		<exTimeDurationThrownPastSec>600</exTimeDurationThrownPastSec>
+		<exNumThrownPastSec>20</exNumThrownPastSec>
+		<exCdeThrownPastSec>MDSEQTY00001Z</exCdeThrownPastSec>
+		<exMgsThrownPastSec>In 10 minutes, MDS Equity application threw 20 exceptions. Please investigate during working hours.</exMgsThrownPastSec>
+		<!-- When the error is accumulated to <exNumExceedLimit>, trigger <exCdeExceedLimit> and <exMgsExceedLimit> -->
+		<exNumExceedLimit>50</exNumExceedLimit>
+		<exCdeExceedLimit>MDSEQTY00002Z</exCdeExceedLimit>
+		<exMgsExceedLimit>After throwing this exception last time, MDS Equity application has accumulated a total of 50 exceptions. Please investigate during working hours.</exMgsExceedLimit>
+		<!-- status: 400 -->
+		<exceptionCounter exceptionName="" key="InvalidRequest">
+			<timeDuration>0</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEQTY40001Z</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter invalid request exception. Usually because the caller's request does not conform to the JSON format. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="SupportSite">
+			<timeDuration>0</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEQTY40002Z</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter unsupport site exception. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="NotEmpty">
+			<timeDuration>0</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEQTY40003Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request parameter should not be empty. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="NotNull">
+			<timeDuration>0</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEQTY40003Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request parameter should not be null. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="RegEx">
+			<timeDuration>0</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEQTY40004Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request parameter can't satisfy the regular expression. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="Min">
+			<timeDuration>0</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEQTY40005Z</bmcExCde>
+			<bmcExMsg>MDS Equity application request parameter can't satisfy minimum constraint. Please investigate with caller during working hours.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="HeaderFunctionIdInvalid">
+			<timeDuration>0</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEQTY40011Z</bmcExCde>
+			<bmcExMsg>Header FunctionId don't match the rules or can't be empty.</bmcExMsg>
+		</exceptionCounter>
+		<!-- status: 500 -->
+		<exceptionCounter exceptionName="" key="Undefined">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50001E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter undefined exception. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="AuthenticationEncryptionFailed">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50002E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter authentication encryption failed exception. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="AuthenticationDecryptionFailed">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50003E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter authentication decryption failed exception. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="DBUnknownError">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50004E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter database unknown error. Please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="IllegalConfiguration">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50011E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter illegal configuration exception. Usually because configuration is invalid. We don't except this error in a production environment, so please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="AppIllegalConfiguration">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50012E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter application illegal configuration exception. Usually because application configuration is invalid. We don't except this error in a production environment, so please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+
+		<exceptionCounter exceptionName="" key="PredSrchIllegalConfiguration">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50014E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter PredSrch illegal configuration exception. Usually because PredSrch configuration is invalid. We don't except this error in a production environment, so please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="IllegalInitialization">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50021E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter illegal initialization exception. This exception usually occurs when the project is launched. If this exception occurs during runtime, please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="AuthenticationIllegalInitialization">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50022E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter authentication illegal initialization exception. This exception usually occurs when the project is launched. If this exception occurs during runtime, please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="DBPersistFailed">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50023Z</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter DB relation exception. This exception usually occurs when the project is launched. If this exception occurs during runtime, please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<!-- status: 504 -->
+		<exceptionCounter exceptionName="" key="AccessVendorError">
+			<timeDuration>600</timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50401E</bmcExCde>
+			<bmcExMsg>MDS Equity application can't retrieve data from vendor. Usually because the remote service is not available. Please check the log immediately to analyze the root reason, then report to related vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="AccessPredSrchError">
+			<timeDuration>600</timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50402E</bmcExCde>
+			<bmcExMsg>MDS Equity application can't retrieve data from PredSrch vendor. Usually because the PredSrch service is not available. Please check the log immediately to analyze the root reason, then report to PredSrch vendor.</bmcExMsg>
+		</exceptionCounter>
+		<!-- status: 502 -->
+		<exceptionCounter exceptionName="" key="InvalidResponse">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50201E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter invalid response exception. Usually because the returned data does not meet our expectations. The reason for this exception should be request parameters are incorrect or remote service is not available. Please check the log immediately to analyze the root reason, then report to caller or relared vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="PredSrchInvalidResponse">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50202E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter invalid PredSrch response exception. Usually because PredSrch service is not available or requested products are not supported. Please check the log immediately to analyze the root reason, then report to PredSrch vendor or caller.</bmcExMsg>
+		</exceptionCounter>
+
+		<exceptionCounter exceptionName="" key="PredSrchEmptyResponse">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50204E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter empty content PredSrch response. Usually because client input invalid symbols. Please check the log to analyze the root reason, then report to PredSrch vendor or caller.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="CacheNoEIDFound">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50215Z</bmcExCde>
+			<bmcExMsg>No eID found from rbp cache</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="CacheBadRequest">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50216Z</bmcExCde>
+			<bmcExMsg>Cache Distribute Bad Request</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="CacheUncachedRecord">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50217Z</bmcExCde>
+			<bmcExMsg>Cache Distribute don't contains the key you sent</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="CacheInvalidHttpStatus">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50218Z</bmcExCde>
+			<bmcExMsg>Get response from the Cache Distribute encounter error</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="QuoteDetailOnlySupportOneProdAltNum">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSEQTY50220Z</bmcExCde>
+			<bmcExMsg>Quote Detail Only Support One ProdAltNum</bmcExMsg>
+		</exceptionCounter>
+		
+		<!-- etnet bmc error code -->
+		<exceptionCounter exceptionName="" key="EtnetIllegalConfiguration">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEETN00001E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter ETNet illegal configuration exception. Usually because ETNet configuration is invalid. We don't except this error in a production environment, so please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="AccessEtnetError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEETN00002E</bmcExCde>
+			<bmcExMsg>MDS Equity application can't retrieve data from ETNet vendor. Usually because the ETNet service is not available. Please check the log immediately to analyze the root reason, then report to ETNet vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="EtnetInvalidResponse">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEETN00003E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter invalid ETNet response exception. Usually because ETNet service is not available. Please check the log immediately to analyze the root reason, then report to ETNet vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="EtnetAuthenticationFail">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWETN00004Z</bmcExCde>
+			<bmcExMsg>ETNet return error code 1. ETNet authentication failed.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="EtnetInvalidToken">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWETN00005Z</bmcExCde>
+			<bmcExMsg>ETNet return error code 2. ETNet request invalid token.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="EtnetServerError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWETN00006Z</bmcExCde>
+			<bmcExMsg>ETNet return error code 3. ETNet server error.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="EtnetInvalidParam">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWETN00007Z</bmcExCde>
+			<bmcExMsg>ETNet return error code 4. ETNet Invalid param. Param id/locale is invalid.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="EtnetUndefinedError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEETN00099E</bmcExCde>
+			<bmcExMsg>Etnet undefined error</bmcExMsg>
+		</exceptionCounter>
+		<!-- etnet bmc error code -->
+		
+		<!-- labci bmc error code -->
+		<exceptionCounter exceptionName="" key="LabciIllegalConfiguration">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSELBC00001E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter Labci illegal configuration exception. Usually because Labci configuration is invalid. We don't except this error in a production environment, so please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="AccessLabciError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSELBC00002E</bmcExCde>
+			<bmcExMsg>MDS Equity application can't retrieve data from Labci vendor. Usually because the Labci service is not available. Please check the log immediately to analyze the root reason, then report to Labci vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="LabciInvalidResponse">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSELBC00003E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter invalid Labci response exception. Usually because Labci service is not available. Please check the log immediately to analyze the root reason, then report to Labci vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="LabciServerError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWLBC00004Z</bmcExCde>
+			<bmcExMsg>Labci return error code 01. Internal server error.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="LabciStockNotFound">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWLBC00005Z</bmcExCde>
+			<bmcExMsg>Labci return error code 02. Stock not found.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="LabciInvalidRequest">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWLBC00006Z</bmcExCde>
+			<bmcExMsg>Labci return error code 03. Invalid request received.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="LabciPortalInvalidToken">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWLBC00007Z</bmcExCde>
+			<bmcExMsg>Labci Portal return error code. Invalid token received.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="LabciPortalInvalidRequest">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWLBC00008Z</bmcExCde>
+			<bmcExMsg>Labci return error code. Invalid request received.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="LabciUndefinedError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSELBC00099E</bmcExCde>
+			<bmcExMsg>Labci undefined error</bmcExMsg>
+		</exceptionCounter>
+		<!-- labci bmc error code -->
+
+		<!-- Tris bmc error code -->
+		<exceptionCounter exceptionName="" key="TrisIllegalConfiguration">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSETRIS00001</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter Tris illegal configuration exception. Usually because Tris configuration is invalid. We don't except this error in a production environment, so please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="AccessTrisError">
+			<timeDuration>600</timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSETRIS00002</bmcExCde>
+			<bmcExMsg>MDS Equity application can't retrieve data from Tris vendor. Usually because the Tris service is not available. Please check the log immediately to analyze the root reason, then report to Tris vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="TrisInvaildToken">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSETRIS00003E</bmcExCde>
+			<bmcExMsg>Tris return error, Invaild token.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="TrisPermissDenied">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSETRIS00004E</bmcExCde>
+			<bmcExMsg>Tris return error, Failed to verify.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="TrisInvaildRequest">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSETRIS00005E</bmcExCde>
+			<bmcExMsg>Tris return error, Invalid input.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="TrisInvalidResponse">
+			<timeDuration></timeDuration>
+			<maxNum>1</maxNum>
+			<bmcExCde>MDSETRIS00006E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter invalid Tris response exception. Usually because Tris service is not available. Please check the log immediately to analyze the root reason, then report to Tris vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="TrisUndefinedError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSETRIS00099E</bmcExCde>
+			<bmcExMsg>Tris return error, Invalid input.</bmcExMsg>
+		</exceptionCounter>
+		<!-- Tris bmc error code -->
+		
+		<!-- midfs bmc error code -->
+		<exceptionCounter exceptionName="" key="MidfsIllegalConfiguration">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEMID00001E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter Midfs illegal configuration exception. Usually because Midfs configuration is invalid. We don't except this error in a production environment, so please check the log immediately to analyze the root reason.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="AccessMidfsError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEMID00002E</bmcExCde>
+			<bmcExMsg>MDS Equity application can't retrieve data from Midfs vendor. Usually because the Midfs service is not available. Please check the log immediately to analyze the root reason, then report to Midfs vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="MidfsInvalidResponse">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEMID00003E</bmcExCde>
+			<bmcExMsg>MDS Equity application encounter invalid Midfs response exception. Usually because Midfs service is not available. Please check the log immediately to analyze the root reason, then report to Midfs vendor.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="MidfsRequestProdAltNumMoreThan20">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWMID00004Z</bmcExCde>
+			<bmcExMsg>BMP Quotes Request ProdAltNum more than 20</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="MidfsInvalidRequest">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWMID00005Z</bmcExCde>
+			<bmcExMsg>Midfs return error code 01. Invalid request received.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="MidfsServerError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWMID00006Z</bmcExCde>
+			<bmcExMsg>Midfs return error code 02. Internal server error.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="MidfsStockNotFound">
+			<timeDuration></timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSWMID00007Z</bmcExCde>
+			<bmcExMsg>Midfs return error code 03. Stock not found.</bmcExMsg>
+		</exceptionCounter>
+		<exceptionCounter exceptionName="" key="MidfsUndefinedError">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEMID00099E</bmcExCde>
+			<bmcExMsg>Midfs undefined error</bmcExMsg>
+		</exceptionCounter>
+		<!-- midfs bmc error code -->
+		<exceptionCounter exceptionName="" key="DBActionFail">
+			<timeDuration>60</timeDuration>
+			<maxNum>10</maxNum>
+			<bmcExCde>MDSEDB00001E</bmcExCde>
+			<bmcExMsg>DB Action Fail.</bmcExMsg>
+		</exceptionCounter>
+	</bmcEntity>
+</bmcEntitys>

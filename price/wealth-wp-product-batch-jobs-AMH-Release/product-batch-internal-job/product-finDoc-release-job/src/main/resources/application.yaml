@@ -1,0 +1,51 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password:
+    #password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+  data:
+    mongodb:
+      host: "amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: 27017
+      database: WPC_AMH_DEV
+      username: WPCHKGLUA9_APPUSER
+      password:
+      #password: "{cipher}aa279e18a8d106e2860aec459ecc538ec0bda1dec541b663b9d367ec31b3711e5ad3af8461293ea3d7ae96f5d6f73510"
+      enable-replica: false
+  main:
+    web-application-type: none
+batch:
+  graphQLUrl: "https://product-graphql-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+
+finDoc:
+  pdf:
+    rej: "C:/dev/smart/findoc/pdf/rej"
+    aprv: "C:/dev/smart/findoc/pdf/aprv"
+    chk: "C:/dev/smart/findoc/pdf/chk"
+    done: "C:/dev/smart/findoc/pdf/done"
+  http:
+    pdf: ""
+  sysPath: "C:/dev/smart/findoc/pdf"
+  fsDataDir: "/hk_HFI_DATA"
+  maxNo:
+    PWS: 70
+  output:
+    path: "C:/dev/smart/outgoing/"
+  spoms:
+    ack: "C:/dev/smart/outgoing/HKHBAP/SPOMS"
+  S3:
+    bucketName: "wealth-dev-appcontent/wealth-platform-amh/v1/wpc/data/hk/invest/"
+    region: "eu-west-1"
+    endPointUrl: "https://bucket.vpce-0e83146b05ad4df52-1o03o9fz.s3.eu-west-1.vpce.amazonaws.com/"
+  Dflt:
+    FsUrl: ""
+
+CHMOD:
+  Script: "C:/sandbox/workspace/Smart/wealth-wp-product-batch-jobs/product-batch-script/common/chmod.sh"
+PWS_FTP:
+  Script: "C:/sandbox/workspace/Smart/wealth-wp-product-batch-jobs/product-batch-script/common/wpc_transfer_pws.sh"

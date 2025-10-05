@@ -1,0 +1,12 @@
+<html lang="en" th:remove="tag">
+<th:block th:if="${isFirst}">"DBU_DATA,1,[(${count})]"</th:block>
+<th:block th:each="product : ${documents}" th:if="${product.get('prices')?.size() > 0}">
+"[(${product.get('prodAltNumT')})],dummy_DATA,6,0,Minute,1,6"
+[TIMESTAMP],[OPEN],[HIGH],[LOW],[CLOSE],[VOLUME],[EDIT_MASK]
+<th:block th:each="price : ${product.get('prices')}">
+[(${#dates.format(price.get('prcEffDt'),'dd/MM/yyyy HH:mm:ss')})],[(${#doubles.stripTrailingZeros(price.get('prodNavPrcAmt'))})],[(${#doubles.stripTrailingZeros(price.get('prodNavPrcAmt'))})],[(${#doubles.stripTrailingZeros(price.get('prodNavPrcAmt'))})],[(${#doubles.stripTrailingZeros(price.get('prodNavPrcAmt'))})],----,E000000
+</th:block>
+${lineBreak}
+${lineBreak}
+</th:block>
+</html>

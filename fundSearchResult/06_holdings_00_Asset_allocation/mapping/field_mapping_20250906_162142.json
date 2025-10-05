@@ -1,0 +1,49 @@
+{
+  "Fund": {
+    "frontend_name": "Fund",
+    "frontend_description": "基金名称",
+    "api_path": "header.name",
+    "api_value": "BlackRock Asian Tiger Bond Fund (Class A2)",
+    "data_type": "string",
+    "example": "BlackRock Asian Tiger Bond Fund (Class A2)"
+  },
+  "Stock": {
+    "frontend_name": "Stock",
+    "frontend_description": "股票资产配置比例",
+    "api_path": "holdings.assetAlloc.assetAllocations[name=Stock].weighting",
+    "api_value": -0.22746,
+    "data_type": "percentage",
+    "example": "-0.23%"
+  },
+  "Bond": {
+    "frontend_name": "Bond",
+    "frontend_description": "债券资产配置比例",
+    "api_path": "holdings.assetAlloc.assetAllocations[name=Bond].weighting",
+    "api_value": 79.58465,
+    "data_type": "percentage",
+    "example": "79.58%"
+  },
+  "Cash": {
+    "frontend_name": "Cash",
+    "frontend_description": "现金资产配置比例",
+    "api_path": "holdings.assetAlloc.assetAllocations[name=Cash].weighting",
+    "api_value": 16.96025,
+    "data_type": "percentage",
+    "example": "16.96%"
+  },
+  "Others": {
+    "frontend_name": "Others",
+    "frontend_description": "其他资产配置比例 (通过计算得出: 100% - Stock% - Bond% - Cash%)",
+    "api_path": "calculated:100-Stock-Bond-Cash",
+    "api_value": 3.6825599999999987,
+    "data_type": "percentage",
+    "example": "3.68%",
+    "is_calculated": true,
+    "calculation_formula": "100% - Stock% - Bond% - Cash%",
+    "calculation_dependencies": [
+      "Stock",
+      "Bond",
+      "Cash"
+    ]
+  }
+}

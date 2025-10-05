@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62845",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:26:46.493600",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62845%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "8584f667-7116-4e5b-8c74-3a6c607fcf94:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "07oIVew-1dMh8KBtVRu0E0DOqHeAiw7PrlQTrbRweuzjbrJZjI-LGA==",
+        "x-hsbc-request-correlation-id": "71aba8d3-8f7b-497c-9e93-4175ef749f1e",
+        "date": "Wed, 13 Aug 2025 13:26:46 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0432",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "31",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 be8185e52ca0edbbdfda1ac2c66c1972.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "424",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"PIMCO GIS Income Fund (Class E-SGDH-Mdist-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-SGDH-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62849\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P2849\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62849\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00B9HH6X13\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000Y077\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050067390\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50067390\"}]},{\"productName\":\"PIMCO GIS Income Fund (Class E-GBPH-Mdist-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-GBPH-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62848\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P2848\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62848\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BF01VX72\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019W75\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050067389\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50067389\"}]},{\"productName\":\"PIMCO GIS Income Fund (Class E-AUDH-Mdist-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-AUDH-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62847\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P2847\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62847\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00BD8DFW88\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00019PXR\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050067388\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50067388\"}]},{\"productName\":\"PIMCO GIS Income Fund (Class E-EURH-Mdist-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-EURH-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62846\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P2846\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62846\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00B8N0MW85\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000X83O\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050067387\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50067387\"}]},{\"productName\":\"PIMCO GIS Income Fund (Class E-USD-Mdist-Cash)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS E-USD-MDIST-CASH\",\"prodStatCde\":\"C\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62844\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"P2844\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62844\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00B8K7V925\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000X83M\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050067385\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50067385\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

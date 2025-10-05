@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Compare products</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body v-bind:style="{cursor: selectedCursor}">
+<noscript>
+    <h2>Sorry! Your browser doesn't support Javascript</h2>
+</noscript>
+<div class="upload-container" id="app1">
+    <div class="upload-header">
+        <h2>Compare products</h2>
+    </div>
+    <div class="upload-content">
+        <div >
+            <h3>product1</h3>
+            <textarea rows="10" placeholder="please input product of JSON type "  v-model="product1" id="product1" class="textarea" required/></textarea>
+        </div>
+        <div >
+            <h3>product2</h3>
+            <textarea rows="10" placeholder="please input product of JSON type "  v-model="product2" id="product2" class="textarea" required></textarea>
+        </div>
+        <div >
+            <button v-on:click="compareJsonProduct" style="float: right" class="primary">compare</button>
+        </div>
+        <div class="secret-key">
+            <h3>result</h3>
+            <textarea rows="10" name="message" id="message" class="textarea" v-model="message"></textarea>
+            <pre id="errors" class="errors" v-if="errors">{{errors}}</pre>
+        </div>
+    </div>
+</div>
+<script src="js/vue.js"></script>
+<script src="js/axios.min.js"></script>
+<script>
+    axios.interceptors.request.use(
+        config => {
+            config.headers = {
+                'Content-Type': 'application/json;charset=UTF-8'
+            }
+            return config;
+        },
+        error => {
+            return Promise.reject(err);
+        }
+    );
+    const vm = new Vue({
+        el: '#app1',
+        data: {
+            secretKey: '',
+            message: '',
+            errors: '',
+            product1: '',
+            product2: '',
+        },
+        methods: {
+            compareJsonProduct() {
+                const my = this;
+                my.message = '';
+                my.errors = '';
+                axios.defaults.headers["Content-Type"] = "application/json";
+                axios.post('/product/compareJson',
+                     {
+                        "jsonStr1": my.product1,
+                        "jsonStr2":my.product2
+                    }, {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(function (response) {
+                    // handle success
+                    console.log("response", response);
+                    if (response.status === 200) {
+                        my.message = JSON.stringify(response.data);
+                    } else {
+                        my.errors = response.data;
+                    }
+                }).catch(function (error) {
+                    // handle error
+                    console.log("error", error);
+                    my.errors = JSON.stringify(error, null, 4);
+                }).then(function () {
+                    // always executed
+                });
+            }
+        }
+    })
+
+    axios.defaults.validateStatus = function (status) {
+        return (status >= 200 && status < 300) || status === 401;
+    }
+
+    // axios.interceptors.request.use(function (config) {
+    //     config.headers["x-dummy-secret-key"] = vm.$data.secretKey;
+    //     return config;
+    // }, function (error) {
+    //     return Promise.reject(error);
+    // })
+</script>
+
+</body>
+</html>

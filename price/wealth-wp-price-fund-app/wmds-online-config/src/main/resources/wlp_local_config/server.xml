@@ -1,0 +1,62 @@
+<server description="WMDS Online Server">
+
+	<!-- Enable features -->
+	<featureManager>
+		<feature>webProfile-7.0</feature>
+		<feature>localConnector-1.0</feature>
+		<feature>jaxrs-2.0</feature>
+	</featureManager>
+
+	<library id="oracle-lib">
+		<fileset dir="${MVN_REP}/com/oracle/ojdbc6/11.2.0.4.0" includes="ojdbc6-11.2.0.4.0.jar"/>
+	</library>
+	
+	<library id="common_config">
+		<folder dir="${COMMON_CONFIG}"/>
+	</library>
+	
+	<library id="local_config">
+		<folder dir="${LOCAL_CONFIG}"/>
+	</library>
+	
+<!-- 	<dataSource id="oracle-cn-ds" jndiName="jdbc/MDSdb_cnhhhh_01" type="javax.sql.DataSource"> -->
+<!-- 		<jdbcDriver javax.sql.DataSource="oracle.jdbc.pool.OracleDataSource" libraryRef="oracle-lib"/> -->
+<!-- 		<properties URL="jdbc:oracle:thin:@hkg3pl0038n3-scan.p2g.netd.hk.hhhh:2000/dwcs1a.hk.hhhh" password="MDSCADA2_APPUSER.123" user="MDSCADA2_APPUSER"/> -->
+<!-- 	</dataSource> -->
+
+<!-- 	<dataSource id="oracle-ca-ds" jndiName="jdbc/MDSdb_cahhhh_01" type="javax.sql.DataSource"> -->
+<!-- 		<jdbcDriver javax.sql.DataSource="oracle.jdbc.pool.OracleDataSource" libraryRef="oracle-lib"/> -->
+<!-- 		<properties URL="jdbc:oracle:thin:@hkg3pl0038n3-scan.p2g.netd.hk.hhhh:2000/dwcs1a.hk.hhhh" password="MDSCADA2_APPUSER.123" user="MDSCADA2_APPUSER"/> -->
+<!-- 	</dataSource> -->
+
+	<dataSource id="oracle-cn-ds" jndiName="jdbc/MDSdb_cnhhhh_01" type="javax.sql.DataSource">
+		<jdbcDriver javax.sql.DataSource="oracle.jdbc.pool.OracleDataSource" libraryRef="oracle-lib"/>
+		<properties URL="jdbc:oracle:thin:@hkg3pl0038n3-scan.p2g.netd.hk.hhhh:2000/dwcs2a.hk.hhhh" password="MDSCNUA6_APPUSER.123" user="MDSCNUA6_APPUSER"/>
+	</dataSource>
+
+	<dataSource id="oracle-ca-ds" jndiName="jdbc/MDSdb_cahhhh_01" type="javax.sql.DataSource">
+		<jdbcDriver javax.sql.DataSource="oracle.jdbc.pool.OracleDataSource" libraryRef="oracle-lib"/>
+		<properties URL="jdbc:oracle:thin:@hkg3pl0038n3-scan.p2g.netd.hk.hhhh:2000/dwcs2a.hk.hhhh" password="MDSCNUA6_APPUSER.123" user="MDSCNUA6_APPUSER"/>
+	</dataSource>
+	
+	<dataSource id="oracle-gb-ds" jndiName="jdbc/MDSdb_gbhbeu_01" type="javax.sql.DataSource">
+		<jdbcDriver javax.sql.DataSource="oracle.jdbc.pool.OracleDataSource" libraryRef="oracle-lib"/>
+		<properties URL="jdbc:oracle:thin:@hkg3pl0038n3-scan.p2g.netd.hk.hhhh:2000/dwcs2a.hk.hhhh" password="MDSUKTA6_APPUSER.123" user="MDSUKTA6_APPUSER"/>
+	</dataSource>
+	
+	<dataSource id="oracle-hk-ds" jndiName="jdbc/MDSdb_hkhbap_01" type="javax.sql.DataSource">
+		<jdbcDriver javax.sql.DataSource="oracle.jdbc.pool.OracleDataSource" libraryRef="oracle-lib"/>
+		<properties URL="jdbc:oracle:thin:@hkg3pl0038n3-scan.p2g.netd.hk.hhhh:2000/dwcs2a.hk.hhhh" password="MDSHKTA1_APPUSER.123" user="MDSHKTA1_APPUSER"/>
+	</dataSource>
+	
+	<!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+	<httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
+
+	<applicationMonitor updateTrigger="mbean"/>
+
+	<enterpriseApplication contextRoot="wmds-war" id="wmds-online-ear" location="wmds-online-ear.ear" name="wmds-online-ear">
+		<classloader commonLibraryRef="common_config,local_config" delegation="parentFirst"/>
+	</enterpriseApplication>
+
+	<webContainer deferServletLoad="false"/>
+</server>

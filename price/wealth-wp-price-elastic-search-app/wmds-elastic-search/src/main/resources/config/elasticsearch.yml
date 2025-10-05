@@ -1,0 +1,46 @@
+#script.inline: on
+#script.indexed: on
+#script.search: on
+
+#script.engine.expression.inline.mapping: true
+#script.engine.expression.inline.search : true
+#script.engine.expression.inline.update : true
+#script.engine.expression.inline.plugin : true
+#script.engine.expression.inline.aggs   : true
+
+#script.groovy.sandbox.enabled      : true
+#script.engine.groovy.inline.aggs   : true
+#script.engine.groovy.inline.update : true
+#script.engine.groovy.inline.mapping: true
+#script.engine.groovy.inline.search : true
+#script.engine.groovy.inline.plugin : true
+
+#Performance tuning - reduce refresh freq for CPU usage and increase index buffer 
+indices.memory.index_buffer_size: 50%
+
+indices:
+    fielddata:
+        cache:
+            size: 40%
+    breaker:
+        fielddata:
+            limit: 60%
+        total:
+            limit: 85%
+            use_real_memory: false
+
+thread_pool:
+    search:
+        size: 20
+#indices.fielddata.cache.size: 50%
+
+#network.host: 127.0.0.1
+#index.refresh_interval_in_millis: -1
+
+# Reduce the heap space used for merging which caused OOM
+#index.merge.policy.max_merged_segment: 500mb
+#index.merge.policy.merge_factor: 2
+#index.merge.scheduler.max_thread_count: 1
+#
+#index.merge.policy.max_merge_at_once: 2
+#index.merge.policy.max_merge_at_once_explicit: 2

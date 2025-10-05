@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:cst="http://castor.exolab.org/">
+	<description>product entity</description>
+
+	<class
+		cst:name="com.hhhh.group.secwealth.mktdata.predsrch.svc.beans.ProductEntities">
+		<map-to cst:xml="products" />
+		<field cst:name="productEntities" collection="map">
+			<bind-xml name="product">
+				<class name="org.exolab.castor.mapping.MapItem">
+					<field name="key" type="java.lang.String">
+						<bind-xml name="type" node="attribute" />
+					</field>
+					<field name="value"
+						type="com.hhhh.group.secwealth.mktdata.predsrch.svc.beans.Product" />
+				</class>
+			</bind-xml>
+		</field>
+	</class>
+
+	<class cst:name="com.hhhh.group.secwealth.mktdata.predsrch.svc.beans.Product">
+		<map-to cst:xml="entity" />
+		<field cst:name="dataConverter" cst:type="string">
+			<bind-xml name="dataConverter" node="element" />
+		</field>
+		<field cst:name="text" cst:type="string">
+			<bind-xml name="text" node="element" />
+		</field>
+		<field cst:name="productDescriptor" cst:type="string">
+			<bind-xml name="productDescriptor" node="element" />
+		</field>
+		<field cst:name="productPackage" cst:type="string">
+			<bind-xml name="productPackage" node="element" />
+		</field>
+		<field cst:name="delayConversion" cst:type="long">
+			<bind-xml name="delayConversion" node="element" />
+		</field>
+	</class>
+
+</mapping>
+    

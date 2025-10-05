@@ -1,0 +1,47 @@
+#dataSourceConfiguration
+#self: 
+#  datasource: 
+#    databaseName: ORACLE
+#    username:  MDSHKUTUA1_APPUSER
+#    url: jdbc:oracle:thin:@wealth-wpamh-ap-east-1-dev-orcl01.cn9pdf2888wz.ap-east-1.rds.amazonaws.com:1521:UAMHWP01
+
+
+
+server:
+  max-http-header-size: 163840
+
+logging:
+  level:
+    root: info
+    com.hhhh.wealth: info
+
+#spring:
+#  datasource:
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@wealth-wpamh-ap-east-1-dev-orcl01.cn9pdf2888wz.ap-east-1.rds.amazonaws.com:1521:UAMHWP01
+#    username: MDSHKUTUA1_APPUSER
+#    password: MDSHKUTUA1_APPUSER.123
+    
+    
+spring:
+  datasource:
+    hikari:
+      connection-test-query: SELECT 1 FROM DUAL
+      minimum-idle: 5
+      maximum-pool-size: 10
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@(DESCRIPTION_LIST=(LOAD_BALANCE=OFF)(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=hkg3pl0038n3-scan.p2g.netd.hk.hhhh)(PORT=2000))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=dwcs2a.hk.hhhh))))
+    username: MDSHKTA1_APPUSER
+    password: '{cipher}3df4bcbe9c0248b65c830fd370a6dea6e7ff8f129339a5618e8d01d98b1df56c881397b03e20835e8d3e9beb6f2430a4'
+
+
+#spring:
+#  datasource:
+#    hikari:
+#      connection-test-query: SELECT 1 FROM DUAL
+#      minimum-idle: 5
+#      maximum-pool-size: 20
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@hkg3pl0038-vip.hk.hhhh:2001/dwcs2a.hk.hhhh
+#    username: MDSHKUA1_APPUSER
+#    password: '{cipher}3df4bcbe9c0248b65c830fd370a6dea6e7ff8f129339a5618e8d01d98b1df56c881397b03e20835e8d3e9beb6f2430a4'

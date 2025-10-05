@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U62516",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:55:58.463304",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U62516%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "397a1625-fe94-436d-9650-ffc917fbcf0c:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "19",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "kf-U1PbNyKMachR5Q1EBcnKhIr7F_Fw0zCvzhraqnwqn4pYe1sI1Ag==",
+        "x-hsbc-request-correlation-id": "f7fb5c52-faf4-403e-8ebc-2322bdd003bb",
+        "date": "Wed, 13 Aug 2025 13:55:57 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_skm_0258",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "19",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 fd8b250e4ee7cd8e5de453d78708baee.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "421",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"Fidelity Funds - Global Dividend Fund A-MINCOME CASH (G)-USD (Hedged)\",\"productShortName\":null,\"fundShreClsName\":\"A-MINCOME(G)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62767\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2767\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62767\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1481011911\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00018PSO\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014296\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014296\"}]},{\"productName\":\"Fidelity Funds - Global Dividend Fund A-MINCOME CASH (G)-HKD (Hedged)\",\"productShortName\":null,\"fundShreClsName\":\"A-MINCOME(G)\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62766\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2766\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62766\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1481011671\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00018PSN\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050014295\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50014295\"}]},{\"productName\":\"Fidelity Funds - Global Dividend Fund (A-H-AUDH-MDIST(G)-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"CLASS A-MDIST\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62693\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2693\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62693\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU1005136848\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00011RYU\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000000050002824\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"50002824\"}]},{\"productName\":\"Fidelity Funds - Global Dividend Fund (A- MINCOME(G)-HKD-CASH)\",\"productShortName\":null,\"fundShreClsName\":\"Class A-MINCOME-HKD-CASH\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U62515\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"F2515\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U62515\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"LU0742537680\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000W376\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000047644\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000047644\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

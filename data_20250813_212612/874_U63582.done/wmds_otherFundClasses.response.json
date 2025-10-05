@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_otherFundClasses",
+  "product_code": "U63582",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:54:46.374283",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/otherFundClasses?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U63582%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "6d3c53d8-2578-40b2-83e9-62557acffdb3:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "17",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "09ssTKrOdb6WCoZZ2XteikPo5RjRIvYAiKBqSVk6lcqkK4OaH4dIpQ==",
+        "x-hsbc-request-correlation-id": "9eb4bbf1-5587-494d-85f2-a9a79e20083f",
+        "date": "Wed, 13 Aug 2025 13:54:45 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains, max-age=31536000 ; includeSubDomains, max-age=16070400; includeSubDomains; preload",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_hkp4vl0433",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "17",
+        "x-envoy-upstream-service-time": "35",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 928b9a46c60991369db0a5ad58525eca.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "548",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SYD3-P1"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"assetClasses\":[{\"productName\":\"JANUS HENDERSON BALANCED FUND (A6M-USD-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A6M-USD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63587\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JH587\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63587\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE0005OL40V9\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001QM29\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000162733\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000162733\"}]},{\"productName\":\"JANUS HENDERSON BALANCED FUND (A6M-HKD-MD-C) \",\"productShortName\":null,\"fundShreClsName\":\"A6M-HKD-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63586\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JH586\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63586\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00084WUPS6\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001UR6A\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000162732\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000162732\"}]},{\"productName\":\"JANUS HENDERSON BALANCED FUND (A6M-CNHH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A6M-CNHH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63585\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JH585\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63585\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE000WSMTTI2\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001VQ21\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000162731\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000162731\"}]},{\"productName\":\"JANUS HENDERSON BALANCED FUND (A6M-SGDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A6M-SGDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63584\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JH584\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63584\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE000IW58EX9\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001VQ22\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000162730\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000162730\"}]},{\"productName\":\"JANUS HENDERSON BALANCED FUND (A6M-EURH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A6M-EURH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63583\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JH583\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63583\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE000IZFDI00\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001VQ20\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000162535\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000162535\"}]},{\"productName\":\"JANUS HENDERSON BALANCED FUND (A6M-AUDH-MD-C)\",\"productShortName\":null,\"fundShreClsName\":\"A6M-AUDH-MD-C\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63581\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JH581\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63581\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE000LX5BG70\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0001VQ1Y\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000162534\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000162534\"}]},{\"productName\":\"JANUS HENDERSON BALANCED FUND (A2-HKD-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"A2-HKD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63580\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JH580\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63580\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE00B4JS1V06\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P0000UAJA\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000162536\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000162536\"}]},{\"productName\":\"JANUS HENDERSON BALANCED FUND (A2-USD-ACC)\",\"productShortName\":null,\"fundShreClsName\":\"A2-USD-ACC\",\"prodStatCde\":\"A\",\"prodAltNumSegs\":[{\"prodCdeAltClassCde\":\"P\",\"prodAltNum\":\"U63579\"},{\"prodCdeAltClassCde\":\"F\",\"prodAltNum\":\"JH579\"},{\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":\"U63579\"},{\"prodCdeAltClassCde\":\"I\",\"prodAltNum\":\"IE0004445015\"},{\"prodCdeAltClassCde\":\"O\",\"prodAltNum\":\"0P00000RMP\"},{\"prodCdeAltClassCde\":\"T\",\"prodAltNum\":\"000000000000000000001000162533\"},{\"prodCdeAltClassCde\":\"W\",\"prodAltNum\":\"1000162533\"}]}]}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

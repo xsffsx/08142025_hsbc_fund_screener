@@ -1,0 +1,26 @@
+{
+  "jobs": [{
+    "collectionName": "product",
+    "entityConfigConfiguration": {
+      "countryCode": "HK",
+      "groupMember": "HBAP"
+    },
+    "criterias": [{
+      "fieldName": "prodTypeCde",
+      "operator": "in",
+      "fieldValue": "UT",
+      "fieldType": "List"
+    },
+      {
+        "fieldName": "prodAltPrimNum",
+        "operator": "order",
+        "fieldValue": "1",
+        "fieldType": "String"
+      }],
+    "files": [{
+      "filename": "/appvol/product/data/report/%COUNTRY_CODE%%GROUP_MEMBER%_UT_%yyyyMMdd%.xlsx",
+      "name": "Product List Report For UT",
+      "system": "WPC"
+    }]
+  }]
+}

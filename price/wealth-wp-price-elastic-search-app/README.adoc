@@ -1,0 +1,37 @@
+= MDS Revamp - Elastic Search App
+
+=== MDS Source Migration Guideline  
+https://digital-confluence.systems.uk.hhhh/confluence/display/WENGCOMM/MDS+Package+Migration+and+Refactoring[MDS Revamp]
+
+=== Owner
+https://alm-github.systems.uk.hhhh/orgs/RBWM-Wealth-Engineering-IT/people/44137725[Fred F D XIAO]
+
+=== Projects Covered  
+* wmds-elastic-search
+* elastic-kibana(same as above project)
+
+=== Entity/Country Using this Repo
+* SG(only test env only, have break change when upgrading the version, need more test)
+* XXX
+
+=== Digital Jenkins Build/Deploy
+* PCF(SG_UAT)
+ https://alm-github.systems.uk.hhhh/RBWM-Wealth-Engineering-IT/wealth-wp-cicd-pipeline/blob/master/WEALTH-PLATFORM/Market%20Data/build-wealth-wp-price-elastic-search-app(sg).groovy[Build config]
+ https://alm-github.systems.uk.hhhh/RBWM-Wealth-Engineering-IT/wealth-wp-cicd-pipeline/blob/master/WP-SG-HBSP/UAT/deploy-wealth-wp-price-search-app-uat.groovy[Deploy config]
+ https://alm-github.systems.uk.hhhh/RBWM-Wealth-Engineering-IT/wealth-wp-cicd-deployment/blob/master/SG-HBSP/pcf-wealth-wp-price-search-app(uat).yml[Manifest]
+ https://mds-sg-predictive-search-uat.apps.cf.skm-drn-01.cloud.hk.hhhh/listIndices[healthcheck URL]
+ https://jenkins-custom-glwm01.digital-tools.euw1.prod.aws.cloud.hhhh/job/WEALTH-PLATFORM/job/Market%20Data/job/build-wealth-wp-price-elastic-search-app(sg)/[Jenkins Build]
+ https://jenkins-custom-glwm01.digital-tools.euw1.prod.aws.cloud.hhhh/job/WP-SG-HBSP/job/UAT/job/deploy-wealth-wp-price-search-app-uat/[Jenkins Deploy]
+* AWS(SG_UAT)
+ https://alm-github.systems.uk.hhhh/RBWM-Wealth-Engineering-IT/wealth-wp-cicd-pipeline/blob/master/WEALTH-PLATFORM/Market%20Data/build-wealth-wp-price-elastic-search-app(sg).groovy[Build config]
+ https://alm-github.systems.uk.hhhh/RBWM-Wealth-Engineering-IT/wealth-wp-cicd-pipeline/blob/master/WP-SG-HBSP/UAT/deploy-wealth-wp-price-search-app-uat(aws).groovy[Deploy config]
+ https://alm-github.systems.uk.hhhh/RBWM-Wealth-Engineering-IT/wealth-wp-cicd-deployment/blob/master/SG-HBSP/UAT/aws-wealth-wp-price-elastic-search-app(uat).yaml[K8S_DEPLOY_YAML]
+ https://dev-gateway-uat.wealth-platform-sgh.sit.aws.cloud.hhhh/mds-elastic-search-app/listIndices[healthcheck URL]
+ https://jenkins-custom-glwm01.digital-tools.euw1.prod.aws.cloud.hhhh/job/WEALTH-PLATFORM/job/Market%20Data/job/build-wealth-wp-price-elastic-search-app(sg)/[Jenkins Build]
+ https://jenkins-custom-glwm01.digital-tools.euw1.prod.aws.cloud.hhhh/job/WP-SG-HBSP/job/UAT/job/deploy-wealth-wp-price-search-app-uat(aws)/[Jenkins Deploy]
+
+=== Break change in new version
+* Spring boot -> 2.3.7, Elasticsearch -> 7.6.2
+* ElasticsearchTemplate/TransportClient... -> @Deprecated ; SearchQuery, Type in mapping...-> @Removed
+* Use ElasticsearchRestTemplate/RestHighLevelClient...
+* matchPhrasePrefixQuery -> prefixQuery 

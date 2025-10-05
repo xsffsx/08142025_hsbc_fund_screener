@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema targetNamespace="http://impl.service.proddetailbykeysenq.webservice.wpc.wmd.hhhh.com/" version="1.0" xmlns:tns="http://impl.service.proddetailbykeysenq.webservice.wpc.wmd.hhhh.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="enquire" type="tns:enquire"/>
+  
+  <xs:element name="enquireResponse" type="tns:enquireResponse"/>
+
+  <xs:complexType name="enquire">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="request" type="tns:wpcProductDetailByKeysEnquiryRequest"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="wpcProductDetailByKeysEnquiryRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="channelCode" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="countryCode" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="groupMemberCode" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="localeCode" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="99" name="productKey" type="tns:productKey"/>
+      <xs:element minOccurs="0" maxOccurs="999" name="requestAttribute" type="tns:requestAttribute"/>
+      <xs:element minOccurs="0" maxOccurs="99" name="sortingCriteriaList" type="tns:sortingCriteria"/>
+      <xs:element minOccurs="0" maxOccurs="999" name="createIndicatorList" type="tns:productTypeIndicator" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="currencyProductCode" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="productAlternativeNumber" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="productCodeAlternativeClassCode" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="productTradableCode" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="productTypeCode" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="requestAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="attributeName" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sortingCriteria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sortField" type="xs:string"/>
+      <xs:element minOccurs="0" name="sortOrder" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productTypeIndicator">
+    <xs:sequence>
+      <xs:element name="productType" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="enquireResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wpcProductDetailByKeysEnquiryResponse"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="wpcProductDetailByKeysEnquiryResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="responseCode" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="99" name="reasonCode" type="tns:reasonCode"/>
+      <xs:element maxOccurs="99" minOccurs="0" name="productDetailByKeyResponseInfo" type="tns:productDetailByKeyResponseInfo"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productDetailByKeyResponseInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="recordResultCode" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="99" name="productKey" type="tns:productKey"/>
+      <xs:element minOccurs="0" maxOccurs="999" name="productAttribute" type="tns:productAttribute"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="reasonCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="reasonCode" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="trackingNumber" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="attributeName" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="999" name="attributeValue" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

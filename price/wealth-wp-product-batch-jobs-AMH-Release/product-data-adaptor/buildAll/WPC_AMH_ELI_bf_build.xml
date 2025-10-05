@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build
+    xsi:schemaLocation="http://www.dummy.com bf_schema.xsd"
+    xmlns="http://www.dummy.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <project>
+        <name>mavensimplex</name>
+        <owner>WPC Development Team </owner>
+        <contact></contact>
+        <environment>
+            <library />
+        </environment>
+       <steps>
+            <linux-unix>
+            	<!-- Compile, one by one, stop on failure -->
+            	 <!-- dir is pom.xml location -->
+				<step
+                    description="Build JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                    
+                    timeout="900"
+                    id="1"
+                    threadable="N"
+                    onfail="H"
+                    command="${MVNRUN} -X -e antrun:run install -PAMHPROD -Dmaven.test.skip=true" />  	
+                 <step
+                    description="ZIP Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} package -PAMHPROD" />   
+                  <step
+                    description="Copy JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} deploy -Dmaven.test.skip=true -PAMHPROD --no-snapshot-updates" /> 
+               
+               <!--   <step
+                    description="SONAR WPC interface adaptor"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll" 
+                    timeout="900"
+                    id="3"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} -X sonar:sonar" />-->
+                    <step
+                    description="Build AMHPSE JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                    
+                    timeout="900"
+                    id="1"
+                    threadable="N"
+                    onfail="H"
+                    command="${MVNRUN} -X -e antrun:run install -PAMHPSE -Dmaven.test.skip=true" />  	
+                 <step
+                    description="ZIP AMHPSE Config"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} package -PAMHPSE" />   
+                  <step
+                    description="Copy AMHPSE JAR"
+                    dir="${BASE_DIR}${SWITCH}Data_Adaptor${SWITCH}buildAll"                  
+                    timeout="900"
+                    id="2"
+                    threadable="N"
+                    onfail="C"
+                    command="${MVNRUN} deploy -Dmaven.test.skip=true -PAMHPSE --no-snapshot-updates" /> 
+				
+            </linux-unix>            
+        </steps>        
+    </project>
+</build>

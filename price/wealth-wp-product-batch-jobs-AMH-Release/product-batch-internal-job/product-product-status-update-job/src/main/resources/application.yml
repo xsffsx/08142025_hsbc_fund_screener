@@ -1,0 +1,36 @@
+# DB profile
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: 
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+  data:
+    mongodb:
+      host: "amh-dev-wpdocdb01.wealth-platform-amh.dev.aws.cloud.dummy"
+      port: 27017
+      database: WPC_AMH_DEV_B
+      username: WPCHKGLUA10_APPUSER
+      password: 
+      enable-replica: false
+
+batch:
+  graphQLUrl: https://product-graphql-b-debug.sit.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql
+#  graphQLUrl: http://localhost:8080/graphql
+  chunk-size: 10000
+
+logging:
+  level:
+    org: ERROR
+    com: ERROR
+    com.dummy.wpb.product: DEBUG
+    com.dummy.wpb.product.service.GraphQLService: INFO
+    org.apache.http.client: ERROR
+#  file:
+#    path: "C:\\dev\\workspace-product\\appLogs"
+
+server:
+  port: 8283 

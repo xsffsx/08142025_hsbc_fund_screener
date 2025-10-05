@@ -1,0 +1,49 @@
+{
+  "api_name": "wmds_topTenHoldings",
+  "product_code": "U61024",
+  "timestamp": "20250813_212612",
+  "total_responses": 1,
+  "responses": [
+    {
+      "timestamp": "2025-08-13T21:29:44.151147",
+      "url": "https://investments3.personal-banking.hsbc.com.hk/shp/wealth-mobile-mds-shp-api-hk-hbap-prod-proxy/v0/wmds/topTenHoldings?body=%7B%22market%22%3A%22HK%22%2C%22productType%22%3A%22UT%22%2C%22prodAltNum%22%3A%22U61024%22%2C%22prodCdeAltClassCde%22%3A%22M%22%7D",
+      "status": 200,
+      "status_text": "",
+      "headers": {
+        "x-request-id": "b9ee6595-9400-45ad-b92d-75ed893a342d:-:-:-",
+        "access-control-expose-headers": "x-authtoken",
+        "ratelimit-remaining": "18",
+        "content-encoding": "gzip",
+        "ratelimit-reset": "1",
+        "x-content-type-options": "nosniff",
+        "x-ratelimit-limit-second": "20",
+        "expires": "0",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "_-2dxAknPF1E84v6zuI-IXn5NqHatxMDCZAEvRLD6sRxvv84pPiylA==",
+        "x-hsbc-request-correlation-id": "d6edd05c-4491-4bbf-98c4-3a48b77a4f17",
+        "date": "Wed, 13 Aug 2025 13:29:43 GMT",
+        "content-type": "application/json;charset=UTF-8",
+        "vary": "Accept-Encoding",
+        "x-frame-options": "SAMEORIGIN, DENY",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "content-security-policy": "default-src 'self';",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate, no-store, no-cache, must-revalidate",
+        "s": "rproxy_prod_tko_0255",
+        "pragma": "no-cache, no-cache",
+        "x-ratelimit-remaining-second": "18",
+        "x-envoy-upstream-service-time": "28",
+        "ratelimit-limit": "20",
+        "referrer-policy": "no-referrer",
+        "via": "1.1 8b4b0c13ccb29eaa324d0f091402d986.cloudfront.net (CloudFront)",
+        "access-control-allow-credentials": "true",
+        "content-length": "453",
+        "x-xss-protection": "1 ; mode=block",
+        "x-amz-cf-pop": "SEA900-P4"
+      },
+      "content_type": "application/json;charset=UTF-8",
+      "response_body": "{\"top10Holdings\":{\"items\":[{\"market\":\"US\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Welltower Inc\",\"weighting\":6.24874,\"currency\":\"USD\",\"marketValue\":1749294},{\"market\":\"US\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Prologis Inc\",\"weighting\":5.47635,\"currency\":\"USD\",\"marketValue\":1533070},{\"market\":\"US\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Digital Realty Trust Inc\",\"weighting\":4.35726,\"currency\":\"USD\",\"marketValue\":1219787},{\"market\":\"US\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Equinix Inc\",\"weighting\":4.24241,\"currency\":\"USD\",\"marketValue\":1187637},{\"market\":\"US\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Simon Property Group Inc\",\"weighting\":3.11765,\"currency\":\"USD\",\"marketValue\":872766},{\"market\":\"US\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Extra Space Storage Inc\",\"weighting\":3.09634,\"currency\":\"USD\",\"marketValue\":866800},{\"market\":\"US\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Mid-America Apartment Communities Inc\",\"weighting\":2.77416,\"currency\":\"USD\",\"marketValue\":776608},{\"market\":\"US\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"VICI Properties Inc Ordinary Shares\",\"weighting\":2.73488,\"currency\":\"USD\",\"marketValue\":765611},{\"market\":\"US\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Ventas Inc\",\"weighting\":2.41868,\"currency\":\"USD\",\"marketValue\":677094},{\"market\":\"AU\",\"productType\":\"ER\",\"prodCdeAltClassCde\":\"M\",\"prodAltNum\":null,\"securityName\":\"Goodman Group\",\"weighting\":2.39851,\"currency\":\"USD\",\"marketValue\":671447}],\"lastUpdatedDate\":\"2025-06-30\"}}",
+      "ok": true,
+      "from_service_worker": false
+    }
+  ]
+}

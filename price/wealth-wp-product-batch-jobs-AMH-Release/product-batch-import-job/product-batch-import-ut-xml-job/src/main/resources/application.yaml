@@ -1,0 +1,170 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://amh-dev-wppostgresql01.wealth-platform-amh.dev.aws.cloud.dummy:5432/productdb
+    username: ocushkd_appuser
+    password: "{cipher}49d32290d0d44c4eee0d3a2f86559a2c7ee50bfb9d42710db9bf1660d27c235b51bc31f0b2b0d047d4d50d331b3aa52c"
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: always
+batch:
+  graphQLUrl: "https://product-graphql-b-debug.uat.wealth-platform-amh.ape1.dev.aws.cloud.dummy/graphql"
+  file:
+    pattern: ^{ctryRecCde}_{grpMembrRecCde}_{systemCde}_UT_(\d{14})\.[Xx][Mm][Ll]$
+  create:
+    allow: AMHCUTAS
+  format-system: "AMHCUTAS"
+  create-custelig:
+    allow: AMHCUTAS
+  size: 50
+
+system-default-values:
+  - systemCde: "AMHCUTAS"
+    defaultValues:
+      allowBuyProdInd: "Y"
+      allowSellProdInd: "Y"
+      allowBuyUtProdInd: "N"
+      allowBuyAmtProdInd: "Y"
+      allowSellUtProdInd: "Y"
+      allowSellAmtProdInd: "N"
+      allowSellMipProdInd: "Y"
+      allowSellMipUtProdInd: "N"
+      allowSellMipAmtProdInd: "Y"
+      allowSwInProdInd: "Y"
+      allowSwInUtProdInd: "N"
+      allowSwInAmtProdInd: "Y"
+      allowSwOutProdInd: "Y"
+      allowSwOutUtProdInd: "Y"
+      allowSwOutAmtProdInd: "Y"
+      incmCharProdInd: "N"
+      cptlGurntProdInd: "N"
+      yieldEnhnProdInd: "N"
+      grwthCharProdInd: "N"
+      dispComProdSrchInd: "Y"
+      divrNum: 1
+      mrkToMktInd: "Y"
+      "[ctryProdTradeCde[0]]": "HK"
+      qtyUnitProdCde: "UNT"
+      prodLocCde: "FML"
+      suptRcblCashProdInd: "N"
+      suptRcblScripProdInd: "N"
+      dcmlPlaceTradeUnitNum: 3
+      pldgLimitAssocAcctInd: "N"
+      prtyProdSrchRsultNum: 0
+      availMktInfoInd: "N"
+      dmyProdSubtpRecInd: "N"
+      asetUnderMgmtChrgProdInd: "Y"
+      invstInitMinAmt: 1000
+      ccyInvstCde: "HKD"
+      prodShrtName: "XXX"
+      ccyProdMktPrcCde: "HKD"
+      restrInvstrProdInd: "N"
+      prodDervtCde: "N"
+      eqtyUndlInd: "N"
+      wlthAccumGoalInd: "Y"
+      planForRtireGoalInd: "Y"
+      educGoalInd: "Y"
+      liveInRtireGoalInd: "N"
+      protcGoalInd: "N"
+      mngSolnInd: "Y"
+      geoRiskInd: "Y"
+      prodLqdyInd: "a"
+      cmbProductInd: "Y"
+      wpbProductInd: "Y"
+
+      "[utTrstInstm.closeEndFundInd]": "N"
+      "[utTrstInstm.invstIncrmMinAmt]": 999999999999.999999
+      "[utTrstInstm.rdmMinAmt]": 999999999999.999999
+      "[utTrstInstm.utRtainMinNum]": 0
+      "[utTrstInstm.fundRtainMinAmt]": 0
+      "[utTrstInstm.fundSwInMinAmt]": 0
+      "[utTrstInstm.fundSwOutMinAmt]": 0
+      "[utTrstInstm.fundSwOutRtainMinAmt]": 0
+      "[utTrstInstm.utSwOutRtainMinNum]": 0
+      "[utTrstInstm.fundSwOutMaxAmt]": 999999999999.999999
+      "[utTrstInstm.tranMaxAmt]": 999999999999.999999
+      "[utTrstInstm.invstMipIncrmMinAmt]": 1000
+      "[utTrstInstm.insuLinkUtTrstInd]": "N"
+      "[utTrstInstm.fundClassCde]": "NA"
+
+      "[tradeElig.ovridCuspCatEligInd]": "Y"
+      "[tradeElig.reqCmplRpqInd]": "Y"
+      "[tradeElig.ovridReqCmplRpqInd]": "N"
+      "[tradeElig.ovridReqFormInd]": "Y"
+      "[tradeElig.ageAllowTrdMinNum]": 18
+      "[tradeElig.ovridMinAgeRestrInd]": "N"
+      "[tradeElig.ovridMaxAgeRestrInd]": "Y"
+      "[tradeElig.operTypeCde]": "T"
+      "[tradeElig.ovridCorsCtryChkInd]": "Y"
+      "[tradeElig.ovridResCtryChkInd]": "Y"
+      "[tradeElig.ovridNatlChkInd]": "Y"
+      "[tradeElig.reqInvstHldgChkInd]": "N"
+      "[tradeElig.ovridInvstHldgChkInd]": "N"
+
+system-update-config:
+  - systemCde: "AMHCUTAS"
+    config:
+      - collection: product
+        updateAttrs:
+          - "bchmkName"
+          - "prodStatCde"
+          - "ccyProdCde"
+          - "riskLvlCde"
+          - "prodLnchDt"
+          - "mktInvstCde"
+          - "sectInvstCde"
+          - "allowBuyProdInd"
+          - "allowSellProdInd"
+          - "allowSellMipProdInd"
+          - "allowSwInProdInd"
+          - "allowSwOutProdInd"
+          - "ccyInvstCde"
+          - "invstInitMinAmt"
+          - "noScribFeeProdInd"
+          - "dcmlPlaceTradeUnitNum"
+          #  ---- for AMHCUTAS Unit Trust Instrument update fields ----
+          - "utTrstInstm.utPrcProdLnchAmt"
+          - "utTrstInstm.invstIncrmMinAmt"
+          - "utTrstInstm.rdmMinAmt"
+          - "utTrstInstm.utRtainMinNum"
+          - "utTrstInstm.fundRtainMinAmt"
+          - "utTrstInstm.suptMipInd"
+          - "utTrstInstm.invstMipMinAmt"
+          - "utTrstInstm.invstMipIncrmMinAmt"
+          - "utTrstInstm.rdmMipMinAmt"
+          - "utTrstInstm.utMipRtainMinNum"
+          - "utTrstInstm.utSwOutRtainMinNum"
+          - "utTrstInstm.fundMipRtainMinAmt"
+          - "utTrstInstm.fundSwOutRtainMinAmt"
+          - "utTrstInstm.schemChrgCde"
+          - "utTrstInstm.chrgInitSalesPct"
+          - "utTrstInstm.dscntMaxPct"
+          - "utTrstInstm.hldayFundNextDt"
+          - "utTrstInstm.payCashDivInd"
+          - "utTrstInstm.dealNextDt"
+          - "utTrstInstm.fundClassCde"
+          - "utTrstInstm.amcmInd"
+          - "utTrstInstm.spclFundInd"
+          - "utTrstInstm.prodTrmtDt"
+          - "utTrstInstm.scribCtoffNextDtTm"
+          - "utTrstInstm.rdmCtoffNextDtTm"
+
+          - "undlAset"
+          - "tradeCcy"
+          - "chanlAttr"
+          - "utTrstInstm.sw"
+          - "altId"
+          - "ext"
+          - "extOp"
+          - "extEg"
+  - systemCde: "MS"
+    config:
+      - collection: product
+        updateAttrs:
+          - "noScribFeeProdInd"
+          - "topSellProdInd"
+          - "prodTopSellRankNum"
+          - "altId"
+          - "ext"
+          - "extOp"
+          - "extEg"
